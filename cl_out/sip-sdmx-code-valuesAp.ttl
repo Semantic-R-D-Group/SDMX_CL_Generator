@@ -1,0 +1,64 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_VALUESAP Scheme Definition
+#####################################################
+
+sip-sdmx-code:valuesAp a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Values for AP DSD - codelist scheme"@en ;
+    rdfs:label "Values for AP DSD - codelist scheme"@en ;
+    skos:notation "CL_VALUESAP" ;
+    skos:definition "A reference valuesAp codelist based on ESTAT:CL_VALUE_AP(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_VALUE_AP/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:ValuesAp .
+
+sip-sdmx-code:ValuesAp a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Values for AP DSD - codelist class"@en ;
+    rdfs:label "Values for AP DSD - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:valuesAp ;
+    skos:inScheme sip-sdmx-code:valuesAp .
+
+
+########################################
+# CL_VALUESAP Codes
+########################################
+    
+sip-sdmx-code:valuesAp-FAP a skos:Concept, sip-sdmx-code:ValuesAp;
+    skos:topConceptOf sip-sdmx-code:valuesAp ;
+    skos:inScheme sip-sdmx-code:valuesAp ;
+    skos:notation "FAP" ;
+    skos:prefLabel "Fully Administered Price"@en ;
+    rdfs:label "Fully Administered Price"@en .
+
+sip-sdmx-code:valuesAp skos:hasTopConcept sip-sdmx-code:valuesAp-FAP .
+
+
+sip-sdmx-code:valuesAp-MAP a skos:Concept, sip-sdmx-code:ValuesAp;
+    skos:topConceptOf sip-sdmx-code:valuesAp ;
+    skos:inScheme sip-sdmx-code:valuesAp ;
+    skos:notation "MAP" ;
+    skos:prefLabel "Mainly Administered Price"@en ;
+    rdfs:label "Mainly Administered Price"@en .
+
+sip-sdmx-code:valuesAp skos:hasTopConcept sip-sdmx-code:valuesAp-MAP .
+
+
+sip-sdmx-code:valuesAp-NAP a skos:Concept, sip-sdmx-code:ValuesAp;
+    skos:topConceptOf sip-sdmx-code:valuesAp ;
+    skos:inScheme sip-sdmx-code:valuesAp ;
+    skos:notation "NAP" ;
+    skos:prefLabel "Non Administered Price"@en ;
+    rdfs:label "Non Administered Price"@en .
+
+sip-sdmx-code:valuesAp skos:hasTopConcept sip-sdmx-code:valuesAp-NAP .
+

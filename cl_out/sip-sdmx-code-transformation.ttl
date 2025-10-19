@@ -1,0 +1,756 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_TRANSFORMATION Scheme Definition
+#####################################################
+
+sip-sdmx-code:transformation a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Time Transformation - codelist scheme"@en ;
+    rdfs:label "Time Transformation - codelist scheme"@en ;
+    skos:altLabel "Transformation codes - codelist scheme"@en ;
+    skos:notation "CL_TRANSFORMATION" ;
+    skos:definition "A reference transformation codelist combining SDMX:CL_TIMETRANS(1.0), ESTAT:CL_TRANSFORMATION(1.4)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIMETRANS/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_TRANSFORMATION/1.4> ;
+    skos:note "SDMX:CL_TIMETRANS(1.0): Code list for compound coding (type and period) of transformation types of time series."@en ;
+    skos:note "ESTAT:CL_TRANSFORMATION(1.4): Time-related operation performed on a time series, solely involving observations of that time series."@en ;
+    rdfs:seeAlso sip-sdmx-concept:TRANSFORMATION ;
+    skos:related sip-sdmx-concept:TRANSFORMATION ;
+    rdfs:seeAlso sip-sdmx-code:Transformation .
+
+sip-sdmx-code:Transformation a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Time Transformation - codelist class"@en ;
+    rdfs:label "Time Transformation - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation .
+
+
+########################################
+# CL_TRANSFORMATION Codes
+########################################
+    
+sip-sdmx-code:transformation-A1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "A1" ;
+    skos:prefLabel "Average, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Average, period on period"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-A1 .
+
+
+sip-sdmx-code:transformation-A12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "A12" ;
+    skos:prefLabel "12-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """12-period moving average"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-A12 .
+
+
+sip-sdmx-code:transformation-A2 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "A2" ;
+    skos:prefLabel "2-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """2-period moving average"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-A2 .
+
+
+sip-sdmx-code:transformation-A3 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "A3" ;
+    skos:prefLabel "3-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """3-period moving average"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-A3 .
+
+
+sip-sdmx-code:transformation-A4 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "A4" ;
+    skos:prefLabel "4-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """4-period moving average"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-A4 .
+
+
+sip-sdmx-code:transformation-A6 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "A6" ;
+    skos:prefLabel "6-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """6-period moving average"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-A6 .
+
+
+sip-sdmx-code:transformation-ACR a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "ACR" ;
+    skos:prefLabel "Annual rate of change corrected for the effect of methodological changes where applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Annual rate of change corrected for the effect of methodological changes where applicable"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-ACR .
+
+
+sip-sdmx-code:transformation-AS1999 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "AS1999" ;
+    skos:prefLabel "Average since 1999"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Average since 1999"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-AS1999 .
+
+
+sip-sdmx-code:transformation-AW12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "AW12" ;
+    skos:prefLabel "Weighted average, over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Weighted average, over 12 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-AW12 .
+
+
+sip-sdmx-code:transformation-C12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "C12" ;
+    skos:prefLabel "12-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """12-period cumulated sum"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-C12 .
+
+
+sip-sdmx-code:transformation-C16 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "C16" ;
+    skos:prefLabel "16-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """16-period cumulated sum"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """16 period cumulated sum"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-C16 .
+
+
+sip-sdmx-code:transformation-C1Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "C1Y" ;
+    skos:prefLabel "Cumulated sum, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Cumulated sum, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-C1Y .
+
+
+sip-sdmx-code:transformation-C3 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "C3" ;
+    skos:prefLabel "3-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """3-period cumulated sum"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-C3 .
+
+
+sip-sdmx-code:transformation-C4 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "C4" ;
+    skos:prefLabel "4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-C4 .
+
+
+sip-sdmx-code:transformation-C4G a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "C4G" ;
+    skos:prefLabel "Growth rate, period on period, over 4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, period on period, over 4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-C4G .
+
+
+sip-sdmx-code:transformation-C6 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "C6" ;
+    skos:prefLabel "6-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """6-period cumulated sum"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-C6 .
+
+
+sip-sdmx-code:transformation-CY a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "CY" ;
+    skos:prefLabel "Cumulated sum, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Cumulated sum, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-CY .
+
+
+sip-sdmx-code:transformation-D1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "D1" ;
+    skos:prefLabel "Differences, period on period, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Differences, period on period, first order"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-D1 .
+
+
+sip-sdmx-code:transformation-D1D1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "D1D1" ;
+    skos:prefLabel "Differences, period on period, second order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Differences, period on period, second order"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-D1D1 .
+
+
+sip-sdmx-code:transformation-D1Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "D1Y" ;
+    skos:prefLabel "Difference, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Difference, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-D1Y .
+
+
+sip-sdmx-code:transformation-D4 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "D4" ;
+    skos:prefLabel "Difference, period on 4 periods, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Difference, period on 4 periods, first order"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Difference period on 4 periods, first order"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-D4 .
+
+
+sip-sdmx-code:transformation-DD a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "DD" ;
+    skos:prefLabel "Differences, period on period, second order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Differences, period on period, second order"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-DD .
+
+
+sip-sdmx-code:transformation-DY a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "DY" ;
+    skos:prefLabel "Difference, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Difference, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-DY .
+
+
+sip-sdmx-code:transformation-ECX a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "ECX" ;
+    skos:prefLabel "Monthly index, backdated, ECU (to 1989) and fixed euro conversion rate (from 1990) used for weights"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monthly index, backdated, ECU (to 1989) and fixed euro conversion rate (from 1990) used for weights"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-ECX .
+
+
+sip-sdmx-code:transformation-EPX a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "EPX" ;
+    skos:prefLabel "Monthly index, backdated, PPP exchange rates used for weights"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monthly index, backdated, PPP exchange rates used for weights"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-EPX .
+
+
+sip-sdmx-code:transformation-ERX a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "ERX" ;
+    skos:prefLabel "Monthly index, backdated, fixed euro conversion rate used for weights"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monthly index, backdated, fixed euro conversion rate used for weights"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-ERX .
+
+
+sip-sdmx-code:transformation-F1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "F1" ;
+    skos:prefLabel "Growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-F1 .
+
+
+sip-sdmx-code:transformation-F12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "F12" ;
+    skos:prefLabel "Growth rate, flow over stock, over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Growth rate, flow over stock, over 12 periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, flow over stock over 12 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-F12 .
+
+
+sip-sdmx-code:transformation-F1Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "F1Y" ;
+    skos:prefLabel "Growth rate, flow over stock, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Growth rate, flow over stock, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-F1Y .
+
+
+sip-sdmx-code:transformation-F2 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "F2" ;
+    skos:prefLabel """Growth rate, flow over stock, over two
+                        periods"""@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Growth rate, flow over stock, over two
+                        periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-F2 .
+
+
+sip-sdmx-code:transformation-F3 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "F3" ;
+    skos:prefLabel "Growth rate, flow over stock, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, flow over stock, over 3 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-F3 .
+
+
+sip-sdmx-code:transformation-F4 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "F4" ;
+    skos:prefLabel "Growth rate, flow over stock, over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, flow over stock, over 4 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-F4 .
+
+
+sip-sdmx-code:transformation-F6 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "F6" ;
+    skos:prefLabel "Growth rate, flow over stock, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Growth rate, flow over stock, over 6 periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, flow over stock over 6 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-F6 .
+
+
+sip-sdmx-code:transformation-FO1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FO1" ;
+    skos:prefLabel "Contribution to growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FO1 .
+
+
+sip-sdmx-code:transformation-FO12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FO12" ;
+    skos:prefLabel """Contribution to growth rate, flow over stock, over 12
+                        periods"""@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, flow over stock, over 12
+                        periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, flow over stock, over 12  periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FO12 .
+
+
+sip-sdmx-code:transformation-FO16 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FO16" ;
+    skos:prefLabel """Contribution to growth rate, flow over stock, over 16
+                        periods"""@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, flow over stock, over 16
+                        periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, flow over stock, over 16 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FO16 .
+
+
+sip-sdmx-code:transformation-FO2 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FO2" ;
+    skos:prefLabel """Contribution to growth rate, flow over stock, over two
+                        periods"""@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, flow over stock, over two
+                        periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FO2 .
+
+
+sip-sdmx-code:transformation-FO3 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FO3" ;
+    skos:prefLabel """Contribution to growth rate, flow over stock, over 3
+                        periods"""@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, flow over stock, over 3
+                        periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, flow over stock, over 3 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FO3 .
+
+
+sip-sdmx-code:transformation-FO4 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FO4" ;
+    skos:prefLabel """Contribution to growth rate, flow over stock, over 4
+                        periods"""@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, flow over stock, over 4
+                        periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, flow over stock, over 4 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FO4 .
+
+
+sip-sdmx-code:transformation-FO6 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FO6" ;
+    skos:prefLabel """Contribution to growth rate, flow over stock, over 6
+                        periods"""@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, flow over stock, over 6
+                        periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, flow over stock, over 6 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FO6 .
+
+
+sip-sdmx-code:transformation-FY a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "FY" ;
+    skos:prefLabel "Growth rate, flow over stock, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, flow over stock, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-FY .
+
+
+sip-sdmx-code:transformation-G1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G1" ;
+    skos:prefLabel "Growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, period on period"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G1 .
+
+
+sip-sdmx-code:transformation-G10 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G10" ;
+    skos:prefLabel "Growth rate, over 10 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 10 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G10 .
+
+
+sip-sdmx-code:transformation-G12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G12" ;
+    skos:prefLabel "Growth rate, over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 12 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G12 .
+
+
+sip-sdmx-code:transformation-G1Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G1Y" ;
+    skos:prefLabel "Growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G1Y .
+
+
+sip-sdmx-code:transformation-G2 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G2" ;
+    skos:prefLabel "Growth rate, over two periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Growth rate, over two periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G2 .
+
+
+sip-sdmx-code:transformation-G3 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G3" ;
+    skos:prefLabel "Growth rate, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 3 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G3 .
+
+
+sip-sdmx-code:transformation-G3Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G3Y" ;
+    skos:prefLabel "Growth rate, over 3 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 3 years"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G3Y .
+
+
+sip-sdmx-code:transformation-G4 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G4" ;
+    skos:prefLabel "Growth rate, over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 4 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G4 .
+
+
+sip-sdmx-code:transformation-G4Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G4Y" ;
+    skos:prefLabel "Growth rate, over 4 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 4 years"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G4Y .
+
+
+sip-sdmx-code:transformation-G6 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "G6" ;
+    skos:prefLabel "Growth rate, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 6 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-G6 .
+
+
+sip-sdmx-code:transformation-GC10Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GC10Y" ;
+    skos:prefLabel "Compound growth rate, over 10 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Compound growth rate, over 10 years"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GC10Y .
+
+
+sip-sdmx-code:transformation-GC5Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GC5Y" ;
+    skos:prefLabel "Compound growth rate, over 5 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Compound growth rate, over 5 years"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GC5Y .
+
+
+sip-sdmx-code:transformation-GO1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GO1" ;
+    skos:prefLabel "Contribution to growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, period on period"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GO1 .
+
+
+sip-sdmx-code:transformation-GO12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GO12" ;
+    skos:prefLabel "Contribution to growth rate, over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, over 12 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GO12 .
+
+
+sip-sdmx-code:transformation-GO1Y a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GO1Y" ;
+    skos:prefLabel "Contribution to growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GO1Y .
+
+
+sip-sdmx-code:transformation-GO2 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GO2" ;
+    skos:prefLabel "Contribution to growth rate, over 2 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, over 2 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GO2 .
+
+
+sip-sdmx-code:transformation-GO3 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GO3" ;
+    skos:prefLabel "Contribution to growth rate, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, over 3 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GO3 .
+
+
+sip-sdmx-code:transformation-GO4 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GO4" ;
+    skos:prefLabel "Contribution to growth rate, over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Contribution to growth rate, over 4 periods"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, over  4 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GO4 .
+
+
+sip-sdmx-code:transformation-GO6 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GO6" ;
+    skos:prefLabel "Contribution to growth rate, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, over 6 periods"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GO6 .
+
+
+sip-sdmx-code:transformation-GOY a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GOY" ;
+    skos:prefLabel "Contribution to growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Contribution to growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GOY .
+
+
+sip-sdmx-code:transformation-GR a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GR" ;
+    skos:prefLabel "Growth rate, over reference year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over reference year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GR .
+
+
+sip-sdmx-code:transformation-GY a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GY" ;
+    skos:prefLabel "Growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GY .
+
+
+sip-sdmx-code:transformation-GYA12 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GYA12" ;
+    skos:prefLabel "Growth rate, over 1 year, based on 12-period average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 1 year, based on 12-period average"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GYA12 .
+
+
+sip-sdmx-code:transformation-GYA3 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "GYA3" ;
+    skos:prefLabel "Growth rate, over 1 year, based on 3-period average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Growth rate, over 1 year, based on 3-period average"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-GYA3 .
+
+
+sip-sdmx-code:transformation-LA a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "LA" ;
+    skos:prefLabel "Annualised levels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Annualised levels"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Annual levels"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-LA .
+
+
+sip-sdmx-code:transformation-N a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "N" ;
+    skos:prefLabel "Non transformed data"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT ; rdfs:label """Non transformed data"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-N .
+
+
+sip-sdmx-code:transformation-R1 a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "R1" ;
+    skos:prefLabel "Revisions, difference to last transmission period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Revisions, difference to last transmission period"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-R1 .
+
+
+sip-sdmx-code:transformation-_Z a skos:Concept, sip-sdmx-code:Transformation;
+    skos:topConceptOf sip-sdmx-code:transformation ;
+    skos:inScheme sip-sdmx-code:transformation ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:transformation skos:hasTopConcept sip-sdmx-code:transformation-_Z .
+

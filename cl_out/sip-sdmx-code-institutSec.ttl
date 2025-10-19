@@ -1,0 +1,2578 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_INSTITUTSEC Scheme Definition
+#####################################################
+
+sip-sdmx-code:institutSec a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Institutional sector - codelist scheme"@en ;
+    rdfs:label "Institutional sector - codelist scheme"@en ;
+    skos:altLabel "Sector codes - codelist scheme"@en ;
+    skos:notation "CL_INSTITUTSEC" ;
+    skos:definition "A reference institutSec codelist combining ESTAT:CL_SECTOR(1.14), ESTAT:CL_SECTOR93(1.4)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_SECTOR/1.14> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_SECTOR93/1.4> ;
+    rdfs:seeAlso sip-sdmx-code:InstitutSec .
+
+sip-sdmx-code:InstitutSec a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Institutional sector - codelist class"@en ;
+    rdfs:label "Institutional sector - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec .
+
+
+########################################
+# CL_INSTITUTSEC Codes
+########################################
+    
+sip-sdmx-code:institutSec-S1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1" ;
+    skos:prefLabel "Total economy"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Total economy"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1 .
+
+
+sip-sdmx-code:institutSec-S11 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11" ;
+    skos:prefLabel "Non financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Non financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11 .
+
+
+sip-sdmx-code:institutSec-S11001 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11001" ;
+    skos:prefLabel "Public non financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Public non financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11001 .
+
+
+sip-sdmx-code:institutSec-S110011 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S110011" ;
+    skos:prefLabel "Public non financial corporations, which are part of domestic multinationals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public non financial corporations, which are part of domestic multinationals"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S110011 .
+
+
+sip-sdmx-code:institutSec-S11001C a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11001C" ;
+    skos:prefLabel "Public non financial corporations controlled by central government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public non financial corporations controlled by central government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11001C .
+
+
+sip-sdmx-code:institutSec-S11002 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11002" ;
+    skos:prefLabel "National private non financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """National private non financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11002 .
+
+
+sip-sdmx-code:institutSec-S110021 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S110021" ;
+    skos:prefLabel "National private non financial corporations, which are part of domestic multinationals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private non financial corporations, which are part of domestic multinationals"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S110021 .
+
+
+sip-sdmx-code:institutSec-S11003 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11003" ;
+    skos:prefLabel "Foreign controlled non financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled non financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11003 .
+
+
+sip-sdmx-code:institutSec-S1100P a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1100P" ;
+    skos:prefLabel "Private nonfinancial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Private nonfinancial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1100P .
+
+
+sip-sdmx-code:institutSec-S1142 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1142" ;
+    skos:prefLabel "Recipients of pensions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Recipients of pensions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1142 .
+
+
+sip-sdmx-code:institutSec-S11A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11A" ;
+    skos:prefLabel "Post office giro"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Post office giro"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11A .
+
+
+sip-sdmx-code:institutSec-S11B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11B" ;
+    skos:prefLabel "Head offices of non financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Head offices of non financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11B .
+
+
+sip-sdmx-code:institutSec-S11DO a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11DO" ;
+    skos:prefLabel "Domestically controlled non-financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Domestically controlled non-financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11DO .
+
+
+sip-sdmx-code:institutSec-S11E a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11E" ;
+    skos:prefLabel "Electronic money non-financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electronic money non-financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11E .
+
+
+sip-sdmx-code:institutSec-S11U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S11U" ;
+    skos:prefLabel "Non-financial corporations (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial corporations (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S11U .
+
+
+sip-sdmx-code:institutSec-S12 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12" ;
+    skos:prefLabel "Financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12 .
+
+
+sip-sdmx-code:institutSec-S12001 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12001" ;
+    skos:prefLabel "Public financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Public financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12001 .
+
+
+sip-sdmx-code:institutSec-S120011 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S120011" ;
+    skos:prefLabel "Public financial corporations, which are part of domestic multinationals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public financial corporations, which are part of domestic multinationals"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S120011 .
+
+
+sip-sdmx-code:institutSec-S12001C a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12001C" ;
+    skos:prefLabel "Public financial corporations controlled by central government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public financial corporations controlled by central government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12001C .
+
+
+sip-sdmx-code:institutSec-S12002 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12002" ;
+    skos:prefLabel "National private financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12002 .
+
+
+sip-sdmx-code:institutSec-S120021 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S120021" ;
+    skos:prefLabel "National private financial corporations which are part of domestic multinationals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private financial corporations which are part of domestic multinationals"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S120021 .
+
+
+sip-sdmx-code:institutSec-S12003 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12003" ;
+    skos:prefLabel "Foreign controlled financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12003 .
+
+
+sip-sdmx-code:institutSec-S1200P a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1200P" ;
+    skos:prefLabel "Private financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Private financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1200P .
+
+
+sip-sdmx-code:institutSec-S121 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S121" ;
+    skos:prefLabel "Central bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central bank"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """The central bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S121 .
+
+
+sip-sdmx-code:institutSec-S121A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S121A" ;
+    skos:prefLabel "ECB"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """ECB"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S121A .
+
+
+sip-sdmx-code:institutSec-S121B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S121B" ;
+    skos:prefLabel "Other members of the eurosystem"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other members of the eurosystem"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S121B .
+
+
+sip-sdmx-code:institutSec-S122 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S122" ;
+    skos:prefLabel "Deposit taking corporations, except the Central Bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Deposit taking corporations, except the Central Bank"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other monetary financial institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S122 .
+
+
+sip-sdmx-code:institutSec-S12201 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12201" ;
+    skos:prefLabel "Public deposit taking corporations, except the Central Bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public deposit taking corporations, except the Central Bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12201 .
+
+
+sip-sdmx-code:institutSec-S12202 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12202" ;
+    skos:prefLabel "National private deposit taking corporations, except the Central Bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private deposit taking corporations, except the Central Bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12202 .
+
+
+sip-sdmx-code:institutSec-S12203 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12203" ;
+    skos:prefLabel "Foreign controlled deposit taking corporations, except the Central Bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled deposit taking corporations, except the Central Bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12203 .
+
+
+sip-sdmx-code:institutSec-S1220P a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1220P" ;
+    skos:prefLabel "Private deposit-taking corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Private deposit-taking corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1220P .
+
+
+sip-sdmx-code:institutSec-S1221 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1221" ;
+    skos:prefLabel "Deposit money corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Deposit money corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1221 .
+
+
+sip-sdmx-code:institutSec-S12211 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12211" ;
+    skos:prefLabel "Public"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12211 .
+
+
+sip-sdmx-code:institutSec-S12212 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12212" ;
+    skos:prefLabel "National private"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12212 .
+
+
+sip-sdmx-code:institutSec-S12213 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12213" ;
+    skos:prefLabel "Foreign controlled"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12213 .
+
+
+sip-sdmx-code:institutSec-S1222 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1222" ;
+    skos:prefLabel "Other depository corporations, except deposit money corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other depository corporations, except deposit money corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1222 .
+
+
+sip-sdmx-code:institutSec-S12221 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12221" ;
+    skos:prefLabel "Public"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12221 .
+
+
+sip-sdmx-code:institutSec-S12222 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12222" ;
+    skos:prefLabel "National private"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12222 .
+
+
+sip-sdmx-code:institutSec-S12223 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12223" ;
+    skos:prefLabel "Foreign controlled"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12223 .
+
+
+sip-sdmx-code:institutSec-S122A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S122A" ;
+    skos:prefLabel "Banks headquartered in the reporting country or currency area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Banks headquartered in the reporting country or currency area"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other monetary financial institutions other than building  loan associations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S122A .
+
+
+sip-sdmx-code:institutSec-S122B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S122B" ;
+    skos:prefLabel "Banks headquartered outside the reporting country or currency area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Banks headquartered outside the reporting country or currency area"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Building and loan associations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S122B .
+
+
+sip-sdmx-code:institutSec-S122C a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S122C" ;
+    skos:prefLabel "Credit institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Credit institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S122C .
+
+
+sip-sdmx-code:institutSec-S122U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S122U" ;
+    skos:prefLabel "Deposit taking corporations, except the Central Bank (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Deposit taking corporations, except the Central Bank (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S122U .
+
+
+sip-sdmx-code:institutSec-S122Z a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S122Z" ;
+    skos:prefLabel "Deposit-taking corporations except the central bank and excluding electronic money institutions principally engaged in financial intermediation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Deposit-taking corporations except the central bank and excluding electronic money institutions principally engaged in financial intermediation"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S122Z .
+
+
+sip-sdmx-code:institutSec-S123 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S123" ;
+    skos:prefLabel "Money market funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Money market funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial intermediaries, except insurance corporations and pension funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S123 .
+
+
+sip-sdmx-code:institutSec-S12301 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12301" ;
+    skos:prefLabel "Public money market funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public money market funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12301 .
+
+
+sip-sdmx-code:institutSec-S12302 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12302" ;
+    skos:prefLabel "National private money market funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private money market funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12302 .
+
+
+sip-sdmx-code:institutSec-S12303 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12303" ;
+    skos:prefLabel "Foreign controlled money market funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled money market funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12303 .
+
+
+sip-sdmx-code:institutSec-S123A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S123A" ;
+    skos:prefLabel "Constant Net Asset Value (NAV) MMFs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Constant Net Asset Value (NAV) MMFs"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Mutual funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S123A .
+
+
+sip-sdmx-code:institutSec-S123B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S123B" ;
+    skos:prefLabel "Variable NAV MMFs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Variable NAV MMFs"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Collective investment institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S123B .
+
+
+sip-sdmx-code:institutSec-S123U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S123U" ;
+    skos:prefLabel "Money market funds (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Money market funds (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S123U .
+
+
+sip-sdmx-code:institutSec-S124 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124" ;
+    skos:prefLabel "Non MMF investment funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non MMF investment funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial auxiliaries"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124 .
+
+
+sip-sdmx-code:institutSec-S12401 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12401" ;
+    skos:prefLabel "Public non MMF investment funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public non MMF investment funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12401 .
+
+
+sip-sdmx-code:institutSec-S12402 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12402" ;
+    skos:prefLabel "National private non MMF investment funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private non MMF investment funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12402 .
+
+
+sip-sdmx-code:institutSec-S12403 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12403" ;
+    skos:prefLabel "Foreign controlled non MMF investment funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled non MMF investment funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12403 .
+
+
+sip-sdmx-code:institutSec-S124A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124A" ;
+    skos:prefLabel "Open-end Non MMFs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Open-end Non MMFs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124A .
+
+
+sip-sdmx-code:institutSec-S124A1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124A1" ;
+    skos:prefLabel "Non-MMFs Open end funds - Real estate funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MMFs Open end funds - Real estate funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124A1 .
+
+
+sip-sdmx-code:institutSec-S124A2 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124A2" ;
+    skos:prefLabel "Non-MMFs Open end funds - Equity funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MMFs Open end funds - Equity funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124A2 .
+
+
+sip-sdmx-code:institutSec-S124A3 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124A3" ;
+    skos:prefLabel "Non-MMFs Open end funds - Bond funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MMFs Open end funds - Bond funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124A3 .
+
+
+sip-sdmx-code:institutSec-S124A4 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124A4" ;
+    skos:prefLabel "Non-MMFs Open end funds - Mixed or balanced funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MMFs Open end funds - Mixed or balanced funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124A4 .
+
+
+sip-sdmx-code:institutSec-S124A5 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124A5" ;
+    skos:prefLabel "Non-MMFs Open end funds - Hedge funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MMFs Open end funds - Hedge funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124A5 .
+
+
+sip-sdmx-code:institutSec-S124A9 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124A9" ;
+    skos:prefLabel "Other Non-MMFs Open end funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other Non-MMFs Open end funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124A9 .
+
+
+sip-sdmx-code:institutSec-S124B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124B" ;
+    skos:prefLabel "Closed-end Non MMFs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Closed-end Non MMFs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124B .
+
+
+sip-sdmx-code:institutSec-S124B1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124B1" ;
+    skos:prefLabel "Closed-end Real Estate Funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Closed-end Real Estate Funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124B1 .
+
+
+sip-sdmx-code:institutSec-S124B2 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124B2" ;
+    skos:prefLabel "Closed-end Equity funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Closed-end Equity funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124B2 .
+
+
+sip-sdmx-code:institutSec-S124B3 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124B3" ;
+    skos:prefLabel "Closed-end Bond funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Closed-end Bond funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124B3 .
+
+
+sip-sdmx-code:institutSec-S124B4 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124B4" ;
+    skos:prefLabel "Closed-end Mixed funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Closed-end Mixed funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124B4 .
+
+
+sip-sdmx-code:institutSec-S124B5 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124B5" ;
+    skos:prefLabel "Closed-end Hedge funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Closed-end Hedge funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124B5 .
+
+
+sip-sdmx-code:institutSec-S124B9 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124B9" ;
+    skos:prefLabel "Other closed-end Non MMFs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other closed-end Non MMFs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124B9 .
+
+
+sip-sdmx-code:institutSec-S124U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S124U" ;
+    skos:prefLabel "Non MMF investment funds (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non MMF investment funds (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S124U .
+
+
+sip-sdmx-code:institutSec-S125 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125" ;
+    skos:prefLabel "Other financial intermediaries, except insurance corporations and pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial intermediaries, except insurance corporations and pension funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Insurance corporations and pension funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125 .
+
+
+sip-sdmx-code:institutSec-S12501 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12501" ;
+    skos:prefLabel "Public other financial intermediaries, except insurance corporations and pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public other financial intermediaries, except insurance corporations and pension funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12501 .
+
+
+sip-sdmx-code:institutSec-S12502 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12502" ;
+    skos:prefLabel "National private other financial intermediaries, except insurance corporations and pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private other financial intermediaries, except insurance corporations and pension funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12502 .
+
+
+sip-sdmx-code:institutSec-S12503 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12503" ;
+    skos:prefLabel "Foreign controlled other financial intermediaries, except insurance corporations and pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled other financial intermediaries, except insurance corporations and pension funds"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12503 .
+
+
+sip-sdmx-code:institutSec-S1251 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1251" ;
+    skos:prefLabel "Insurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Insurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1251 .
+
+
+sip-sdmx-code:institutSec-S1252 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1252" ;
+    skos:prefLabel "Pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Pension funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1252 .
+
+
+sip-sdmx-code:institutSec-S125A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125A" ;
+    skos:prefLabel "Financial vehicle corporations engaged in securitisation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial vehicle corporations engaged in securitisation"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125A .
+
+
+sip-sdmx-code:institutSec-S125B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125B" ;
+    skos:prefLabel "Financial corporations engaged in lending"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial corporations engaged in lending"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125B .
+
+
+sip-sdmx-code:institutSec-S125C a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125C" ;
+    skos:prefLabel "Security and derivative dealers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Security and derivative dealers"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125C .
+
+
+sip-sdmx-code:institutSec-S125D a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125D" ;
+    skos:prefLabel "Specialised financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Specialised financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125D .
+
+
+sip-sdmx-code:institutSec-S125D1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125D1" ;
+    skos:prefLabel "Clearing houses, which are part of specialised financial corporations (deprecated)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Clearing houses, which are part of specialised financial corporations (deprecated)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125D1 .
+
+
+sip-sdmx-code:institutSec-S125E a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125E" ;
+    skos:prefLabel "Other OFIs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other OFIs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125E .
+
+
+sip-sdmx-code:institutSec-S125E1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125E1" ;
+    skos:prefLabel "Central clearing counterparties, which are part of other OFIs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central clearing counterparties, which are part of other OFIs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125E1 .
+
+
+sip-sdmx-code:institutSec-S125U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125U" ;
+    skos:prefLabel "Other financial intermediaries, except insurance corporations and pension funds (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial intermediaries, except insurance corporations and pension funds (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125U .
+
+
+sip-sdmx-code:institutSec-S125W a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S125W" ;
+    skos:prefLabel "Other financial intermediaries, excluding financial vehicle corporations engaged in securitizations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial intermediaries, excluding financial vehicle corporations engaged in securitizations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S125W .
+
+
+sip-sdmx-code:institutSec-S126 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S126" ;
+    skos:prefLabel "Financial auxiliaries"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial auxiliaries"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S126 .
+
+
+sip-sdmx-code:institutSec-S12601 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12601" ;
+    skos:prefLabel "Public financial auxiliaries"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public financial auxiliaries"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12601 .
+
+
+sip-sdmx-code:institutSec-S12602 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12602" ;
+    skos:prefLabel "National private financial auxiliaries"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private financial auxiliaries"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12602 .
+
+
+sip-sdmx-code:institutSec-S12603 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12603" ;
+    skos:prefLabel "Foreign controlled financial auxiliaries"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled financial auxiliaries"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12603 .
+
+
+sip-sdmx-code:institutSec-S126B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S126B" ;
+    skos:prefLabel "Head offices of financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Head offices of financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S126B .
+
+
+sip-sdmx-code:institutSec-S126C a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S126C" ;
+    skos:prefLabel "Payment institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Payment institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S126C .
+
+
+sip-sdmx-code:institutSec-S126U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S126U" ;
+    skos:prefLabel "Financial auxiliaries (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial auxiliaries (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S126U .
+
+
+sip-sdmx-code:institutSec-S127 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S127" ;
+    skos:prefLabel "Captive financial institutions and money lenders"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Captive financial institutions and money lenders"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S127 .
+
+
+sip-sdmx-code:institutSec-S12701 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12701" ;
+    skos:prefLabel "Public captive financial institutions and money lenders"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public captive financial institutions and money lenders"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12701 .
+
+
+sip-sdmx-code:institutSec-S12702 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12702" ;
+    skos:prefLabel "National private captive financial institutions and money lenders"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private captive financial institutions and money lenders"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12702 .
+
+
+sip-sdmx-code:institutSec-S12703 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12703" ;
+    skos:prefLabel "Foreign controlled captive financial institutions and money lenders"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled captive financial institutions and money lenders"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12703 .
+
+
+sip-sdmx-code:institutSec-S1271 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1271" ;
+    skos:prefLabel "Trusts, estate and agency accounts"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Trusts, estate and agency accounts"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1271 .
+
+
+sip-sdmx-code:institutSec-S1272 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1272" ;
+    skos:prefLabel "Corporate groups’ captive financial entities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Corporate groups’ captive financial entities"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1272 .
+
+
+sip-sdmx-code:institutSec-S1272A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1272A" ;
+    skos:prefLabel "Of which: Foreign owned SPE-type captives"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Of which: Foreign owned SPE-type captives"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1272A .
+
+
+sip-sdmx-code:institutSec-S1273 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1273" ;
+    skos:prefLabel "Other captive finance companies and money lenders"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other captive finance companies and money lenders"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1273 .
+
+
+sip-sdmx-code:institutSec-S1274 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1274" ;
+    skos:prefLabel "Other captive finance companies and money lenders (deprecated)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other captive finance companies and money lenders (deprecated)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1274 .
+
+
+sip-sdmx-code:institutSec-S127A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S127A" ;
+    skos:prefLabel "Holding companies"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Holding companies"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S127A .
+
+
+sip-sdmx-code:institutSec-S127U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S127U" ;
+    skos:prefLabel "Captive financial institutions and money lenders (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Captive financial institutions and money lenders (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S127U .
+
+
+sip-sdmx-code:institutSec-S128 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S128" ;
+    skos:prefLabel "Insurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Insurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S128 .
+
+
+sip-sdmx-code:institutSec-S12801 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12801" ;
+    skos:prefLabel "Public insurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public insurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12801 .
+
+
+sip-sdmx-code:institutSec-S12802 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12802" ;
+    skos:prefLabel "National private insurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private insurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12802 .
+
+
+sip-sdmx-code:institutSec-S12803 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12803" ;
+    skos:prefLabel "Foreign controlled insurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled insurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12803 .
+
+
+sip-sdmx-code:institutSec-S1281 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1281" ;
+    skos:prefLabel "Life Insurance Corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Life Insurance Corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1281 .
+
+
+sip-sdmx-code:institutSec-S1282 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1282" ;
+    skos:prefLabel "Non-life Insurance Corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-life Insurance Corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1282 .
+
+
+sip-sdmx-code:institutSec-S128A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S128A" ;
+    skos:prefLabel "Reinsurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Reinsurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S128A .
+
+
+sip-sdmx-code:institutSec-S128B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S128B" ;
+    skos:prefLabel "Life insurance corporations excluding reinsurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Life insurance corporations excluding reinsurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S128B .
+
+
+sip-sdmx-code:institutSec-S128C a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S128C" ;
+    skos:prefLabel "Non-life insurance corporations excluding reinsurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-life insurance corporations excluding reinsurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S128C .
+
+
+sip-sdmx-code:institutSec-S128D a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S128D" ;
+    skos:prefLabel "Composite life and non-life insurance corporations excluding reinsurance corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Composite life and non-life insurance corporations excluding reinsurance corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S128D .
+
+
+sip-sdmx-code:institutSec-S128U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S128U" ;
+    skos:prefLabel "Insurance corporations (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Insurance corporations (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S128U .
+
+
+sip-sdmx-code:institutSec-S129 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S129" ;
+    skos:prefLabel "Pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Pension funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S129 .
+
+
+sip-sdmx-code:institutSec-S12901 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12901" ;
+    skos:prefLabel "Public pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public pension funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12901 .
+
+
+sip-sdmx-code:institutSec-S12902 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12902" ;
+    skos:prefLabel "National private pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private pension funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12902 .
+
+
+sip-sdmx-code:institutSec-S12903 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12903" ;
+    skos:prefLabel "Foreign controlled pension funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled pension funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12903 .
+
+
+sip-sdmx-code:institutSec-S129A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S129A" ;
+    skos:prefLabel "Defined benefit funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Defined benefit funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S129A .
+
+
+sip-sdmx-code:institutSec-S129B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S129B" ;
+    skos:prefLabel "Defined contribution funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Defined contribution funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S129B .
+
+
+sip-sdmx-code:institutSec-S129U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S129U" ;
+    skos:prefLabel "Pension funds (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Pension funds (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S129U .
+
+
+sip-sdmx-code:institutSec-S12A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12A" ;
+    skos:prefLabel "Banks and other financial institutions headquartered in the reporting country or currency area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Banks and other financial institutions headquartered in the reporting country or currency area"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12A .
+
+
+sip-sdmx-code:institutSec-S12B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12B" ;
+    skos:prefLabel "Banks and other financial institutions headquartered outside the reporting country or currency area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Banks and other financial institutions headquartered outside the reporting country or currency area"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12B .
+
+
+sip-sdmx-code:institutSec-S12C a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12C" ;
+    skos:prefLabel "Deposit taking corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Deposit taking corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12C .
+
+
+sip-sdmx-code:institutSec-S12D a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12D" ;
+    skos:prefLabel "Financial corporations other than central banks"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial corporations other than central banks"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12D .
+
+
+sip-sdmx-code:institutSec-S12DO a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12DO" ;
+    skos:prefLabel "Domestically controlled financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Domestically controlled financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12DO .
+
+
+sip-sdmx-code:institutSec-S12E a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12E" ;
+    skos:prefLabel "Electronic money institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electronic money institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12E .
+
+
+sip-sdmx-code:institutSec-S12K a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12K" ;
+    skos:prefLabel "Monetary financial institutions (MFI)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monetary financial institutions (MFI)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """MFIs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12K .
+
+
+sip-sdmx-code:institutSec-S12KU a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12KU" ;
+    skos:prefLabel "Monetary financial institutions (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monetary financial institutions (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12KU .
+
+
+sip-sdmx-code:institutSec-S12L a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12L" ;
+    skos:prefLabel "Investment Funds (MMFs and non-MMFs)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Investment Funds (MMFs and non-MMFs)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial intermediaries"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12L .
+
+
+sip-sdmx-code:institutSec-S12L1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12L1" ;
+    skos:prefLabel "Real estate funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Real estate funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12L1 .
+
+
+sip-sdmx-code:institutSec-S12L2 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12L2" ;
+    skos:prefLabel "Equity funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Equity funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12L2 .
+
+
+sip-sdmx-code:institutSec-S12L3 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12L3" ;
+    skos:prefLabel "Bond funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Bond funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12L3 .
+
+
+sip-sdmx-code:institutSec-S12L4 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12L4" ;
+    skos:prefLabel "Mixed funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Mixed funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12L4 .
+
+
+sip-sdmx-code:institutSec-S12L5 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12L5" ;
+    skos:prefLabel "Hedge funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Hedge funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12L5 .
+
+
+sip-sdmx-code:institutSec-S12L9 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12L9" ;
+    skos:prefLabel "Other funds (other than equity, bond, mixed, real estate and hedge funds)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other funds (other than equity, bond, mixed, real estate and hedge funds)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12L9 .
+
+
+sip-sdmx-code:institutSec-S12LO a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12LO" ;
+    skos:prefLabel "Open-end Investment Funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Open-end Investment Funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12LO .
+
+
+sip-sdmx-code:institutSec-S12LO1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12LO1" ;
+    skos:prefLabel "Open-end Real Estate Funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Open-end Real Estate Funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12LO1 .
+
+
+sip-sdmx-code:institutSec-S12LO2 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12LO2" ;
+    skos:prefLabel "Open-end Equity funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Open-end Equity funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12LO2 .
+
+
+sip-sdmx-code:institutSec-S12LO3 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12LO3" ;
+    skos:prefLabel "Open-end Bond funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Open-end Bond funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12LO3 .
+
+
+sip-sdmx-code:institutSec-S12LO4 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12LO4" ;
+    skos:prefLabel "Open-end Mixed funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Open-end Mixed funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12LO4 .
+
+
+sip-sdmx-code:institutSec-S12LO5 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12LO5" ;
+    skos:prefLabel "Open-end Hedge funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Open-end Hedge funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12LO5 .
+
+
+sip-sdmx-code:institutSec-S12LO9 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12LO9" ;
+    skos:prefLabel "Other open-end funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other open-end funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12LO9 .
+
+
+sip-sdmx-code:institutSec-S12M a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12M" ;
+    skos:prefLabel "Financial corporations other than MFIs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial corporations other than MFIs"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MFI financial institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12M .
+
+
+sip-sdmx-code:institutSec-S12N a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12N" ;
+    skos:prefLabel "Other financial institutions (Financial corporations other than MFIs, insurance corporations, pension funds and financial auxiliaries)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial institutions (Financial corporations other than MFIs, insurance corporations, pension funds and financial auxiliaries)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12N .
+
+
+sip-sdmx-code:institutSec-S12O a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12O" ;
+    skos:prefLabel "Other financial institutions (Financial corporations other than MFIs, insurance corporations, pension funds and non MMFs Investment Funds)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial institutions (Financial corporations other than MFIs, insurance corporations, pension funds and non MMFs Investment Funds)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """MFIs other than building and loan associations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12O .
+
+
+sip-sdmx-code:institutSec-S12P a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12P" ;
+    skos:prefLabel "Other financial institutions (Financial corporations other than MFIs, insurance corporations and pension funds)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial institutions (Financial corporations other than MFIs, insurance corporations and pension funds)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial intermediaries, including financial auxiliaries"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12P .
+
+
+sip-sdmx-code:institutSec-S12PU a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12PU" ;
+    skos:prefLabel "Other Financial Institutions  (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other Financial Institutions  (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12PU .
+
+
+sip-sdmx-code:institutSec-S12Q a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12Q" ;
+    skos:prefLabel "Insurance corporations and Pension Funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Insurance corporations and Pension Funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12Q .
+
+
+sip-sdmx-code:institutSec-S12QU a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12QU" ;
+    skos:prefLabel "Other insurance corporations and pension funds (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other insurance corporations and pension funds (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12QU .
+
+
+sip-sdmx-code:institutSec-S12R a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12R" ;
+    skos:prefLabel "Other financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12R .
+
+
+sip-sdmx-code:institutSec-S12R01 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12R01" ;
+    skos:prefLabel "Other public financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other public financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12R01 .
+
+
+sip-sdmx-code:institutSec-S12R0P a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12R0P" ;
+    skos:prefLabel "Other private financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other private financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12R0P .
+
+
+sip-sdmx-code:institutSec-S12S a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12S" ;
+    skos:prefLabel "Other Forms of Institutional Savings"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other Forms of Institutional Savings"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12S .
+
+
+sip-sdmx-code:institutSec-S12SP a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12SP" ;
+    skos:prefLabel "Financial corporations, SPEs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial corporations, SPEs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12SP .
+
+
+sip-sdmx-code:institutSec-S12T a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12T" ;
+    skos:prefLabel "Monetary financial institutions other than central bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monetary financial institutions other than central bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12T .
+
+
+sip-sdmx-code:institutSec-S12U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12U" ;
+    skos:prefLabel "Financial corporations other than the central bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial corporations other than the central bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12U .
+
+
+sip-sdmx-code:institutSec-S12V a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S12V" ;
+    skos:prefLabel "Financial corporations other than central banks and credit institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial corporations other than central banks and credit institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S12V .
+
+
+sip-sdmx-code:institutSec-S13 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13" ;
+    skos:prefLabel "General government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """General government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13 .
+
+
+sip-sdmx-code:institutSec-S131 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S131" ;
+    skos:prefLabel "General government excluding social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government excluding social security"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S131 .
+
+
+sip-sdmx-code:institutSec-S1311 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1311" ;
+    skos:prefLabel "Central government excluding social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central government excluding social security"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1311 .
+
+
+sip-sdmx-code:institutSec-S13111 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13111" ;
+    skos:prefLabel "Central government, budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central government, budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13111 .
+
+
+sip-sdmx-code:institutSec-S13112 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13112" ;
+    skos:prefLabel "Central government, extra-budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central government, extra-budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13112 .
+
+
+sip-sdmx-code:institutSec-S1311B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1311B" ;
+    skos:prefLabel "Budgetary Central Government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Budgetary Central Government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1311B .
+
+
+sip-sdmx-code:institutSec-S1312 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1312" ;
+    skos:prefLabel "State government excluding social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State government excluding social security"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1312 .
+
+
+sip-sdmx-code:institutSec-S13121 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13121" ;
+    skos:prefLabel "State government, budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State government, budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13121 .
+
+
+sip-sdmx-code:institutSec-S13122 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13122" ;
+    skos:prefLabel "State government, extra-budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State government, extra-budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13122 .
+
+
+sip-sdmx-code:institutSec-S1313 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1313" ;
+    skos:prefLabel "Local government excluding social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Local government excluding social security"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Local government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1313 .
+
+
+sip-sdmx-code:institutSec-S13131 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13131" ;
+    skos:prefLabel "Local government, budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Local government, budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13131 .
+
+
+sip-sdmx-code:institutSec-S13132 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13132" ;
+    skos:prefLabel "Local government, extra-budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Local government, extra-budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13132 .
+
+
+sip-sdmx-code:institutSec-S1314 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1314" ;
+    skos:prefLabel "Social security funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Social security funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1314 .
+
+
+sip-sdmx-code:institutSec-S13141 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13141" ;
+    skos:prefLabel "Social security funds, budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Social security funds, budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13141 .
+
+
+sip-sdmx-code:institutSec-S13142 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13142" ;
+    skos:prefLabel "Social security funds, extra-budgetary units"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Social security funds, extra-budgetary units"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13142 .
+
+
+sip-sdmx-code:institutSec-S1315 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1315" ;
+    skos:prefLabel "European institutions and bodies (EU accounts)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """European institutions and bodies (EU accounts)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1315 .
+
+
+sip-sdmx-code:institutSec-S1321 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1321" ;
+    skos:prefLabel "Central government including social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central government including social security"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """the institutions of the EU (general government)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1321 .
+
+
+sip-sdmx-code:institutSec-S1322 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1322" ;
+    skos:prefLabel "State government including social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State government including social security"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1322 .
+
+
+sip-sdmx-code:institutSec-S1323 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1323" ;
+    skos:prefLabel "Local government including social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Local government including social security"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1323 .
+
+
+sip-sdmx-code:institutSec-S133 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S133" ;
+    skos:prefLabel "General government non profit institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government non profit institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S133 .
+
+
+sip-sdmx-code:institutSec-S1331 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1331" ;
+    skos:prefLabel "Central government non profit institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central government non profit institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1331 .
+
+
+sip-sdmx-code:institutSec-S1332 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1332" ;
+    skos:prefLabel "State government non profit institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State government non profit institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1332 .
+
+
+sip-sdmx-code:institutSec-S1333 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1333" ;
+    skos:prefLabel "Local government non profit institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Local government non profit institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1333 .
+
+
+sip-sdmx-code:institutSec-S134 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S134" ;
+    skos:prefLabel "General government involved in monetary policy operations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government involved in monetary policy operations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S134 .
+
+
+sip-sdmx-code:institutSec-S13K a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13K" ;
+    skos:prefLabel "General government, except social security funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government, except social security funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13K .
+
+
+sip-sdmx-code:institutSec-S13L a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13L" ;
+    skos:prefLabel "Central and state government excluding social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central and state government excluding social security"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central and state government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13L .
+
+
+sip-sdmx-code:institutSec-S13M a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13M" ;
+    skos:prefLabel "State and local government excluding social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State and local government excluding social security"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """State and local government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13M .
+
+
+sip-sdmx-code:institutSec-S13O a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13O" ;
+    skos:prefLabel "General government, except central government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """General government, except central government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13O .
+
+
+sip-sdmx-code:institutSec-S13P a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13P" ;
+    skos:prefLabel "General government, except state government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government, except state government"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General Government and Institutions of the EU (S13+S212)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13P .
+
+
+sip-sdmx-code:institutSec-S13R a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13R" ;
+    skos:prefLabel "General government, except local government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government, except local government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13R .
+
+
+sip-sdmx-code:institutSec-S13T a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13T" ;
+    skos:prefLabel "General government, except social security funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government, except social security funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13T .
+
+
+sip-sdmx-code:institutSec-S13U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S13U" ;
+    skos:prefLabel "Other General Government (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other General Government (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S13U .
+
+
+sip-sdmx-code:institutSec-S14 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S14" ;
+    skos:prefLabel "Households"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Households"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S14 .
+
+
+sip-sdmx-code:institutSec-S141 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S141" ;
+    skos:prefLabel "Employers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employers"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S141 .
+
+
+sip-sdmx-code:institutSec-S142 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S142" ;
+    skos:prefLabel "Own account workers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Own account workers"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S142 .
+
+
+sip-sdmx-code:institutSec-S143 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S143" ;
+    skos:prefLabel "Employees"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employees"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S143 .
+
+
+sip-sdmx-code:institutSec-S144 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S144" ;
+    skos:prefLabel "Recipients of property and transfer income"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Recipients of property and transfer income"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S144 .
+
+
+sip-sdmx-code:institutSec-S1441 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1441" ;
+    skos:prefLabel "Recipients of property income"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Recipients of property income"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1441 .
+
+
+sip-sdmx-code:institutSec-S1442 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1442" ;
+    skos:prefLabel "Recipients of pensions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Recipients of pensions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1442 .
+
+
+sip-sdmx-code:institutSec-S1443 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1443" ;
+    skos:prefLabel "Recipients of other transfers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Recipients of other transfers"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1443 .
+
+
+sip-sdmx-code:institutSec-S15 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S15" ;
+    skos:prefLabel "Non profit institutions serving households"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Non profit institutions serving households"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S15 .
+
+
+sip-sdmx-code:institutSec-S15002 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S15002" ;
+    skos:prefLabel "National private"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S15002 .
+
+
+sip-sdmx-code:institutSec-S15003 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S15003" ;
+    skos:prefLabel "Foreign controlled"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign controlled"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S15003 .
+
+
+sip-sdmx-code:institutSec-S1A a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1A" ;
+    skos:prefLabel "Affiliates"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Affiliates"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1A .
+
+
+sip-sdmx-code:institutSec-S1B a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1B" ;
+    skos:prefLabel "Not affiliates"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Not affiliates"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1B .
+
+
+sip-sdmx-code:institutSec-S1F a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1F" ;
+    skos:prefLabel "Financial intermediaries (CDIS)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial intermediaries (CDIS)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1F .
+
+
+sip-sdmx-code:institutSec-S1G a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1G" ;
+    skos:prefLabel "All resident sectors excluding financial intermediaries (CDIS)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """All resident sectors excluding financial intermediaries (CDIS)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1G .
+
+
+sip-sdmx-code:institutSec-S1H a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1H" ;
+    skos:prefLabel "Issuer headquartered in the reporting country or currency area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Issuer headquartered in the reporting country or currency area"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1H .
+
+
+sip-sdmx-code:institutSec-S1K a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1K" ;
+    skos:prefLabel "Corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1K .
+
+
+sip-sdmx-code:institutSec-S1K1 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1K1" ;
+    skos:prefLabel "Public corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1K1 .
+
+
+sip-sdmx-code:institutSec-S1KK a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1KK" ;
+    skos:prefLabel "Central banks and general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Central banks and general government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1KK .
+
+
+sip-sdmx-code:institutSec-S1KP a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1KP" ;
+    skos:prefLabel "Private corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Private corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1KP .
+
+
+sip-sdmx-code:institutSec-S1L a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1L" ;
+    skos:prefLabel "General government, households and non profit institutions serving households"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """General government, households and non profit institutions serving households"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1L .
+
+
+sip-sdmx-code:institutSec-S1M a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1M" ;
+    skos:prefLabel "Households and non profit institutions serving households (NPISH)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Households and non profit institutions serving households (NPISH)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1M .
+
+
+sip-sdmx-code:institutSec-S1MU a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1MU" ;
+    skos:prefLabel "Other households and non-profit institutions serving households (sub-sector not identified)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other households and non-profit institutions serving households (sub-sector not identified)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1MU .
+
+
+sip-sdmx-code:institutSec-S1N a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1N" ;
+    skos:prefLabel "Not sectorised"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Not sectorised"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1N .
+
+
+sip-sdmx-code:institutSec-S1O a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1O" ;
+    skos:prefLabel "Other sectors than MFIs and central government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than MFIs and central government"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total economy, except MFIs and Central Government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1O .
+
+
+sip-sdmx-code:institutSec-S1P a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1P" ;
+    skos:prefLabel "Other sectors than MFIs and general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than MFIs and general government"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total economy, except MFIs and General Government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1P .
+
+
+sip-sdmx-code:institutSec-S1Q a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1Q" ;
+    skos:prefLabel "Other sectors than MFIs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than MFIs"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MFIs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1Q .
+
+
+sip-sdmx-code:institutSec-S1R a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1R" ;
+    skos:prefLabel "Non financial sectors, except households"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non financial sectors, except households"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-MFI corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1R .
+
+
+sip-sdmx-code:institutSec-S1S a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1S" ;
+    skos:prefLabel "Non-financial corporations, general government and households and NPISH"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial corporations, general government and households and NPISH"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial sectors"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1S .
+
+
+sip-sdmx-code:institutSec-S1SP a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1SP" ;
+    skos:prefLabel "Total economy, SPEs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total economy, SPEs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1SP .
+
+
+sip-sdmx-code:institutSec-S1SSP a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1SSP" ;
+    skos:prefLabel "Non-financial corporations, SPEs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial corporations, SPEs"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1SSP .
+
+
+sip-sdmx-code:institutSec-S1T a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1T" ;
+    skos:prefLabel "Non-financial corporations and general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial corporations and general government"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial sectors, except households and non-profit institutions serving households"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1T .
+
+
+sip-sdmx-code:institutSec-S1U a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1U" ;
+    skos:prefLabel "Non financial sectors, except central government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non financial sectors, except central government"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial sectors, except central government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1U .
+
+
+sip-sdmx-code:institutSec-S1V a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1V" ;
+    skos:prefLabel "Non financial corporations, households and NPISH"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non financial corporations, households and NPISH"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-financial private sectors"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1V .
+
+
+sip-sdmx-code:institutSec-S1W a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1W" ;
+    skos:prefLabel "Other sectors than general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than general government"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total economy, except General Government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1W .
+
+
+sip-sdmx-code:institutSec-S1W_S2 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1W_S2" ;
+    skos:prefLabel "All sectors except general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """All sectors except general government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1W_S2 .
+
+
+sip-sdmx-code:institutSec-S1X a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1X" ;
+    skos:prefLabel "Monetary authorities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monetary authorities"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1X .
+
+
+sip-sdmx-code:institutSec-S1XA a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1XA" ;
+    skos:prefLabel "Monetary authorities and international organizations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Monetary authorities and international organizations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1XA .
+
+
+sip-sdmx-code:institutSec-S1Y a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1Y" ;
+    skos:prefLabel "Other sectors than monetary authorities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than monetary authorities"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1Y .
+
+
+sip-sdmx-code:institutSec-S1Z a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1Z" ;
+    skos:prefLabel "Sectors other than deposit-taking corporations and general government (Other Sectors - BPM6)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sectors other than deposit-taking corporations and general government (Other Sectors - BPM6)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1Z .
+
+
+sip-sdmx-code:institutSec-S1ZK a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZK" ;
+    skos:prefLabel "Other sectors than central bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than central bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZK .
+
+
+sip-sdmx-code:institutSec-S1ZL a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZL" ;
+    skos:prefLabel "Other sectors than central bank and general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than central bank and general government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZL .
+
+
+sip-sdmx-code:institutSec-S1ZM a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZM" ;
+    skos:prefLabel "Other sectors than central government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than central government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZM .
+
+
+sip-sdmx-code:institutSec-S1ZN a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZN" ;
+    skos:prefLabel "Other sectors than state government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than state government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZN .
+
+
+sip-sdmx-code:institutSec-S1ZO a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZO" ;
+    skos:prefLabel "Other sectors including non-financial corporations, money market funds, non-MMF investment funds, OFIs, insurance corporations, pension funds, general government or a central bank"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors including non-financial corporations, money market funds, non-MMF investment funds, OFIs, insurance corporations, pension funds, general government or a central bank"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZO .
+
+
+sip-sdmx-code:institutSec-S1ZP a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZP" ;
+    skos:prefLabel "Other sectors than local government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than local government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZP .
+
+
+sip-sdmx-code:institutSec-S1ZQ a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZQ" ;
+    skos:prefLabel "Other sectors than social security funds"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than social security funds"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZQ .
+
+
+sip-sdmx-code:institutSec-S1ZR a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZR" ;
+    skos:prefLabel "Other sectors than financial corporations and general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other sectors than financial corporations and general government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZR .
+
+
+sip-sdmx-code:institutSec-S1ZS a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZS" ;
+    skos:prefLabel "Public sector"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public sector"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZS .
+
+
+sip-sdmx-code:institutSec-S1ZT a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZT" ;
+    skos:prefLabel "National private financial and non financial corporations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """National private financial and non financial corporations"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZT .
+
+
+sip-sdmx-code:institutSec-S1ZU a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZU" ;
+    skos:prefLabel "Sectors other than central bank, credit institutions and general government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sectors other than central bank, credit institutions and general government"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZU .
+
+
+sip-sdmx-code:institutSec-S1ZV a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S1ZV" ;
+    skos:prefLabel "All sectors other than households and NPISH"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """All sectors other than households and NPISH"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S1ZV .
+
+
+sip-sdmx-code:institutSec-S212 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S212" ;
+    skos:prefLabel "Institutions and bodies of the European Union (ESA GFS concept)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Institutions and bodies of the European Union (ESA GFS concept)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S212 .
+
+
+sip-sdmx-code:institutSec-S212_S13 a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "S212_S13" ;
+    skos:prefLabel "General government and institutions of the European Union (ESA GFS concept)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government and institutions of the European Union (ESA GFS concept)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-S212_S13 .
+
+
+sip-sdmx-code:institutSec-SZP a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "SZP" ;
+    skos:prefLabel "Other than general government, clearing and settlement organisations and other financial institutions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other than general government, clearing and settlement organisations and other financial institutions"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-SZP .
+
+
+sip-sdmx-code:institutSec-SZU a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "SZU" ;
+    skos:prefLabel "Institutions of the European Union (ESA GFS concept) (deprecated)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Institutions of the European Union (ESA GFS concept) (deprecated)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Institutions of the European Union (ESA GFS concept)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-SZU .
+
+
+sip-sdmx-code:institutSec-SZV a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "SZV" ;
+    skos:prefLabel "General government and institutions of the European Union (ESA GFS concept)(deprecated)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government and institutions of the European Union (ESA GFS concept)(deprecated)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government and institutions of the European Union (ESA GFS concept)"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-SZV .
+
+
+sip-sdmx-code:institutSec-SZX a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "SZX" ;
+    skos:prefLabel "Institutions financed by the European Union (EU) budget (including the European Development Fund (EDF))"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Institutions financed by the European Union (EU) budget (including the European Development Fund (EDF))"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-SZX .
+
+
+sip-sdmx-code:institutSec-SZY a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "SZY" ;
+    skos:prefLabel "General government and institutions financed by the European Union (EU) budget (including the European Development Fund (EDF))"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General government and institutions financed by the European Union (EU) budget (including the European Development Fund (EDF))"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-SZY .
+
+
+sip-sdmx-code:institutSec-_Z a skos:Concept, sip-sdmx-code:InstitutSec;
+    skos:topConceptOf sip-sdmx-code:institutSec ;
+    skos:inScheme sip-sdmx-code:institutSec ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:institutSec skos:hasTopConcept sip-sdmx-code:institutSec-_Z .
+

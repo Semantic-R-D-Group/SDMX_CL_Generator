@@ -1,0 +1,104 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_NATURE Scheme Definition
+#####################################################
+
+sip-sdmx-code:nature a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Nature code list - codelist scheme"@en ;
+    rdfs:label "Nature code list - codelist scheme"@en ;
+    skos:notation "CL_NATURE" ;
+    skos:definition "A reference nature codelist based on IAEG-SDGs:CL_NATURE(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_NATURE/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:Nature .
+
+sip-sdmx-code:Nature a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Nature code list - codelist class"@en ;
+    rdfs:label "Nature code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature .
+
+
+########################################
+# CL_NATURE Codes
+########################################
+    
+sip-sdmx-code:nature-C a skos:Concept, sip-sdmx-code:Nature;
+    skos:topConceptOf sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature ;
+    skos:notation "C" ;
+    skos:prefLabel "Country Data"@en ;
+    rdfs:label "Country Data"@en .
+
+sip-sdmx-code:nature skos:hasTopConcept sip-sdmx-code:nature-C .
+
+
+sip-sdmx-code:nature-CA a skos:Concept, sip-sdmx-code:Nature;
+    skos:topConceptOf sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature ;
+    skos:notation "CA" ;
+    skos:prefLabel "Country Adjusted"@en ;
+    rdfs:label "Country Adjusted"@en .
+
+sip-sdmx-code:nature skos:hasTopConcept sip-sdmx-code:nature-CA .
+
+
+sip-sdmx-code:nature-E a skos:Concept, sip-sdmx-code:Nature;
+    skos:topConceptOf sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature ;
+    skos:notation "E" ;
+    skos:prefLabel "Estimated"@en ;
+    rdfs:label "Estimated"@en .
+
+sip-sdmx-code:nature skos:hasTopConcept sip-sdmx-code:nature-E .
+
+
+sip-sdmx-code:nature-G a skos:Concept, sip-sdmx-code:Nature;
+    skos:topConceptOf sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature ;
+    skos:notation "G" ;
+    skos:prefLabel "Global monitoring data"@en ;
+    rdfs:label "Global monitoring data"@en .
+
+sip-sdmx-code:nature skos:hasTopConcept sip-sdmx-code:nature-G .
+
+
+sip-sdmx-code:nature-M a skos:Concept, sip-sdmx-code:Nature;
+    skos:topConceptOf sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature ;
+    skos:notation "M" ;
+    skos:prefLabel "Modeled"@en ;
+    rdfs:label "Modeled"@en .
+
+sip-sdmx-code:nature skos:hasTopConcept sip-sdmx-code:nature-M .
+
+
+sip-sdmx-code:nature-N a skos:Concept, sip-sdmx-code:Nature;
+    skos:topConceptOf sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature ;
+    skos:notation "N" ;
+    skos:prefLabel "Non-relevant"@en ;
+    rdfs:label "Non-relevant"@en .
+
+sip-sdmx-code:nature skos:hasTopConcept sip-sdmx-code:nature-N .
+
+
+sip-sdmx-code:nature-_X a skos:Concept, sip-sdmx-code:Nature;
+    skos:topConceptOf sip-sdmx-code:nature ;
+    skos:inScheme sip-sdmx-code:nature ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not Available"@en ;
+    rdfs:label "Not Available"@en .
+
+sip-sdmx-code:nature skos:hasTopConcept sip-sdmx-code:nature-_X .
+

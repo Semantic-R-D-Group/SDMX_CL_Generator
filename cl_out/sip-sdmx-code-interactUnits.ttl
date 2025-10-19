@@ -1,0 +1,1576 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_INTERACTUNITS Scheme Definition
+#####################################################
+
+sip-sdmx-code:interactUnits a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Units interacting with the environment - codelist scheme"@en ;
+    rdfs:label "Units interacting with the environment - codelist scheme"@en ;
+    skos:notation "CL_INTERACTUNITS" ;
+    skos:definition "A reference interactUnits codelist based on ESTAT:CL_INTERACTORS(1.3)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_INTERACTORS/1.3> ;
+    skos:note """ESTAT:CL_INTERACTORS(1.3): (emitting green house gases and air pollutants, suppliers / consumers of energy, water, natural resources)
+Covers ISIC/NACE, households and Total"""@en ;
+    rdfs:seeAlso sip-sdmx-code:InteractUnits .
+
+sip-sdmx-code:InteractUnits a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Units interacting with the environment - codelist class"@en ;
+    rdfs:label "Units interacting with the environment - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits .
+
+
+########################################
+# CL_INTERACTUNITS Codes
+########################################
+    
+sip-sdmx-code:interactUnits-A a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "A" ;
+    skos:prefLabel "Agriculture, forestry and fishing"@en ;
+    rdfs:label "Agriculture, forestry and fishing"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-A .
+
+
+sip-sdmx-code:interactUnits-A01 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "A01" ;
+    skos:prefLabel "Crop and animal production, hunting and related service activities"@en ;
+    rdfs:label "Crop and animal production, hunting and related service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-A01 .
+
+
+sip-sdmx-code:interactUnits-A02 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "A02" ;
+    skos:prefLabel "Forestry and logging"@en ;
+    rdfs:label "Forestry and logging"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-A02 .
+
+
+sip-sdmx-code:interactUnits-A03 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "A03" ;
+    skos:prefLabel "Fishing and aquaculture"@en ;
+    rdfs:label "Fishing and aquaculture"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-A03 .
+
+
+sip-sdmx-code:interactUnits-ATU a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "ATU" ;
+    skos:prefLabel "All ISIC/NACE activities"@en ;
+    rdfs:label "All ISIC/NACE activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-ATU .
+
+
+sip-sdmx-code:interactUnits-ATU_HH a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "ATU_HH" ;
+    skos:prefLabel "All ISIC/NACE and households activities"@en ;
+    rdfs:label "All ISIC/NACE and households activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-ATU_HH .
+
+
+sip-sdmx-code:interactUnits-A_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "A_X" ;
+    skos:prefLabel "Agriculture, forestry and fishing – Non specified"@en ;
+    rdfs:label "Agriculture, forestry and fishing – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-A_X .
+
+
+sip-sdmx-code:interactUnits-B a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "B" ;
+    skos:prefLabel "Mining and quarrying"@en ;
+    rdfs:label "Mining and quarrying"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-B .
+
+
+sip-sdmx-code:interactUnits-B05 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "B05" ;
+    skos:prefLabel "Mining of coal and lignite"@en ;
+    rdfs:label "Mining of coal and lignite"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-B05 .
+
+
+sip-sdmx-code:interactUnits-B06 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "B06" ;
+    skos:prefLabel "Extraction of crude petroleum and natural gas"@en ;
+    rdfs:label "Extraction of crude petroleum and natural gas"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-B06 .
+
+
+sip-sdmx-code:interactUnits-B07 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "B07" ;
+    skos:prefLabel "Mining of metal ores"@en ;
+    rdfs:label "Mining of metal ores"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-B07 .
+
+
+sip-sdmx-code:interactUnits-B07_08 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "B07_08" ;
+    skos:prefLabel "Mining of metal ores, Other mining and quarrying"@en ;
+    rdfs:label "Mining of metal ores, Other mining and quarrying"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-B07_08 .
+
+
+sip-sdmx-code:interactUnits-B08 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "B08" ;
+    skos:prefLabel "Other mining and quarrying"@en ;
+    rdfs:label "Other mining and quarrying"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-B08 .
+
+
+sip-sdmx-code:interactUnits-B09 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "B09" ;
+    skos:prefLabel "Mining support service activities"@en ;
+    rdfs:label "Mining support service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-B09 .
+
+
+sip-sdmx-code:interactUnits-C a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C" ;
+    skos:prefLabel "Manufacturing"@en ;
+    rdfs:label "Manufacturing"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C .
+
+
+sip-sdmx-code:interactUnits-C10 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C10" ;
+    skos:prefLabel "Manufacture of food products"@en ;
+    rdfs:label "Manufacture of food products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C10 .
+
+
+sip-sdmx-code:interactUnits-C10T12 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C10T12" ;
+    skos:prefLabel "Manufacture of food products; beverages and tobacco products"@en ;
+    rdfs:label "Manufacture of food products; beverages and tobacco products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C10T12 .
+
+
+sip-sdmx-code:interactUnits-C11 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C11" ;
+    skos:prefLabel "Manufacture of beverages"@en ;
+    rdfs:label "Manufacture of beverages"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C11 .
+
+
+sip-sdmx-code:interactUnits-C12 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C12" ;
+    skos:prefLabel "Manufacture of tobacco products"@en ;
+    rdfs:label "Manufacture of tobacco products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C12 .
+
+
+sip-sdmx-code:interactUnits-C13 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C13" ;
+    skos:prefLabel "Manufacture of textiles"@en ;
+    rdfs:label "Manufacture of textiles"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C13 .
+
+
+sip-sdmx-code:interactUnits-C13T15 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C13T15" ;
+    skos:prefLabel "Manufacture of textiles, wearing apparel, leather and related products"@en ;
+    rdfs:label "Manufacture of textiles, wearing apparel, leather and related products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C13T15 .
+
+
+sip-sdmx-code:interactUnits-C13_14 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C13_14" ;
+    skos:prefLabel "Manufacture of textiles and wearing apparel"@en ;
+    rdfs:label "Manufacture of textiles and wearing apparel"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C13_14 .
+
+
+sip-sdmx-code:interactUnits-C14 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C14" ;
+    skos:prefLabel "Manufacture of wearing apparel"@en ;
+    rdfs:label "Manufacture of wearing apparel"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C14 .
+
+
+sip-sdmx-code:interactUnits-C15 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C15" ;
+    skos:prefLabel "Manufacture of leather and related products"@en ;
+    rdfs:label "Manufacture of leather and related products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C15 .
+
+
+sip-sdmx-code:interactUnits-C16 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C16" ;
+    skos:prefLabel "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"@en ;
+    rdfs:label "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C16 .
+
+
+sip-sdmx-code:interactUnits-C16T18 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C16T18" ;
+    skos:prefLabel "Manufacture of wood, paper, and their products; printing and reproduction of recorded media"@en ;
+    rdfs:label "Manufacture of wood, paper, and their products; printing and reproduction of recorded media"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C16T18 .
+
+
+sip-sdmx-code:interactUnits-C17 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C17" ;
+    skos:prefLabel "Manufacture of paper and paper products"@en ;
+    rdfs:label "Manufacture of paper and paper products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C17 .
+
+
+sip-sdmx-code:interactUnits-C18 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C18" ;
+    skos:prefLabel "Printing and reproduction of recorded media"@en ;
+    rdfs:label "Printing and reproduction of recorded media"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C18 .
+
+
+sip-sdmx-code:interactUnits-C19 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C19" ;
+    skos:prefLabel "Manufacture of coke and refined petroleum products"@en ;
+    rdfs:label "Manufacture of coke and refined petroleum products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C19 .
+
+
+sip-sdmx-code:interactUnits-C20 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C20" ;
+    skos:prefLabel "Manufacture of chemicals and chemical products"@en ;
+    rdfs:label "Manufacture of chemicals and chemical products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C20 .
+
+
+sip-sdmx-code:interactUnits-C21 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C21" ;
+    skos:prefLabel "Manufacture of basic pharmaceutical products and pharmaceutical preparations"@en ;
+    rdfs:label "Manufacture of basic pharmaceutical products and pharmaceutical preparations"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C21 .
+
+
+sip-sdmx-code:interactUnits-C22 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C22" ;
+    skos:prefLabel "Manufacture of rubber and plastic products"@en ;
+    rdfs:label "Manufacture of rubber and plastic products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C22 .
+
+
+sip-sdmx-code:interactUnits-C22_23 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C22_23" ;
+    skos:prefLabel "Manufacture of rubber and plastic products and other non-metallic mineral products"@en ;
+    rdfs:label "Manufacture of rubber and plastic products and other non-metallic mineral products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C22_23 .
+
+
+sip-sdmx-code:interactUnits-C23 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C23" ;
+    skos:prefLabel "Manufacture of other non-metallic mineral products"@en ;
+    rdfs:label "Manufacture of other non-metallic mineral products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C23 .
+
+
+sip-sdmx-code:interactUnits-C2394 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C2394" ;
+    skos:prefLabel "Manufacture of cement, lime and plaster"@en ;
+    rdfs:label "Manufacture of cement, lime and plaster"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C2394 .
+
+
+sip-sdmx-code:interactUnits-C24 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C24" ;
+    skos:prefLabel "Manufacture of basic metals"@en ;
+    rdfs:label "Manufacture of basic metals"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C24 .
+
+
+sip-sdmx-code:interactUnits-C241_2431 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C241_2431" ;
+    skos:prefLabel "Manufacture of basic iron and steel, Casting of iron and steel"@en ;
+    rdfs:label "Manufacture of basic iron and steel, Casting of iron and steel"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C241_2431 .
+
+
+sip-sdmx-code:interactUnits-C242_2432 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C242_2432" ;
+    skos:prefLabel "Manufacture of basic precious and other non-ferrous metals, Casting of non-ferrous metals"@en ;
+    rdfs:label "Manufacture of basic precious and other non-ferrous metals, Casting of non-ferrous metals"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C242_2432 .
+
+
+sip-sdmx-code:interactUnits-C24_25 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C24_25" ;
+    skos:prefLabel "Manufacture of basic metals and fabricated metal products, except machinery and equipment"@en ;
+    rdfs:label "Manufacture of basic metals and fabricated metal products, except machinery and equipment"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C24_25 .
+
+
+sip-sdmx-code:interactUnits-C25 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C25" ;
+    skos:prefLabel "Manufacture of fabricated metal products, except machinery and equipment"@en ;
+    rdfs:label "Manufacture of fabricated metal products, except machinery and equipment"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C25 .
+
+
+sip-sdmx-code:interactUnits-C26 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C26" ;
+    skos:prefLabel "Manufacture of computer, electronic and optical products"@en ;
+    rdfs:label "Manufacture of computer, electronic and optical products"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C26 .
+
+
+sip-sdmx-code:interactUnits-C27 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C27" ;
+    skos:prefLabel "Manufacture of electrical equipment"@en ;
+    rdfs:label "Manufacture of electrical equipment"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C27 .
+
+
+sip-sdmx-code:interactUnits-C28 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C28" ;
+    skos:prefLabel "Manufacture of machinery and equipment n.e.c."@en ;
+    rdfs:label "Manufacture of machinery and equipment n.e.c."@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C28 .
+
+
+sip-sdmx-code:interactUnits-C29 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C29" ;
+    skos:prefLabel "Manufacture of motor vehicles, trailers and semi-trailers"@en ;
+    rdfs:label "Manufacture of motor vehicles, trailers and semi-trailers"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C29 .
+
+
+sip-sdmx-code:interactUnits-C29_30 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C29_30" ;
+    skos:prefLabel "Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment"@en ;
+    rdfs:label "Manufacture of motor vehicles, trailers, semi-trailers and of other transport equipment"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C29_30 .
+
+
+sip-sdmx-code:interactUnits-C30 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C30" ;
+    skos:prefLabel "Manufacture of other transport equipment"@en ;
+    rdfs:label "Manufacture of other transport equipment"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C30 .
+
+
+sip-sdmx-code:interactUnits-C31 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C31" ;
+    skos:prefLabel "Manufacture of furniture"@en ;
+    rdfs:label "Manufacture of furniture"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C31 .
+
+
+sip-sdmx-code:interactUnits-C31T33 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C31T33" ;
+    skos:prefLabel "Manufacture of furniture; jewellery, musical instruments, toys, etc.; repair and installation of machinery and equipment"@en ;
+    rdfs:label "Manufacture of furniture; jewellery, musical instruments, toys, etc.; repair and installation of machinery and equipment"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C31T33 .
+
+
+sip-sdmx-code:interactUnits-C31_32 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C31_32" ;
+    skos:prefLabel "Manufacture of furniture; other manufacturing"@en ;
+    rdfs:label "Manufacture of furniture; other manufacturing"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C31_32 .
+
+
+sip-sdmx-code:interactUnits-C32 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C32" ;
+    skos:prefLabel "Other manufacturing"@en ;
+    rdfs:label "Other manufacturing"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C32 .
+
+
+sip-sdmx-code:interactUnits-C33 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C33" ;
+    skos:prefLabel "Repair and installation of machinery and equipment"@en ;
+    rdfs:label "Repair and installation of machinery and equipment"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C33 .
+
+
+sip-sdmx-code:interactUnits-C_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "C_X" ;
+    skos:prefLabel "Manufacturing – Non specified"@en ;
+    rdfs:label "Manufacturing – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-C_X .
+
+
+sip-sdmx-code:interactUnits-D a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "D" ;
+    skos:prefLabel "Electricity, gas, steam and air conditioning supply"@en ;
+    rdfs:label "Electricity, gas, steam and air conditioning supply"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-D .
+
+
+sip-sdmx-code:interactUnits-D35 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "D35" ;
+    skos:prefLabel "Electricity, gas, steam and air conditioning supply"@en ;
+    rdfs:label "Electricity, gas, steam and air conditioning supply"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-D35 .
+
+
+sip-sdmx-code:interactUnits-E a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "E" ;
+    skos:prefLabel "Water supply; sewerage, waste management and remediation activities"@en ;
+    rdfs:label "Water supply; sewerage, waste management and remediation activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-E .
+
+
+sip-sdmx-code:interactUnits-E36 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "E36" ;
+    skos:prefLabel "Water collection, treatment and supply"@en ;
+    rdfs:label "Water collection, treatment and supply"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-E36 .
+
+
+sip-sdmx-code:interactUnits-E37 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "E37" ;
+    skos:prefLabel "Sewerage"@en ;
+    rdfs:label "Sewerage"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-E37 .
+
+
+sip-sdmx-code:interactUnits-E37T39 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "E37T39" ;
+    skos:prefLabel "Sewerage, waste management, remediation activities"@en ;
+    rdfs:label "Sewerage, waste management, remediation activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-E37T39 .
+
+
+sip-sdmx-code:interactUnits-E38 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "E38" ;
+    skos:prefLabel "Waste collection, treatment and disposal activities; materials recovery"@en ;
+    rdfs:label "Waste collection, treatment and disposal activities; materials recovery"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-E38 .
+
+
+sip-sdmx-code:interactUnits-E39 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "E39" ;
+    skos:prefLabel "Remediation activities and other waste management services"@en ;
+    rdfs:label "Remediation activities and other waste management services"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-E39 .
+
+
+sip-sdmx-code:interactUnits-F a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "F" ;
+    skos:prefLabel "Construction"@en ;
+    rdfs:label "Construction"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-F .
+
+
+sip-sdmx-code:interactUnits-F41 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "F41" ;
+    skos:prefLabel "Construction of buildings"@en ;
+    rdfs:label "Construction of buildings"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-F41 .
+
+
+sip-sdmx-code:interactUnits-F42 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "F42" ;
+    skos:prefLabel "Civil engineering"@en ;
+    rdfs:label "Civil engineering"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-F42 .
+
+
+sip-sdmx-code:interactUnits-F43 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "F43" ;
+    skos:prefLabel "Specialised construction activities"@en ;
+    rdfs:label "Specialised construction activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-F43 .
+
+
+sip-sdmx-code:interactUnits-G a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "G" ;
+    skos:prefLabel "Wholesale and retail trade; repair of motor vehicles and motorcycles"@en ;
+    rdfs:label "Wholesale and retail trade; repair of motor vehicles and motorcycles"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-G .
+
+
+sip-sdmx-code:interactUnits-G45 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "G45" ;
+    skos:prefLabel "Wholesale and retail trade and repair of motor vehicles and motorcycles"@en ;
+    rdfs:label "Wholesale and retail trade and repair of motor vehicles and motorcycles"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-G45 .
+
+
+sip-sdmx-code:interactUnits-G46 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "G46" ;
+    skos:prefLabel "Wholesale trade, except of motor vehicles and motorcycles"@en ;
+    rdfs:label "Wholesale trade, except of motor vehicles and motorcycles"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-G46 .
+
+
+sip-sdmx-code:interactUnits-G47 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "G47" ;
+    skos:prefLabel "Retail trade, except of motor vehicles and motorcycles"@en ;
+    rdfs:label "Retail trade, except of motor vehicles and motorcycles"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-G47 .
+
+
+sip-sdmx-code:interactUnits-GTU a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "GTU" ;
+    skos:prefLabel "Services"@en ;
+    rdfs:label "Services"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-GTU .
+
+
+sip-sdmx-code:interactUnits-GTUXH a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "GTUXH" ;
+    skos:prefLabel "Services (except transportation and storage)"@en ;
+    rdfs:label "Services (except transportation and storage)"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-GTUXH .
+
+
+sip-sdmx-code:interactUnits-G_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "G_X" ;
+    skos:prefLabel "Wholesale and retail trade; repair of motor vehicles and motorcycles – Non specified"@en ;
+    rdfs:label "Wholesale and retail trade; repair of motor vehicles and motorcycles – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-G_X .
+
+
+sip-sdmx-code:interactUnits-H a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "H" ;
+    skos:prefLabel "Transportation and storage"@en ;
+    rdfs:label "Transportation and storage"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-H .
+
+
+sip-sdmx-code:interactUnits-H49 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "H49" ;
+    skos:prefLabel "Land transport and transport via pipelines"@en ;
+    rdfs:label "Land transport and transport via pipelines"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-H49 .
+
+
+sip-sdmx-code:interactUnits-H50 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "H50" ;
+    skos:prefLabel "Water transport"@en ;
+    rdfs:label "Water transport"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-H50 .
+
+
+sip-sdmx-code:interactUnits-H51 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "H51" ;
+    skos:prefLabel "Air transport"@en ;
+    rdfs:label "Air transport"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-H51 .
+
+
+sip-sdmx-code:interactUnits-H52 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "H52" ;
+    skos:prefLabel "Warehousing and support activities for transportation"@en ;
+    rdfs:label "Warehousing and support activities for transportation"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-H52 .
+
+
+sip-sdmx-code:interactUnits-H53 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "H53" ;
+    skos:prefLabel "Postal and courier activities"@en ;
+    rdfs:label "Postal and courier activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-H53 .
+
+
+sip-sdmx-code:interactUnits-HH a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "HH" ;
+    skos:prefLabel "Activities by households"@en ;
+    rdfs:label "Activities by households"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-HH .
+
+
+sip-sdmx-code:interactUnits-HH_HEAT a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "HH_HEAT" ;
+    skos:prefLabel "Heating and cooling activities by households"@en ;
+    rdfs:label "Heating and cooling activities by households"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-HH_HEAT .
+
+
+sip-sdmx-code:interactUnits-HH_OTH a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "HH_OTH" ;
+    skos:prefLabel "Other activities by households"@en ;
+    rdfs:label "Other activities by households"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-HH_OTH .
+
+
+sip-sdmx-code:interactUnits-HH_TR a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "HH_TR" ;
+    skos:prefLabel "Transport activities by households"@en ;
+    rdfs:label "Transport activities by households"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-HH_TR .
+
+
+sip-sdmx-code:interactUnits-H_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "H_X" ;
+    skos:prefLabel "Transportation and storage – Non specified"@en ;
+    rdfs:label "Transportation and storage – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-H_X .
+
+
+sip-sdmx-code:interactUnits-I a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "I" ;
+    skos:prefLabel "Accommodation and food service activities"@en ;
+    rdfs:label "Accommodation and food service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-I .
+
+
+sip-sdmx-code:interactUnits-I55 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "I55" ;
+    skos:prefLabel "Accommodation"@en ;
+    rdfs:label "Accommodation"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-I55 .
+
+
+sip-sdmx-code:interactUnits-I56 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "I56" ;
+    skos:prefLabel "Food and beverage service activities"@en ;
+    rdfs:label "Food and beverage service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-I56 .
+
+
+sip-sdmx-code:interactUnits-ITU a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "ITU" ;
+    skos:prefLabel "Services (except wholesale and retail trade, transportation and storage)"@en ;
+    rdfs:label "Services (except wholesale and retail trade, transportation and storage)"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-ITU .
+
+
+sip-sdmx-code:interactUnits-J a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J" ;
+    skos:prefLabel "Information and communication"@en ;
+    rdfs:label "Information and communication"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J .
+
+
+sip-sdmx-code:interactUnits-J58 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J58" ;
+    skos:prefLabel "Publishing activities"@en ;
+    rdfs:label "Publishing activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J58 .
+
+
+sip-sdmx-code:interactUnits-J58T60 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J58T60" ;
+    skos:prefLabel "Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities"@en ;
+    rdfs:label "Publishing, motion picture, video, television programme production; sound recording, programming and broadcasting activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J58T60 .
+
+
+sip-sdmx-code:interactUnits-J59 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J59" ;
+    skos:prefLabel "Motion picture, video and television programme production, sound recording and music publishing activities"@en ;
+    rdfs:label "Motion picture, video and television programme production, sound recording and music publishing activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J59 .
+
+
+sip-sdmx-code:interactUnits-J59_60 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J59_60" ;
+    skos:prefLabel "Motion picture, video, television programme production; programming and broadcasting activities"@en ;
+    rdfs:label "Motion picture, video, television programme production; programming and broadcasting activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J59_60 .
+
+
+sip-sdmx-code:interactUnits-J60 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J60" ;
+    skos:prefLabel "Programming and broadcasting activities"@en ;
+    rdfs:label "Programming and broadcasting activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J60 .
+
+
+sip-sdmx-code:interactUnits-J61 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J61" ;
+    skos:prefLabel "Telecommunications"@en ;
+    rdfs:label "Telecommunications"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J61 .
+
+
+sip-sdmx-code:interactUnits-J62 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J62" ;
+    skos:prefLabel "Computer programming, consultancy and related activities"@en ;
+    rdfs:label "Computer programming, consultancy and related activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J62 .
+
+
+sip-sdmx-code:interactUnits-J62_63 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J62_63" ;
+    skos:prefLabel "Computer programming, consultancy, and information service activities"@en ;
+    rdfs:label "Computer programming, consultancy, and information service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J62_63 .
+
+
+sip-sdmx-code:interactUnits-J63 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J63" ;
+    skos:prefLabel "Information service activities"@en ;
+    rdfs:label "Information service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J63 .
+
+
+sip-sdmx-code:interactUnits-J_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "J_X" ;
+    skos:prefLabel "Information and communication – Non specified"@en ;
+    rdfs:label "Information and communication – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-J_X .
+
+
+sip-sdmx-code:interactUnits-K a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "K" ;
+    skos:prefLabel "Financial and insurance activities"@en ;
+    rdfs:label "Financial and insurance activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-K .
+
+
+sip-sdmx-code:interactUnits-K64 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "K64" ;
+    skos:prefLabel "Financial service activities, except insurance and pension funding"@en ;
+    rdfs:label "Financial service activities, except insurance and pension funding"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-K64 .
+
+
+sip-sdmx-code:interactUnits-K65 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "K65" ;
+    skos:prefLabel "Insurance, reinsurance and pension funding, except compulsory social security"@en ;
+    rdfs:label "Insurance, reinsurance and pension funding, except compulsory social security"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-K65 .
+
+
+sip-sdmx-code:interactUnits-K66 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "K66" ;
+    skos:prefLabel "Activities auxiliary to financial services and insurance activities"@en ;
+    rdfs:label "Activities auxiliary to financial services and insurance activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-K66 .
+
+
+sip-sdmx-code:interactUnits-K_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "K_X" ;
+    skos:prefLabel "Financial and insurance activities – Non specified"@en ;
+    rdfs:label "Financial and insurance activities – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-K_X .
+
+
+sip-sdmx-code:interactUnits-L a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "L" ;
+    skos:prefLabel "Real estate activities"@en ;
+    rdfs:label "Real estate activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-L .
+
+
+sip-sdmx-code:interactUnits-L68A a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "L68A" ;
+    skos:prefLabel "Imputed rents of owner-occupied dwellings"@en ;
+    rdfs:label "Imputed rents of owner-occupied dwellings"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-L68A .
+
+
+sip-sdmx-code:interactUnits-L68B a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "L68B" ;
+    skos:prefLabel "Real estate activities excluding imputed rents"@en ;
+    rdfs:label "Real estate activities excluding imputed rents"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-L68B .
+
+
+sip-sdmx-code:interactUnits-M a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M" ;
+    skos:prefLabel "Professional, scientific and technical activities"@en ;
+    rdfs:label "Professional, scientific and technical activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M .
+
+
+sip-sdmx-code:interactUnits-M69 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M69" ;
+    skos:prefLabel "Legal and accounting activities"@en ;
+    rdfs:label "Legal and accounting activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M69 .
+
+
+sip-sdmx-code:interactUnits-M69T71 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M69T71" ;
+    skos:prefLabel "Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis"@en ;
+    rdfs:label "Legal and accounting activities; activities of head offices; management consultancy activities; architectural and engineering activities; technical testing and analysis"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M69T71 .
+
+
+sip-sdmx-code:interactUnits-M69_70 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M69_70" ;
+    skos:prefLabel "Legal and accounting activities; activities of head offices; management consultancy activities"@en ;
+    rdfs:label "Legal and accounting activities; activities of head offices; management consultancy activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M69_70 .
+
+
+sip-sdmx-code:interactUnits-M70 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M70" ;
+    skos:prefLabel "Activities of head offices; management consultancy activities"@en ;
+    rdfs:label "Activities of head offices; management consultancy activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M70 .
+
+
+sip-sdmx-code:interactUnits-M71 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M71" ;
+    skos:prefLabel "Architectural and engineering activities; technical testing and analysis"@en ;
+    rdfs:label "Architectural and engineering activities; technical testing and analysis"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M71 .
+
+
+sip-sdmx-code:interactUnits-M72 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M72" ;
+    skos:prefLabel "Scientific research and development"@en ;
+    rdfs:label "Scientific research and development"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M72 .
+
+
+sip-sdmx-code:interactUnits-M73 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M73" ;
+    skos:prefLabel "Advertising and market research"@en ;
+    rdfs:label "Advertising and market research"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M73 .
+
+
+sip-sdmx-code:interactUnits-M73T75 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M73T75" ;
+    skos:prefLabel "Advertising and market research; other professional, scientific and technical activities; veterinary activities"@en ;
+    rdfs:label "Advertising and market research; other professional, scientific and technical activities; veterinary activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M73T75 .
+
+
+sip-sdmx-code:interactUnits-M74 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M74" ;
+    skos:prefLabel "Other professional, scientific and technical activities"@en ;
+    rdfs:label "Other professional, scientific and technical activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M74 .
+
+
+sip-sdmx-code:interactUnits-M74_75 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M74_75" ;
+    skos:prefLabel "Other professional, scientific and technical activities; veterinary activities"@en ;
+    rdfs:label "Other professional, scientific and technical activities; veterinary activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M74_75 .
+
+
+sip-sdmx-code:interactUnits-M75 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M75" ;
+    skos:prefLabel "Veterinary activities"@en ;
+    rdfs:label "Veterinary activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M75 .
+
+
+sip-sdmx-code:interactUnits-M_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "M_X" ;
+    skos:prefLabel "Professional, scientific and technical activities – Non specified"@en ;
+    rdfs:label "Professional, scientific and technical activities – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-M_X .
+
+
+sip-sdmx-code:interactUnits-N a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N" ;
+    skos:prefLabel "Administrative and support service activities"@en ;
+    rdfs:label "Administrative and support service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N .
+
+
+sip-sdmx-code:interactUnits-N77 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N77" ;
+    skos:prefLabel "Rental and leasing activities"@en ;
+    rdfs:label "Rental and leasing activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N77 .
+
+
+sip-sdmx-code:interactUnits-N78 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N78" ;
+    skos:prefLabel "Employment activities"@en ;
+    rdfs:label "Employment activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N78 .
+
+
+sip-sdmx-code:interactUnits-N79 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N79" ;
+    skos:prefLabel "Travel agency, tour operator reservation service and related activities"@en ;
+    rdfs:label "Travel agency, tour operator reservation service and related activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N79 .
+
+
+sip-sdmx-code:interactUnits-N80 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N80" ;
+    skos:prefLabel "Security and investigation activities"@en ;
+    rdfs:label "Security and investigation activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N80 .
+
+
+sip-sdmx-code:interactUnits-N80T82 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N80T82" ;
+    skos:prefLabel "Security and investigation, service and landscape, office administrative and support activities"@en ;
+    rdfs:label "Security and investigation, service and landscape, office administrative and support activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N80T82 .
+
+
+sip-sdmx-code:interactUnits-N81 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N81" ;
+    skos:prefLabel "Services to buildings and landscape activities"@en ;
+    rdfs:label "Services to buildings and landscape activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N81 .
+
+
+sip-sdmx-code:interactUnits-N82 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N82" ;
+    skos:prefLabel "Office administrative, office support and other business support activities"@en ;
+    rdfs:label "Office administrative, office support and other business support activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N82 .
+
+
+sip-sdmx-code:interactUnits-N_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "N_X" ;
+    skos:prefLabel "Administrative and support service activities – Non specified"@en ;
+    rdfs:label "Administrative and support service activities – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-N_X .
+
+
+sip-sdmx-code:interactUnits-O a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "O" ;
+    skos:prefLabel "Public administration and defence; compulsory social security"@en ;
+    rdfs:label "Public administration and defence; compulsory social security"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-O .
+
+
+sip-sdmx-code:interactUnits-P a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "P" ;
+    skos:prefLabel "Education"@en ;
+    rdfs:label "Education"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-P .
+
+
+sip-sdmx-code:interactUnits-P85 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "P85" ;
+    skos:prefLabel "Education"@en ;
+    rdfs:label "Education"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-P85 .
+
+
+sip-sdmx-code:interactUnits-Q a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "Q" ;
+    skos:prefLabel "Human health and social work activities"@en ;
+    rdfs:label "Human health and social work activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-Q .
+
+
+sip-sdmx-code:interactUnits-Q86 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "Q86" ;
+    skos:prefLabel "Human health activities"@en ;
+    rdfs:label "Human health activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-Q86 .
+
+
+sip-sdmx-code:interactUnits-Q87 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "Q87" ;
+    skos:prefLabel "Residential care activities"@en ;
+    rdfs:label "Residential care activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-Q87 .
+
+
+sip-sdmx-code:interactUnits-Q87_88 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "Q87_88" ;
+    skos:prefLabel "Residential care activities and social work activities without accommodation"@en ;
+    rdfs:label "Residential care activities and social work activities without accommodation"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-Q87_88 .
+
+
+sip-sdmx-code:interactUnits-Q88 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "Q88" ;
+    skos:prefLabel "Social work activities without accommodation"@en ;
+    rdfs:label "Social work activities without accommodation"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-Q88 .
+
+
+sip-sdmx-code:interactUnits-Q_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "Q_X" ;
+    skos:prefLabel "Human health and social work activities – Non specified"@en ;
+    rdfs:label "Human health and social work activities – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-Q_X .
+
+
+sip-sdmx-code:interactUnits-R a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "R" ;
+    skos:prefLabel "Arts, entertainment and recreation"@en ;
+    rdfs:label "Arts, entertainment and recreation"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-R .
+
+
+sip-sdmx-code:interactUnits-R90 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "R90" ;
+    skos:prefLabel "Creative, arts and entertainment activities"@en ;
+    rdfs:label "Creative, arts and entertainment activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-R90 .
+
+
+sip-sdmx-code:interactUnits-R90T92 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "R90T92" ;
+    skos:prefLabel "Creative, arts and entertainment activities; libraries, archives, museums and other cultural activities; gambling and betting activities"@en ;
+    rdfs:label "Creative, arts and entertainment activities; libraries, archives, museums and other cultural activities; gambling and betting activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-R90T92 .
+
+
+sip-sdmx-code:interactUnits-R91 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "R91" ;
+    skos:prefLabel "Libraries, archives, museums and other cultural activities"@en ;
+    rdfs:label "Libraries, archives, museums and other cultural activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-R91 .
+
+
+sip-sdmx-code:interactUnits-R92 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "R92" ;
+    skos:prefLabel "Gambling and betting activities"@en ;
+    rdfs:label "Gambling and betting activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-R92 .
+
+
+sip-sdmx-code:interactUnits-R93 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "R93" ;
+    skos:prefLabel "Sports activities and amusement and recreation activities"@en ;
+    rdfs:label "Sports activities and amusement and recreation activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-R93 .
+
+
+sip-sdmx-code:interactUnits-R_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "R_X" ;
+    skos:prefLabel "Arts, entertainment and recreation - Non specified"@en ;
+    rdfs:label "Arts, entertainment and recreation - Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-R_X .
+
+
+sip-sdmx-code:interactUnits-S a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "S" ;
+    skos:prefLabel "Other service activities"@en ;
+    rdfs:label "Other service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-S .
+
+
+sip-sdmx-code:interactUnits-S94 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "S94" ;
+    skos:prefLabel "Activities of membership organisations"@en ;
+    rdfs:label "Activities of membership organisations"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-S94 .
+
+
+sip-sdmx-code:interactUnits-S95 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "S95" ;
+    skos:prefLabel "Repair of computers and personal and household goods"@en ;
+    rdfs:label "Repair of computers and personal and household goods"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-S95 .
+
+
+sip-sdmx-code:interactUnits-S96 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "S96" ;
+    skos:prefLabel "Other personal service activities"@en ;
+    rdfs:label "Other personal service activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-S96 .
+
+
+sip-sdmx-code:interactUnits-S_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "S_X" ;
+    skos:prefLabel "Other service activities – Non specified"@en ;
+    rdfs:label "Other service activities – Non specified"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-S_X .
+
+
+sip-sdmx-code:interactUnits-T a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "T" ;
+    skos:prefLabel "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use"@en ;
+    rdfs:label "Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-T .
+
+
+sip-sdmx-code:interactUnits-T97 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "T97" ;
+    skos:prefLabel "Activities of households as employers of domestic personnel"@en ;
+    rdfs:label "Activities of households as employers of domestic personnel"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-T97 .
+
+
+sip-sdmx-code:interactUnits-T98 a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "T98" ;
+    skos:prefLabel "Undifferentiated goods- and services-producing activities of private households for own use"@en ;
+    rdfs:label "Undifferentiated goods- and services-producing activities of private households for own use"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-T98 .
+
+
+sip-sdmx-code:interactUnits-U a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "U" ;
+    skos:prefLabel "Activities of extraterritorial organisations and bodies"@en ;
+    rdfs:label "Activities of extraterritorial organisations and bodies"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-U .
+
+
+sip-sdmx-code:interactUnits-_T a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total - All activities"@en ;
+    rdfs:label "Total - All activities"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-_T .
+
+
+sip-sdmx-code:interactUnits-_X a skos:Concept, sip-sdmx-code:InteractUnits;
+    skos:topConceptOf sip-sdmx-code:interactUnits ;
+    skos:inScheme sip-sdmx-code:interactUnits ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not allocated"@en ;
+    rdfs:label "Not allocated"@en .
+
+sip-sdmx-code:interactUnits skos:hasTopConcept sip-sdmx-code:interactUnits-_X .
+

@@ -1,0 +1,2244 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_EDUCATIONFIELDS Scheme Definition
+#####################################################
+
+sip-sdmx-code:educationFields a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Fields of education - codelist scheme"@en ;
+    rdfs:label "Fields of education - codelist scheme"@en ;
+    skos:notation "CL_EDUCATIONFIELDS" ;
+    skos:definition "A reference educationFields codelist based on UIS:CL_EDUCATION_FIELD(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EDUCATION_FIELD/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:EducationFields .
+
+sip-sdmx-code:EducationFields a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Fields of education - codelist class"@en ;
+    rdfs:label "Fields of education - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields .
+
+
+########################################
+# CL_EDUCATIONFIELDS Codes
+########################################
+    
+sip-sdmx-code:educationFields-F00 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F00" ;
+    skos:prefLabel "Generic programmes and qualifications"@en ;
+    rdfs:label "Generic programmes and qualifications"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F00 .
+
+
+sip-sdmx-code:educationFields-F000 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F000" ;
+    skos:prefLabel "Generic programmes and qualifications not further defined"@en ;
+    rdfs:label "Generic programmes and qualifications not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F000 .
+
+
+sip-sdmx-code:educationFields-F0000 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0000" ;
+    skos:prefLabel "Generic programmes and qualifications not further defined"@en ;
+    rdfs:label "Generic programmes and qualifications not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0000 .
+
+
+sip-sdmx-code:educationFields-F001 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F001" ;
+    skos:prefLabel "Basic programmes and qualifications"@en ;
+    rdfs:label "Basic programmes and qualifications"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F001 .
+
+
+sip-sdmx-code:educationFields-F0011 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0011" ;
+    skos:prefLabel "Basic programmes and qualifications"@en ;
+    rdfs:label "Basic programmes and qualifications"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0011 .
+
+
+sip-sdmx-code:educationFields-F002 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F002" ;
+    skos:prefLabel "Literacy and numeracy"@en ;
+    rdfs:label "Literacy and numeracy"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F002 .
+
+
+sip-sdmx-code:educationFields-F0021 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0021" ;
+    skos:prefLabel "Literacy and numeracy"@en ;
+    rdfs:label "Literacy and numeracy"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0021 .
+
+
+sip-sdmx-code:educationFields-F003 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F003" ;
+    skos:prefLabel "Personal skills and development"@en ;
+    rdfs:label "Personal skills and development"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F003 .
+
+
+sip-sdmx-code:educationFields-F0031 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0031" ;
+    skos:prefLabel "Personal skills and development"@en ;
+    rdfs:label "Personal skills and development"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0031 .
+
+
+sip-sdmx-code:educationFields-F009 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F009" ;
+    skos:prefLabel "Generic programmes and qualifications not elsewhere classified"@en ;
+    rdfs:label "Generic programmes and qualifications not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F009 .
+
+
+sip-sdmx-code:educationFields-F0099 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0099" ;
+    skos:prefLabel "Generic programmes and qualifications not elsewhere classified"@en ;
+    rdfs:label "Generic programmes and qualifications not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0099 .
+
+
+sip-sdmx-code:educationFields-F01 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F01" ;
+    skos:prefLabel "Education"@en ;
+    rdfs:label "Education"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F01 .
+
+
+sip-sdmx-code:educationFields-F011 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F011" ;
+    skos:prefLabel "Education"@en ;
+    rdfs:label "Education"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F011 .
+
+
+sip-sdmx-code:educationFields-F0110 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0110" ;
+    skos:prefLabel "Education not further defined"@en ;
+    rdfs:label "Education not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0110 .
+
+
+sip-sdmx-code:educationFields-F0111 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0111" ;
+    skos:prefLabel "Education science"@en ;
+    rdfs:label "Education science"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0111 .
+
+
+sip-sdmx-code:educationFields-F0112 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0112" ;
+    skos:prefLabel "Training for pre-school teachers"@en ;
+    rdfs:label "Training for pre-school teachers"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0112 .
+
+
+sip-sdmx-code:educationFields-F0113 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0113" ;
+    skos:prefLabel "Teacher training  without subject specialisation"@en ;
+    rdfs:label "Teacher training  without subject specialisation"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0113 .
+
+
+sip-sdmx-code:educationFields-F0114 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0114" ;
+    skos:prefLabel "Teacher training with subject specialisation"@en ;
+    rdfs:label "Teacher training with subject specialisation"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0114 .
+
+
+sip-sdmx-code:educationFields-F0119 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0119" ;
+    skos:prefLabel "Education not elsewhere classified"@en ;
+    rdfs:label "Education not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0119 .
+
+
+sip-sdmx-code:educationFields-F018 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F018" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving education"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving education"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F018 .
+
+
+sip-sdmx-code:educationFields-F0188 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0188" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving education"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving education"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0188 .
+
+
+sip-sdmx-code:educationFields-F02 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F02" ;
+    skos:prefLabel "Arts and humanities"@en ;
+    rdfs:label "Arts and humanities"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F02 .
+
+
+sip-sdmx-code:educationFields-F020 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F020" ;
+    skos:prefLabel "Arts and humanities not further defined"@en ;
+    rdfs:label "Arts and humanities not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F020 .
+
+
+sip-sdmx-code:educationFields-F0200 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0200" ;
+    skos:prefLabel "Arts and humanities not further defined"@en ;
+    rdfs:label "Arts and humanities not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0200 .
+
+
+sip-sdmx-code:educationFields-F021 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F021" ;
+    skos:prefLabel "Arts"@en ;
+    rdfs:label "Arts"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F021 .
+
+
+sip-sdmx-code:educationFields-F0210 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0210" ;
+    skos:prefLabel "Arts not further defined"@en ;
+    rdfs:label "Arts not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0210 .
+
+
+sip-sdmx-code:educationFields-F0211 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0211" ;
+    skos:prefLabel "Audio-visual techniques and media production"@en ;
+    rdfs:label "Audio-visual techniques and media production"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0211 .
+
+
+sip-sdmx-code:educationFields-F0212 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0212" ;
+    skos:prefLabel "Fashion, interior and industrial design"@en ;
+    rdfs:label "Fashion, interior and industrial design"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0212 .
+
+
+sip-sdmx-code:educationFields-F0213 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0213" ;
+    skos:prefLabel "Fine arts"@en ;
+    rdfs:label "Fine arts"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0213 .
+
+
+sip-sdmx-code:educationFields-F0214 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0214" ;
+    skos:prefLabel "Handicrafts"@en ;
+    rdfs:label "Handicrafts"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0214 .
+
+
+sip-sdmx-code:educationFields-F0215 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0215" ;
+    skos:prefLabel "Music and performing arts"@en ;
+    rdfs:label "Music and performing arts"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0215 .
+
+
+sip-sdmx-code:educationFields-F0219 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0219" ;
+    skos:prefLabel "Arts not elsewhere classified"@en ;
+    rdfs:label "Arts not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0219 .
+
+
+sip-sdmx-code:educationFields-F022 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F022" ;
+    skos:prefLabel "Humanities (except languages)"@en ;
+    rdfs:label "Humanities (except languages)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F022 .
+
+
+sip-sdmx-code:educationFields-F0220 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0220" ;
+    skos:prefLabel "Humanities (except languages) not further defined"@en ;
+    rdfs:label "Humanities (except languages) not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0220 .
+
+
+sip-sdmx-code:educationFields-F0221 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0221" ;
+    skos:prefLabel "Religion and  theology"@en ;
+    rdfs:label "Religion and  theology"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0221 .
+
+
+sip-sdmx-code:educationFields-F0222 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0222" ;
+    skos:prefLabel "History and archaeology"@en ;
+    rdfs:label "History and archaeology"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0222 .
+
+
+sip-sdmx-code:educationFields-F0223 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0223" ;
+    skos:prefLabel "Philosophy and ethics"@en ;
+    rdfs:label "Philosophy and ethics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0223 .
+
+
+sip-sdmx-code:educationFields-F0229 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0229" ;
+    skos:prefLabel "Humanities (except languages) not elsewhere classified"@en ;
+    rdfs:label "Humanities (except languages) not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0229 .
+
+
+sip-sdmx-code:educationFields-F023 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F023" ;
+    skos:prefLabel "Languages"@en ;
+    rdfs:label "Languages"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F023 .
+
+
+sip-sdmx-code:educationFields-F0230 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0230" ;
+    skos:prefLabel "Languages not further defined"@en ;
+    rdfs:label "Languages not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0230 .
+
+
+sip-sdmx-code:educationFields-F0231 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0231" ;
+    skos:prefLabel "Language acquisition"@en ;
+    rdfs:label "Language acquisition"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0231 .
+
+
+sip-sdmx-code:educationFields-F0232 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0232" ;
+    skos:prefLabel "Literature and linguistics"@en ;
+    rdfs:label "Literature and linguistics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0232 .
+
+
+sip-sdmx-code:educationFields-F0239 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0239" ;
+    skos:prefLabel "Languages not elsewhere classified"@en ;
+    rdfs:label "Languages not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0239 .
+
+
+sip-sdmx-code:educationFields-F028 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F028" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving arts and humanities"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving arts and humanities"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F028 .
+
+
+sip-sdmx-code:educationFields-F0288 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0288" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving arts and humanities"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving arts and humanities"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0288 .
+
+
+sip-sdmx-code:educationFields-F029 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F029" ;
+    skos:prefLabel "Arts and humanities not elsewhere classified"@en ;
+    rdfs:label "Arts and humanities not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F029 .
+
+
+sip-sdmx-code:educationFields-F0299 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0299" ;
+    skos:prefLabel "Arts and humanities not elsewhere classified"@en ;
+    rdfs:label "Arts and humanities not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0299 .
+
+
+sip-sdmx-code:educationFields-F03 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F03" ;
+    skos:prefLabel "Social sciences, journalism and information"@en ;
+    rdfs:label "Social sciences, journalism and information"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F03 .
+
+
+sip-sdmx-code:educationFields-F030 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F030" ;
+    skos:prefLabel "Social sciences, journalism and information not further defined"@en ;
+    rdfs:label "Social sciences, journalism and information not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F030 .
+
+
+sip-sdmx-code:educationFields-F0300 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0300" ;
+    skos:prefLabel "Social sciences, journalism and information not further defined"@en ;
+    rdfs:label "Social sciences, journalism and information not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0300 .
+
+
+sip-sdmx-code:educationFields-F031 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F031" ;
+    skos:prefLabel "Social and behavioural sciences"@en ;
+    rdfs:label "Social and behavioural sciences"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F031 .
+
+
+sip-sdmx-code:educationFields-F0310 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0310" ;
+    skos:prefLabel "Social and behavioural sciences not further defined"@en ;
+    rdfs:label "Social and behavioural sciences not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0310 .
+
+
+sip-sdmx-code:educationFields-F0311 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0311" ;
+    skos:prefLabel "Economics"@en ;
+    rdfs:label "Economics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0311 .
+
+
+sip-sdmx-code:educationFields-F0312 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0312" ;
+    skos:prefLabel "Political sciences and civics"@en ;
+    rdfs:label "Political sciences and civics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0312 .
+
+
+sip-sdmx-code:educationFields-F0313 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0313" ;
+    skos:prefLabel "Psychology"@en ;
+    rdfs:label "Psychology"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0313 .
+
+
+sip-sdmx-code:educationFields-F0314 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0314" ;
+    skos:prefLabel "Sociology and cultural studies"@en ;
+    rdfs:label "Sociology and cultural studies"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0314 .
+
+
+sip-sdmx-code:educationFields-F0319 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0319" ;
+    skos:prefLabel "Social and behavioural sciences not elsewhere classified"@en ;
+    rdfs:label "Social and behavioural sciences not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0319 .
+
+
+sip-sdmx-code:educationFields-F032 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F032" ;
+    skos:prefLabel "Journalism and information"@en ;
+    rdfs:label "Journalism and information"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F032 .
+
+
+sip-sdmx-code:educationFields-F0320 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0320" ;
+    skos:prefLabel "Journalism and information not further defined"@en ;
+    rdfs:label "Journalism and information not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0320 .
+
+
+sip-sdmx-code:educationFields-F0321 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0321" ;
+    skos:prefLabel "Journalism and reporting"@en ;
+    rdfs:label "Journalism and reporting"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0321 .
+
+
+sip-sdmx-code:educationFields-F0322 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0322" ;
+    skos:prefLabel "Library, information and archival studies"@en ;
+    rdfs:label "Library, information and archival studies"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0322 .
+
+
+sip-sdmx-code:educationFields-F0329 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0329" ;
+    skos:prefLabel "Journalism and information not elsewhere classified"@en ;
+    rdfs:label "Journalism and information not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0329 .
+
+
+sip-sdmx-code:educationFields-F038 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F038" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving social sciences, journalism and information"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving social sciences, journalism and information"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F038 .
+
+
+sip-sdmx-code:educationFields-F0388 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0388" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving social sciences, journalism and information"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving social sciences, journalism and information"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0388 .
+
+
+sip-sdmx-code:educationFields-F039 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F039" ;
+    skos:prefLabel "Social sciences, journalism and information not elsewhere classified"@en ;
+    rdfs:label "Social sciences, journalism and information not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F039 .
+
+
+sip-sdmx-code:educationFields-F0399 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0399" ;
+    skos:prefLabel "Social sciences, journalism and information not elsewhere classified"@en ;
+    rdfs:label "Social sciences, journalism and information not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0399 .
+
+
+sip-sdmx-code:educationFields-F04 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F04" ;
+    skos:prefLabel "Business, administration and law"@en ;
+    rdfs:label "Business, administration and law"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F04 .
+
+
+sip-sdmx-code:educationFields-F040 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F040" ;
+    skos:prefLabel "Business, administration and law not further defined"@en ;
+    rdfs:label "Business, administration and law not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F040 .
+
+
+sip-sdmx-code:educationFields-F0400 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0400" ;
+    skos:prefLabel "Business, administration and law not further defined"@en ;
+    rdfs:label "Business, administration and law not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0400 .
+
+
+sip-sdmx-code:educationFields-F041 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F041" ;
+    skos:prefLabel "Business and administration"@en ;
+    rdfs:label "Business and administration"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F041 .
+
+
+sip-sdmx-code:educationFields-F0410 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0410" ;
+    skos:prefLabel "Business and administration not further defined"@en ;
+    rdfs:label "Business and administration not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0410 .
+
+
+sip-sdmx-code:educationFields-F0411 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0411" ;
+    skos:prefLabel "Accounting and taxation"@en ;
+    rdfs:label "Accounting and taxation"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0411 .
+
+
+sip-sdmx-code:educationFields-F0412 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0412" ;
+    skos:prefLabel "Finance, banking and insurance"@en ;
+    rdfs:label "Finance, banking and insurance"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0412 .
+
+
+sip-sdmx-code:educationFields-F0413 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0413" ;
+    skos:prefLabel "Management and administration"@en ;
+    rdfs:label "Management and administration"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0413 .
+
+
+sip-sdmx-code:educationFields-F0414 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0414" ;
+    skos:prefLabel "Marketing and advertising"@en ;
+    rdfs:label "Marketing and advertising"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0414 .
+
+
+sip-sdmx-code:educationFields-F0415 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0415" ;
+    skos:prefLabel "Secretarial and office work"@en ;
+    rdfs:label "Secretarial and office work"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0415 .
+
+
+sip-sdmx-code:educationFields-F0416 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0416" ;
+    skos:prefLabel "Wholesale and retail sales"@en ;
+    rdfs:label "Wholesale and retail sales"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0416 .
+
+
+sip-sdmx-code:educationFields-F0417 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0417" ;
+    skos:prefLabel "Work skills"@en ;
+    rdfs:label "Work skills"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0417 .
+
+
+sip-sdmx-code:educationFields-F0419 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0419" ;
+    skos:prefLabel "Business and administration not elsewhere classified"@en ;
+    rdfs:label "Business and administration not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0419 .
+
+
+sip-sdmx-code:educationFields-F042 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F042" ;
+    skos:prefLabel "Law"@en ;
+    rdfs:label "Law"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F042 .
+
+
+sip-sdmx-code:educationFields-F0421 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0421" ;
+    skos:prefLabel "Law"@en ;
+    rdfs:label "Law"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0421 .
+
+
+sip-sdmx-code:educationFields-F048 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F048" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving business, administration and law"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving business, administration and law"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F048 .
+
+
+sip-sdmx-code:educationFields-F0488 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0488" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving business, administration and law"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving business, administration and law"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0488 .
+
+
+sip-sdmx-code:educationFields-F049 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F049" ;
+    skos:prefLabel "Business, administration and law not elsewhere classified"@en ;
+    rdfs:label "Business, administration and law not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F049 .
+
+
+sip-sdmx-code:educationFields-F0499 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0499" ;
+    skos:prefLabel "Business, administration and law not elsewhere classified"@en ;
+    rdfs:label "Business, administration and law not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0499 .
+
+
+sip-sdmx-code:educationFields-F05 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F05" ;
+    skos:prefLabel "Natural sciences, mathematics and statistics"@en ;
+    rdfs:label "Natural sciences, mathematics and statistics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F05 .
+
+
+sip-sdmx-code:educationFields-F050 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F050" ;
+    skos:prefLabel "Natural sciences, mathematics and statistics not further defined"@en ;
+    rdfs:label "Natural sciences, mathematics and statistics not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F050 .
+
+
+sip-sdmx-code:educationFields-F0500 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0500" ;
+    skos:prefLabel "Natural sciences, mathematics and statistics not further defined"@en ;
+    rdfs:label "Natural sciences, mathematics and statistics not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0500 .
+
+
+sip-sdmx-code:educationFields-F051 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F051" ;
+    skos:prefLabel "Biological and related sciences"@en ;
+    rdfs:label "Biological and related sciences"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F051 .
+
+
+sip-sdmx-code:educationFields-F0510 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0510" ;
+    skos:prefLabel "Biological and related sciences not further defined"@en ;
+    rdfs:label "Biological and related sciences not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0510 .
+
+
+sip-sdmx-code:educationFields-F0511 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0511" ;
+    skos:prefLabel "Biology"@en ;
+    rdfs:label "Biology"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0511 .
+
+
+sip-sdmx-code:educationFields-F0512 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0512" ;
+    skos:prefLabel "Biochemistry"@en ;
+    rdfs:label "Biochemistry"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0512 .
+
+
+sip-sdmx-code:educationFields-F0519 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0519" ;
+    skos:prefLabel "Biological and related sciences not elsewhere classified"@en ;
+    rdfs:label "Biological and related sciences not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0519 .
+
+
+sip-sdmx-code:educationFields-F052 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F052" ;
+    skos:prefLabel "Environment"@en ;
+    rdfs:label "Environment"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F052 .
+
+
+sip-sdmx-code:educationFields-F0520 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0520" ;
+    skos:prefLabel "Environment not further defined"@en ;
+    rdfs:label "Environment not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0520 .
+
+
+sip-sdmx-code:educationFields-F0521 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0521" ;
+    skos:prefLabel "Environmental sciences"@en ;
+    rdfs:label "Environmental sciences"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0521 .
+
+
+sip-sdmx-code:educationFields-F0522 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0522" ;
+    skos:prefLabel "Natural environments and wildlife"@en ;
+    rdfs:label "Natural environments and wildlife"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0522 .
+
+
+sip-sdmx-code:educationFields-F0529 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0529" ;
+    skos:prefLabel "Environment not elsewhere classified"@en ;
+    rdfs:label "Environment not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0529 .
+
+
+sip-sdmx-code:educationFields-F053 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F053" ;
+    skos:prefLabel "Physical sciences"@en ;
+    rdfs:label "Physical sciences"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F053 .
+
+
+sip-sdmx-code:educationFields-F0530 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0530" ;
+    skos:prefLabel "Physical sciences not further defined"@en ;
+    rdfs:label "Physical sciences not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0530 .
+
+
+sip-sdmx-code:educationFields-F0531 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0531" ;
+    skos:prefLabel "Chemistry"@en ;
+    rdfs:label "Chemistry"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0531 .
+
+
+sip-sdmx-code:educationFields-F0532 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0532" ;
+    skos:prefLabel "Earth sciences"@en ;
+    rdfs:label "Earth sciences"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0532 .
+
+
+sip-sdmx-code:educationFields-F0533 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0533" ;
+    skos:prefLabel "Physics"@en ;
+    rdfs:label "Physics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0533 .
+
+
+sip-sdmx-code:educationFields-F0539 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0539" ;
+    skos:prefLabel "Physical sciences not elsewhere classified"@en ;
+    rdfs:label "Physical sciences not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0539 .
+
+
+sip-sdmx-code:educationFields-F054 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F054" ;
+    skos:prefLabel "Mathematics and statistics"@en ;
+    rdfs:label "Mathematics and statistics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F054 .
+
+
+sip-sdmx-code:educationFields-F0540 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0540" ;
+    skos:prefLabel "Mathematics and statistics not further defined"@en ;
+    rdfs:label "Mathematics and statistics not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0540 .
+
+
+sip-sdmx-code:educationFields-F0541 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0541" ;
+    skos:prefLabel "Mathematics"@en ;
+    rdfs:label "Mathematics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0541 .
+
+
+sip-sdmx-code:educationFields-F0542 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0542" ;
+    skos:prefLabel "Statistics"@en ;
+    rdfs:label "Statistics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0542 .
+
+
+sip-sdmx-code:educationFields-F058 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F058" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F058 .
+
+
+sip-sdmx-code:educationFields-F0588 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0588" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0588 .
+
+
+sip-sdmx-code:educationFields-F059 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F059" ;
+    skos:prefLabel "Natural sciences, mathematics and statistics not elsewhere classified"@en ;
+    rdfs:label "Natural sciences, mathematics and statistics not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F059 .
+
+
+sip-sdmx-code:educationFields-F0599 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0599" ;
+    skos:prefLabel "Natural sciences, mathematics and statistics not elsewhere classified"@en ;
+    rdfs:label "Natural sciences, mathematics and statistics not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0599 .
+
+
+sip-sdmx-code:educationFields-F06 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F06" ;
+    skos:prefLabel "Information and Communication Technologies (ICTs)"@en ;
+    rdfs:label "Information and Communication Technologies (ICTs)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F06 .
+
+
+sip-sdmx-code:educationFields-F061 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F061" ;
+    skos:prefLabel "Information and Communication Technologies (ICTs)"@en ;
+    rdfs:label "Information and Communication Technologies (ICTs)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F061 .
+
+
+sip-sdmx-code:educationFields-F0610 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0610" ;
+    skos:prefLabel "Information and Communication Technologies (ICTs) not further defined"@en ;
+    rdfs:label "Information and Communication Technologies (ICTs) not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0610 .
+
+
+sip-sdmx-code:educationFields-F0611 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0611" ;
+    skos:prefLabel "Computer use"@en ;
+    rdfs:label "Computer use"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0611 .
+
+
+sip-sdmx-code:educationFields-F0612 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0612" ;
+    skos:prefLabel "Database and network design and administration"@en ;
+    rdfs:label "Database and network design and administration"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0612 .
+
+
+sip-sdmx-code:educationFields-F0613 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0613" ;
+    skos:prefLabel "Software and applications development and analysis"@en ;
+    rdfs:label "Software and applications development and analysis"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0613 .
+
+
+sip-sdmx-code:educationFields-F0619 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0619" ;
+    skos:prefLabel "Information and Communication Technologies (ICTs) not elsewhere classified"@en ;
+    rdfs:label "Information and Communication Technologies (ICTs) not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0619 .
+
+
+sip-sdmx-code:educationFields-F068 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F068" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F068 .
+
+
+sip-sdmx-code:educationFields-F0688 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0688" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0688 .
+
+
+sip-sdmx-code:educationFields-F07 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F07" ;
+    skos:prefLabel "Engineering, manufacturing and construction"@en ;
+    rdfs:label "Engineering, manufacturing and construction"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F07 .
+
+
+sip-sdmx-code:educationFields-F070 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F070" ;
+    skos:prefLabel "Engineering, manufacturing and construction not further defined"@en ;
+    rdfs:label "Engineering, manufacturing and construction not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F070 .
+
+
+sip-sdmx-code:educationFields-F0700 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0700" ;
+    skos:prefLabel "Engineering, manufacturing and construction not further defined"@en ;
+    rdfs:label "Engineering, manufacturing and construction not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0700 .
+
+
+sip-sdmx-code:educationFields-F071 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F071" ;
+    skos:prefLabel "Engineering and engineering trades"@en ;
+    rdfs:label "Engineering and engineering trades"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F071 .
+
+
+sip-sdmx-code:educationFields-F0710 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0710" ;
+    skos:prefLabel "Engineering and engineering trades not further defined"@en ;
+    rdfs:label "Engineering and engineering trades not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0710 .
+
+
+sip-sdmx-code:educationFields-F0711 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0711" ;
+    skos:prefLabel "Chemical engineering and processes"@en ;
+    rdfs:label "Chemical engineering and processes"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0711 .
+
+
+sip-sdmx-code:educationFields-F0712 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0712" ;
+    skos:prefLabel "Environmental protection technology"@en ;
+    rdfs:label "Environmental protection technology"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0712 .
+
+
+sip-sdmx-code:educationFields-F0713 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0713" ;
+    skos:prefLabel "Electricity and energy"@en ;
+    rdfs:label "Electricity and energy"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0713 .
+
+
+sip-sdmx-code:educationFields-F0714 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0714" ;
+    skos:prefLabel "Electronics and automation"@en ;
+    rdfs:label "Electronics and automation"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0714 .
+
+
+sip-sdmx-code:educationFields-F0715 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0715" ;
+    skos:prefLabel "Mechanics and metal trades"@en ;
+    rdfs:label "Mechanics and metal trades"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0715 .
+
+
+sip-sdmx-code:educationFields-F0716 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0716" ;
+    skos:prefLabel "Motor vehicles, ships and aircraft"@en ;
+    rdfs:label "Motor vehicles, ships and aircraft"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0716 .
+
+
+sip-sdmx-code:educationFields-F0719 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0719" ;
+    skos:prefLabel "Engineering and engineering trades not elsewhere classified"@en ;
+    rdfs:label "Engineering and engineering trades not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0719 .
+
+
+sip-sdmx-code:educationFields-F072 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F072" ;
+    skos:prefLabel "Manufacturing and processing"@en ;
+    rdfs:label "Manufacturing and processing"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F072 .
+
+
+sip-sdmx-code:educationFields-F0720 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0720" ;
+    skos:prefLabel "Manufacturing and processing not further defined"@en ;
+    rdfs:label "Manufacturing and processing not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0720 .
+
+
+sip-sdmx-code:educationFields-F0721 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0721" ;
+    skos:prefLabel "Food processing"@en ;
+    rdfs:label "Food processing"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0721 .
+
+
+sip-sdmx-code:educationFields-F0722 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0722" ;
+    skos:prefLabel "Materials (glass, paper, plastic and wood)"@en ;
+    rdfs:label "Materials (glass, paper, plastic and wood)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0722 .
+
+
+sip-sdmx-code:educationFields-F0723 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0723" ;
+    skos:prefLabel "Textiles (clothes, footwear and leather)"@en ;
+    rdfs:label "Textiles (clothes, footwear and leather)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0723 .
+
+
+sip-sdmx-code:educationFields-F0724 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0724" ;
+    skos:prefLabel "Mining and extraction"@en ;
+    rdfs:label "Mining and extraction"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0724 .
+
+
+sip-sdmx-code:educationFields-F0729 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0729" ;
+    skos:prefLabel "Manufacturing and processing not elsewhere classified"@en ;
+    rdfs:label "Manufacturing and processing not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0729 .
+
+
+sip-sdmx-code:educationFields-F073 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F073" ;
+    skos:prefLabel "Architecture and construction"@en ;
+    rdfs:label "Architecture and construction"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F073 .
+
+
+sip-sdmx-code:educationFields-F0730 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0730" ;
+    skos:prefLabel "Architecture and construction not further defined"@en ;
+    rdfs:label "Architecture and construction not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0730 .
+
+
+sip-sdmx-code:educationFields-F0731 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0731" ;
+    skos:prefLabel "Architecture and town planning"@en ;
+    rdfs:label "Architecture and town planning"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0731 .
+
+
+sip-sdmx-code:educationFields-F0732 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0732" ;
+    skos:prefLabel "Building and civil engineering"@en ;
+    rdfs:label "Building and civil engineering"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0732 .
+
+
+sip-sdmx-code:educationFields-F078 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F078" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F078 .
+
+
+sip-sdmx-code:educationFields-F0788 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0788" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0788 .
+
+
+sip-sdmx-code:educationFields-F079 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F079" ;
+    skos:prefLabel "Engineering, manufacturing and construction not elsewhere classified"@en ;
+    rdfs:label "Engineering, manufacturing and construction not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F079 .
+
+
+sip-sdmx-code:educationFields-F0799 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0799" ;
+    skos:prefLabel "Engineering, manufacturing and construction not elsewhere classified"@en ;
+    rdfs:label "Engineering, manufacturing and construction not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0799 .
+
+
+sip-sdmx-code:educationFields-F08 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F08" ;
+    skos:prefLabel "Agriculture, forestry, fisheries and veterinary"@en ;
+    rdfs:label "Agriculture, forestry, fisheries and veterinary"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F08 .
+
+
+sip-sdmx-code:educationFields-F080 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F080" ;
+    skos:prefLabel "Agriculture, forestry, fisheries and veterinary not further defined"@en ;
+    rdfs:label "Agriculture, forestry, fisheries and veterinary not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F080 .
+
+
+sip-sdmx-code:educationFields-F0800 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0800" ;
+    skos:prefLabel "Agriculture, forestry, fisheries and veterinary not further defined"@en ;
+    rdfs:label "Agriculture, forestry, fisheries and veterinary not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0800 .
+
+
+sip-sdmx-code:educationFields-F081 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F081" ;
+    skos:prefLabel "Agriculture"@en ;
+    rdfs:label "Agriculture"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F081 .
+
+
+sip-sdmx-code:educationFields-F0810 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0810" ;
+    skos:prefLabel "Agriculture not further defined"@en ;
+    rdfs:label "Agriculture not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0810 .
+
+
+sip-sdmx-code:educationFields-F0811 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0811" ;
+    skos:prefLabel "Crop and livestock production"@en ;
+    rdfs:label "Crop and livestock production"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0811 .
+
+
+sip-sdmx-code:educationFields-F0812 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0812" ;
+    skos:prefLabel "Horticulture"@en ;
+    rdfs:label "Horticulture"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0812 .
+
+
+sip-sdmx-code:educationFields-F0819 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0819" ;
+    skos:prefLabel "Agriculture not elsewhere classified"@en ;
+    rdfs:label "Agriculture not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0819 .
+
+
+sip-sdmx-code:educationFields-F082 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F082" ;
+    skos:prefLabel "Forestry"@en ;
+    rdfs:label "Forestry"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F082 .
+
+
+sip-sdmx-code:educationFields-F0821 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0821" ;
+    skos:prefLabel "Forestry"@en ;
+    rdfs:label "Forestry"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0821 .
+
+
+sip-sdmx-code:educationFields-F083 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F083" ;
+    skos:prefLabel "Fisheries"@en ;
+    rdfs:label "Fisheries"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F083 .
+
+
+sip-sdmx-code:educationFields-F0831 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0831" ;
+    skos:prefLabel "Fisheries"@en ;
+    rdfs:label "Fisheries"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0831 .
+
+
+sip-sdmx-code:educationFields-F084 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F084" ;
+    skos:prefLabel "Veterinary"@en ;
+    rdfs:label "Veterinary"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F084 .
+
+
+sip-sdmx-code:educationFields-F0841 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0841" ;
+    skos:prefLabel "Veterinary"@en ;
+    rdfs:label "Veterinary"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0841 .
+
+
+sip-sdmx-code:educationFields-F088 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F088" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F088 .
+
+
+sip-sdmx-code:educationFields-F0888 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0888" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0888 .
+
+
+sip-sdmx-code:educationFields-F089 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F089" ;
+    skos:prefLabel "Agriculture, forestry, fisheries and veterinary not elsewhere classified"@en ;
+    rdfs:label "Agriculture, forestry, fisheries and veterinary not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F089 .
+
+
+sip-sdmx-code:educationFields-F0899 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0899" ;
+    skos:prefLabel "Agriculture, forestry, fisheries and veterinary not elsewhere classified"@en ;
+    rdfs:label "Agriculture, forestry, fisheries and veterinary not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0899 .
+
+
+sip-sdmx-code:educationFields-F09 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F09" ;
+    skos:prefLabel "Health and welfare"@en ;
+    rdfs:label "Health and welfare"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F09 .
+
+
+sip-sdmx-code:educationFields-F090 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F090" ;
+    skos:prefLabel "Health and welfare not further defined"@en ;
+    rdfs:label "Health and welfare not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F090 .
+
+
+sip-sdmx-code:educationFields-F0900 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0900" ;
+    skos:prefLabel "Health and welfare not further defined"@en ;
+    rdfs:label "Health and welfare not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0900 .
+
+
+sip-sdmx-code:educationFields-F091 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F091" ;
+    skos:prefLabel "Health"@en ;
+    rdfs:label "Health"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F091 .
+
+
+sip-sdmx-code:educationFields-F0910 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0910" ;
+    skos:prefLabel "Health not further defined"@en ;
+    rdfs:label "Health not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0910 .
+
+
+sip-sdmx-code:educationFields-F0911 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0911" ;
+    skos:prefLabel "Dental studies"@en ;
+    rdfs:label "Dental studies"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0911 .
+
+
+sip-sdmx-code:educationFields-F0912 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0912" ;
+    skos:prefLabel "Medicine"@en ;
+    rdfs:label "Medicine"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0912 .
+
+
+sip-sdmx-code:educationFields-F0913 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0913" ;
+    skos:prefLabel "Nursing and midwifery"@en ;
+    rdfs:label "Nursing and midwifery"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0913 .
+
+
+sip-sdmx-code:educationFields-F0914 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0914" ;
+    skos:prefLabel "Medical diagnostic and treatment technology"@en ;
+    rdfs:label "Medical diagnostic and treatment technology"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0914 .
+
+
+sip-sdmx-code:educationFields-F0915 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0915" ;
+    skos:prefLabel "Therapy and rehabilitation"@en ;
+    rdfs:label "Therapy and rehabilitation"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0915 .
+
+
+sip-sdmx-code:educationFields-F0916 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0916" ;
+    skos:prefLabel "Pharmacy"@en ;
+    rdfs:label "Pharmacy"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0916 .
+
+
+sip-sdmx-code:educationFields-F0917 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0917" ;
+    skos:prefLabel "Traditional and complementary medicine and therapy"@en ;
+    rdfs:label "Traditional and complementary medicine and therapy"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0917 .
+
+
+sip-sdmx-code:educationFields-F0919 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0919" ;
+    skos:prefLabel "Health not elsewhere classified"@en ;
+    rdfs:label "Health not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0919 .
+
+
+sip-sdmx-code:educationFields-F092 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F092" ;
+    skos:prefLabel "Welfare"@en ;
+    rdfs:label "Welfare"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F092 .
+
+
+sip-sdmx-code:educationFields-F0920 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0920" ;
+    skos:prefLabel "Welfare not further defined"@en ;
+    rdfs:label "Welfare not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0920 .
+
+
+sip-sdmx-code:educationFields-F0921 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0921" ;
+    skos:prefLabel "Care of the elderly and of disabled adults"@en ;
+    rdfs:label "Care of the elderly and of disabled adults"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0921 .
+
+
+sip-sdmx-code:educationFields-F0922 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0922" ;
+    skos:prefLabel "Child care and youth services"@en ;
+    rdfs:label "Child care and youth services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0922 .
+
+
+sip-sdmx-code:educationFields-F0923 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0923" ;
+    skos:prefLabel "Social work and counselling"@en ;
+    rdfs:label "Social work and counselling"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0923 .
+
+
+sip-sdmx-code:educationFields-F0929 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0929" ;
+    skos:prefLabel "Welfare not elsewhere classified"@en ;
+    rdfs:label "Welfare not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0929 .
+
+
+sip-sdmx-code:educationFields-F098 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F098" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving health and welfare"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving health and welfare"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F098 .
+
+
+sip-sdmx-code:educationFields-F0988 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0988" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving health and welfare"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving health and welfare"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0988 .
+
+
+sip-sdmx-code:educationFields-F099 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F099" ;
+    skos:prefLabel "Health and welfare not elsewhere classified"@en ;
+    rdfs:label "Health and welfare not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F099 .
+
+
+sip-sdmx-code:educationFields-F0999 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F0999" ;
+    skos:prefLabel "Health and welfare not elsewhere classified"@en ;
+    rdfs:label "Health and welfare not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F0999 .
+
+
+sip-sdmx-code:educationFields-F10 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F10" ;
+    skos:prefLabel "Services"@en ;
+    rdfs:label "Services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F10 .
+
+
+sip-sdmx-code:educationFields-F100 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F100" ;
+    skos:prefLabel "Services not further defined"@en ;
+    rdfs:label "Services not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F100 .
+
+
+sip-sdmx-code:educationFields-F1000 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1000" ;
+    skos:prefLabel "Services not further defined"@en ;
+    rdfs:label "Services not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1000 .
+
+
+sip-sdmx-code:educationFields-F101 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F101" ;
+    skos:prefLabel "Personal services"@en ;
+    rdfs:label "Personal services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F101 .
+
+
+sip-sdmx-code:educationFields-F1010 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1010" ;
+    skos:prefLabel "Personal services not further defined"@en ;
+    rdfs:label "Personal services not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1010 .
+
+
+sip-sdmx-code:educationFields-F1011 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1011" ;
+    skos:prefLabel "Domestic services"@en ;
+    rdfs:label "Domestic services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1011 .
+
+
+sip-sdmx-code:educationFields-F1012 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1012" ;
+    skos:prefLabel "Hair and beauty services"@en ;
+    rdfs:label "Hair and beauty services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1012 .
+
+
+sip-sdmx-code:educationFields-F1013 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1013" ;
+    skos:prefLabel "Hotel, restaurants and catering"@en ;
+    rdfs:label "Hotel, restaurants and catering"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1013 .
+
+
+sip-sdmx-code:educationFields-F1014 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1014" ;
+    skos:prefLabel "Sports"@en ;
+    rdfs:label "Sports"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1014 .
+
+
+sip-sdmx-code:educationFields-F1015 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1015" ;
+    skos:prefLabel "Travel, tourism and leisure"@en ;
+    rdfs:label "Travel, tourism and leisure"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1015 .
+
+
+sip-sdmx-code:educationFields-F1019 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1019" ;
+    skos:prefLabel "Personal services not elsewhere classified"@en ;
+    rdfs:label "Personal services not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1019 .
+
+
+sip-sdmx-code:educationFields-F102 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F102" ;
+    skos:prefLabel "Hygiene and occupational health services"@en ;
+    rdfs:label "Hygiene and occupational health services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F102 .
+
+
+sip-sdmx-code:educationFields-F1020 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1020" ;
+    skos:prefLabel "Hygiene and occupational health services not further defined"@en ;
+    rdfs:label "Hygiene and occupational health services not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1020 .
+
+
+sip-sdmx-code:educationFields-F1021 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1021" ;
+    skos:prefLabel "Community sanitation"@en ;
+    rdfs:label "Community sanitation"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1021 .
+
+
+sip-sdmx-code:educationFields-F1022 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1022" ;
+    skos:prefLabel "Occupational health and safety"@en ;
+    rdfs:label "Occupational health and safety"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1022 .
+
+
+sip-sdmx-code:educationFields-F1029 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1029" ;
+    skos:prefLabel "Hygiene and occupational health services not elsewhere classified"@en ;
+    rdfs:label "Hygiene and occupational health services not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1029 .
+
+
+sip-sdmx-code:educationFields-F103 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F103" ;
+    skos:prefLabel "Security services"@en ;
+    rdfs:label "Security services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F103 .
+
+
+sip-sdmx-code:educationFields-F1030 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1030" ;
+    skos:prefLabel "Security services not further defined"@en ;
+    rdfs:label "Security services not further defined"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1030 .
+
+
+sip-sdmx-code:educationFields-F1031 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1031" ;
+    skos:prefLabel "Military and defence"@en ;
+    rdfs:label "Military and defence"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1031 .
+
+
+sip-sdmx-code:educationFields-F1032 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1032" ;
+    skos:prefLabel "Protection of individuals and property"@en ;
+    rdfs:label "Protection of individuals and property"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1032 .
+
+
+sip-sdmx-code:educationFields-F1039 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1039" ;
+    skos:prefLabel "Security services not elsewhere classified"@en ;
+    rdfs:label "Security services not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1039 .
+
+
+sip-sdmx-code:educationFields-F104 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F104" ;
+    skos:prefLabel "Transport services"@en ;
+    rdfs:label "Transport services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F104 .
+
+
+sip-sdmx-code:educationFields-F1041 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1041" ;
+    skos:prefLabel "Transport services"@en ;
+    rdfs:label "Transport services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1041 .
+
+
+sip-sdmx-code:educationFields-F108 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F108" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving services"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F108 .
+
+
+sip-sdmx-code:educationFields-F1088 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1088" ;
+    skos:prefLabel "Inter-disciplinary programmes and qualifications involving services"@en ;
+    rdfs:label "Inter-disciplinary programmes and qualifications involving services"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1088 .
+
+
+sip-sdmx-code:educationFields-F109 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F109" ;
+    skos:prefLabel "Services not elsewhere classified"@en ;
+    rdfs:label "Services not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F109 .
+
+
+sip-sdmx-code:educationFields-F1099 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F1099" ;
+    skos:prefLabel "Services not elsewhere classified"@en ;
+    rdfs:label "Services not elsewhere classified"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F1099 .
+
+
+sip-sdmx-code:educationFields-F99 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F99" ;
+    skos:prefLabel "Field unspecified (Broad field level)"@en ;
+    rdfs:label "Field unspecified (Broad field level)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F99 .
+
+
+sip-sdmx-code:educationFields-F999 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F999" ;
+    skos:prefLabel "Field unspecified (Narrow field level)"@en ;
+    rdfs:label "Field unspecified (Narrow field level)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F999 .
+
+
+sip-sdmx-code:educationFields-F9999 a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "F9999" ;
+    skos:prefLabel "Field unspecified (Detailed field level)"@en ;
+    rdfs:label "Field unspecified (Detailed field level)"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-F9999 .
+
+
+sip-sdmx-code:educationFields-_T a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-_T .
+
+
+sip-sdmx-code:educationFields-_Z a skos:Concept, sip-sdmx-code:EducationFields;
+    skos:topConceptOf sip-sdmx-code:educationFields ;
+    skos:inScheme sip-sdmx-code:educationFields ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:educationFields skos:hasTopConcept sip-sdmx-code:educationFields-_Z .
+

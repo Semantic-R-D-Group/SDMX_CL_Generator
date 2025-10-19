@@ -1,0 +1,214 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_SECTOR Scheme Definition
+#####################################################
+
+sip-sdmx-code:sector a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Reference/Counterpart institutional sector - codelist scheme"@en ;
+    rdfs:label "Reference/Counterpart institutional sector - codelist scheme"@en ;
+    skos:notation "CL_SECTOR" ;
+    skos:definition "A reference sector codelist based on UIS:CL_SECTOR(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_SECTOR/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:Sector .
+
+sip-sdmx-code:Sector a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Reference/Counterpart institutional sector - codelist class"@en ;
+    rdfs:label "Reference/Counterpart institutional sector - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector .
+
+
+########################################
+# CL_SECTOR Codes
+########################################
+    
+sip-sdmx-code:sector-INST_PRIV a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "INST_PRIV" ;
+    skos:prefLabel "All private educational institutions"@en ;
+    rdfs:label "All private educational institutions"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-INST_PRIV .
+
+
+sip-sdmx-code:sector-INST_PRIV_GOV a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "INST_PRIV_GOV" ;
+    skos:prefLabel "Government dependent private educational institutions"@en ;
+    rdfs:label "Government dependent private educational institutions"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-INST_PRIV_GOV .
+
+
+sip-sdmx-code:sector-INST_PRIV_IND a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "INST_PRIV_IND" ;
+    skos:prefLabel "Independent private educational institutions"@en ;
+    rdfs:label "Independent private educational institutions"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-INST_PRIV_IND .
+
+
+sip-sdmx-code:sector-INST_PUB a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "INST_PUB" ;
+    skos:prefLabel "Public educational institutions"@en ;
+    rdfs:label "Public educational institutions"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-INST_PUB .
+
+
+sip-sdmx-code:sector-INST_T a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "INST_T" ;
+    skos:prefLabel "All public and private educational institutions"@en ;
+    rdfs:label "All public and private educational institutions"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-INST_T .
+
+
+sip-sdmx-code:sector-INT_SOURCES_EDU a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "INT_SOURCES_EDU" ;
+    skos:prefLabel "International sources for expenditure on education"@en ;
+    rdfs:label "International sources for expenditure on education"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-INT_SOURCES_EDU .
+
+
+sip-sdmx-code:sector-PRV_NEDUC a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "PRV_NEDUC" ;
+    skos:prefLabel "Non-educational private sector"@en ;
+    rdfs:label "Non-educational private sector"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-PRV_NEDUC .
+
+
+sip-sdmx-code:sector-PRV_NEDUC_O a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "PRV_NEDUC_O" ;
+    skos:prefLabel "Other non-educational private entities"@en ;
+    rdfs:label "Other non-educational private entities"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-PRV_NEDUC_O .
+
+
+sip-sdmx-code:sector-S13 a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "S13" ;
+    skos:prefLabel "General government"@en ;
+    rdfs:label "General government"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-S13 .
+
+
+sip-sdmx-code:sector-S1311 a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "S1311" ;
+    skos:prefLabel "Central government excluding social security"@en ;
+    rdfs:label "Central government excluding social security"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-S1311 .
+
+
+sip-sdmx-code:sector-S1312 a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "S1312" ;
+    skos:prefLabel "State government excluding social security"@en ;
+    rdfs:label "State government excluding social security"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-S1312 .
+
+
+sip-sdmx-code:sector-S1313 a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "S1313" ;
+    skos:prefLabel "Local government excluding social security"@en ;
+    rdfs:label "Local government excluding social security"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-S1313 .
+
+
+sip-sdmx-code:sector-S13M a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "S13M" ;
+    skos:prefLabel "State and local government"@en ;
+    rdfs:label "State and local government"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-S13M .
+
+
+sip-sdmx-code:sector-S14 a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "S14" ;
+    skos:prefLabel "Households"@en ;
+    rdfs:label "Households"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-S14 .
+
+
+sip-sdmx-code:sector-S14_STU_ABR a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "S14_STU_ABR" ;
+    skos:prefLabel "Students studying abroad"@en ;
+    rdfs:label "Students studying abroad"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-S14_STU_ABR .
+
+
+sip-sdmx-code:sector-_T a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-_T .
+
+
+sip-sdmx-code:sector-_TXINST a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "_TXINST" ;
+    skos:prefLabel "Sectors other than educational institutions"@en ;
+    rdfs:label "Sectors other than educational institutions"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-_TXINST .
+
+
+sip-sdmx-code:sector-_Z a skos:Concept, sip-sdmx-code:Sector;
+    skos:topConceptOf sip-sdmx-code:sector ;
+    skos:inScheme sip-sdmx-code:sector ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:sector skos:hasTopConcept sip-sdmx-code:sector-_Z .
+

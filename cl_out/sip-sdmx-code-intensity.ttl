@@ -1,0 +1,74 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_INTENSITY Scheme Definition
+#####################################################
+
+sip-sdmx-code:intensity a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Intensity - codelist scheme"@en ;
+    rdfs:label "Intensity - codelist scheme"@en ;
+    skos:notation "CL_INTENSITY" ;
+    skos:definition "A reference intensity codelist based on UIS:CL_INTENSITY(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_INTENSITY/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:Intensity .
+
+sip-sdmx-code:Intensity a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Intensity - codelist class"@en ;
+    rdfs:label "Intensity - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:intensity ;
+    skos:inScheme sip-sdmx-code:intensity .
+
+
+########################################
+# CL_INTENSITY Codes
+########################################
+    
+sip-sdmx-code:intensity-FT a skos:Concept, sip-sdmx-code:Intensity;
+    skos:topConceptOf sip-sdmx-code:intensity ;
+    skos:inScheme sip-sdmx-code:intensity ;
+    skos:notation "FT" ;
+    skos:prefLabel "Full-time"@en ;
+    rdfs:label "Full-time"@en .
+
+sip-sdmx-code:intensity skos:hasTopConcept sip-sdmx-code:intensity-FT .
+
+
+sip-sdmx-code:intensity-PT a skos:Concept, sip-sdmx-code:Intensity;
+    skos:topConceptOf sip-sdmx-code:intensity ;
+    skos:inScheme sip-sdmx-code:intensity ;
+    skos:notation "PT" ;
+    skos:prefLabel "Part-time"@en ;
+    rdfs:label "Part-time"@en .
+
+sip-sdmx-code:intensity skos:hasTopConcept sip-sdmx-code:intensity-PT .
+
+
+sip-sdmx-code:intensity-_T a skos:Concept, sip-sdmx-code:Intensity;
+    skos:topConceptOf sip-sdmx-code:intensity ;
+    skos:inScheme sip-sdmx-code:intensity ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:intensity skos:hasTopConcept sip-sdmx-code:intensity-_T .
+
+
+sip-sdmx-code:intensity-_Z a skos:Concept, sip-sdmx-code:Intensity;
+    skos:topConceptOf sip-sdmx-code:intensity ;
+    skos:inScheme sip-sdmx-code:intensity ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:intensity skos:hasTopConcept sip-sdmx-code:intensity-_Z .
+

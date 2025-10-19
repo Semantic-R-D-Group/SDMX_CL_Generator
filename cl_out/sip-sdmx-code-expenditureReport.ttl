@@ -1,0 +1,84 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_EXPENDITUREREPORT Scheme Definition
+#####################################################
+
+sip-sdmx-code:expenditureReport a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Type of expenditure reported - codelist scheme"@en ;
+    rdfs:label "Type of expenditure reported - codelist scheme"@en ;
+    skos:notation "CL_EXPENDITUREREPORT" ;
+    skos:definition "A reference expenditureReport codelist based on UIS:CL_TYPE_EXP_REPORTED(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_TYPE_EXP_REPORTED/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:ExpenditureReport .
+
+sip-sdmx-code:ExpenditureReport a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Type of expenditure reported - codelist class"@en ;
+    rdfs:label "Type of expenditure reported - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:expenditureReport ;
+    skos:inScheme sip-sdmx-code:expenditureReport .
+
+
+########################################
+# CL_EXPENDITUREREPORT Codes
+########################################
+    
+sip-sdmx-code:expenditureReport-ACTUAL a skos:Concept, sip-sdmx-code:ExpenditureReport;
+    skos:topConceptOf sip-sdmx-code:expenditureReport ;
+    skos:inScheme sip-sdmx-code:expenditureReport ;
+    skos:notation "ACTUAL" ;
+    skos:prefLabel "Actual expenditure"@en ;
+    rdfs:label "Actual expenditure"@en .
+
+sip-sdmx-code:expenditureReport skos:hasTopConcept sip-sdmx-code:expenditureReport-ACTUAL .
+
+
+sip-sdmx-code:expenditureReport-BUDGET a skos:Concept, sip-sdmx-code:ExpenditureReport;
+    skos:topConceptOf sip-sdmx-code:expenditureReport ;
+    skos:inScheme sip-sdmx-code:expenditureReport ;
+    skos:notation "BUDGET" ;
+    skos:prefLabel "Budget expenditure"@en ;
+    rdfs:label "Budget expenditure"@en .
+
+sip-sdmx-code:expenditureReport skos:hasTopConcept sip-sdmx-code:expenditureReport-BUDGET .
+
+
+sip-sdmx-code:expenditureReport-_T a skos:Concept, sip-sdmx-code:ExpenditureReport;
+    skos:topConceptOf sip-sdmx-code:expenditureReport ;
+    skos:inScheme sip-sdmx-code:expenditureReport ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:expenditureReport skos:hasTopConcept sip-sdmx-code:expenditureReport-_T .
+
+
+sip-sdmx-code:expenditureReport-_X a skos:Concept, sip-sdmx-code:ExpenditureReport;
+    skos:topConceptOf sip-sdmx-code:expenditureReport ;
+    skos:inScheme sip-sdmx-code:expenditureReport ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not allocated/unspecified"@en ;
+    rdfs:label "Not allocated/unspecified"@en .
+
+sip-sdmx-code:expenditureReport skos:hasTopConcept sip-sdmx-code:expenditureReport-_X .
+
+
+sip-sdmx-code:expenditureReport-_Z a skos:Concept, sip-sdmx-code:ExpenditureReport;
+    skos:topConceptOf sip-sdmx-code:expenditureReport ;
+    skos:inScheme sip-sdmx-code:expenditureReport ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:expenditureReport skos:hasTopConcept sip-sdmx-code:expenditureReport-_Z .
+

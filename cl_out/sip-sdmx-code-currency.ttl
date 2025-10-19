@@ -1,0 +1,2758 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_CURRENCY Scheme Definition
+#####################################################
+
+sip-sdmx-code:currency a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Currency of issuance or invoicing code list - codelist scheme"@en ;
+    rdfs:label "Currency of issuance or invoicing code list - codelist scheme"@en ;
+    skos:notation "CL_CURRENCY" ;
+    skos:definition "A reference currency codelist based on IMF:CL_CURRENCY(1.6)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_CURRENCY/1.6> ;
+    rdfs:seeAlso sip-sdmx-concept:CURRENCY ;
+    skos:related sip-sdmx-concept:CURRENCY ;
+    rdfs:seeAlso sip-sdmx-code:Currency .
+
+sip-sdmx-code:currency skos:exactMatch sdmx-code:currency .
+
+sip-sdmx-code:Currency a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Currency of issuance or invoicing code list - codelist class"@en ;
+    rdfs:label "Currency of issuance or invoicing code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency .
+
+
+########################################
+# CL_CURRENCY Codes
+########################################
+    
+sip-sdmx-code:currency-ADF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ADF" ;
+    skos:prefLabel "Andorran franc (1-1 peg to the French franc)"@en ;
+    rdfs:label "Andorran franc (1-1 peg to the French franc)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ADF .
+
+
+sip-sdmx-code:currency-ADP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ADP" ;
+    skos:prefLabel "Andorran peseta (1-1 peg to the Spanish peseta)"@en ;
+    rdfs:label "Andorran peseta (1-1 peg to the Spanish peseta)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ADP .
+
+
+sip-sdmx-code:currency-AED a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AED" ;
+    skos:prefLabel "United Arab Emirates dirham"@en ;
+    rdfs:label "United Arab Emirates dirham"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AED .
+
+
+sip-sdmx-code:currency-AFA a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AFA" ;
+    skos:prefLabel "Afghanistan afghani (old)"@en ;
+    rdfs:label "Afghanistan afghani (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AFA .
+
+
+sip-sdmx-code:currency-AFN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AFN" ;
+    skos:prefLabel "Afghanistan, Afghanis"@en ;
+    rdfs:label "Afghanistan, Afghanis"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AFN .
+
+
+sip-sdmx-code:currency-ALL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ALL" ;
+    skos:prefLabel "Albanian lek"@en ;
+    rdfs:label "Albanian lek"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ALL .
+
+
+sip-sdmx-code:currency-AMD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AMD" ;
+    skos:prefLabel "Armenian dram"@en ;
+    rdfs:label "Armenian dram"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AMD .
+
+
+sip-sdmx-code:currency-ANG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ANG" ;
+    skos:prefLabel "Netherlands Antillean guilder"@en ;
+    rdfs:label "Netherlands Antillean guilder"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ANG .
+
+
+sip-sdmx-code:currency-AOA a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AOA" ;
+    skos:prefLabel "Angolan kwanza"@en ;
+    rdfs:label "Angolan kwanza"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AOA .
+
+
+sip-sdmx-code:currency-AON a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AON" ;
+    skos:prefLabel "Angolan kwanza (old)"@en ;
+    rdfs:label "Angolan kwanza (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AON .
+
+
+sip-sdmx-code:currency-AOR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AOR" ;
+    skos:prefLabel "Angolan kwanza readjustado (old)"@en ;
+    rdfs:label "Angolan kwanza readjustado (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AOR .
+
+
+sip-sdmx-code:currency-ARS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ARS" ;
+    skos:prefLabel "Argentine peso"@en ;
+    rdfs:label "Argentine peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ARS .
+
+
+sip-sdmx-code:currency-ATS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ATS" ;
+    skos:prefLabel "Austrian schilling"@en ;
+    rdfs:label "Austrian schilling"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ATS .
+
+
+sip-sdmx-code:currency-AUD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AUD" ;
+    skos:prefLabel "Australian dollar"@en ;
+    rdfs:label "Australian dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AUD .
+
+
+sip-sdmx-code:currency-AWG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AWG" ;
+    skos:prefLabel "Aruban florin/guilder"@en ;
+    rdfs:label "Aruban florin/guilder"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AWG .
+
+
+sip-sdmx-code:currency-AZM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AZM" ;
+    skos:prefLabel "Azerbaijanian manat (old)"@en ;
+    rdfs:label "Azerbaijanian manat (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AZM .
+
+
+sip-sdmx-code:currency-AZN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "AZN" ;
+    skos:prefLabel "Azerbaijan, manats"@en ;
+    rdfs:label "Azerbaijan, manats"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-AZN .
+
+
+sip-sdmx-code:currency-BAM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BAM" ;
+    skos:prefLabel "Bosnia-Hezergovinian convertible mark"@en ;
+    rdfs:label "Bosnia-Hezergovinian convertible mark"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BAM .
+
+
+sip-sdmx-code:currency-BBD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BBD" ;
+    skos:prefLabel "Barbados dollar"@en ;
+    rdfs:label "Barbados dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BBD .
+
+
+sip-sdmx-code:currency-BDT a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BDT" ;
+    skos:prefLabel "Bangladesh taka"@en ;
+    rdfs:label "Bangladesh taka"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BDT .
+
+
+sip-sdmx-code:currency-BEF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BEF" ;
+    skos:prefLabel "Belgian franc"@en ;
+    rdfs:label "Belgian franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BEF .
+
+
+sip-sdmx-code:currency-BEL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BEL" ;
+    skos:prefLabel "Belgian franc (financial)"@en ;
+    rdfs:label "Belgian franc (financial)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BEL .
+
+
+sip-sdmx-code:currency-BGL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BGL" ;
+    skos:prefLabel "Bulgarian lev (old)"@en ;
+    rdfs:label "Bulgarian lev (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BGL .
+
+
+sip-sdmx-code:currency-BGN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BGN" ;
+    skos:prefLabel "Bulgarian lev"@en ;
+    rdfs:label "Bulgarian lev"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BGN .
+
+
+sip-sdmx-code:currency-BHD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BHD" ;
+    skos:prefLabel "Bahraini dinar"@en ;
+    rdfs:label "Bahraini dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BHD .
+
+
+sip-sdmx-code:currency-BIF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BIF" ;
+    skos:prefLabel "Burundi franc"@en ;
+    rdfs:label "Burundi franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BIF .
+
+
+sip-sdmx-code:currency-BMD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BMD" ;
+    skos:prefLabel "Bermudian dollar"@en ;
+    rdfs:label "Bermudian dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BMD .
+
+
+sip-sdmx-code:currency-BND a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BND" ;
+    skos:prefLabel "Brunei dollar"@en ;
+    rdfs:label "Brunei dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BND .
+
+
+sip-sdmx-code:currency-BOB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BOB" ;
+    skos:prefLabel "Bolivian boliviano"@en ;
+    rdfs:label "Bolivian boliviano"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BOB .
+
+
+sip-sdmx-code:currency-BRL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BRL" ;
+    skos:prefLabel "Brazilian real"@en ;
+    rdfs:label "Brazilian real"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BRL .
+
+
+sip-sdmx-code:currency-BSD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BSD" ;
+    skos:prefLabel "Bahamas dollar"@en ;
+    rdfs:label "Bahamas dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BSD .
+
+
+sip-sdmx-code:currency-BTN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BTN" ;
+    skos:prefLabel "Bhutan ngultrum"@en ;
+    rdfs:label "Bhutan ngultrum"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BTN .
+
+
+sip-sdmx-code:currency-BWP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BWP" ;
+    skos:prefLabel "Botswana pula"@en ;
+    rdfs:label "Botswana pula"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BWP .
+
+
+sip-sdmx-code:currency-BYB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BYB" ;
+    skos:prefLabel "Belarussian rouble (old)"@en ;
+    rdfs:label "Belarussian rouble (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BYB .
+
+
+sip-sdmx-code:currency-BYR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BYR" ;
+    skos:prefLabel "Belarus, Rubles"@en ;
+    rdfs:label "Belarus, Rubles"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BYR .
+
+
+sip-sdmx-code:currency-BZD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "BZD" ;
+    skos:prefLabel "Belize dollar"@en ;
+    rdfs:label "Belize dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-BZD .
+
+
+sip-sdmx-code:currency-CAD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CAD" ;
+    skos:prefLabel "Canadian dollar"@en ;
+    rdfs:label "Canadian dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CAD .
+
+
+sip-sdmx-code:currency-CDF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CDF" ;
+    skos:prefLabel "Congo franc (ex Zaire)"@en ;
+    rdfs:label "Congo franc (ex Zaire)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CDF .
+
+
+sip-sdmx-code:currency-CHE a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CHE" ;
+    skos:prefLabel "WIR Euro"@en ;
+    rdfs:label "WIR Euro"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CHE .
+
+
+sip-sdmx-code:currency-CHF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CHF" ;
+    skos:prefLabel "Swiss franc"@en ;
+    rdfs:label "Swiss franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CHF .
+
+
+sip-sdmx-code:currency-CHW a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CHW" ;
+    skos:prefLabel "WIR Franc"@en ;
+    rdfs:label "WIR Franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CHW .
+
+
+sip-sdmx-code:currency-CLF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CLF" ;
+    skos:prefLabel "Unidades de fomento"@en ;
+    rdfs:label "Unidades de fomento"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CLF .
+
+
+sip-sdmx-code:currency-CLP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CLP" ;
+    skos:prefLabel "Chilean peso"@en ;
+    rdfs:label "Chilean peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CLP .
+
+
+sip-sdmx-code:currency-CNY a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CNY" ;
+    skos:prefLabel "Chinese yuan renminbi"@en ;
+    rdfs:label "Chinese yuan renminbi"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CNY .
+
+
+sip-sdmx-code:currency-COP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "COP" ;
+    skos:prefLabel "Colombian peso"@en ;
+    rdfs:label "Colombian peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-COP .
+
+
+sip-sdmx-code:currency-COU a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "COU" ;
+    skos:prefLabel "Unidad de Valor Real"@en ;
+    rdfs:label "Unidad de Valor Real"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-COU .
+
+
+sip-sdmx-code:currency-CRC a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CRC" ;
+    skos:prefLabel "Costa Rican colon"@en ;
+    rdfs:label "Costa Rican colon"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CRC .
+
+
+sip-sdmx-code:currency-CSD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CSD" ;
+    skos:prefLabel "Serbian dinar (old)"@en ;
+    rdfs:label "Serbian dinar (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CSD .
+
+
+sip-sdmx-code:currency-CUP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CUP" ;
+    skos:prefLabel "Cuban peso"@en ;
+    rdfs:label "Cuban peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CUP .
+
+
+sip-sdmx-code:currency-CVE a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CVE" ;
+    skos:prefLabel "Cape Verde escudo"@en ;
+    rdfs:label "Cape Verde escudo"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CVE .
+
+
+sip-sdmx-code:currency-CYP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CYP" ;
+    skos:prefLabel "Cypriot pound"@en ;
+    rdfs:label "Cypriot pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CYP .
+
+
+sip-sdmx-code:currency-CZK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "CZK" ;
+    skos:prefLabel "Czech koruna"@en ;
+    rdfs:label "Czech koruna"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-CZK .
+
+
+sip-sdmx-code:currency-DEM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "DEM" ;
+    skos:prefLabel "German mark"@en ;
+    rdfs:label "German mark"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-DEM .
+
+
+sip-sdmx-code:currency-DJF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "DJF" ;
+    skos:prefLabel "Djibouti franc"@en ;
+    rdfs:label "Djibouti franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-DJF .
+
+
+sip-sdmx-code:currency-DKK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "DKK" ;
+    skos:prefLabel "Danish krone"@en ;
+    rdfs:label "Danish krone"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-DKK .
+
+
+sip-sdmx-code:currency-DOP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "DOP" ;
+    skos:prefLabel "Dominican peso"@en ;
+    rdfs:label "Dominican peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-DOP .
+
+
+sip-sdmx-code:currency-DZD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "DZD" ;
+    skos:prefLabel "Algerian dinar"@en ;
+    rdfs:label "Algerian dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-DZD .
+
+
+sip-sdmx-code:currency-E0 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E0" ;
+    skos:prefLabel "Euro area changing composition vis-a-vis the EER-12 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB and US)"@en ;
+    rdfs:label "Euro area changing composition vis-a-vis the EER-12 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB and US)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E0 .
+
+
+sip-sdmx-code:currency-E1 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E1" ;
+    skos:prefLabel "Euro area-18 countries vis-a-vis the EER-20 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, LT, HU, PL, RO, HR and CN)"@en ;
+    rdfs:label "Euro area-18 countries vis-a-vis the EER-20 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, LT, HU, PL, RO, HR and CN)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E1 .
+
+
+sip-sdmx-code:currency-E2 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E2" ;
+    skos:prefLabel "Euro area-18 countries vis-a-vis the EER-19 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, LT, HU, PL, RO, and CN)"@en ;
+    rdfs:label "Euro area-18 countries vis-a-vis the EER-19 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, LT, HU, PL, RO, and CN)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E2 .
+
+
+sip-sdmx-code:currency-E3 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E3" ;
+    skos:prefLabel "Euro area-18 countries vis-a-vis the EER-39 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, LT, HU, PL, RO, CN, DZ, AR, BR, CL, HR, IS, IN, ID, IL, MY, MX, MA, NZ, PH, RU, ZA, TW, TH, TR and VE)"@en ;
+    rdfs:label "Euro area-18 countries vis-a-vis the EER-39 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, LT, HU, PL, RO, CN, DZ, AR, BR, CL, HR, IS, IN, ID, IL, MY, MX, MA, NZ, PH, RU, ZA, TW, TH, TR and VE)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E3 .
+
+
+sip-sdmx-code:currency-E4 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E4" ;
+    skos:prefLabel "Euro area-18 countries vis-a-vis the EER-12 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB and US)"@en ;
+    rdfs:label "Euro area-18 countries vis-a-vis the EER-12 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB and US)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E4 .
+
+
+sip-sdmx-code:currency-E5 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E5" ;
+    skos:prefLabel "Euro area-19 countries vis-a-vis the EER-19 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, HU, PL, RO, HR and CN)"@en ;
+    rdfs:label "Euro area-19 countries vis-a-vis the EER-19 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, HU, PL, RO, HR and CN)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E5 .
+
+
+sip-sdmx-code:currency-E6 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E6" ;
+    skos:prefLabel "Euro area-19 countries vis-a-vis the EER-18 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, HU, PL, RO, and CN)"@en ;
+    rdfs:label "Euro area-19 countries vis-a-vis the EER-18 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, HU, PL, RO, and CN)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E6 .
+
+
+sip-sdmx-code:currency-E7 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E7" ;
+    skos:prefLabel "Euro area-19 countries vis-a-vis the EER-38 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, HU, PL, RO, CN, DZ, AR, BR, CL, HR, IS, IN, ID, IL, MY, MX, MA, NZ, PH, RU, ZA, TW, TH, TR and VE)"@en ;
+    rdfs:label "Euro area-19 countries vis-a-vis the EER-38 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, BG, CZ, HU, PL, RO, CN, DZ, AR, BR, CL, HR, IS, IN, ID, IL, MY, MX, MA, NZ, PH, RU, ZA, TW, TH, TR and VE)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E7 .
+
+
+sip-sdmx-code:currency-E8 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "E8" ;
+    skos:prefLabel "Euro area-19 countries vis-a-vis the EER-12 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US)"@en ;
+    rdfs:label "Euro area-19 countries vis-a-vis the EER-12 group of trading partners (AU, CA, DK, HK, JP, NO, SG, KR, SE, CH, GB, US)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-E8 .
+
+
+sip-sdmx-code:currency-ECS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ECS" ;
+    skos:prefLabel "Ecuador sucre (old)"@en ;
+    rdfs:label "Ecuador sucre (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ECS .
+
+
+sip-sdmx-code:currency-EEK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "EEK" ;
+    skos:prefLabel "Estonian kroon"@en ;
+    rdfs:label "Estonian kroon"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-EEK .
+
+
+sip-sdmx-code:currency-EGP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "EGP" ;
+    skos:prefLabel "Egyptian pound"@en ;
+    rdfs:label "Egyptian pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-EGP .
+
+
+sip-sdmx-code:currency-ERN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ERN" ;
+    skos:prefLabel "Erytrean nafka"@en ;
+    rdfs:label "Erytrean nafka"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ERN .
+
+
+sip-sdmx-code:currency-ESP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ESP" ;
+    skos:prefLabel "Spanish peseta"@en ;
+    rdfs:label "Spanish peseta"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ESP .
+
+
+sip-sdmx-code:currency-ETB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ETB" ;
+    skos:prefLabel "Ethiopian birr"@en ;
+    rdfs:label "Ethiopian birr"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ETB .
+
+
+sip-sdmx-code:currency-EUR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "EUR" ;
+    skos:prefLabel "Euro"@en ;
+    rdfs:label "Euro"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-EUR .
+
+
+sip-sdmx-code:currency-FIM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "FIM" ;
+    skos:prefLabel "Finnish markka"@en ;
+    rdfs:label "Finnish markka"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-FIM .
+
+
+sip-sdmx-code:currency-FJD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "FJD" ;
+    skos:prefLabel "Fiji dollar"@en ;
+    rdfs:label "Fiji dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-FJD .
+
+
+sip-sdmx-code:currency-FKP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "FKP" ;
+    skos:prefLabel "Falkland Islands pound"@en ;
+    rdfs:label "Falkland Islands pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-FKP .
+
+
+sip-sdmx-code:currency-FRF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "FRF" ;
+    skos:prefLabel "French franc"@en ;
+    rdfs:label "French franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-FRF .
+
+
+sip-sdmx-code:currency-GBP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GBP" ;
+    skos:prefLabel "UK pound sterling"@en ;
+    rdfs:label "UK pound sterling"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GBP .
+
+
+sip-sdmx-code:currency-GEL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GEL" ;
+    skos:prefLabel "Georgian lari"@en ;
+    rdfs:label "Georgian lari"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GEL .
+
+
+sip-sdmx-code:currency-GGP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GGP" ;
+    skos:prefLabel "Guernsey, Pounds"@en ;
+    rdfs:label "Guernsey, Pounds"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GGP .
+
+
+sip-sdmx-code:currency-GHC a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GHC" ;
+    skos:prefLabel "Ghanaian cedi (old)"@en ;
+    rdfs:label "Ghanaian cedi (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GHC .
+
+
+sip-sdmx-code:currency-GHS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GHS" ;
+    skos:prefLabel "Ghana Cedi"@en ;
+    rdfs:label "Ghana Cedi"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GHS .
+
+
+sip-sdmx-code:currency-GIP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GIP" ;
+    skos:prefLabel "Gibraltar pound"@en ;
+    rdfs:label "Gibraltar pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GIP .
+
+
+sip-sdmx-code:currency-GMD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GMD" ;
+    skos:prefLabel "Gambian dalasi"@en ;
+    rdfs:label "Gambian dalasi"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GMD .
+
+
+sip-sdmx-code:currency-GNF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GNF" ;
+    skos:prefLabel "Guinea franc"@en ;
+    rdfs:label "Guinea franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GNF .
+
+
+sip-sdmx-code:currency-GRD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GRD" ;
+    skos:prefLabel "Greek drachma"@en ;
+    rdfs:label "Greek drachma"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GRD .
+
+
+sip-sdmx-code:currency-GTQ a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GTQ" ;
+    skos:prefLabel "Guatemalan quetzal"@en ;
+    rdfs:label "Guatemalan quetzal"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GTQ .
+
+
+sip-sdmx-code:currency-GWP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GWP" ;
+    skos:prefLabel "Guinea-Bissau Peso"@en ;
+    rdfs:label "Guinea-Bissau Peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GWP .
+
+
+sip-sdmx-code:currency-GYD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "GYD" ;
+    skos:prefLabel "Guyanan dollar"@en ;
+    rdfs:label "Guyanan dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-GYD .
+
+
+sip-sdmx-code:currency-H1 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H1" ;
+    skos:prefLabel "Euro area 18's currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE, LV,  MT, SK)"@en ;
+    rdfs:label "Euro area 18's currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE, LV,  MT, SK)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H1 .
+
+
+sip-sdmx-code:currency-H10 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H10" ;
+    skos:prefLabel "ECB EER-38 group of currencies and Euro area (latest composition) currencies (FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,AU,CA,CN,DK,HK,JP,NO,SG,KR,SE,CH,GB,US,CY,CZ,EE,HU,LV,LT,MT,PL,SK,BG,RO,NZ,DZ,AR,BR,HR,IN,ID,IL,MY,MX,MA,PH,RU,ZA,TW,TH,TR,IS,CL,VE)"@en ;
+    rdfs:label "ECB EER-38 group of currencies and Euro area (latest composition) currencies (FR,BE,LU,NL,DE,IT,IE,PT,ES,FI,AT,GR,SI,AU,CA,CN,DK,HK,JP,NO,SG,KR,SE,CH,GB,US,CY,CZ,EE,HU,LV,LT,MT,PL,SK,BG,RO,NZ,DZ,AR,BR,HR,IN,ID,IL,MY,MX,MA,PH,RU,ZA,TW,TH,TR,IS,CL,VE)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H10 .
+
+
+sip-sdmx-code:currency-H11 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H11" ;
+    skos:prefLabel "ECB EER-19 group of currencies and Euro area (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, HR)"@en ;
+    rdfs:label "ECB EER-19 group of currencies and Euro area (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, HR)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H11 .
+
+
+sip-sdmx-code:currency-H2 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H2" ;
+    skos:prefLabel "ECB EER-12 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE, LV,  MT, SK, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US)"@en ;
+    rdfs:label "ECB EER-12 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE, LV,  MT, SK, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H2 .
+
+
+sip-sdmx-code:currency-H3 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H3" ;
+    skos:prefLabel "ECB EER-20 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO)"@en ;
+    rdfs:label "ECB EER-20 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H3 .
+
+
+sip-sdmx-code:currency-H36 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H36" ;
+    skos:prefLabel "European Commission IC-36 group of currencies (European Union 27 Member States, i.e. BE, DE, EE, GR, ES, FR, IE, IT, CY, LU, NL, MT, AT, PT, SI, SK, FI, BG, CZ, DK, LV, LT, HU, PL, RO, SE, GB, and US, AU, CA, JP, MX, NZ, NO, CH, TR)"@en ;
+    rdfs:label "European Commission IC-36 group of currencies (European Union 27 Member States, i.e. BE, DE, EE, GR, ES, FR, IE, IT, CY, LU, NL, MT, AT, PT, SI, SK, FI, BG, CZ, DK, LV, LT, HU, PL, RO, SE, GB, and US, AU, CA, JP, MX, NZ, NO, CH, TR)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H36 .
+
+
+sip-sdmx-code:currency-H37 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H37" ;
+    skos:prefLabel "European Commission IC-37 group of currencies (European Union 28 Member States, i.e. BE, DE, EE, GR, ES, FR, IE, IT, CY, LU, NL, MT, AT, PT, SI, SK, FI, BG, CZ, DK, HR, LV, LT, HU, PL, RO, SE, GB, and US, AU, CA, JP, MX, NZ, NO, CH, TR)"@en ;
+    rdfs:label "European Commission IC-37 group of currencies (European Union 28 Member States, i.e. BE, DE, EE, GR, ES, FR, IE, IT, CY, LU, NL, MT, AT, PT, SI, SK, FI, BG, CZ, DK, HR, LV, LT, HU, PL, RO, SE, GB, and US, AU, CA, JP, MX, NZ, NO, CH, TR)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H37 .
+
+
+sip-sdmx-code:currency-H4 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H4" ;
+    skos:prefLabel "ECB EER-40 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, NZ, DZ, AR, BR, HR, IN, ID, IL, MY, MX, MA, PH, RU, ZA, TW, TH, TR, IS, CL, VE)"@en ;
+    rdfs:label "ECB EER-40 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, NZ, DZ, AR, BR, HR, IN, ID, IL, MY, MX, MA, PH, RU, ZA, TW, TH, TR, IS, CL, VE)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H4 .
+
+
+sip-sdmx-code:currency-H5 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H5" ;
+    skos:prefLabel "ECB EER-21 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, HR)"@en ;
+    rdfs:label "ECB EER-21 group of currencies and Euro area's (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, HR)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H5 .
+
+
+sip-sdmx-code:currency-H6 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H6" ;
+    skos:prefLabel "ECB EER-12 group of currencies and Euro area's  (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, HR, TR and RU)"@en ;
+    rdfs:label "ECB EER-12 group of currencies and Euro area's  (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO, HR, TR and RU)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H6 .
+
+
+sip-sdmx-code:currency-H7 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H7" ;
+    skos:prefLabel "Euro area 19's currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE,LT, LV,  MT, SK)"@en ;
+    rdfs:label "Euro area 19's currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE,LT, LV,  MT, SK)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H7 .
+
+
+sip-sdmx-code:currency-H8 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H8" ;
+    skos:prefLabel "ECB EER-12 group of currencies & Euro area (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE, LT, US)"@en ;
+    rdfs:label "ECB EER-12 group of currencies & Euro area (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, CY, EE, LT, US)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H8 .
+
+
+sip-sdmx-code:currency-H9 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "H9" ;
+    skos:prefLabel "ECB EER-18 group of currencies and Euro area (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO)"@en ;
+    rdfs:label "ECB EER-18 group of currencies and Euro area (latest composition) currencies (FR, BE, LU, NL, DE, IT, IE, PT, ES, FI, AT, GR, SI, AU, CA, CN, DK, HK, JP, NO, SG, KR, SE, CH, GB, US, CY, CZ, EE, HU, LV, LT, MT, PL, SK, BG, RO)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-H9 .
+
+
+sip-sdmx-code:currency-HKD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "HKD" ;
+    skos:prefLabel "Hong Kong dollar"@en ;
+    rdfs:label "Hong Kong dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-HKD .
+
+
+sip-sdmx-code:currency-HKQ a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "HKQ" ;
+    skos:prefLabel "Hong Kong dollar (old)"@en ;
+    rdfs:label "Hong Kong dollar (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-HKQ .
+
+
+sip-sdmx-code:currency-HNL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "HNL" ;
+    skos:prefLabel "Honduran lempira"@en ;
+    rdfs:label "Honduran lempira"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-HNL .
+
+
+sip-sdmx-code:currency-HRK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "HRK" ;
+    skos:prefLabel "Croatian kuna"@en ;
+    rdfs:label "Croatian kuna"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-HRK .
+
+
+sip-sdmx-code:currency-HTG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "HTG" ;
+    skos:prefLabel "Haitian gourde"@en ;
+    rdfs:label "Haitian gourde"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-HTG .
+
+
+sip-sdmx-code:currency-HUF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "HUF" ;
+    skos:prefLabel "Hungarian forint"@en ;
+    rdfs:label "Hungarian forint"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-HUF .
+
+
+sip-sdmx-code:currency-IDR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "IDR" ;
+    skos:prefLabel "Indonesian rupiah"@en ;
+    rdfs:label "Indonesian rupiah"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-IDR .
+
+
+sip-sdmx-code:currency-IEP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "IEP" ;
+    skos:prefLabel "Irish pound"@en ;
+    rdfs:label "Irish pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-IEP .
+
+
+sip-sdmx-code:currency-ILS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ILS" ;
+    skos:prefLabel "Israeli shekel"@en ;
+    rdfs:label "Israeli shekel"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ILS .
+
+
+sip-sdmx-code:currency-IMP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "IMP" ;
+    skos:prefLabel "Isle of Man, Pounds"@en ;
+    rdfs:label "Isle of Man, Pounds"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-IMP .
+
+
+sip-sdmx-code:currency-INR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "INR" ;
+    skos:prefLabel "Indian rupee"@en ;
+    rdfs:label "Indian rupee"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-INR .
+
+
+sip-sdmx-code:currency-IQD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "IQD" ;
+    skos:prefLabel "Iraqi dinar"@en ;
+    rdfs:label "Iraqi dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-IQD .
+
+
+sip-sdmx-code:currency-IRR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "IRR" ;
+    skos:prefLabel "Iranian rial"@en ;
+    rdfs:label "Iranian rial"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-IRR .
+
+
+sip-sdmx-code:currency-ISK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ISK" ;
+    skos:prefLabel "Iceland krona"@en ;
+    rdfs:label "Iceland krona"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ISK .
+
+
+sip-sdmx-code:currency-ITL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ITL" ;
+    skos:prefLabel "Italian lira"@en ;
+    rdfs:label "Italian lira"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ITL .
+
+
+sip-sdmx-code:currency-JEP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "JEP" ;
+    skos:prefLabel "Jersey, Pounds"@en ;
+    rdfs:label "Jersey, Pounds"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-JEP .
+
+
+sip-sdmx-code:currency-JMD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "JMD" ;
+    skos:prefLabel "Jamaican dollar"@en ;
+    rdfs:label "Jamaican dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-JMD .
+
+
+sip-sdmx-code:currency-JOD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "JOD" ;
+    skos:prefLabel "Jordanian dinar"@en ;
+    rdfs:label "Jordanian dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-JOD .
+
+
+sip-sdmx-code:currency-JPY a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "JPY" ;
+    skos:prefLabel "Japanese yen"@en ;
+    rdfs:label "Japanese yen"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-JPY .
+
+
+sip-sdmx-code:currency-KES a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KES" ;
+    skos:prefLabel "Kenyan shilling"@en ;
+    rdfs:label "Kenyan shilling"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KES .
+
+
+sip-sdmx-code:currency-KGS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KGS" ;
+    skos:prefLabel "Kyrgyzstan som"@en ;
+    rdfs:label "Kyrgyzstan som"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KGS .
+
+
+sip-sdmx-code:currency-KHR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KHR" ;
+    skos:prefLabel "Kampuchean real (Cambodian)"@en ;
+    rdfs:label "Kampuchean real (Cambodian)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KHR .
+
+
+sip-sdmx-code:currency-KMF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KMF" ;
+    skos:prefLabel "Comoros franc"@en ;
+    rdfs:label "Comoros franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KMF .
+
+
+sip-sdmx-code:currency-KPW a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KPW" ;
+    skos:prefLabel "Korean won (North)"@en ;
+    rdfs:label "Korean won (North)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KPW .
+
+
+sip-sdmx-code:currency-KRW a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KRW" ;
+    skos:prefLabel "Korean won (Republic)"@en ;
+    rdfs:label "Korean won (Republic)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KRW .
+
+
+sip-sdmx-code:currency-KWD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KWD" ;
+    skos:prefLabel "Kuwait dinar"@en ;
+    rdfs:label "Kuwait dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KWD .
+
+
+sip-sdmx-code:currency-KYD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KYD" ;
+    skos:prefLabel "Cayman Islands dollar"@en ;
+    rdfs:label "Cayman Islands dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KYD .
+
+
+sip-sdmx-code:currency-KZT a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "KZT" ;
+    skos:prefLabel "Kazakstan tenge"@en ;
+    rdfs:label "Kazakstan tenge"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-KZT .
+
+
+sip-sdmx-code:currency-LAK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LAK" ;
+    skos:prefLabel "Lao kip"@en ;
+    rdfs:label "Lao kip"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LAK .
+
+
+sip-sdmx-code:currency-LBP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LBP" ;
+    skos:prefLabel "Lebanese pound"@en ;
+    rdfs:label "Lebanese pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LBP .
+
+
+sip-sdmx-code:currency-LKR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LKR" ;
+    skos:prefLabel "Sri Lanka rupee"@en ;
+    rdfs:label "Sri Lanka rupee"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LKR .
+
+
+sip-sdmx-code:currency-LRD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LRD" ;
+    skos:prefLabel "Liberian dollar"@en ;
+    rdfs:label "Liberian dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LRD .
+
+
+sip-sdmx-code:currency-LSL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LSL" ;
+    skos:prefLabel "Lesotho loti"@en ;
+    rdfs:label "Lesotho loti"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LSL .
+
+
+sip-sdmx-code:currency-LTL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LTL" ;
+    skos:prefLabel "Lithuanian litas"@en ;
+    rdfs:label "Lithuanian litas"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LTL .
+
+
+sip-sdmx-code:currency-LUF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LUF" ;
+    skos:prefLabel "Luxembourg franc"@en ;
+    rdfs:label "Luxembourg franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LUF .
+
+
+sip-sdmx-code:currency-LVL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LVL" ;
+    skos:prefLabel "Latvian lats"@en ;
+    rdfs:label "Latvian lats"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LVL .
+
+
+sip-sdmx-code:currency-LYD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "LYD" ;
+    skos:prefLabel "Libyan dinar"@en ;
+    rdfs:label "Libyan dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-LYD .
+
+
+sip-sdmx-code:currency-MAD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MAD" ;
+    skos:prefLabel "Moroccan dirham"@en ;
+    rdfs:label "Moroccan dirham"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MAD .
+
+
+sip-sdmx-code:currency-MDL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MDL" ;
+    skos:prefLabel "Moldovian leu"@en ;
+    rdfs:label "Moldovian leu"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MDL .
+
+
+sip-sdmx-code:currency-MGA a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MGA" ;
+    skos:prefLabel "Madagascar, Ariary"@en ;
+    rdfs:label "Madagascar, Ariary"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MGA .
+
+
+sip-sdmx-code:currency-MGF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MGF" ;
+    skos:prefLabel "Malagasy franc"@en ;
+    rdfs:label "Malagasy franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MGF .
+
+
+sip-sdmx-code:currency-MKD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MKD" ;
+    skos:prefLabel "Macedonian denar"@en ;
+    rdfs:label "Macedonian denar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MKD .
+
+
+sip-sdmx-code:currency-MMK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MMK" ;
+    skos:prefLabel "Myanmar kyat"@en ;
+    rdfs:label "Myanmar kyat"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MMK .
+
+
+sip-sdmx-code:currency-MNT a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MNT" ;
+    skos:prefLabel "Mongolian tugrik"@en ;
+    rdfs:label "Mongolian tugrik"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MNT .
+
+
+sip-sdmx-code:currency-MOP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MOP" ;
+    skos:prefLabel "Macau pataca"@en ;
+    rdfs:label "Macau pataca"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MOP .
+
+
+sip-sdmx-code:currency-MRO a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MRO" ;
+    skos:prefLabel "Mauritanian ouguiya"@en ;
+    rdfs:label "Mauritanian ouguiya"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MRO .
+
+
+sip-sdmx-code:currency-MTL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MTL" ;
+    skos:prefLabel "Maltese lira"@en ;
+    rdfs:label "Maltese lira"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MTL .
+
+
+sip-sdmx-code:currency-MUR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MUR" ;
+    skos:prefLabel "Mauritius rupee"@en ;
+    rdfs:label "Mauritius rupee"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MUR .
+
+
+sip-sdmx-code:currency-MVR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MVR" ;
+    skos:prefLabel "Maldive rufiyaa"@en ;
+    rdfs:label "Maldive rufiyaa"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MVR .
+
+
+sip-sdmx-code:currency-MWK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MWK" ;
+    skos:prefLabel "Malawi kwacha"@en ;
+    rdfs:label "Malawi kwacha"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MWK .
+
+
+sip-sdmx-code:currency-MXN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MXN" ;
+    skos:prefLabel "Mexican peso"@en ;
+    rdfs:label "Mexican peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MXN .
+
+
+sip-sdmx-code:currency-MXP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MXP" ;
+    skos:prefLabel "Mexican peso (old)"@en ;
+    rdfs:label "Mexican peso (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MXP .
+
+
+sip-sdmx-code:currency-MXV a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MXV" ;
+    skos:prefLabel "Mexican Unidad de Inversion (UDI)"@en ;
+    rdfs:label "Mexican Unidad de Inversion (UDI)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MXV .
+
+
+sip-sdmx-code:currency-MYR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MYR" ;
+    skos:prefLabel "Malaysian ringgit"@en ;
+    rdfs:label "Malaysian ringgit"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MYR .
+
+
+sip-sdmx-code:currency-MZM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MZM" ;
+    skos:prefLabel "Mozambique metical (old)"@en ;
+    rdfs:label "Mozambique metical (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MZM .
+
+
+sip-sdmx-code:currency-MZN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "MZN" ;
+    skos:prefLabel "Mozambique, Meticais"@en ;
+    rdfs:label "Mozambique, Meticais"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-MZN .
+
+
+sip-sdmx-code:currency-NAD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "NAD" ;
+    skos:prefLabel "Namibian dollar"@en ;
+    rdfs:label "Namibian dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-NAD .
+
+
+sip-sdmx-code:currency-NGN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "NGN" ;
+    skos:prefLabel "Nigerian naira"@en ;
+    rdfs:label "Nigerian naira"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-NGN .
+
+
+sip-sdmx-code:currency-NIO a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "NIO" ;
+    skos:prefLabel "Nicaraguan cordoba"@en ;
+    rdfs:label "Nicaraguan cordoba"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-NIO .
+
+
+sip-sdmx-code:currency-NLG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "NLG" ;
+    skos:prefLabel "Netherlands guilder"@en ;
+    rdfs:label "Netherlands guilder"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-NLG .
+
+
+sip-sdmx-code:currency-NOK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "NOK" ;
+    skos:prefLabel "Norwegian krone"@en ;
+    rdfs:label "Norwegian krone"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-NOK .
+
+
+sip-sdmx-code:currency-NPR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "NPR" ;
+    skos:prefLabel "Nepaleese rupee"@en ;
+    rdfs:label "Nepaleese rupee"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-NPR .
+
+
+sip-sdmx-code:currency-NZD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "NZD" ;
+    skos:prefLabel "New Zealand dollar"@en ;
+    rdfs:label "New Zealand dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-NZD .
+
+
+sip-sdmx-code:currency-OMR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "OMR" ;
+    skos:prefLabel "Oman Sul rial"@en ;
+    rdfs:label "Oman Sul rial"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-OMR .
+
+
+sip-sdmx-code:currency-PAB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PAB" ;
+    skos:prefLabel "Panama balboa"@en ;
+    rdfs:label "Panama balboa"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PAB .
+
+
+sip-sdmx-code:currency-PEN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PEN" ;
+    skos:prefLabel "Peru nuevo sol"@en ;
+    rdfs:label "Peru nuevo sol"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PEN .
+
+
+sip-sdmx-code:currency-PGK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PGK" ;
+    skos:prefLabel "Papua New Guinea kina"@en ;
+    rdfs:label "Papua New Guinea kina"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PGK .
+
+
+sip-sdmx-code:currency-PHP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PHP" ;
+    skos:prefLabel "Philippine peso"@en ;
+    rdfs:label "Philippine peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PHP .
+
+
+sip-sdmx-code:currency-PKR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PKR" ;
+    skos:prefLabel "Pakistan rupee"@en ;
+    rdfs:label "Pakistan rupee"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PKR .
+
+
+sip-sdmx-code:currency-PLN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PLN" ;
+    skos:prefLabel "Polish zloty"@en ;
+    rdfs:label "Polish zloty"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PLN .
+
+
+sip-sdmx-code:currency-PLZ a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PLZ" ;
+    skos:prefLabel "Polish zloty (old)"@en ;
+    rdfs:label "Polish zloty (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PLZ .
+
+
+sip-sdmx-code:currency-PTE a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PTE" ;
+    skos:prefLabel "Portuguese escudo"@en ;
+    rdfs:label "Portuguese escudo"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PTE .
+
+
+sip-sdmx-code:currency-PYG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "PYG" ;
+    skos:prefLabel "Paraguay guarani"@en ;
+    rdfs:label "Paraguay guarani"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-PYG .
+
+
+sip-sdmx-code:currency-QAR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "QAR" ;
+    skos:prefLabel "Qatari rial"@en ;
+    rdfs:label "Qatari rial"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-QAR .
+
+
+sip-sdmx-code:currency-ROL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ROL" ;
+    skos:prefLabel "Romanian leu (old)"@en ;
+    rdfs:label "Romanian leu (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ROL .
+
+
+sip-sdmx-code:currency-RON a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "RON" ;
+    skos:prefLabel "Romanian leu"@en ;
+    rdfs:label "Romanian leu"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-RON .
+
+
+sip-sdmx-code:currency-RSD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "RSD" ;
+    skos:prefLabel "Serbian Dinar"@en ;
+    rdfs:label "Serbian Dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-RSD .
+
+
+sip-sdmx-code:currency-RUB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "RUB" ;
+    skos:prefLabel "Russian rouble"@en ;
+    rdfs:label "Russian rouble"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-RUB .
+
+
+sip-sdmx-code:currency-RUR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "RUR" ;
+    skos:prefLabel "Russian ruble (old)"@en ;
+    rdfs:label "Russian ruble (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-RUR .
+
+
+sip-sdmx-code:currency-RWF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "RWF" ;
+    skos:prefLabel "Rwanda franc"@en ;
+    rdfs:label "Rwanda franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-RWF .
+
+
+sip-sdmx-code:currency-SAR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SAR" ;
+    skos:prefLabel "Saudi riyal"@en ;
+    rdfs:label "Saudi riyal"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SAR .
+
+
+sip-sdmx-code:currency-SBD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SBD" ;
+    skos:prefLabel "Solomon Islands dollar"@en ;
+    rdfs:label "Solomon Islands dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SBD .
+
+
+sip-sdmx-code:currency-SCR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SCR" ;
+    skos:prefLabel "Seychelles rupee"@en ;
+    rdfs:label "Seychelles rupee"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SCR .
+
+
+sip-sdmx-code:currency-SDD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SDD" ;
+    skos:prefLabel "Sudanese dinar (old)"@en ;
+    rdfs:label "Sudanese dinar (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SDD .
+
+
+sip-sdmx-code:currency-SDG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SDG" ;
+    skos:prefLabel "Sudan, Dinars"@en ;
+    rdfs:label "Sudan, Dinars"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SDG .
+
+
+sip-sdmx-code:currency-SDP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SDP" ;
+    skos:prefLabel "First sudanese Pound"@en ;
+    rdfs:label "First sudanese Pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SDP .
+
+
+sip-sdmx-code:currency-SEK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SEK" ;
+    skos:prefLabel "Swedish krona"@en ;
+    rdfs:label "Swedish krona"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SEK .
+
+
+sip-sdmx-code:currency-SGD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SGD" ;
+    skos:prefLabel "Singapore dollar"@en ;
+    rdfs:label "Singapore dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SGD .
+
+
+sip-sdmx-code:currency-SHP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SHP" ;
+    skos:prefLabel "St. Helena pound"@en ;
+    rdfs:label "St. Helena pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SHP .
+
+
+sip-sdmx-code:currency-SIT a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SIT" ;
+    skos:prefLabel "Slovenian tolar"@en ;
+    rdfs:label "Slovenian tolar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SIT .
+
+
+sip-sdmx-code:currency-SKK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SKK" ;
+    skos:prefLabel "Slovak koruna"@en ;
+    rdfs:label "Slovak koruna"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SKK .
+
+
+sip-sdmx-code:currency-SLL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SLL" ;
+    skos:prefLabel "Sierra Leone leone"@en ;
+    rdfs:label "Sierra Leone leone"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SLL .
+
+
+sip-sdmx-code:currency-SOS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SOS" ;
+    skos:prefLabel "Somali shilling"@en ;
+    rdfs:label "Somali shilling"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SOS .
+
+
+sip-sdmx-code:currency-SPL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SPL" ;
+    skos:prefLabel "Seborga, Luigini"@en ;
+    rdfs:label "Seborga, Luigini"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SPL .
+
+
+sip-sdmx-code:currency-SRD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SRD" ;
+    skos:prefLabel "Suriname, Dollars"@en ;
+    rdfs:label "Suriname, Dollars"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SRD .
+
+
+sip-sdmx-code:currency-SRG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SRG" ;
+    skos:prefLabel "Suriname guilder (old)"@en ;
+    rdfs:label "Suriname guilder (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SRG .
+
+
+sip-sdmx-code:currency-STD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "STD" ;
+    skos:prefLabel "Sao Tome and Principe dobra"@en ;
+    rdfs:label "Sao Tome and Principe dobra"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-STD .
+
+
+sip-sdmx-code:currency-SVC a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SVC" ;
+    skos:prefLabel "El Salvador colon"@en ;
+    rdfs:label "El Salvador colon"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SVC .
+
+
+sip-sdmx-code:currency-SYP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SYP" ;
+    skos:prefLabel "Syrian pound"@en ;
+    rdfs:label "Syrian pound"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SYP .
+
+
+sip-sdmx-code:currency-SZL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "SZL" ;
+    skos:prefLabel "Swaziland lilangeni"@en ;
+    rdfs:label "Swaziland lilangeni"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-SZL .
+
+
+sip-sdmx-code:currency-THB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "THB" ;
+    skos:prefLabel "Thai baht"@en ;
+    rdfs:label "Thai baht"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-THB .
+
+
+sip-sdmx-code:currency-TJR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TJR" ;
+    skos:prefLabel "Tajikistan rouble (old)"@en ;
+    rdfs:label "Tajikistan rouble (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TJR .
+
+
+sip-sdmx-code:currency-TJS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TJS" ;
+    skos:prefLabel "Tajikistan, Somoni"@en ;
+    rdfs:label "Tajikistan, Somoni"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TJS .
+
+
+sip-sdmx-code:currency-TMM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TMM" ;
+    skos:prefLabel "Turkmenistan manat"@en ;
+    rdfs:label "Turkmenistan manat"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TMM .
+
+
+sip-sdmx-code:currency-TND a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TND" ;
+    skos:prefLabel "Tunisian dinar"@en ;
+    rdfs:label "Tunisian dinar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TND .
+
+
+sip-sdmx-code:currency-TOP a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TOP" ;
+    skos:prefLabel "Tongan paanga"@en ;
+    rdfs:label "Tongan paanga"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TOP .
+
+
+sip-sdmx-code:currency-TPE a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TPE" ;
+    skos:prefLabel "East Timor escudo (old)"@en ;
+    rdfs:label "East Timor escudo (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TPE .
+
+
+sip-sdmx-code:currency-TRL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TRL" ;
+    skos:prefLabel "Turkish lira (old)"@en ;
+    rdfs:label "Turkish lira (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TRL .
+
+
+sip-sdmx-code:currency-TRY a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TRY" ;
+    skos:prefLabel "Turkish lira"@en ;
+    rdfs:label "Turkish lira"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TRY .
+
+
+sip-sdmx-code:currency-TTD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TTD" ;
+    skos:prefLabel "Trinidad and Tobago dollar"@en ;
+    rdfs:label "Trinidad and Tobago dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TTD .
+
+
+sip-sdmx-code:currency-TVD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TVD" ;
+    skos:prefLabel "Tuvalu Dollars"@en ;
+    rdfs:label "Tuvalu Dollars"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TVD .
+
+
+sip-sdmx-code:currency-TWD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TWD" ;
+    skos:prefLabel "New Taiwan dollar"@en ;
+    rdfs:label "New Taiwan dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TWD .
+
+
+sip-sdmx-code:currency-TZS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "TZS" ;
+    skos:prefLabel "Tanzania shilling"@en ;
+    rdfs:label "Tanzania shilling"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-TZS .
+
+
+sip-sdmx-code:currency-UAH a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "UAH" ;
+    skos:prefLabel "Ukraine hryvnia"@en ;
+    rdfs:label "Ukraine hryvnia"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-UAH .
+
+
+sip-sdmx-code:currency-UGX a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "UGX" ;
+    skos:prefLabel "Uganda Shilling"@en ;
+    rdfs:label "Uganda Shilling"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-UGX .
+
+
+sip-sdmx-code:currency-USD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "USD" ;
+    skos:prefLabel "US dollar"@en ;
+    rdfs:label "US dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-USD .
+
+
+sip-sdmx-code:currency-UYI a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "UYI" ;
+    skos:prefLabel "Uruguay Peso en Unidades Indexadas"@en ;
+    rdfs:label "Uruguay Peso en Unidades Indexadas"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-UYI .
+
+
+sip-sdmx-code:currency-UYU a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "UYU" ;
+    skos:prefLabel "Uruguayan peso"@en ;
+    rdfs:label "Uruguayan peso"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-UYU .
+
+
+sip-sdmx-code:currency-UZS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "UZS" ;
+    skos:prefLabel "Uzbekistan sum"@en ;
+    rdfs:label "Uzbekistan sum"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-UZS .
+
+
+sip-sdmx-code:currency-VEB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "VEB" ;
+    skos:prefLabel "Venezuela bolivar (old)"@en ;
+    rdfs:label "Venezuela bolivar (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-VEB .
+
+
+sip-sdmx-code:currency-VEF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "VEF" ;
+    skos:prefLabel "Venezuelan bolivar fuerte"@en ;
+    rdfs:label "Venezuelan bolivar fuerte"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-VEF .
+
+
+sip-sdmx-code:currency-VND a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "VND" ;
+    skos:prefLabel "Vietnamese dong"@en ;
+    rdfs:label "Vietnamese dong"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-VND .
+
+
+sip-sdmx-code:currency-VUV a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "VUV" ;
+    skos:prefLabel "Vanuatu vatu"@en ;
+    rdfs:label "Vanuatu vatu"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-VUV .
+
+
+sip-sdmx-code:currency-WST a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "WST" ;
+    skos:prefLabel "Samoan tala"@en ;
+    rdfs:label "Samoan tala"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-WST .
+
+
+sip-sdmx-code:currency-X1 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "X1" ;
+    skos:prefLabel "All currencies except national currency"@en ;
+    rdfs:label "All currencies except national currency"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-X1 .
+
+
+sip-sdmx-code:currency-X2 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "X2" ;
+    skos:prefLabel "All currencies except: USD"@en ;
+    rdfs:label "All currencies except: USD"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-X2 .
+
+
+sip-sdmx-code:currency-X3 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "X3" ;
+    skos:prefLabel "All currencies except EUR"@en ;
+    rdfs:label "All currencies except EUR"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-X3 .
+
+
+sip-sdmx-code:currency-X4 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "X4" ;
+    skos:prefLabel "All currencies except: EUR, USD"@en ;
+    rdfs:label "All currencies except: EUR, USD"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-X4 .
+
+
+sip-sdmx-code:currency-X5 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "X5" ;
+    skos:prefLabel "All currencies except: EUR,  JPY, USD"@en ;
+    rdfs:label "All currencies except: EUR,  JPY, USD"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-X5 .
+
+
+sip-sdmx-code:currency-X6 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "X6" ;
+    skos:prefLabel "All currencies except: EUR, CHF, GBP, JPY, USD"@en ;
+    rdfs:label "All currencies except: EUR, CHF, GBP, JPY, USD"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-X6 .
+
+
+sip-sdmx-code:currency-X7 a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "X7" ;
+    skos:prefLabel "All currencies except: EUR, USD, JPY, GBP, CHF, domestic currency"@en ;
+    rdfs:label "All currencies except: EUR, USD, JPY, GBP, CHF, domestic currency"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-X7 .
+
+
+sip-sdmx-code:currency-XAF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XAF" ;
+    skos:prefLabel "CFA franc / BEAC"@en ;
+    rdfs:label "CFA franc / BEAC"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XAF .
+
+
+sip-sdmx-code:currency-XAG a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XAG" ;
+    skos:prefLabel "Silver"@en ;
+    rdfs:label "Silver"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XAG .
+
+
+sip-sdmx-code:currency-XAU a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XAU" ;
+    skos:prefLabel "Gold"@en ;
+    rdfs:label "Gold"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XAU .
+
+
+sip-sdmx-code:currency-XBA a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XBA" ;
+    skos:prefLabel "European composite unit"@en ;
+    rdfs:label "European composite unit"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XBA .
+
+
+sip-sdmx-code:currency-XBB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XBB" ;
+    skos:prefLabel "European Monetary unit EC-6"@en ;
+    rdfs:label "European Monetary unit EC-6"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XBB .
+
+
+sip-sdmx-code:currency-XBC a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XBC" ;
+    skos:prefLabel "European Unit of Account 9(E.U.A.-9)"@en ;
+    rdfs:label "European Unit of Account 9(E.U.A.-9)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XBC .
+
+
+sip-sdmx-code:currency-XBD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XBD" ;
+    skos:prefLabel "European Unit of Account 17(E.U.A.-17)"@en ;
+    rdfs:label "European Unit of Account 17(E.U.A.-17)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XBD .
+
+
+sip-sdmx-code:currency-XCD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XCD" ;
+    skos:prefLabel "Eastern Caribbean dollar"@en ;
+    rdfs:label "Eastern Caribbean dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XCD .
+
+
+sip-sdmx-code:currency-XDB a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XDB" ;
+    skos:prefLabel "Currencies included in the SDR basket, gold and SDRs"@en ;
+    rdfs:label "Currencies included in the SDR basket, gold and SDRs"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XDB .
+
+
+sip-sdmx-code:currency-XDC a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XDC" ;
+    skos:prefLabel "Domestic currency (incl. conversion to current currency made using a fixed parity)"@en ;
+    rdfs:label "Domestic currency (incl. conversion to current currency made using a fixed parity)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XDC .
+
+
+sip-sdmx-code:currency-XDM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XDM" ;
+    skos:prefLabel "Domestic currency (incl. conversion to current currency made using market exchange rate)"@en ;
+    rdfs:label "Domestic currency (incl. conversion to current currency made using market exchange rate)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XDM .
+
+
+sip-sdmx-code:currency-XDN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XDN" ;
+    skos:prefLabel "Domestic currency (currency previously used by a country before joining a Monetary Union)"@en ;
+    rdfs:label "Domestic currency (currency previously used by a country before joining a Monetary Union)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XDN .
+
+
+sip-sdmx-code:currency-XDO a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XDO" ;
+    skos:prefLabel "Other currencies not included in the SDR basket, exc. gold and SDRs"@en ;
+    rdfs:label "Other currencies not included in the SDR basket, exc. gold and SDRs"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XDO .
+
+
+sip-sdmx-code:currency-XDR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XDR" ;
+    skos:prefLabel "Special Drawing Rights (S.D.R.)"@en ;
+    rdfs:label "Special Drawing Rights (S.D.R.)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XDR .
+
+
+sip-sdmx-code:currency-XEU a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XEU" ;
+    skos:prefLabel "European Currency Unit (E.C.U.)"@en ;
+    rdfs:label "European Currency Unit (E.C.U.)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XEU .
+
+
+sip-sdmx-code:currency-XFO a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XFO" ;
+    skos:prefLabel "Gold-Franc"@en ;
+    rdfs:label "Gold-Franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XFO .
+
+
+sip-sdmx-code:currency-XFU a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XFU" ;
+    skos:prefLabel "UIC-Franc"@en ;
+    rdfs:label "UIC-Franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XFU .
+
+
+sip-sdmx-code:currency-XGO a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XGO" ;
+    skos:prefLabel "Gold fine troy ounces"@en ;
+    rdfs:label "Gold fine troy ounces"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XGO .
+
+
+sip-sdmx-code:currency-XNC a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XNC" ;
+    skos:prefLabel "Euro area non-participating foreign currency"@en ;
+    rdfs:label "Euro area non-participating foreign currency"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XNC .
+
+
+sip-sdmx-code:currency-XOF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XOF" ;
+    skos:prefLabel "CFA franc / BCEAO"@en ;
+    rdfs:label "CFA franc / BCEAO"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XOF .
+
+
+sip-sdmx-code:currency-XPC a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XPC" ;
+    skos:prefLabel "Euro area participating foreign currency"@en ;
+    rdfs:label "Euro area participating foreign currency"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XPC .
+
+
+sip-sdmx-code:currency-XPD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XPD" ;
+    skos:prefLabel "Palladium Ounces"@en ;
+    rdfs:label "Palladium Ounces"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XPD .
+
+
+sip-sdmx-code:currency-XPF a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XPF" ;
+    skos:prefLabel "Pacific franc"@en ;
+    rdfs:label "Pacific franc"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XPF .
+
+
+sip-sdmx-code:currency-XPT a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XPT" ;
+    skos:prefLabel "Platinum"@en ;
+    rdfs:label "Platinum"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XPT .
+
+
+sip-sdmx-code:currency-XSU a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XSU" ;
+    skos:prefLabel "Sucre"@en ;
+    rdfs:label "Sucre"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XSU .
+
+
+sip-sdmx-code:currency-XTS a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XTS" ;
+    skos:prefLabel "Codes specifically reserved for testing purposes"@en ;
+    rdfs:label "Codes specifically reserved for testing purposes"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XTS .
+
+
+sip-sdmx-code:currency-XUA a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XUA" ;
+    skos:prefLabel "ADB Unit of Account"@en ;
+    rdfs:label "ADB Unit of Account"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XUA .
+
+
+sip-sdmx-code:currency-XXX a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "XXX" ;
+    skos:prefLabel "Transactions where no currency is involved"@en ;
+    rdfs:label "Transactions where no currency is involved"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-XXX .
+
+
+sip-sdmx-code:currency-YER a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "YER" ;
+    skos:prefLabel "Yemeni rial"@en ;
+    rdfs:label "Yemeni rial"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-YER .
+
+
+sip-sdmx-code:currency-YUM a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "YUM" ;
+    skos:prefLabel "Yugoslav dinar (old)"@en ;
+    rdfs:label "Yugoslav dinar (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-YUM .
+
+
+sip-sdmx-code:currency-ZAR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ZAR" ;
+    skos:prefLabel "South African rand"@en ;
+    rdfs:label "South African rand"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ZAR .
+
+
+sip-sdmx-code:currency-ZMK a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ZMK" ;
+    skos:prefLabel "Zambian kwacha"@en ;
+    rdfs:label "Zambian kwacha"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ZMK .
+
+
+sip-sdmx-code:currency-ZWD a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ZWD" ;
+    skos:prefLabel "Zimbabwe dollar"@en ;
+    rdfs:label "Zimbabwe dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ZWD .
+
+
+sip-sdmx-code:currency-ZWL a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ZWL" ;
+    skos:prefLabel "Fourth Zimbabwe dollar"@en ;
+    rdfs:label "Fourth Zimbabwe dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ZWL .
+
+
+sip-sdmx-code:currency-ZWN a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ZWN" ;
+    skos:prefLabel "Zimbabwe dollars (old)"@en ;
+    rdfs:label "Zimbabwe dollars (old)"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ZWN .
+
+
+sip-sdmx-code:currency-ZWR a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "ZWR" ;
+    skos:prefLabel "Third Zimbabwe dollar"@en ;
+    rdfs:label "Third Zimbabwe dollar"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-ZWR .
+
+
+sip-sdmx-code:currency-_T a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "_T" ;
+    skos:prefLabel "All currencies"@en ;
+    rdfs:label "All currencies"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-_T .
+
+
+sip-sdmx-code:currency-_X a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not specified"@en ;
+    rdfs:label "Not specified"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-_X .
+
+
+sip-sdmx-code:currency-_Z a skos:Concept, sip-sdmx-code:Currency;
+    skos:topConceptOf sip-sdmx-code:currency ;
+    skos:inScheme sip-sdmx-code:currency ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:currency skos:hasTopConcept sip-sdmx-code:currency-_Z .
+

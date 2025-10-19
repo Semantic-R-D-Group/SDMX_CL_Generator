@@ -1,0 +1,214 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_CUSTOMSPROC Scheme Definition
+#####################################################
+
+sip-sdmx-code:customsProc a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "CL_CUSTOMS_PROC - codelist scheme"@en ;
+    rdfs:label "CL_CUSTOMS_PROC - codelist scheme"@en ;
+    skos:notation "CL_CUSTOMSPROC" ;
+    skos:definition "A reference customsProc codelist based on UNSD:CL_CUSTOMS_PROC(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_CUSTOMS_PROC/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:CustomsProc .
+
+sip-sdmx-code:CustomsProc a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "CL_CUSTOMS_PROC - codelist class"@en ;
+    rdfs:label "CL_CUSTOMS_PROC - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc .
+
+
+########################################
+# CL_CUSTOMSPROC Codes
+########################################
+    
+sip-sdmx-code:customsProc-C_01 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_01" ;
+    skos:prefLabel "Clearance for home use"@en ;
+    rdfs:label "Clearance for home use"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_01 .
+
+
+sip-sdmx-code:customsProc-C_02 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_02" ;
+    skos:prefLabel "Reimportation in the same state"@en ;
+    rdfs:label "Reimportation in the same state"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_02 .
+
+
+sip-sdmx-code:customsProc-C_03 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_03" ;
+    skos:prefLabel "Outright exportation"@en ;
+    rdfs:label "Outright exportation"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_03 .
+
+
+sip-sdmx-code:customsProc-C_04 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_04" ;
+    skos:prefLabel "Customs warehouses"@en ;
+    rdfs:label "Customs warehouses"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_04 .
+
+
+sip-sdmx-code:customsProc-C_05 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_05" ;
+    skos:prefLabel "Free zone"@en ;
+    rdfs:label "Free zone"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_05 .
+
+
+sip-sdmx-code:customsProc-C_06 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_06" ;
+    skos:prefLabel "Inward processing"@en ;
+    rdfs:label "Inward processing"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_06 .
+
+
+sip-sdmx-code:customsProc-C_07 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_07" ;
+    skos:prefLabel "Outward processing"@en ;
+    rdfs:label "Outward processing"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_07 .
+
+
+sip-sdmx-code:customsProc-C_08 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_08" ;
+    skos:prefLabel "Drawback"@en ;
+    rdfs:label "Drawback"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_08 .
+
+
+sip-sdmx-code:customsProc-C_09 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_09" ;
+    skos:prefLabel "Processing of goods for home use"@en ;
+    rdfs:label "Processing of goods for home use"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_09 .
+
+
+sip-sdmx-code:customsProc-C_10 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_10" ;
+    skos:prefLabel "Carriage of goods coastwise"@en ;
+    rdfs:label "Carriage of goods coastwise"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_10 .
+
+
+sip-sdmx-code:customsProc-C_11 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_11" ;
+    skos:prefLabel "Customs offences"@en ;
+    rdfs:label "Customs offences"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_11 .
+
+
+sip-sdmx-code:customsProc-C_12 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_12" ;
+    skos:prefLabel "Travellers"@en ;
+    rdfs:label "Travellers"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_12 .
+
+
+sip-sdmx-code:customsProc-C_13 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_13" ;
+    skos:prefLabel "Postal traffic"@en ;
+    rdfs:label "Postal traffic"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_13 .
+
+
+sip-sdmx-code:customsProc-C_14 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_14" ;
+    skos:prefLabel "Stores"@en ;
+    rdfs:label "Stores"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_14 .
+
+
+sip-sdmx-code:customsProc-C_15 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_15" ;
+    skos:prefLabel "Relief consignments"@en ;
+    rdfs:label "Relief consignments"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_15 .
+
+
+sip-sdmx-code:customsProc-C_20 a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_20" ;
+    skos:prefLabel "CPC N.E.S."@en ;
+    rdfs:label "CPC N.E.S."@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_20 .
+
+
+sip-sdmx-code:customsProc-C_TOTAL a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "C_TOTAL" ;
+    skos:prefLabel "All customs procedure codes"@en ;
+    rdfs:label "All customs procedure codes"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-C_TOTAL .
+
+
+sip-sdmx-code:customsProc-_X a skos:Concept, sip-sdmx-code:CustomsProc;
+    skos:topConceptOf sip-sdmx-code:customsProc ;
+    skos:inScheme sip-sdmx-code:customsProc ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not specified"@en ;
+    rdfs:label "Not specified"@en .
+
+sip-sdmx-code:customsProc skos:hasTopConcept sip-sdmx-code:customsProc-_X .
+

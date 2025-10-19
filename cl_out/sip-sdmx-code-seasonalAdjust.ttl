@@ -1,0 +1,2018 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_SEASONALADJUST Scheme Definition
+#####################################################
+
+sip-sdmx-code:seasonalAdjust a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Seasonal Adjustment - codelist scheme"@en ;
+    rdfs:label "Seasonal Adjustment - codelist scheme"@en ;
+    skos:altLabel "Seasonal adjustment - codelist scheme"@en ;
+    skos:altLabel "Adjustment indicator - codelist scheme"@en ;
+    skos:notation "CL_SEASONALADJUST" ;
+    skos:definition "A reference seasonalAdjust codelist combining ESTAT:CL_SEASON_ADJUST(1.0), SDMX:CL_SEASONAL_ADJUST(1.0), ESTAT:CL_ADJUSTMENT(1.4), IMF:CL_ADJUSTMENT(1.4)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_SEASON_ADJUST/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_SEASONAL_ADJUST/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_ADJUSTMENT/1.4> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_ADJUSTMENT/1.4> ;
+    skos:note "SDMX:CL_SEASONAL_ADJUST(1.0): Seasonal adjustment is a statistical technique used to remove the effects of seasonal and calendar influences operating on a data series. Version 1.0 of the code list was formally adopted by the SDMX Secretariat on 4 July 2014. Further recommended code values for expressing general statistical concepts like \"not applicable\", etc., can be found in section “Generic codes” of the \"Guidelines for the creation and management of SDMX Cross-Domain Code Lists\" (https://sdmx.org/?page_id=4345)."@en ;
+    skos:note """ESTAT:CL_ADJUSTMENT(1.4): Adjustment indicator is a statistical technique used to remove the effects of seasonal and calendar influences operating on a data series.
+This codelist is based on the codelist CL_SEASONAL_ADJUST+1.0 in which the code _Z(Not applicable) was added."""@en ;
+    skos:note """IMF:CL_ADJUSTMENT(1.4): Adjustment indicator is a statistical technique used to remove the effects of seasonal and calendar influences operating on a data series.
+This codelist is based on the codelist CL_SEASONAL_ADJUST+1.0 in which the code _Z(Not applicable) was added. Extended for time transformations due to a missing transformation dimension."""@en ;
+    skos:note "ESTAT:CL_SEASON_ADJUST(1.0): Statistical technique used to remove the effects of seasonal and calendar influences operating on a data series."@en ;
+    rdfs:seeAlso sip-sdmx-concept:SEASONAL_ADJUST ;
+    skos:related sip-sdmx-concept:SEASONAL_ADJUST ;
+    rdfs:seeAlso sip-sdmx-code:SeasonalAdjust .
+
+sip-sdmx-code:SeasonalAdjust a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Seasonal Adjustment - codelist class"@en ;
+    rdfs:label "Seasonal Adjustment - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust .
+
+
+########################################
+# CL_SEASONALADJUST Codes
+########################################
+    
+sip-sdmx-code:seasonalAdjust-C a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "C" ;
+    skos:prefLabel "Trend-cycle data, calendar adjusted"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Trend-cycle data, calendar adjusted"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-C .
+
+
+sip-sdmx-code:seasonalAdjust-I a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "I" ;
+    skos:prefLabel "Irregular component"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Irregular component"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-I .
+
+
+sip-sdmx-code:seasonalAdjust-K a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "K" ;
+    skos:prefLabel "Calendar component"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Calendar component"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-K .
+
+
+sip-sdmx-code:seasonalAdjust-M a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "M" ;
+    skos:prefLabel "Seasonal and calendar components"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Seasonal and calendar components"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-M .
+
+
+sip-sdmx-code:seasonalAdjust-N a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N .
+
+
+sip-sdmx-code:seasonalAdjust-N_A1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_A1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Average, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Average, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_A1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_A12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_A12" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 12-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 12-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_A12 .
+
+
+sip-sdmx-code:seasonalAdjust-N_A3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_A3" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 3-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 3-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_A3 .
+
+
+sip-sdmx-code:seasonalAdjust-N_A4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_A4" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 4-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 4-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_A4 .
+
+
+sip-sdmx-code:seasonalAdjust-N_A6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_A6" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 6-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 6-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_A6 .
+
+
+sip-sdmx-code:seasonalAdjust-N_C12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_C12" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 12-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 12-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_C12 .
+
+
+sip-sdmx-code:seasonalAdjust-N_C16 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_C16" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 16 period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 16 period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_C16 .
+
+
+sip-sdmx-code:seasonalAdjust-N_C3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_C3" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 3-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 3-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_C3 .
+
+
+sip-sdmx-code:seasonalAdjust-N_C4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_C4" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_C4 .
+
+
+sip-sdmx-code:seasonalAdjust-N_C4G a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_C4G" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, period on period, over 4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, period on period, over 4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_C4G .
+
+
+sip-sdmx-code:seasonalAdjust-N_C6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_C6" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 6-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 6-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_C6 .
+
+
+sip-sdmx-code:seasonalAdjust-N_CY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_CY" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Cumulated sum, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Cumulated sum, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_CY .
+
+
+sip-sdmx-code:seasonalAdjust-N_D1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_D1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Differences, period on period, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Differences, period on period, first order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_D1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_D1D1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_D1D1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Differences, period on period, second order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Differences, period on period, second order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_D1D1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_D4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_D4" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Difference period on 4 periods, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Difference period on 4 periods, first order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_D4 .
+
+
+sip-sdmx-code:seasonalAdjust-N_DY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_DY" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Difference, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Difference, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_DY .
+
+
+sip-sdmx-code:seasonalAdjust-N_F1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_F1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_F1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_F12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_F12" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_F12 .
+
+
+sip-sdmx-code:seasonalAdjust-N_F3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_F3" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate , flow over stock ,over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate , flow over stock ,over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_F3 .
+
+
+sip-sdmx-code:seasonalAdjust-N_F4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_F4" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate , flow over stock over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate , flow over stock over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_F4 .
+
+
+sip-sdmx-code:seasonalAdjust-N_F6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_F6" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_F6 .
+
+
+sip-sdmx-code:seasonalAdjust-N_FO1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_FO1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_FO1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_FO12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_FO12" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 12  periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 12  periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_FO12 .
+
+
+sip-sdmx-code:seasonalAdjust-N_FO16 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_FO16" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 16 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 16 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_FO16 .
+
+
+sip-sdmx-code:seasonalAdjust-N_FO3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_FO3" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_FO3 .
+
+
+sip-sdmx-code:seasonalAdjust-N_FO4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_FO4" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_FO4 .
+
+
+sip-sdmx-code:seasonalAdjust-N_FO6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_FO6" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, flow over stock, over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_FO6 .
+
+
+sip-sdmx-code:seasonalAdjust-N_FY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_FY" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, flow over stock, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_FY .
+
+
+sip-sdmx-code:seasonalAdjust-N_G1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_G10 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G10" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 10 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 10 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G10 .
+
+
+sip-sdmx-code:seasonalAdjust-N_G12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G12" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G12 .
+
+
+sip-sdmx-code:seasonalAdjust-N_G3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G3" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G3 .
+
+
+sip-sdmx-code:seasonalAdjust-N_G3Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G3Y" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 3 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 3 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G3Y .
+
+
+sip-sdmx-code:seasonalAdjust-N_G4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G4" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G4 .
+
+
+sip-sdmx-code:seasonalAdjust-N_G4Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G4Y" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 4 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 4 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G4Y .
+
+
+sip-sdmx-code:seasonalAdjust-N_G6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_G6" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_G6 .
+
+
+sip-sdmx-code:seasonalAdjust-N_GC10Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GC10Y" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Compound growth rate, over 10 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Compound growth rate, over 10 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GC10Y .
+
+
+sip-sdmx-code:seasonalAdjust-N_GC5Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GC5Y" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Compound growth rate, over 5 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Compound growth rate, over 5 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GC5Y .
+
+
+sip-sdmx-code:seasonalAdjust-N_GO1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GO1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GO1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_GO12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GO12" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GO12 .
+
+
+sip-sdmx-code:seasonalAdjust-N_GO3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GO3" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GO3 .
+
+
+sip-sdmx-code:seasonalAdjust-N_GO4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GO4" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over  4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over  4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GO4 .
+
+
+sip-sdmx-code:seasonalAdjust-N_GO6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GO6" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GO6 .
+
+
+sip-sdmx-code:seasonalAdjust-N_GOY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GOY" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Contribution to growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GOY .
+
+
+sip-sdmx-code:seasonalAdjust-N_GR a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GR" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, over reference year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, over reference year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GR .
+
+
+sip-sdmx-code:seasonalAdjust-N_GY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_GY" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_GY .
+
+
+sip-sdmx-code:seasonalAdjust-N_LA a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_LA" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Annual levels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Annual levels"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_LA .
+
+
+sip-sdmx-code:seasonalAdjust-N_N a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_N" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Non transformed data"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Non transformed data"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_N .
+
+
+sip-sdmx-code:seasonalAdjust-N_P1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_P1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Period-on-period percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Period-on-period percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_P1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_P3M a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_P3M" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 3-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 3-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_P3M .
+
+
+sip-sdmx-code:seasonalAdjust-N_P3Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_P3Y" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 3-year percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 3-year percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_P3Y .
+
+
+sip-sdmx-code:seasonalAdjust-N_P5Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_P5Y" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 5-year percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 5-year percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_P5Y .
+
+
+sip-sdmx-code:seasonalAdjust-N_P6M a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_P6M" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, 6-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, 6-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_P6M .
+
+
+sip-sdmx-code:seasonalAdjust-N_PM a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_PM" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Month-on-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Month-on-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_PM .
+
+
+sip-sdmx-code:seasonalAdjust-N_PQ a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_PQ" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Quarter-on-quarter percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Quarter-on-quarter percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_PQ .
+
+
+sip-sdmx-code:seasonalAdjust-N_PT a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_PT" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Percentage of the total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Percentage of the total"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_PT .
+
+
+sip-sdmx-code:seasonalAdjust-N_PY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_PY" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Year-on-year (annual) percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Year-on-year (annual) percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_PY .
+
+
+sip-sdmx-code:seasonalAdjust-N_R1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_R1" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Revisions, difference to last transmission period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Revisions, difference to last transmission period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_R1 .
+
+
+sip-sdmx-code:seasonalAdjust-N_R2 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "N_R2" ;
+    skos:prefLabel "Neither seasonally adjusted nor calendar adjusted data, Revisions, difference to last published values"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Neither seasonally adjusted nor calendar adjusted data, Revisions, difference to last published values"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-N_R2 .
+
+
+sip-sdmx-code:seasonalAdjust-R a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "R" ;
+    skos:prefLabel "Trend-cycle data, not calendar adjusted"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Trend-cycle data, not calendar adjusted"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-R .
+
+
+sip-sdmx-code:seasonalAdjust-S a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S .
+
+
+sip-sdmx-code:seasonalAdjust-S_A1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_A1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Average, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Average, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_A1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_A12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_A12" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 12-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 12-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_A12 .
+
+
+sip-sdmx-code:seasonalAdjust-S_A3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_A3" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 3-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 3-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_A3 .
+
+
+sip-sdmx-code:seasonalAdjust-S_A4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_A4" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 4-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 4-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_A4 .
+
+
+sip-sdmx-code:seasonalAdjust-S_A6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_A6" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 6-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 6-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_A6 .
+
+
+sip-sdmx-code:seasonalAdjust-S_ANN a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_ANN" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Annualisation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Annualisation"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_ANN .
+
+
+sip-sdmx-code:seasonalAdjust-S_C12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_C12" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 12-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 12-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_C12 .
+
+
+sip-sdmx-code:seasonalAdjust-S_C16 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_C16" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 16 period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 16 period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_C16 .
+
+
+sip-sdmx-code:seasonalAdjust-S_C3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_C3" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 3-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 3-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_C3 .
+
+
+sip-sdmx-code:seasonalAdjust-S_C4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_C4" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_C4 .
+
+
+sip-sdmx-code:seasonalAdjust-S_C4G a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_C4G" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, period on period, over 4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, period on period, over 4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_C4G .
+
+
+sip-sdmx-code:seasonalAdjust-S_C6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_C6" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 6-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 6-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_C6 .
+
+
+sip-sdmx-code:seasonalAdjust-S_CY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_CY" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Cumulated sum, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Cumulated sum, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_CY .
+
+
+sip-sdmx-code:seasonalAdjust-S_D1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_D1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Differences, period on period, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Differences, period on period, first order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_D1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_D1D1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_D1D1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Differences, period on period, second order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Differences, period on period, second order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_D1D1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_D4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_D4" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Difference period on 4 periods, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Difference period on 4 periods, first order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_D4 .
+
+
+sip-sdmx-code:seasonalAdjust-S_DY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_DY" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Difference, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Difference, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_DY .
+
+
+sip-sdmx-code:seasonalAdjust-S_F1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_F1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_F1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_F12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_F12" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_F12 .
+
+
+sip-sdmx-code:seasonalAdjust-S_F3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_F3" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate , flow over stock ,over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate , flow over stock ,over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_F3 .
+
+
+sip-sdmx-code:seasonalAdjust-S_F4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_F4" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate , flow over stock over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate , flow over stock over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_F4 .
+
+
+sip-sdmx-code:seasonalAdjust-S_F6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_F6" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_F6 .
+
+
+sip-sdmx-code:seasonalAdjust-S_FO1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_FO1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_FO1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_FO12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_FO12" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 12  periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 12  periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_FO12 .
+
+
+sip-sdmx-code:seasonalAdjust-S_FO16 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_FO16" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 16 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 16 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_FO16 .
+
+
+sip-sdmx-code:seasonalAdjust-S_FO3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_FO3" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_FO3 .
+
+
+sip-sdmx-code:seasonalAdjust-S_FO4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_FO4" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_FO4 .
+
+
+sip-sdmx-code:seasonalAdjust-S_FO6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_FO6" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, flow over stock, over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_FO6 .
+
+
+sip-sdmx-code:seasonalAdjust-S_FY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_FY" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, flow over stock, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_FY .
+
+
+sip-sdmx-code:seasonalAdjust-S_G1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_G10 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G10" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, over 10 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, over 10 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G10 .
+
+
+sip-sdmx-code:seasonalAdjust-S_G12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G12" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G12 .
+
+
+sip-sdmx-code:seasonalAdjust-S_G3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G3" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G3 .
+
+
+sip-sdmx-code:seasonalAdjust-S_G3Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G3Y" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, over 3 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, over 3 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G3Y .
+
+
+sip-sdmx-code:seasonalAdjust-S_G4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G4" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G4 .
+
+
+sip-sdmx-code:seasonalAdjust-S_G4Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G4Y" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, over 4 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, over 4 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G4Y .
+
+
+sip-sdmx-code:seasonalAdjust-S_G6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_G6" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_G6 .
+
+
+sip-sdmx-code:seasonalAdjust-S_GC10Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GC10Y" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Compound growth rate, over 10 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Compound growth rate, over 10 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GC10Y .
+
+
+sip-sdmx-code:seasonalAdjust-S_GC5Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GC5Y" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Compound growth rate, over 5 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Compound growth rate, over 5 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GC5Y .
+
+
+sip-sdmx-code:seasonalAdjust-S_GO1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GO1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GO1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_GO12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GO12" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GO12 .
+
+
+sip-sdmx-code:seasonalAdjust-S_GO3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GO3" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GO3 .
+
+
+sip-sdmx-code:seasonalAdjust-S_GO4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GO4" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over  4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over  4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GO4 .
+
+
+sip-sdmx-code:seasonalAdjust-S_GO6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GO6" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GO6 .
+
+
+sip-sdmx-code:seasonalAdjust-S_GOY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GOY" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Contribution to growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GOY .
+
+
+sip-sdmx-code:seasonalAdjust-S_GR a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GR" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, over reference year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, over reference year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GR .
+
+
+sip-sdmx-code:seasonalAdjust-S_GY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_GY" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_GY .
+
+
+sip-sdmx-code:seasonalAdjust-S_INX a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_INX" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Index"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Index"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_INX .
+
+
+sip-sdmx-code:seasonalAdjust-S_L0 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_L0" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Level"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_L0 .
+
+
+sip-sdmx-code:seasonalAdjust-S_LA a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_LA" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Annual levels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Annual levels"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_LA .
+
+
+sip-sdmx-code:seasonalAdjust-S_N a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_N" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Non transformed data"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Non transformed data"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_N .
+
+
+sip-sdmx-code:seasonalAdjust-S_P1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_P1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Period-on-period percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Period-on-period percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_P1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_P3M a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_P3M" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 3-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 3-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_P3M .
+
+
+sip-sdmx-code:seasonalAdjust-S_P3Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_P3Y" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 3-year percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 3-year percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_P3Y .
+
+
+sip-sdmx-code:seasonalAdjust-S_P5Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_P5Y" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 5-year percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 5-year percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_P5Y .
+
+
+sip-sdmx-code:seasonalAdjust-S_P6M a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_P6M" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, 6-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, 6-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_P6M .
+
+
+sip-sdmx-code:seasonalAdjust-S_PM a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_PM" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Month-on-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Month-on-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_PM .
+
+
+sip-sdmx-code:seasonalAdjust-S_PQ a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_PQ" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Quarter-on-quarter percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Quarter-on-quarter percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_PQ .
+
+
+sip-sdmx-code:seasonalAdjust-S_PT a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_PT" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Percentage of the total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Percentage of the total"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_PT .
+
+
+sip-sdmx-code:seasonalAdjust-S_PY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_PY" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Year-on-year (annual) percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Year-on-year (annual) percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_PY .
+
+
+sip-sdmx-code:seasonalAdjust-S_R1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_R1" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Revisions, difference to last transmission period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Revisions, difference to last transmission period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_R1 .
+
+
+sip-sdmx-code:seasonalAdjust-S_R2 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_R2" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Revisions, difference to last published values"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Revisions, difference to last published values"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_R2 .
+
+
+sip-sdmx-code:seasonalAdjust-S_T a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "S_T" ;
+    skos:prefLabel "Seasonally adjusted data, not calendar adjusted, Ratio"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Seasonally adjusted data, not calendar adjusted, Ratio"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-S_T .
+
+
+sip-sdmx-code:seasonalAdjust-T a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "T" ;
+    skos:prefLabel "Trend"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Trend"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-T .
+
+
+sip-sdmx-code:seasonalAdjust-W a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "W" ;
+    skos:prefLabel "Calendar adjusted data, not seasonally adjusted"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Calendar adjusted data, not seasonally adjusted"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-W .
+
+
+sip-sdmx-code:seasonalAdjust-X a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "X" ;
+    skos:prefLabel "Seasonal component"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Seasonal component"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-X .
+
+
+sip-sdmx-code:seasonalAdjust-Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y" ;
+    skos:prefLabel "Calendar and seasonally adjusted data"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX, sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y .
+
+
+sip-sdmx-code:seasonalAdjust-Y_A1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_A1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Average, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Average, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_A1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_A12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_A12" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 12-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 12-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_A12 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_A3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_A3" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 3-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 3-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_A3 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_A4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_A4" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 4-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 4-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_A4 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_A6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_A6" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 6-period moving average"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 6-period moving average"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_A6 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_ANN a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_ANN" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Annualisation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Annualisation"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_ANN .
+
+
+sip-sdmx-code:seasonalAdjust-Y_C12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_C12" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 12-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 12-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_C12 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_C16 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_C16" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 16 period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 16 period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_C16 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_C3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_C3" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 3-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 3-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_C3 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_C4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_C4" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_C4 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_C4G a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_C4G" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, period on period, over 4-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, period on period, over 4-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_C4G .
+
+
+sip-sdmx-code:seasonalAdjust-Y_C6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_C6" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 6-period cumulated sum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 6-period cumulated sum"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_C6 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_CY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_CY" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Cumulated sum, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Cumulated sum, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_CY .
+
+
+sip-sdmx-code:seasonalAdjust-Y_D1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_D1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Differences, period on period, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Differences, period on period, first order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_D1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_D1D1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_D1D1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Differences, period on period, second order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Differences, period on period, second order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_D1D1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_D4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_D4" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Difference period on 4 periods, first order"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Difference period on 4 periods, first order"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_D4 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_DY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_DY" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Difference, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Difference, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_DY .
+
+
+sip-sdmx-code:seasonalAdjust-Y_F1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_F1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_F1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_F12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_F12" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, flow over stock over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, flow over stock over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_F12 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_F3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_F3" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate , flow over stock ,over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate , flow over stock ,over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_F3 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_F4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_F4" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate , flow over stock over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate , flow over stock over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_F4 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_F6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_F6" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, flow over stock over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, flow over stock over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_F6 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_FO1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_FO1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_FO1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_FO12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_FO12" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 12  periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 12  periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_FO12 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_FO16 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_FO16" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 16 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 16 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_FO16 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_FO3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_FO3" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_FO3 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_FO4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_FO4" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_FO4 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_FO6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_FO6" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, flow over stock, over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_FO6 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_FY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_FY" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, flow over stock, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, flow over stock, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_FY .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G10 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G10" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, over 10 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, over 10 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G10 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G12" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G12 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G3" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G3 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G3Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G3Y" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, over 3 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, over 3 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G3Y .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G4" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate over 4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate over 4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G4 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G4Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G4Y" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, over 4 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, over 4 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G4Y .
+
+
+sip-sdmx-code:seasonalAdjust-Y_G6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_G6" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_G6 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GC10Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GC10Y" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Compound growth rate, over 10 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Compound growth rate, over 10 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GC10Y .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GC5Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GC5Y" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Compound growth rate, over 5 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Compound growth rate, over 5 years"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GC5Y .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GO1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GO1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, period on period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, period on period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GO1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GO12 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GO12" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, over 12 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, over 12 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GO12 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GO3 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GO3" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, over 3 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, over 3 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GO3 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GO4 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GO4" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, over  4 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, over  4 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GO4 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GO6 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GO6" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, over 6 periods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, over 6 periods"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GO6 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GOY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GOY" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Contribution to growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Contribution to growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GOY .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GR a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GR" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, over reference year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, over reference year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GR .
+
+
+sip-sdmx-code:seasonalAdjust-Y_GY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_GY" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Growth rate, over 1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Growth rate, over 1 year"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_GY .
+
+
+sip-sdmx-code:seasonalAdjust-Y_INX a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_INX" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Index"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Index"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_INX .
+
+
+sip-sdmx-code:seasonalAdjust-Y_L0 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_L0" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Level"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_L0 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_LA a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_LA" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Annual levels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Annual levels"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_LA .
+
+
+sip-sdmx-code:seasonalAdjust-Y_N a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_N" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Non transformed data"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Non transformed data"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_N .
+
+
+sip-sdmx-code:seasonalAdjust-Y_P1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_P1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Period-on-period percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Period-on-period percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_P1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_P3M a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_P3M" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 3-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 3-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_P3M .
+
+
+sip-sdmx-code:seasonalAdjust-Y_P3Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_P3Y" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 3-year percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 3-year percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_P3Y .
+
+
+sip-sdmx-code:seasonalAdjust-Y_P5Y a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_P5Y" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 5-year percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 5-year percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_P5Y .
+
+
+sip-sdmx-code:seasonalAdjust-Y_P6M a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_P6M" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, 6-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, 6-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_P6M .
+
+
+sip-sdmx-code:seasonalAdjust-Y_PM a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_PM" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Month-on-month percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Month-on-month percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_PM .
+
+
+sip-sdmx-code:seasonalAdjust-Y_PQ a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_PQ" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Quarter-on-quarter percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Quarter-on-quarter percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_PQ .
+
+
+sip-sdmx-code:seasonalAdjust-Y_PT a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_PT" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Percentage of the total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Percentage of the total"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_PT .
+
+
+sip-sdmx-code:seasonalAdjust-Y_PY a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_PY" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Year-on-year (annual) percentage change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Year-on-year (annual) percentage change"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_PY .
+
+
+sip-sdmx-code:seasonalAdjust-Y_R1 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_R1" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Revisions, difference to last transmission period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Revisions, difference to last transmission period"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_R1 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_R2 a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_R2" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Revisions, difference to last published values"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Revisions, difference to last published values"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_R2 .
+
+
+sip-sdmx-code:seasonalAdjust-Y_T a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "Y_T" ;
+    skos:prefLabel "Calendar and seasonally adjusted data, Ratio"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Calendar and seasonally adjusted data, Ratio"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-Y_T .
+
+
+sip-sdmx-code:seasonalAdjust-_Z a skos:Concept, sip-sdmx-code:SeasonalAdjust;
+    skos:topConceptOf sip-sdmx-code:seasonalAdjust ;
+    skos:inScheme sip-sdmx-code:seasonalAdjust ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:IMF ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:seasonalAdjust skos:hasTopConcept sip-sdmx-code:seasonalAdjust-_Z .
+

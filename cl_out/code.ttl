@@ -1,0 +1,490 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+ 
+
+sip-sdmx-code: a skos:ConceptScheme ;
+    rdfs:label "List of available code lists"@en ;
+    dct:creator "SemanticPro SDMX Extension" ;
+    dct:issued "2025-09-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dct:description "A general code list with links to all available code schemes."@en .
+
+# CODE LISTS
+
+sip-sdmx-code:accountEntry a skos:ConceptScheme ;
+    rdfs:label "Accounting entry code list"@en ;
+    dct:description "A reference accountEntry codelist based on IMF:CL_ACCOUNT_ENTRY(1.5.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/accountEntry> .
+
+sip-sdmx-code:activity a skos:ConceptScheme ;
+    rdfs:label "Activity - ANZSIC 2006"@en ;
+    dct:description "A reference activity codelist combining ESTAT:CL_ACTIVITY93(1.6), ESTAT:CL_ACTIVITY(1.11.0), IAEG-SDGs:CL_ACTIVITY(1.6), UNSD:CL_ACTIVITY(1.0), OECD:CL_ACTIVITY_ALLOC(1.0), SDMX:CL_ACTIVITY_ANZSIC06(1.0), SDMX:CL_ACTIVITY_ISIC4(1.0), SDMX:CL_ACTIVITY_NACE2(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/activity> .
+
+sip-sdmx-code:refPeriod a skos:ConceptScheme ;
+    rdfs:label "Reference period detail codes"@en ;
+    dct:description "A reference refPeriod codelist based on ESTAT:CL_REF_PERIOD_DTL(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/refPeriod> .
+
+sip-sdmx-code:regionals a skos:ConceptScheme ;
+    rdfs:label "Regional codes"@en ;
+    dct:description "A reference regionals codelist based on ESTAT:CL_REGIONAL(6.1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/regionals> .
+
+sip-sdmx-code:reportingType a skos:ConceptScheme ;
+    rdfs:label "Reporting type code list"@en ;
+    dct:description "A reference reportingType codelist based on IAEG-SDGs:CL_REPORTING_TYPE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/reportingType> .
+
+sip-sdmx-code:seasonalAdjust a skos:ConceptScheme ;
+    rdfs:label "Seasonal Adjustment"@en ;
+    dct:description "A reference seasonalAdjust codelist combining ESTAT:CL_SEASON_ADJUST(1.0), SDMX:CL_SEASONAL_ADJUST(1.0), ESTAT:CL_ADJUSTMENT(1.4), IMF:CL_ADJUSTMENT(1.4)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/seasonalAdjust> .
+
+sip-sdmx-code:institutSec a skos:ConceptScheme ;
+    rdfs:label "Institutional sector"@en ;
+    dct:description "A reference institutSec codelist combining ESTAT:CL_SECTOR(1.14), ESTAT:CL_SECTOR93(1.4)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/institutSec> .
+
+sip-sdmx-code:sector a skos:ConceptScheme ;
+    rdfs:label "Reference/Counterpart institutional sector"@en ;
+    dct:description "A reference sector codelist based on UIS:CL_SECTOR(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/sector> .
+
+sip-sdmx-code:itemStocks a skos:ConceptScheme ;
+    rdfs:label "Stocks, Transactions, Other Flows"@en ;
+    dct:description "A reference itemStocks codelist combining ESTAT:CL_SEEA_STO(1.2), IMF:CL_ACCOUNTS_ITEM(1.8.0), IMF:CL_FSENTRY(1.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/itemStocks> .
+
+sip-sdmx-code:series a skos:ConceptScheme ;
+    rdfs:label "SDG Series Code List"@en ;
+    dct:description "A reference series codelist based on IAEG-SDGs:CL_SERIES(1.18)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/series> .
+
+sip-sdmx-code:sex a skos:ConceptScheme ;
+    rdfs:label "Sex code list"@en ;
+    dct:description "A reference sex codelist combining IAEG-SDGs:CL_SEX(1.1), SDMX:CL_SEX(2.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/sex> .
+
+sip-sdmx-code:statUnit a skos:ConceptScheme ;
+    rdfs:label "Statistical unit"@en ;
+    dct:description "A reference statUnit codelist combining OECD:CL_STAT_UNIT(1.0), UIS:CL_STAT_UNIT(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/statUnit> .
+
+sip-sdmx-code:timePerCollect a skos:ConceptScheme ;
+    rdfs:label "Time period collection code list"@en ;
+    dct:description "A reference timePerCollect codelist combining IMF:CL_TIME_COLLECT(1.0), SDMX:CL_TIME_PER_COLLECT(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/timePerCollect> .
+
+sip-sdmx-code:timeFormat a skos:ConceptScheme ;
+    rdfs:label "Time Format"@en ;
+    dct:description "A reference timeFormat codelist based on SDMX:CL_TIME_FORMAT(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/timeFormat> .
+
+sip-sdmx-code:transformation a skos:ConceptScheme ;
+    rdfs:label "Time Transformation"@en ;
+    dct:description "A reference transformation codelist combining SDMX:CL_TIMETRANS(1.0), ESTAT:CL_TRANSFORMATION(1.4)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/transformation> .
+
+sip-sdmx-code:timeTransPer a skos:ConceptScheme ;
+    rdfs:label "Time Transformation Period"@en ;
+    dct:description "A reference timeTransPer codelist based on SDMX:CL_TIMETRANS_PER(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/timeTransPer> .
+
+sip-sdmx-code:timeTransType a skos:ConceptScheme ;
+    rdfs:label "Time Transformation Type"@en ;
+    dct:description "A reference timeTransType codelist based on SDMX:CL_TIMETRANS_TYPE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/timeTransType> .
+
+sip-sdmx-code:tradeFlow a skos:ConceptScheme ;
+    rdfs:label "CL_TRADE_FLOW"@en ;
+    dct:description "A reference tradeFlow codelist based on UNSD:CL_TRADE_FLOW(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/tradeFlow> .
+
+sip-sdmx-code:tradeSystem a skos:ConceptScheme ;
+    rdfs:label "CL_TRADE_SYSTEM"@en ;
+    dct:description "A reference tradeSystem codelist based on UNSD:CL_TRADE_SYSTEM(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/tradeSystem> .
+
+sip-sdmx-code:transportMode a skos:ConceptScheme ;
+    rdfs:label "CL_TRANSPORT_MODE"@en ;
+    dct:description "A reference transportMode codelist based on UNSD:CL_TRANSPORT_MODE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/transportMode> .
+
+sip-sdmx-code:typeEntity a skos:ConceptScheme ;
+    rdfs:label "Type of entity code list"@en ;
+    dct:description "A reference typeEntity codelist based on OECD:CL_TYPE_ENTITY(1.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/typeEntity> .
+
+sip-sdmx-code:expenditureReport a skos:ConceptScheme ;
+    rdfs:label "Type of expenditure reported"@en ;
+    dct:description "A reference expenditureReport codelist based on UIS:CL_TYPE_EXP_REPORTED(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/expenditureReport> .
+
+sip-sdmx-code:unitMeasure a skos:ConceptScheme ;
+    rdfs:label "SDG Unit of Measure code list"@en ;
+    dct:description "A reference unitMeasure codelist combining ESTAT:CL_UNIT(1.3), IMF:CL_UNIT(1.18.0), IAEG-SDGs:CL_UNIT_MEASURE(1.17), UNSD:CL_UNIT_MEASURE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/unitMeasure> .
+
+sip-sdmx-code:age a skos:ConceptScheme ;
+    rdfs:label "Age"@en ;
+    dct:description "A reference age codelist combining IAEG-SDGs:CL_AGE(1.19), UIS:CL_AGE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/age> .
+
+sip-sdmx-code:unitMult a skos:ConceptScheme ;
+    rdfs:label "Unit Multiplier"@en ;
+    dct:description "A reference unitMult codelist based on SDMX:CL_UNIT_MULT(1.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/unitMult> .
+
+sip-sdmx-code:urbanisation a skos:ConceptScheme ;
+    rdfs:label "Code list for degree of urbanisation"@en ;
+    dct:description "A reference urbanisation codelist combining IAEG-SDGs:CL_URBANISATION(1.10), SDMX:CL_DEG_URB(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/urbanisation> .
+
+sip-sdmx-code:valuation a skos:ConceptScheme ;
+    rdfs:label "Valuation"@en ;
+    dct:description "A reference valuation codelist based on ESTAT:CL_VALUATION(1.6)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/valuation> .
+
+sip-sdmx-code:valuesAp a skos:ConceptScheme ;
+    rdfs:label "Values for AP DSD"@en ;
+    dct:description "A reference valuesAp codelist based on ESTAT:CL_VALUE_AP(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/valuesAp> .
+
+sip-sdmx-code:waterFlows a skos:ConceptScheme ;
+    rdfs:label "Water flows"@en ;
+    dct:description "A reference waterFlows codelist based on ESTAT:CL_WATER_FLOWS(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/waterFlows> .
+
+sip-sdmx-code:workStatus a skos:ConceptScheme ;
+    rdfs:label "SCL - Activity and employment status"@en ;
+    dct:description "A reference workStatus codelist combining ESTAT:SCL_CL_WSTATUS(1.0), ESTAT:SCL_WSTATUS(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/workStatus> .
+
+sip-sdmx-code:ageUnit a skos:ConceptScheme ;
+    rdfs:label "Age"@en ;
+    dct:description "A reference ageUnit codelist based on SDMX:CL_AGE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/ageUnit> .
+
+sip-sdmx-code:airPol a skos:ConceptScheme ;
+    rdfs:label "Air pollutants and greenhouse gasses"@en ;
+    dct:description "A reference airPol codelist based on ESTAT:CL_AIRPOL(1.3.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/airPol> .
+
+sip-sdmx-code:adminPriceInd a skos:ConceptScheme ;
+    rdfs:label "Administered prices indicator"@en ;
+    dct:description "A reference adminPriceInd codelist based on ESTAT:CL_AP_DEFINITION(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/adminPriceInd> .
+
+sip-sdmx-code:area a skos:ConceptScheme ;
+    rdfs:label "SDG reference area code list"@en ;
+    dct:description "A reference area codelist combining ESTAT:CL_AREA(1.8), IAEG-SDGs:CL_AREA(1.17), IMF:CL_AREA(1.17.0), SDMX:CL_AREA(2.0.1), UIS:CL_AREA(1.0), UNSD:CL_AREA(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/area> .
+
+sip-sdmx-code:breakReason a skos:ConceptScheme ;
+    rdfs:label "Reason for the break in time series"@en ;
+    dct:description "A reference breakReason codelist based on SDMX:CL_BREAK_REASON(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/breakReason> .
+
+sip-sdmx-code:breakdownGroup a skos:ConceptScheme ;
+    rdfs:label "Breakdown group"@en ;
+    dct:description "A reference breakdownGroup codelist based on UIS:CL_BREAKDOWN_GROUP(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/breakdownGroup> .
+
+sip-sdmx-code:brideItem a skos:ConceptScheme ;
+    rdfs:label "Bridging items"@en ;
+    dct:description "A reference brideItem codelist based on ESTAT:CL_BRIDGE_ITEM(1.3.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/brideItem> .
+
+sip-sdmx-code:civilStatus a skos:ConceptScheme ;
+    rdfs:label "Civil (or Marital) Status"@en ;
+    dct:description "A reference civilStatus codelist based on SDMX:CL_CIVIL_STATUS(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/civilStatus> .
+
+sip-sdmx-code:expenditureCofog a skos:ConceptScheme ;
+    rdfs:label "Classification of the Functions of Government"@en ;
+    dct:description "A reference expenditureCofog codelist combining ESTAT:CL_COFOG(1.0), SDMX:CL_COFOG_1999(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/expenditureCofog> .
+
+sip-sdmx-code:expenditureCoipop a skos:ConceptScheme ;
+    rdfs:label "COICOP"@en ;
+    dct:description "A reference expenditureCoipop codelist combining ESTAT:CL_COICOP(2.0), SDMX:CL_COICOP_1999(1.1), SDMX:CL_COICOP_2018(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/expenditureCoipop> .
+
+sip-sdmx-code:commodity a skos:ConceptScheme ;
+    rdfs:label "CL_COMMODITY"@en ;
+    dct:description "A reference commodity codelist based on UNSD:CL_COMMODITY(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/commodity> .
+
+sip-sdmx-code:compBreakdown a skos:ConceptScheme ;
+    rdfs:label "SDG composite breakdown code list"@en ;
+    dct:description "A reference compBreakdown codelist based on IAEG-SDGs:CL_COMP_BREAKDOWN(1.18)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/compBreakdown> .
+
+sip-sdmx-code:compMethod a skos:ConceptScheme ;
+    rdfs:label "Compilation methodology code list"@en ;
+    dct:description "A reference compMethod codelist based on IMF:CL_COMP_METHOD(1.2)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/compMethod> .
+
+sip-sdmx-code:confStatus a skos:ConceptScheme ;
+    rdfs:label "Confidentiality Status"@en ;
+    dct:description "A reference confStatus codelist based on SDMX:CL_CONF_STATUS(1.3)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/confStatus> .
+
+sip-sdmx-code:expenditureCopni a skos:ConceptScheme ;
+    rdfs:label "COPNI"@en ;
+    dct:description "A reference expenditureCopni codelist combining ESTAT:CL_COPNI(1.0), SDMX:CL_COPNI_1999(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/expenditureCopni> .
+
+sip-sdmx-code:expenditureCopp a skos:ConceptScheme ;
+    rdfs:label "Classification of the Outlays of Producers According to Purpose"@en ;
+    dct:description "A reference expenditureCopp codelist combining ESTAT:CL_COPP(1.0), SDMX:CL_COPP_1999(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/expenditureCopp> .
+
+sip-sdmx-code:coverageGeo a skos:ConceptScheme ;
+    rdfs:label "Geographical coverage"@en ;
+    dct:description "A reference coverageGeo codelist based on ESTAT:CL_COVERAGE_GEO(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/coverageGeo> .
+
+sip-sdmx-code:coveragePop a skos:ConceptScheme ;
+    rdfs:label "Population coverage"@en ;
+    dct:description "A reference coveragePop codelist based on ESTAT:CL_COVERAGE_POP(1.1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/coveragePop> .
+
+sip-sdmx-code:currency a skos:ConceptScheme ;
+    rdfs:label "Currency of issuance or invoicing code list"@en ;
+    dct:description "A reference currency codelist based on IMF:CL_CURRENCY(1.6)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/currency> .
+
+sip-sdmx-code:custom a skos:ConceptScheme ;
+    rdfs:label "Custom breakdown code list (NA)"@en ;
+    dct:description "A reference custom codelist combining ESTAT:CL_CUST_BREAKDOWN(1.6.0), IAEG-SDGs:CL_CUST_BREAKDOWN(1.14)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/custom> .
+
+sip-sdmx-code:customsProc a skos:ConceptScheme ;
+    rdfs:label "CL_CUSTOMS_PROC"@en ;
+    dct:description "A reference customsProc codelist based on UNSD:CL_CUSTOMS_PROC(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/customsProc> .
+
+sip-sdmx-code:decimals a skos:ConceptScheme ;
+    rdfs:label "Decimals"@en ;
+    dct:description "A reference decimals codelist based on SDMX:CL_DECIMALS(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/decimals> .
+
+sip-sdmx-code:demandProd a skos:ConceptScheme ;
+    rdfs:label "Demand or production"@en ;
+    dct:description "A reference demandProd codelist based on ESTAT:CL_DEMAND_PROD(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/demandProd> .
+
+sip-sdmx-code:disability a skos:ConceptScheme ;
+    rdfs:label "Disability status code list"@en ;
+    dct:description "A reference disability codelist based on IAEG-SDGs:CL_DISABILITY(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/disability> .
+
+sip-sdmx-code:workBalance a skos:ConceptScheme ;
+    rdfs:label "EDP working balance basis"@en ;
+    dct:description "A reference workBalance codelist based on ESTAT:CL_EDP_WBB(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/workBalance> .
+
+sip-sdmx-code:educationTable a skos:ConceptScheme ;
+    rdfs:label "Table identifier"@en ;
+    dct:description "A reference educationTable codelist based on UIS:CL_EDU_TABLEID(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/educationTable> .
+
+sip-sdmx-code:educationFields a skos:ConceptScheme ;
+    rdfs:label "Fields of education"@en ;
+    dct:description "A reference educationFields codelist based on UIS:CL_EDUCATION_FIELD(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/educationFields> .
+
+sip-sdmx-code:educationLev a skos:ConceptScheme ;
+    rdfs:label "SDG Education Level code list"@en ;
+    dct:description "A reference educationLev codelist combining IAEG-SDGs:CL_EDUCATION_LEV(1.10), UIS:CL_EDUCATION_LEVEL(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/educationLev> .
+
+sip-sdmx-code:educationType a skos:ConceptScheme ;
+    rdfs:label "Education type"@en ;
+    dct:description "A reference educationType codelist based on UIS:CL_EDUCATION_TYPE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/educationType> .
+
+sip-sdmx-code:energyFlows a skos:ConceptScheme ;
+    rdfs:label "Energy flows"@en ;
+    dct:description "A reference energyFlows codelist based on ESTAT:CL_ENERGY_FLOWS(1.2)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/energyFlows> .
+
+sip-sdmx-code:expenditureType a skos:ConceptScheme ;
+    rdfs:label "Expenditure type"@en ;
+    dct:description "A reference expenditureType codelist based on UIS:CL_EXPENDITURE_TYPE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/expenditureType> .
+
+sip-sdmx-code:fdiRelation a skos:ConceptScheme ;
+    rdfs:label "FDI relationship code list"@en ;
+    dct:description "A reference fdiRelation codelist based on OECD:CL_FDI_RELATION(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/fdiRelation> .
+
+sip-sdmx-code:freq a skos:ConceptScheme ;
+    rdfs:label "Code list for concept \"Frequency\""@en ;
+    dct:description "A reference freq codelist based on SDMX:CL_FREQ(2.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/freq> .
+
+sip-sdmx-code:functionalCat a skos:ConceptScheme ;
+    rdfs:label "Functional category code list"@en ;
+    dct:description "A reference functionalCat codelist based on IMF:CL_FUNCTIONAL_CAT(1.10.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/functionalCat> .
+
+sip-sdmx-code:geoInfoType a skos:ConceptScheme ;
+    rdfs:label "Geoinformation type code list"@en ;
+    dct:description "A reference geoInfoType codelist based on IAEG-SDGs:CL_GEO_INFO_TYPE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/geoInfoType> .
+
+sip-sdmx-code:economicFunc a skos:ConceptScheme ;
+    rdfs:label "GFS economic function"@en ;
+    dct:description "A reference economicFunc codelist based on ESTAT:CL_GFS_ECOFUNC(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/economicFunc> .
+
+sip-sdmx-code:taxCat a skos:ConceptScheme ;
+    rdfs:label "GFS tax category"@en ;
+    dct:description "A reference taxCat codelist based on ESTAT:CL_GFS_TAXCAT(1.2)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/taxCat> .
+
+sip-sdmx-code:stockTrans a skos:ConceptScheme ;
+    rdfs:label "Stocks, Transactions, Other Flows"@en ;
+    dct:description "A reference stockTrans codelist based on IMF:CL_GFSM_STO(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/stockTrans> .
+
+sip-sdmx-code:grade a skos:ConceptScheme ;
+    rdfs:label "Grade"@en ;
+    dct:description "A reference grade codelist based on UIS:CL_GRADE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/grade> .
+
+sip-sdmx-code:indexType a skos:ConceptScheme ;
+    rdfs:label "Index type"@en ;
+    dct:description "A reference indexType codelist based on ESTAT:CL_IDX_TYPE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/indexType> .
+
+sip-sdmx-code:indType a skos:ConceptScheme ;
+    rdfs:label "Indicator type"@en ;
+    dct:description "A reference indType codelist based on ESTAT:CL_IND_TYPE(1.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/indType> .
+
+sip-sdmx-code:assets a skos:ConceptScheme ;
+    rdfs:label "Instrument and Assets Classification"@en ;
+    dct:description "A reference assets codelist combining ESTAT:CL_INSTR_ASSET(1.14.0), ESTAT:CL_INSTR_ASSET93(1.5)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/assets> .
+
+sip-sdmx-code:intensity a skos:ConceptScheme ;
+    rdfs:label "Intensity"@en ;
+    dct:description "A reference intensity codelist based on UIS:CL_INTENSITY(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/intensity> .
+
+sip-sdmx-code:interactUnits a skos:ConceptScheme ;
+    rdfs:label "Units interacting with the environment"@en ;
+    dct:description "A reference interactUnits codelist based on ESTAT:CL_INTERACTORS(1.3)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/interactUnits> .
+
+sip-sdmx-code:itemPrice a skos:ConceptScheme ;
+    rdfs:label "Item in the classification"@en ;
+    dct:description "A reference itemPrice codelist based on ESTAT:CL_ITEM_PRICE(2.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/itemPrice> .
+
+sip-sdmx-code:lands a skos:ConceptScheme ;
+    rdfs:label "Land use"@en ;
+    dct:description "A reference lands codelist combining ESTAT:CL_LAND_COVER(1.0), ESTAT:CL_LAND_USE(1.0.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/lands> .
+
+sip-sdmx-code:levCounterpart a skos:ConceptScheme ;
+    rdfs:label "Level of counterpart code list"@en ;
+    dct:description "A reference levCounterpart codelist based on OECD:CL_LEV_COUNTERPART(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/levCounterpart> .
+
+sip-sdmx-code:material a skos:ConceptScheme ;
+    rdfs:label "Materials"@en ;
+    dct:description "A reference material codelist based on ESTAT:CL_MATERIAL(1.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/material> .
+
+sip-sdmx-code:maturity a skos:ConceptScheme ;
+    rdfs:label "Original and Residual Maturity"@en ;
+    dct:description "A reference maturity codelist based on ESTAT:CL_MATURITY(1.8)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/maturity> .
+
+sip-sdmx-code:measure a skos:ConceptScheme ;
+    rdfs:label "CL_MEASURE"@en ;
+    dct:description "A reference measure codelist based on UNSD:CL_MEASURE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/measure> .
+
+sip-sdmx-code:measurePrincip a skos:ConceptScheme ;
+    rdfs:label "Measurement principle code list"@en ;
+    dct:description "A reference measurePrincip codelist based on OECD:CL_MEASURE_PRINCIP(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/measurePrincip> .
+
+sip-sdmx-code:mobility a skos:ConceptScheme ;
+    rdfs:label "Mobility"@en ;
+    dct:description "A reference mobility codelist based on UIS:CL_MOBILITY(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/mobility> .
+
+sip-sdmx-code:naConsolidat a skos:ConceptScheme ;
+    rdfs:label "Consolidation codes"@en ;
+    dct:description "A reference naConsolidat codelist based on ESTAT:CL_NA_CONSOLIDAT(1.3)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/naConsolidat> .
+
+sip-sdmx-code:naPrices a skos:ConceptScheme ;
+    rdfs:label "Price codes"@en ;
+    dct:description "A reference naPrices codelist based on ESTAT:CL_NA_PRICES(1.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/naPrices> .
+
+sip-sdmx-code:stocksTrans a skos:ConceptScheme ;
+    rdfs:label "Stocks, Transactions, Other Flows"@en ;
+    dct:description "A reference stocksTrans codelist combining ESTAT:CL_NA_STO(1.16.0), ESTAT:CL_NA_STO93(1.4)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/stocksTrans> .
+
+sip-sdmx-code:naTable a skos:ConceptScheme ;
+    rdfs:label "NA Table IDs"@en ;
+    dct:description "A reference naTable codelist based on ESTAT:CL_NA_TABLEID(1.10)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/naTable> .
+
+sip-sdmx-code:nature a skos:ConceptScheme ;
+    rdfs:label "Nature code list"@en ;
+    dct:description "A reference nature codelist based on IAEG-SDGs:CL_NATURE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/nature> .
+
+sip-sdmx-code:obsStatus a skos:ConceptScheme ;
+    rdfs:label "Observation status"@en ;
+    dct:description "A reference obsStatus codelist combining ESTAT:CL_OBS_STATUS(2.3), SDMX:CL_OBS_STATUS(2.2)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/obsStatus> .
+
+sip-sdmx-code:occupation a skos:ConceptScheme ;
+    rdfs:label "Occupation"@en ;
+    dct:description "A reference occupation codelist combining IAEG-SDGs:CL_OCCUPATION(1.8), SDMX:CL_OCCUPATION(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/occupation> .
+
+sip-sdmx-code:compilingOrg a skos:ConceptScheme ;
+    rdfs:label "Compiling organisation code list"@en ;
+    dct:description "A reference compilingOrg codelist based on IMF:CL_ORGANISATION(1.14.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/compilingOrg> .
+
+sip-sdmx-code:originCriterion a skos:ConceptScheme ;
+    rdfs:label "Origin criterion"@en ;
+    dct:description "A reference originCriterion codelist based on UIS:CL_ORIGIN_CRITERION(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/originCriterion> .
+
+sip-sdmx-code:partnerType a skos:ConceptScheme ;
+    rdfs:label "CL_PARTNER_TYPE"@en ;
+    dct:description "A reference partnerType codelist based on UNSD:CL_PARTNER_TYPE(1.0)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/partnerType> .
+
+sip-sdmx-code:pensFundType a skos:ConceptScheme ;
+    rdfs:label "Pension Fund Type"@en ;
+    dct:description "A reference pensFundType codelist based on ESTAT:CL_PENS_FUNDTYPE(1.2)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/pensFundType> .
+
+sip-sdmx-code:products a skos:ConceptScheme ;
+    rdfs:label "Product classification"@en ;
+    dct:description "A reference products codelist combining ESTAT:CL_PRODUCT(1.3), IAEG-SDGs:CL_PRODUCT(1.19)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/products> .
+
+sip-sdmx-code:incomeQuantile a skos:ConceptScheme ;
+    rdfs:label "Income/wealth quantile code list"@en ;
+    dct:description "A reference incomeQuantile codelist based on IAEG-SDGs:CL_QUANTILE(1.1)"@en ;
+    dct:source <https://purl.semanticip.org/linked-data/sdmx/code/incomeQuantile> .

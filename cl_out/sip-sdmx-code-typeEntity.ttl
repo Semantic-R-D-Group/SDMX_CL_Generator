@@ -1,0 +1,94 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_TYPEENTITY Scheme Definition
+#####################################################
+
+sip-sdmx-code:typeEntity a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Type of entity code list - codelist scheme"@en ;
+    rdfs:label "Type of entity code list - codelist scheme"@en ;
+    skos:notation "CL_TYPEENTITY" ;
+    skos:definition "A reference typeEntity codelist based on OECD:CL_TYPE_ENTITY(1.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_TYPE_ENTITY/1.1> ;
+    rdfs:seeAlso sip-sdmx-code:TypeEntity .
+
+sip-sdmx-code:TypeEntity a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Type of entity code list - codelist class"@en ;
+    rdfs:label "Type of entity code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:typeEntity ;
+    skos:inScheme sip-sdmx-code:typeEntity .
+
+
+########################################
+# CL_TYPEENTITY Codes
+########################################
+    
+sip-sdmx-code:typeEntity-ALL a skos:Concept, sip-sdmx-code:TypeEntity;
+    skos:topConceptOf sip-sdmx-code:typeEntity ;
+    skos:inScheme sip-sdmx-code:typeEntity ;
+    skos:notation "ALL" ;
+    skos:prefLabel "All resident units"@en ;
+    rdfs:label "All resident units"@en .
+
+sip-sdmx-code:typeEntity skos:hasTopConcept sip-sdmx-code:typeEntity-ALL .
+
+
+sip-sdmx-code:typeEntity-EXF a skos:Concept, sip-sdmx-code:TypeEntity;
+    skos:topConceptOf sip-sdmx-code:typeEntity ;
+    skos:inScheme sip-sdmx-code:typeEntity ;
+    skos:notation "EXF" ;
+    skos:prefLabel "Extra group financing units"@en ;
+    rdfs:label "Extra group financing units"@en .
+
+sip-sdmx-code:typeEntity skos:hasTopConcept sip-sdmx-code:typeEntity-EXF .
+
+
+sip-sdmx-code:typeEntity-HDQ a skos:Concept, sip-sdmx-code:TypeEntity;
+    skos:topConceptOf sip-sdmx-code:typeEntity ;
+    skos:inScheme sip-sdmx-code:typeEntity ;
+    skos:notation "HDQ" ;
+    skos:prefLabel "Headquarter"@en ;
+    rdfs:label "Headquarter"@en .
+
+sip-sdmx-code:typeEntity skos:hasTopConcept sip-sdmx-code:typeEntity-HDQ .
+
+
+sip-sdmx-code:typeEntity-ROU a skos:Concept, sip-sdmx-code:TypeEntity;
+    skos:topConceptOf sip-sdmx-code:typeEntity ;
+    skos:inScheme sip-sdmx-code:typeEntity ;
+    skos:notation "ROU" ;
+    skos:prefLabel "Resident Operating Units (Non-SPEs)"@en ;
+    rdfs:label "Resident Operating Units (Non-SPEs)"@en .
+
+sip-sdmx-code:typeEntity skos:hasTopConcept sip-sdmx-code:typeEntity-ROU .
+
+
+sip-sdmx-code:typeEntity-RSP a skos:Concept, sip-sdmx-code:TypeEntity;
+    skos:topConceptOf sip-sdmx-code:typeEntity ;
+    skos:inScheme sip-sdmx-code:typeEntity ;
+    skos:notation "RSP" ;
+    skos:prefLabel "Resident SPEs"@en ;
+    rdfs:label "Resident SPEs"@en .
+
+sip-sdmx-code:typeEntity skos:hasTopConcept sip-sdmx-code:typeEntity-RSP .
+
+
+sip-sdmx-code:typeEntity-_Z a skos:Concept, sip-sdmx-code:TypeEntity;
+    skos:topConceptOf sip-sdmx-code:typeEntity ;
+    skos:inScheme sip-sdmx-code:typeEntity ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:typeEntity skos:hasTopConcept sip-sdmx-code:typeEntity-_Z .
+

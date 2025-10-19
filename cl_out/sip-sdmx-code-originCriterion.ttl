@@ -1,0 +1,104 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_ORIGINCRITERION Scheme Definition
+#####################################################
+
+sip-sdmx-code:originCriterion a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Origin criterion - codelist scheme"@en ;
+    rdfs:label "Origin criterion - codelist scheme"@en ;
+    skos:notation "CL_ORIGINCRITERION" ;
+    skos:definition "A reference originCriterion codelist based on UIS:CL_ORIGIN_CRITERION(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_ORIGIN_CRITERION/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:OriginCriterion .
+
+sip-sdmx-code:OriginCriterion a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Origin criterion - codelist class"@en ;
+    rdfs:label "Origin criterion - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion .
+
+
+########################################
+# CL_ORIGINCRITERION Codes
+########################################
+    
+sip-sdmx-code:originCriterion-CTZ a skos:Concept, sip-sdmx-code:OriginCriterion;
+    skos:topConceptOf sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion ;
+    skos:notation "CTZ" ;
+    skos:prefLabel "Country of citizenship"@en ;
+    rdfs:label "Country of citizenship"@en .
+
+sip-sdmx-code:originCriterion skos:hasTopConcept sip-sdmx-code:originCriterion-CTZ .
+
+
+sip-sdmx-code:originCriterion-OTH a skos:Concept, sip-sdmx-code:OriginCriterion;
+    skos:topConceptOf sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion ;
+    skos:notation "OTH" ;
+    skos:prefLabel "Other criterion (to be specified)"@en ;
+    rdfs:label "Other criterion (to be specified)"@en .
+
+sip-sdmx-code:originCriterion skos:hasTopConcept sip-sdmx-code:originCriterion-OTH .
+
+
+sip-sdmx-code:originCriterion-PR_ED a skos:Concept, sip-sdmx-code:OriginCriterion;
+    skos:topConceptOf sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion ;
+    skos:notation "PR_ED" ;
+    skos:prefLabel "Country of prior education"@en ;
+    rdfs:label "Country of prior education"@en .
+
+sip-sdmx-code:originCriterion skos:hasTopConcept sip-sdmx-code:originCriterion-PR_ED .
+
+
+sip-sdmx-code:originCriterion-RES a skos:Concept, sip-sdmx-code:OriginCriterion;
+    skos:topConceptOf sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion ;
+    skos:notation "RES" ;
+    skos:prefLabel "Country of usual residence"@en ;
+    rdfs:label "Country of usual residence"@en .
+
+sip-sdmx-code:originCriterion skos:hasTopConcept sip-sdmx-code:originCriterion-RES .
+
+
+sip-sdmx-code:originCriterion-SEC_ED a skos:Concept, sip-sdmx-code:OriginCriterion;
+    skos:topConceptOf sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion ;
+    skos:notation "SEC_ED" ;
+    skos:prefLabel "Country of upper secondary diploma"@en ;
+    rdfs:label "Country of upper secondary diploma"@en .
+
+sip-sdmx-code:originCriterion skos:hasTopConcept sip-sdmx-code:originCriterion-SEC_ED .
+
+
+sip-sdmx-code:originCriterion-_X a skos:Concept, sip-sdmx-code:OriginCriterion;
+    skos:topConceptOf sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion ;
+    skos:notation "_X" ;
+    skos:prefLabel "Unspecified"@en ;
+    rdfs:label "Unspecified"@en .
+
+sip-sdmx-code:originCriterion skos:hasTopConcept sip-sdmx-code:originCriterion-_X .
+
+
+sip-sdmx-code:originCriterion-_Z a skos:Concept, sip-sdmx-code:OriginCriterion;
+    skos:topConceptOf sip-sdmx-code:originCriterion ;
+    skos:inScheme sip-sdmx-code:originCriterion ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:originCriterion skos:hasTopConcept sip-sdmx-code:originCriterion-_Z .
+

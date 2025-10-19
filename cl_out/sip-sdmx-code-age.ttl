@@ -1,0 +1,2176 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_AGE Scheme Definition
+#####################################################
+
+sip-sdmx-code:age a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Age - codelist scheme"@en ;
+    rdfs:label "Age - codelist scheme"@en ;
+    skos:altLabel "SDG age group code list - codelist scheme"@en ;
+    skos:notation "CL_AGE" ;
+    skos:definition "A reference age codelist combining IAEG-SDGs:CL_AGE(1.19), UIS:CL_AGE(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_AGE/1.19> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_AGE/1.0> ;
+    rdfs:seeAlso sip-sdmx-concept:AGE ;
+    skos:related sip-sdmx-concept:AGE ;
+    rdfs:seeAlso sip-sdmx-code:Age .
+
+sip-sdmx-code:Age a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Age - codelist class"@en ;
+    rdfs:label "Age - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age .
+
+
+########################################
+# CL_AGE Codes
+########################################
+    
+sip-sdmx-code:age-M0 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M0" ;
+    skos:prefLabel "under 1 month old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 1 month old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M0 .
+
+
+sip-sdmx-code:age-M12T23 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M12T23" ;
+    skos:prefLabel "12 to 23 months"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """12 to 23 months"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M12T23 .
+
+
+sip-sdmx-code:age-M24T35 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M24T35" ;
+    skos:prefLabel "24 to 35 months"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """24 to 35 months"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M24T35 .
+
+
+sip-sdmx-code:age-M24T59 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M24T59" ;
+    skos:prefLabel "24 to 59 months old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """24 to 59 months old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M24T59 .
+
+
+sip-sdmx-code:age-M36T47 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M36T47" ;
+    skos:prefLabel "36 to 47 months old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """36 to 47 months old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M36T47 .
+
+
+sip-sdmx-code:age-M36T59 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M36T59" ;
+    skos:prefLabel "36 to 59 months old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """36 to 59 months old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M36T59 .
+
+
+sip-sdmx-code:age-M48T59 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M48T59" ;
+    skos:prefLabel "48 to 59 months"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """48 to 59 months"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M48T59 .
+
+
+sip-sdmx-code:age-M6T59 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "M6T59" ;
+    skos:prefLabel "6 to 59 months old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """6 to 59 months old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-M6T59 .
+
+
+sip-sdmx-code:age-Y0 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0" ;
+    skos:prefLabel "under 1 year old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 1 year old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """0 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0 .
+
+
+sip-sdmx-code:age-Y0T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T14" ;
+    skos:prefLabel "under 15 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 15 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T14 .
+
+
+sip-sdmx-code:age-Y0T15 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T15" ;
+    skos:prefLabel "Under 16 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Under 16 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T15 .
+
+
+sip-sdmx-code:age-Y0T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T17" ;
+    skos:prefLabel "under 18 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 18 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T17 .
+
+
+sip-sdmx-code:age-Y0T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T24" ;
+    skos:prefLabel "under 25 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 25 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T24 .
+
+
+sip-sdmx-code:age-Y0T34 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T34" ;
+    skos:prefLabel "under 35 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 35 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T34 .
+
+
+sip-sdmx-code:age-Y0T4 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T4" ;
+    skos:prefLabel "under 5 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 5 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T4 .
+
+
+sip-sdmx-code:age-Y0T44 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T44" ;
+    skos:prefLabel "under 45 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 45 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T44 .
+
+
+sip-sdmx-code:age-Y0T45 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T45" ;
+    skos:prefLabel "under 46 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 46 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T45 .
+
+
+sip-sdmx-code:age-Y0T5 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T5" ;
+    skos:prefLabel "under 6 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 6 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T5 .
+
+
+sip-sdmx-code:age-Y0T7 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T7" ;
+    skos:prefLabel "under 8 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 8 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T7 .
+
+
+sip-sdmx-code:age-Y0T9 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y0T9" ;
+    skos:prefLabel "under 10 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """under 10 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y0T9 .
+
+
+sip-sdmx-code:age-Y1 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y1" ;
+    skos:prefLabel "1 year"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """1 year"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y1 .
+
+
+sip-sdmx-code:age-Y10 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y10" ;
+    skos:prefLabel "10 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """10 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y10 .
+
+
+sip-sdmx-code:age-Y10T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y10T14" ;
+    skos:prefLabel "10 to 14 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """10 to 14 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y10T14 .
+
+
+sip-sdmx-code:age-Y10T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y10T17" ;
+    skos:prefLabel "10 to 17 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """10 to 17 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y10T17 .
+
+
+sip-sdmx-code:age-Y10T19 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y10T19" ;
+    skos:prefLabel "10 to 19 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """10 to 19 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y10T19 .
+
+
+sip-sdmx-code:age-Y10T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y10T24" ;
+    skos:prefLabel "10 to 24 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """10 to 24 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y10T24 .
+
+
+sip-sdmx-code:age-Y10T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y10T74" ;
+    skos:prefLabel "10 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """10 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y10T74 .
+
+
+sip-sdmx-code:age-Y11 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y11" ;
+    skos:prefLabel "11 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """11 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y11 .
+
+
+sip-sdmx-code:age-Y12 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y12" ;
+    skos:prefLabel "12 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """12 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y12 .
+
+
+sip-sdmx-code:age-Y12T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y12T14" ;
+    skos:prefLabel "12 to 14 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """12 to 14 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y12T14 .
+
+
+sip-sdmx-code:age-Y12T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y12T17" ;
+    skos:prefLabel "12 to 17 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """12 to 17 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y12T17 .
+
+
+sip-sdmx-code:age-Y12T19 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y12T19" ;
+    skos:prefLabel "12 to 19 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """12 to 19 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y12T19 .
+
+
+sip-sdmx-code:age-Y12T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y12T24" ;
+    skos:prefLabel "12 to 24 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """12 to 24 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y12T24 .
+
+
+sip-sdmx-code:age-Y12T30 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y12T30" ;
+    skos:prefLabel "12 to 30 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """12 to 30 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y12T30 .
+
+
+sip-sdmx-code:age-Y13 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y13" ;
+    skos:prefLabel "13 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """13 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y13 .
+
+
+sip-sdmx-code:age-Y14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y14" ;
+    skos:prefLabel "14 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """14 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y14 .
+
+
+sip-sdmx-code:age-Y14T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y14T24" ;
+    skos:prefLabel "14 to 24 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """14 to 24 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y14T24 .
+
+
+sip-sdmx-code:age-Y14T28 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y14T28" ;
+    skos:prefLabel "14 to 28 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """14 to 28 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y14T28 .
+
+
+sip-sdmx-code:age-Y14T29 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y14T29" ;
+    skos:prefLabel "14 to 29 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """14 to 29 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y14T29 .
+
+
+sip-sdmx-code:age-Y15 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15" ;
+    skos:prefLabel "15 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """15 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15 .
+
+
+sip-sdmx-code:age-Y15T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T17" ;
+    skos:prefLabel "15 to 17 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 17 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T17 .
+
+
+sip-sdmx-code:age-Y15T19 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T19" ;
+    skos:prefLabel "15 to 19 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 19 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T19 .
+
+
+sip-sdmx-code:age-Y15T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T24" ;
+    skos:prefLabel "15 to 24 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 24 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T24 .
+
+
+sip-sdmx-code:age-Y15T28 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T28" ;
+    skos:prefLabel "15 to 28 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 28 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T28 .
+
+
+sip-sdmx-code:age-Y15T29 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T29" ;
+    skos:prefLabel "15 to 29 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 29 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T29 .
+
+
+sip-sdmx-code:age-Y15T44 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T44" ;
+    skos:prefLabel "15 to 44 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 44 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T44 .
+
+
+sip-sdmx-code:age-Y15T49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T49" ;
+    skos:prefLabel "15 to 49 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 49 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T49 .
+
+
+sip-sdmx-code:age-Y15T60 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T60" ;
+    skos:prefLabel "15 to 60 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 60 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T60 .
+
+
+sip-sdmx-code:age-Y15T64 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T64" ;
+    skos:prefLabel "15 to 64 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 64 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T64 .
+
+
+sip-sdmx-code:age-Y15T65 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T65" ;
+    skos:prefLabel "15 to 65 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 65 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T65 .
+
+
+sip-sdmx-code:age-Y15T70 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T70" ;
+    skos:prefLabel "15 to 70 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 70 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T70 .
+
+
+sip-sdmx-code:age-Y15T72 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T72" ;
+    skos:prefLabel "15 to 72 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 72 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T72 .
+
+
+sip-sdmx-code:age-Y15T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T74" ;
+    skos:prefLabel "15 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T74 .
+
+
+sip-sdmx-code:age-Y15T80 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T80" ;
+    skos:prefLabel "15 to 80 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 80 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T80 .
+
+
+sip-sdmx-code:age-Y15T84 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y15T84" ;
+    skos:prefLabel "15 to 84 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 to 84 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y15T84 .
+
+
+sip-sdmx-code:age-Y16 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y16" ;
+    skos:prefLabel "16 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """16 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y16 .
+
+
+sip-sdmx-code:age-Y16T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y16T24" ;
+    skos:prefLabel "16 to 24 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """16 to 24 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y16T24 .
+
+
+sip-sdmx-code:age-Y16T65 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y16T65" ;
+    skos:prefLabel "16 to 65 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """16 to 65 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y16T65 .
+
+
+sip-sdmx-code:age-Y16T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y16T74" ;
+    skos:prefLabel "16 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """16 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y16T74 .
+
+
+sip-sdmx-code:age-Y17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y17" ;
+    skos:prefLabel "17 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """17 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y17 .
+
+
+sip-sdmx-code:age-Y18 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18" ;
+    skos:prefLabel "18 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """18 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18 .
+
+
+sip-sdmx-code:age-Y18T19 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T19" ;
+    skos:prefLabel "18 to 19 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 19 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T19 .
+
+
+sip-sdmx-code:age-Y18T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T24" ;
+    skos:prefLabel "18 to 24 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 24 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T24 .
+
+
+sip-sdmx-code:age-Y18T27 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T27" ;
+    skos:prefLabel "18 to 27 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 27 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T27 .
+
+
+sip-sdmx-code:age-Y18T29 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T29" ;
+    skos:prefLabel "18 to 29 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 29 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T29 .
+
+
+sip-sdmx-code:age-Y18T35 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T35" ;
+    skos:prefLabel "18 to 35 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 35 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T35 .
+
+
+sip-sdmx-code:age-Y18T44 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T44" ;
+    skos:prefLabel "18 to 44 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 44 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T44 .
+
+
+sip-sdmx-code:age-Y18T49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T49" ;
+    skos:prefLabel "18 to 49 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 49 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T49 .
+
+
+sip-sdmx-code:age-Y18T50 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T50" ;
+    skos:prefLabel "18 to 50 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 50 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T50 .
+
+
+sip-sdmx-code:age-Y18T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y18T74" ;
+    skos:prefLabel "18 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y18T74 .
+
+
+sip-sdmx-code:age-Y19 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y19" ;
+    skos:prefLabel "19 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """19 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y19 .
+
+
+sip-sdmx-code:age-Y19T65 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y19T65" ;
+    skos:prefLabel "19 to 65 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """19 to 65 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y19T65 .
+
+
+sip-sdmx-code:age-Y1T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y1T14" ;
+    skos:prefLabel "1 to 14 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """1 to 14 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y1T14 .
+
+
+sip-sdmx-code:age-Y1T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y1T17" ;
+    skos:prefLabel "1 to 17 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """1 to 17 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y1T17 .
+
+
+sip-sdmx-code:age-Y1T4 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y1T4" ;
+    skos:prefLabel "1 to 4 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """1 to 4 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y1T4 .
+
+
+sip-sdmx-code:age-Y2 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y2" ;
+    skos:prefLabel "2 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """2 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y2 .
+
+
+sip-sdmx-code:age-Y20 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20" ;
+    skos:prefLabel "20 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """20 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20 .
+
+
+sip-sdmx-code:age-Y20T24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20T24" ;
+    skos:prefLabel "20 to 24 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 to 24 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 20 to 24 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20T24 .
+
+
+sip-sdmx-code:age-Y20T29 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20T29" ;
+    skos:prefLabel "20 to 29 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 to 29 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20T29 .
+
+
+sip-sdmx-code:age-Y20T30 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20T30" ;
+    skos:prefLabel "20 to 30 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 to 30 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20T30 .
+
+
+sip-sdmx-code:age-Y20T35 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20T35" ;
+    skos:prefLabel "20 to 35 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 to 35 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20T35 .
+
+
+sip-sdmx-code:age-Y20T49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20T49" ;
+    skos:prefLabel "20 to 49 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 to 49 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20T49 .
+
+
+sip-sdmx-code:age-Y20T64 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20T64" ;
+    skos:prefLabel "20 to 64 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 to 64 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20T64 .
+
+
+sip-sdmx-code:age-Y20T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y20T74" ;
+    skos:prefLabel "20 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y20T74 .
+
+
+sip-sdmx-code:age-Y21 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y21" ;
+    skos:prefLabel "21 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """21 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y21 .
+
+
+sip-sdmx-code:age-Y22 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y22" ;
+    skos:prefLabel "22 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """22 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y22 .
+
+
+sip-sdmx-code:age-Y23 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y23" ;
+    skos:prefLabel "23 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """23 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y23 .
+
+
+sip-sdmx-code:age-Y24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y24" ;
+    skos:prefLabel "24 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """24 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y24 .
+
+
+sip-sdmx-code:age-Y25 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y25" ;
+    skos:prefLabel "25 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """25 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y25 .
+
+
+sip-sdmx-code:age-Y25T29 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y25T29" ;
+    skos:prefLabel "25 to 29 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """25 to 29 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 25 to 29 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y25T29 .
+
+
+sip-sdmx-code:age-Y25T34 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y25T34" ;
+    skos:prefLabel "25 to 34 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """25 to 34 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y25T34 .
+
+
+sip-sdmx-code:age-Y25T44 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y25T44" ;
+    skos:prefLabel "25 to 44 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """25 to 44 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y25T44 .
+
+
+sip-sdmx-code:age-Y25T54 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y25T54" ;
+    skos:prefLabel "25 to 54 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """25 to 54 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y25T54 .
+
+
+sip-sdmx-code:age-Y25T64 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y25T64" ;
+    skos:prefLabel "25 to 64 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """25 to 64 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y25T64 .
+
+
+sip-sdmx-code:age-Y25T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y25T74" ;
+    skos:prefLabel "25 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """25 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y25T74 .
+
+
+sip-sdmx-code:age-Y26 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y26" ;
+    skos:prefLabel "26 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """26 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y26 .
+
+
+sip-sdmx-code:age-Y27 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y27" ;
+    skos:prefLabel "27 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """27 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y27 .
+
+
+sip-sdmx-code:age-Y28 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y28" ;
+    skos:prefLabel "28 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """28 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y28 .
+
+
+sip-sdmx-code:age-Y29 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y29" ;
+    skos:prefLabel "29 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """29 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y29 .
+
+
+sip-sdmx-code:age-Y2T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y2T14" ;
+    skos:prefLabel "2 to 14 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """2 to 14 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y2T14 .
+
+
+sip-sdmx-code:age-Y3 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y3" ;
+    skos:prefLabel "3 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """3 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y3 .
+
+
+sip-sdmx-code:age-Y30 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y30" ;
+    skos:prefLabel "30 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """30 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """30 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y30 .
+
+
+sip-sdmx-code:age-Y30T34 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y30T34" ;
+    skos:prefLabel "30 to 34 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """30 to 34 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 30 to 34 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y30T34 .
+
+
+sip-sdmx-code:age-Y30T35 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y30T35" ;
+    skos:prefLabel "30 to 35 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """30 to 35 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y30T35 .
+
+
+sip-sdmx-code:age-Y30T39 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y30T39" ;
+    skos:prefLabel "30 to 39 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """30 to 39 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y30T39 .
+
+
+sip-sdmx-code:age-Y30T69 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y30T69" ;
+    skos:prefLabel "30 to 69 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """30 to 69 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y30T69 .
+
+
+sip-sdmx-code:age-Y30T70 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y30T70" ;
+    skos:prefLabel "30 to exact 70 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """30 to exact 70 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y30T70 .
+
+
+sip-sdmx-code:age-Y31 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y31" ;
+    skos:prefLabel "31 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """31 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y31 .
+
+
+sip-sdmx-code:age-Y32 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y32" ;
+    skos:prefLabel "32 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """32 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y32 .
+
+
+sip-sdmx-code:age-Y33 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y33" ;
+    skos:prefLabel "33 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """33 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y33 .
+
+
+sip-sdmx-code:age-Y34 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y34" ;
+    skos:prefLabel "34 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """34 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y34 .
+
+
+sip-sdmx-code:age-Y35 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y35" ;
+    skos:prefLabel "35 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """35 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """35 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y35 .
+
+
+sip-sdmx-code:age-Y35T39 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y35T39" ;
+    skos:prefLabel "35 to 39 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """35 to 39 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 35 to 39 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y35T39 .
+
+
+sip-sdmx-code:age-Y35T44 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y35T44" ;
+    skos:prefLabel "35 to 44 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """35 to 44 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y35T44 .
+
+
+sip-sdmx-code:age-Y35T49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y35T49" ;
+    skos:prefLabel "35 to 49 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """35 to 49 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y35T49 .
+
+
+sip-sdmx-code:age-Y36 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y36" ;
+    skos:prefLabel "36 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """36 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y36 .
+
+
+sip-sdmx-code:age-Y36T54 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y36T54" ;
+    skos:prefLabel "36 to 54 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """36 to 54 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y36T54 .
+
+
+sip-sdmx-code:age-Y37 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y37" ;
+    skos:prefLabel "37 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """37 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y37 .
+
+
+sip-sdmx-code:age-Y38 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y38" ;
+    skos:prefLabel "38 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """38 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y38 .
+
+
+sip-sdmx-code:age-Y39 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y39" ;
+    skos:prefLabel "39 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """39 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y39 .
+
+
+sip-sdmx-code:age-Y4 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y4" ;
+    skos:prefLabel "4 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """4 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y4 .
+
+
+sip-sdmx-code:age-Y40 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y40" ;
+    skos:prefLabel "40 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """40 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y40 .
+
+
+sip-sdmx-code:age-Y40T44 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y40T44" ;
+    skos:prefLabel "40 to 44 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """40 to 44 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 40 to 44 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y40T44 .
+
+
+sip-sdmx-code:age-Y40T49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y40T49" ;
+    skos:prefLabel "40 to 49 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """40 to 49 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y40T49 .
+
+
+sip-sdmx-code:age-Y41 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y41" ;
+    skos:prefLabel "41 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """41 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y41 .
+
+
+sip-sdmx-code:age-Y42 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y42" ;
+    skos:prefLabel "42 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """42 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y42 .
+
+
+sip-sdmx-code:age-Y43 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y43" ;
+    skos:prefLabel "43 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """43 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y43 .
+
+
+sip-sdmx-code:age-Y44 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y44" ;
+    skos:prefLabel "44 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """44 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y44 .
+
+
+sip-sdmx-code:age-Y45 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y45" ;
+    skos:prefLabel "45 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """45 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y45 .
+
+
+sip-sdmx-code:age-Y45T49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y45T49" ;
+    skos:prefLabel "45 to 49 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """45 to 49 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 45 to 49 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y45T49 .
+
+
+sip-sdmx-code:age-Y45T54 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y45T54" ;
+    skos:prefLabel "45 to 54 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """45 to 54 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y45T54 .
+
+
+sip-sdmx-code:age-Y45T59 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y45T59" ;
+    skos:prefLabel "45 to 59 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """45 to 59 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y45T59 .
+
+
+sip-sdmx-code:age-Y45T64 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y45T64" ;
+    skos:prefLabel "45 to 64 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """45 to 64 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y45T64 .
+
+
+sip-sdmx-code:age-Y46 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y46" ;
+    skos:prefLabel "46 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """46 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y46 .
+
+
+sip-sdmx-code:age-Y47 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y47" ;
+    skos:prefLabel "47 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """47 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y47 .
+
+
+sip-sdmx-code:age-Y48 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y48" ;
+    skos:prefLabel "48 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """48 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y48 .
+
+
+sip-sdmx-code:age-Y49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y49" ;
+    skos:prefLabel "49 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """49 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y49 .
+
+
+sip-sdmx-code:age-Y5 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y5" ;
+    skos:prefLabel "5 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """5 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y5 .
+
+
+sip-sdmx-code:age-Y50T54 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y50T54" ;
+    skos:prefLabel "50 to 54 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """50 to 54 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 50 to 54 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y50T54 .
+
+
+sip-sdmx-code:age-Y50T59 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y50T59" ;
+    skos:prefLabel "50 to 59 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """50 to 59 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y50T59 .
+
+
+sip-sdmx-code:age-Y55T59 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y55T59" ;
+    skos:prefLabel "55 to 59 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """55 to 59 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 55 to 59 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y55T59 .
+
+
+sip-sdmx-code:age-Y55T64 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y55T64" ;
+    skos:prefLabel "55 to 64 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """55 to 64 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y55T64 .
+
+
+sip-sdmx-code:age-Y5T12 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y5T12" ;
+    skos:prefLabel "5 to 12 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """5 to 12 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y5T12 .
+
+
+sip-sdmx-code:age-Y5T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y5T14" ;
+    skos:prefLabel "5 to 14 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """5 to 14 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y5T14 .
+
+
+sip-sdmx-code:age-Y5T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y5T17" ;
+    skos:prefLabel "5 to 17 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """5 to 17 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y5T17 .
+
+
+sip-sdmx-code:age-Y5T9 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y5T9" ;
+    skos:prefLabel "5 to 9 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """5 to 9 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y5T9 .
+
+
+sip-sdmx-code:age-Y6 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y6" ;
+    skos:prefLabel "6 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """6 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y6 .
+
+
+sip-sdmx-code:age-Y60T64 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y60T64" ;
+    skos:prefLabel "60 to 64 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """60 to 64 years old"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """From 60 to 64 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y60T64 .
+
+
+sip-sdmx-code:age-Y60T69 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y60T69" ;
+    skos:prefLabel "60 to 69 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """60 to 69 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y60T69 .
+
+
+sip-sdmx-code:age-Y65T69 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y65T69" ;
+    skos:prefLabel "65 to 69 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """65 to 69 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y65T69 .
+
+
+sip-sdmx-code:age-Y65T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y65T74" ;
+    skos:prefLabel "65 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """65 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y65T74 .
+
+
+sip-sdmx-code:age-Y6T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y6T14" ;
+    skos:prefLabel "6 to 14 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """6 to 14 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y6T14 .
+
+
+sip-sdmx-code:age-Y6T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y6T17" ;
+    skos:prefLabel "6 to 17 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """6 to 17 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y6T17 .
+
+
+sip-sdmx-code:age-Y6T65 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y6T65" ;
+    skos:prefLabel "6 to 65 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """6 to 65 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y6T65 .
+
+
+sip-sdmx-code:age-Y7 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y7" ;
+    skos:prefLabel "7 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """7 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y7 .
+
+
+sip-sdmx-code:age-Y70T74 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y70T74" ;
+    skos:prefLabel "70 to 74 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """70 to 74 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y70T74 .
+
+
+sip-sdmx-code:age-Y70T79 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y70T79" ;
+    skos:prefLabel "70 to 79 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """70 to 79 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y70T79 .
+
+
+sip-sdmx-code:age-Y75T79 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y75T79" ;
+    skos:prefLabel "75 to 79 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """75 to 79 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y75T79 .
+
+
+sip-sdmx-code:age-Y75T84 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y75T84" ;
+    skos:prefLabel "75 to 84 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """75 to 84 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y75T84 .
+
+
+sip-sdmx-code:age-Y7T14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y7T14" ;
+    skos:prefLabel "7 to 14 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """7 to 14 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y7T14 .
+
+
+sip-sdmx-code:age-Y7T17 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y7T17" ;
+    skos:prefLabel "7 to 17 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """7 to 17 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y7T17 .
+
+
+sip-sdmx-code:age-Y8 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y8" ;
+    skos:prefLabel "8 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """8 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y8 .
+
+
+sip-sdmx-code:age-Y80T84 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y80T84" ;
+    skos:prefLabel "80 to 84 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """80 to 84 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y80T84 .
+
+
+sip-sdmx-code:age-Y80T89 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y80T89" ;
+    skos:prefLabel "80 to 89 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """80 to 89 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y80T89 .
+
+
+sip-sdmx-code:age-Y85T89 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y85T89" ;
+    skos:prefLabel "85 to 89 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """85 to 89 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y85T89 .
+
+
+sip-sdmx-code:age-Y9 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y9" ;
+    skos:prefLabel "9 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """9 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y9 .
+
+
+sip-sdmx-code:age-Y90T94 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y90T94" ;
+    skos:prefLabel "90 to 94 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """90 to 94 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y90T94 .
+
+
+sip-sdmx-code:age-Y90T99 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y90T99" ;
+    skos:prefLabel "90 to 99 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """90 to 99 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y90T99 .
+
+
+sip-sdmx-code:age-Y95T99 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y95T99" ;
+    skos:prefLabel "95 to 99 years old"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """95 to 99 years old"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y95T99 .
+
+
+sip-sdmx-code:age-Y_GE10 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE10" ;
+    skos:prefLabel "10 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """10 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE10 .
+
+
+sip-sdmx-code:age-Y_GE100 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE100" ;
+    skos:prefLabel "100 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """100 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE100 .
+
+
+sip-sdmx-code:age-Y_GE12 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE12" ;
+    skos:prefLabel "12 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """12 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE12 .
+
+
+sip-sdmx-code:age-Y_GE14 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE14" ;
+    skos:prefLabel "14 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """14 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE14 .
+
+
+sip-sdmx-code:age-Y_GE15 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE15" ;
+    skos:prefLabel "15 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """15 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE15 .
+
+
+sip-sdmx-code:age-Y_GE16 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE16" ;
+    skos:prefLabel "16 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """16 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE16 .
+
+
+sip-sdmx-code:age-Y_GE18 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE18" ;
+    skos:prefLabel "18 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """18 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE18 .
+
+
+sip-sdmx-code:age-Y_GE19 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE19" ;
+    skos:prefLabel "19 years or over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """19 years or over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE19 .
+
+
+sip-sdmx-code:age-Y_GE20 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE20" ;
+    skos:prefLabel "20 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """20 years old and over"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """20 years or over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE20 .
+
+
+sip-sdmx-code:age-Y_GE25 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE25" ;
+    skos:prefLabel "25 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """25 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE25 .
+
+
+sip-sdmx-code:age-Y_GE3 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE3" ;
+    skos:prefLabel "3 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """3 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE3 .
+
+
+sip-sdmx-code:age-Y_GE40 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE40" ;
+    skos:prefLabel "40 years or over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """40 years or over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE40 .
+
+
+sip-sdmx-code:age-Y_GE46 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE46" ;
+    skos:prefLabel "46 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """46 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE46 .
+
+
+sip-sdmx-code:age-Y_GE5 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE5" ;
+    skos:prefLabel "5 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """5 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE5 .
+
+
+sip-sdmx-code:age-Y_GE50 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE50" ;
+    skos:prefLabel "50 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """50 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE50 .
+
+
+sip-sdmx-code:age-Y_GE55 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE55" ;
+    skos:prefLabel "55 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """55 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE55 .
+
+
+sip-sdmx-code:age-Y_GE6 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE6" ;
+    skos:prefLabel "6 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """6 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE6 .
+
+
+sip-sdmx-code:age-Y_GE60 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE60" ;
+    skos:prefLabel "60 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """60 years old and over"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """60 years or over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE60 .
+
+
+sip-sdmx-code:age-Y_GE65 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE65" ;
+    skos:prefLabel "65 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """65 years old and over"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """65 years or over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE65 .
+
+
+sip-sdmx-code:age-Y_GE7 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE7" ;
+    skos:prefLabel "7 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """7 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE7 .
+
+
+sip-sdmx-code:age-Y_GE70 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE70" ;
+    skos:prefLabel "70 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """70 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE70 .
+
+
+sip-sdmx-code:age-Y_GE75 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE75" ;
+    skos:prefLabel "75 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """75 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE75 .
+
+
+sip-sdmx-code:age-Y_GE80 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE80" ;
+    skos:prefLabel "80 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """80 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE80 .
+
+
+sip-sdmx-code:age-Y_GE85 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE85" ;
+    skos:prefLabel "85 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """85 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE85 .
+
+
+sip-sdmx-code:age-Y_GE90 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE90" ;
+    skos:prefLabel "90 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """90 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE90 .
+
+
+sip-sdmx-code:age-Y_GE95 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GE95" ;
+    skos:prefLabel "95 years old and over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """95 years old and over"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GE95 .
+
+
+sip-sdmx-code:age-Y_GT19 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GT19" ;
+    skos:prefLabel "Over 19 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Over 19 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GT19 .
+
+
+sip-sdmx-code:age-Y_GT24 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GT24" ;
+    skos:prefLabel "Over 24 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Over 24 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GT24 .
+
+
+sip-sdmx-code:age-Y_GT29 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GT29" ;
+    skos:prefLabel "Over 29 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Over 29 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GT29 .
+
+
+sip-sdmx-code:age-Y_GT49 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GT49" ;
+    skos:prefLabel "Over 49 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Over 49 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GT49 .
+
+
+sip-sdmx-code:age-Y_GT7 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_GT7" ;
+    skos:prefLabel "Over 7 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Over 7 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_GT7 .
+
+
+sip-sdmx-code:age-Y_LT10 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT10" ;
+    skos:prefLabel "Less than 10 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 10 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT10 .
+
+
+sip-sdmx-code:age-Y_LT15 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT15" ;
+    skos:prefLabel "Less than 15 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 15 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT15 .
+
+
+sip-sdmx-code:age-Y_LT16 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT16" ;
+    skos:prefLabel "Less than 16 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 16 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT16 .
+
+
+sip-sdmx-code:age-Y_LT2 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT2" ;
+    skos:prefLabel "Less than 2 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 2 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT2 .
+
+
+sip-sdmx-code:age-Y_LT25 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT25" ;
+    skos:prefLabel "Less than 25 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 25 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT25 .
+
+
+sip-sdmx-code:age-Y_LT3 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT3" ;
+    skos:prefLabel "Less than 3 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 3 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT3 .
+
+
+sip-sdmx-code:age-Y_LT4 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT4" ;
+    skos:prefLabel "Less than 4 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 4 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT4 .
+
+
+sip-sdmx-code:age-Y_LT6 a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "Y_LT6" ;
+    skos:prefLabel "Less than 6 years"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Less than 6 years"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-Y_LT6 .
+
+
+sip-sdmx-code:age-_T a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "_T" ;
+    skos:prefLabel "All age ranges or no breakdown by age"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """All age ranges or no breakdown by age"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-_T .
+
+
+sip-sdmx-code:age-_U a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "_U" ;
+    skos:prefLabel "Unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Unknown"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-_U .
+
+
+sip-sdmx-code:age-_X a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not available"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Not available"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Unspecified"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-_X .
+
+
+sip-sdmx-code:age-_Z a skos:Concept, sip-sdmx-code:Age;
+    skos:topConceptOf sip-sdmx-code:age ;
+    skos:inScheme sip-sdmx-code:age ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:age skos:hasTopConcept sip-sdmx-code:age-_Z .
+

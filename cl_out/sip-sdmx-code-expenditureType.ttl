@@ -1,0 +1,304 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_EXPENDITURETYPE Scheme Definition
+#####################################################
+
+sip-sdmx-code:expenditureType a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Expenditure type - codelist scheme"@en ;
+    rdfs:label "Expenditure type - codelist scheme"@en ;
+    skos:notation "CL_EXPENDITURETYPE" ;
+    skos:definition "A reference expenditureType codelist based on UIS:CL_EXPENDITURE_TYPE(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EXPENDITURE_TYPE/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:ExpenditureType .
+
+sip-sdmx-code:ExpenditureType a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Expenditure type - codelist class"@en ;
+    rdfs:label "Expenditure type - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType .
+
+
+########################################
+# CL_EXPENDITURETYPE Codes
+########################################
+    
+sip-sdmx-code:expenditureType-ADJ a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "ADJ" ;
+    skos:prefLabel "Adjustments for changes in fund balances"@en ;
+    rdfs:label "Adjustments for changes in fund balances"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-ADJ .
+
+
+sip-sdmx-code:expenditureType-ASERV a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "ASERV" ;
+    skos:prefLabel "Expenditure for ancillary services"@en ;
+    rdfs:label "Expenditure for ancillary services"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-ASERV .
+
+
+sip-sdmx-code:expenditureType-CAP a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CAP" ;
+    skos:prefLabel "Capital expenditure"@en ;
+    rdfs:label "Capital expenditure"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CAP .
+
+
+sip-sdmx-code:expenditureType-CUR a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR" ;
+    skos:prefLabel "Current expenditure"@en ;
+    rdfs:label "Current expenditure"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR .
+
+
+sip-sdmx-code:expenditureType-CUR_ADM a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_ADM" ;
+    skos:prefLabel "Current expenditure on administration and other activities"@en ;
+    rdfs:label "Current expenditure on administration and other activities"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_ADM .
+
+
+sip-sdmx-code:expenditureType-CUR_COMP a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_COMP" ;
+    skos:prefLabel "Current expenditure on staff compensation (teaching and non-teaching staff)"@en ;
+    rdfs:label "Current expenditure on staff compensation (teaching and non-teaching staff)"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_COMP .
+
+
+sip-sdmx-code:expenditureType-CUR_COMPO a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_COMPO" ;
+    skos:prefLabel "Current expenditure for compensation of non-teaching staff"@en ;
+    rdfs:label "Current expenditure for compensation of non-teaching staff"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_COMPO .
+
+
+sip-sdmx-code:expenditureType-CUR_COMPT a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_COMPT" ;
+    skos:prefLabel "Current expenditure for compensation of teaching staff"@en ;
+    rdfs:label "Current expenditure for compensation of teaching staff"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_COMPT .
+
+
+sip-sdmx-code:expenditureType-CUR_LC a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_LC" ;
+    skos:prefLabel "Current expenditure for salaries"@en ;
+    rdfs:label "Current expenditure for salaries"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_LC .
+
+
+sip-sdmx-code:expenditureType-CUR_NLC a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_NLC" ;
+    skos:prefLabel "Current expenditure for other non-salary compensation"@en ;
+    rdfs:label "Current expenditure for other non-salary compensation"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_NLC .
+
+
+sip-sdmx-code:expenditureType-CUR_O a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_O" ;
+    skos:prefLabel "Current expenditure other than for staff compensation"@en ;
+    rdfs:label "Current expenditure other than for staff compensation"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_O .
+
+
+sip-sdmx-code:expenditureType-CUR_RET a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_RET" ;
+    skos:prefLabel "Current expenditure for retirement pensions"@en ;
+    rdfs:label "Current expenditure for retirement pensions"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_RET .
+
+
+sip-sdmx-code:expenditureType-CUR_TM a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "CUR_TM" ;
+    skos:prefLabel "Current expenditure on school books and teaching material"@en ;
+    rdfs:label "Current expenditure on school books and teaching material"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-CUR_TM .
+
+
+sip-sdmx-code:expenditureType-DIR_EXP a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "DIR_EXP" ;
+    skos:prefLabel "Direct expenditure"@en ;
+    rdfs:label "Direct expenditure"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-DIR_EXP .
+
+
+sip-sdmx-code:expenditureType-ED_ACT a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "ED_ACT" ;
+    skos:prefLabel "Payments for specific educational activities"@en ;
+    rdfs:label "Payments for specific educational activities"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-ED_ACT .
+
+
+sip-sdmx-code:expenditureType-GD_DIR a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "GD_DIR" ;
+    skos:prefLabel "Payments on goods requested directly or indirectly by educational institutions."@en ;
+    rdfs:label "Payments on goods requested directly or indirectly by educational institutions."@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-GD_DIR .
+
+
+sip-sdmx-code:expenditureType-GD_IND a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "GD_IND" ;
+    skos:prefLabel "Payments on goods not directly needed for participation"@en ;
+    rdfs:label "Payments on goods not directly needed for participation"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-GD_IND .
+
+
+sip-sdmx-code:expenditureType-GD_SERV a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "GD_SERV" ;
+    skos:prefLabel "Total payments for educational goods and services other than to educational institutions"@en ;
+    rdfs:label "Total payments for educational goods and services other than to educational institutions"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-GD_SERV .
+
+
+sip-sdmx-code:expenditureType-GRNT a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "GRNT" ;
+    skos:prefLabel "Scholarships and other grants to students/households"@en ;
+    rdfs:label "Scholarships and other grants to students/households"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-GRNT .
+
+
+sip-sdmx-code:expenditureType-GRNT_TF a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "GRNT_TF" ;
+    skos:prefLabel "Public grants attributable for tuition fees to educational institutions"@en ;
+    rdfs:label "Public grants attributable for tuition fees to educational institutions"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-GRNT_TF .
+
+
+sip-sdmx-code:expenditureType-RD a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "RD" ;
+    skos:prefLabel "Expenditure for R&D activities in tertiary educational institutions"@en ;
+    rdfs:label "Expenditure for R&D activities in tertiary educational institutions"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-RD .
+
+
+sip-sdmx-code:expenditureType-STU_LOAN a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "STU_LOAN" ;
+    skos:prefLabel "Student loans"@en ;
+    rdfs:label "Student loans"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-STU_LOAN .
+
+
+sip-sdmx-code:expenditureType-STU_LOAN_TF a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "STU_LOAN_TF" ;
+    skos:prefLabel "Student loans attributable for tuition fees to educational institutions"@en ;
+    rdfs:label "Student loans attributable for tuition fees to educational institutions"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-STU_LOAN_TF .
+
+
+sip-sdmx-code:expenditureType-TRF a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "TRF" ;
+    skos:prefLabel "Transfers"@en ;
+    rdfs:label "Transfers"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-TRF .
+
+
+sip-sdmx-code:expenditureType-TUT a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "TUT" ;
+    skos:prefLabel "Payments for private tutoring"@en ;
+    rdfs:label "Payments for private tutoring"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-TUT .
+
+
+sip-sdmx-code:expenditureType-_T a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-_T .
+
+
+sip-sdmx-code:expenditureType-_Z a skos:Concept, sip-sdmx-code:ExpenditureType;
+    skos:topConceptOf sip-sdmx-code:expenditureType ;
+    skos:inScheme sip-sdmx-code:expenditureType ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:expenditureType skos:hasTopConcept sip-sdmx-code:expenditureType-_Z .
+

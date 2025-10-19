@@ -1,0 +1,1774 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_STOCKTRANS Scheme Definition
+#####################################################
+
+sip-sdmx-code:stockTrans a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Stocks, Transactions, Other Flows - codelist scheme"@en ;
+    rdfs:label "Stocks, Transactions, Other Flows - codelist scheme"@en ;
+    skos:notation "CL_STOCKTRANS" ;
+    skos:definition "A reference stockTrans codelist based on IMF:CL_GFSM_STO(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_GFSM_STO/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:StockTrans .
+
+sip-sdmx-code:StockTrans a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Stocks, Transactions, Other Flows - codelist class"@en ;
+    rdfs:label "Stocks, Transactions, Other Flows - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans .
+
+
+########################################
+# CL_STOCKTRANS Codes
+########################################
+    
+sip-sdmx-code:stockTrans-G1 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1" ;
+    skos:prefLabel "Revenue"@en ;
+    rdfs:label "Revenue"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1 .
+
+
+sip-sdmx-code:stockTrans-G11 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G11" ;
+    skos:prefLabel "Taxes"@en ;
+    rdfs:label "Taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G11 .
+
+
+sip-sdmx-code:stockTrans-G111 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G111" ;
+    skos:prefLabel "Taxes on income, profits, and capital gains"@en ;
+    rdfs:label "Taxes on income, profits, and capital gains"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G111 .
+
+
+sip-sdmx-code:stockTrans-G1111 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1111" ;
+    skos:prefLabel "Taxes on income, profits, and capital gains, payable by individuals"@en ;
+    rdfs:label "Taxes on income, profits, and capital gains, payable by individuals"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1111 .
+
+
+sip-sdmx-code:stockTrans-G1112 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1112" ;
+    skos:prefLabel "Taxes on income, profits, and capital gains, payable by corporations and other enterprises"@en ;
+    rdfs:label "Taxes on income, profits, and capital gains, payable by corporations and other enterprises"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1112 .
+
+
+sip-sdmx-code:stockTrans-G1113 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1113" ;
+    skos:prefLabel "Other taxes on income, profits, and capital gains"@en ;
+    rdfs:label "Other taxes on income, profits, and capital gains"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1113 .
+
+
+sip-sdmx-code:stockTrans-G112 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G112" ;
+    skos:prefLabel "Taxes on payroll and workforce"@en ;
+    rdfs:label "Taxes on payroll and workforce"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G112 .
+
+
+sip-sdmx-code:stockTrans-G113 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G113" ;
+    skos:prefLabel "Taxes on property"@en ;
+    rdfs:label "Taxes on property"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G113 .
+
+
+sip-sdmx-code:stockTrans-G1131 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1131" ;
+    skos:prefLabel "Recurrent taxes on immovable property"@en ;
+    rdfs:label "Recurrent taxes on immovable property"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1131 .
+
+
+sip-sdmx-code:stockTrans-G1132 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1132" ;
+    skos:prefLabel "Recurrent taxes on net wealth"@en ;
+    rdfs:label "Recurrent taxes on net wealth"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1132 .
+
+
+sip-sdmx-code:stockTrans-G1133 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1133" ;
+    skos:prefLabel "Estate, inheritance, and gift taxes"@en ;
+    rdfs:label "Estate, inheritance, and gift taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1133 .
+
+
+sip-sdmx-code:stockTrans-G1135 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1135" ;
+    skos:prefLabel "Capital levies"@en ;
+    rdfs:label "Capital levies"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1135 .
+
+
+sip-sdmx-code:stockTrans-G1136 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1136" ;
+    skos:prefLabel "Other recurrent taxes on property"@en ;
+    rdfs:label "Other recurrent taxes on property"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1136 .
+
+
+sip-sdmx-code:stockTrans-G114 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G114" ;
+    skos:prefLabel "Taxes on goods and services"@en ;
+    rdfs:label "Taxes on goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G114 .
+
+
+sip-sdmx-code:stockTrans-G1141 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1141" ;
+    skos:prefLabel "General taxes on goods and services"@en ;
+    rdfs:label "General taxes on goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1141 .
+
+
+sip-sdmx-code:stockTrans-G11411 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G11411" ;
+    skos:prefLabel "Value-added taxes"@en ;
+    rdfs:label "Value-added taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G11411 .
+
+
+sip-sdmx-code:stockTrans-G11412 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G11412" ;
+    skos:prefLabel "Sales taxes"@en ;
+    rdfs:label "Sales taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G11412 .
+
+
+sip-sdmx-code:stockTrans-G11413 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G11413" ;
+    skos:prefLabel "Turnover and other general taxes on goods and services"@en ;
+    rdfs:label "Turnover and other general taxes on goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G11413 .
+
+
+sip-sdmx-code:stockTrans-G11414 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G11414" ;
+    skos:prefLabel "Taxes on financial and capital transactions"@en ;
+    rdfs:label "Taxes on financial and capital transactions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G11414 .
+
+
+sip-sdmx-code:stockTrans-G1142 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1142" ;
+    skos:prefLabel "Excises"@en ;
+    rdfs:label "Excises"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1142 .
+
+
+sip-sdmx-code:stockTrans-G1143 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1143" ;
+    skos:prefLabel "Profits of fiscal monopolies"@en ;
+    rdfs:label "Profits of fiscal monopolies"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1143 .
+
+
+sip-sdmx-code:stockTrans-G1144 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1144" ;
+    skos:prefLabel "Taxes on specific services"@en ;
+    rdfs:label "Taxes on specific services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1144 .
+
+
+sip-sdmx-code:stockTrans-G1145 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1145" ;
+    skos:prefLabel "Taxes on use of goods and on permission to use goods and perform activities"@en ;
+    rdfs:label "Taxes on use of goods and on permission to use goods and perform activities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1145 .
+
+
+sip-sdmx-code:stockTrans-G11451 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G11451" ;
+    skos:prefLabel "Motor vehicles taxes"@en ;
+    rdfs:label "Motor vehicles taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G11451 .
+
+
+sip-sdmx-code:stockTrans-G11452 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G11452" ;
+    skos:prefLabel "Other taxes on use of goods and on permission to use goods or perform activities"@en ;
+    rdfs:label "Other taxes on use of goods and on permission to use goods or perform activities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G11452 .
+
+
+sip-sdmx-code:stockTrans-G114521 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G114521" ;
+    skos:prefLabel "Business and professional licenses"@en ;
+    rdfs:label "Business and professional licenses"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G114521 .
+
+
+sip-sdmx-code:stockTrans-G114522 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G114522" ;
+    skos:prefLabel "Pollution taxes"@en ;
+    rdfs:label "Pollution taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G114522 .
+
+
+sip-sdmx-code:stockTrans-G114523 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G114523" ;
+    skos:prefLabel "Radio and television licenses"@en ;
+    rdfs:label "Radio and television licenses"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G114523 .
+
+
+sip-sdmx-code:stockTrans-G114524 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G114524" ;
+    skos:prefLabel "Licenses and permits for households"@en ;
+    rdfs:label "Licenses and permits for households"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G114524 .
+
+
+sip-sdmx-code:stockTrans-G114525 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G114525" ;
+    skos:prefLabel "Other taxes on use of goods and on permission to use goods or perform activities n.e.c."@en ;
+    rdfs:label "Other taxes on use of goods and on permission to use goods or perform activities n.e.c."@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G114525 .
+
+
+sip-sdmx-code:stockTrans-G1146 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1146" ;
+    skos:prefLabel "Other taxes on goods and services"@en ;
+    rdfs:label "Other taxes on goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1146 .
+
+
+sip-sdmx-code:stockTrans-G115 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G115" ;
+    skos:prefLabel "Taxes on international trade and transactions"@en ;
+    rdfs:label "Taxes on international trade and transactions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G115 .
+
+
+sip-sdmx-code:stockTrans-G1151 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1151" ;
+    skos:prefLabel "Customs and other import duties"@en ;
+    rdfs:label "Customs and other import duties"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1151 .
+
+
+sip-sdmx-code:stockTrans-G1152 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1152" ;
+    skos:prefLabel "Taxes on exports"@en ;
+    rdfs:label "Taxes on exports"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1152 .
+
+
+sip-sdmx-code:stockTrans-G1153 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1153" ;
+    skos:prefLabel "Profits of export or import monopolies"@en ;
+    rdfs:label "Profits of export or import monopolies"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1153 .
+
+
+sip-sdmx-code:stockTrans-G1154 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1154" ;
+    skos:prefLabel "Exchange profits"@en ;
+    rdfs:label "Exchange profits"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1154 .
+
+
+sip-sdmx-code:stockTrans-G1155 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1155" ;
+    skos:prefLabel "Exchange taxes"@en ;
+    rdfs:label "Exchange taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1155 .
+
+
+sip-sdmx-code:stockTrans-G1156 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1156" ;
+    skos:prefLabel "Other taxes on international trade and transactions"@en ;
+    rdfs:label "Other taxes on international trade and transactions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1156 .
+
+
+sip-sdmx-code:stockTrans-G116 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G116" ;
+    skos:prefLabel "Other taxes"@en ;
+    rdfs:label "Other taxes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G116 .
+
+
+sip-sdmx-code:stockTrans-G1161 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1161" ;
+    skos:prefLabel "Other taxes, payable solely by business"@en ;
+    rdfs:label "Other taxes, payable solely by business"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1161 .
+
+
+sip-sdmx-code:stockTrans-G1162 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1162" ;
+    skos:prefLabel "Other taxes, payable by other than business or unidentifiable"@en ;
+    rdfs:label "Other taxes, payable by other than business or unidentifiable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1162 .
+
+
+sip-sdmx-code:stockTrans-G12 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G12" ;
+    skos:prefLabel "Social contributions"@en ;
+    rdfs:label "Social contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G12 .
+
+
+sip-sdmx-code:stockTrans-G121 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G121" ;
+    skos:prefLabel "Social security contributions"@en ;
+    rdfs:label "Social security contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G121 .
+
+
+sip-sdmx-code:stockTrans-G1211 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1211" ;
+    skos:prefLabel "Social security contributions, employee contributions"@en ;
+    rdfs:label "Social security contributions, employee contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1211 .
+
+
+sip-sdmx-code:stockTrans-G1212 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1212" ;
+    skos:prefLabel "Social security contributions, employer contributions"@en ;
+    rdfs:label "Social security contributions, employer contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1212 .
+
+
+sip-sdmx-code:stockTrans-G1213 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1213" ;
+    skos:prefLabel "Social security contributions, self-employed or nonemployed contributions"@en ;
+    rdfs:label "Social security contributions, self-employed or nonemployed contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1213 .
+
+
+sip-sdmx-code:stockTrans-G1214 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1214" ;
+    skos:prefLabel "Social security contributions, unallocable contributions"@en ;
+    rdfs:label "Social security contributions, unallocable contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1214 .
+
+
+sip-sdmx-code:stockTrans-G122 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G122" ;
+    skos:prefLabel "Other social contributions"@en ;
+    rdfs:label "Other social contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G122 .
+
+
+sip-sdmx-code:stockTrans-G1221 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1221" ;
+    skos:prefLabel "Other social contributions, employee contributions"@en ;
+    rdfs:label "Other social contributions, employee contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1221 .
+
+
+sip-sdmx-code:stockTrans-G1222 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1222" ;
+    skos:prefLabel "Other social contributions, employer contributions"@en ;
+    rdfs:label "Other social contributions, employer contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1222 .
+
+
+sip-sdmx-code:stockTrans-G1223 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1223" ;
+    skos:prefLabel "Other social contributions, imputed contributions"@en ;
+    rdfs:label "Other social contributions, imputed contributions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1223 .
+
+
+sip-sdmx-code:stockTrans-G13 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G13" ;
+    skos:prefLabel "Grants, receivable"@en ;
+    rdfs:label "Grants, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G13 .
+
+
+sip-sdmx-code:stockTrans-G13C a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G13C" ;
+    skos:prefLabel "Current grants, receivable"@en ;
+    rdfs:label "Current grants, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G13C .
+
+
+sip-sdmx-code:stockTrans-G13K a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G13K" ;
+    skos:prefLabel "Capital grants, receivable"@en ;
+    rdfs:label "Capital grants, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G13K .
+
+
+sip-sdmx-code:stockTrans-G14 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G14" ;
+    skos:prefLabel "Other revenue"@en ;
+    rdfs:label "Other revenue"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G14 .
+
+
+sip-sdmx-code:stockTrans-G141 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G141" ;
+    skos:prefLabel "Property income"@en ;
+    rdfs:label "Property income"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G141 .
+
+
+sip-sdmx-code:stockTrans-G1411 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1411" ;
+    skos:prefLabel "Interest (before FISIM allocation), receivable"@en ;
+    rdfs:label "Interest (before FISIM allocation), receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1411 .
+
+
+sip-sdmx-code:stockTrans-G1412 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1412" ;
+    skos:prefLabel "Dividends, receivable"@en ;
+    rdfs:label "Dividends, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1412 .
+
+
+sip-sdmx-code:stockTrans-G1413 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1413" ;
+    skos:prefLabel "Withdrawals from income of quasi-corporations"@en ;
+    rdfs:label "Withdrawals from income of quasi-corporations"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1413 .
+
+
+sip-sdmx-code:stockTrans-G1414 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1414" ;
+    skos:prefLabel "Property income from investment income disbursements"@en ;
+    rdfs:label "Property income from investment income disbursements"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1414 .
+
+
+sip-sdmx-code:stockTrans-G1415 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1415" ;
+    skos:prefLabel "Rent, receivable"@en ;
+    rdfs:label "Rent, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1415 .
+
+
+sip-sdmx-code:stockTrans-G1416 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1416" ;
+    skos:prefLabel "Reinvested earnings on foreign direct investment, receivable"@en ;
+    rdfs:label "Reinvested earnings on foreign direct investment, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1416 .
+
+
+sip-sdmx-code:stockTrans-G142 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G142" ;
+    skos:prefLabel "Sales of goods and services"@en ;
+    rdfs:label "Sales of goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G142 .
+
+
+sip-sdmx-code:stockTrans-G1421 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1421" ;
+    skos:prefLabel "Sales by market establishments"@en ;
+    rdfs:label "Sales by market establishments"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1421 .
+
+
+sip-sdmx-code:stockTrans-G1422 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1422" ;
+    skos:prefLabel "Administrative fees"@en ;
+    rdfs:label "Administrative fees"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1422 .
+
+
+sip-sdmx-code:stockTrans-G1423 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1423" ;
+    skos:prefLabel "Incidental sales by nonmarket establishments"@en ;
+    rdfs:label "Incidental sales by nonmarket establishments"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1423 .
+
+
+sip-sdmx-code:stockTrans-G1424 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1424" ;
+    skos:prefLabel "Imputed sales of goods and services"@en ;
+    rdfs:label "Imputed sales of goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1424 .
+
+
+sip-sdmx-code:stockTrans-G143 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G143" ;
+    skos:prefLabel "Fines, penalties, and forfeits"@en ;
+    rdfs:label "Fines, penalties, and forfeits"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G143 .
+
+
+sip-sdmx-code:stockTrans-G144 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G144" ;
+    skos:prefLabel "Transfers, receivable not elsewhere classified"@en ;
+    rdfs:label "Transfers, receivable not elsewhere classified"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G144 .
+
+
+sip-sdmx-code:stockTrans-G1441 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1441" ;
+    skos:prefLabel "Current transfers not elsewhere classified"@en ;
+    rdfs:label "Current transfers not elsewhere classified"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1441 .
+
+
+sip-sdmx-code:stockTrans-G14411 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G14411" ;
+    skos:prefLabel "Subsidies, receivable"@en ;
+    rdfs:label "Subsidies, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G14411 .
+
+
+sip-sdmx-code:stockTrans-G14412 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G14412" ;
+    skos:prefLabel "Other current transfers"@en ;
+    rdfs:label "Other current transfers"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G14412 .
+
+
+sip-sdmx-code:stockTrans-G1442 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1442" ;
+    skos:prefLabel "Capital transfers not elsewhere classified"@en ;
+    rdfs:label "Capital transfers not elsewhere classified"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1442 .
+
+
+sip-sdmx-code:stockTrans-G145 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G145" ;
+    skos:prefLabel "Premiums, fees, and claims related to nonlife insurance and standardized guarantee schemes, receivable"@en ;
+    rdfs:label "Premiums, fees, and claims related to nonlife insurance and standardized guarantee schemes, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G145 .
+
+
+sip-sdmx-code:stockTrans-G1451 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1451" ;
+    skos:prefLabel "Premiums, fees, and claims, receivable"@en ;
+    rdfs:label "Premiums, fees, and claims, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1451 .
+
+
+sip-sdmx-code:stockTrans-G14511 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G14511" ;
+    skos:prefLabel "Premiums, receivable"@en ;
+    rdfs:label "Premiums, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G14511 .
+
+
+sip-sdmx-code:stockTrans-G14512 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G14512" ;
+    skos:prefLabel "Fees for standardized guarantee schemes, receivable"@en ;
+    rdfs:label "Fees for standardized guarantee schemes, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G14512 .
+
+
+sip-sdmx-code:stockTrans-G14513 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G14513" ;
+    skos:prefLabel "Current claims, receivable"@en ;
+    rdfs:label "Current claims, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G14513 .
+
+
+sip-sdmx-code:stockTrans-G1452 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1452" ;
+    skos:prefLabel "Capital claims, receivable"@en ;
+    rdfs:label "Capital claims, receivable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1452 .
+
+
+sip-sdmx-code:stockTrans-G1M13A a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1M13A" ;
+    skos:prefLabel "Grants, receivable in cash"@en ;
+    rdfs:label "Grants, receivable in cash"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1M13A .
+
+
+sip-sdmx-code:stockTrans-G1M13B a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G1M13B" ;
+    skos:prefLabel "Grants, receivable in kind"@en ;
+    rdfs:label "Grants, receivable in kind"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G1M13B .
+
+
+sip-sdmx-code:stockTrans-G2 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2" ;
+    skos:prefLabel "Expense"@en ;
+    rdfs:label "Expense"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2 .
+
+
+sip-sdmx-code:stockTrans-G21 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G21" ;
+    skos:prefLabel "Compensation of employees [GFS]"@en ;
+    rdfs:label "Compensation of employees [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G21 .
+
+
+sip-sdmx-code:stockTrans-G211 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G211" ;
+    skos:prefLabel "Wages and salaries [GFS]"@en ;
+    rdfs:label "Wages and salaries [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G211 .
+
+
+sip-sdmx-code:stockTrans-G2111 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2111" ;
+    skos:prefLabel "Wages and salaries in cash [GFS]"@en ;
+    rdfs:label "Wages and salaries in cash [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2111 .
+
+
+sip-sdmx-code:stockTrans-G2112 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2112" ;
+    skos:prefLabel "Wages and salaries in kind [GFS]"@en ;
+    rdfs:label "Wages and salaries in kind [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2112 .
+
+
+sip-sdmx-code:stockTrans-G212 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G212" ;
+    skos:prefLabel "Employers' social contributions [GFS]"@en ;
+    rdfs:label "Employers' social contributions [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G212 .
+
+
+sip-sdmx-code:stockTrans-G2121 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2121" ;
+    skos:prefLabel "Actual employers' social contributions [GFS]"@en ;
+    rdfs:label "Actual employers' social contributions [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2121 .
+
+
+sip-sdmx-code:stockTrans-G2122 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2122" ;
+    skos:prefLabel "Imputed employers' social contributions [GFS]"@en ;
+    rdfs:label "Imputed employers' social contributions [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2122 .
+
+
+sip-sdmx-code:stockTrans-G22 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G22" ;
+    skos:prefLabel "Use of goods and services"@en ;
+    rdfs:label "Use of goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G22 .
+
+
+sip-sdmx-code:stockTrans-G23 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G23" ;
+    skos:prefLabel "Consumption of fixed capital"@en ;
+    rdfs:label "Consumption of fixed capital"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G23 .
+
+
+sip-sdmx-code:stockTrans-G24 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G24" ;
+    skos:prefLabel "Interest (before FISIM allocation), payable"@en ;
+    rdfs:label "Interest (before FISIM allocation), payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G24 .
+
+
+sip-sdmx-code:stockTrans-G25 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G25" ;
+    skos:prefLabel "Subsidies, payable"@en ;
+    rdfs:label "Subsidies, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G25 .
+
+
+sip-sdmx-code:stockTrans-G26 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G26" ;
+    skos:prefLabel "Grants, payable"@en ;
+    rdfs:label "Grants, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G26 .
+
+
+sip-sdmx-code:stockTrans-G26C a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G26C" ;
+    skos:prefLabel "Current grants, payable"@en ;
+    rdfs:label "Current grants, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G26C .
+
+
+sip-sdmx-code:stockTrans-G26K a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G26K" ;
+    skos:prefLabel "Capital grants, payable"@en ;
+    rdfs:label "Capital grants, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G26K .
+
+
+sip-sdmx-code:stockTrans-G27 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G27" ;
+    skos:prefLabel "Social benefits [GFS]"@en ;
+    rdfs:label "Social benefits [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G27 .
+
+
+sip-sdmx-code:stockTrans-G271 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G271" ;
+    skos:prefLabel "Social security benefits [GFS]"@en ;
+    rdfs:label "Social security benefits [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G271 .
+
+
+sip-sdmx-code:stockTrans-G2711 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2711" ;
+    skos:prefLabel "Social security benefits in cash [GFS]"@en ;
+    rdfs:label "Social security benefits in cash [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2711 .
+
+
+sip-sdmx-code:stockTrans-G2712 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2712" ;
+    skos:prefLabel "Social security benefits in kind [GFS]"@en ;
+    rdfs:label "Social security benefits in kind [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2712 .
+
+
+sip-sdmx-code:stockTrans-G272 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G272" ;
+    skos:prefLabel "Social assistance benefits [GFS]"@en ;
+    rdfs:label "Social assistance benefits [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G272 .
+
+
+sip-sdmx-code:stockTrans-G2721 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2721" ;
+    skos:prefLabel "Social assistance benefits in cash [GFS]"@en ;
+    rdfs:label "Social assistance benefits in cash [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2721 .
+
+
+sip-sdmx-code:stockTrans-G2722 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2722" ;
+    skos:prefLabel "Social assistance benefits in kind [GFS]"@en ;
+    rdfs:label "Social assistance benefits in kind [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2722 .
+
+
+sip-sdmx-code:stockTrans-G273 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G273" ;
+    skos:prefLabel "Employer social benefits [GFS]"@en ;
+    rdfs:label "Employer social benefits [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G273 .
+
+
+sip-sdmx-code:stockTrans-G2731 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2731" ;
+    skos:prefLabel "Employer social benefits in cash [GFS]"@en ;
+    rdfs:label "Employer social benefits in cash [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2731 .
+
+
+sip-sdmx-code:stockTrans-G2732 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2732" ;
+    skos:prefLabel "Employer social benefits in kind [GFS]"@en ;
+    rdfs:label "Employer social benefits in kind [GFS]"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2732 .
+
+
+sip-sdmx-code:stockTrans-G28 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G28" ;
+    skos:prefLabel "Other expense"@en ;
+    rdfs:label "Other expense"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G28 .
+
+
+sip-sdmx-code:stockTrans-G281 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G281" ;
+    skos:prefLabel "Property expense other than interest"@en ;
+    rdfs:label "Property expense other than interest"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G281 .
+
+
+sip-sdmx-code:stockTrans-G2811 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2811" ;
+    skos:prefLabel "Dividends, payable"@en ;
+    rdfs:label "Dividends, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2811 .
+
+
+sip-sdmx-code:stockTrans-G2812 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2812" ;
+    skos:prefLabel "Withdrawals from income of quasi-corporations, payable"@en ;
+    rdfs:label "Withdrawals from income of quasi-corporations, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2812 .
+
+
+sip-sdmx-code:stockTrans-G2813 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2813" ;
+    skos:prefLabel "Property expense for investment income disbursements"@en ;
+    rdfs:label "Property expense for investment income disbursements"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2813 .
+
+
+sip-sdmx-code:stockTrans-G2814 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2814" ;
+    skos:prefLabel "Rent, payable"@en ;
+    rdfs:label "Rent, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2814 .
+
+
+sip-sdmx-code:stockTrans-G2815 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2815" ;
+    skos:prefLabel "Reinvested earnings on foreign direct investment, payable"@en ;
+    rdfs:label "Reinvested earnings on foreign direct investment, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2815 .
+
+
+sip-sdmx-code:stockTrans-G282 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G282" ;
+    skos:prefLabel "Transfers, payable not elsewhere classified"@en ;
+    rdfs:label "Transfers, payable not elsewhere classified"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G282 .
+
+
+sip-sdmx-code:stockTrans-G2821 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2821" ;
+    skos:prefLabel "Current transfers n.e.c. (Other current expense)"@en ;
+    rdfs:label "Current transfers n.e.c. (Other current expense)"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2821 .
+
+
+sip-sdmx-code:stockTrans-G2822 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2822" ;
+    skos:prefLabel "Capital transfers n.e.c. (Other capital expense)"@en ;
+    rdfs:label "Capital transfers n.e.c. (Other capital expense)"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2822 .
+
+
+sip-sdmx-code:stockTrans-G283 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G283" ;
+    skos:prefLabel "Premiums, fees and claims related to and standardized guarantee schemes, payable"@en ;
+    rdfs:label "Premiums, fees and claims related to and standardized guarantee schemes, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G283 .
+
+
+sip-sdmx-code:stockTrans-G2831 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2831" ;
+    skos:prefLabel "Premiums, fees and current claims, payable"@en ;
+    rdfs:label "Premiums, fees and current claims, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2831 .
+
+
+sip-sdmx-code:stockTrans-G28311 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G28311" ;
+    skos:prefLabel "Premiums, payable"@en ;
+    rdfs:label "Premiums, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G28311 .
+
+
+sip-sdmx-code:stockTrans-G28312 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G28312" ;
+    skos:prefLabel "Fees for standardized guarantee schemes, payable"@en ;
+    rdfs:label "Fees for standardized guarantee schemes, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G28312 .
+
+
+sip-sdmx-code:stockTrans-G28313 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G28313" ;
+    skos:prefLabel "Current claims, payable"@en ;
+    rdfs:label "Current claims, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G28313 .
+
+
+sip-sdmx-code:stockTrans-G2832 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2832" ;
+    skos:prefLabel "Capital clains, payable"@en ;
+    rdfs:label "Capital clains, payable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2832 .
+
+
+sip-sdmx-code:stockTrans-G2G a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2G" ;
+    skos:prefLabel "Expense, excluding consumption of fixed capital"@en ;
+    rdfs:label "Expense, excluding consumption of fixed capital"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2G .
+
+
+sip-sdmx-code:stockTrans-G2M a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2M" ;
+    skos:prefLabel "Expenditure"@en ;
+    rdfs:label "Expenditure"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2M .
+
+
+sip-sdmx-code:stockTrans-G2M27A a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2M27A" ;
+    skos:prefLabel "Social benefits in cash"@en ;
+    rdfs:label "Social benefits in cash"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2M27A .
+
+
+sip-sdmx-code:stockTrans-G2M27B a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G2M27B" ;
+    skos:prefLabel "Social benefits in kind"@en ;
+    rdfs:label "Social benefits in kind"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G2M27B .
+
+
+sip-sdmx-code:stockTrans-G3 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G3" ;
+    skos:prefLabel "Net transactions in assets and liabilities"@en ;
+    rdfs:label "Net transactions in assets and liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G3 .
+
+
+sip-sdmx-code:stockTrans-G31 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G31" ;
+    skos:prefLabel "Investment in nonfinancial assets"@en ;
+    rdfs:label "Investment in nonfinancial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G31 .
+
+
+sip-sdmx-code:stockTrans-G31A a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G31A" ;
+    skos:prefLabel "Acquisitions of nonfinancial assets"@en ;
+    rdfs:label "Acquisitions of nonfinancial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G31A .
+
+
+sip-sdmx-code:stockTrans-G31B a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G31B" ;
+    skos:prefLabel "Disposals of nonfinancial assets"@en ;
+    rdfs:label "Disposals of nonfinancial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G31B .
+
+
+sip-sdmx-code:stockTrans-G31CFC a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G31CFC" ;
+    skos:prefLabel "Consumption of fixed capital (-)"@en ;
+    rdfs:label "Consumption of fixed capital (-)"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G31CFC .
+
+
+sip-sdmx-code:stockTrans-G32 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G32" ;
+    skos:prefLabel "Net acquisition of financial assets"@en ;
+    rdfs:label "Net acquisition of financial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G32 .
+
+
+sip-sdmx-code:stockTrans-G33 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G33" ;
+    skos:prefLabel "Net incurrence of liabilities"@en ;
+    rdfs:label "Net incurrence of liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G33 .
+
+
+sip-sdmx-code:stockTrans-G33N a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G33N" ;
+    skos:prefLabel "Change in net debt due to transactions"@en ;
+    rdfs:label "Change in net debt due to transactions"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G33N .
+
+
+sip-sdmx-code:stockTrans-G3M1 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G3M1" ;
+    skos:prefLabel "Own-account capital formation"@en ;
+    rdfs:label "Own-account capital formation"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G3M1 .
+
+
+sip-sdmx-code:stockTrans-G3M11 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G3M11" ;
+    skos:prefLabel "Own-account capital formation - compensation of employees"@en ;
+    rdfs:label "Own-account capital formation - compensation of employees"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G3M11 .
+
+
+sip-sdmx-code:stockTrans-G3M12 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G3M12" ;
+    skos:prefLabel "Own-account capital formation - use of goods and services"@en ;
+    rdfs:label "Own-account capital formation - use of goods and services"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G3M12 .
+
+
+sip-sdmx-code:stockTrans-G3M13 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G3M13" ;
+    skos:prefLabel "Own-account capital formation - consumption of fixed capital"@en ;
+    rdfs:label "Own-account capital formation - consumption of fixed capital"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G3M13 .
+
+
+sip-sdmx-code:stockTrans-G3M14 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G3M14" ;
+    skos:prefLabel "Own-account capital formation - other taxes on producation minus other subsidies on production"@en ;
+    rdfs:label "Own-account capital formation - other taxes on producation minus other subsidies on production"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G3M14 .
+
+
+sip-sdmx-code:stockTrans-G3M2 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G3M2" ;
+    skos:prefLabel "Net transactions in financial assets and liabilities"@en ;
+    rdfs:label "Net transactions in financial assets and liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G3M2 .
+
+
+sip-sdmx-code:stockTrans-G4 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G4" ;
+    skos:prefLabel "Change in net worth due to holding gains and losses"@en ;
+    rdfs:label "Change in net worth due to holding gains and losses"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G4 .
+
+
+sip-sdmx-code:stockTrans-G41 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G41" ;
+    skos:prefLabel "Holding gains and losses in nonfinancial assets"@en ;
+    rdfs:label "Holding gains and losses in nonfinancial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G41 .
+
+
+sip-sdmx-code:stockTrans-G42 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G42" ;
+    skos:prefLabel "Holding gains and losses in financial assets"@en ;
+    rdfs:label "Holding gains and losses in financial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G42 .
+
+
+sip-sdmx-code:stockTrans-G43 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G43" ;
+    skos:prefLabel "Holding gains and losses in liabilities"@en ;
+    rdfs:label "Holding gains and losses in liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G43 .
+
+
+sip-sdmx-code:stockTrans-G43N a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G43N" ;
+    skos:prefLabel "Change in net debt due to holding gains and losses"@en ;
+    rdfs:label "Change in net debt due to holding gains and losses"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G43N .
+
+
+sip-sdmx-code:stockTrans-G4M2 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G4M2" ;
+    skos:prefLabel "Change in net financial worth due to holding gains and losses"@en ;
+    rdfs:label "Change in net financial worth due to holding gains and losses"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G4M2 .
+
+
+sip-sdmx-code:stockTrans-G5 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G5" ;
+    skos:prefLabel "Change in net worth due to volume changes"@en ;
+    rdfs:label "Change in net worth due to volume changes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G5 .
+
+
+sip-sdmx-code:stockTrans-G51 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G51" ;
+    skos:prefLabel "Other volume changes in nonfinancial assets"@en ;
+    rdfs:label "Other volume changes in nonfinancial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G51 .
+
+
+sip-sdmx-code:stockTrans-G52 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G52" ;
+    skos:prefLabel "Other volume changes in financial assets"@en ;
+    rdfs:label "Other volume changes in financial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G52 .
+
+
+sip-sdmx-code:stockTrans-G53 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G53" ;
+    skos:prefLabel "Other volume changes in liabilities"@en ;
+    rdfs:label "Other volume changes in liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G53 .
+
+
+sip-sdmx-code:stockTrans-G53N a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G53N" ;
+    skos:prefLabel "Change in net debt due to volume changes"@en ;
+    rdfs:label "Change in net debt due to volume changes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G53N .
+
+
+sip-sdmx-code:stockTrans-G5M2 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G5M2" ;
+    skos:prefLabel "Change in net financial worth due to volume changes"@en ;
+    rdfs:label "Change in net financial worth due to volume changes"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G5M2 .
+
+
+sip-sdmx-code:stockTrans-G6 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G6" ;
+    skos:prefLabel "Closing net worth"@en ;
+    rdfs:label "Closing net worth"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G6 .
+
+
+sip-sdmx-code:stockTrans-G61 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G61" ;
+    skos:prefLabel "Closing stock position of nonfinancial assets"@en ;
+    rdfs:label "Closing stock position of nonfinancial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G61 .
+
+
+sip-sdmx-code:stockTrans-G62 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G62" ;
+    skos:prefLabel "Closing stock position of financial assets"@en ;
+    rdfs:label "Closing stock position of financial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G62 .
+
+
+sip-sdmx-code:stockTrans-G63 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G63" ;
+    skos:prefLabel "Closing stock position of liabilities"@en ;
+    rdfs:label "Closing stock position of liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G63 .
+
+
+sip-sdmx-code:stockTrans-G63CL a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G63CL" ;
+    skos:prefLabel "Closing stock position of contingent liabilities"@en ;
+    rdfs:label "Closing stock position of contingent liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G63CL .
+
+
+sip-sdmx-code:stockTrans-G63N a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G63N" ;
+    skos:prefLabel "Closing net debt"@en ;
+    rdfs:label "Closing net debt"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G63N .
+
+
+sip-sdmx-code:stockTrans-G63NC a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G63NC" ;
+    skos:prefLabel "Closing stock position of liabilities net of currency and deposits assets"@en ;
+    rdfs:label "Closing stock position of liabilities net of currency and deposits assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G63NC .
+
+
+sip-sdmx-code:stockTrans-G6M2 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G6M2" ;
+    skos:prefLabel "Closing net financial worth"@en ;
+    rdfs:label "Closing net financial worth"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G6M2 .
+
+
+sip-sdmx-code:stockTrans-G6M392 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G6M392" ;
+    skos:prefLabel "Implicit transfers resulting from loan liabilities at concessional interest rates"@en ;
+    rdfs:label "Implicit transfers resulting from loan liabilities at concessional interest rates"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G6M392 .
+
+
+sip-sdmx-code:stockTrans-G9 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G9" ;
+    skos:prefLabel "Change in net worth due to other economic flows"@en ;
+    rdfs:label "Change in net worth due to other economic flows"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G9 .
+
+
+sip-sdmx-code:stockTrans-G91 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G91" ;
+    skos:prefLabel "Other economic flows in nonfinancial assets"@en ;
+    rdfs:label "Other economic flows in nonfinancial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G91 .
+
+
+sip-sdmx-code:stockTrans-G92 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G92" ;
+    skos:prefLabel "Other economic flows in financial assets"@en ;
+    rdfs:label "Other economic flows in financial assets"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G92 .
+
+
+sip-sdmx-code:stockTrans-G93 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G93" ;
+    skos:prefLabel "Other economic flows in liabilities"@en ;
+    rdfs:label "Other economic flows in liabilities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G93 .
+
+
+sip-sdmx-code:stockTrans-G93N a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G93N" ;
+    skos:prefLabel "Change in net debt due to other economic flows"@en ;
+    rdfs:label "Change in net debt due to other economic flows"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G93N .
+
+
+sip-sdmx-code:stockTrans-G9M2 a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "G9M2" ;
+    skos:prefLabel "Change in net financial worth due to other economic flows"@en ;
+    rdfs:label "Change in net financial worth due to other economic flows"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-G9M2 .
+
+
+sip-sdmx-code:stockTrans-GGB a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "GGB" ;
+    skos:prefLabel "Government balance per national definition"@en ;
+    rdfs:label "Government balance per national definition"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-GGB .
+
+
+sip-sdmx-code:stockTrans-GGOB a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "GGOB" ;
+    skos:prefLabel "Gross operating balance"@en ;
+    rdfs:label "Gross operating balance"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-GGOB .
+
+
+sip-sdmx-code:stockTrans-GNFB a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "GNFB" ;
+    skos:prefLabel "Net cash inflow from financial activities"@en ;
+    rdfs:label "Net cash inflow from financial activities"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-GNFB .
+
+
+sip-sdmx-code:stockTrans-GNLB a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "GNLB" ;
+    skos:prefLabel "Net lending (+) / Net borrowing (-)"@en ;
+    rdfs:label "Net lending (+) / Net borrowing (-)"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-GNLB .
+
+
+sip-sdmx-code:stockTrans-GNOB a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "GNOB" ;
+    skos:prefLabel "Net operating balance"@en ;
+    rdfs:label "Net operating balance"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-GNOB .
+
+
+sip-sdmx-code:stockTrans-GPB a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "GPB" ;
+    skos:prefLabel "Primary net lending / borrowing"@en ;
+    rdfs:label "Primary net lending / borrowing"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-GPB .
+
+
+sip-sdmx-code:stockTrans-_Z a skos:Concept, sip-sdmx-code:StockTrans;
+    skos:topConceptOf sip-sdmx-code:stockTrans ;
+    skos:inScheme sip-sdmx-code:stockTrans ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:stockTrans skos:hasTopConcept sip-sdmx-code:stockTrans-_Z .
+

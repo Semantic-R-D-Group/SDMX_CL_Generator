@@ -1,0 +1,64 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_COMPMETHOD Scheme Definition
+#####################################################
+
+sip-sdmx-code:compMethod a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Compilation methodology code list - codelist scheme"@en ;
+    rdfs:label "Compilation methodology code list - codelist scheme"@en ;
+    skos:notation "CL_COMPMETHOD" ;
+    skos:definition "A reference compMethod codelist based on IMF:CL_COMP_METHOD(1.2)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_COMP_METHOD/1.2> ;
+    rdfs:seeAlso sip-sdmx-code:CompMethod .
+
+sip-sdmx-code:CompMethod a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Compilation methodology code list - codelist class"@en ;
+    rdfs:label "Compilation methodology code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:compMethod ;
+    skos:inScheme sip-sdmx-code:compMethod .
+
+
+########################################
+# CL_COMPMETHOD Codes
+########################################
+    
+sip-sdmx-code:compMethod-C a skos:Concept, sip-sdmx-code:CompMethod;
+    skos:topConceptOf sip-sdmx-code:compMethod ;
+    skos:inScheme sip-sdmx-code:compMethod ;
+    skos:notation "C" ;
+    skos:prefLabel "Compilation methodology applied for economic/currency union statistics"@en ;
+    rdfs:label "Compilation methodology applied for economic/currency union statistics"@en .
+
+sip-sdmx-code:compMethod skos:hasTopConcept sip-sdmx-code:compMethod-C .
+
+
+sip-sdmx-code:compMethod-L a skos:Concept, sip-sdmx-code:CompMethod;
+    skos:topConceptOf sip-sdmx-code:compMethod ;
+    skos:inScheme sip-sdmx-code:compMethod ;
+    skos:notation "L" ;
+    skos:prefLabel "Compilation methodology defined locally"@en ;
+    rdfs:label "Compilation methodology defined locally"@en .
+
+sip-sdmx-code:compMethod skos:hasTopConcept sip-sdmx-code:compMethod-L .
+
+
+sip-sdmx-code:compMethod-N a skos:Concept, sip-sdmx-code:CompMethod;
+    skos:topConceptOf sip-sdmx-code:compMethod ;
+    skos:inScheme sip-sdmx-code:compMethod ;
+    skos:notation "N" ;
+    skos:prefLabel "Compilation methodology based on international standards"@en ;
+    rdfs:label "Compilation methodology based on international standards"@en .
+
+sip-sdmx-code:compMethod skos:hasTopConcept sip-sdmx-code:compMethod-N .
+

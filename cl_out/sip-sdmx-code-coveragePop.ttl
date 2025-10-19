@@ -1,0 +1,174 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_COVERAGEPOP Scheme Definition
+#####################################################
+
+sip-sdmx-code:coveragePop a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Population coverage - codelist scheme"@en ;
+    rdfs:label "Population coverage - codelist scheme"@en ;
+    skos:notation "CL_COVERAGEPOP" ;
+    skos:definition "A reference coveragePop codelist based on ESTAT:CL_COVERAGE_POP(1.1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COVERAGE_POP/1.1.0> ;
+    rdfs:seeAlso sip-sdmx-code:CoveragePop .
+
+sip-sdmx-code:CoveragePop a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Population coverage - codelist class"@en ;
+    rdfs:label "Population coverage - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop .
+
+
+########################################
+# CL_COVERAGEPOP Codes
+########################################
+    
+sip-sdmx-code:coveragePop-AFR a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "AFR" ;
+    skos:prefLabel "Africans"@en ;
+    rdfs:label "Africans"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-AFR .
+
+
+sip-sdmx-code:coveragePop-EUR a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "EUR" ;
+    skos:prefLabel "Europeans"@en ;
+    rdfs:label "Europeans"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-EUR .
+
+
+sip-sdmx-code:coveragePop-EXPNH a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "EXPNH" ;
+    skos:prefLabel "Relatively high expenditure group"@en ;
+    rdfs:label "Relatively high expenditure group"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-EXPNH .
+
+
+sip-sdmx-code:coveragePop-EXPNL a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "EXPNL" ;
+    skos:prefLabel "Relatively low expenditure group"@en ;
+    rdfs:label "Relatively low expenditure group"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-EXPNL .
+
+
+sip-sdmx-code:coveragePop-EXPNM a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "EXPNM" ;
+    skos:prefLabel "Medium expenditure group"@en ;
+    rdfs:label "Medium expenditure group"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-EXPNM .
+
+
+sip-sdmx-code:coveragePop-INCH a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "INCH" ;
+    skos:prefLabel "High income group"@en ;
+    rdfs:label "High income group"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-INCH .
+
+
+sip-sdmx-code:coveragePop-INCL a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "INCL" ;
+    skos:prefLabel "Low income group"@en ;
+    rdfs:label "Low income group"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-INCL .
+
+
+sip-sdmx-code:coveragePop-INCM a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "INCM" ;
+    skos:prefLabel "Middle income group"@en ;
+    rdfs:label "Middle income group"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-INCM .
+
+
+sip-sdmx-code:coveragePop-NMAN a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "NMAN" ;
+    skos:prefLabel "Non-manual employees"@en ;
+    rdfs:label "Non-manual employees"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-NMAN .
+
+
+sip-sdmx-code:coveragePop-WAGE a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "WAGE" ;
+    skos:prefLabel "Wage earners"@en ;
+    rdfs:label "Wage earners"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-WAGE .
+
+
+sip-sdmx-code:coveragePop-WRKA a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "WRKA" ;
+    skos:prefLabel "Agricultural workers"@en ;
+    rdfs:label "Agricultural workers"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-WRKA .
+
+
+sip-sdmx-code:coveragePop-WRKG a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "WRKG" ;
+    skos:prefLabel "Government official"@en ;
+    rdfs:label "Government official"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-WRKG .
+
+
+sip-sdmx-code:coveragePop-WRKI a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "WRKI" ;
+    skos:prefLabel "Industrial workers"@en ;
+    rdfs:label "Industrial workers"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-WRKI .
+
+
+sip-sdmx-code:coveragePop-_T a skos:Concept, sip-sdmx-code:CoveragePop;
+    skos:topConceptOf sip-sdmx-code:coveragePop ;
+    skos:inScheme sip-sdmx-code:coveragePop ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total (national) or not applicable"@en ;
+    rdfs:label "Total (national) or not applicable"@en .
+
+sip-sdmx-code:coveragePop skos:hasTopConcept sip-sdmx-code:coveragePop-_T .
+

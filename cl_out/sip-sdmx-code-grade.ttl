@@ -1,0 +1,204 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_GRADE Scheme Definition
+#####################################################
+
+sip-sdmx-code:grade a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Grade - codelist scheme"@en ;
+    rdfs:label "Grade - codelist scheme"@en ;
+    skos:notation "CL_GRADE" ;
+    skos:definition "A reference grade codelist based on UIS:CL_GRADE(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_GRADE/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:Grade .
+
+sip-sdmx-code:Grade a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Grade - codelist class"@en ;
+    rdfs:label "Grade - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade .
+
+
+########################################
+# CL_GRADE Codes
+########################################
+    
+sip-sdmx-code:grade-G1 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G1" ;
+    skos:prefLabel "Grade 1"@en ;
+    rdfs:label "Grade 1"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G1 .
+
+
+sip-sdmx-code:grade-G10 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G10" ;
+    skos:prefLabel "Grade 10"@en ;
+    rdfs:label "Grade 10"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G10 .
+
+
+sip-sdmx-code:grade-G11 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G11" ;
+    skos:prefLabel "Grade 11"@en ;
+    rdfs:label "Grade 11"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G11 .
+
+
+sip-sdmx-code:grade-G12 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G12" ;
+    skos:prefLabel "Grade 12"@en ;
+    rdfs:label "Grade 12"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G12 .
+
+
+sip-sdmx-code:grade-G13 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G13" ;
+    skos:prefLabel "Grade 13"@en ;
+    rdfs:label "Grade 13"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G13 .
+
+
+sip-sdmx-code:grade-G14 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G14" ;
+    skos:prefLabel "Grade 14"@en ;
+    rdfs:label "Grade 14"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G14 .
+
+
+sip-sdmx-code:grade-G2 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G2" ;
+    skos:prefLabel "Grade 2"@en ;
+    rdfs:label "Grade 2"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G2 .
+
+
+sip-sdmx-code:grade-G3 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G3" ;
+    skos:prefLabel "Grade 3"@en ;
+    rdfs:label "Grade 3"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G3 .
+
+
+sip-sdmx-code:grade-G4 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G4" ;
+    skos:prefLabel "Grade 4"@en ;
+    rdfs:label "Grade 4"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G4 .
+
+
+sip-sdmx-code:grade-G5 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G5" ;
+    skos:prefLabel "Grade 5"@en ;
+    rdfs:label "Grade 5"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G5 .
+
+
+sip-sdmx-code:grade-G6 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G6" ;
+    skos:prefLabel "Grade 6"@en ;
+    rdfs:label "Grade 6"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G6 .
+
+
+sip-sdmx-code:grade-G7 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G7" ;
+    skos:prefLabel "Grade 7"@en ;
+    rdfs:label "Grade 7"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G7 .
+
+
+sip-sdmx-code:grade-G8 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G8" ;
+    skos:prefLabel "Grade 8"@en ;
+    rdfs:label "Grade 8"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G8 .
+
+
+sip-sdmx-code:grade-G9 a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "G9" ;
+    skos:prefLabel "Grade 9"@en ;
+    rdfs:label "Grade 9"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-G9 .
+
+
+sip-sdmx-code:grade-_T a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-_T .
+
+
+sip-sdmx-code:grade-_X a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not allocated/unspecified"@en ;
+    rdfs:label "Not allocated/unspecified"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-_X .
+
+
+sip-sdmx-code:grade-_Z a skos:Concept, sip-sdmx-code:Grade;
+    skos:topConceptOf sip-sdmx-code:grade ;
+    skos:inScheme sip-sdmx-code:grade ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:grade skos:hasTopConcept sip-sdmx-code:grade-_Z .
+

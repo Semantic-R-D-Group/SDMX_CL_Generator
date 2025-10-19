@@ -1,0 +1,114 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_ADMINPRICEIND Scheme Definition
+#####################################################
+
+sip-sdmx-code:adminPriceInd a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Administered prices indicator - codelist scheme"@en ;
+    rdfs:label "Administered prices indicator - codelist scheme"@en ;
+    skos:notation "CL_ADMINPRICEIND" ;
+    skos:definition "A reference adminPriceInd codelist based on ESTAT:CL_AP_DEFINITION(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_AP_DEFINITION/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:AdminPriceInd .
+
+sip-sdmx-code:AdminPriceInd a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Administered prices indicator - codelist class"@en ;
+    rdfs:label "Administered prices indicator - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd .
+
+
+########################################
+# CL_ADMINPRICEIND Codes
+########################################
+    
+sip-sdmx-code:adminPriceInd-AD a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "AD" ;
+    skos:prefLabel "Administered"@en ;
+    rdfs:label "Administered"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-AD .
+
+
+sip-sdmx-code:adminPriceInd-ADF a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "ADF" ;
+    skos:prefLabel "Fully administered"@en ;
+    rdfs:label "Fully administered"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-ADF .
+
+
+sip-sdmx-code:adminPriceInd-ADM a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "ADM" ;
+    skos:prefLabel "Mainly administered"@en ;
+    rdfs:label "Mainly administered"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-ADM .
+
+
+sip-sdmx-code:adminPriceInd-B1 a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "B1" ;
+    skos:prefLabel "Prices that need the approval of a government supervisory authority in order to change"@en ;
+    rdfs:label "Prices that need the approval of a government supervisory authority in order to change"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-B1 .
+
+
+sip-sdmx-code:adminPriceInd-B2 a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "B2" ;
+    skos:prefLabel "Price caps/price floors (regulation on price level)"@en ;
+    rdfs:label "Price caps/price floors (regulation on price level)"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-B2 .
+
+
+sip-sdmx-code:adminPriceInd-B3 a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "B3" ;
+    skos:prefLabel "Items subject to restriction in the price changes (e.g. rules for changes / regulation on price dynamics)"@en ;
+    rdfs:label "Items subject to restriction in the price changes (e.g. rules for changes / regulation on price dynamics)"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-B3 .
+
+
+sip-sdmx-code:adminPriceInd-B4 a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "B4" ;
+    skos:prefLabel "Household fixed out-of-the-pocket expenditures for health, education and social services"@en ;
+    rdfs:label "Household fixed out-of-the-pocket expenditures for health, education and social services"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-B4 .
+
+
+sip-sdmx-code:adminPriceInd-NAD a skos:Concept, sip-sdmx-code:AdminPriceInd;
+    skos:topConceptOf sip-sdmx-code:adminPriceInd ;
+    skos:inScheme sip-sdmx-code:adminPriceInd ;
+    skos:notation "NAD" ;
+    skos:prefLabel "Not administered"@en ;
+    rdfs:label "Not administered"@en .
+
+sip-sdmx-code:adminPriceInd skos:hasTopConcept sip-sdmx-code:adminPriceInd-NAD .
+

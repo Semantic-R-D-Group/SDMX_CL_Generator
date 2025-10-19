@@ -1,0 +1,2551 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_EDUCATIONLEV Scheme Definition
+#####################################################
+
+sip-sdmx-code:educationLev a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "SDG Education Level code list - codelist scheme"@en ;
+    rdfs:label "SDG Education Level code list - codelist scheme"@en ;
+    skos:altLabel "Education level - codelist scheme"@en ;
+    skos:notation "CL_EDUCATIONLEV" ;
+    skos:definition "A reference educationLev codelist combining IAEG-SDGs:CL_EDUCATION_LEV(1.10), UIS:CL_EDUCATION_LEVEL(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_EDUCATION_LEV/1.10> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EDUCATION_LEVEL/1.0> ;
+    rdfs:seeAlso sip-sdmx-concept:EDUCATION_LEV ;
+    skos:related sip-sdmx-concept:EDUCATION_LEV ;
+    rdfs:seeAlso sip-sdmx-code:EducationLev .
+
+sip-sdmx-code:EducationLev a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "SDG Education Level code list - codelist class"@en ;
+    rdfs:label "SDG Education Level code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev .
+
+
+########################################
+# CL_EDUCATIONLEV Codes
+########################################
+    
+sip-sdmx-code:educationLev-AGGA_01_02 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGGA_01_02" ;
+    skos:prefLabel "No primary schooling"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """No primary schooling"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGGA_01_02 .
+
+
+sip-sdmx-code:educationLev-AGG_02T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_02T8" ;
+    skos:prefLabel "Pre-primary to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Pre-primary to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_02T8 .
+
+
+sip-sdmx-code:educationLev-AGG_0_1 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_0_1" ;
+    skos:prefLabel "Primary education or less"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Primary education or less"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_0_1 .
+
+
+sip-sdmx-code:educationLev-AGG_1T3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_1T3" ;
+    skos:prefLabel "Primary and secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Primary and secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_1T3 .
+
+
+sip-sdmx-code:educationLev-AGG_1_2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_1_2" ;
+    skos:prefLabel "Primary and lower secondary education (basic education)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Primary and lower secondary education (basic education)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_1_2 .
+
+
+sip-sdmx-code:educationLev-AGG_2_3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_2_3" ;
+    skos:prefLabel "Secondary education (lower and upper secondary education)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Secondary education (lower and upper secondary education)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_2_3 .
+
+
+sip-sdmx-code:educationLev-AGG_3_4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_3_4" ;
+    skos:prefLabel "Secondary and post-secondary non-tertiary education (intermediate)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Secondary and post-secondary non-tertiary education (intermediate)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_3_4 .
+
+
+sip-sdmx-code:educationLev-AGG_5T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_5T8" ;
+    skos:prefLabel "Tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_5T8 .
+
+
+sip-sdmx-code:educationLev-AGG_GE2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "AGG_GE2" ;
+    skos:prefLabel "Secondary education or above"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Secondary education or above"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-AGG_GE2 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_0 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_0" ;
+    skos:prefLabel "Less than primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Less than primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_0 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_01 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_01" ;
+    skos:prefLabel "Never attended an education programme / No schooling"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Never attended an education programme / No schooling"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_01 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_010 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_010" ;
+    skos:prefLabel "Never attended an education programme / No schooling"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Never attended an education programme / No schooling"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_010 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_01_02 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_01_02" ;
+    skos:prefLabel "No primary schooling"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """No primary schooling"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_01_02 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_02 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_02" ;
+    skos:prefLabel "Some early childhood education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Some early childhood education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_02 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_020 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_020" ;
+    skos:prefLabel "Some early childhood education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Some early childhood education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_020 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_03 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_03" ;
+    skos:prefLabel "Some primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Some primary education"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Some primary education (without level completion)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_03 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_030 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_030" ;
+    skos:prefLabel "Some primary education (without level completion)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Some primary education (without level completion)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_030 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_0_G23 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_0_G23" ;
+    skos:prefLabel "Some primary education, grades 2 or 3"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Some primary education, grades 2 or 3"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_0_G23 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_1 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_1" ;
+    skos:prefLabel "Primary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Primary education, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_1 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_10 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_10" ;
+    skos:prefLabel "Primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_10 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_100 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_100" ;
+    skos:prefLabel "Primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_100 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_2" ;
+    skos:prefLabel "Lower secondary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Lower secondary education, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_2 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_24 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_24" ;
+    skos:prefLabel "Lower secondary general education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_24 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_242 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_242" ;
+    skos:prefLabel "Lower secondary general education, partial level completion and without direct access to upper secondary"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education, partial level completion and without direct access to upper secondary"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_242 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_243 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_243" ;
+    skos:prefLabel "Lower secondary general education, level completion without direct access to upper secondary"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education, level completion without direct access to upper secondary"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_243 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_244 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_244" ;
+    skos:prefLabel "Lower secondary general education, level completion with direct access to upper secondary"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education, level completion with direct access to upper secondary"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_244 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_25 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_25" ;
+    skos:prefLabel "Lower secondary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_25 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_252 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_252" ;
+    skos:prefLabel "Lower secondary vocational education, partial level completion and without direct access to upper secondary"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education, partial level completion and without direct access to upper secondary"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_252 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_253 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_253" ;
+    skos:prefLabel "Lower secondary vocational education, level completion without direct access to upper secondary"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education, level completion without direct access to upper secondary"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_253 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_254 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_254" ;
+    skos:prefLabel "Lower secondary vocational education, level completion with direct access to upper secondary"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education, level completion with direct access to upper secondary"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_254 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_3" ;
+    skos:prefLabel "Upper secondary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Upper secondary education, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_3 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_34 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_34" ;
+    skos:prefLabel "Upper secondary general education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_34 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_342 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_342" ;
+    skos:prefLabel "Upper secondary general education, partial level completion and without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, partial level completion and without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_342 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_343 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_343" ;
+    skos:prefLabel "Upper secondary general education, level completion without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, level completion without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_343 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_344 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_344" ;
+    skos:prefLabel "Upper secondary general education, level completion with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, level completion with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_344 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_35 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_35" ;
+    skos:prefLabel "Upper secondary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_35 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_352 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_352" ;
+    skos:prefLabel "Upper secondary vocational education, partial level completion and without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, partial level completion and without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_352 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_353 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_353" ;
+    skos:prefLabel "Upper secondary vocational education, level completion without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, level completion without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_353 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_354 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_354" ;
+    skos:prefLabel "Upper secondary vocational education, level completion with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, level completion with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_354 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_4" ;
+    skos:prefLabel "Post-secondary non-tertiary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Post-secondary non-tertiary education, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_4 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_44 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_44" ;
+    skos:prefLabel "Post-secondary non-tertiary general education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_44 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_443 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_443" ;
+    skos:prefLabel "Post-secondary non-tertiary general education, level completion without direct access tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education, level completion without direct access tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_443 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_444 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_444" ;
+    skos:prefLabel "Post-secondary non-tertiary general education, level completion with direct access tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education, level completion with direct access tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_444 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_45 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_45" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_45 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_453 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_453" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education, level completion without direct access tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education, level completion without direct access tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_453 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_454 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_454" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education, level completion with direct access tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education, level completion with direct access tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_454 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_5 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_5" ;
+    skos:prefLabel "Short-cycle tertiary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Short-cycle tertiary education, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_5 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_54 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_54" ;
+    skos:prefLabel "Short-cycle tertiary general education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary general education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_54 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_55 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_55" ;
+    skos:prefLabel "Short-cycle tertiary vocational education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary vocational education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_55 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_56 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_56" ;
+    skos:prefLabel "Short-cycle tertiary education, sufficient for level completion, orientation not specified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary education, sufficient for level completion, orientation not specified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_56 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_6 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_6" ;
+    skos:prefLabel "Bachelor’s or equivalent level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Bachelor’s or equivalent level, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_6 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_64 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_64" ;
+    skos:prefLabel "Bachelor's or equivalent academic level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent academic level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_64 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_65 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_65" ;
+    skos:prefLabel "Bachelor's or equivalent professional level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent professional level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_65 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_66 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_66" ;
+    skos:prefLabel "Bachelor's or equivalent level, sufficient for level completion, orientation not specified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent level, sufficient for level completion, orientation not specified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_66 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_7 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_7" ;
+    skos:prefLabel "Master’s or equivalent level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Master’s or equivalent level, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_7 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_74 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_74" ;
+    skos:prefLabel "Master's or equivalent academic level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master's or equivalent academic level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_74 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_75 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_75" ;
+    skos:prefLabel "Master's or equivalent professional level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master's or equivalent professional level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_75 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_76 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_76" ;
+    skos:prefLabel "Master's or equivalent level, sufficient for level completion, orientation not specified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master's or equivalent level, sufficient for level completion, orientation not specified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_76 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_8" ;
+    skos:prefLabel "Doctoral or equivalent level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Doctoral or equivalent level, sufficient for level completion"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_8 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_84 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_84" ;
+    skos:prefLabel "Doctoral or equivalent academic level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent academic level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_84 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_85 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_85" ;
+    skos:prefLabel "Doctoral or equivalent professional level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent professional level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_85 .
+
+
+sip-sdmx-code:educationLev-ISCED11A_86 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11A_86" ;
+    skos:prefLabel "Doctoral or equivalent level, sufficient for level completion, orientation not specified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent level, sufficient for level completion, orientation not specified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11A_86 .
+
+
+sip-sdmx-code:educationLev-ISCED11_0 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_0" ;
+    skos:prefLabel "Early childhood education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Early childhood education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_0 .
+
+
+sip-sdmx-code:educationLev-ISCED11_01 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_01" ;
+    skos:prefLabel "Early childhood educational development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Early childhood educational development"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_01 .
+
+
+sip-sdmx-code:educationLev-ISCED11_010 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_010" ;
+    skos:prefLabel "Early childhood educational development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Early childhood educational development"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_010 .
+
+
+sip-sdmx-code:educationLev-ISCED11_02 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_02" ;
+    skos:prefLabel "Pre-primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Pre-primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_02 .
+
+
+sip-sdmx-code:educationLev-ISCED11_020 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_020" ;
+    skos:prefLabel "Pre-primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Pre-primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_020 .
+
+
+sip-sdmx-code:educationLev-ISCED11_02T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_02T8" ;
+    skos:prefLabel "Pre-primary to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Pre-primary to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_02T8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_0T2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_0T2" ;
+    skos:prefLabel "Pre-primary, primary and lower secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Pre-primary, primary and lower secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_0T2 .
+
+
+sip-sdmx-code:educationLev-ISCED11_0T4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_0T4" ;
+    skos:prefLabel "Pre-primary, primary, secondary and post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Pre-primary, primary, secondary and post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_0T4 .
+
+
+sip-sdmx-code:educationLev-ISCED11_0_1 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_0_1" ;
+    skos:prefLabel "Early childhood and primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Early childhood and primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_0_1 .
+
+
+sip-sdmx-code:educationLev-ISCED11_1 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_1" ;
+    skos:prefLabel "Primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_1 .
+
+
+sip-sdmx-code:educationLev-ISCED11_10 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_10" ;
+    skos:prefLabel "Primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_10 .
+
+
+sip-sdmx-code:educationLev-ISCED11_100 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_100" ;
+    skos:prefLabel "Primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_100 .
+
+
+sip-sdmx-code:educationLev-ISCED11_1T3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_1T3" ;
+    skos:prefLabel "Primary and secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary and secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_1T3 .
+
+
+sip-sdmx-code:educationLev-ISCED11_1T4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_1T4" ;
+    skos:prefLabel "Primary to post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary to post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_1T4 .
+
+
+sip-sdmx-code:educationLev-ISCED11_1T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_1T8" ;
+    skos:prefLabel "Primary to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_1T8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_1_2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_1_2" ;
+    skos:prefLabel "Primary and lower secondary education (Basic education)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Primary and lower secondary education (Basic education)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_1_2 .
+
+
+sip-sdmx-code:educationLev-ISCED11_2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_2" ;
+    skos:prefLabel "Lower secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Lower secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_2 .
+
+
+sip-sdmx-code:educationLev-ISCED11_24 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_24" ;
+    skos:prefLabel "Lower secondary general education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_24 .
+
+
+sip-sdmx-code:educationLev-ISCED11_241 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_241" ;
+    skos:prefLabel "Lower secondary general education, insufficient for level completion or partial level completion, without direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education, insufficient for level completion or partial level completion, without direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_241 .
+
+
+sip-sdmx-code:educationLev-ISCED11_242 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_242" ;
+    skos:prefLabel "Lower secondary general education, sufficient for partial level completion, without direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education, sufficient for partial level completion, without direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_242 .
+
+
+sip-sdmx-code:educationLev-ISCED11_243 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_243" ;
+    skos:prefLabel "Lower secondary general education, sufficient for level completion, without direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education, sufficient for level completion, without direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_243 .
+
+
+sip-sdmx-code:educationLev-ISCED11_243_244_253_254 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_243_244_253_254" ;
+    skos:prefLabel "Lower secondary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_243_244_253_254 .
+
+
+sip-sdmx-code:educationLev-ISCED11_244 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_244" ;
+    skos:prefLabel "Lower secondary general education, sufficient for level completion, with direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary general education, sufficient for level completion, with direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_244 .
+
+
+sip-sdmx-code:educationLev-ISCED11_25 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_25" ;
+    skos:prefLabel "Lower secondary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_25 .
+
+
+sip-sdmx-code:educationLev-ISCED11_251 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_251" ;
+    skos:prefLabel "Lower secondary vocational education, insufficient for level completion or partial level completion, without direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education, insufficient for level completion or partial level completion, without direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_251 .
+
+
+sip-sdmx-code:educationLev-ISCED11_252 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_252" ;
+    skos:prefLabel "Lower secondary vocational education, sufficient for partial level completion, without direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education, sufficient for partial level completion, without direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_252 .
+
+
+sip-sdmx-code:educationLev-ISCED11_253 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_253" ;
+    skos:prefLabel "Lower secondary vocational education, sufficient for level completion, without direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education, sufficient for level completion, without direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_253 .
+
+
+sip-sdmx-code:educationLev-ISCED11_254 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_254" ;
+    skos:prefLabel "Lower secondary vocational education, sufficient for level completion, with direct access to upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary vocational education, sufficient for level completion, with direct access to upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_254 .
+
+
+sip-sdmx-code:educationLev-ISCED11_25_35_45 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_25_35_45" ;
+    skos:prefLabel "Vocational secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Vocational secondary education"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Non-tertiary vocational programmes"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_25_35_45 .
+
+
+sip-sdmx-code:educationLev-ISCED11_25_35_45_55 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_25_35_45_55" ;
+    skos:prefLabel "Vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_25_35_45_55 .
+
+
+sip-sdmx-code:educationLev-ISCED11_2T4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_2T4" ;
+    skos:prefLabel "Lower secondary, upper secondary and post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Lower secondary, upper secondary and post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_2T4 .
+
+
+sip-sdmx-code:educationLev-ISCED11_2T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_2T8" ;
+    skos:prefLabel "Total lower secondary to tertiary education levels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Total lower secondary to tertiary education levels"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_2T8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_2_3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_2_3" ;
+    skos:prefLabel "Secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_2_3 .
+
+
+sip-sdmx-code:educationLev-ISCED11_3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_3" ;
+    skos:prefLabel "Upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_3 .
+
+
+sip-sdmx-code:educationLev-ISCED11_34 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_34" ;
+    skos:prefLabel "Upper secondary general education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_34 .
+
+
+sip-sdmx-code:educationLev-ISCED11_341 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_341" ;
+    skos:prefLabel "Upper secondary general education, insufficient for level completion or partial level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, insufficient for level completion or partial level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_341 .
+
+
+sip-sdmx-code:educationLev-ISCED11_342 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_342" ;
+    skos:prefLabel "Upper secondary general education, sufficient for partial level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, sufficient for partial level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_342 .
+
+
+sip-sdmx-code:educationLev-ISCED11_342_352 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_342_352" ;
+    skos:prefLabel "Upper secondary education, partial level completion without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education, partial level completion without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_342_352 .
+
+
+sip-sdmx-code:educationLev-ISCED11_343 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_343" ;
+    skos:prefLabel "Upper secondary general education, sufficient for level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, sufficient for level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_343 .
+
+
+sip-sdmx-code:educationLev-ISCED11_343_344 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_343_344" ;
+    skos:prefLabel "Upper secondary general education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_343_344 .
+
+
+sip-sdmx-code:educationLev-ISCED11_343_344_353_354 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_343_344_353_354" ;
+    skos:prefLabel "Upper secondary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_343_344_353_354 .
+
+
+sip-sdmx-code:educationLev-ISCED11_343_353 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_343_353" ;
+    skos:prefLabel "Upper secondary education, level completion without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education, level completion without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_343_353 .
+
+
+sip-sdmx-code:educationLev-ISCED11_344 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_344" ;
+    skos:prefLabel "Upper secondary general education, sufficient for level completion, with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, sufficient for level completion, with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_344 .
+
+
+sip-sdmx-code:educationLev-ISCED11_344_354 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_344_354" ;
+    skos:prefLabel "Upper secondary education, level completion with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education, level completion with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_344_354 .
+
+
+sip-sdmx-code:educationLev-ISCED11_34X341 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_34X341" ;
+    skos:prefLabel "Upper secondary general education, full or partial level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary general education, full or partial level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_34X341 .
+
+
+sip-sdmx-code:educationLev-ISCED11_34_44 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_34_44" ;
+    skos:prefLabel "Upper secondary and post-secondary non-tertiary general programmes"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary and post-secondary non-tertiary general programmes"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_34_44 .
+
+
+sip-sdmx-code:educationLev-ISCED11_35 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_35" ;
+    skos:prefLabel "Upper secondary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_35 .
+
+
+sip-sdmx-code:educationLev-ISCED11_351 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_351" ;
+    skos:prefLabel "Upper secondary vocational education, insufficient for level completion or partial level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, insufficient for level completion or partial level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_351 .
+
+
+sip-sdmx-code:educationLev-ISCED11_352 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_352" ;
+    skos:prefLabel "Upper secondary vocational education, sufficient for partial level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, sufficient for partial level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_352 .
+
+
+sip-sdmx-code:educationLev-ISCED11_353 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_353" ;
+    skos:prefLabel "Upper secondary vocational education, sufficient for level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, sufficient for level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_353 .
+
+
+sip-sdmx-code:educationLev-ISCED11_353_354 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_353_354" ;
+    skos:prefLabel "Upper secondary vocational education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_353_354 .
+
+
+sip-sdmx-code:educationLev-ISCED11_354 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_354" ;
+    skos:prefLabel "Upper secondary vocational education, sufficient for level completion, with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, sufficient for level completion, with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_354 .
+
+
+sip-sdmx-code:educationLev-ISCED11_35SW a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_35SW" ;
+    skos:prefLabel "Upper secondary vocational education, school and work-based programmes"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, school and work-based programmes"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_35SW .
+
+
+sip-sdmx-code:educationLev-ISCED11_35X351 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_35X351" ;
+    skos:prefLabel "Upper secondary vocational education, full or partial level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary vocational education, full or partial level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_35X351 .
+
+
+sip-sdmx-code:educationLev-ISCED11_35_45 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_35_45" ;
+    skos:prefLabel "Upper secondary and post-secondary non-tertiary vocational programmes"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary and post-secondary non-tertiary vocational programmes"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_35_45 .
+
+
+sip-sdmx-code:educationLev-ISCED11_3T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_3T8" ;
+    skos:prefLabel "Total upper secondary to tertiary education levels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Total upper secondary to tertiary education levels"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_3T8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_3X341_351 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_3X341_351" ;
+    skos:prefLabel "Upper secondary education, full or partial level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education, full or partial level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_3X341_351 .
+
+
+sip-sdmx-code:educationLev-ISCED11_3_4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_3_4" ;
+    skos:prefLabel "Upper secondary and post-secondary non-tertiary all programmes"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Upper secondary and post-secondary non-tertiary all programmes"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_3_4 .
+
+
+sip-sdmx-code:educationLev-ISCED11_4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_4" ;
+    skos:prefLabel "Post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_4 .
+
+
+sip-sdmx-code:educationLev-ISCED11_44 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_44" ;
+    skos:prefLabel "Post-secondary non-tertiary general education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_44 .
+
+
+sip-sdmx-code:educationLev-ISCED11_441 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_441" ;
+    skos:prefLabel "Post-secondary non-tertiary general education, insufficient for level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education, insufficient for level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_441 .
+
+
+sip-sdmx-code:educationLev-ISCED11_443 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_443" ;
+    skos:prefLabel "Post-secondary non-tertiary general education, sufficient for level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education, sufficient for level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_443 .
+
+
+sip-sdmx-code:educationLev-ISCED11_443_453 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_443_453" ;
+    skos:prefLabel "Post-secondary non-tertiary education, level completion without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary education, level completion without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_443_453 .
+
+
+sip-sdmx-code:educationLev-ISCED11_444 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_444" ;
+    skos:prefLabel "Post-secondary non-tertiary general education, sufficient for level completion, with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education, sufficient for level completion, with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_444 .
+
+
+sip-sdmx-code:educationLev-ISCED11_444_454 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_444_454" ;
+    skos:prefLabel "Post-secondary non-tertiary education, level completion with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary education, level completion with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_444_454 .
+
+
+sip-sdmx-code:educationLev-ISCED11_44X441 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_44X441" ;
+    skos:prefLabel "Post-secondary non-tertiary general education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary general education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_44X441 .
+
+
+sip-sdmx-code:educationLev-ISCED11_45 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_45" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_45 .
+
+
+sip-sdmx-code:educationLev-ISCED11_451 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_451" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education, insufficient for level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education, insufficient for level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_451 .
+
+
+sip-sdmx-code:educationLev-ISCED11_453 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_453" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education, sufficient for level completion, without direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education, sufficient for level completion, without direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_453 .
+
+
+sip-sdmx-code:educationLev-ISCED11_454 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_454" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education, sufficient for level completion, with direct access to tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education, sufficient for level completion, with direct access to tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_454 .
+
+
+sip-sdmx-code:educationLev-ISCED11_45SW a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_45SW" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education, school and work-based programmes"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education, school and work-based programmes"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_45SW .
+
+
+sip-sdmx-code:educationLev-ISCED11_45X451 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_45X451" ;
+    skos:prefLabel "Post-secondary non-tertiary vocational education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary vocational education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_45X451 .
+
+
+sip-sdmx-code:educationLev-ISCED11_4X441_451 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_4X441_451" ;
+    skos:prefLabel "Post-secondary non-tertiary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_4X441_451 .
+
+
+sip-sdmx-code:educationLev-ISCED11_5 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_5" ;
+    skos:prefLabel "Short-cycle tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_5 .
+
+
+sip-sdmx-code:educationLev-ISCED11_54 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_54" ;
+    skos:prefLabel "Short-cycle tertiary general education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary general education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_54 .
+
+
+sip-sdmx-code:educationLev-ISCED11_541 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_541" ;
+    skos:prefLabel "Short-cycle tertiary general education, insufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary general education, insufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_541 .
+
+
+sip-sdmx-code:educationLev-ISCED11_544 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_544" ;
+    skos:prefLabel "Short-cycle tertiary general education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary general education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_544 .
+
+
+sip-sdmx-code:educationLev-ISCED11_544_554 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_544_554" ;
+    skos:prefLabel "Short-cycle tertiary education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_544_554 .
+
+
+sip-sdmx-code:educationLev-ISCED11_54T84 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_54T84" ;
+    skos:prefLabel "Tertiary general/academic education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Tertiary general/academic education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_54T84 .
+
+
+sip-sdmx-code:educationLev-ISCED11_55 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_55" ;
+    skos:prefLabel "Short-cycle tertiary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_55 .
+
+
+sip-sdmx-code:educationLev-ISCED11_551 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_551" ;
+    skos:prefLabel "Short-cycle tertiary vocational education, insufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary vocational education, insufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_551 .
+
+
+sip-sdmx-code:educationLev-ISCED11_554 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_554" ;
+    skos:prefLabel "Short-cycle tertiary vocational education, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary vocational education, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_554 .
+
+
+sip-sdmx-code:educationLev-ISCED11_55SW a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_55SW" ;
+    skos:prefLabel "Short-cycle tertiary vocational education, school and work-based programmes"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary vocational education, school and work-based programmes"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_55SW .
+
+
+sip-sdmx-code:educationLev-ISCED11_55T85 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_55T85" ;
+    skos:prefLabel "Tertiary vocational education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Tertiary vocational education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_55T85 .
+
+
+sip-sdmx-code:educationLev-ISCED11_5T7 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_5T7" ;
+    skos:prefLabel "Short-cycle tertiary, Bachelor's, Master's or equivalent level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary, Bachelor's, Master's or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_5T7 .
+
+
+sip-sdmx-code:educationLev-ISCED11_5T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_5T8" ;
+    skos:prefLabel "Tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_5T8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_5_6 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_5_6" ;
+    skos:prefLabel "Short-cycle tertiary education and Bachelor's or equivalent level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Short-cycle tertiary education and Bachelor's or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_5_6 .
+
+
+sip-sdmx-code:educationLev-ISCED11_6 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_6" ;
+    skos:prefLabel "Bachelor’s or equivalent level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_6 .
+
+
+sip-sdmx-code:educationLev-ISCED11_64 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_64" ;
+    skos:prefLabel "Bachelor’s or equivalent academic level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent academic level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_64 .
+
+
+sip-sdmx-code:educationLev-ISCED11_641 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_641" ;
+    skos:prefLabel "Bachelor’s or equivalent academic level, insufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent academic level, insufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_641 .
+
+
+sip-sdmx-code:educationLev-ISCED11_641_651_661 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_641_651_661" ;
+    skos:prefLabel "Bachelor’s or equivalent level, insufficient for  completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level, insufficient for  completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_641_651_661 .
+
+
+sip-sdmx-code:educationLev-ISCED11_645 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_645" ;
+    skos:prefLabel "Bachelor’s or equivalent academic level, first degree (3-4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent academic level, first degree (3-4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_645 .
+
+
+sip-sdmx-code:educationLev-ISCED11_645T647 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_645T647" ;
+    skos:prefLabel "Bachelor’s or equivalent academic level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent academic level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_645T647 .
+
+
+sip-sdmx-code:educationLev-ISCED11_645_646_655_656_665_666 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_645_646_655_656_665_666" ;
+    skos:prefLabel "Bachelor's or equivalent level, first degrees (more than 3 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent level, first degrees (more than 3 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_645_646_655_656_665_666 .
+
+
+sip-sdmx-code:educationLev-ISCED11_645_655_665 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_645_655_665" ;
+    skos:prefLabel "Bachelor's or equivalent level, first degree (3-4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent level, first degree (3-4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_645_655_665 .
+
+
+sip-sdmx-code:educationLev-ISCED11_645_655_665_646_656_666 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_645_655_665_646_656_666" ;
+    skos:prefLabel "Bachelor’s or equivalent level, sufficient for level completion and first degrees"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level, sufficient for level completion and first degrees"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_645_655_665_646_656_666 .
+
+
+sip-sdmx-code:educationLev-ISCED11_646 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_646" ;
+    skos:prefLabel "Bachelor’s or equivalent academic level, long first degree (more than 4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent academic level, long first degree (more than 4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_646 .
+
+
+sip-sdmx-code:educationLev-ISCED11_646_656_666 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_646_656_666" ;
+    skos:prefLabel "Bachelor's or equivalent level, first long degree (more than 4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent level, first long degree (more than 4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_646_656_666 .
+
+
+sip-sdmx-code:educationLev-ISCED11_647 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_647" ;
+    skos:prefLabel "Bachelor’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_647 .
+
+
+sip-sdmx-code:educationLev-ISCED11_647_657_667 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_647_657_667" ;
+    skos:prefLabel "Second or further degree following successful completion of a Bachelor's or equivalent programme"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Second or further degree following successful completion of a Bachelor's or equivalent programme"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_647_657_667 .
+
+
+sip-sdmx-code:educationLev-ISCED11_64X647 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_64X647" ;
+    skos:prefLabel "Bachelor’s or equivalent academic level,  excluding second or further degree (following a Bachelor's or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent academic level,  excluding second or further degree (following a Bachelor's or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_64X647 .
+
+
+sip-sdmx-code:educationLev-ISCED11_65 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_65" ;
+    skos:prefLabel "Bachelor’s or equivalent professional level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent professional level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_65 .
+
+
+sip-sdmx-code:educationLev-ISCED11_651 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_651" ;
+    skos:prefLabel "Bachelor’s or equivalent professional level, insufficient for  completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent professional level, insufficient for  completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_651 .
+
+
+sip-sdmx-code:educationLev-ISCED11_655 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_655" ;
+    skos:prefLabel "Bachelor’s or equivalent professional level, first degree (3-4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent professional level, first degree (3-4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_655 .
+
+
+sip-sdmx-code:educationLev-ISCED11_655T657 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_655T657" ;
+    skos:prefLabel "Bachelor’s or equivalent professional level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent professional level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_655T657 .
+
+
+sip-sdmx-code:educationLev-ISCED11_656 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_656" ;
+    skos:prefLabel "Bachelor’s or equivalent professional level, long first degree (more than 4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent professional level, long first degree (more than 4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_656 .
+
+
+sip-sdmx-code:educationLev-ISCED11_657 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_657" ;
+    skos:prefLabel "Bachelor’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_657 .
+
+
+sip-sdmx-code:educationLev-ISCED11_65X657 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_65X657" ;
+    skos:prefLabel "Bachelor’s or equivalent professional level, excluding second or further degree (following a Bachelor's or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent professional level, excluding second or further degree (following a Bachelor's or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_65X657 .
+
+
+sip-sdmx-code:educationLev-ISCED11_66 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_66" ;
+    skos:prefLabel "Bachelor’s or equivalent level, orientation unspecified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level, orientation unspecified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_66 .
+
+
+sip-sdmx-code:educationLev-ISCED11_661 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_661" ;
+    skos:prefLabel "Bachelor’s or equivalent level, orientation unspecified, insufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level, orientation unspecified, insufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_661 .
+
+
+sip-sdmx-code:educationLev-ISCED11_665 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_665" ;
+    skos:prefLabel "Bachelor’s or equivalent level, orientation unspecified, first degree (3-4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level, orientation unspecified, first degree (3-4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_665 .
+
+
+sip-sdmx-code:educationLev-ISCED11_665_666_766 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_665_666_766" ;
+    skos:prefLabel "Tertiary education first degrees"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Tertiary education first degrees"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_665_666_766 .
+
+
+sip-sdmx-code:educationLev-ISCED11_666 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_666" ;
+    skos:prefLabel "Bachelor’s or equivalent level, orientation unspecified, long first degree (more than 4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level, orientation unspecified, long first degree (more than 4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_666 .
+
+
+sip-sdmx-code:educationLev-ISCED11_667 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_667" ;
+    skos:prefLabel "Bachelor’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_667 .
+
+
+sip-sdmx-code:educationLev-ISCED11_6T8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_6T8" ;
+    skos:prefLabel "Bachelor's, Master's and Doctoral or equivalent level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's, Master's and Doctoral or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_6T8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_6X641_651_661 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_6X641_651_661" ;
+    skos:prefLabel "Bachelor's or equivalent level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's or equivalent level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_6X641_651_661 .
+
+
+sip-sdmx-code:educationLev-ISCED11_6X647_657_667 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_6X647_657_667" ;
+    skos:prefLabel "Bachelor’s or equivalent level,  insufficient for level completion and first degrees (3-4 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor’s or equivalent level,  insufficient for level completion and first degrees (3-4 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_6X647_657_667 .
+
+
+sip-sdmx-code:educationLev-ISCED11_6_7 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_6_7" ;
+    skos:prefLabel "Bachelor's and Master's or equivalent levels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Bachelor's and Master's or equivalent levels"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_6_7 .
+
+
+sip-sdmx-code:educationLev-ISCED11_7 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_7" ;
+    skos:prefLabel "Master’s or equivalent level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_7 .
+
+
+sip-sdmx-code:educationLev-ISCED11_74 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_74" ;
+    skos:prefLabel "Master’s or equivalent academic level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent academic level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_74 .
+
+
+sip-sdmx-code:educationLev-ISCED11_741 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_741" ;
+    skos:prefLabel "Master’s or equivalent academic level, insufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent academic level, insufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_741 .
+
+
+sip-sdmx-code:educationLev-ISCED11_741_746_751_756_761_766 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_741_746_751_756_761_766" ;
+    skos:prefLabel "Master's or equivalent level, insufficient for level completion or first degrees"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master's or equivalent level, insufficient for level completion or first degrees"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_741_746_751_756_761_766 .
+
+
+sip-sdmx-code:educationLev-ISCED11_741_751_761 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_741_751_761" ;
+    skos:prefLabel "Master’s or equivalent level, all programmes, insufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, all programmes, insufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_741_751_761 .
+
+
+sip-sdmx-code:educationLev-ISCED11_746 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_746" ;
+    skos:prefLabel "Master’s or equivalent academic level, long first degree (at least 5 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent academic level, long first degree (at least 5 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_746 .
+
+
+sip-sdmx-code:educationLev-ISCED11_746T748 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_746T748" ;
+    skos:prefLabel "Master’s or equivalent academic level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent academic level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_746T748 .
+
+
+sip-sdmx-code:educationLev-ISCED11_746_747_756_757_766_767 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_746_747_756_757_766_767" ;
+    skos:prefLabel "Master’s or equivalent level, first and second or further degree (following a Bachelor's or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, first and second or further degree (following a Bachelor's or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_746_747_756_757_766_767 .
+
+
+sip-sdmx-code:educationLev-ISCED11_746_756_766 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_746_756_766" ;
+    skos:prefLabel "Master’s or equivalent level, long first degree (at least 5 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, long first degree (at least 5 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_746_756_766 .
+
+
+sip-sdmx-code:educationLev-ISCED11_747 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_747" ;
+    skos:prefLabel "Master’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_747 .
+
+
+sip-sdmx-code:educationLev-ISCED11_747_757_767 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_747_757_767" ;
+    skos:prefLabel "Master’s or equivalent level, second or further degree (following a Bachelor's or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, second or further degree (following a Bachelor's or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_747_757_767 .
+
+
+sip-sdmx-code:educationLev-ISCED11_748 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_748" ;
+    skos:prefLabel "Master’s or equivalent academic level, second or further degree (following a Master’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent academic level, second or further degree (following a Master’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_748 .
+
+
+sip-sdmx-code:educationLev-ISCED11_748_758_768 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_748_758_768" ;
+    skos:prefLabel "Master’s or equivalent level, second or further degree (following a Master’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, second or further degree (following a Master’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_748_758_768 .
+
+
+sip-sdmx-code:educationLev-ISCED11_74X747 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_74X747" ;
+    skos:prefLabel "Master’s or equivalent  academic level, excluding second or further degree (following a Master’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent  academic level, excluding second or further degree (following a Master’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_74X747 .
+
+
+sip-sdmx-code:educationLev-ISCED11_75 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_75" ;
+    skos:prefLabel "Master’s or equivalent professional level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent professional level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_75 .
+
+
+sip-sdmx-code:educationLev-ISCED11_751 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_751" ;
+    skos:prefLabel "Master’s or equivalent professional level, insufficient for  completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent professional level, insufficient for  completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_751 .
+
+
+sip-sdmx-code:educationLev-ISCED11_756 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_756" ;
+    skos:prefLabel "Master’s or equivalent professional level, long first degree (at least 5 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent professional level, long first degree (at least 5 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_756 .
+
+
+sip-sdmx-code:educationLev-ISCED11_756T758 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_756T758" ;
+    skos:prefLabel "Master’s or equivalent professional level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent professional level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_756T758 .
+
+
+sip-sdmx-code:educationLev-ISCED11_757 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_757" ;
+    skos:prefLabel "Master’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_757 .
+
+
+sip-sdmx-code:educationLev-ISCED11_758 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_758" ;
+    skos:prefLabel "Master’s or equivalent professional level, second or further degree (following a Master’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent professional level, second or further degree (following a Master’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_758 .
+
+
+sip-sdmx-code:educationLev-ISCED11_75X757 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_75X757" ;
+    skos:prefLabel "Master’s or equivalent  professional level, excluding second or further degree (following a Master’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent  professional level, excluding second or further degree (following a Master’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_75X757 .
+
+
+sip-sdmx-code:educationLev-ISCED11_76 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_76" ;
+    skos:prefLabel "Master’s or equivalent level, orientation unspecified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, orientation unspecified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_76 .
+
+
+sip-sdmx-code:educationLev-ISCED11_761 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_761" ;
+    skos:prefLabel "Master’s or equivalent level, orientation unspecified, insufficient for  completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, orientation unspecified, insufficient for  completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_761 .
+
+
+sip-sdmx-code:educationLev-ISCED11_766 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_766" ;
+    skos:prefLabel "Master’s or equivalent level, orientation unspecified, long first degree (at least 5 years)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, orientation unspecified, long first degree (at least 5 years)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_766 .
+
+
+sip-sdmx-code:educationLev-ISCED11_767 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_767" ;
+    skos:prefLabel "Master’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_767 .
+
+
+sip-sdmx-code:educationLev-ISCED11_768 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_768" ;
+    skos:prefLabel "Master’s or equivalent level, orientation unspecified, second or further degree (following a Master’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, orientation unspecified, second or further degree (following a Master’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_768 .
+
+
+sip-sdmx-code:educationLev-ISCED11_7X741_751_761 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_7X741_751_761" ;
+    skos:prefLabel "Master’s or equivalent level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_7X741_751_761 .
+
+
+sip-sdmx-code:educationLev-ISCED11_7X748_758_768 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_7X748_758_768" ;
+    skos:prefLabel "Master’s or equivalent level,  excluding second or further degree (following a Master’s or equivalent programme)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master’s or equivalent level,  excluding second or further degree (following a Master’s or equivalent programme)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_7X748_758_768 .
+
+
+sip-sdmx-code:educationLev-ISCED11_7_8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_7_8" ;
+    skos:prefLabel "Master's and Doctoral or equivalent level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Master's and Doctoral or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_7_8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_8 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_8" ;
+    skos:prefLabel "Doctoral or equivalent level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_8 .
+
+
+sip-sdmx-code:educationLev-ISCED11_84 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_84" ;
+    skos:prefLabel "Doctoral or equivalent academic level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent academic level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_84 .
+
+
+sip-sdmx-code:educationLev-ISCED11_841 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_841" ;
+    skos:prefLabel "Doctoral or equivalent academic level, insufficient for  completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent academic level, insufficient for  completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_841 .
+
+
+sip-sdmx-code:educationLev-ISCED11_844 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_844" ;
+    skos:prefLabel "Doctoral or equivalent academic level, sufficient for completion of level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent academic level, sufficient for completion of level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_844 .
+
+
+sip-sdmx-code:educationLev-ISCED11_844_854_864 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_844_854_864" ;
+    skos:prefLabel "Doctoral or equivalent level, sufficient for level completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent level, sufficient for level completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_844_854_864 .
+
+
+sip-sdmx-code:educationLev-ISCED11_85 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_85" ;
+    skos:prefLabel "Doctoral or equivalent professional level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent professional level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_85 .
+
+
+sip-sdmx-code:educationLev-ISCED11_851 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_851" ;
+    skos:prefLabel "Doctoral or equivalent professional level, insufficient for  completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent professional level, insufficient for  completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_851 .
+
+
+sip-sdmx-code:educationLev-ISCED11_854 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_854" ;
+    skos:prefLabel "Doctoral or equivalent professional level, sufficient for completion of level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent professional level, sufficient for completion of level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_854 .
+
+
+sip-sdmx-code:educationLev-ISCED11_86 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_86" ;
+    skos:prefLabel "Doctoral or equivalent level, orientation unspecified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent level, orientation unspecified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_86 .
+
+
+sip-sdmx-code:educationLev-ISCED11_861 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_861" ;
+    skos:prefLabel "Doctoral or equivalent level, orientation unspecified, insufficient for  completion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent level, orientation unspecified, insufficient for  completion"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_861 .
+
+
+sip-sdmx-code:educationLev-ISCED11_864 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_864" ;
+    skos:prefLabel "Doctoral or equivalent level, orientation unspecified, sufficient for completion of level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Doctoral or equivalent level, orientation unspecified, sufficient for completion of level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_864 .
+
+
+sip-sdmx-code:educationLev-ISCED11_9 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_9" ;
+    skos:prefLabel "Not elsewhere classified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Not elsewhere classified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_9 .
+
+
+sip-sdmx-code:educationLev-ISCED11_99 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_99" ;
+    skos:prefLabel "Not elsewhere classified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Not elsewhere classified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_99 .
+
+
+sip-sdmx-code:educationLev-ISCED11_999 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_999" ;
+    skos:prefLabel "Not elsewhere classified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Not elsewhere classified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_999 .
+
+
+sip-sdmx-code:educationLev-ISCED11_T a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED11_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED11_T .
+
+
+sip-sdmx-code:educationLev-ISCED76_0 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_0" ;
+    skos:prefLabel "Education preceding the first level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Education preceding the first level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_0 .
+
+
+sip-sdmx-code:educationLev-ISCED76_1 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_1" ;
+    skos:prefLabel "First level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """First level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_1 .
+
+
+sip-sdmx-code:educationLev-ISCED76_2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_2" ;
+    skos:prefLabel "Second level, first stage"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Second level, first stage"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_2 .
+
+
+sip-sdmx-code:educationLev-ISCED76_3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_3" ;
+    skos:prefLabel "Second level, second stage"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Second level, second stage"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_3 .
+
+
+sip-sdmx-code:educationLev-ISCED76_5 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_5" ;
+    skos:prefLabel "Third level, first stage, leading to an award not equivalent to a first university degree"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Third level, first stage, leading to an award not equivalent to a first university degree"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_5 .
+
+
+sip-sdmx-code:educationLev-ISCED76_6 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_6" ;
+    skos:prefLabel "Third level, first stage, leading to a first university degree or equivalent qualification"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Third level, first stage, leading to a first university degree or equivalent qualification"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_6 .
+
+
+sip-sdmx-code:educationLev-ISCED76_7 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_7" ;
+    skos:prefLabel "Third level, second stage"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Third level, second stage"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_7 .
+
+
+sip-sdmx-code:educationLev-ISCED76_NSCH a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_NSCH" ;
+    skos:prefLabel "No schooling"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """No schooling"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_NSCH .
+
+
+sip-sdmx-code:educationLev-ISCED76_T a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_T .
+
+
+sip-sdmx-code:educationLev-ISCED76_X a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED76_X" ;
+    skos:prefLabel "Not allocated/unspecified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Not allocated/unspecified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED76_X .
+
+
+sip-sdmx-code:educationLev-ISCED97_0 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_0" ;
+    skos:prefLabel "Pre-primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Pre-primary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_0 .
+
+
+sip-sdmx-code:educationLev-ISCED97_1 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_1" ;
+    skos:prefLabel "Primary education or first stage of basic education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Primary education or first stage of basic education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_1 .
+
+
+sip-sdmx-code:educationLev-ISCED97_2 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_2" ;
+    skos:prefLabel "Lower secondary or second stage of basic education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Lower secondary or second stage of basic education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_2 .
+
+
+sip-sdmx-code:educationLev-ISCED97_3 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_3" ;
+    skos:prefLabel "Upper secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Upper secondary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_3 .
+
+
+sip-sdmx-code:educationLev-ISCED97_4 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_4" ;
+    skos:prefLabel "Post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_4 .
+
+
+sip-sdmx-code:educationLev-ISCED97_5 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_5" ;
+    skos:prefLabel "First stage of tertiary education (not leading directly to an advanced research qualification)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """First stage of tertiary education (not leading directly to an advanced research qualification)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_5 .
+
+
+sip-sdmx-code:educationLev-ISCED97_5A a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_5A" ;
+    skos:prefLabel "First stage of tertiary education (theoretically based/research preparatory)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """First stage of tertiary education (theoretically based/research preparatory)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """First stage of tertiary education (leading to entry into advanced research programmes) (ISCED97 level 5A)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_5A .
+
+
+sip-sdmx-code:educationLev-ISCED97_5B a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_5B" ;
+    skos:prefLabel "First stage of tertiary education (practical/technical/occupationally specific)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """First stage of tertiary education (practical/technical/occupationally specific)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """First stage of tertiary education (not leading to entry into advanced research programmes) (ISCED97 level 5B)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_5B .
+
+
+sip-sdmx-code:educationLev-ISCED97_6 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_6" ;
+    skos:prefLabel "Second stage of tertiary education (leading to an advanced research qualification)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:UIS ; rdfs:label """Second stage of tertiary education (leading to an advanced research qualification)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_6 .
+
+
+sip-sdmx-code:educationLev-ISCED97_LT1 a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_LT1" ;
+    skos:prefLabel "Some primary education (without level completion)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Some primary education (without level completion)"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_LT1 .
+
+
+sip-sdmx-code:educationLev-ISCED97_NSCH a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_NSCH" ;
+    skos:prefLabel "No schooling"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """No schooling"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_NSCH .
+
+
+sip-sdmx-code:educationLev-ISCED97_T a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_T .
+
+
+sip-sdmx-code:educationLev-ISCED97_X a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "ISCED97_X" ;
+    skos:prefLabel "Not allocated/unspecified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Not allocated/unspecified"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-ISCED97_X .
+
+
+sip-sdmx-code:educationLev-_T a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total or no breakdown by education level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Total or no breakdown by education level"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-_T .
+
+
+sip-sdmx-code:educationLev-_U a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "_U" ;
+    skos:prefLabel "No data/unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """No data/unknown"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-_U .
+
+
+sip-sdmx-code:educationLev-_Z a skos:Concept, sip-sdmx-code:EducationLev;
+    skos:topConceptOf sip-sdmx-code:educationLev ;
+    skos:inScheme sip-sdmx-code:educationLev ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:UIS ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:educationLev skos:hasTopConcept sip-sdmx-code:educationLev-_Z .
+

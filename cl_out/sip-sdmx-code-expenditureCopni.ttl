@@ -1,0 +1,719 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_EXPENDITURECOPNI Scheme Definition
+#####################################################
+
+sip-sdmx-code:expenditureCopni a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "COPNI - codelist scheme"@en ;
+    rdfs:label "COPNI - codelist scheme"@en ;
+    skos:altLabel "Classification of the Purposes of Non-Profit Institutions Serving Households - codelist scheme"@en ;
+    skos:notation "CL_EXPENDITURECOPNI" ;
+    skos:definition "A reference expenditureCopni codelist combining ESTAT:CL_COPNI(1.0), SDMX:CL_COPNI_1999(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COPNI/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_COPNI_1999/1.0> ;
+    skos:note "SDMX:CL_COPNI_1999(1.0): This code list provides a set of building blocks to be used for classifying individual outlays of Non-Profit Institutions Serving Households (NPISHs) according to the purpose they serve. This code list was formally adopted on 27 June 2014. More information about this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like \"Total\", \"Unknown\", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345."@en ;
+    rdfs:seeAlso sip-sdmx-concept:EXPENDITURE ;
+    skos:related sip-sdmx-concept:EXPENDITURE ;
+    rdfs:seeAlso sip-sdmx-code:ExpenditureCopni .
+
+sip-sdmx-code:ExpenditureCopni a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "COPNI - codelist class"@en ;
+    rdfs:label "COPNI - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni .
+
+
+########################################
+# CL_EXPENDITURECOPNI Codes
+########################################
+    
+sip-sdmx-code:expenditureCopni-PN1 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN1" ;
+    skos:prefLabel "Housing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Housing"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN1 .
+
+
+sip-sdmx-code:expenditureCopni-PN10 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN10" ;
+    skos:prefLabel "Housing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN10 .
+
+
+sip-sdmx-code:expenditureCopni-PN100 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN100" ;
+    skos:prefLabel "Housing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN100 .
+
+
+sip-sdmx-code:expenditureCopni-PN2 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN2" ;
+    skos:prefLabel "Health"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Health"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN2 .
+
+
+sip-sdmx-code:expenditureCopni-PN21 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN21" ;
+    skos:prefLabel "Medical products, appliances and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Medical products, appliances and equipment"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN21 .
+
+
+sip-sdmx-code:expenditureCopni-PN211 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN211" ;
+    skos:prefLabel "Pharmaceutical products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pharmaceutical products"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN211 .
+
+
+sip-sdmx-code:expenditureCopni-PN212 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN212" ;
+    skos:prefLabel "Other medical products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other medical products"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN212 .
+
+
+sip-sdmx-code:expenditureCopni-PN213 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN213" ;
+    skos:prefLabel "Therapeutic appliances and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Therapeutic appliances and equipment"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN213 .
+
+
+sip-sdmx-code:expenditureCopni-PN22 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN22" ;
+    skos:prefLabel "Outpatient services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Outpatient services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN22 .
+
+
+sip-sdmx-code:expenditureCopni-PN221 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN221" ;
+    skos:prefLabel "Medical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Medical services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN221 .
+
+
+sip-sdmx-code:expenditureCopni-PN222 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN222" ;
+    skos:prefLabel "Dental services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Dental services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN222 .
+
+
+sip-sdmx-code:expenditureCopni-PN223 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN223" ;
+    skos:prefLabel "Paramedical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Paramedical services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN223 .
+
+
+sip-sdmx-code:expenditureCopni-PN23 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN23" ;
+    skos:prefLabel "Hospital services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Hospital services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN23 .
+
+
+sip-sdmx-code:expenditureCopni-PN230 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN230" ;
+    skos:prefLabel "Hospital services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Hospital services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN230 .
+
+
+sip-sdmx-code:expenditureCopni-PN24 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN24" ;
+    skos:prefLabel "Public health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Public health services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN24 .
+
+
+sip-sdmx-code:expenditureCopni-PN240 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN240" ;
+    skos:prefLabel "Public health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Public health services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN240 .
+
+
+sip-sdmx-code:expenditureCopni-PN25 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN25" ;
+    skos:prefLabel "R&D health"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D health"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Health"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN25 .
+
+
+sip-sdmx-code:expenditureCopni-PN250 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN250" ;
+    skos:prefLabel "R&D Health"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Health"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN250 .
+
+
+sip-sdmx-code:expenditureCopni-PN26 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN26" ;
+    skos:prefLabel "Other health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Other health services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN26 .
+
+
+sip-sdmx-code:expenditureCopni-PN260 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN260" ;
+    skos:prefLabel "Other health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other health services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN260 .
+
+
+sip-sdmx-code:expenditureCopni-PN3 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN3" ;
+    skos:prefLabel "Recreation and culture"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Recreation and culture"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN3 .
+
+
+sip-sdmx-code:expenditureCopni-PN31 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN31" ;
+    skos:prefLabel "Recreational and sporting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Recreational and sporting services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN31 .
+
+
+sip-sdmx-code:expenditureCopni-PN310 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN310" ;
+    skos:prefLabel "Recreational and sporting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Recreational and sporting services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN310 .
+
+
+sip-sdmx-code:expenditureCopni-PN32 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN32" ;
+    skos:prefLabel "Cultural services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Cultural services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN32 .
+
+
+sip-sdmx-code:expenditureCopni-PN320 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN320" ;
+    skos:prefLabel "Cultural services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Cultural services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN320 .
+
+
+sip-sdmx-code:expenditureCopni-PN4 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN4" ;
+    skos:prefLabel "Education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN4 .
+
+
+sip-sdmx-code:expenditureCopni-PN41 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN41" ;
+    skos:prefLabel "Pre-primary and primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Pre-primary and primary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN41 .
+
+
+sip-sdmx-code:expenditureCopni-PN410 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN410" ;
+    skos:prefLabel "Pre-primary and primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pre-primary and primary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN410 .
+
+
+sip-sdmx-code:expenditureCopni-PN42 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN42" ;
+    skos:prefLabel "Secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Secondary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN42 .
+
+
+sip-sdmx-code:expenditureCopni-PN420 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN420" ;
+    skos:prefLabel "Secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Secondary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN420 .
+
+
+sip-sdmx-code:expenditureCopni-PN43 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN43" ;
+    skos:prefLabel "Post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN43 .
+
+
+sip-sdmx-code:expenditureCopni-PN430 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN430" ;
+    skos:prefLabel "Post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN430 .
+
+
+sip-sdmx-code:expenditureCopni-PN44 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN44" ;
+    skos:prefLabel "Tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN44 .
+
+
+sip-sdmx-code:expenditureCopni-PN440 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN440" ;
+    skos:prefLabel "Tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN440 .
+
+
+sip-sdmx-code:expenditureCopni-PN45 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN45" ;
+    skos:prefLabel "Education not definable by level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Education not definable by level"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN45 .
+
+
+sip-sdmx-code:expenditureCopni-PN450 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN450" ;
+    skos:prefLabel "Education not definable by level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Education not definable by level"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN450 .
+
+
+sip-sdmx-code:expenditureCopni-PN46 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN46" ;
+    skos:prefLabel "R&D education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D education"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN46 .
+
+
+sip-sdmx-code:expenditureCopni-PN460 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN460" ;
+    skos:prefLabel "R&D Education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Education"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN460 .
+
+
+sip-sdmx-code:expenditureCopni-PN47 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN47" ;
+    skos:prefLabel "Other educational services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Other educational services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN47 .
+
+
+sip-sdmx-code:expenditureCopni-PN470 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN470" ;
+    skos:prefLabel "Other educational services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other educational services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN470 .
+
+
+sip-sdmx-code:expenditureCopni-PN5 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN5" ;
+    skos:prefLabel "Social protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Social protection"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN5 .
+
+
+sip-sdmx-code:expenditureCopni-PN51 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN51" ;
+    skos:prefLabel "Social protection services (excluding R&D)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Social protection services (excluding R&D)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Social protection services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN51 .
+
+
+sip-sdmx-code:expenditureCopni-PN510 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN510" ;
+    skos:prefLabel "Social protection services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Social protection services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN510 .
+
+
+sip-sdmx-code:expenditureCopni-PN52 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN52" ;
+    skos:prefLabel "R&D Social protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """R&D Social protection"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN52 .
+
+
+sip-sdmx-code:expenditureCopni-PN520 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN520" ;
+    skos:prefLabel "R&D Social protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Social protection"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN520 .
+
+
+sip-sdmx-code:expenditureCopni-PN6 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN6" ;
+    skos:prefLabel "Religion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Religion"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN6 .
+
+
+sip-sdmx-code:expenditureCopni-PN60 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN60" ;
+    skos:prefLabel "Religion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Religion"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN60 .
+
+
+sip-sdmx-code:expenditureCopni-PN600 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN600" ;
+    skos:prefLabel "Religion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Religion"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN600 .
+
+
+sip-sdmx-code:expenditureCopni-PN7 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN7" ;
+    skos:prefLabel "Political parties, labour and professionalorganisations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Political parties, labour and professionalorganisations"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Political parties, labour and professional organizations"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN7 .
+
+
+sip-sdmx-code:expenditureCopni-PN71 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN71" ;
+    skos:prefLabel "Services of political parties"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Services of political parties"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN71 .
+
+
+sip-sdmx-code:expenditureCopni-PN710 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN710" ;
+    skos:prefLabel "Services of political parties"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Services of political parties"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN710 .
+
+
+sip-sdmx-code:expenditureCopni-PN72 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN72" ;
+    skos:prefLabel "Services of labour organisations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services of labour organisations"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Services of labour organizations"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN72 .
+
+
+sip-sdmx-code:expenditureCopni-PN720 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN720" ;
+    skos:prefLabel "Services of labour organizations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Services of labour organizations"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN720 .
+
+
+sip-sdmx-code:expenditureCopni-PN73 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN73" ;
+    skos:prefLabel "Services of professional organisations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services of professional organisations"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Services of professional organizations"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN73 .
+
+
+sip-sdmx-code:expenditureCopni-PN730 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN730" ;
+    skos:prefLabel "Services of professional organizations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Services of professional organizations"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN730 .
+
+
+sip-sdmx-code:expenditureCopni-PN8 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN8" ;
+    skos:prefLabel "Environmental protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Environmental protection"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN8 .
+
+
+sip-sdmx-code:expenditureCopni-PN81 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN81" ;
+    skos:prefLabel "Environmental protection services (excluding R&D)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Environmental protection services (excluding R&D)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Environmental protection services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN81 .
+
+
+sip-sdmx-code:expenditureCopni-PN810 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN810" ;
+    skos:prefLabel "Environmental protection services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Environmental protection services"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN810 .
+
+
+sip-sdmx-code:expenditureCopni-PN82 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN82" ;
+    skos:prefLabel "R&D Environmental protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """R&D Environmental protection"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN82 .
+
+
+sip-sdmx-code:expenditureCopni-PN820 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN820" ;
+    skos:prefLabel "R&D Environmental protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Environmental protection"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN820 .
+
+
+sip-sdmx-code:expenditureCopni-PN9 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN9" ;
+    skos:prefLabel "Services n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN9 .
+
+
+sip-sdmx-code:expenditureCopni-PN91 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN91" ;
+    skos:prefLabel "Services n.e.c. (excluding R&D)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services n.e.c. (excluding R&D)"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN91 .
+
+
+sip-sdmx-code:expenditureCopni-PN910 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN910" ;
+    skos:prefLabel "Services n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN910 .
+
+
+sip-sdmx-code:expenditureCopni-PN92 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN92" ;
+    skos:prefLabel "R&D services n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D services n.e.c."""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN92 .
+
+
+sip-sdmx-code:expenditureCopni-PN920 a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "PN920" ;
+    skos:prefLabel "R&D Services n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-PN920 .
+
+
+sip-sdmx-code:expenditureCopni-_T a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-_T .
+
+
+sip-sdmx-code:expenditureCopni-_Z a skos:Concept, sip-sdmx-code:ExpenditureCopni;
+    skos:topConceptOf sip-sdmx-code:expenditureCopni ;
+    skos:inScheme sip-sdmx-code:expenditureCopni ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:expenditureCopni skos:hasTopConcept sip-sdmx-code:expenditureCopni-_Z .
+

@@ -1,0 +1,198 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_URBANISATION Scheme Definition
+#####################################################
+
+sip-sdmx-code:urbanisation a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Code list for degree of urbanisation - codelist scheme"@en ;
+    rdfs:label "Code list for degree of urbanisation - codelist scheme"@en ;
+    skos:altLabel "Degree of urbanisation code list - codelist scheme"@en ;
+    skos:notation "CL_URBANISATION" ;
+    skos:definition "A reference urbanisation codelist combining IAEG-SDGs:CL_URBANISATION(1.10), SDMX:CL_DEG_URB(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_URBANISATION/1.10> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_DEG_URB/1.0> ;
+    skos:note "SDMX:CL_DEG_URB(1.0): This code list provides coded information about the degree to which area is urbanised."@en ;
+    rdfs:seeAlso sip-sdmx-code:Urbanisation .
+
+sip-sdmx-code:Urbanisation a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Code list for degree of urbanisation - codelist class"@en ;
+    rdfs:label "Code list for degree of urbanisation - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation .
+
+
+########################################
+# CL_URBANISATION Codes
+########################################
+    
+sip-sdmx-code:urbanisation-CITY a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "CITY" ;
+    skos:prefLabel "City"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """City"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-CITY .
+
+
+sip-sdmx-code:urbanisation-DISP a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "DISP" ;
+    skos:prefLabel "Dispersed rural area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Dispersed rural area"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-DISP .
+
+
+sip-sdmx-code:urbanisation-DTOW a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "DTOW" ;
+    skos:prefLabel "Dense town"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Dense town"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-DTOW .
+
+
+sip-sdmx-code:urbanisation-R a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "R" ;
+    skos:prefLabel "Rural"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Rural"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-R .
+
+
+sip-sdmx-code:urbanisation-RUR a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "RUR" ;
+    skos:prefLabel "Rural area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Rural area"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-RUR .
+
+
+sip-sdmx-code:urbanisation-STOW a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "STOW" ;
+    skos:prefLabel "Semi-dense town"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Semi-dense town"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-STOW .
+
+
+sip-sdmx-code:urbanisation-SUBU a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "SUBU" ;
+    skos:prefLabel "Suburban or peri-urban area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Suburban or peri-urban area"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-SUBU .
+
+
+sip-sdmx-code:urbanisation-TSUB a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "TSUB" ;
+    skos:prefLabel "Town and semi-dense area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """Town and semi-dense area"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-TSUB .
+
+
+sip-sdmx-code:urbanisation-U a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "U" ;
+    skos:prefLabel "Urban"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Urban"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-U .
+
+
+sip-sdmx-code:urbanisation-UNIN a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "UNIN" ;
+    skos:prefLabel "Mostly uninhabited area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Mostly uninhabited area"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-UNIN .
+
+
+sip-sdmx-code:urbanisation-URB a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "URB" ;
+    skos:prefLabel "Urban area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Urban area"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-URB .
+
+
+sip-sdmx-code:urbanisation-VILL a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "VILL" ;
+    skos:prefLabel "Village"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Village"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-VILL .
+
+
+sip-sdmx-code:urbanisation-_O a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "_O" ;
+    skos:prefLabel "Other"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-_O .
+
+
+sip-sdmx-code:urbanisation-_T a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-_T .
+
+
+sip-sdmx-code:urbanisation-_U a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "_U" ;
+    skos:prefLabel "No data/unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """No data/unknown"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-_U .
+
+
+sip-sdmx-code:urbanisation-_Z a skos:Concept, sip-sdmx-code:Urbanisation;
+    skos:topConceptOf sip-sdmx-code:urbanisation ;
+    skos:inScheme sip-sdmx-code:urbanisation ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:urbanisation skos:hasTopConcept sip-sdmx-code:urbanisation-_Z .
+

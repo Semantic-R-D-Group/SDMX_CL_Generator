@@ -1,0 +1,295 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_AIRPOL Scheme Definition
+#####################################################
+
+sip-sdmx-code:airPol a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Air pollutants and greenhouse gasses - codelist scheme"@en ;
+    rdfs:label "Air pollutants and greenhouse gasses - codelist scheme"@en ;
+    skos:notation "CL_AIRPOL" ;
+    skos:definition "A reference airPol codelist based on ESTAT:CL_AIRPOL(1.3.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_AIRPOL/1.3.0> ;
+    skos:note "ESTAT:CL_AIRPOL(1.3.0): Air pollutants classification"@en ;
+    rdfs:seeAlso sip-sdmx-code:AirPol .
+
+sip-sdmx-code:AirPol a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Air pollutants and greenhouse gasses - codelist class"@en ;
+    rdfs:label "Air pollutants and greenhouse gasses - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol .
+
+
+########################################
+# CL_AIRPOL Codes
+########################################
+    
+sip-sdmx-code:airPol-ACG a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "ACG" ;
+    skos:prefLabel "Acidifying gases (SOX in SO2 equivalent, NOX in SO2 equivalent, NH3 in SO2 equivalent)"@en ;
+    rdfs:label "Acidifying gases (SOX in SO2 equivalent, NOX in SO2 equivalent, NH3 in SO2 equivalent)"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-ACG .
+
+
+sip-sdmx-code:airPol-CH4 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "CH4" ;
+    skos:prefLabel "Methane"@en ;
+    rdfs:label "Methane"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-CH4 .
+
+
+sip-sdmx-code:airPol-CO a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "CO" ;
+    skos:prefLabel "Carbon monoxide"@en ;
+    rdfs:label "Carbon monoxide"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-CO .
+
+
+sip-sdmx-code:airPol-CO2 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "CO2" ;
+    skos:prefLabel "Carbon dioxide"@en ;
+    rdfs:label "Carbon dioxide"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-CO2 .
+
+
+sip-sdmx-code:airPol-CO2_BIO a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "CO2_BIO" ;
+    skos:prefLabel "Carbon dioxide from biomass used as a fuel"@en ;
+    rdfs:label "Carbon dioxide from biomass used as a fuel"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-CO2_BIO .
+
+
+sip-sdmx-code:airPol-CO2_ROAD a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "CO2_ROAD" ;
+    skos:prefLabel "Carbon dioxide from road transport"@en ;
+    rdfs:label "Carbon dioxide from road transport"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-CO2_ROAD .
+
+
+sip-sdmx-code:airPol-GHG a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "GHG" ;
+    skos:prefLabel "Green house gases, excluding CO2 from biomass used as a fuel"@en ;
+    rdfs:label "Green house gases, excluding CO2 from biomass used as a fuel"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-GHG .
+
+
+sip-sdmx-code:airPol-GHG_BIO a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "GHG_BIO" ;
+    skos:prefLabel "Green house gases, including CO2 from biomass used as a fuel"@en ;
+    rdfs:label "Green house gases, including CO2 from biomass used as a fuel"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-GHG_BIO .
+
+
+sip-sdmx-code:airPol-HFC a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "HFC" ;
+    skos:prefLabel "Hydrofluorocarbons"@en ;
+    rdfs:label "Hydrofluorocarbons"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-HFC .
+
+
+sip-sdmx-code:airPol-N2O a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "N2O" ;
+    skos:prefLabel "Nitrous oxide"@en ;
+    rdfs:label "Nitrous oxide"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-N2O .
+
+
+sip-sdmx-code:airPol-NF3 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "NF3" ;
+    skos:prefLabel "Nitrogen trifluoride"@en ;
+    rdfs:label "Nitrogen trifluoride"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-NF3 .
+
+
+sip-sdmx-code:airPol-NF3_SF6 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "NF3_SF6" ;
+    skos:prefLabel "Nitrogen trifluoride and sulphur hexafluoride"@en ;
+    rdfs:label "Nitrogen trifluoride and sulphur hexafluoride"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-NF3_SF6 .
+
+
+sip-sdmx-code:airPol-NH3 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "NH3" ;
+    skos:prefLabel "Ammonia"@en ;
+    rdfs:label "Ammonia"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-NH3 .
+
+
+sip-sdmx-code:airPol-NMVOC a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "NMVOC" ;
+    skos:prefLabel "Non-methane volatile organic compounds"@en ;
+    rdfs:label "Non-methane volatile organic compounds"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-NMVOC .
+
+
+sip-sdmx-code:airPol-NMVOC_ROAD a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "NMVOC_ROAD" ;
+    skos:prefLabel "Non-methane volatile organic compounds from road transport"@en ;
+    rdfs:label "Non-methane volatile organic compounds from road transport"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-NMVOC_ROAD .
+
+
+sip-sdmx-code:airPol-NOX a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "NOX" ;
+    skos:prefLabel "Nitrogen oxides"@en ;
+    rdfs:label "Nitrogen oxides"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-NOX .
+
+
+sip-sdmx-code:airPol-NOX_ROAD a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "NOX_ROAD" ;
+    skos:prefLabel "Nitrogen oxides from road transport"@en ;
+    rdfs:label "Nitrogen oxides from road transport"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-NOX_ROAD .
+
+
+sip-sdmx-code:airPol-O3PR a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "O3PR" ;
+    skos:prefLabel "Ozone precursors (NMVOC, NOX in NMVOC equivalent, CO in NMVOC equivalent, CH4 in NMVOC equivalent)"@en ;
+    rdfs:label "Ozone precursors (NMVOC, NOX in NMVOC equivalent, CO in NMVOC equivalent, CH4 in NMVOC equivalent)"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-O3PR .
+
+
+sip-sdmx-code:airPol-PFC a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "PFC" ;
+    skos:prefLabel "Perfluorocarbons"@en ;
+    rdfs:label "Perfluorocarbons"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-PFC .
+
+
+sip-sdmx-code:airPol-PM10 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "PM10" ;
+    skos:prefLabel "Particulate matter < 10µm"@en ;
+    rdfs:label "Particulate matter < 10µm"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-PM10 .
+
+
+sip-sdmx-code:airPol-PM10_ROAD a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "PM10_ROAD" ;
+    skos:prefLabel "Particulate matter < 10µm from road transport"@en ;
+    rdfs:label "Particulate matter < 10µm from road transport"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-PM10_ROAD .
+
+
+sip-sdmx-code:airPol-PM2_5 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "PM2_5" ;
+    skos:prefLabel "Particulate matter < 2.5µm"@en ;
+    rdfs:label "Particulate matter < 2.5µm"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-PM2_5 .
+
+
+sip-sdmx-code:airPol-PM2_5_ROAD a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "PM2_5_ROAD" ;
+    skos:prefLabel "Particulate matter < 2.5µm from road transport"@en ;
+    rdfs:label "Particulate matter < 2.5µm from road transport"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-PM2_5_ROAD .
+
+
+sip-sdmx-code:airPol-SF6 a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "SF6" ;
+    skos:prefLabel "Sulphur hexafluoride"@en ;
+    rdfs:label "Sulphur hexafluoride"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-SF6 .
+
+
+sip-sdmx-code:airPol-SOX a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "SOX" ;
+    skos:prefLabel "Sulphur oxides"@en ;
+    rdfs:label "Sulphur oxides"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-SOX .
+
+
+sip-sdmx-code:airPol-_X a skos:Concept, sip-sdmx-code:AirPol;
+    skos:topConceptOf sip-sdmx-code:airPol ;
+    skos:inScheme sip-sdmx-code:airPol ;
+    skos:notation "_X" ;
+    skos:prefLabel "Unspecified"@en ;
+    rdfs:label "Unspecified"@en .
+
+sip-sdmx-code:airPol skos:hasTopConcept sip-sdmx-code:airPol-_X .
+

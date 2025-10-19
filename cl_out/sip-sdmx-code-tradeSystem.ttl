@@ -1,0 +1,74 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_TRADESYSTEM Scheme Definition
+#####################################################
+
+sip-sdmx-code:tradeSystem a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "CL_TRADE_SYSTEM - codelist scheme"@en ;
+    rdfs:label "CL_TRADE_SYSTEM - codelist scheme"@en ;
+    skos:notation "CL_TRADESYSTEM" ;
+    skos:definition "A reference tradeSystem codelist based on UNSD:CL_TRADE_SYSTEM(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_TRADE_SYSTEM/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:TradeSystem .
+
+sip-sdmx-code:TradeSystem a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "CL_TRADE_SYSTEM - codelist class"@en ;
+    rdfs:label "CL_TRADE_SYSTEM - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:tradeSystem ;
+    skos:inScheme sip-sdmx-code:tradeSystem .
+
+
+########################################
+# CL_TRADESYSTEM Codes
+########################################
+    
+sip-sdmx-code:tradeSystem-G a skos:Concept, sip-sdmx-code:TradeSystem;
+    skos:topConceptOf sip-sdmx-code:tradeSystem ;
+    skos:inScheme sip-sdmx-code:tradeSystem ;
+    skos:notation "G" ;
+    skos:prefLabel "General trade system"@en ;
+    rdfs:label "General trade system"@en .
+
+sip-sdmx-code:tradeSystem skos:hasTopConcept sip-sdmx-code:tradeSystem-G .
+
+
+sip-sdmx-code:tradeSystem-S a skos:Concept, sip-sdmx-code:TradeSystem;
+    skos:topConceptOf sip-sdmx-code:tradeSystem ;
+    skos:inScheme sip-sdmx-code:tradeSystem ;
+    skos:notation "S" ;
+    skos:prefLabel "Special trade system"@en ;
+    rdfs:label "Special trade system"@en .
+
+sip-sdmx-code:tradeSystem skos:hasTopConcept sip-sdmx-code:tradeSystem-S .
+
+
+sip-sdmx-code:tradeSystem-S1 a skos:Concept, sip-sdmx-code:TradeSystem;
+    skos:topConceptOf sip-sdmx-code:tradeSystem ;
+    skos:inScheme sip-sdmx-code:tradeSystem ;
+    skos:notation "S1" ;
+    skos:prefLabel "Special trade system (strict definition)"@en ;
+    rdfs:label "Special trade system (strict definition)"@en .
+
+sip-sdmx-code:tradeSystem skos:hasTopConcept sip-sdmx-code:tradeSystem-S1 .
+
+
+sip-sdmx-code:tradeSystem-S2 a skos:Concept, sip-sdmx-code:TradeSystem;
+    skos:topConceptOf sip-sdmx-code:tradeSystem ;
+    skos:inScheme sip-sdmx-code:tradeSystem ;
+    skos:notation "S2" ;
+    skos:prefLabel "Special trade system (relaxed definition)"@en ;
+    rdfs:label "Special trade system (relaxed definition)"@en .
+
+sip-sdmx-code:tradeSystem skos:hasTopConcept sip-sdmx-code:tradeSystem-S2 .
+

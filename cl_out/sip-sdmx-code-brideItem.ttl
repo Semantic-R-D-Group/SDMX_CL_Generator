@@ -1,0 +1,195 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_BRIDEITEM Scheme Definition
+#####################################################
+
+sip-sdmx-code:brideItem a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Bridging items - codelist scheme"@en ;
+    rdfs:label "Bridging items - codelist scheme"@en ;
+    skos:notation "CL_BRIDEITEM" ;
+    skos:definition "A reference brideItem codelist based on ESTAT:CL_BRIDGE_ITEM(1.3.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_BRIDGE_ITEM/1.3.0> ;
+    skos:note "ESTAT:CL_BRIDGE_ITEM(1.3.0): Items used to bridge for territorial coverage"@en ;
+    rdfs:seeAlso sip-sdmx-code:BrideItem .
+
+sip-sdmx-code:BrideItem a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Bridging items - codelist class"@en ;
+    rdfs:label "Bridging items - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem .
+
+
+########################################
+# CL_BRIDEITEM Codes
+########################################
+    
+sip-sdmx-code:brideItem-ADJ_SD a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "ADJ_SD" ;
+    skos:prefLabel "Adjustments and statistical discrepancy"@en ;
+    rdfs:label "Adjustments and statistical discrepancy"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-ADJ_SD .
+
+
+sip-sdmx-code:brideItem-ADJ_SD_DUXGIC a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "ADJ_SD_DUXGIC" ;
+    skos:prefLabel "Adjustments and statistical discrepancy amongst which flows included in domestic use by resident units while excluded in gross inland consumption or total energy supply"@en ;
+    rdfs:label "Adjustments and statistical discrepancy amongst which flows included in domestic use by resident units while excluded in gross inland consumption or total energy supply"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-ADJ_SD_DUXGIC .
+
+
+sip-sdmx-code:brideItem-LULUCF a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "LULUCF" ;
+    skos:prefLabel "Land Use, Land-Use Change and Forestry"@en ;
+    rdfs:label "Land Use, Land-Use Change and Forestry"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-LULUCF .
+
+
+sip-sdmx-code:brideItem-RES a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "RES" ;
+    skos:prefLabel "Production and consumption activities by residents"@en ;
+    rdfs:label "Production and consumption activities by residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-RES .
+
+
+sip-sdmx-code:brideItem-RES_ABR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "RES_ABR" ;
+    skos:prefLabel "Production and consumption activities abroad by residents"@en ;
+    rdfs:label "Production and consumption activities abroad by residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-RES_ABR .
+
+
+sip-sdmx-code:brideItem-RES_ABR_ATR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "RES_ABR_ATR" ;
+    skos:prefLabel "Air transport operated abroad by residents"@en ;
+    rdfs:label "Air transport operated abroad by residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-RES_ABR_ATR .
+
+
+sip-sdmx-code:brideItem-RES_ABR_FWTR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "RES_ABR_FWTR" ;
+    skos:prefLabel "Fishing vessels operated abroad by residents"@en ;
+    rdfs:label "Fishing vessels operated abroad by residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-RES_ABR_FWTR .
+
+
+sip-sdmx-code:brideItem-RES_ABR_LTR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "RES_ABR_LTR" ;
+    skos:prefLabel "Land transport operated abroad by residents"@en ;
+    rdfs:label "Land transport operated abroad by residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-RES_ABR_LTR .
+
+
+sip-sdmx-code:brideItem-RES_ABR_WTR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "RES_ABR_WTR" ;
+    skos:prefLabel "Water transport operated abroad by residents"@en ;
+    rdfs:label "Water transport operated abroad by residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-RES_ABR_WTR .
+
+
+sip-sdmx-code:brideItem-RUT a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "RUT" ;
+    skos:prefLabel "Resident units in the territory"@en ;
+    rdfs:label "Resident units in the territory"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-RUT .
+
+
+sip-sdmx-code:brideItem-TER a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "TER" ;
+    skos:prefLabel "Production and consumption activities on the territory"@en ;
+    rdfs:label "Production and consumption activities on the territory"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-TER .
+
+
+sip-sdmx-code:brideItem-TER_NRES a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "TER_NRES" ;
+    skos:prefLabel "Production and consumption activities on the territory by non-residents"@en ;
+    rdfs:label "Production and consumption activities on the territory by non-residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-TER_NRES .
+
+
+sip-sdmx-code:brideItem-TER_NRES_ATR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "TER_NRES_ATR" ;
+    skos:prefLabel "Air transport operated on the territory by non-residents"@en ;
+    rdfs:label "Air transport operated on the territory by non-residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-TER_NRES_ATR .
+
+
+sip-sdmx-code:brideItem-TER_NRES_LTR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "TER_NRES_LTR" ;
+    skos:prefLabel "Land transport operated on the territory by non-residents"@en ;
+    rdfs:label "Land transport operated on the territory by non-residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-TER_NRES_LTR .
+
+
+sip-sdmx-code:brideItem-TER_NRES_WTR a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "TER_NRES_WTR" ;
+    skos:prefLabel "Water transport operated on the territory by non-residents"@en ;
+    rdfs:label "Water transport operated on the territory by non-residents"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-TER_NRES_WTR .
+
+
+sip-sdmx-code:brideItem-_Z a skos:Concept, sip-sdmx-code:BrideItem;
+    skos:topConceptOf sip-sdmx-code:brideItem ;
+    skos:inScheme sip-sdmx-code:brideItem ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:brideItem skos:hasTopConcept sip-sdmx-code:brideItem-_Z .
+

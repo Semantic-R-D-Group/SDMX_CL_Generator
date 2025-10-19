@@ -1,0 +1,2255 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_ENERGYFLOWS Scheme Definition
+#####################################################
+
+sip-sdmx-code:energyFlows a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Energy flows - codelist scheme"@en ;
+    rdfs:label "Energy flows - codelist scheme"@en ;
+    skos:notation "CL_ENERGYFLOWS" ;
+    skos:definition "A reference energyFlows codelist based on ESTAT:CL_ENERGY_FLOWS(1.2)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_ENERGY_FLOWS/1.2> ;
+    skos:note "ESTAT:CL_ENERGY_FLOWS(1.2): Natural energy inputs (broken down), energy products (broken down), residuals (broken down)"@en ;
+    rdfs:seeAlso sip-sdmx-code:EnergyFlows .
+
+sip-sdmx-code:EnergyFlows a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Energy flows - codelist class"@en ;
+    rdfs:label "Energy flows - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows .
+
+
+########################################
+# CL_ENERGYFLOWS Codes
+########################################
+    
+sip-sdmx-code:energyFlows-EPRD_OUSE a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "EPRD_OUSE" ;
+    skos:prefLabel "Energy products for own use"@en ;
+    rdfs:label "Energy products for own use"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-EPRD_OUSE .
+
+
+sip-sdmx-code:energyFlows-N00 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N00" ;
+    skos:prefLabel "Natural energy inputs"@en ;
+    rdfs:label "Natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N00 .
+
+
+sip-sdmx-code:energyFlows-N00_P00_R00 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N00_P00_R00" ;
+    skos:prefLabel "Total energy flows"@en ;
+    rdfs:label "Total energy flows"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N00_P00_R00 .
+
+
+sip-sdmx-code:energyFlows-N01 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N01" ;
+    skos:prefLabel "Fossil non-renewable natural energy inputs"@en ;
+    rdfs:label "Fossil non-renewable natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N01 .
+
+
+sip-sdmx-code:energyFlows-N02 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N02" ;
+    skos:prefLabel "Nuclear non-renewable natural energy inputs"@en ;
+    rdfs:label "Nuclear non-renewable natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N02 .
+
+
+sip-sdmx-code:energyFlows-N03 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N03" ;
+    skos:prefLabel "Hydro based renewable natural energy inputs"@en ;
+    rdfs:label "Hydro based renewable natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N03 .
+
+
+sip-sdmx-code:energyFlows-N04 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N04" ;
+    skos:prefLabel "Wind based renewable natural energy inputs"@en ;
+    rdfs:label "Wind based renewable natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N04 .
+
+
+sip-sdmx-code:energyFlows-N05 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N05" ;
+    skos:prefLabel "Solar based renewable natural energy inputs"@en ;
+    rdfs:label "Solar based renewable natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N05 .
+
+
+sip-sdmx-code:energyFlows-N06 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N06" ;
+    skos:prefLabel "Biomass based renewable natural energy inputs"@en ;
+    rdfs:label "Biomass based renewable natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N06 .
+
+
+sip-sdmx-code:energyFlows-N07 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "N07" ;
+    skos:prefLabel "Other renewable natural energy inputs"@en ;
+    rdfs:label "Other renewable natural energy inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-N07 .
+
+
+sip-sdmx-code:energyFlows-P00 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P00" ;
+    skos:prefLabel "Energy products"@en ;
+    rdfs:label "Energy products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P00 .
+
+
+sip-sdmx-code:energyFlows-P08 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P08" ;
+    skos:prefLabel "Hard coal"@en ;
+    rdfs:label "Hard coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P08 .
+
+
+sip-sdmx-code:energyFlows-P09 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P09" ;
+    skos:prefLabel "Brown coal and peat"@en ;
+    rdfs:label "Brown coal and peat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P09 .
+
+
+sip-sdmx-code:energyFlows-P10 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P10" ;
+    skos:prefLabel "Derived gases (= manufactured gases excl. biogas)"@en ;
+    rdfs:label "Derived gases (= manufactured gases excl. biogas)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P10 .
+
+
+sip-sdmx-code:energyFlows-P11 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P11" ;
+    skos:prefLabel "Secondary coal products (coke, coal tar, patent fuel, BKB and peat products)"@en ;
+    rdfs:label "Secondary coal products (coke, coal tar, patent fuel, BKB and peat products)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P11 .
+
+
+sip-sdmx-code:energyFlows-P12 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P12" ;
+    skos:prefLabel "Crude oil, NGL, and other hydrocarbons (excl. bio)"@en ;
+    rdfs:label "Crude oil, NGL, and other hydrocarbons (excl. bio)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P12 .
+
+
+sip-sdmx-code:energyFlows-P13 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P13" ;
+    skos:prefLabel "Natural gas (without bio)"@en ;
+    rdfs:label "Natural gas (without bio)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P13 .
+
+
+sip-sdmx-code:energyFlows-P14 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P14" ;
+    skos:prefLabel "Motor spirit (without bio)"@en ;
+    rdfs:label "Motor spirit (without bio)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P14 .
+
+
+sip-sdmx-code:energyFlows-P15 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P15" ;
+    skos:prefLabel "Kerosenes and jet fuels (without bio)"@en ;
+    rdfs:label "Kerosenes and jet fuels (without bio)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P15 .
+
+
+sip-sdmx-code:energyFlows-P16 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P16" ;
+    skos:prefLabel "Naphtha"@en ;
+    rdfs:label "Naphtha"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P16 .
+
+
+sip-sdmx-code:energyFlows-P17 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P17" ;
+    skos:prefLabel "Transport diesel (without bio)"@en ;
+    rdfs:label "Transport diesel (without bio)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P17 .
+
+
+sip-sdmx-code:energyFlows-P18 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P18" ;
+    skos:prefLabel "Heating and other gasoil (without bio)"@en ;
+    rdfs:label "Heating and other gasoil (without bio)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P18 .
+
+
+sip-sdmx-code:energyFlows-P19 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P19" ;
+    skos:prefLabel "Residual fuel oil"@en ;
+    rdfs:label "Residual fuel oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P19 .
+
+
+sip-sdmx-code:energyFlows-P20 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P20" ;
+    skos:prefLabel "Refinery gas, ethane and LPG"@en ;
+    rdfs:label "Refinery gas, ethane and LPG"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P20 .
+
+
+sip-sdmx-code:energyFlows-P21 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P21" ;
+    skos:prefLabel "Other petroleum products incl. additives/oxygenates and refinery feedstocks"@en ;
+    rdfs:label "Other petroleum products incl. additives/oxygenates and refinery feedstocks"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P21 .
+
+
+sip-sdmx-code:energyFlows-P22 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P22" ;
+    skos:prefLabel "Nuclear fuel"@en ;
+    rdfs:label "Nuclear fuel"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P22 .
+
+
+sip-sdmx-code:energyFlows-P23 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P23" ;
+    skos:prefLabel "Wood, wood waste and other solid biomass, charcoal"@en ;
+    rdfs:label "Wood, wood waste and other solid biomass, charcoal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P23 .
+
+
+sip-sdmx-code:energyFlows-P24 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P24" ;
+    skos:prefLabel "Liquid biofuels"@en ;
+    rdfs:label "Liquid biofuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P24 .
+
+
+sip-sdmx-code:energyFlows-P25 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P25" ;
+    skos:prefLabel "Biogas"@en ;
+    rdfs:label "Biogas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P25 .
+
+
+sip-sdmx-code:energyFlows-P26 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P26" ;
+    skos:prefLabel "Electrical energy"@en ;
+    rdfs:label "Electrical energy"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P26 .
+
+
+sip-sdmx-code:energyFlows-P27 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "P27" ;
+    skos:prefLabel "Heat"@en ;
+    rdfs:label "Heat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-P27 .
+
+
+sip-sdmx-code:energyFlows-R00 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "R00" ;
+    skos:prefLabel "Energy residuals"@en ;
+    rdfs:label "Energy residuals"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-R00 .
+
+
+sip-sdmx-code:energyFlows-R28 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "R28" ;
+    skos:prefLabel "Renewable waste"@en ;
+    rdfs:label "Renewable waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-R28 .
+
+
+sip-sdmx-code:energyFlows-R29 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "R29" ;
+    skos:prefLabel "Non-renewable waste"@en ;
+    rdfs:label "Non-renewable waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-R29 .
+
+
+sip-sdmx-code:energyFlows-R30 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "R30" ;
+    skos:prefLabel "Energy losses all kinds of (during extraction, distribution, storage and transformation, and dissipative heat from end use)"@en ;
+    rdfs:label "Energy losses all kinds of (during extraction, distribution, storage and transformation, and dissipative heat from end use)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-R30 .
+
+
+sip-sdmx-code:energyFlows-R30_31 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "R30_31" ;
+    skos:prefLabel "Energy losses all kinds of (during extraction, distribution, storage and transformation, and dissipative heat from end use) and energy incorporated in products for non-energy use"@en ;
+    rdfs:label "Energy losses all kinds of (during extraction, distribution, storage and transformation, and dissipative heat from end use) and energy incorporated in products for non-energy use"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-R30_31 .
+
+
+sip-sdmx-code:energyFlows-R31 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "R31" ;
+    skos:prefLabel "Energy incorporated in products for non-energy use"@en ;
+    rdfs:label "Energy incorporated in products for non-energy use"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-R31 .
+
+
+sip-sdmx-code:energyFlows-SD_IO a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SD_IO" ;
+    skos:prefLabel "Statistical discrepancy between input and output of all energy flows"@en ;
+    rdfs:label "Statistical discrepancy between input and output of all energy flows"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SD_IO .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI1 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI1" ;
+    skos:prefLabel "Natural resource inputs"@en ;
+    rdfs:label "Natural resource inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI1 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI11 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI11" ;
+    skos:prefLabel "Extraction used in production"@en ;
+    rdfs:label "Extraction used in production"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI11 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI111 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI111" ;
+    skos:prefLabel "Mineral and energy resources"@en ;
+    rdfs:label "Mineral and energy resources"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI111 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI1111 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI1111" ;
+    skos:prefLabel "Oil resources"@en ;
+    rdfs:label "Oil resources"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI1111 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI1112 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI1112" ;
+    skos:prefLabel "Natural gas resources"@en ;
+    rdfs:label "Natural gas resources"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI1112 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI1113 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI1113" ;
+    skos:prefLabel "Coal and peat resources"@en ;
+    rdfs:label "Coal and peat resources"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI1113 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI1114 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI1114" ;
+    skos:prefLabel "Uranium and other nuclear"@en ;
+    rdfs:label "Uranium and other nuclear"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI1114 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI113 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI113" ;
+    skos:prefLabel "Natural timber resources"@en ;
+    rdfs:label "Natural timber resources"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI113 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI2 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI2" ;
+    skos:prefLabel "Inputs of energy from renewable sources"@en ;
+    rdfs:label "Inputs of energy from renewable sources"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI2 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI21 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI21" ;
+    skos:prefLabel "Solar"@en ;
+    rdfs:label "Solar"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI21 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI22 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI22" ;
+    skos:prefLabel "Hydro"@en ;
+    rdfs:label "Hydro"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI22 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI23 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI23" ;
+    skos:prefLabel "Wind"@en ;
+    rdfs:label "Wind"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI23 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI24 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI24" ;
+    skos:prefLabel "Wave and tidal"@en ;
+    rdfs:label "Wave and tidal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI24 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI25 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI25" ;
+    skos:prefLabel "Geothermal"@en ;
+    rdfs:label "Geothermal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI25 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI26 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI26" ;
+    skos:prefLabel "Other electricity and heat"@en ;
+    rdfs:label "Other electricity and heat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI26 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI3 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI3" ;
+    skos:prefLabel "Other natural inputs"@en ;
+    rdfs:label "Other natural inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI3 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI39 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI39" ;
+    skos:prefLabel "Energy inputs to cultivated biomass"@en ;
+    rdfs:label "Energy inputs to cultivated biomass"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI39 .
+
+
+sip-sdmx-code:energyFlows-SEEA_NI_TOTAL a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_NI_TOTAL" ;
+    skos:prefLabel "Total of all natural inputs"@en ;
+    rdfs:label "Total of all natural inputs"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_NI_TOTAL .
+
+
+sip-sdmx-code:energyFlows-SEEA_OR0 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_OR0" ;
+    skos:prefLabel "Other residual flows"@en ;
+    rdfs:label "Other residual flows"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_OR0 .
+
+
+sip-sdmx-code:energyFlows-SEEA_OR01 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_OR01" ;
+    skos:prefLabel "Residuals from end-use for non-energy purposes"@en ;
+    rdfs:label "Residuals from end-use for non-energy purposes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_OR01 .
+
+
+sip-sdmx-code:energyFlows-SEEA_OR02 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_OR02" ;
+    skos:prefLabel "Energy from solid waste"@en ;
+    rdfs:label "Energy from solid waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_OR02 .
+
+
+sip-sdmx-code:energyFlows-SEEA_OR021 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_OR021" ;
+    skos:prefLabel "Renewable waste"@en ;
+    rdfs:label "Renewable waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_OR021 .
+
+
+sip-sdmx-code:energyFlows-SEEA_OR022 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_OR022" ;
+    skos:prefLabel "Non-renewable waste"@en ;
+    rdfs:label "Non-renewable waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_OR022 .
+
+
+sip-sdmx-code:energyFlows-SEEA_R01 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_R01" ;
+    skos:prefLabel "Losses during extraction"@en ;
+    rdfs:label "Losses during extraction"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_R01 .
+
+
+sip-sdmx-code:energyFlows-SEEA_R02 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_R02" ;
+    skos:prefLabel "Losses during distribution"@en ;
+    rdfs:label "Losses during distribution"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_R02 .
+
+
+sip-sdmx-code:energyFlows-SEEA_R03 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_R03" ;
+    skos:prefLabel "Losses during storage"@en ;
+    rdfs:label "Losses during storage"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_R03 .
+
+
+sip-sdmx-code:energyFlows-SEEA_R04 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_R04" ;
+    skos:prefLabel "Losses during transformation"@en ;
+    rdfs:label "Losses during transformation"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_R04 .
+
+
+sip-sdmx-code:energyFlows-SEEA_R05 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_R05" ;
+    skos:prefLabel "Other energy residuals"@en ;
+    rdfs:label "Other energy residuals"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_R05 .
+
+
+sip-sdmx-code:energyFlows-SEEA_R_TOTAL a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SEEA_R_TOTAL" ;
+    skos:prefLabel "Total of all residual"@en ;
+    rdfs:label "Total of all residual"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SEEA_R_TOTAL .
+
+
+sip-sdmx-code:energyFlows-SIEC_0 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0" ;
+    skos:prefLabel "Coal"@en ;
+    rdfs:label "Coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0 .
+
+
+sip-sdmx-code:energyFlows-SIEC_01 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_01" ;
+    skos:prefLabel "Hard coal"@en ;
+    rdfs:label "Hard coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_01 .
+
+
+sip-sdmx-code:energyFlows-SIEC_011 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_011" ;
+    skos:prefLabel "Anthracite"@en ;
+    rdfs:label "Anthracite"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_011 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0110 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0110" ;
+    skos:prefLabel "Anthracite"@en ;
+    rdfs:label "Anthracite"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0110 .
+
+
+sip-sdmx-code:energyFlows-SIEC_012 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_012" ;
+    skos:prefLabel "Bituminous coal"@en ;
+    rdfs:label "Bituminous coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_012 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0121 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0121" ;
+    skos:prefLabel "Coking coal"@en ;
+    rdfs:label "Coking coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0121 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0129 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0129" ;
+    skos:prefLabel "Other bituminous coal"@en ;
+    rdfs:label "Other bituminous coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0129 .
+
+
+sip-sdmx-code:energyFlows-SIEC_02 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_02" ;
+    skos:prefLabel "Brown coal"@en ;
+    rdfs:label "Brown coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_02 .
+
+
+sip-sdmx-code:energyFlows-SIEC_021 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_021" ;
+    skos:prefLabel "Sub-bituminous coal"@en ;
+    rdfs:label "Sub-bituminous coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_021 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0210 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0210" ;
+    skos:prefLabel "Sub-bituminous coal"@en ;
+    rdfs:label "Sub-bituminous coal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0210 .
+
+
+sip-sdmx-code:energyFlows-SIEC_022 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_022" ;
+    skos:prefLabel "Lignite"@en ;
+    rdfs:label "Lignite"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_022 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0220 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0220" ;
+    skos:prefLabel "Lignite"@en ;
+    rdfs:label "Lignite"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0220 .
+
+
+sip-sdmx-code:energyFlows-SIEC_03 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_03" ;
+    skos:prefLabel "Coal products"@en ;
+    rdfs:label "Coal products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_03 .
+
+
+sip-sdmx-code:energyFlows-SIEC_031 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_031" ;
+    skos:prefLabel "Coal coke"@en ;
+    rdfs:label "Coal coke"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_031 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0311 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0311" ;
+    skos:prefLabel "Coke oven coke"@en ;
+    rdfs:label "Coke oven coke"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0311 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0312 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0312" ;
+    skos:prefLabel "Gas coke"@en ;
+    rdfs:label "Gas coke"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0312 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0313 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0313" ;
+    skos:prefLabel "Coke breeze"@en ;
+    rdfs:label "Coke breeze"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0313 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0314 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0314" ;
+    skos:prefLabel "Semi cokes"@en ;
+    rdfs:label "Semi cokes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0314 .
+
+
+sip-sdmx-code:energyFlows-SIEC_032 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_032" ;
+    skos:prefLabel "Patent fuel"@en ;
+    rdfs:label "Patent fuel"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_032 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0320 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0320" ;
+    skos:prefLabel "Patent fuel"@en ;
+    rdfs:label "Patent fuel"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0320 .
+
+
+sip-sdmx-code:energyFlows-SIEC_033 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_033" ;
+    skos:prefLabel "Brown coal briquettes (BKB)"@en ;
+    rdfs:label "Brown coal briquettes (BKB)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_033 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0330 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0330" ;
+    skos:prefLabel "Brown coal briquettes (BKB)"@en ;
+    rdfs:label "Brown coal briquettes (BKB)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0330 .
+
+
+sip-sdmx-code:energyFlows-SIEC_034 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_034" ;
+    skos:prefLabel "Coal tar"@en ;
+    rdfs:label "Coal tar"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_034 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0340 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0340" ;
+    skos:prefLabel "Coal tar"@en ;
+    rdfs:label "Coal tar"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0340 .
+
+
+sip-sdmx-code:energyFlows-SIEC_035 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_035" ;
+    skos:prefLabel "Coke oven gas"@en ;
+    rdfs:label "Coke oven gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_035 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0350 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0350" ;
+    skos:prefLabel "Coke oven gas"@en ;
+    rdfs:label "Coke oven gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0350 .
+
+
+sip-sdmx-code:energyFlows-SIEC_036 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_036" ;
+    skos:prefLabel "Gas works gas (and other manufactured gases for distribution)"@en ;
+    rdfs:label "Gas works gas (and other manufactured gases for distribution)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_036 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0360 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0360" ;
+    skos:prefLabel "Gas works gas (and other manufactured gases for distribution)"@en ;
+    rdfs:label "Gas works gas (and other manufactured gases for distribution)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0360 .
+
+
+sip-sdmx-code:energyFlows-SIEC_037 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_037" ;
+    skos:prefLabel "Recovered gases"@en ;
+    rdfs:label "Recovered gases"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_037 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0371 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0371" ;
+    skos:prefLabel "Blast furnace gas"@en ;
+    rdfs:label "Blast furnace gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0371 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0372 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0372" ;
+    skos:prefLabel "Basic oxygen steel furnace gas"@en ;
+    rdfs:label "Basic oxygen steel furnace gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0372 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0379 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0379" ;
+    skos:prefLabel "Other recovered gases"@en ;
+    rdfs:label "Other recovered gases"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0379 .
+
+
+sip-sdmx-code:energyFlows-SIEC_039 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_039" ;
+    skos:prefLabel "Other coal products"@en ;
+    rdfs:label "Other coal products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_039 .
+
+
+sip-sdmx-code:energyFlows-SIEC_0390 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_0390" ;
+    skos:prefLabel "Other coal products"@en ;
+    rdfs:label "Other coal products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_0390 .
+
+
+sip-sdmx-code:energyFlows-SIEC_1 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_1" ;
+    skos:prefLabel "Peat and peat products"@en ;
+    rdfs:label "Peat and peat products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_1 .
+
+
+sip-sdmx-code:energyFlows-SIEC_11 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_11" ;
+    skos:prefLabel "Peat"@en ;
+    rdfs:label "Peat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_11 .
+
+
+sip-sdmx-code:energyFlows-SIEC_111 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_111" ;
+    skos:prefLabel "Sod peat"@en ;
+    rdfs:label "Sod peat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_111 .
+
+
+sip-sdmx-code:energyFlows-SIEC_1110 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_1110" ;
+    skos:prefLabel "Sod peat"@en ;
+    rdfs:label "Sod peat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_1110 .
+
+
+sip-sdmx-code:energyFlows-SIEC_112 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_112" ;
+    skos:prefLabel "Milled peat"@en ;
+    rdfs:label "Milled peat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_112 .
+
+
+sip-sdmx-code:energyFlows-SIEC_1120 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_1120" ;
+    skos:prefLabel "Milled peat"@en ;
+    rdfs:label "Milled peat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_1120 .
+
+
+sip-sdmx-code:energyFlows-SIEC_12 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_12" ;
+    skos:prefLabel "Peat products"@en ;
+    rdfs:label "Peat products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_12 .
+
+
+sip-sdmx-code:energyFlows-SIEC_121 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_121" ;
+    skos:prefLabel "Peat briquettes"@en ;
+    rdfs:label "Peat briquettes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_121 .
+
+
+sip-sdmx-code:energyFlows-SIEC_1210 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_1210" ;
+    skos:prefLabel "Peat briquettes"@en ;
+    rdfs:label "Peat briquettes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_1210 .
+
+
+sip-sdmx-code:energyFlows-SIEC_129 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_129" ;
+    skos:prefLabel "Other peat products"@en ;
+    rdfs:label "Other peat products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_129 .
+
+
+sip-sdmx-code:energyFlows-SIEC_1290 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_1290" ;
+    skos:prefLabel "Other peat products"@en ;
+    rdfs:label "Other peat products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_1290 .
+
+
+sip-sdmx-code:energyFlows-SIEC_2 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_2" ;
+    skos:prefLabel "Oil shale/oil sands"@en ;
+    rdfs:label "Oil shale/oil sands"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_2 .
+
+
+sip-sdmx-code:energyFlows-SIEC_20 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_20" ;
+    skos:prefLabel "Oil shale/oil sands"@en ;
+    rdfs:label "Oil shale/oil sands"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_20 .
+
+
+sip-sdmx-code:energyFlows-SIEC_200 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_200" ;
+    skos:prefLabel "Oil shale/oil sands"@en ;
+    rdfs:label "Oil shale/oil sands"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_200 .
+
+
+sip-sdmx-code:energyFlows-SIEC_2000 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_2000" ;
+    skos:prefLabel "Oil shale/oil sands"@en ;
+    rdfs:label "Oil shale/oil sands"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_2000 .
+
+
+sip-sdmx-code:energyFlows-SIEC_3 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_3" ;
+    skos:prefLabel "Natural gas"@en ;
+    rdfs:label "Natural gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_3 .
+
+
+sip-sdmx-code:energyFlows-SIEC_30 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_30" ;
+    skos:prefLabel "Natural gas"@en ;
+    rdfs:label "Natural gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_30 .
+
+
+sip-sdmx-code:energyFlows-SIEC_300 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_300" ;
+    skos:prefLabel "Natural gas"@en ;
+    rdfs:label "Natural gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_300 .
+
+
+sip-sdmx-code:energyFlows-SIEC_3000 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_3000" ;
+    skos:prefLabel "Natural gas"@en ;
+    rdfs:label "Natural gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_3000 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4" ;
+    skos:prefLabel "Oil"@en ;
+    rdfs:label "Oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4 .
+
+
+sip-sdmx-code:energyFlows-SIEC_41 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_41" ;
+    skos:prefLabel "Conventional crude oil"@en ;
+    rdfs:label "Conventional crude oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_41 .
+
+
+sip-sdmx-code:energyFlows-SIEC_410 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_410" ;
+    skos:prefLabel "Conventional crude oil"@en ;
+    rdfs:label "Conventional crude oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_410 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4100 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4100" ;
+    skos:prefLabel "Conventional crude oil"@en ;
+    rdfs:label "Conventional crude oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4100 .
+
+
+sip-sdmx-code:energyFlows-SIEC_42 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_42" ;
+    skos:prefLabel "Natural gas liquids (NGL)"@en ;
+    rdfs:label "Natural gas liquids (NGL)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_42 .
+
+
+sip-sdmx-code:energyFlows-SIEC_420 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_420" ;
+    skos:prefLabel "Natural gas liquids (NGL)"@en ;
+    rdfs:label "Natural gas liquids (NGL)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_420 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4200 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4200" ;
+    skos:prefLabel "Natural gas liquids (NGL)"@en ;
+    rdfs:label "Natural gas liquids (NGL)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4200 .
+
+
+sip-sdmx-code:energyFlows-SIEC_43 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_43" ;
+    skos:prefLabel "Refinery feedstocks"@en ;
+    rdfs:label "Refinery feedstocks"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_43 .
+
+
+sip-sdmx-code:energyFlows-SIEC_430 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_430" ;
+    skos:prefLabel "Refinery feedstocks"@en ;
+    rdfs:label "Refinery feedstocks"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_430 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4300 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4300" ;
+    skos:prefLabel "Refinery feedstocks"@en ;
+    rdfs:label "Refinery feedstocks"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4300 .
+
+
+sip-sdmx-code:energyFlows-SIEC_44 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_44" ;
+    skos:prefLabel "Additives and oxygenates"@en ;
+    rdfs:label "Additives and oxygenates"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_44 .
+
+
+sip-sdmx-code:energyFlows-SIEC_440 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_440" ;
+    skos:prefLabel "Additives and oxygenates"@en ;
+    rdfs:label "Additives and oxygenates"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_440 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4400 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4400" ;
+    skos:prefLabel "Additives and oxygenates"@en ;
+    rdfs:label "Additives and oxygenates"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4400 .
+
+
+sip-sdmx-code:energyFlows-SIEC_45 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_45" ;
+    skos:prefLabel "Other hydrocarbons"@en ;
+    rdfs:label "Other hydrocarbons"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_45 .
+
+
+sip-sdmx-code:energyFlows-SIEC_450 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_450" ;
+    skos:prefLabel "Other hydrocarbons"@en ;
+    rdfs:label "Other hydrocarbons"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_450 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4500 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4500" ;
+    skos:prefLabel "Other hydrocarbons"@en ;
+    rdfs:label "Other hydrocarbons"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4500 .
+
+
+sip-sdmx-code:energyFlows-SIEC_46 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_46" ;
+    skos:prefLabel "Oil products"@en ;
+    rdfs:label "Oil products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_46 .
+
+
+sip-sdmx-code:energyFlows-SIEC_461 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_461" ;
+    skos:prefLabel "Refinery gas"@en ;
+    rdfs:label "Refinery gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_461 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4610 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4610" ;
+    skos:prefLabel "Refinery gas"@en ;
+    rdfs:label "Refinery gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4610 .
+
+
+sip-sdmx-code:energyFlows-SIEC_462 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_462" ;
+    skos:prefLabel "Ethane"@en ;
+    rdfs:label "Ethane"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_462 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4620 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4620" ;
+    skos:prefLabel "Ethane"@en ;
+    rdfs:label "Ethane"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4620 .
+
+
+sip-sdmx-code:energyFlows-SIEC_463 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_463" ;
+    skos:prefLabel "Liquefied petroleum gases (LPG)"@en ;
+    rdfs:label "Liquefied petroleum gases (LPG)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_463 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4630 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4630" ;
+    skos:prefLabel "Liquefied petroleum gases (LPG)"@en ;
+    rdfs:label "Liquefied petroleum gases (LPG)"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4630 .
+
+
+sip-sdmx-code:energyFlows-SIEC_464 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_464" ;
+    skos:prefLabel "Naphtha"@en ;
+    rdfs:label "Naphtha"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_464 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4640 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4640" ;
+    skos:prefLabel "Naphtha"@en ;
+    rdfs:label "Naphtha"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4640 .
+
+
+sip-sdmx-code:energyFlows-SIEC_465 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_465" ;
+    skos:prefLabel "Gasolines"@en ;
+    rdfs:label "Gasolines"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_465 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4651 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4651" ;
+    skos:prefLabel "Aviation gasoline"@en ;
+    rdfs:label "Aviation gasoline"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4651 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4652 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4652" ;
+    skos:prefLabel "Motor gasoline"@en ;
+    rdfs:label "Motor gasoline"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4652 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4653 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4653" ;
+    skos:prefLabel "Gasoline-type jet fuel"@en ;
+    rdfs:label "Gasoline-type jet fuel"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4653 .
+
+
+sip-sdmx-code:energyFlows-SIEC_466 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_466" ;
+    skos:prefLabel "Kerosenes"@en ;
+    rdfs:label "Kerosenes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_466 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4661 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4661" ;
+    skos:prefLabel "Kerosene-type jet fuel"@en ;
+    rdfs:label "Kerosene-type jet fuel"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4661 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4669 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4669" ;
+    skos:prefLabel "Other kerosene"@en ;
+    rdfs:label "Other kerosene"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4669 .
+
+
+sip-sdmx-code:energyFlows-SIEC_467 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_467" ;
+    skos:prefLabel "Gas oil/diesel oil and heavy gas oil"@en ;
+    rdfs:label "Gas oil/diesel oil and heavy gas oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_467 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4671 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4671" ;
+    skos:prefLabel "Gas oil/diesel oil"@en ;
+    rdfs:label "Gas oil/diesel oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4671 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4672 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4672" ;
+    skos:prefLabel "Heavy gas oil"@en ;
+    rdfs:label "Heavy gas oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4672 .
+
+
+sip-sdmx-code:energyFlows-SIEC_468 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_468" ;
+    skos:prefLabel "Fuel oil"@en ;
+    rdfs:label "Fuel oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_468 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4680 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4680" ;
+    skos:prefLabel "Fuel oil"@en ;
+    rdfs:label "Fuel oil"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4680 .
+
+
+sip-sdmx-code:energyFlows-SIEC_469 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_469" ;
+    skos:prefLabel "Other oil products"@en ;
+    rdfs:label "Other oil products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_469 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4691 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4691" ;
+    skos:prefLabel "White spirit and special boiling pointindustrial spirits"@en ;
+    rdfs:label "White spirit and special boiling pointindustrial spirits"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4691 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4692 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4692" ;
+    skos:prefLabel "Lubricants"@en ;
+    rdfs:label "Lubricants"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4692 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4693 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4693" ;
+    skos:prefLabel "Paraffin waxes"@en ;
+    rdfs:label "Paraffin waxes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4693 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4694 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4694" ;
+    skos:prefLabel "Petroleum coke"@en ;
+    rdfs:label "Petroleum coke"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4694 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4695 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4695" ;
+    skos:prefLabel "Bitumen"@en ;
+    rdfs:label "Bitumen"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4695 .
+
+
+sip-sdmx-code:energyFlows-SIEC_4699 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_4699" ;
+    skos:prefLabel "Other oil products n.e.c."@en ;
+    rdfs:label "Other oil products n.e.c."@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_4699 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5" ;
+    skos:prefLabel "Biofuels"@en ;
+    rdfs:label "Biofuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5 .
+
+
+sip-sdmx-code:energyFlows-SIEC_51 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_51" ;
+    skos:prefLabel "Solid biofuels"@en ;
+    rdfs:label "Solid biofuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_51 .
+
+
+sip-sdmx-code:energyFlows-SIEC_511 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_511" ;
+    skos:prefLabel "Fuelwood, wood residues and by-products"@en ;
+    rdfs:label "Fuelwood, wood residues and by-products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_511 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5111 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5111" ;
+    skos:prefLabel "Wood pellets"@en ;
+    rdfs:label "Wood pellets"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5111 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5119 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5119" ;
+    skos:prefLabel "Other fuelwood, wood residues and by-products"@en ;
+    rdfs:label "Other fuelwood, wood residues and by-products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5119 .
+
+
+sip-sdmx-code:energyFlows-SIEC_512 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_512" ;
+    skos:prefLabel "Bagasse"@en ;
+    rdfs:label "Bagasse"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_512 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5120 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5120" ;
+    skos:prefLabel "Bagasse"@en ;
+    rdfs:label "Bagasse"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5120 .
+
+
+sip-sdmx-code:energyFlows-SIEC_513 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_513" ;
+    skos:prefLabel "Animal waste"@en ;
+    rdfs:label "Animal waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_513 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5130 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5130" ;
+    skos:prefLabel "Animal waste"@en ;
+    rdfs:label "Animal waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5130 .
+
+
+sip-sdmx-code:energyFlows-SIEC_514 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_514" ;
+    skos:prefLabel "Black liquor"@en ;
+    rdfs:label "Black liquor"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_514 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5140 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5140" ;
+    skos:prefLabel "Black liquor"@en ;
+    rdfs:label "Black liquor"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5140 .
+
+
+sip-sdmx-code:energyFlows-SIEC_515 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_515" ;
+    skos:prefLabel "Other vegetal material and residues"@en ;
+    rdfs:label "Other vegetal material and residues"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_515 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5150 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5150" ;
+    skos:prefLabel "Other vegetal material and residues"@en ;
+    rdfs:label "Other vegetal material and residues"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5150 .
+
+
+sip-sdmx-code:energyFlows-SIEC_516 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_516" ;
+    skos:prefLabel "Charcoal"@en ;
+    rdfs:label "Charcoal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_516 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5160 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5160" ;
+    skos:prefLabel "Charcoal"@en ;
+    rdfs:label "Charcoal"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5160 .
+
+
+sip-sdmx-code:energyFlows-SIEC_52 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_52" ;
+    skos:prefLabel "Liquid biofuels"@en ;
+    rdfs:label "Liquid biofuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_52 .
+
+
+sip-sdmx-code:energyFlows-SIEC_521 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_521" ;
+    skos:prefLabel "Biogasoline"@en ;
+    rdfs:label "Biogasoline"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_521 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5210 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5210" ;
+    skos:prefLabel "Biogasoline"@en ;
+    rdfs:label "Biogasoline"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5210 .
+
+
+sip-sdmx-code:energyFlows-SIEC_522 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_522" ;
+    skos:prefLabel "Biodiesels"@en ;
+    rdfs:label "Biodiesels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_522 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5220 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5220" ;
+    skos:prefLabel "Biodiesels"@en ;
+    rdfs:label "Biodiesels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5220 .
+
+
+sip-sdmx-code:energyFlows-SIEC_523 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_523" ;
+    skos:prefLabel "Bio jet kerosene"@en ;
+    rdfs:label "Bio jet kerosene"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_523 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5230 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5230" ;
+    skos:prefLabel "Bio jet kerosene"@en ;
+    rdfs:label "Bio jet kerosene"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5230 .
+
+
+sip-sdmx-code:energyFlows-SIEC_529 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_529" ;
+    skos:prefLabel "Other liquid biofuels"@en ;
+    rdfs:label "Other liquid biofuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_529 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5290 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5290" ;
+    skos:prefLabel "Other liquid biofuels"@en ;
+    rdfs:label "Other liquid biofuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5290 .
+
+
+sip-sdmx-code:energyFlows-SIEC_53 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_53" ;
+    skos:prefLabel "Biogases"@en ;
+    rdfs:label "Biogases"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_53 .
+
+
+sip-sdmx-code:energyFlows-SIEC_531 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_531" ;
+    skos:prefLabel "Biogases from anaerobic fermentation"@en ;
+    rdfs:label "Biogases from anaerobic fermentation"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_531 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5311 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5311" ;
+    skos:prefLabel "Landfill gas"@en ;
+    rdfs:label "Landfill gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5311 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5312 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5312" ;
+    skos:prefLabel "Sewage sludge gas"@en ;
+    rdfs:label "Sewage sludge gas"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5312 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5319 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5319" ;
+    skos:prefLabel "Other biogases from anaerobic fermentation"@en ;
+    rdfs:label "Other biogases from anaerobic fermentation"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5319 .
+
+
+sip-sdmx-code:energyFlows-SIEC_532 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_532" ;
+    skos:prefLabel "Biogases from thermal processes"@en ;
+    rdfs:label "Biogases from thermal processes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_532 .
+
+
+sip-sdmx-code:energyFlows-SIEC_5320 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_5320" ;
+    skos:prefLabel "Biogases from thermal processes"@en ;
+    rdfs:label "Biogases from thermal processes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_5320 .
+
+
+sip-sdmx-code:energyFlows-SIEC_6 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_6" ;
+    skos:prefLabel "Waste used for energy purposes"@en ;
+    rdfs:label "Waste used for energy purposes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_6 .
+
+
+sip-sdmx-code:energyFlows-SIEC_61 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_61" ;
+    skos:prefLabel "Industrial waste"@en ;
+    rdfs:label "Industrial waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_61 .
+
+
+sip-sdmx-code:energyFlows-SIEC_610 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_610" ;
+    skos:prefLabel "Industrial waste"@en ;
+    rdfs:label "Industrial waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_610 .
+
+
+sip-sdmx-code:energyFlows-SIEC_6100 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_6100" ;
+    skos:prefLabel "Industrial waste"@en ;
+    rdfs:label "Industrial waste"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_6100 .
+
+
+sip-sdmx-code:energyFlows-SIEC_62 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_62" ;
+    skos:prefLabel "Municipal waste used for energy purposes"@en ;
+    rdfs:label "Municipal waste used for energy purposes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_62 .
+
+
+sip-sdmx-code:energyFlows-SIEC_620 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_620" ;
+    skos:prefLabel "Municipal waste used for energy purposes"@en ;
+    rdfs:label "Municipal waste used for energy purposes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_620 .
+
+
+sip-sdmx-code:energyFlows-SIEC_6200 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_6200" ;
+    skos:prefLabel "Municipal waste used for energy purposes"@en ;
+    rdfs:label "Municipal waste used for energy purposes"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_6200 .
+
+
+sip-sdmx-code:energyFlows-SIEC_7 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_7" ;
+    skos:prefLabel "Electricity"@en ;
+    rdfs:label "Electricity"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_7 .
+
+
+sip-sdmx-code:energyFlows-SIEC_70 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_70" ;
+    skos:prefLabel "Electricity"@en ;
+    rdfs:label "Electricity"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_70 .
+
+
+sip-sdmx-code:energyFlows-SIEC_700 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_700" ;
+    skos:prefLabel "Electricity"@en ;
+    rdfs:label "Electricity"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_700 .
+
+
+sip-sdmx-code:energyFlows-SIEC_7000 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_7000" ;
+    skos:prefLabel "Electricity"@en ;
+    rdfs:label "Electricity"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_7000 .
+
+
+sip-sdmx-code:energyFlows-SIEC_8 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_8" ;
+    skos:prefLabel "Heat"@en ;
+    rdfs:label "Heat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_8 .
+
+
+sip-sdmx-code:energyFlows-SIEC_80 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_80" ;
+    skos:prefLabel "Heat"@en ;
+    rdfs:label "Heat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_80 .
+
+
+sip-sdmx-code:energyFlows-SIEC_800 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_800" ;
+    skos:prefLabel "Heat"@en ;
+    rdfs:label "Heat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_800 .
+
+
+sip-sdmx-code:energyFlows-SIEC_8000 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_8000" ;
+    skos:prefLabel "Heat"@en ;
+    rdfs:label "Heat"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_8000 .
+
+
+sip-sdmx-code:energyFlows-SIEC_9 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_9" ;
+    skos:prefLabel "Nuclear fuels and other fuels n.e.c."@en ;
+    rdfs:label "Nuclear fuels and other fuels n.e.c."@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_9 .
+
+
+sip-sdmx-code:energyFlows-SIEC_91 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_91" ;
+    skos:prefLabel "Uranium and plutonium"@en ;
+    rdfs:label "Uranium and plutonium"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_91 .
+
+
+sip-sdmx-code:energyFlows-SIEC_910 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_910" ;
+    skos:prefLabel "Uranium and plutonium"@en ;
+    rdfs:label "Uranium and plutonium"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_910 .
+
+
+sip-sdmx-code:energyFlows-SIEC_9101 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_9101" ;
+    skos:prefLabel "Uranium ores"@en ;
+    rdfs:label "Uranium ores"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_9101 .
+
+
+sip-sdmx-code:energyFlows-SIEC_9109 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_9109" ;
+    skos:prefLabel "Other uranium and plutonium"@en ;
+    rdfs:label "Other uranium and plutonium"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_9109 .
+
+
+sip-sdmx-code:energyFlows-SIEC_92 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_92" ;
+    skos:prefLabel "Other nuclear fuels"@en ;
+    rdfs:label "Other nuclear fuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_92 .
+
+
+sip-sdmx-code:energyFlows-SIEC_920 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_920" ;
+    skos:prefLabel "Other nuclear fuels"@en ;
+    rdfs:label "Other nuclear fuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_920 .
+
+
+sip-sdmx-code:energyFlows-SIEC_9200 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_9200" ;
+    skos:prefLabel "Other nuclear fuels"@en ;
+    rdfs:label "Other nuclear fuels"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_9200 .
+
+
+sip-sdmx-code:energyFlows-SIEC_99 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_99" ;
+    skos:prefLabel "Other fuels n.e.c."@en ;
+    rdfs:label "Other fuels n.e.c."@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_99 .
+
+
+sip-sdmx-code:energyFlows-SIEC_990 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_990" ;
+    skos:prefLabel "Other fuels n.e.c."@en ;
+    rdfs:label "Other fuels n.e.c."@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_990 .
+
+
+sip-sdmx-code:energyFlows-SIEC_9900 a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_9900" ;
+    skos:prefLabel "Other fuels n.e.c."@en ;
+    rdfs:label "Other fuels n.e.c."@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_9900 .
+
+
+sip-sdmx-code:energyFlows-SIEC_TOTAL a skos:Concept, sip-sdmx-code:EnergyFlows;
+    skos:topConceptOf sip-sdmx-code:energyFlows ;
+    skos:inScheme sip-sdmx-code:energyFlows ;
+    skos:notation "SIEC_TOTAL" ;
+    skos:prefLabel "Total all energy products"@en ;
+    rdfs:label "Total all energy products"@en .
+
+sip-sdmx-code:energyFlows skos:hasTopConcept sip-sdmx-code:energyFlows-SIEC_TOTAL .
+

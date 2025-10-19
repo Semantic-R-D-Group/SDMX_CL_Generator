@@ -1,0 +1,1244 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_NATABLE Scheme Definition
+#####################################################
+
+sip-sdmx-code:naTable a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "NA Table IDs - codelist scheme"@en ;
+    rdfs:label "NA Table IDs - codelist scheme"@en ;
+    skos:notation "CL_NATABLE" ;
+    skos:definition "A reference naTable codelist based on ESTAT:CL_NA_TABLEID(1.10)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_TABLEID/1.10> ;
+    rdfs:seeAlso sip-sdmx-code:NaTable .
+
+sip-sdmx-code:NaTable a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "NA Table IDs - codelist class"@en ;
+    rdfs:label "NA Table IDs - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable .
+
+
+########################################
+# CL_NATABLE Codes
+########################################
+    
+sip-sdmx-code:naTable-ECB_GFS_1A a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "ECB_GFS_1A" ;
+    skos:prefLabel "ECB GFS Guideline, Table 1A: Government revenue and expenditure"@en ;
+    rdfs:label "ECB GFS Guideline, Table 1A: Government revenue and expenditure"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-ECB_GFS_1A .
+
+
+sip-sdmx-code:naTable-ECB_GFS_1B a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "ECB_GFS_1B" ;
+    skos:prefLabel "ECB GFS Guideline, Table 1B: EU budget transactions"@en ;
+    rdfs:label "ECB GFS Guideline, Table 1B: EU budget transactions"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-ECB_GFS_1B .
+
+
+sip-sdmx-code:naTable-ECB_GFS_1C a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "ECB_GFS_1C" ;
+    skos:prefLabel "ECB GFS Guideline, Table 1C: Government final consumption expenditure and other non-financial transactions"@en ;
+    rdfs:label "ECB GFS Guideline, Table 1C: Government final consumption expenditure and other non-financial transactions"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-ECB_GFS_1C .
+
+
+sip-sdmx-code:naTable-ECB_GFS_2A a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "ECB_GFS_2A" ;
+    skos:prefLabel "ECB GFS Guideline, Table 2A: Government deficit and its financing"@en ;
+    rdfs:label "ECB GFS Guideline, Table 2A: Government deficit and its financing"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-ECB_GFS_2A .
+
+
+sip-sdmx-code:naTable-ECB_GFS_2B a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "ECB_GFS_2B" ;
+    skos:prefLabel "ECB GFS Guideline, Table 2B: Transactions in Maastricht debt - consolidation"@en ;
+    rdfs:label "ECB GFS Guideline, Table 2B: Transactions in Maastricht debt - consolidation"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-ECB_GFS_2B .
+
+
+sip-sdmx-code:naTable-ECB_GFS_3A a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "ECB_GFS_3A" ;
+    skos:prefLabel "ECB GFS Guideline, Table 3A: Government gross debt"@en ;
+    rdfs:label "ECB GFS Guideline, Table 3A: Government gross debt"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-ECB_GFS_3A .
+
+
+sip-sdmx-code:naTable-ECB_GFS_3B a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "ECB_GFS_3B" ;
+    skos:prefLabel "ECB GFS Guideline, Table 3B: Government gross debt - consolidating elements"@en ;
+    rdfs:label "ECB GFS Guideline, Table 3B: Government gross debt - consolidating elements"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-ECB_GFS_3B .
+
+
+sip-sdmx-code:naTable-EDP1 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "EDP1" ;
+    skos:prefLabel "EDP Table 1 - Reporting of government deficit/surplus and debt levels"@en ;
+    rdfs:label "EDP Table 1 - Reporting of government deficit/surplus and debt levels"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-EDP1 .
+
+
+sip-sdmx-code:naTable-EDP2 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "EDP2" ;
+    skos:prefLabel "EDP Table 2 - Transition between the public accounts budget balance and the central government deficit/surplus"@en ;
+    rdfs:label "EDP Table 2 - Transition between the public accounts budget balance and the central government deficit/surplus"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-EDP2 .
+
+
+sip-sdmx-code:naTable-EDP3 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "EDP3" ;
+    skos:prefLabel "EDP Table 3 - Contributions of the deficit/surplus and the other relevant factors to the variation in the debt level and the consolidation of debt"@en ;
+    rdfs:label "EDP Table 3 - Contributions of the deficit/surplus and the other relevant factors to the variation in the debt level and the consolidation of debt"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-EDP3 .
+
+
+sip-sdmx-code:naTable-EDP4 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "EDP4" ;
+    skos:prefLabel "EDP Table 4 - Other data in accordance with the statements contained in the Council minutes of 22/11/1993"@en ;
+    rdfs:label "EDP Table 4 - Other data in accordance with the statements contained in the Council minutes of 22/11/1993"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-EDP4 .
+
+
+sip-sdmx-code:naTable-EDPQ a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "EDPQ" ;
+    skos:prefLabel "Questionnaire related to the EDP notification tables"@en ;
+    rdfs:label "Questionnaire related to the EDP notification tables"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-EDPQ .
+
+
+sip-sdmx-code:naTable-EDP_FC a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "EDP_FC" ;
+    skos:prefLabel "Supplementary tables for the financial crisis"@en ;
+    rdfs:label "Supplementary tables for the financial crisis"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-EDP_FC .
+
+
+sip-sdmx-code:naTable-GFS_ALL a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "GFS_ALL" ;
+    skos:prefLabel "ECB GFS Guideline, all GFS tables"@en ;
+    rdfs:label "ECB GFS Guideline, all GFS tables"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-GFS_ALL .
+
+
+sip-sdmx-code:naTable-IMF_GFS_BS a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_BS" ;
+    skos:prefLabel "IMF IFS GFS, Balance sheet"@en ;
+    rdfs:label "IMF IFS GFS, Balance sheet"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_BS .
+
+
+sip-sdmx-code:naTable-IMF_GFS_S2 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_S2" ;
+    skos:prefLabel "IMF GFS Yearbook, Statement II: Statement of sources and uses of cash"@en ;
+    rdfs:label "IMF GFS Yearbook, Statement II: Statement of sources and uses of cash"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_S2 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_SO a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_SO" ;
+    skos:prefLabel "IMF IFS GFS, Statement of operations"@en ;
+    rdfs:label "IMF IFS GFS, Statement of operations"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_SO .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T1 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T1" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 1 - Revenue"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 1 - Revenue"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T1 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T2 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T2" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 2 - Expense"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 2 - Expense"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T2 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T3 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T3" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 3 - Transactions in assets and liabilities"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 3 - Transactions in assets and liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T3 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T4 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T4" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 4 - Revaluations in assets and liabilities"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 4 - Revaluations in assets and liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T4 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T5 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T5" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 5 - Other volume changes in assets and liabilities"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 5 - Other volume changes in assets and liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T5 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T6 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T6" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 6 - Stock Positions in assets and liabilities"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 6 - Stock Positions in assets and liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T6 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T6A a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T6A" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 6A - Debt Liabilities at Nominal/Market Value"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 6A - Debt Liabilities at Nominal/Market Value"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T6A .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T6B a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T6B" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 6B - Debt Liabilities at Face Value"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 6B - Debt Liabilities at Face Value"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T6B .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T7 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T7" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 7 - Expenditure by Functions of Government (COFOG)"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 7 - Expenditure by Functions of Government (COFOG)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T7 .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T8A a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T8A" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 8A - Transactions in financial assets and liabilities by counterpart sector"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 8A - Transactions in financial assets and liabilities by counterpart sector"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T8A .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T8B a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T8B" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 8B - Stock positions in financial assets and liabilities by counterpart sector"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 8B - Stock positions in financial assets and liabilities by counterpart sector"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T8B .
+
+
+sip-sdmx-code:naTable-IMF_GFS_T9 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "IMF_GFS_T9" ;
+    skos:prefLabel "IMF GFS Yearbook, Table 9 - Other economic flows in assets and liabilities"@en ;
+    rdfs:label "IMF GFS Yearbook, Table 9 - Other economic flows in assets and liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-IMF_GFS_T9 .
+
+
+sip-sdmx-code:naTable-MUFA1 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA1" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 1: Non-consolidated financial assets"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 1: Non-consolidated financial assets"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA1 .
+
+
+sip-sdmx-code:naTable-MUFA10 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA10" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 1: Consolidated financial assets"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 1: Consolidated financial assets"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA10 .
+
+
+sip-sdmx-code:naTable-MUFA11 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA11" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 2: Consolidated financial liabilities"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 2: Consolidated financial liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA11 .
+
+
+sip-sdmx-code:naTable-MUFA2 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA2" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 2: Non-consolidated financial liabilities"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 2: Non-consolidated financial liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA2 .
+
+
+sip-sdmx-code:naTable-MUFA3 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA3" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 3: Deposits"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 3: Deposits"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA3 .
+
+
+sip-sdmx-code:naTable-MUFA4 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA4" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 4: Short-term loans"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 4: Short-term loans"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA4 .
+
+
+sip-sdmx-code:naTable-MUFA5 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA5" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 5: Long-term loans"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 5: Long-term loans"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA5 .
+
+
+sip-sdmx-code:naTable-MUFA6 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA6" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 6: Shot-term debt securities"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 6: Shot-term debt securities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA6 .
+
+
+sip-sdmx-code:naTable-MUFA7 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA7" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 7: Long-term debt securities"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 7: Long-term debt securities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA7 .
+
+
+sip-sdmx-code:naTable-MUFA8 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA8" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 8: Listed shares"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 8: Listed shares"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA8 .
+
+
+sip-sdmx-code:naTable-MUFA9 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA9" ;
+    skos:prefLabel "ECB MUFA Guideline, Table 9: Investment fund shares"@en ;
+    rdfs:label "ECB MUFA Guideline, Table 9: Investment fund shares"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA9 .
+
+
+sip-sdmx-code:naTable-MUFA_ALL a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "MUFA_ALL" ;
+    skos:prefLabel "ECB MUFA Guideline, all MUFA tables"@en ;
+    rdfs:label "ECB MUFA Guideline, all MUFA tables"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-MUFA_ALL .
+
+
+sip-sdmx-code:naTable-PSD a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "PSD" ;
+    skos:prefLabel "Table PSD - Public sector debt"@en ;
+    rdfs:label "Table PSD - Public sector debt"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-PSD .
+
+
+sip-sdmx-code:naTable-R15_FIN_SF a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "R15_FIN_SF" ;
+    skos:prefLabel "G-20 recommendation 15 framework - financial stocks and flows"@en ;
+    rdfs:label "G-20 recommendation 15 framework - financial stocks and flows"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-R15_FIN_SF .
+
+
+sip-sdmx-code:naTable-R15_NONFIN_S a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "R15_NONFIN_S" ;
+    skos:prefLabel "G-20 recommendation 15 framework - stocks of non-financial assets"@en ;
+    rdfs:label "G-20 recommendation 15 framework - stocks of non-financial assets"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-R15_NONFIN_S .
+
+
+sip-sdmx-code:naTable-R15_NONFIN_T a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "R15_NONFIN_T" ;
+    skos:prefLabel "G-20 recommendation 15 framework - non-financial transactions"@en ;
+    rdfs:label "G-20 recommendation 15 framework - non-financial transactions"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-R15_NONFIN_T .
+
+
+sip-sdmx-code:naTable-T0101 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0101" ;
+    skos:prefLabel "Table 0101 - Gross value added at basic prices and gross domestic product at market prices"@en ;
+    rdfs:label "Table 0101 - Gross value added at basic prices and gross domestic product at market prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0101 .
+
+
+sip-sdmx-code:naTable-T0101T0103 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0101T0103" ;
+    skos:prefLabel "Tables 0101, 0102 and 0103"@en ;
+    rdfs:label "Tables 0101, 0102 and 0103"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0101T0103 .
+
+
+sip-sdmx-code:naTable-T0102 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0102" ;
+    skos:prefLabel "Table 0102 - GDP identity from the expenditure side"@en ;
+    rdfs:label "Table 0102 - GDP identity from the expenditure side"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0102 .
+
+
+sip-sdmx-code:naTable-T0103 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0103" ;
+    skos:prefLabel "Table 0103 - GDP identity from the income side"@en ;
+    rdfs:label "Table 0103 - GDP identity from the income side"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0103 .
+
+
+sip-sdmx-code:naTable-T0107 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0107" ;
+    skos:prefLabel "Table 0107 - Disposable income, saving, net lending / borrowing"@en ;
+    rdfs:label "Table 0107 - Disposable income, saving, net lending / borrowing"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0107 .
+
+
+sip-sdmx-code:naTable-T0110 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0110" ;
+    skos:prefLabel "Table 0110 - Population and employment"@en ;
+    rdfs:label "Table 0110 - Population and employment"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0110 .
+
+
+sip-sdmx-code:naTable-T0111 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0111" ;
+    skos:prefLabel "Table 0111 - Employment by industry"@en ;
+    rdfs:label "Table 0111 - Employment by industry"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0111 .
+
+
+sip-sdmx-code:naTable-T0117 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0117" ;
+    skos:prefLabel "Table 0117 - Final consumption expenditure of households by durability"@en ;
+    rdfs:label "Table 0117 - Final consumption expenditure of households by durability"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0117 .
+
+
+sip-sdmx-code:naTable-T0117_0501_0502 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0117_0501_0502" ;
+    skos:prefLabel "Tables 0117, 0501 and 0502"@en ;
+    rdfs:label "Tables 0117, 0501 and 0502"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0117_0501_0502 .
+
+
+sip-sdmx-code:naTable-T0119 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0119" ;
+    skos:prefLabel "Table 0119 - Simplified non-financial accounts by institutional sector"@en ;
+    rdfs:label "Table 0119 - Simplified non-financial accounts by institutional sector"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0119 .
+
+
+sip-sdmx-code:naTable-T0120 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0120" ;
+    skos:prefLabel "Table 0120 - Exports of goods (fob) and services by Member States of the EU / third countries."@en ;
+    rdfs:label "Table 0120 - Exports of goods (fob) and services by Member States of the EU / third countries."@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0120 .
+
+
+sip-sdmx-code:naTable-T0121 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0121" ;
+    skos:prefLabel "Table 0121 - Imports of goods (fob) and services by Member States of the EU/third countries"@en ;
+    rdfs:label "Table 0121 - Imports of goods (fob) and services by Member States of the EU/third countries"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0121 .
+
+
+sip-sdmx-code:naTable-T0199 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0199" ;
+    skos:prefLabel "Table 01xx - Source from various table 01 sub-tables"@en ;
+    rdfs:label "Table 01xx - Source from various table 01 sub-tables"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0199 .
+
+
+sip-sdmx-code:naTable-T01EMP a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T01EMP" ;
+    skos:prefLabel "Table 01EMP - Employment and breakdown by industry and population"@en ;
+    rdfs:label "Table 01EMP - Employment and breakdown by industry and population"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T01EMP .
+
+
+sip-sdmx-code:naTable-T01GDP a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T01GDP" ;
+    skos:prefLabel "Table 01GDP - GDP, components and breakdowns"@en ;
+    rdfs:label "Table 01GDP - GDP, components and breakdowns"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T01GDP .
+
+
+sip-sdmx-code:naTable-T0200 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0200" ;
+    skos:prefLabel "ESA Table 2 Main aggregates of general government and its subsectors — annual"@en ;
+    rdfs:label "ESA Table 2 Main aggregates of general government and its subsectors — annual"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0200 .
+
+
+sip-sdmx-code:naTable-T0301 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0301" ;
+    skos:prefLabel "Table 0301- Output and income"@en ;
+    rdfs:label "Table 0301- Output and income"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0301 .
+
+
+sip-sdmx-code:naTable-T0302 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0302" ;
+    skos:prefLabel "Table 0302 - Capital formation"@en ;
+    rdfs:label "Table 0302 - Capital formation"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0302 .
+
+
+sip-sdmx-code:naTable-T0302_2200 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0302_2200" ;
+    skos:prefLabel "Tables 0302 and 2200"@en ;
+    rdfs:label "Tables 0302 and 2200"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0302_2200 .
+
+
+sip-sdmx-code:naTable-T0303 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0303" ;
+    skos:prefLabel "Table 0303 - Employment"@en ;
+    rdfs:label "Table 0303 - Employment"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0303 .
+
+
+sip-sdmx-code:naTable-T0500 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0500" ;
+    skos:prefLabel "Final consumption expenditure of households and breakdown by purpose"@en ;
+    rdfs:label "Final consumption expenditure of households and breakdown by purpose"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0500 .
+
+
+sip-sdmx-code:naTable-T0501 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0501" ;
+    skos:prefLabel "Table 0501 - Final consumption expenditure of households by purpose"@en ;
+    rdfs:label "Table 0501 - Final consumption expenditure of households by purpose"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0501 .
+
+
+sip-sdmx-code:naTable-T0502 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0502" ;
+    skos:prefLabel "Table 0502 - Final consumption expenditure of households"@en ;
+    rdfs:label "Table 0502 - Final consumption expenditure of households"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0502 .
+
+
+sip-sdmx-code:naTable-T0610 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0610" ;
+    skos:prefLabel "Table 0610 - Financial accounts by sector (transactions), consolidated"@en ;
+    rdfs:label "Table 0610 - Financial accounts by sector (transactions), consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0610 .
+
+
+sip-sdmx-code:naTable-T0611 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0611" ;
+    skos:prefLabel "Table 0611 - Other change in volume accounts, consolidated"@en ;
+    rdfs:label "Table 0611 - Other change in volume accounts, consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0611 .
+
+
+sip-sdmx-code:naTable-T0612 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0612" ;
+    skos:prefLabel "Table 0612 - Revaluation of financial instruments accounts, consolidated"@en ;
+    rdfs:label "Table 0612 - Revaluation of financial instruments accounts, consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0612 .
+
+
+sip-sdmx-code:naTable-T0620 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0620" ;
+    skos:prefLabel "Table 0620 - Financial accounts by sector (transactions), non-consolidated"@en ;
+    rdfs:label "Table 0620 - Financial accounts by sector (transactions), non-consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0620 .
+
+
+sip-sdmx-code:naTable-T0621 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0621" ;
+    skos:prefLabel "Table 0621 - Other change in volume accounts, non-consolidated"@en ;
+    rdfs:label "Table 0621 - Other change in volume accounts, non-consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0621 .
+
+
+sip-sdmx-code:naTable-T0622 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0622" ;
+    skos:prefLabel "Table 0622 - Revaluation of financial instruments accounts, non-consolidated"@en ;
+    rdfs:label "Table 0622 - Revaluation of financial instruments accounts, non-consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0622 .
+
+
+sip-sdmx-code:naTable-T0625 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0625" ;
+    skos:prefLabel "Table 0625 - Financial accounts by sector (transactions), counterpart information, non-consolidated"@en ;
+    rdfs:label "Table 0625 - Financial accounts by sector (transactions), counterpart information, non-consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0625 .
+
+
+sip-sdmx-code:naTable-T0710 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0710" ;
+    skos:prefLabel "Table 0710 - Balance sheets for financial assets and liabilities (stocks), consolidated"@en ;
+    rdfs:label "Table 0710 - Balance sheets for financial assets and liabilities (stocks), consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0710 .
+
+
+sip-sdmx-code:naTable-T0720 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0720" ;
+    skos:prefLabel "Table 0720 - Balance sheets for financial assets and liabilities (stocks), non-consolidated"@en ;
+    rdfs:label "Table 0720 - Balance sheets for financial assets and liabilities (stocks), non-consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0720 .
+
+
+sip-sdmx-code:naTable-T0725 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0725" ;
+    skos:prefLabel "Table 0725 - Balance sheets for financial assets and liabilities (stocks), counterpart information, non-consolidated"@en ;
+    rdfs:label "Table 0725 - Balance sheets for financial assets and liabilities (stocks), counterpart information, non-consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0725 .
+
+
+sip-sdmx-code:naTable-T0800 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0800" ;
+    skos:prefLabel "Table 0800 - Non-financial accounts by sector - annual"@en ;
+    rdfs:label "Table 0800 - Non-financial accounts by sector - annual"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0800 .
+
+
+sip-sdmx-code:naTable-T0801 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0801" ;
+    skos:prefLabel "Table 0801 - Non-financial accounts by sector - quarterly"@en ;
+    rdfs:label "Table 0801 - Non-financial accounts by sector - quarterly"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0801 .
+
+
+sip-sdmx-code:naTable-T0801SA a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0801SA" ;
+    skos:prefLabel "Table 0801SA - QSA Quarterly sector accounts: seasonally adjusted and volume data"@en ;
+    rdfs:label "Table 0801SA - QSA Quarterly sector accounts: seasonally adjusted and volume data"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0801SA .
+
+
+sip-sdmx-code:naTable-T0900 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0900" ;
+    skos:prefLabel "ESA Table 9 Detailed tax and social contribution revenue — annual"@en ;
+    rdfs:label "ESA Table 9 Detailed tax and social contribution revenue — annual"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0900 .
+
+
+sip-sdmx-code:naTable-T0999 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T0999" ;
+    skos:prefLabel "ESA Table NTL Detailed list of taxes and social contributions according to national classification"@en ;
+    rdfs:label "ESA Table NTL Detailed list of taxes and social contributions according to national classification"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T0999 .
+
+
+sip-sdmx-code:naTable-T1001 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1001" ;
+    skos:prefLabel "Table 1001 - Tables by region (NUTS II)"@en ;
+    rdfs:label "Table 1001 - Tables by region (NUTS II)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1001 .
+
+
+sip-sdmx-code:naTable-T1002 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1002" ;
+    skos:prefLabel "Table 1002 - Tables by industry and by region (NUTS II)"@en ;
+    rdfs:label "Table 1002 - Tables by industry and by region (NUTS II)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1002 .
+
+
+sip-sdmx-code:naTable-T1100 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1100" ;
+    skos:prefLabel "ESA Table 11 General government expenditure by function (COFOG) — annual"@en ;
+    rdfs:label "ESA Table 11 General government expenditure by function (COFOG) — annual"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1100 .
+
+
+sip-sdmx-code:naTable-T1200 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1200" ;
+    skos:prefLabel "Table 1200 - Tables by industry, A6 and by region (NUTS III) (deprecated)"@en ;
+    rdfs:label "Table 1200 - Tables by industry, A6 and by region (NUTS III) (deprecated)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1200 .
+
+
+sip-sdmx-code:naTable-T1300 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1300" ;
+    skos:prefLabel "Table 1300 - Households accounts by region (NUTS II)"@en ;
+    rdfs:label "Table 1300 - Households accounts by region (NUTS II)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1300 .
+
+
+sip-sdmx-code:naTable-T1500 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1500" ;
+    skos:prefLabel "Table 1500 - Supply table at basic prices, including a transformation into purchasers' prices"@en ;
+    rdfs:label "Table 1500 - Supply table at basic prices, including a transformation into purchasers' prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1500 .
+
+
+sip-sdmx-code:naTable-T1600 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1600" ;
+    skos:prefLabel "Table 1600 - Use Table at purchasers' prices"@en ;
+    rdfs:label "Table 1600 - Use Table at purchasers' prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1600 .
+
+
+sip-sdmx-code:naTable-T1601 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1601" ;
+    skos:prefLabel "Table 1601 - Use table for domestic input at purchasers' prices"@en ;
+    rdfs:label "Table 1601 - Use table for domestic input at purchasers' prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1601 .
+
+
+sip-sdmx-code:naTable-T1602 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1602" ;
+    skos:prefLabel "Table 1602 - Use table for imports at purchasers' prices"@en ;
+    rdfs:label "Table 1602 - Use table for imports at purchasers' prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1602 .
+
+
+sip-sdmx-code:naTable-T1610 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1610" ;
+    skos:prefLabel "Table 1610 - Use table at basic prices"@en ;
+    rdfs:label "Table 1610 - Use table at basic prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1610 .
+
+
+sip-sdmx-code:naTable-T1611 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1611" ;
+    skos:prefLabel "Table 1611 - Use table for domestic input at basic prices"@en ;
+    rdfs:label "Table 1611 - Use table for domestic input at basic prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1611 .
+
+
+sip-sdmx-code:naTable-T1612 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1612" ;
+    skos:prefLabel "Table 1612 - Use table for imports at basic prices"@en ;
+    rdfs:label "Table 1612 - Use table for imports at basic prices"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1612 .
+
+
+sip-sdmx-code:naTable-T1620 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1620" ;
+    skos:prefLabel "Table 1620 - Trade and transport margins"@en ;
+    rdfs:label "Table 1620 - Trade and transport margins"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1620 .
+
+
+sip-sdmx-code:naTable-T1630 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1630" ;
+    skos:prefLabel "Table 1630 - Taxes less subsidies on products"@en ;
+    rdfs:label "Table 1630 - Taxes less subsidies on products"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1630 .
+
+
+sip-sdmx-code:naTable-T1631 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1631" ;
+    skos:prefLabel "Table 1631 - Taxes less subsidies on products - excluding VAT"@en ;
+    rdfs:label "Table 1631 - Taxes less subsidies on products - excluding VAT"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1631 .
+
+
+sip-sdmx-code:naTable-T1632 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1632" ;
+    skos:prefLabel "Table 1632 - Value added tax"@en ;
+    rdfs:label "Table 1632 - Value added tax"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1632 .
+
+
+sip-sdmx-code:naTable-T1633 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1633" ;
+    skos:prefLabel "Table 1633 - Taxes on products"@en ;
+    rdfs:label "Table 1633 - Taxes on products"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1633 .
+
+
+sip-sdmx-code:naTable-T1634 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1634" ;
+    skos:prefLabel "Table 1634 - Subsidies on products"@en ;
+    rdfs:label "Table 1634 - Subsidies on products"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1634 .
+
+
+sip-sdmx-code:naTable-T1700 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1700" ;
+    skos:prefLabel "Table 1700 - Symmetric Input-output table (product*product)"@en ;
+    rdfs:label "Table 1700 - Symmetric Input-output table (product*product)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1700 .
+
+
+sip-sdmx-code:naTable-T1750 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1750" ;
+    skos:prefLabel "Table 1700 - Symmetric Input-output table (industry*industry)"@en ;
+    rdfs:label "Table 1700 - Symmetric Input-output table (industry*industry)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1750 .
+
+
+sip-sdmx-code:naTable-T1800 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1800" ;
+    skos:prefLabel "Table 1800 - Symmetric Input-output table for domestic production (product*product)"@en ;
+    rdfs:label "Table 1800 - Symmetric Input-output table for domestic production (product*product)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1800 .
+
+
+sip-sdmx-code:naTable-T1850 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1850" ;
+    skos:prefLabel "Table 1850 - Symmetric Input-output table for domestic production (industry*industry)"@en ;
+    rdfs:label "Table 1850 - Symmetric Input-output table for domestic production (industry*industry)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1850 .
+
+
+sip-sdmx-code:naTable-T1900 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1900" ;
+    skos:prefLabel "Table 1900 - Symmetric Input-output table for imports (product*product)"@en ;
+    rdfs:label "Table 1900 - Symmetric Input-output table for imports (product*product)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1900 .
+
+
+sip-sdmx-code:naTable-T1950 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T1950" ;
+    skos:prefLabel "Table 1950 - Symmetric Input-output table for imports (industry*industry)"@en ;
+    rdfs:label "Table 1950 - Symmetric Input-output table for imports (industry*industry)"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T1950 .
+
+
+sip-sdmx-code:naTable-T2000 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2000" ;
+    skos:prefLabel "Table 2000 - Cross-classification of fixed assets by industry and by asset"@en ;
+    rdfs:label "Table 2000 - Cross-classification of fixed assets by industry and by asset"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2000 .
+
+
+sip-sdmx-code:naTable-T2200 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2200" ;
+    skos:prefLabel "Table 2200 - Cross-classification of gross fixed capital formation by industry and by asset"@en ;
+    rdfs:label "Table 2200 - Cross-classification of gross fixed capital formation by industry and by asset"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2200 .
+
+
+sip-sdmx-code:naTable-T2500 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2500" ;
+    skos:prefLabel "ESA Table 25 Non-financial accounts of general government — quarterly"@en ;
+    rdfs:label "ESA Table 25 Non-financial accounts of general government — quarterly"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2500 .
+
+
+sip-sdmx-code:naTable-T2600 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2600" ;
+    skos:prefLabel "Table 2600 - Balance sheets for non-financial assets"@en ;
+    rdfs:label "Table 2600 - Balance sheets for non-financial assets"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2600 .
+
+
+sip-sdmx-code:naTable-T2700 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2700" ;
+    skos:prefLabel "ESA Table 27 Financial accounts and balance sheets of general government — quarterly"@en ;
+    rdfs:label "ESA Table 27 Financial accounts and balance sheets of general government — quarterly"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2700 .
+
+
+sip-sdmx-code:naTable-T2800 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2800" ;
+    skos:prefLabel "ESA Table 28 General government gross debt (Maastricht debt) — quarterly"@en ;
+    rdfs:label "ESA Table 28 General government gross debt (Maastricht debt) — quarterly"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2800 .
+
+
+sip-sdmx-code:naTable-T2800A a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2800A" ;
+    skos:prefLabel "ESA Table 28A General government gross debt (Maastricht debt) structure — annual"@en ;
+    rdfs:label "ESA Table 28A General government gross debt (Maastricht debt) structure — annual"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2800A .
+
+
+sip-sdmx-code:naTable-T2899 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2899" ;
+    skos:prefLabel "Table 2899 - Quarterly intergovernmental lending by counter-party government"@en ;
+    rdfs:label "Table 2899 - Quarterly intergovernmental lending by counter-party government"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2899 .
+
+
+sip-sdmx-code:naTable-T2900 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2900" ;
+    skos:prefLabel "Table 2900 - Pension schemes in social insurance: base case"@en ;
+    rdfs:label "Table 2900 - Pension schemes in social insurance: base case"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2900 .
+
+
+sip-sdmx-code:naTable-T2901 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2901" ;
+    skos:prefLabel "Table 2901 - Pension schemes in social insurance: sensitivity analysis 1"@en ;
+    rdfs:label "Table 2901 - Pension schemes in social insurance: sensitivity analysis 1"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2901 .
+
+
+sip-sdmx-code:naTable-T2902 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T2902" ;
+    skos:prefLabel "Table 2902 - Pension schemes in social insurance: sensitivity analysis 2"@en ;
+    rdfs:label "Table 2902 - Pension schemes in social insurance: sensitivity analysis 2"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T2902 .
+
+
+sip-sdmx-code:naTable-T7HH a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T7HH" ;
+    skos:prefLabel "Table 7HH - Households' assets and liabilities"@en ;
+    rdfs:label "Table 7HH - Households' assets and liabilities"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T7HH .
+
+
+sip-sdmx-code:naTable-T7II a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "T7II" ;
+    skos:prefLabel "Table 7II - Institutional investors"@en ;
+    rdfs:label "Table 7II - Institutional investors"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-T7II .
+
+
+sip-sdmx-code:naTable-TSB720 a skos:Concept, sip-sdmx-code:NaTable;
+    skos:topConceptOf sip-sdmx-code:naTable ;
+    skos:inScheme sip-sdmx-code:naTable ;
+    skos:notation "TSB720" ;
+    skos:prefLabel "Table SB720 - Non-bank financial intermediation (financial stocks), non-consolidated"@en ;
+    rdfs:label "Table SB720 - Non-bank financial intermediation (financial stocks), non-consolidated"@en .
+
+sip-sdmx-code:naTable skos:hasTopConcept sip-sdmx-code:naTable-TSB720 .
+

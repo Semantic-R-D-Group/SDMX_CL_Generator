@@ -1,0 +1,1234 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_MATURITY Scheme Definition
+#####################################################
+
+sip-sdmx-code:maturity a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Original and Residual Maturity - codelist scheme"@en ;
+    rdfs:label "Original and Residual Maturity - codelist scheme"@en ;
+    skos:notation "CL_MATURITY" ;
+    skos:definition "A reference maturity codelist based on ESTAT:CL_MATURITY(1.8)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_MATURITY/1.8> ;
+    rdfs:seeAlso sip-sdmx-code:Maturity .
+
+sip-sdmx-code:Maturity a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Original and Residual Maturity - codelist class"@en ;
+    rdfs:label "Original and Residual Maturity - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity .
+
+
+########################################
+# CL_MATURITY Codes
+########################################
+    
+sip-sdmx-code:maturity-L a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "L" ;
+    skos:prefLabel "Long-term original maturity (over 1 year or no stated maturity)"@en ;
+    rdfs:label "Long-term original maturity (over 1 year or no stated maturity)"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-L .
+
+
+sip-sdmx-code:maturity-LL a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LL" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with long-term residual maturity (over 1 year)"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with long-term residual maturity (over 1 year)"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LL .
+
+
+sip-sdmx-code:maturity-LM13 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LM13" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 1 month and up to 3 months"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 1 month and up to 3 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LM13 .
+
+
+sip-sdmx-code:maturity-LM3C a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LM3C" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 3 months and up to 12 months"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 3 months and up to 12 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LM3C .
+
+
+sip-sdmx-code:maturity-LM_1 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LM_1" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity up to 1 month"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity up to 1 month"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LM_1 .
+
+
+sip-sdmx-code:maturity-LS a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LS" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with short-term residual maturity (up to 1 year)"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with short-term residual maturity (up to 1 year)"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LS .
+
+
+sip-sdmx-code:maturity-LY12 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY12" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 1 year and up to 2 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 1 year and up to 2 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY12 .
+
+
+sip-sdmx-code:maturity-LY13 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY13" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 1 year and up to 3 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 1 year and up to 3 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY13 .
+
+
+sip-sdmx-code:maturity-LY15 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY15" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 1 year and up to 5 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 1 year and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY15 .
+
+
+sip-sdmx-code:maturity-LY23 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY23" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 2 years and up to 3 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 2 years and up to 3 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY23 .
+
+
+sip-sdmx-code:maturity-LY25 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY25" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 2 years and up to 5 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 2 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY25 .
+
+
+sip-sdmx-code:maturity-LY2_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY2_" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 2 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 2 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY2_ .
+
+
+sip-sdmx-code:maturity-LY34 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY34" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 3 years and up to 4 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 3 years and up to 4 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY34 .
+
+
+sip-sdmx-code:maturity-LY35 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY35" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 3 years and up to 5 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 3 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY35 .
+
+
+sip-sdmx-code:maturity-LY45 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY45" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 4 years and up to 5 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 4 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY45 .
+
+
+sip-sdmx-code:maturity-LY56 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY56" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 5 years and up to 6 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 5 years and up to 6 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY56 .
+
+
+sip-sdmx-code:maturity-LY5A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY5A" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 5 years and up to 10 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 5 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY5A .
+
+
+sip-sdmx-code:maturity-LY5_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY5_" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 5 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY5_ .
+
+
+sip-sdmx-code:maturity-LY67 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY67" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 6 years and up to 7 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 6 years and up to 7 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY67 .
+
+
+sip-sdmx-code:maturity-LY78 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY78" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 7 years and up to 8 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 7 years and up to 8 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY78 .
+
+
+sip-sdmx-code:maturity-LY89 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY89" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 8 years and up to 9 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 8 years and up to 9 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY89 .
+
+
+sip-sdmx-code:maturity-LY9A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LY9A" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 9 years and up to 10 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 9 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LY9A .
+
+
+sip-sdmx-code:maturity-LYAF a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LYAF" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 10 years and up to 15 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 10 years and up to 15 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LYAF .
+
+
+sip-sdmx-code:maturity-LYAI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LYAI" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 10 years and up to 30 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 10 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LYAI .
+
+
+sip-sdmx-code:maturity-LYA_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LYA_" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 10 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LYA_ .
+
+
+sip-sdmx-code:maturity-LYFG a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LYFG" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 15 years and up to 20 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 15 years and up to 20 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LYFG .
+
+
+sip-sdmx-code:maturity-LYGH a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LYGH" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 20 years and up to 25 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 20 years and up to 25 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LYGH .
+
+
+sip-sdmx-code:maturity-LYHI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LYHI" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 25 years and up to 30 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 25 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LYHI .
+
+
+sip-sdmx-code:maturity-LYI_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "LYI_" ;
+    skos:prefLabel "Long-term original maturity (over 1 year) with residual maturity over 30 years"@en ;
+    rdfs:label "Long-term original maturity (over 1 year) with residual maturity over 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-LYI_ .
+
+
+sip-sdmx-code:maturity-M13 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "M13" ;
+    skos:prefLabel "Original maturity over 1 month and up to 3 months"@en ;
+    rdfs:label "Original maturity over 1 month and up to 3 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-M13 .
+
+
+sip-sdmx-code:maturity-M3C a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "M3C" ;
+    skos:prefLabel "Original maturity over 3 months and up to 12 months"@en ;
+    rdfs:label "Original maturity over 3 months and up to 12 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-M3C .
+
+
+sip-sdmx-code:maturity-M_1 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "M_1" ;
+    skos:prefLabel "Original maturity up to 1 month"@en ;
+    rdfs:label "Original maturity up to 1 month"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-M_1 .
+
+
+sip-sdmx-code:maturity-M_1M_1 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "M_1M_1" ;
+    skos:prefLabel "Original maturity up to 1 month with residual maturity up to 1 month"@en ;
+    rdfs:label "Original maturity up to 1 month with residual maturity up to 1 month"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-M_1M_1 .
+
+
+sip-sdmx-code:maturity-M_3 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "M_3" ;
+    skos:prefLabel "Original maturity up to 3 months"@en ;
+    rdfs:label "Original maturity up to 3 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-M_3 .
+
+
+sip-sdmx-code:maturity-S a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "S" ;
+    skos:prefLabel "Short-term original maturity (up to 1 year)"@en ;
+    rdfs:label "Short-term original maturity (up to 1 year)"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-S .
+
+
+sip-sdmx-code:maturity-SM13 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "SM13" ;
+    skos:prefLabel "Short-term original maturity (up to 1 year) with residual maturity over 1 month and up to 3 months"@en ;
+    rdfs:label "Short-term original maturity (up to 1 year) with residual maturity over 1 month and up to 3 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-SM13 .
+
+
+sip-sdmx-code:maturity-SM3C a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "SM3C" ;
+    skos:prefLabel "Short-term original maturity (up to 1 year) with residual maturity over 3 months and up to 12 months"@en ;
+    rdfs:label "Short-term original maturity (up to 1 year) with residual maturity over 3 months and up to 12 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-SM3C .
+
+
+sip-sdmx-code:maturity-SM_1 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "SM_1" ;
+    skos:prefLabel "Short-term original maturity (up to 1 year) with residual maturity up to 1 month"@en ;
+    rdfs:label "Short-term original maturity (up to 1 year) with residual maturity up to 1 month"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-SM_1 .
+
+
+sip-sdmx-code:maturity-SM_3 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "SM_3" ;
+    skos:prefLabel "Short-term original maturity (up to 1 year) with residual maturity up to 3 months"@en ;
+    rdfs:label "Short-term original maturity (up to 1 year) with residual maturity up to 3 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-SM_3 .
+
+
+sip-sdmx-code:maturity-T a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "T" ;
+    skos:prefLabel "All original maturities"@en ;
+    rdfs:label "All original maturities"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-T .
+
+
+sip-sdmx-code:maturity-TL a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TL" ;
+    skos:prefLabel "All original maturities with long-term residual maturity (over 1 year)"@en ;
+    rdfs:label "All original maturities with long-term residual maturity (over 1 year)"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TL .
+
+
+sip-sdmx-code:maturity-TM13 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TM13" ;
+    skos:prefLabel "All original maturities with residual maturity over 1 month and up to 3 months"@en ;
+    rdfs:label "All original maturities with residual maturity over 1 month and up to 3 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TM13 .
+
+
+sip-sdmx-code:maturity-TM36 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TM36" ;
+    skos:prefLabel "All original maturities with residual maturity over 3 months and up to 6 months"@en ;
+    rdfs:label "All original maturities with residual maturity over 3 months and up to 6 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TM36 .
+
+
+sip-sdmx-code:maturity-TM3C a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TM3C" ;
+    skos:prefLabel "All original maturities with residual maturity over 3 months and up to 12 months"@en ;
+    rdfs:label "All original maturities with residual maturity over 3 months and up to 12 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TM3C .
+
+
+sip-sdmx-code:maturity-TM69 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TM69" ;
+    skos:prefLabel "All original maturities with residual maturity over 6 months and up to 9 months"@en ;
+    rdfs:label "All original maturities with residual maturity over 6 months and up to 9 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TM69 .
+
+
+sip-sdmx-code:maturity-TM9C a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TM9C" ;
+    skos:prefLabel "All original maturities with residual maturity over 9 months and up to 12 months"@en ;
+    rdfs:label "All original maturities with residual maturity over 9 months and up to 12 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TM9C .
+
+
+sip-sdmx-code:maturity-TM_1 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TM_1" ;
+    skos:prefLabel "All original maturities with residual maturity up to 1 month"@en ;
+    rdfs:label "All original maturities with residual maturity up to 1 month"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TM_1 .
+
+
+sip-sdmx-code:maturity-TM_3 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TM_3" ;
+    skos:prefLabel "All original maturities with residual maturity up to 3 months"@en ;
+    rdfs:label "All original maturities with residual maturity up to 3 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TM_3 .
+
+
+sip-sdmx-code:maturity-TS a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TS" ;
+    skos:prefLabel "All original maturities with short-term residual maturity (up to 1 year)"@en ;
+    rdfs:label "All original maturities with short-term residual maturity (up to 1 year)"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TS .
+
+
+sip-sdmx-code:maturity-TT a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TT" ;
+    skos:prefLabel "Total residual maturity"@en ;
+    rdfs:label "Total residual maturity"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TT .
+
+
+sip-sdmx-code:maturity-TY12 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY12" ;
+    skos:prefLabel "All original maturities with residual maturity over 1 year and up to 2 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 1 year and up to 2 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY12 .
+
+
+sip-sdmx-code:maturity-TY13 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY13" ;
+    skos:prefLabel "All original maturities with residual maturity over 1 year and up to 3 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 1 year and up to 3 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY13 .
+
+
+sip-sdmx-code:maturity-TY15 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY15" ;
+    skos:prefLabel "All original maturities with residual maturity over 1 year and up to 5 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 1 year and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY15 .
+
+
+sip-sdmx-code:maturity-TY23 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY23" ;
+    skos:prefLabel "All original maturities with residual maturity over 2 years and up to 3 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 2 years and up to 3 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY23 .
+
+
+sip-sdmx-code:maturity-TY25 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY25" ;
+    skos:prefLabel "All original maturities with residual maturity over 2 years and up to 5 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 2 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY25 .
+
+
+sip-sdmx-code:maturity-TY34 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY34" ;
+    skos:prefLabel "All original maturities with residual maturity over 3 years and up to 4 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 3 years and up to 4 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY34 .
+
+
+sip-sdmx-code:maturity-TY35 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY35" ;
+    skos:prefLabel "All original maturities with residual maturity over 3 years and up to 5 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 3 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY35 .
+
+
+sip-sdmx-code:maturity-TY45 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY45" ;
+    skos:prefLabel "All original maturities with residual maturity over 4 years and up to 5 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 4 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY45 .
+
+
+sip-sdmx-code:maturity-TY56 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY56" ;
+    skos:prefLabel "All original maturities with residual maturity over 5 years and up to 6 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 5 years and up to 6 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY56 .
+
+
+sip-sdmx-code:maturity-TY57 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY57" ;
+    skos:prefLabel "All original maturities with residual maturity over 5 years and up to 7 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 5 years and up to 7 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY57 .
+
+
+sip-sdmx-code:maturity-TY5A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY5A" ;
+    skos:prefLabel "All original maturities with residual maturity over 5 years and up to 10 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 5 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY5A .
+
+
+sip-sdmx-code:maturity-TY5_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY5_" ;
+    skos:prefLabel "All original maturities with residual maturity over 5 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY5_ .
+
+
+sip-sdmx-code:maturity-TY67 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY67" ;
+    skos:prefLabel "All original maturities with residual maturity over 6 years and up to 7 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 6 years and up to 7 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY67 .
+
+
+sip-sdmx-code:maturity-TY78 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY78" ;
+    skos:prefLabel "All original maturities with residual maturity over 7 years and up to 8 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 7 years and up to 8 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY78 .
+
+
+sip-sdmx-code:maturity-TY7A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY7A" ;
+    skos:prefLabel "All original maturities with residual maturity over 7 years and up to 10 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 7 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY7A .
+
+
+sip-sdmx-code:maturity-TY89 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY89" ;
+    skos:prefLabel "All original maturities with residual maturity over 8 years and up to 9 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 8 years and up to 9 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY89 .
+
+
+sip-sdmx-code:maturity-TY9A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TY9A" ;
+    skos:prefLabel "All original maturities with residual maturity over 9 years and up to 10 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 9 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TY9A .
+
+
+sip-sdmx-code:maturity-TYAF a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYAF" ;
+    skos:prefLabel "All original maturities with residual maturity over 10 years and up to 15 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 10 years and up to 15 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYAF .
+
+
+sip-sdmx-code:maturity-TYAI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYAI" ;
+    skos:prefLabel "All original maturities with residual maturity over 10 years and up to 30 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 10 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYAI .
+
+
+sip-sdmx-code:maturity-TYA_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYA_" ;
+    skos:prefLabel "All original maturities with residual maturity over 10 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYA_ .
+
+
+sip-sdmx-code:maturity-TYFG a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYFG" ;
+    skos:prefLabel "All original maturities with residual maturity over 15 years and up to 20 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 15 years and up to 20 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYFG .
+
+
+sip-sdmx-code:maturity-TYFI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYFI" ;
+    skos:prefLabel "All original maturities with residual maturity over 15 years and up to 30 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 15 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYFI .
+
+
+sip-sdmx-code:maturity-TYGH a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYGH" ;
+    skos:prefLabel "All original maturities with residual maturity over 20 years and up to 25 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 20 years and up to 25 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYGH .
+
+
+sip-sdmx-code:maturity-TYHI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYHI" ;
+    skos:prefLabel "All original maturities with residual maturity over 25 years and up to 30 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 25 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYHI .
+
+
+sip-sdmx-code:maturity-TYI_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "TYI_" ;
+    skos:prefLabel "All original maturities with residual maturity over 30 years"@en ;
+    rdfs:label "All original maturities with residual maturity over 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-TYI_ .
+
+
+sip-sdmx-code:maturity-XLS a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XLS" ;
+    skos:prefLabel "Long-term original maturity with short-term embedded put option"@en ;
+    rdfs:label "Long-term original maturity with short-term embedded put option"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XLS .
+
+
+sip-sdmx-code:maturity-XY12 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY12" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 1 year and up to 2 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 1 year and up to 2 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY12 .
+
+
+sip-sdmx-code:maturity-XY23 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY23" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 2 years and up to 3 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 2 years and up to 3 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY23 .
+
+
+sip-sdmx-code:maturity-XY34 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY34" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 3 years and up to 4 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 3 years and up to 4 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY34 .
+
+
+sip-sdmx-code:maturity-XY45 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY45" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 4 years and up to 5 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 4 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY45 .
+
+
+sip-sdmx-code:maturity-XY56 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY56" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 5 years and up to 6 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 5 years and up to 6 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY56 .
+
+
+sip-sdmx-code:maturity-XY67 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY67" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 6 years and up to 7 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 6 years and up to 7 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY67 .
+
+
+sip-sdmx-code:maturity-XY78 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY78" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 7 years and up to 8 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 7 years and up to 8 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY78 .
+
+
+sip-sdmx-code:maturity-XY89 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY89" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 8 years and up to 9 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 8 years and up to 9 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY89 .
+
+
+sip-sdmx-code:maturity-XY9A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY9A" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 9 years and up to 10 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 9 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY9A .
+
+
+sip-sdmx-code:maturity-XYAF a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XYAF" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 10 years and up to 15 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 10 years and up to 15 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XYAF .
+
+
+sip-sdmx-code:maturity-XYFG a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XYFG" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 15 years and up to 20 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 15 years and up to 20 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XYFG .
+
+
+sip-sdmx-code:maturity-XYGH a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XYGH" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 20 years and up to 25 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 20 years and up to 25 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XYGH .
+
+
+sip-sdmx-code:maturity-XYHI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XYHI" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 25 years and up to 30 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 25 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XYHI .
+
+
+sip-sdmx-code:maturity-XYI_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XYI_" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity over 30 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity over 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XYI_ .
+
+
+sip-sdmx-code:maturity-XY_2 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "XY_2" ;
+    skos:prefLabel "Unspecified original maturities with residual maturity up to 2 years"@en ;
+    rdfs:label "Unspecified original maturities with residual maturity up to 2 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-XY_2 .
+
+
+sip-sdmx-code:maturity-Y12 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y12" ;
+    skos:prefLabel "Original maturity over 1 year and up to 2 years"@en ;
+    rdfs:label "Original maturity over 1 year and up to 2 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y12 .
+
+
+sip-sdmx-code:maturity-Y13 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y13" ;
+    skos:prefLabel "Original maturity over 1 year and up to 3 years"@en ;
+    rdfs:label "Original maturity over 1 year and up to 3 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y13 .
+
+
+sip-sdmx-code:maturity-Y15 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y15" ;
+    skos:prefLabel "Original maturity over 1 year and up to 5 years"@en ;
+    rdfs:label "Original maturity over 1 year and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y15 .
+
+
+sip-sdmx-code:maturity-Y23 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y23" ;
+    skos:prefLabel "Original maturity over 2 years and up to 3 years"@en ;
+    rdfs:label "Original maturity over 2 years and up to 3 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y23 .
+
+
+sip-sdmx-code:maturity-Y25 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y25" ;
+    skos:prefLabel "Original maturity over 2 years and up to 5 years"@en ;
+    rdfs:label "Original maturity over 2 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y25 .
+
+
+sip-sdmx-code:maturity-Y2_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y2_" ;
+    skos:prefLabel "Original maturity over 2 years"@en ;
+    rdfs:label "Original maturity over 2 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y2_ .
+
+
+sip-sdmx-code:maturity-Y34 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y34" ;
+    skos:prefLabel "Original maturity over 3 years and up to 4 years"@en ;
+    rdfs:label "Original maturity over 3 years and up to 4 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y34 .
+
+
+sip-sdmx-code:maturity-Y35 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y35" ;
+    skos:prefLabel "Original maturity over 3 years and up to 5 years"@en ;
+    rdfs:label "Original maturity over 3 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y35 .
+
+
+sip-sdmx-code:maturity-Y45 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y45" ;
+    skos:prefLabel "Original maturity over 4 years and up to 5 years"@en ;
+    rdfs:label "Original maturity over 4 years and up to 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y45 .
+
+
+sip-sdmx-code:maturity-Y56 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y56" ;
+    skos:prefLabel "Original maturity over 5 years and up to 6 years"@en ;
+    rdfs:label "Original maturity over 5 years and up to 6 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y56 .
+
+
+sip-sdmx-code:maturity-Y57 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y57" ;
+    skos:prefLabel "Original maturity over 5 years and up to 7 years"@en ;
+    rdfs:label "Original maturity over 5 years and up to 7 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y57 .
+
+
+sip-sdmx-code:maturity-Y5A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y5A" ;
+    skos:prefLabel "Original maturity over 5 years and up to 10 years"@en ;
+    rdfs:label "Original maturity over 5 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y5A .
+
+
+sip-sdmx-code:maturity-Y5_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y5_" ;
+    skos:prefLabel "Original maturity over 5 years"@en ;
+    rdfs:label "Original maturity over 5 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y5_ .
+
+
+sip-sdmx-code:maturity-Y67 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y67" ;
+    skos:prefLabel "Original maturity over 6 years and up to 7 years"@en ;
+    rdfs:label "Original maturity over 6 years and up to 7 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y67 .
+
+
+sip-sdmx-code:maturity-Y78 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y78" ;
+    skos:prefLabel "Original maturity over 7 years and up to 8 years"@en ;
+    rdfs:label "Original maturity over 7 years and up to 8 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y78 .
+
+
+sip-sdmx-code:maturity-Y7A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y7A" ;
+    skos:prefLabel "Original maturity over 7 years and up to 10 years"@en ;
+    rdfs:label "Original maturity over 7 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y7A .
+
+
+sip-sdmx-code:maturity-Y89 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y89" ;
+    skos:prefLabel "Original maturity over 8 years and up to 9 years"@en ;
+    rdfs:label "Original maturity over 8 years and up to 9 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y89 .
+
+
+sip-sdmx-code:maturity-Y9A a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y9A" ;
+    skos:prefLabel "Original maturity over 9 years and up to 10 years"@en ;
+    rdfs:label "Original maturity over 9 years and up to 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y9A .
+
+
+sip-sdmx-code:maturity-YAF a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YAF" ;
+    skos:prefLabel "Original maturity over 10 years and up to 15 years"@en ;
+    rdfs:label "Original maturity over 10 years and up to 15 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YAF .
+
+
+sip-sdmx-code:maturity-YAI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YAI" ;
+    skos:prefLabel "Original maturity over 10 years and up to 30 years"@en ;
+    rdfs:label "Original maturity over 10 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YAI .
+
+
+sip-sdmx-code:maturity-YA_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YA_" ;
+    skos:prefLabel "Original maturity over 10 years"@en ;
+    rdfs:label "Original maturity over 10 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YA_ .
+
+
+sip-sdmx-code:maturity-YFG a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YFG" ;
+    skos:prefLabel "Original maturity over 15 years and up to 20 years"@en ;
+    rdfs:label "Original maturity over 15 years and up to 20 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YFG .
+
+
+sip-sdmx-code:maturity-YFI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YFI" ;
+    skos:prefLabel "Original maturity over 15 years and up to 30 years"@en ;
+    rdfs:label "Original maturity over 15 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YFI .
+
+
+sip-sdmx-code:maturity-YGH a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YGH" ;
+    skos:prefLabel "Original maturity over 20 years and up to 25 years"@en ;
+    rdfs:label "Original maturity over 20 years and up to 25 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YGH .
+
+
+sip-sdmx-code:maturity-YHI a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YHI" ;
+    skos:prefLabel "Original maturity over 25 years and up to 30 years"@en ;
+    rdfs:label "Original maturity over 25 years and up to 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YHI .
+
+
+sip-sdmx-code:maturity-YI_ a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "YI_" ;
+    skos:prefLabel "Original maturity over 30 years"@en ;
+    rdfs:label "Original maturity over 30 years"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-YI_ .
+
+
+sip-sdmx-code:maturity-Y_2M36 a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "Y_2M36" ;
+    skos:prefLabel "Original maturity up to 2 years and residual maturity between 3 months and 6 months"@en ;
+    rdfs:label "Original maturity up to 2 years and residual maturity between 3 months and 6 months"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-Y_2M36 .
+
+
+sip-sdmx-code:maturity-_X a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not allocated / unspecified"@en ;
+    rdfs:label "Not allocated / unspecified"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-_X .
+
+
+sip-sdmx-code:maturity-_Z a skos:Concept, sip-sdmx-code:Maturity;
+    skos:topConceptOf sip-sdmx-code:maturity ;
+    skos:inScheme sip-sdmx-code:maturity ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:maturity skos:hasTopConcept sip-sdmx-code:maturity-_Z .
+

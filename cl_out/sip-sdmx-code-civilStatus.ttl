@@ -1,0 +1,117 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_CIVILSTATUS Scheme Definition
+#####################################################
+
+sip-sdmx-code:civilStatus a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Civil (or Marital) Status - codelist scheme"@en ;
+    rdfs:label "Civil (or Marital) Status - codelist scheme"@en ;
+    skos:notation "CL_CIVILSTATUS" ;
+    skos:definition "A reference civilStatus codelist based on SDMX:CL_CIVIL_STATUS(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_CIVIL_STATUS/1.0> ;
+    skos:note "SDMX:CL_CIVIL_STATUS(1.0): This code list provides a list of values for describing the civil (or marital) status of an individual, i.e. the legal, conjugal status of an individual in relation to the marriage laws or customs of the country. This code list was formally adopted on 25 November 2013. More information about this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like \"Total\", \"Unknown\", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345."@en ;
+    rdfs:seeAlso sip-sdmx-concept:CIVIL_STATUS ;
+    skos:related sip-sdmx-concept:CIVIL_STATUS ;
+    rdfs:seeAlso sip-sdmx-code:CivilStatus .
+
+sip-sdmx-code:CivilStatus a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Civil (or Marital) Status - codelist class"@en ;
+    rdfs:label "Civil (or Marital) Status - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus .
+
+
+########################################
+# CL_CIVILSTATUS Codes
+########################################
+    
+sip-sdmx-code:civilStatus-D a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "D" ;
+    skos:prefLabel "Divorced person"@en ;
+    rdfs:label "Divorced person"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-D .
+
+
+sip-sdmx-code:civilStatus-E a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "E" ;
+    skos:prefLabel "Person whose registered partnership was legally dissolved"@en ;
+    rdfs:label "Person whose registered partnership was legally dissolved"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-E .
+
+
+sip-sdmx-code:civilStatus-L a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "L" ;
+    skos:prefLabel "Legally separated person"@en ;
+    rdfs:label "Legally separated person"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-L .
+
+
+sip-sdmx-code:civilStatus-M a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "M" ;
+    skos:prefLabel "Married person"@en ;
+    rdfs:label "Married person"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-M .
+
+
+sip-sdmx-code:civilStatus-P a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "P" ;
+    skos:prefLabel "Person in registered partnership"@en ;
+    rdfs:label "Person in registered partnership"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-P .
+
+
+sip-sdmx-code:civilStatus-Q a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "Q" ;
+    skos:prefLabel "Person whose registered partnership ended with the death of the partner"@en ;
+    rdfs:label "Person whose registered partnership ended with the death of the partner"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-Q .
+
+
+sip-sdmx-code:civilStatus-S a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "S" ;
+    skos:prefLabel "Single person"@en ;
+    rdfs:label "Single person"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-S .
+
+
+sip-sdmx-code:civilStatus-W a skos:Concept, sip-sdmx-code:CivilStatus;
+    skos:topConceptOf sip-sdmx-code:civilStatus ;
+    skos:inScheme sip-sdmx-code:civilStatus ;
+    skos:notation "W" ;
+    skos:prefLabel "Widowed person"@en ;
+    rdfs:label "Widowed person"@en .
+
+sip-sdmx-code:civilStatus skos:hasTopConcept sip-sdmx-code:civilStatus-W .
+

@@ -1,0 +1,155 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_TIMETRANSPER Scheme Definition
+#####################################################
+
+sip-sdmx-code:timeTransPer a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Time Transformation Period - codelist scheme"@en ;
+    rdfs:label "Time Transformation Period - codelist scheme"@en ;
+    skos:notation "CL_TIMETRANSPER" ;
+    skos:definition "A reference timeTransPer codelist based on SDMX:CL_TIMETRANS_PER(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIMETRANS_PER/1.0> ;
+    skos:note "SDMX:CL_TIMETRANS_PER(1.0): Code list for information about the number of periods used for a time-related transformation of the time series."@en ;
+    rdfs:seeAlso sip-sdmx-code:TimeTransPer .
+
+sip-sdmx-code:TimeTransPer a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Time Transformation Period - codelist class"@en ;
+    rdfs:label "Time Transformation Period - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer .
+
+
+########################################
+# CL_TIMETRANSPER Codes
+########################################
+    
+sip-sdmx-code:timeTransPer-1 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "1" ;
+    skos:prefLabel "One"@en ;
+    rdfs:label "One"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-1 .
+
+
+sip-sdmx-code:timeTransPer-10 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "10" ;
+    skos:prefLabel "Ten"@en ;
+    rdfs:label "Ten"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-10 .
+
+
+sip-sdmx-code:timeTransPer-11 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "11" ;
+    skos:prefLabel "Eleven"@en ;
+    rdfs:label "Eleven"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-11 .
+
+
+sip-sdmx-code:timeTransPer-12 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "12" ;
+    skos:prefLabel "Twelve"@en ;
+    rdfs:label "Twelve"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-12 .
+
+
+sip-sdmx-code:timeTransPer-2 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "2" ;
+    skos:prefLabel "Two"@en ;
+    rdfs:label "Two"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-2 .
+
+
+sip-sdmx-code:timeTransPer-3 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "3" ;
+    skos:prefLabel "Three"@en ;
+    rdfs:label "Three"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-3 .
+
+
+sip-sdmx-code:timeTransPer-4 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "4" ;
+    skos:prefLabel "Four"@en ;
+    rdfs:label "Four"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-4 .
+
+
+sip-sdmx-code:timeTransPer-5 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "5" ;
+    skos:prefLabel "Five"@en ;
+    rdfs:label "Five"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-5 .
+
+
+sip-sdmx-code:timeTransPer-6 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "6" ;
+    skos:prefLabel "Six"@en ;
+    rdfs:label "Six"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-6 .
+
+
+sip-sdmx-code:timeTransPer-7 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "7" ;
+    skos:prefLabel "Seven"@en ;
+    rdfs:label "Seven"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-7 .
+
+
+sip-sdmx-code:timeTransPer-8 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "8" ;
+    skos:prefLabel "Eight"@en ;
+    rdfs:label "Eight"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-8 .
+
+
+sip-sdmx-code:timeTransPer-9 a skos:Concept, sip-sdmx-code:TimeTransPer;
+    skos:topConceptOf sip-sdmx-code:timeTransPer ;
+    skos:inScheme sip-sdmx-code:timeTransPer ;
+    skos:notation "9" ;
+    skos:prefLabel "Nine"@en ;
+    rdfs:label "Nine"@en .
+
+sip-sdmx-code:timeTransPer skos:hasTopConcept sip-sdmx-code:timeTransPer-9 .
+

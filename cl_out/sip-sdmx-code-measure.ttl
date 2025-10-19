@@ -1,0 +1,144 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_MEASURE Scheme Definition
+#####################################################
+
+sip-sdmx-code:measure a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "CL_MEASURE - codelist scheme"@en ;
+    rdfs:label "CL_MEASURE - codelist scheme"@en ;
+    skos:notation "CL_MEASURE" ;
+    skos:definition "A reference measure codelist based on UNSD:CL_MEASURE(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_MEASURE/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:Measure .
+
+sip-sdmx-code:Measure a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "CL_MEASURE - codelist class"@en ;
+    rdfs:label "CL_MEASURE - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure .
+
+
+########################################
+# CL_MEASURE Codes
+########################################
+    
+sip-sdmx-code:measure-PI a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "PI" ;
+    skos:prefLabel "Price index"@en ;
+    rdfs:label "Price index"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-PI .
+
+
+sip-sdmx-code:measure-QI a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "QI" ;
+    skos:prefLabel "Volume index"@en ;
+    rdfs:label "Volume index"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-QI .
+
+
+sip-sdmx-code:measure-QTY a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "QTY" ;
+    skos:prefLabel "Supplementary quantity"@en ;
+    rdfs:label "Supplementary quantity"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-QTY .
+
+
+sip-sdmx-code:measure-UVI a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "UVI" ;
+    skos:prefLabel "Unit value index"@en ;
+    rdfs:label "Unit value index"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-UVI .
+
+
+sip-sdmx-code:measure-V_CIF a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "V_CIF" ;
+    skos:prefLabel "CIF-type value"@en ;
+    rdfs:label "CIF-type value"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-V_CIF .
+
+
+sip-sdmx-code:measure-V_F a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "V_F" ;
+    skos:prefLabel "Freight Cost"@en ;
+    rdfs:label "Freight Cost"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-V_F .
+
+
+sip-sdmx-code:measure-V_FOB a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "V_FOB" ;
+    skos:prefLabel "FOB-type value"@en ;
+    rdfs:label "FOB-type value"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-V_FOB .
+
+
+sip-sdmx-code:measure-V_I a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "V_I" ;
+    skos:prefLabel "Insurance Cost"@en ;
+    rdfs:label "Insurance Cost"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-V_I .
+
+
+sip-sdmx-code:measure-V_IF a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "V_IF" ;
+    skos:prefLabel "Freight and Insurance"@en ;
+    rdfs:label "Freight and Insurance"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-V_IF .
+
+
+sip-sdmx-code:measure-W_G a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "W_G" ;
+    skos:prefLabel "Gross Weight"@en ;
+    rdfs:label "Gross Weight"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-W_G .
+
+
+sip-sdmx-code:measure-W_N a skos:Concept, sip-sdmx-code:Measure;
+    skos:topConceptOf sip-sdmx-code:measure ;
+    skos:inScheme sip-sdmx-code:measure ;
+    skos:notation "W_N" ;
+    skos:prefLabel "Net Weight"@en ;
+    rdfs:label "Net Weight"@en .
+
+sip-sdmx-code:measure skos:hasTopConcept sip-sdmx-code:measure-W_N .
+

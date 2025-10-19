@@ -1,0 +1,74 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_MEASUREPRINCIP Scheme Definition
+#####################################################
+
+sip-sdmx-code:measurePrincip a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Measurement principle code list - codelist scheme"@en ;
+    rdfs:label "Measurement principle code list - codelist scheme"@en ;
+    skos:notation "CL_MEASUREPRINCIP" ;
+    skos:definition "A reference measurePrincip codelist based on OECD:CL_MEASURE_PRINCIP(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_MEASURE_PRINCIP/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:MeasurePrincip .
+
+sip-sdmx-code:MeasurePrincip a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Measurement principle code list - codelist class"@en ;
+    rdfs:label "Measurement principle code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:measurePrincip ;
+    skos:inScheme sip-sdmx-code:measurePrincip .
+
+
+########################################
+# CL_MEASUREPRINCIP Codes
+########################################
+    
+sip-sdmx-code:measurePrincip-A a skos:Concept, sip-sdmx-code:MeasurePrincip;
+    skos:topConceptOf sip-sdmx-code:measurePrincip ;
+    skos:inScheme sip-sdmx-code:measurePrincip ;
+    skos:notation "A" ;
+    skos:prefLabel "Asset/Liability principle"@en ;
+    rdfs:label "Asset/Liability principle"@en .
+
+sip-sdmx-code:measurePrincip skos:hasTopConcept sip-sdmx-code:measurePrincip-A .
+
+
+sip-sdmx-code:measurePrincip-DI a skos:Concept, sip-sdmx-code:MeasurePrincip;
+    skos:topConceptOf sip-sdmx-code:measurePrincip ;
+    skos:inScheme sip-sdmx-code:measurePrincip ;
+    skos:notation "DI" ;
+    skos:prefLabel "Directional principle: Inward"@en ;
+    rdfs:label "Directional principle: Inward"@en .
+
+sip-sdmx-code:measurePrincip skos:hasTopConcept sip-sdmx-code:measurePrincip-DI .
+
+
+sip-sdmx-code:measurePrincip-DO a skos:Concept, sip-sdmx-code:MeasurePrincip;
+    skos:topConceptOf sip-sdmx-code:measurePrincip ;
+    skos:inScheme sip-sdmx-code:measurePrincip ;
+    skos:notation "DO" ;
+    skos:prefLabel "Directional principle: Outward"@en ;
+    rdfs:label "Directional principle: Outward"@en .
+
+sip-sdmx-code:measurePrincip skos:hasTopConcept sip-sdmx-code:measurePrincip-DO .
+
+
+sip-sdmx-code:measurePrincip-_Z a skos:Concept, sip-sdmx-code:MeasurePrincip;
+    skos:topConceptOf sip-sdmx-code:measurePrincip ;
+    skos:inScheme sip-sdmx-code:measurePrincip ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:measurePrincip skos:hasTopConcept sip-sdmx-code:measurePrincip-_Z .
+

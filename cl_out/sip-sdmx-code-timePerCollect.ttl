@@ -1,0 +1,141 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_TIMEPERCOLLECT Scheme Definition
+#####################################################
+
+sip-sdmx-code:timePerCollect a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Time period collection code list - codelist scheme"@en ;
+    rdfs:label "Time period collection code list - codelist scheme"@en ;
+    skos:altLabel "Time Period - Collection - codelist scheme"@en ;
+    skos:notation "CL_TIMEPERCOLLECT" ;
+    skos:definition "A reference timePerCollect codelist combining IMF:CL_TIME_COLLECT(1.0), SDMX:CL_TIME_PER_COLLECT(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_TIME_COLLECT/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIME_PER_COLLECT/1.0> ;
+    skos:note "SDMX:CL_TIME_PER_COLLECT(1.0): This code list provides a list of values for representing dates or periods during which the observations have been collected in order to compile the indicator for the target reference period. This code list was formally adopted on 15 April 2015. More information about this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like \"Total\", \"Unknown\", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345."@en ;
+    rdfs:seeAlso sip-sdmx-concept:TIME_PER_COLLECT ;
+    skos:related sip-sdmx-concept:TIME_PER_COLLECT ;
+    rdfs:seeAlso sip-sdmx-code:TimePerCollect .
+
+sip-sdmx-code:TimePerCollect a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Time period collection code list - codelist class"@en ;
+    rdfs:label "Time period collection code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect .
+
+
+########################################
+# CL_TIMEPERCOLLECT Codes
+########################################
+    
+sip-sdmx-code:timePerCollect-A a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "A" ;
+    skos:prefLabel "Average of observations through period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Average of observations through period"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Average of period"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-A .
+
+
+sip-sdmx-code:timePerCollect-B a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "B" ;
+    skos:prefLabel "Beginning of period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF, sip-sdmx-agency:SDMX ; rdfs:label """Beginning of period"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-B .
+
+
+sip-sdmx-code:timePerCollect-E a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "E" ;
+    skos:prefLabel "End of period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF, sip-sdmx-agency:SDMX ; rdfs:label """End of period"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-E .
+
+
+sip-sdmx-code:timePerCollect-H a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "H" ;
+    skos:prefLabel "Highest in period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF, sip-sdmx-agency:SDMX ; rdfs:label """Highest in period"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-H .
+
+
+sip-sdmx-code:timePerCollect-L a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "L" ;
+    skos:prefLabel "Lowest in period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF, sip-sdmx-agency:SDMX ; rdfs:label """Lowest in period"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-L .
+
+
+sip-sdmx-code:timePerCollect-M a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "M" ;
+    skos:prefLabel "Middle of period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF, sip-sdmx-agency:SDMX ; rdfs:label """Middle of period"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-M .
+
+
+sip-sdmx-code:timePerCollect-S a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "S" ;
+    skos:prefLabel "Summed through period"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF, sip-sdmx-agency:SDMX ; rdfs:label """Summed through period"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-S .
+
+
+sip-sdmx-code:timePerCollect-U a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "U" ;
+    skos:prefLabel "Unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Unknown"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-U .
+
+
+sip-sdmx-code:timePerCollect-V a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "V" ;
+    skos:prefLabel "Other"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF ; rdfs:label """Other"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-V .
+
+
+sip-sdmx-code:timePerCollect-Y a skos:Concept, sip-sdmx-code:TimePerCollect;
+    skos:topConceptOf sip-sdmx-code:timePerCollect ;
+    skos:inScheme sip-sdmx-code:timePerCollect ;
+    skos:notation "Y" ;
+    skos:prefLabel "Annualised summed"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IMF, sip-sdmx-agency:SDMX ; rdfs:label """Annualised summed"""@en ] .
+
+sip-sdmx-code:timePerCollect skos:hasTopConcept sip-sdmx-code:timePerCollect-Y .
+

@@ -1,0 +1,925 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_WORKSTATUS Scheme Definition
+#####################################################
+
+sip-sdmx-code:workStatus a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "SCL - Activity and employment status - codelist scheme"@en ;
+    rdfs:label "SCL - Activity and employment status - codelist scheme"@en ;
+    skos:altLabel "SCL_WSTATUS - codelist scheme"@en ;
+    skos:notation "CL_WORKSTATUS" ;
+    skos:definition "A reference workStatus codelist combining ESTAT:SCL_CL_WSTATUS(1.0), ESTAT:SCL_WSTATUS(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/SCL_CL_WSTATUS/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/SCL_WSTATUS/1.0> ;
+    skos:note "ESTAT:SCL_WSTATUS(1.0): Activity and employment status"@en ;
+    skos:note "ESTAT:SCL_CL_WSTATUS(1.0): <B> CONCEPT: </B> This code list describes the activity and working status of individuals. It contains information on their position in relation to the labour market (employed, unemployed, or inactive), their professional status (based on the ICSE classification), their working time (full-time or part-time). It also provides information on special sub-groups of the previously described population (e.g. farm labour force, retired persons, students, disabled persons, etc.)."@en ;
+    rdfs:seeAlso sip-sdmx-code:WorkStatus .
+
+sip-sdmx-code:WorkStatus a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "SCL - Activity and employment status - codelist class"@en ;
+    rdfs:label "SCL - Activity and employment status - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus .
+
+
+########################################
+# CL_WORKSTATUS Codes
+########################################
+    
+sip-sdmx-code:workStatus-660 a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "660" ;
+    skos:prefLabel "<B><font color=\"#0000FF\"> NON STANDARD CODES</font></B>  (i.e. codes not associated with the Concept but required for dissemination purposes)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """<B><font color="#0000FF"> NON STANDARD CODES</font></B>  (i.e. codes not associated with the Concept but required for dissemination purposes)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-660 .
+
+
+sip-sdmx-code:workStatus-770 a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "770" ;
+    skos:prefLabel "The following codes lists are considered as derived codes lists. Please refer to WSTATUS to get the list of codes."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """The following codes lists are considered as derived codes lists. Please refer to WSTATUS to get the list of codes."""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-770 .
+
+
+sip-sdmx-code:workStatus-820 a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "820" ;
+    skos:prefLabel "<B> CONCEPT: </B> This code list describes the working status of individuals and the type of business partnership. It contains information on their position in relation to the labour market: self-employed or co-owner."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """<B> CONCEPT: </B> This code list describes the working status of individuals and the type of business partnership. It contains information on their position in relation to the labour market: self-employed or co-owner."""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-820 .
+
+
+sip-sdmx-code:workStatus-ACT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "ACT" ;
+    skos:prefLabel "Active persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Active persons"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons in the labour force (former name: active persons)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-ACT .
+
+
+sip-sdmx-code:workStatus-ACT_INAC a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "ACT_INAC" ;
+    skos:prefLabel "Active and inactive persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Active and inactive persons"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons in- and outside the labour force (former name: active and inactive persons)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-ACT_INAC .
+
+
+sip-sdmx-code:workStatus-ACT_UNK a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "ACT_UNK" ;
+    skos:prefLabel "Active population - unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Active population - unknown"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons in the labour force (former name: active population) - unknown"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-ACT_UNK .
+
+
+sip-sdmx-code:workStatus-ARM a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "ARM" ;
+    skos:prefLabel "Persons in compulsory military or community service"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons in compulsory military or community service"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-ARM .
+
+
+sip-sdmx-code:workStatus-BSNPART a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "BSNPART" ;
+    skos:prefLabel "Business partner"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Business partner"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-BSNPART .
+
+
+sip-sdmx-code:workStatus-CFAM a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "CFAM" ;
+    skos:prefLabel "Contributing family workers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Contributing family workers"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-CFAM .
+
+
+sip-sdmx-code:workStatus-CFAM_COOP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "CFAM_COOP" ;
+    skos:prefLabel "Contributing family workers and members of producers' cooperatives"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Contributing family workers and members of producers' cooperatives"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-CFAM_COOP .
+
+
+sip-sdmx-code:workStatus-CLIENT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "CLIENT" ;
+    skos:prefLabel "Clients"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Clients"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-CLIENT .
+
+
+sip-sdmx-code:workStatus-COOP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "COOP" ;
+    skos:prefLabel "Members of producers' cooperatives"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Members of producers' cooperatives"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-COOP .
+
+
+sip-sdmx-code:workStatus-COWN a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "COWN" ;
+    skos:prefLabel "Co-owner"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Co-owner"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-COWN .
+
+
+sip-sdmx-code:workStatus-CTR_WTIME a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "CTR_WTIME" ;
+    skos:prefLabel "Control over working time"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Control over working time"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-CTR_WTIME .
+
+
+sip-sdmx-code:workStatus-DIS a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "DIS" ;
+    skos:prefLabel "Disabled persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Disabled persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-DIS .
+
+
+sip-sdmx-code:workStatus-EDUC a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EDUC" ;
+    skos:prefLabel "Students"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Students"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EDUC .
+
+
+sip-sdmx-code:workStatus-EMP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EMP" ;
+    skos:prefLabel "Employed persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EMP .
+
+
+sip-sdmx-code:workStatus-EMP_FT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EMP_FT" ;
+    skos:prefLabel "Employed persons working full-time"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons working full-time"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EMP_FT .
+
+
+sip-sdmx-code:workStatus-EMP_OTH a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EMP_OTH" ;
+    skos:prefLabel "Other employed persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Other employed persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EMP_OTH .
+
+
+sip-sdmx-code:workStatus-EMP_PT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EMP_PT" ;
+    skos:prefLabel "Employed persons working part-time"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons working part-time"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EMP_PT .
+
+
+sip-sdmx-code:workStatus-EMP_TEMP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EMP_TEMP" ;
+    skos:prefLabel "Employed persons with temporary contract"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons with temporary contract"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EMP_TEMP .
+
+
+sip-sdmx-code:workStatus-EMP_UNK a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EMP_UNK" ;
+    skos:prefLabel "Employed persons - unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons - unknown"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EMP_UNK .
+
+
+sip-sdmx-code:workStatus-EMP_W a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "EMP_W" ;
+    skos:prefLabel "Persons employed or previously employed"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Persons employed or previously employed"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-EMP_W .
+
+
+sip-sdmx-code:workStatus-FLF_D a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D" ;
+    skos:prefLabel "Farm labour force, directly employed by the farm on a regular or non-regular basis"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Farm labour force, directly employed by the farm on a regular or non-regular basis"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D .
+
+
+sip-sdmx-code:workStatus-FLF_D_NFAM a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_NFAM" ;
+    skos:prefLabel "Non-family farm labour force directly employed by the farm"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Non-family farm labour force directly employed by the farm"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_NFAM .
+
+
+sip-sdmx-code:workStatus-FLF_D_NR a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_NR" ;
+    skos:prefLabel "Farm labour force, directly employed by the farm on a non-regular basis"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Farm labour force, directly employed by the farm on a non-regular basis"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_NR .
+
+
+sip-sdmx-code:workStatus-FLF_D_R a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_R" ;
+    skos:prefLabel "Farm labour force, directly employed by the farm on a regular basis"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Farm labour force, directly employed by the farm on a regular basis"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_R .
+
+
+sip-sdmx-code:workStatus-FLF_D_RFAM a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_RFAM" ;
+    skos:prefLabel "Family farm labour force directly employed by the farm"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Family farm labour force directly employed by the farm"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_RFAM .
+
+
+sip-sdmx-code:workStatus-FLF_D_RFAMXHLD a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_RFAMXHLD" ;
+    skos:prefLabel "Members of sole holders' family, excluding the holder, directly employed by the farm"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Members of sole holders' family, excluding the holder, directly employed by the farm"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_RFAMXHLD .
+
+
+sip-sdmx-code:workStatus-FLF_D_RFAM_HLD a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_RFAM_HLD" ;
+    skos:prefLabel "Sole holder directly employed by the farm"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Sole holder directly employed by the farm"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_RFAM_HLD .
+
+
+sip-sdmx-code:workStatus-FLF_D_RFAM_OTH a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_RFAM_OTH" ;
+    skos:prefLabel "Other members of sole holder's family directly employed by the farm"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Other members of sole holder's family directly employed by the farm"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_RFAM_OTH .
+
+
+sip-sdmx-code:workStatus-FLF_D_RFAM_SPOU a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_RFAM_SPOU" ;
+    skos:prefLabel "Spouse of sole holder directly employed by the farm"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Spouse of sole holder directly employed by the farm"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_RFAM_SPOU .
+
+
+sip-sdmx-code:workStatus-FLF_D_RNFAM a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_D_RNFAM" ;
+    skos:prefLabel "Non-family farm labour force, directly employed by the farm on a regular basis"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Non-family farm labour force, directly employed by the farm on a regular basis"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_D_RNFAM .
+
+
+sip-sdmx-code:workStatus-FLF_GRP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_GRP" ;
+    skos:prefLabel "Group holders"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Group holders"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_GRP .
+
+
+sip-sdmx-code:workStatus-FLF_MANXGRP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_MANXGRP" ;
+    skos:prefLabel "Farm managers, excluding group holding"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Farm managers, excluding group holding"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_MANXGRP .
+
+
+sip-sdmx-code:workStatus-FLF_ND a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "FLF_ND" ;
+    skos:prefLabel "Farm labour force, not directly employed by the farm"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Farm labour force, not directly employed by the farm"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-FLF_ND .
+
+
+sip-sdmx-code:workStatus-HIRE_PLAN a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "HIRE_PLAN" ;
+    skos:prefLabel "Hiring plan"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Hiring plan"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-HIRE_PLAN .
+
+
+sip-sdmx-code:workStatus-HOME a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "HOME" ;
+    skos:prefLabel "Homemakers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Homemakers"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-HOME .
+
+
+sip-sdmx-code:workStatus-HOME_IO a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "HOME_IO" ;
+    skos:prefLabel "Homemakers and other inactive persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Homemakers and other inactive persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-HOME_IO .
+
+
+sip-sdmx-code:workStatus-INAC a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "INAC" ;
+    skos:prefLabel "Inactive persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Inactive persons"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons outside the labour force (former name: inactive persons)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-INAC .
+
+
+sip-sdmx-code:workStatus-INAC_GE65 a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "INAC_GE65" ;
+    skos:prefLabel "Inactive persons - 65 years or over"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Inactive persons - 65 years or over"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-INAC_GE65 .
+
+
+sip-sdmx-code:workStatus-INAC_OTH a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "INAC_OTH" ;
+    skos:prefLabel "Other inactive persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other inactive persons"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other persons outside the labour force (former name: inactive persons)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-INAC_OTH .
+
+
+sip-sdmx-code:workStatus-INAC_UNK a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "INAC_UNK" ;
+    skos:prefLabel "Inactive persons - unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Inactive persons - unknown"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons outside the labour force (former name: inactive persons) - unknown"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-INAC_UNK .
+
+
+sip-sdmx-code:workStatus-INC a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "INC" ;
+    skos:prefLabel "Retired persons and capital income recipients"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Retired persons and capital income recipients"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-INC .
+
+
+sip-sdmx-code:workStatus-LEAV a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "LEAV" ;
+    skos:prefLabel "Employed persons on temporary leave from work"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons on temporary leave from work"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-LEAV .
+
+
+sip-sdmx-code:workStatus-LIC a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "LIC" ;
+    skos:prefLabel "Licensed to practice"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Licensed to practice"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-LIC .
+
+
+sip-sdmx-code:workStatus-LT_MWA a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "LT_MWA" ;
+    skos:prefLabel "Persons below the minimum working age"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons below the minimum working age"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-LT_MWA .
+
+
+sip-sdmx-code:workStatus-MW_IS a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "MW_IS" ;
+    skos:prefLabel "Manual workers in industry and services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Manual workers in industry and services"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-MW_IS .
+
+
+sip-sdmx-code:workStatus-NAP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NAP" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NAP .
+
+
+sip-sdmx-code:workStatus-NCFAM a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NCFAM" ;
+    skos:prefLabel "Employed persons except contributing family workers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons except contributing family workers"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NCFAM .
+
+
+sip-sdmx-code:workStatus-NCHG a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NCHG" ;
+    skos:prefLabel "No change"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """No change"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NCHG .
+
+
+sip-sdmx-code:workStatus-NEMP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NEMP" ;
+    skos:prefLabel "Not employed persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Not employed persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NEMP .
+
+
+sip-sdmx-code:workStatus-NMW_IS a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NMW_IS" ;
+    skos:prefLabel "Non-manual workers in industry and services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Non-manual workers in industry and services"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NMW_IS .
+
+
+sip-sdmx-code:workStatus-NONE a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NONE" ;
+    skos:prefLabel "None"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """None"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NONE .
+
+
+sip-sdmx-code:workStatus-NRP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NRP" ;
+    skos:prefLabel "No response"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """No response"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NRP .
+
+
+sip-sdmx-code:workStatus-NSAL a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NSAL" ;
+    skos:prefLabel "Employed persons except employees"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employed persons except employees"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NSAL .
+
+
+sip-sdmx-code:workStatus-NSEEK_AVL a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NSEEK_AVL" ;
+    skos:prefLabel "Persons available to work but not seeking"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons available to work but not seeking"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NSEEK_AVL .
+
+
+sip-sdmx-code:workStatus-NWANT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "NWANT" ;
+    skos:prefLabel "Persons do not want to work"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Persons do not want to work"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-NWANT .
+
+
+sip-sdmx-code:workStatus-OTH a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "OTH" ;
+    skos:prefLabel "Others"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Others"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-OTH .
+
+
+sip-sdmx-code:workStatus-PACT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "PACT" ;
+    skos:prefLabel "Professionally active"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Professionally active"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-PACT .
+
+
+sip-sdmx-code:workStatus-POP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "POP" ;
+    skos:prefLabel "Population"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Population"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-POP .
+
+
+sip-sdmx-code:workStatus-PRACT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "PRACT" ;
+    skos:prefLabel "Practising"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Practising"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-PRACT .
+
+
+sip-sdmx-code:workStatus-RET a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "RET" ;
+    skos:prefLabel "Retired persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Retired persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-RET .
+
+
+sip-sdmx-code:workStatus-SAL a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SAL" ;
+    skos:prefLabel "Employees"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employees"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SAL .
+
+
+sip-sdmx-code:workStatus-SAL_PERM a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SAL_PERM" ;
+    skos:prefLabel "Employees with a permanent job"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employees with a permanent job"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SAL_PERM .
+
+
+sip-sdmx-code:workStatus-SAL_SCTR a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SAL_SCTR" ;
+    skos:prefLabel "Employees and subcontractors"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employees and subcontractors"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SAL_SCTR .
+
+
+sip-sdmx-code:workStatus-SAL_TEMP a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SAL_TEMP" ;
+    skos:prefLabel "Employees with a temporary job"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Employees with a temporary job"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SAL_TEMP .
+
+
+sip-sdmx-code:workStatus-SCTR a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SCTR" ;
+    skos:prefLabel "Subcontractors"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Subcontractors"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SCTR .
+
+
+sip-sdmx-code:workStatus-SEEK_NAVL a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SEEK_NAVL" ;
+    skos:prefLabel "Persons seeking work but not immediately available"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons seeking work but not immediately available"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SEEK_NAVL .
+
+
+sip-sdmx-code:workStatus-SELF a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SELF" ;
+    skos:prefLabel "Self-employed persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Self-employed persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SELF .
+
+
+sip-sdmx-code:workStatus-SELF_COWN a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SELF_COWN" ;
+    skos:prefLabel "Self-employed persons and co-owner"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Self-employed persons and co-owner"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SELF_COWN .
+
+
+sip-sdmx-code:workStatus-SELF_D_NS a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SELF_D_NS" ;
+    skos:prefLabel "Dependent self-employed without employees (own-account workers)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Dependent self-employed without employees (own-account workers)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SELF_D_NS .
+
+
+sip-sdmx-code:workStatus-SELF_I_NS a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SELF_I_NS" ;
+    skos:prefLabel "Independent self-employed without employees (own-account workers)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Independent self-employed without employees (own-account workers)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SELF_I_NS .
+
+
+sip-sdmx-code:workStatus-SELF_NS a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SELF_NS" ;
+    skos:prefLabel "Self-employed persons without employees (own-account workers)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Self-employed persons without employees (own-account workers)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SELF_NS .
+
+
+sip-sdmx-code:workStatus-SELF_NS_D_UNK a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SELF_NS_D_UNK" ;
+    skos:prefLabel "Self-employed without employees (own-account workers), dependency not known"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Self-employed without employees (own-account workers), dependency not known"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SELF_NS_D_UNK .
+
+
+sip-sdmx-code:workStatus-SELF_S a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SELF_S" ;
+    skos:prefLabel "Self-employed persons with employees (employers)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Self-employed persons with employees (employers)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SELF_S .
+
+
+sip-sdmx-code:workStatus-SLACK a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "SLACK" ;
+    skos:prefLabel "Labour market slack"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Labour market slack"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-SLACK .
+
+
+sip-sdmx-code:workStatus-TOTAL a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "TOTAL" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-TOTAL .
+
+
+sip-sdmx-code:workStatus-UEMP_PT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "UEMP_PT" ;
+    skos:prefLabel "Underemployed persons working part-time"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Underemployed persons working part-time"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-UEMP_PT .
+
+
+sip-sdmx-code:workStatus-UNE a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "UNE" ;
+    skos:prefLabel "Unemployed persons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Unemployed persons"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-UNE .
+
+
+sip-sdmx-code:workStatus-UNE_NW a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "UNE_NW" ;
+    skos:prefLabel "Unemployed persons, having never worked before"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Unemployed persons, having never worked before"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-UNE_NW .
+
+
+sip-sdmx-code:workStatus-UNE_W a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "UNE_W" ;
+    skos:prefLabel "Unemployed persons, having worked before"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Unemployed persons, having worked before"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-UNE_W .
+
+
+sip-sdmx-code:workStatus-UNK a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "UNK" ;
+    skos:prefLabel "Unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Unknown"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-UNK .
+
+
+sip-sdmx-code:workStatus-WANT a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "WANT" ;
+    skos:prefLabel "Persons would like to work (seeking employment or not)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Persons would like to work (seeking employment or not)"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-WANT .
+
+
+sip-sdmx-code:workStatus-WANTW a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "WANTW" ;
+    skos:prefLabel "Persons want to work but not seeking or available"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Persons want to work but not seeking or available"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-WANTW .
+
+
+sip-sdmx-code:workStatus-WSTATUS a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "WSTATUS" ;
+    skos:prefLabel "Activity and employment status"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Activity and employment status"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-WSTATUS .
+
+
+sip-sdmx-code:workStatus-WSTATUS2 a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "WSTATUS2" ;
+    skos:prefLabel "Employment status in the second job"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Employment status in the second job"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-WSTATUS2 .
+
+
+sip-sdmx-code:workStatus-WSTATUSPR a skos:Concept, sip-sdmx-code:WorkStatus;
+    skos:topConceptOf sip-sdmx-code:workStatus ;
+    skos:inScheme sip-sdmx-code:workStatus ;
+    skos:notation "WSTATUSPR" ;
+    skos:prefLabel "Preferred employment status"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Preferred employment status"""@en ] .
+
+sip-sdmx-code:workStatus skos:hasTopConcept sip-sdmx-code:workStatus-WSTATUSPR .
+

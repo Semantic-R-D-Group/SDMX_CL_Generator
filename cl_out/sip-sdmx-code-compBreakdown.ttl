@@ -1,0 +1,3664 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_COMPBREAKDOWN Scheme Definition
+#####################################################
+
+sip-sdmx-code:compBreakdown a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "SDG composite breakdown code list - codelist scheme"@en ;
+    rdfs:label "SDG composite breakdown code list - codelist scheme"@en ;
+    skos:notation "CL_COMPBREAKDOWN" ;
+    skos:definition "A reference compBreakdown codelist based on IAEG-SDGs:CL_COMP_BREAKDOWN(1.18)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_COMP_BREAKDOWN/1.18> ;
+    rdfs:seeAlso sip-sdmx-code:CompBreakdown .
+
+sip-sdmx-code:CompBreakdown a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "SDG composite breakdown code list - codelist class"@en ;
+    rdfs:label "SDG composite breakdown code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown .
+
+
+########################################
+# CL_COMPBREAKDOWN Codes
+########################################
+    
+sip-sdmx-code:compBreakdown-ABT2_ACHIEVE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ABT2_ACHIEVE" ;
+    skos:prefLabel "ABT2 status: National target reflecting ABT2 exists and progress is on track to achieve it"@en ;
+    rdfs:label "ABT2 status: National target reflecting ABT2 exists and progress is on track to achieve it"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ABT2_ACHIEVE .
+
+
+sip-sdmx-code:compBreakdown-ABT2_DIGRESS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ABT2_DIGRESS" ;
+    skos:prefLabel "ABT2 status: National target reflecting ABT2 exists, but moving away from it"@en ;
+    rdfs:label "ABT2 status: National target reflecting ABT2 exists, but moving away from it"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ABT2_DIGRESS .
+
+
+sip-sdmx-code:compBreakdown-ABT2_EXCEED a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ABT2_EXCEED" ;
+    skos:prefLabel "ABT2 status: National target reflecting ABT2  exists and progress is on track to exceed it"@en ;
+    rdfs:label "ABT2 status: National target reflecting ABT2  exists and progress is on track to exceed it"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ABT2_EXCEED .
+
+
+sip-sdmx-code:compBreakdown-ABT2_INSUFNT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ABT2_INSUFNT" ;
+    skos:prefLabel "ABT2 status: National target reflecting ABT2  exists and progress is there, but at as insufficient rate"@en ;
+    rdfs:label "ABT2 status: National target reflecting ABT2  exists and progress is there, but at as insufficient rate"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ABT2_INSUFNT .
+
+
+sip-sdmx-code:compBreakdown-ABT2_NONTLT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ABT2_NONTLT" ;
+    skos:prefLabel "ABT2 status: No national target reflecting ABT 2"@en ;
+    rdfs:label "ABT2 status: No national target reflecting ABT 2"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ABT2_NONTLT .
+
+
+sip-sdmx-code:compBreakdown-ABT2_NOPROG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ABT2_NOPROG" ;
+    skos:prefLabel "ABT2 status: National target reflecting ABT2  exists, but no progress"@en ;
+    rdfs:label "ABT2 status: National target reflecting ABT2  exists, but no progress"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ABT2_NOPROG .
+
+
+sip-sdmx-code:compBreakdown-COD_EXPLOSIVES a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "COD_EXPLOSIVES" ;
+    skos:prefLabel "Cause of death: Planted explosives and unexploded ordnance (UXO)"@en ;
+    rdfs:label "Cause of death: Planted explosives and unexploded ordnance (UXO)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-COD_EXPLOSIVES .
+
+
+sip-sdmx-code:compBreakdown-COD_HEAVYWEAPONS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "COD_HEAVYWEAPONS" ;
+    skos:prefLabel "Cause of death: Heavy weapons and explosive munitions"@en ;
+    rdfs:label "Cause of death: Heavy weapons and explosive munitions"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-COD_HEAVYWEAPONS .
+
+
+sip-sdmx-code:compBreakdown-COD_OTHER a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "COD_OTHER" ;
+    skos:prefLabel "Cause of death: Incendiary; Chemical, biological, radiological, nuclear (CBRN); Electromagnetic weapons; Less lethal weapons; Denial of access to/ destruction of objects indispensable to survival; Accidents related to conflict; Use of objects and other means; Multiple Weapons Used."@en ;
+    rdfs:label "Cause of death: Incendiary; Chemical, biological, radiological, nuclear (CBRN); Electromagnetic weapons; Less lethal weapons; Denial of access to/ destruction of objects indispensable to survival; Accidents related to conflict; Use of objects and other means; Multiple Weapons Used."@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-COD_OTHER .
+
+
+sip-sdmx-code:compBreakdown-COD_SMALLARMS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "COD_SMALLARMS" ;
+    skos:prefLabel "Cause of death: Small arms and light weapons"@en ;
+    rdfs:label "Cause of death: Small arms and light weapons"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-COD_SMALLARMS .
+
+
+sip-sdmx-code:compBreakdown-COD_U a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "COD_U" ;
+    skos:prefLabel "Cause of death: Unknown"@en ;
+    rdfs:label "Cause of death: Unknown"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-COD_U .
+
+
+sip-sdmx-code:compBreakdown-DEG_HIG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DEG_HIG" ;
+    skos:prefLabel "Degree: High level"@en ;
+    rdfs:label "Degree: High level"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DEG_HIG .
+
+
+sip-sdmx-code:compBreakdown-DEG_LOW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DEG_LOW" ;
+    skos:prefLabel "Degree: Low level"@en ;
+    rdfs:label "Degree: Low level"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DEG_LOW .
+
+
+sip-sdmx-code:compBreakdown-DEG_MHIG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DEG_MHIG" ;
+    skos:prefLabel "Degree: Medium-high level"@en ;
+    rdfs:label "Degree: Medium-high level"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DEG_MHIG .
+
+
+sip-sdmx-code:compBreakdown-DEG_MLOW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DEG_MLOW" ;
+    skos:prefLabel "Degree: Medium-low level"@en ;
+    rdfs:label "Degree: Medium-low level"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DEG_MLOW .
+
+
+sip-sdmx-code:compBreakdown-DEG_VHIG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DEG_VHIG" ;
+    skos:prefLabel "Degree: Very high level"@en ;
+    rdfs:label "Degree: Very high level"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DEG_VHIG .
+
+
+sip-sdmx-code:compBreakdown-DEG_VLOW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DEG_VLOW" ;
+    skos:prefLabel "Degree: Very low level"@en ;
+    rdfs:label "Degree: Very low level"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DEG_VLOW .
+
+
+sip-sdmx-code:compBreakdown-DL_EXTREME a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DL_EXTREME" ;
+    skos:prefLabel "Deviation Level: Extreme (75-100%)"@en ;
+    rdfs:label "Deviation Level: Extreme (75-100%)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DL_EXTREME .
+
+
+sip-sdmx-code:compBreakdown-DL_HIGH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DL_HIGH" ;
+    skos:prefLabel "Deviation Level: High (50-75%)"@en ;
+    rdfs:label "Deviation Level: High (50-75%)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DL_HIGH .
+
+
+sip-sdmx-code:compBreakdown-DL_LOW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DL_LOW" ;
+    skos:prefLabel "Deviation Level: Low (0-25%)"@en ;
+    rdfs:label "Deviation Level: Low (0-25%)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DL_LOW .
+
+
+sip-sdmx-code:compBreakdown-DL_MEDIUM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "DL_MEDIUM" ;
+    skos:prefLabel "Deviation Level: Medium (25-50%)"@en ;
+    rdfs:label "Deviation Level: Medium (25-50%)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-DL_MEDIUM .
+
+
+sip-sdmx-code:compBreakdown-ELV_1 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ELV_1" ;
+    skos:prefLabel "Elevation > 4.500 meters"@en ;
+    rdfs:label "Elevation > 4.500 meters"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ELV_1 .
+
+
+sip-sdmx-code:compBreakdown-ELV_2 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ELV_2" ;
+    skos:prefLabel "Elevation 3.500–4.500 meters"@en ;
+    rdfs:label "Elevation 3.500–4.500 meters"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ELV_2 .
+
+
+sip-sdmx-code:compBreakdown-ELV_3 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ELV_3" ;
+    skos:prefLabel "Elevation 2.500–3.500 meters"@en ;
+    rdfs:label "Elevation 2.500–3.500 meters"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ELV_3 .
+
+
+sip-sdmx-code:compBreakdown-ELV_4 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ELV_4" ;
+    skos:prefLabel "Elevation 1.500–2.500 meters and slope > 2"@en ;
+    rdfs:label "Elevation 1.500–2.500 meters and slope > 2"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ELV_4 .
+
+
+sip-sdmx-code:compBreakdown-ELV_5 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ELV_5" ;
+    skos:prefLabel "Elevation 1.000–1.500 meters and slope > 5 or local elevation range (LER 7 kilometer radius) > 300 meters"@en ;
+    rdfs:label "Elevation 1.000–1.500 meters and slope > 5 or local elevation range (LER 7 kilometer radius) > 300 meters"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ELV_5 .
+
+
+sip-sdmx-code:compBreakdown-ELV_6 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "ELV_6" ;
+    skos:prefLabel "Elevation 300–1.000 meters and local elevation range (7 kilometer radius) > 300 meters"@en ;
+    rdfs:label "Elevation 300–1.000 meters and local elevation range (7 kilometer radius) > 300 meters"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-ELV_6 .
+
+
+sip-sdmx-code:compBreakdown-FCC_E a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FCC_E" ;
+    skos:prefLabel "Frequency of Chlorophyll-a concentration: Extreme"@en ;
+    rdfs:label "Frequency of Chlorophyll-a concentration: Extreme"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FCC_E .
+
+
+sip-sdmx-code:compBreakdown-FCC_H a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FCC_H" ;
+    skos:prefLabel "Frequency of Chlorophyll-a concentration: High"@en ;
+    rdfs:label "Frequency of Chlorophyll-a concentration: High"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FCC_H .
+
+
+sip-sdmx-code:compBreakdown-FCC_M a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FCC_M" ;
+    skos:prefLabel "Frequency of Chlorophyll-a concentration: Moderate"@en ;
+    rdfs:label "Frequency of Chlorophyll-a concentration: Moderate"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FCC_M .
+
+
+sip-sdmx-code:compBreakdown-FIS_POSTFIS_CON_INC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FIS_POSTFIS_CON_INC" ;
+    skos:prefLabel "Fiscal intervention stage: Postfiscal consumable income"@en ;
+    rdfs:label "Fiscal intervention stage: Postfiscal consumable income"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FIS_POSTFIS_CON_INC .
+
+
+sip-sdmx-code:compBreakdown-FIS_POSTFIS_DIS_INC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FIS_POSTFIS_DIS_INC" ;
+    skos:prefLabel "Fiscal intervention stage: Postfiscal disposable income"@en ;
+    rdfs:label "Fiscal intervention stage: Postfiscal disposable income"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FIS_POSTFIS_DIS_INC .
+
+
+sip-sdmx-code:compBreakdown-FIS_PREFIS_INC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FIS_PREFIS_INC" ;
+    skos:prefLabel "Fiscal intervention stage: Prefiscal income"@en ;
+    rdfs:label "Fiscal intervention stage: Prefiscal income"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FIS_PREFIS_INC .
+
+
+sip-sdmx-code:compBreakdown-FWS_HHS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FWS_HHS" ;
+    skos:prefLabel "Food Waste Sector: Households"@en ;
+    rdfs:label "Food Waste Sector: Households"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FWS_HHS .
+
+
+sip-sdmx-code:compBreakdown-FWS_MNFC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FWS_MNFC" ;
+    skos:prefLabel "Food Waste Sector: Manufacturing"@en ;
+    rdfs:label "Food Waste Sector: Manufacturing"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FWS_MNFC .
+
+
+sip-sdmx-code:compBreakdown-FWS_OOHC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FWS_OOHC" ;
+    skos:prefLabel "Food Waste Sector: Out-of-home consumption"@en ;
+    rdfs:label "Food Waste Sector: Out-of-home consumption"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FWS_OOHC .
+
+
+sip-sdmx-code:compBreakdown-FWS_RTL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "FWS_RTL" ;
+    skos:prefLabel "Food Waste Sector: Retail"@en ;
+    rdfs:label "Food Waste Sector: Retail"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-FWS_RTL .
+
+
+sip-sdmx-code:compBreakdown-GRD_AGE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_AGE" ;
+    skos:prefLabel "Grounds of discrimination: Age"@en ;
+    rdfs:label "Grounds of discrimination: Age"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_AGE .
+
+
+sip-sdmx-code:compBreakdown-GRD_CLOTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_CLOTH" ;
+    skos:prefLabel "Grounds of discrimination: Clothing"@en ;
+    rdfs:label "Grounds of discrimination: Clothing"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_CLOTH .
+
+
+sip-sdmx-code:compBreakdown-GRD_COLR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_COLR" ;
+    skos:prefLabel "Grounds of discrimination: Colour"@en ;
+    rdfs:label "Grounds of discrimination: Colour"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_COLR .
+
+
+sip-sdmx-code:compBreakdown-GRD_DIS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_DIS" ;
+    skos:prefLabel "Grounds of discrimination: Disability"@en ;
+    rdfs:label "Grounds of discrimination: Disability"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_DIS .
+
+
+sip-sdmx-code:compBreakdown-GRD_DISHEA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_DISHEA" ;
+    skos:prefLabel "Grounds of discrimination: Disability or health status"@en ;
+    rdfs:label "Grounds of discrimination: Disability or health status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_DISHEA .
+
+
+sip-sdmx-code:compBreakdown-GRD_EDU a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_EDU" ;
+    skos:prefLabel "Grounds of discrimination: Educational"@en ;
+    rdfs:label "Grounds of discrimination: Educational"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_EDU .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETH" ;
+    skos:prefLabel "Grounds of discrimination: Ethnic"@en ;
+    rdfs:label "Grounds of discrimination: Ethnic"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETH .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETHCOLLAN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETHCOLLAN" ;
+    skos:prefLabel "Grounds of discrimination: Ethnicity, colour, language"@en ;
+    rdfs:label "Grounds of discrimination: Ethnicity, colour, language"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETHCOLLAN .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETHCOLLANMIG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETHCOLLANMIG" ;
+    skos:prefLabel "Grounds of discrimination: Ethnic, colour, language, migration"@en ;
+    rdfs:label "Grounds of discrimination: Ethnic, colour, language, migration"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETHCOLLANMIG .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETHCOLLANNAL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETHCOLLANNAL" ;
+    skos:prefLabel "Grounds of discrimination: Ethnicity, colour, language, nationality"@en ;
+    rdfs:label "Grounds of discrimination: Ethnicity, colour, language, nationality"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETHCOLLANNAL .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETHCUL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETHCUL" ;
+    skos:prefLabel "Grounds of Discrimination: Ethnicity or culture"@en ;
+    rdfs:label "Grounds of Discrimination: Ethnicity or culture"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETHCUL .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETHI a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETHI" ;
+    skos:prefLabel "Grounds of discrimination: Ethnic or immigration status"@en ;
+    rdfs:label "Grounds of discrimination: Ethnic or immigration status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETHI .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETHIO a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETHIO" ;
+    skos:prefLabel "Grounds of Discrimination: Ethnic or migration origin"@en ;
+    rdfs:label "Grounds of Discrimination: Ethnic or migration origin"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETHIO .
+
+
+sip-sdmx-code:compBreakdown-GRD_ETHRACECOLLAN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ETHRACECOLLAN" ;
+    skos:prefLabel "Grounds of discrimination: Ethnicity, race, colour, language"@en ;
+    rdfs:label "Grounds of discrimination: Ethnicity, race, colour, language"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ETHRACECOLLAN .
+
+
+sip-sdmx-code:compBreakdown-GRD_FAM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_FAM" ;
+    skos:prefLabel "Grounds of discrimination: Family status"@en ;
+    rdfs:label "Grounds of discrimination: Family status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_FAM .
+
+
+sip-sdmx-code:compBreakdown-GRD_FNAM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_FNAM" ;
+    skos:prefLabel "Grounds of Discrimination: Foreign name"@en ;
+    rdfs:label "Grounds of Discrimination: Foreign name"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_FNAM .
+
+
+sip-sdmx-code:compBreakdown-GRD_GENID a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_GENID" ;
+    skos:prefLabel "Grounds of discrimination: Gender identity"@en ;
+    rdfs:label "Grounds of discrimination: Gender identity"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_GENID .
+
+
+sip-sdmx-code:compBreakdown-GRD_GEO a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_GEO" ;
+    skos:prefLabel "Grounds of discrimination: Geographic location"@en ;
+    rdfs:label "Grounds of discrimination: Geographic location"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_GEO .
+
+
+sip-sdmx-code:compBreakdown-GRD_HEAILLINJ a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_HEAILLINJ" ;
+    skos:prefLabel "Grounds of Discrimination: Health problems, illness or injury"@en ;
+    rdfs:label "Grounds of Discrimination: Health problems, illness or injury"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_HEAILLINJ .
+
+
+sip-sdmx-code:compBreakdown-GRD_HEALTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_HEALTH" ;
+    skos:prefLabel "Grounds of discrimination: Health status"@en ;
+    rdfs:label "Grounds of discrimination: Health status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_HEALTH .
+
+
+sip-sdmx-code:compBreakdown-GRD_INTERS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_INTERS" ;
+    skos:prefLabel "Grounds of Discrimination: Being intersex"@en ;
+    rdfs:label "Grounds of Discrimination: Being intersex"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_INTERS .
+
+
+sip-sdmx-code:compBreakdown-GRD_LANDIA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_LANDIA" ;
+    skos:prefLabel "Grounds of discrimination: Language  or dialect"@en ;
+    rdfs:label "Grounds of discrimination: Language  or dialect"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_LANDIA .
+
+
+sip-sdmx-code:compBreakdown-GRD_MAR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_MAR" ;
+    skos:prefLabel "Grounds of discrimination: Marital status"@en ;
+    rdfs:label "Grounds of discrimination: Marital status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_MAR .
+
+
+sip-sdmx-code:compBreakdown-GRD_MARFAM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_MARFAM" ;
+    skos:prefLabel "Grounds of discrimination: Marital and family status"@en ;
+    rdfs:label "Grounds of discrimination: Marital and family status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_MARFAM .
+
+
+sip-sdmx-code:compBreakdown-GRD_MHEALTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_MHEALTH" ;
+    skos:prefLabel "Grounds of Discrimination: Mental health"@en ;
+    rdfs:label "Grounds of Discrimination: Mental health"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_MHEALTH .
+
+
+sip-sdmx-code:compBreakdown-GRD_MIG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_MIG" ;
+    skos:prefLabel "Grounds of discrimination: Migration status"@en ;
+    rdfs:label "Grounds of discrimination: Migration status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_MIG .
+
+
+sip-sdmx-code:compBreakdown-GRD_NATION a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_NATION" ;
+    skos:prefLabel "Grounds of discrimination: Nationality"@en ;
+    rdfs:label "Grounds of discrimination: Nationality"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_NATION .
+
+
+sip-sdmx-code:compBreakdown-GRD_NETW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_NETW" ;
+    skos:prefLabel "Grounds of discrimination: Networking"@en ;
+    rdfs:label "Grounds of discrimination: Networking"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_NETW .
+
+
+sip-sdmx-code:compBreakdown-GRD_ORIGIN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_ORIGIN" ;
+    skos:prefLabel "Grounds of discrimination: Place of origin"@en ;
+    rdfs:label "Grounds of discrimination: Place of origin"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_ORIGIN .
+
+
+sip-sdmx-code:compBreakdown-GRD_OTHER a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_OTHER" ;
+    skos:prefLabel "Grounds of discrimination: Other"@en ;
+    rdfs:label "Grounds of discrimination: Other"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_OTHER .
+
+
+sip-sdmx-code:compBreakdown-GRD_PHEALTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_PHEALTH" ;
+    skos:prefLabel "Grounds of Discrimination: Physical health"@en ;
+    rdfs:label "Grounds of Discrimination: Physical health"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_PHEALTH .
+
+
+sip-sdmx-code:compBreakdown-GRD_PHYSCOND a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_PHYSCOND" ;
+    skos:prefLabel "Grounds of discrimination: Physical condition"@en ;
+    rdfs:label "Grounds of discrimination: Physical condition"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_PHYSCOND .
+
+
+sip-sdmx-code:compBreakdown-GRD_POLVIEW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_POLVIEW" ;
+    skos:prefLabel "Grounds of discrimination: Political opinion"@en ;
+    rdfs:label "Grounds of discrimination: Political opinion"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_POLVIEW .
+
+
+sip-sdmx-code:compBreakdown-GRD_PREGY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_PREGY" ;
+    skos:prefLabel "Grounds of discrimination: Pregnancy"@en ;
+    rdfs:label "Grounds of discrimination: Pregnancy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_PREGY .
+
+
+sip-sdmx-code:compBreakdown-GRD_RACE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_RACE" ;
+    skos:prefLabel "Grounds of discrimination: Race"@en ;
+    rdfs:label "Grounds of discrimination: Race"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_RACE .
+
+
+sip-sdmx-code:compBreakdown-GRD_RACECOLR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_RACECOLR" ;
+    skos:prefLabel "Grounds of discrimination: Race or Colour"@en ;
+    rdfs:label "Grounds of discrimination: Race or Colour"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_RACECOLR .
+
+
+sip-sdmx-code:compBreakdown-GRD_RELIGION a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_RELIGION" ;
+    skos:prefLabel "Grounds of discrimination: Religion or belief"@en ;
+    rdfs:label "Grounds of discrimination: Religion or belief"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_RELIGION .
+
+
+sip-sdmx-code:compBreakdown-GRD_RES a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_RES" ;
+    skos:prefLabel "Grounds of discrimination: Place of residence"@en ;
+    rdfs:label "Grounds of discrimination: Place of residence"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_RES .
+
+
+sip-sdmx-code:compBreakdown-GRD_SEX a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_SEX" ;
+    skos:prefLabel "Grounds of discrimination: Sex"@en ;
+    rdfs:label "Grounds of discrimination: Sex"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_SEX .
+
+
+sip-sdmx-code:compBreakdown-GRD_SEXGENID a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_SEXGENID" ;
+    skos:prefLabel "Grounds of discrimination: Sexual/gender identity"@en ;
+    rdfs:label "Grounds of discrimination: Sexual/gender identity"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_SEXGENID .
+
+
+sip-sdmx-code:compBreakdown-GRD_SEXO a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_SEXO" ;
+    skos:prefLabel "Grounds of discrimination: Sexual orientation"@en ;
+    rdfs:label "Grounds of discrimination: Sexual orientation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_SEXO .
+
+
+sip-sdmx-code:compBreakdown-GRD_SEXOGENID a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_SEXOGENID" ;
+    skos:prefLabel "Grounds of discrimination: Sexual orientation and gender identity"@en ;
+    rdfs:label "Grounds of discrimination: Sexual orientation and gender identity"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_SEXOGENID .
+
+
+sip-sdmx-code:compBreakdown-GRD_SOCIOECON a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_SOCIOECON" ;
+    skos:prefLabel "Grounds of discrimination: Socioeconomic status"@en ;
+    rdfs:label "Grounds of discrimination: Socioeconomic status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_SOCIOECON .
+
+
+sip-sdmx-code:compBreakdown-GRD_TRAD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_TRAD" ;
+    skos:prefLabel "Grounds of discrimination: Traditions"@en ;
+    rdfs:label "Grounds of discrimination: Traditions"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_TRAD .
+
+
+sip-sdmx-code:compBreakdown-GRD_TRANSG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_TRANSG" ;
+    skos:prefLabel "Grounds of Discrimination: Transgender background or being non-binary"@en ;
+    rdfs:label "Grounds of Discrimination: Transgender background or being non-binary"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_TRANSG .
+
+
+sip-sdmx-code:compBreakdown-GRD_VIEW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_VIEW" ;
+    skos:prefLabel "Grounds of Discrimination: Opinions and convictions"@en ;
+    rdfs:label "Grounds of Discrimination: Opinions and convictions"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_VIEW .
+
+
+sip-sdmx-code:compBreakdown-GRD_WEALTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_WEALTH" ;
+    skos:prefLabel "Grounds of discrimination: Wealth status"@en ;
+    rdfs:label "Grounds of discrimination: Wealth status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_WEALTH .
+
+
+sip-sdmx-code:compBreakdown-GRD_WEDLOCK a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_WEDLOCK" ;
+    skos:prefLabel "Grounds of discrimination: Born out of wedlock"@en ;
+    rdfs:label "Grounds of discrimination: Born out of wedlock"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_WEDLOCK .
+
+
+sip-sdmx-code:compBreakdown-GRD_WORK a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "GRD_WORK" ;
+    skos:prefLabel "Grounds of discrimination: Work status"@en ;
+    rdfs:label "Grounds of discrimination: Work status"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-GRD_WORK .
+
+
+sip-sdmx-code:compBreakdown-HZT_ACIDR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_ACIDR" ;
+    skos:prefLabel "Hazard Type: Acid Rain"@en ;
+    rdfs:label "Hazard Type: Acid Rain"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_ACIDR .
+
+
+sip-sdmx-code:compBreakdown-HZT_ACIDT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_ACIDT" ;
+    skos:prefLabel "Hazard Type: Accident"@en ;
+    rdfs:label "Hazard Type: Accident"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_ACIDT .
+
+
+sip-sdmx-code:compBreakdown-HZT_ALLUV a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_ALLUV" ;
+    skos:prefLabel "Hazard Type: Alluvion"@en ;
+    rdfs:label "Hazard Type: Alluvion"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_ALLUV .
+
+
+sip-sdmx-code:compBreakdown-HZT_ANIAK a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_ANIAK" ;
+    skos:prefLabel "Hazard Type: Animal Attack"@en ;
+    rdfs:label "Hazard Type: Animal Attack"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_ANIAK .
+
+
+sip-sdmx-code:compBreakdown-HZT_AVALE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_AVALE" ;
+    skos:prefLabel "Hazard Type: Avalanche"@en ;
+    rdfs:label "Hazard Type: Avalanche"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_AVALE .
+
+
+sip-sdmx-code:compBreakdown-HZT_BIOGL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_BIOGL" ;
+    skos:prefLabel "Hazard Type: Biological"@en ;
+    rdfs:label "Hazard Type: Biological"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_BIOGL .
+
+
+sip-sdmx-code:compBreakdown-HZT_CHESP a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_CHESP" ;
+    skos:prefLabel "Hazard Type: Chemical Spill"@en ;
+    rdfs:label "Hazard Type: Chemical Spill"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_CHESP .
+
+
+sip-sdmx-code:compBreakdown-HZT_COLDW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_COLDW" ;
+    skos:prefLabel "Hazard Type: Cold Wave"@en ;
+    rdfs:label "Hazard Type: Cold Wave"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_COLDW .
+
+
+sip-sdmx-code:compBreakdown-HZT_CONTM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_CONTM" ;
+    skos:prefLabel "Hazard Type: Contamination"@en ;
+    rdfs:label "Hazard Type: Contamination"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_CONTM .
+
+
+sip-sdmx-code:compBreakdown-HZT_COSER a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_COSER" ;
+    skos:prefLabel "Hazard Type: Coastal Erosion"@en ;
+    rdfs:label "Hazard Type: Coastal Erosion"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_COSER .
+
+
+sip-sdmx-code:compBreakdown-HZT_COSFL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_COSFL" ;
+    skos:prefLabel "Hazard Type: Coastal Flood"@en ;
+    rdfs:label "Hazard Type: Coastal Flood"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_COSFL .
+
+
+sip-sdmx-code:compBreakdown-HZT_CSOLD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_CSOLD" ;
+    skos:prefLabel "Hazard Type: Consolidate"@en ;
+    rdfs:label "Hazard Type: Consolidate"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_CSOLD .
+
+
+sip-sdmx-code:compBreakdown-HZT_CYCLN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_CYCLN" ;
+    skos:prefLabel "Hazard Type: Cyclone"@en ;
+    rdfs:label "Hazard Type: Cyclone"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_CYCLN .
+
+
+sip-sdmx-code:compBreakdown-HZT_DFRST a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_DFRST" ;
+    skos:prefLabel "Hazard Type: Deforestation"@en ;
+    rdfs:label "Hazard Type: Deforestation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_DFRST .
+
+
+sip-sdmx-code:compBreakdown-HZT_DROUG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_DROUG" ;
+    skos:prefLabel "Hazard Type: Drought"@en ;
+    rdfs:label "Hazard Type: Drought"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_DROUG .
+
+
+sip-sdmx-code:compBreakdown-HZT_DZUD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_DZUD" ;
+    skos:prefLabel "Hazard Type: Dzud"@en ;
+    rdfs:label "Hazard Type: Dzud"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_DZUD .
+
+
+sip-sdmx-code:compBreakdown-HZT_ELEST a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_ELEST" ;
+    skos:prefLabel "Hazard Type: Electric Storm"@en ;
+    rdfs:label "Hazard Type: Electric Storm"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_ELEST .
+
+
+sip-sdmx-code:compBreakdown-HZT_EPIDM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_EPIDM" ;
+    skos:prefLabel "Hazard Type: Epidemics"@en ;
+    rdfs:label "Hazard Type: Epidemics"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_EPIDM .
+
+
+sip-sdmx-code:compBreakdown-HZT_EPIZT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_EPIZT" ;
+    skos:prefLabel "Hazard Type: Epizootic"@en ;
+    rdfs:label "Hazard Type: Epizootic"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_EPIZT .
+
+
+sip-sdmx-code:compBreakdown-HZT_EROSN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_EROSN" ;
+    skos:prefLabel "Hazard Type: Erosion"@en ;
+    rdfs:label "Hazard Type: Erosion"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_EROSN .
+
+
+sip-sdmx-code:compBreakdown-HZT_ERQAK a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_ERQAK" ;
+    skos:prefLabel "Hazard Type: Earthquake"@en ;
+    rdfs:label "Hazard Type: Earthquake"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_ERQAK .
+
+
+sip-sdmx-code:compBreakdown-HZT_EXPLN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_EXPLN" ;
+    skos:prefLabel "Hazard Type: Explosion"@en ;
+    rdfs:label "Hazard Type: Explosion"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_EXPLN .
+
+
+sip-sdmx-code:compBreakdown-HZT_EXTEM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_EXTEM" ;
+    skos:prefLabel "Hazard Type: Extreme Temperature"@en ;
+    rdfs:label "Hazard Type: Extreme Temperature"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_EXTEM .
+
+
+sip-sdmx-code:compBreakdown-HZT_FIREX a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_FIREX" ;
+    skos:prefLabel "Hazard Type: Fire"@en ;
+    rdfs:label "Hazard Type: Fire"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_FIREX .
+
+
+sip-sdmx-code:compBreakdown-HZT_FLOOD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_FLOOD" ;
+    skos:prefLabel "Hazard Type: Flood"@en ;
+    rdfs:label "Hazard Type: Flood"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_FLOOD .
+
+
+sip-sdmx-code:compBreakdown-HZT_FLSFL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_FLSFL" ;
+    skos:prefLabel "Hazard Type: Flash Flood"@en ;
+    rdfs:label "Hazard Type: Flash Flood"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_FLSFL .
+
+
+sip-sdmx-code:compBreakdown-HZT_FOGXX a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_FOGXX" ;
+    skos:prefLabel "Hazard Type: Fog"@en ;
+    rdfs:label "Hazard Type: Fog"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_FOGXX .
+
+
+sip-sdmx-code:compBreakdown-HZT_FROST a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_FROST" ;
+    skos:prefLabel "Hazard Type: Frost"@en ;
+    rdfs:label "Hazard Type: Frost"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_FROST .
+
+
+sip-sdmx-code:compBreakdown-HZT_FRZRN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_FRZRN" ;
+    skos:prefLabel "Hazard Type: Freezing Rain"@en ;
+    rdfs:label "Hazard Type: Freezing Rain"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_FRZRN .
+
+
+sip-sdmx-code:compBreakdown-HZT_GLCFL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_GLCFL" ;
+    skos:prefLabel "Hazard Type: Glacial Lake Outburst Flood"@en ;
+    rdfs:label "Hazard Type: Glacial Lake Outburst Flood"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_GLCFL .
+
+
+sip-sdmx-code:compBreakdown-HZT_HAILS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_HAILS" ;
+    skos:prefLabel "Hazard Type: Hailstorm"@en ;
+    rdfs:label "Hazard Type: Hailstorm"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_HAILS .
+
+
+sip-sdmx-code:compBreakdown-HZT_HETWA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_HETWA" ;
+    skos:prefLabel "Hazard Type: Heat Wave"@en ;
+    rdfs:label "Hazard Type: Heat Wave"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_HETWA .
+
+
+sip-sdmx-code:compBreakdown-HZT_HEVRN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_HEVRN" ;
+    skos:prefLabel "Hazard Type: Heavy Rain"@en ;
+    rdfs:label "Hazard Type: Heavy Rain"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_HEVRN .
+
+
+sip-sdmx-code:compBreakdown-HZT_INFET a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_INFET" ;
+    skos:prefLabel "Hazard Type: Insect Infestation"@en ;
+    rdfs:label "Hazard Type: Insect Infestation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_INFET .
+
+
+sip-sdmx-code:compBreakdown-HZT_INTOX a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_INTOX" ;
+    skos:prefLabel "Hazard Type: Intoxication"@en ;
+    rdfs:label "Hazard Type: Intoxication"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_INTOX .
+
+
+sip-sdmx-code:compBreakdown-HZT_LAHAR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_LAHAR" ;
+    skos:prefLabel "Hazard Type: Lahar"@en ;
+    rdfs:label "Hazard Type: Lahar"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_LAHAR .
+
+
+sip-sdmx-code:compBreakdown-HZT_LIQFN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_LIQFN" ;
+    skos:prefLabel "Hazard Type: Liquefaction"@en ;
+    rdfs:label "Hazard Type: Liquefaction"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_LIQFN .
+
+
+sip-sdmx-code:compBreakdown-HZT_LNDRG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_LNDRG" ;
+    skos:prefLabel "Hazard Type: Land Degradation"@en ;
+    rdfs:label "Hazard Type: Land Degradation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_LNDRG .
+
+
+sip-sdmx-code:compBreakdown-HZT_LNDSL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_LNDSL" ;
+    skos:prefLabel "Hazard Type: Landslide"@en ;
+    rdfs:label "Hazard Type: Landslide"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_LNDSL .
+
+
+sip-sdmx-code:compBreakdown-HZT_NUCIN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_NUCIN" ;
+    skos:prefLabel "Hazard Type: Nuclear Incident"@en ;
+    rdfs:label "Hazard Type: Nuclear Incident"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_NUCIN .
+
+
+sip-sdmx-code:compBreakdown-HZT_OTHER a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_OTHER" ;
+    skos:prefLabel "Hazard Type: Other"@en ;
+    rdfs:label "Hazard Type: Other"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_OTHER .
+
+
+sip-sdmx-code:compBreakdown-HZT_PANIC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_PANIC" ;
+    skos:prefLabel "Hazard Type: Panic"@en ;
+    rdfs:label "Hazard Type: Panic"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_PANIC .
+
+
+sip-sdmx-code:compBreakdown-HZT_PEATX a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_PEATX" ;
+    skos:prefLabel "Hazard Type: Peat"@en ;
+    rdfs:label "Hazard Type: Peat"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_PEATX .
+
+
+sip-sdmx-code:compBreakdown-HZT_PESTX a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_PESTX" ;
+    skos:prefLabel "Hazard Type: Pest"@en ;
+    rdfs:label "Hazard Type: Pest"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_PESTX .
+
+
+sip-sdmx-code:compBreakdown-HZT_PLGUE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_PLGUE" ;
+    skos:prefLabel "Hazard Type: Plague"@en ;
+    rdfs:label "Hazard Type: Plague"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_PLGUE .
+
+
+sip-sdmx-code:compBreakdown-HZT_POLUT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_POLUT" ;
+    skos:prefLabel "Hazard Type: Pollution"@en ;
+    rdfs:label "Hazard Type: Pollution"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_POLUT .
+
+
+sip-sdmx-code:compBreakdown-HZT_SANDS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_SANDS" ;
+    skos:prefLabel "Hazard Type: Sand Storm"@en ;
+    rdfs:label "Hazard Type: Sand Storm"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_SANDS .
+
+
+sip-sdmx-code:compBreakdown-HZT_SEDMN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_SEDMN" ;
+    skos:prefLabel "Hazard Type: Sedimentation"@en ;
+    rdfs:label "Hazard Type: Sedimentation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_SEDMN .
+
+
+sip-sdmx-code:compBreakdown-HZT_SNSTM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_SNSTM" ;
+    skos:prefLabel "Hazard Type: Snowstorm"@en ;
+    rdfs:label "Hazard Type: Snowstorm"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_SNSTM .
+
+
+sip-sdmx-code:compBreakdown-HZT_STCOL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_STCOL" ;
+    skos:prefLabel "Hazard Type: Structural Collapse"@en ;
+    rdfs:label "Hazard Type: Structural Collapse"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_STCOL .
+
+
+sip-sdmx-code:compBreakdown-HZT_STORM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_STORM" ;
+    skos:prefLabel "Hazard Type: Storm"@en ;
+    rdfs:label "Hazard Type: Storm"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_STORM .
+
+
+sip-sdmx-code:compBreakdown-HZT_STUCK a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_STUCK" ;
+    skos:prefLabel "Hazard Type: Stuck"@en ;
+    rdfs:label "Hazard Type: Stuck"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_STUCK .
+
+
+sip-sdmx-code:compBreakdown-HZT_SUBSD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_SUBSD" ;
+    skos:prefLabel "Hazard Type: Subsidence"@en ;
+    rdfs:label "Hazard Type: Subsidence"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_SUBSD .
+
+
+sip-sdmx-code:compBreakdown-HZT_TECHH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_TECHH" ;
+    skos:prefLabel "Hazard Type: Technological Hazard"@en ;
+    rdfs:label "Hazard Type: Technological Hazard"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_TECHH .
+
+
+sip-sdmx-code:compBreakdown-HZT_TORND a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_TORND" ;
+    skos:prefLabel "Hazard Type: Tornado"@en ;
+    rdfs:label "Hazard Type: Tornado"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_TORND .
+
+
+sip-sdmx-code:compBreakdown-HZT_TSUNM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_TSUNM" ;
+    skos:prefLabel "Hazard Type: Tsunami"@en ;
+    rdfs:label "Hazard Type: Tsunami"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_TSUNM .
+
+
+sip-sdmx-code:compBreakdown-HZT_VOLER a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_VOLER" ;
+    skos:prefLabel "Hazard Type: Volcanic Eruption"@en ;
+    rdfs:label "Hazard Type: Volcanic Eruption"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_VOLER .
+
+
+sip-sdmx-code:compBreakdown-HZT_WLDFR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_WLDFR" ;
+    skos:prefLabel "Hazard Type: Wild Fire"@en ;
+    rdfs:label "Hazard Type: Wild Fire"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_WLDFR .
+
+
+sip-sdmx-code:compBreakdown-HZT_WNDST a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "HZT_WNDST" ;
+    skos:prefLabel "Hazard Type: Windstorm"@en ;
+    rdfs:label "Hazard Type: Windstorm"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-HZT_WNDST .
+
+
+sip-sdmx-code:compBreakdown-IFF_COR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_COR" ;
+    skos:prefLabel "Illicit Financial Flows: Corruption"@en ;
+    rdfs:label "Illicit Financial Flows: Corruption"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_COR .
+
+
+sip-sdmx-code:compBreakdown-IFF_COR_BRB a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_COR_BRB" ;
+    skos:prefLabel "Illicit Financial Flows: Bribery"@en ;
+    rdfs:label "Illicit Financial Flows: Bribery"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_COR_BRB .
+
+
+sip-sdmx-code:compBreakdown-IFF_COR_OTHR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_COR_OTHR" ;
+    skos:prefLabel "Illicit Financial Flows: Other"@en ;
+    rdfs:label "Illicit Financial Flows: Other"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_COR_OTHR .
+
+
+sip-sdmx-code:compBreakdown-IFF_COR_TIN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_COR_TIN" ;
+    skos:prefLabel "Illicit Financial Flows: Trading in influence"@en ;
+    rdfs:label "Illicit Financial Flows: Trading in influence"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_COR_TIN .
+
+
+sip-sdmx-code:compBreakdown-IFF_ETF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ETF" ;
+    skos:prefLabel "Illicit Financial Flows: Exploitation-type and terrorism financing"@en ;
+    rdfs:label "Illicit Financial Flows: Exploitation-type and terrorism financing"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ETF .
+
+
+sip-sdmx-code:compBreakdown-IFF_ETF_EXT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ETF_EXT" ;
+    skos:prefLabel "Illicit Financial Flows: Extortion"@en ;
+    rdfs:label "Illicit Financial Flows: Extortion"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ETF_EXT .
+
+
+sip-sdmx-code:compBreakdown-IFF_ETF_FRA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ETF_FRA" ;
+    skos:prefLabel "Illicit Financial Flows: Fraud"@en ;
+    rdfs:label "Illicit Financial Flows: Fraud"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ETF_FRA .
+
+
+sip-sdmx-code:compBreakdown-IFF_ETF_OTHR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ETF_OTHR" ;
+    skos:prefLabel "Illicit Financial Flows: Other"@en ;
+    rdfs:label "Illicit Financial Flows: Other"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ETF_OTHR .
+
+
+sip-sdmx-code:compBreakdown-IFF_ETF_THE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ETF_THE" ;
+    skos:prefLabel "Illicit Financial Flows: Theft"@en ;
+    rdfs:label "Illicit Financial Flows: Theft"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ETF_THE .
+
+
+sip-sdmx-code:compBreakdown-IFF_ETF_TIP a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ETF_TIP" ;
+    skos:prefLabel "Illicit Financial Flows: Trafficking in persons"@en ;
+    rdfs:label "Illicit Financial Flows: Trafficking in persons"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ETF_TIP .
+
+
+sip-sdmx-code:compBreakdown-IFF_ILM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ILM" ;
+    skos:prefLabel "Illicit Financial Flows: Illegal markets"@en ;
+    rdfs:label "Illicit Financial Flows: Illegal markets"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ILM .
+
+
+sip-sdmx-code:compBreakdown-IFF_ILM_DRG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ILM_DRG" ;
+    skos:prefLabel "Illicit Financial Flows: Drug trafficking"@en ;
+    rdfs:label "Illicit Financial Flows: Drug trafficking"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ILM_DRG .
+
+
+sip-sdmx-code:compBreakdown-IFF_ILM_FIR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ILM_FIR" ;
+    skos:prefLabel "Illicit Financial Flows: Firearms trafficking"@en ;
+    rdfs:label "Illicit Financial Flows: Firearms trafficking"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ILM_FIR .
+
+
+sip-sdmx-code:compBreakdown-IFF_ILM_IMN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ILM_IMN" ;
+    skos:prefLabel "Illicit Financial Flows: Illegal mining"@en ;
+    rdfs:label "Illicit Financial Flows: Illegal mining"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ILM_IMN .
+
+
+sip-sdmx-code:compBreakdown-IFF_ILM_OTHR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ILM_OTHR" ;
+    skos:prefLabel "Illicit Financial Flows: Other"@en ;
+    rdfs:label "Illicit Financial Flows: Other"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ILM_OTHR .
+
+
+sip-sdmx-code:compBreakdown-IFF_ILM_SOM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ILM_SOM" ;
+    skos:prefLabel "Illicit Financial Flows: Smuggling of migrants"@en ;
+    rdfs:label "Illicit Financial Flows: Smuggling of migrants"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ILM_SOM .
+
+
+sip-sdmx-code:compBreakdown-IFF_ILM_WLD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_ILM_WLD" ;
+    skos:prefLabel "Illicit Financial Flows: Wildlife trafficking"@en ;
+    rdfs:label "Illicit Financial Flows: Wildlife trafficking"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_ILM_WLD .
+
+
+sip-sdmx-code:compBreakdown-IFF_TXC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_TXC" ;
+    skos:prefLabel "Illicit Financial Flows: Tax and commercial IFFs"@en ;
+    rdfs:label "Illicit Financial Flows: Tax and commercial IFFs"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_TXC .
+
+
+sip-sdmx-code:compBreakdown-IFF_TXC_ATA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_TXC_ATA" ;
+    skos:prefLabel "Illicit Financial Flows: Aggressive tax avoidance"@en ;
+    rdfs:label "Illicit Financial Flows: Aggressive tax avoidance"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_TXC_ATA .
+
+
+sip-sdmx-code:compBreakdown-IFF_TXC_TEV a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_TXC_TEV" ;
+    skos:prefLabel "Illicit Financial Flows: Tax evasion"@en ;
+    rdfs:label "Illicit Financial Flows: Tax evasion"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_TXC_TEV .
+
+
+sip-sdmx-code:compBreakdown-IFF_TXC_TMI a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IFF_TXC_TMI" ;
+    skos:prefLabel "Illicit Financial Flows: Trade misinvoicing"@en ;
+    rdfs:label "Illicit Financial Flows: Trade misinvoicing"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IFF_TXC_TMI .
+
+
+sip-sdmx-code:compBreakdown-IHR_01 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_01" ;
+    skos:prefLabel "IHR Capacity: National legislation, policy and financing"@en ;
+    rdfs:label "IHR Capacity: National legislation, policy and financing"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_01 .
+
+
+sip-sdmx-code:compBreakdown-IHR_02 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_02" ;
+    skos:prefLabel "IHR Capacity: Coordination and National Focal Point communications"@en ;
+    rdfs:label "IHR Capacity: Coordination and National Focal Point communications"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_02 .
+
+
+sip-sdmx-code:compBreakdown-IHR_03 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_03" ;
+    skos:prefLabel "IHR Capacity: Surveillance"@en ;
+    rdfs:label "IHR Capacity: Surveillance"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_03 .
+
+
+sip-sdmx-code:compBreakdown-IHR_04 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_04" ;
+    skos:prefLabel "IHR Capacity: Response"@en ;
+    rdfs:label "IHR Capacity: Response"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_04 .
+
+
+sip-sdmx-code:compBreakdown-IHR_05 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_05" ;
+    skos:prefLabel "IHR Capacity: Preparedness"@en ;
+    rdfs:label "IHR Capacity: Preparedness"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_05 .
+
+
+sip-sdmx-code:compBreakdown-IHR_06 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_06" ;
+    skos:prefLabel "IHR Capacity: Risk communication"@en ;
+    rdfs:label "IHR Capacity: Risk communication"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_06 .
+
+
+sip-sdmx-code:compBreakdown-IHR_07 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_07" ;
+    skos:prefLabel "IHR Capacity: Human resources"@en ;
+    rdfs:label "IHR Capacity: Human resources"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_07 .
+
+
+sip-sdmx-code:compBreakdown-IHR_08 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_08" ;
+    skos:prefLabel "IHR Capacity: Laboratory"@en ;
+    rdfs:label "IHR Capacity: Laboratory"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_08 .
+
+
+sip-sdmx-code:compBreakdown-IHR_09 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_09" ;
+    skos:prefLabel "IHR Capacity: Points of entry"@en ;
+    rdfs:label "IHR Capacity: Points of entry"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_09 .
+
+
+sip-sdmx-code:compBreakdown-IHR_10 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_10" ;
+    skos:prefLabel "IHR Capacity: Zoonotic events"@en ;
+    rdfs:label "IHR Capacity: Zoonotic events"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_10 .
+
+
+sip-sdmx-code:compBreakdown-IHR_11 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_11" ;
+    skos:prefLabel "IHR Capacity: Food safety"@en ;
+    rdfs:label "IHR Capacity: Food safety"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_11 .
+
+
+sip-sdmx-code:compBreakdown-IHR_12 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_12" ;
+    skos:prefLabel "IHR Capacity: Chemical events"@en ;
+    rdfs:label "IHR Capacity: Chemical events"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_12 .
+
+
+sip-sdmx-code:compBreakdown-IHR_13 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IHR_13" ;
+    skos:prefLabel "IHR Capacity: Radionuclear emergencies"@en ;
+    rdfs:label "IHR Capacity: Radionuclear emergencies"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IHR_13 .
+
+
+sip-sdmx-code:compBreakdown-IO_ADB a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_ADB" ;
+    skos:prefLabel "International Organisation: Asian Development Bank"@en ;
+    rdfs:label "International Organisation: Asian Development Bank"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_ADB .
+
+
+sip-sdmx-code:compBreakdown-IO_AFDB a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_AFDB" ;
+    skos:prefLabel "International Organisation: African Development Bank"@en ;
+    rdfs:label "International Organisation: African Development Bank"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_AFDB .
+
+
+sip-sdmx-code:compBreakdown-IO_ECOSOC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_ECOSOC" ;
+    skos:prefLabel "International Organisation: UN Economic and Social Council"@en ;
+    rdfs:label "International Organisation: UN Economic and Social Council"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_ECOSOC .
+
+
+sip-sdmx-code:compBreakdown-IO_FSB a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_FSB" ;
+    skos:prefLabel "International Organisation: Financial Stability Board"@en ;
+    rdfs:label "International Organisation: Financial Stability Board"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_FSB .
+
+
+sip-sdmx-code:compBreakdown-IO_IADB a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_IADB" ;
+    skos:prefLabel "International Organisation: Inter-American Development Bank"@en ;
+    rdfs:label "International Organisation: Inter-American Development Bank"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_IADB .
+
+
+sip-sdmx-code:compBreakdown-IO_IBRD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_IBRD" ;
+    skos:prefLabel "International Organisation: International Bank for Reconstruction and Development"@en ;
+    rdfs:label "International Organisation: International Bank for Reconstruction and Development"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_IBRD .
+
+
+sip-sdmx-code:compBreakdown-IO_IFC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_IFC" ;
+    skos:prefLabel "International Organisation: International Finance Corporation"@en ;
+    rdfs:label "International Organisation: International Finance Corporation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_IFC .
+
+
+sip-sdmx-code:compBreakdown-IO_IMF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_IMF" ;
+    skos:prefLabel "International Organisation: International Monetary Fund"@en ;
+    rdfs:label "International Organisation: International Monetary Fund"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_IMF .
+
+
+sip-sdmx-code:compBreakdown-IO_UNGA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_UNGA" ;
+    skos:prefLabel "International Organisation: UN General Assembly"@en ;
+    rdfs:label "International Organisation: UN General Assembly"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_UNGA .
+
+
+sip-sdmx-code:compBreakdown-IO_UNSC a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_UNSC" ;
+    skos:prefLabel "International Organisation: UN Security Council"@en ;
+    rdfs:label "International Organisation: UN Security Council"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_UNSC .
+
+
+sip-sdmx-code:compBreakdown-IO_WTO a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IO_WTO" ;
+    skos:prefLabel "International Organisation: World Trade Organisation"@en ;
+    rdfs:label "International Organisation: World Trade Organisation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IO_WTO .
+
+
+sip-sdmx-code:compBreakdown-IS_256KT2M a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IS_256KT2M" ;
+    skos:prefLabel "Internet speed: 256 kbit/s to less than 2 Mbit/s"@en ;
+    rdfs:label "Internet speed: 256 kbit/s to less than 2 Mbit/s"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IS_256KT2M .
+
+
+sip-sdmx-code:compBreakdown-IS_2MT10M a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IS_2MT10M" ;
+    skos:prefLabel "Internet speed: 2 Mbit/s to less than 10 Mbit/s"@en ;
+    rdfs:label "Internet speed: 2 Mbit/s to less than 10 Mbit/s"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IS_2MT10M .
+
+
+sip-sdmx-code:compBreakdown-IS_GE10M a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "IS_GE10M" ;
+    skos:prefLabel "Internet speed: 10 Mbit/s or above"@en ;
+    rdfs:label "Internet speed: 10 Mbit/s or above"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-IS_GE10M .
+
+
+sip-sdmx-code:compBreakdown-LC_ART a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_ART" ;
+    skos:prefLabel "Land Cover: Artificial surfaces"@en ;
+    rdfs:label "Land Cover: Artificial surfaces"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_ART .
+
+
+sip-sdmx-code:compBreakdown-LC_CRP a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_CRP" ;
+    skos:prefLabel "Land Cover: Croplands"@en ;
+    rdfs:label "Land Cover: Croplands"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_CRP .
+
+
+sip-sdmx-code:compBreakdown-LC_GRS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_GRS" ;
+    skos:prefLabel "Land Cover: Grassland"@en ;
+    rdfs:label "Land Cover: Grassland"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_GRS .
+
+
+sip-sdmx-code:compBreakdown-LC_IWB a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_IWB" ;
+    skos:prefLabel "Land Cover: Inland water bodies"@en ;
+    rdfs:label "Land Cover: Inland water bodies"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_IWB .
+
+
+sip-sdmx-code:compBreakdown-LC_MGCI a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_MGCI" ;
+    skos:prefLabel "Land Cover: MGCI"@en ;
+    rdfs:label "Land Cover: MGCI"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_MGCI .
+
+
+sip-sdmx-code:compBreakdown-LC_PSG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_PSG" ;
+    skos:prefLabel "Land Cover: Permanent snow and glaciers"@en ;
+    rdfs:label "Land Cover: Permanent snow and glaciers"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_PSG .
+
+
+sip-sdmx-code:compBreakdown-LC_SAF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_SAF" ;
+    skos:prefLabel "Land Cover: Shrubs and/or herbaceous vegetation, aquatic or regularly flooded"@en ;
+    rdfs:label "Land Cover: Shrubs and/or herbaceous vegetation, aquatic or regularly flooded"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_SAF .
+
+
+sip-sdmx-code:compBreakdown-LC_SHR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_SHR" ;
+    skos:prefLabel "Land Cover: Shrub-covered areas"@en ;
+    rdfs:label "Land Cover: Shrub-covered areas"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_SHR .
+
+
+sip-sdmx-code:compBreakdown-LC_SNV a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_SNV" ;
+    skos:prefLabel "Land Cover: Sparsely natural vegetated areas"@en ;
+    rdfs:label "Land Cover: Sparsely natural vegetated areas"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_SNV .
+
+
+sip-sdmx-code:compBreakdown-LC_TBL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_TBL" ;
+    skos:prefLabel "Land Cover: Terrestrial barren land"@en ;
+    rdfs:label "Land Cover: Terrestrial barren land"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_TBL .
+
+
+sip-sdmx-code:compBreakdown-LC_TRE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LC_TRE" ;
+    skos:prefLabel "Land Cover: Tree-covered areas"@en ;
+    rdfs:label "Land Cover: Tree-covered areas"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LC_TRE .
+
+
+sip-sdmx-code:compBreakdown-LG_LOCAL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LG_LOCAL" ;
+    skos:prefLabel "Level_of_government: Local Government"@en ;
+    rdfs:label "Level_of_government: Local Government"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LG_LOCAL .
+
+
+sip-sdmx-code:compBreakdown-LG_NAT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LG_NAT" ;
+    skos:prefLabel "Level_of_government: National Government"@en ;
+    rdfs:label "Level_of_government: National Government"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LG_NAT .
+
+
+sip-sdmx-code:compBreakdown-LG_REG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LG_REG" ;
+    skos:prefLabel "Level_of_government: Regional Government"@en ;
+    rdfs:label "Level_of_government: Regional Government"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LG_REG .
+
+
+sip-sdmx-code:compBreakdown-LI_IMP_ADMNG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LI_IMP_ADMNG" ;
+    skos:prefLabel "Level of implementation: Implementation and adaptive management"@en ;
+    rdfs:label "Level of implementation: Implementation and adaptive management"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LI_IMP_ADMNG .
+
+
+sip-sdmx-code:compBreakdown-LI_PLA_DSG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LI_PLA_DSG" ;
+    skos:prefLabel "Level of implementation: Plan adoption/designation"@en ;
+    rdfs:label "Level of implementation: Plan adoption/designation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LI_PLA_DSG .
+
+
+sip-sdmx-code:compBreakdown-LI_PLA_INTPREP a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LI_PLA_INTPREP" ;
+    skos:prefLabel "Level of implementation: Initial plan preparation"@en ;
+    rdfs:label "Level of implementation: Initial plan preparation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LI_PLA_INTPREP .
+
+
+sip-sdmx-code:compBreakdown-LI_PLDV a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LI_PLDV" ;
+    skos:prefLabel "Level of implementation: Plan development"@en ;
+    rdfs:label "Level of implementation: Plan development"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LI_PLDV .
+
+
+sip-sdmx-code:compBreakdown-LOR_ADVANCED a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LOR_ADVANCED" ;
+    skos:prefLabel "Level of requirement: Advanced"@en ;
+    rdfs:label "Level of requirement: Advanced"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LOR_ADVANCED .
+
+
+sip-sdmx-code:compBreakdown-LOR_MINIMUM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LOR_MINIMUM" ;
+    skos:prefLabel "Level of requirement: Minimum"@en ;
+    rdfs:label "Level of requirement: Minimum"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LOR_MINIMUM .
+
+
+sip-sdmx-code:compBreakdown-LS_COMP a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LS_COMP" ;
+    skos:prefLabel "Level/Status: Compilation"@en ;
+    rdfs:label "Level/Status: Compilation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LS_COMP .
+
+
+sip-sdmx-code:compBreakdown-LS_COMPDISSE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LS_COMPDISSE" ;
+    skos:prefLabel "Level/Status: Regular compilation and dissemination"@en ;
+    rdfs:label "Level/Status: Regular compilation and dissemination"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LS_COMPDISSE .
+
+
+sip-sdmx-code:compBreakdown-LS_DISSEM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "LS_DISSEM" ;
+    skos:prefLabel "Level/Status: Dissemination"@en ;
+    rdfs:label "Level/Status: Dissemination"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-LS_DISSEM .
+
+
+sip-sdmx-code:compBreakdown-MOT_AIR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MOT_AIR" ;
+    skos:prefLabel "Mode of Transport: Air"@en ;
+    rdfs:label "Mode of Transport: Air"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MOT_AIR .
+
+
+sip-sdmx-code:compBreakdown-MOT_IWW a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MOT_IWW" ;
+    skos:prefLabel "Mode of transport: Inland waterway transport"@en ;
+    rdfs:label "Mode of transport: Inland waterway transport"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MOT_IWW .
+
+
+sip-sdmx-code:compBreakdown-MOT_RAI a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MOT_RAI" ;
+    skos:prefLabel "Mode of Transport: Rail"@en ;
+    rdfs:label "Mode of Transport: Rail"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MOT_RAI .
+
+
+sip-sdmx-code:compBreakdown-MOT_ROA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MOT_ROA" ;
+    skos:prefLabel "Mode of Transport: Road"@en ;
+    rdfs:label "Mode of Transport: Road"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MOT_ROA .
+
+
+sip-sdmx-code:compBreakdown-MOT_SEA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MOT_SEA" ;
+    skos:prefLabel "Mode of Transport: Maritime"@en ;
+    rdfs:label "Mode of Transport: Maritime"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MOT_SEA .
+
+
+sip-sdmx-code:compBreakdown-MS_EUMIGRANT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MS_EUMIGRANT" ;
+    skos:prefLabel "Migrant Status: EU Migrant"@en ;
+    rdfs:label "Migrant Status: EU Migrant"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MS_EUMIGRANT .
+
+
+sip-sdmx-code:compBreakdown-MS_MIGRANT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MS_MIGRANT" ;
+    skos:prefLabel "Migrant Status: Migrant"@en ;
+    rdfs:label "Migrant Status: Migrant"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MS_MIGRANT .
+
+
+sip-sdmx-code:compBreakdown-MS_NOMIGRANT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MS_NOMIGRANT" ;
+    skos:prefLabel "Migrant Status: Non-migrant"@en ;
+    rdfs:label "Migrant Status: Non-migrant"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MS_NOMIGRANT .
+
+
+sip-sdmx-code:compBreakdown-MS_NONEUMIGRANT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "MS_NONEUMIGRANT" ;
+    skos:prefLabel "Migrant Status: Non-EU Migrant"@en ;
+    rdfs:label "Migrant Status: Non-EU Migrant"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-MS_NONEUMIGRANT .
+
+
+sip-sdmx-code:compBreakdown-NCD_CARDIO a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "NCD_CARDIO" ;
+    skos:prefLabel "Non-communicable disease: Cardiovascular disease"@en ;
+    rdfs:label "Non-communicable disease: Cardiovascular disease"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-NCD_CARDIO .
+
+
+sip-sdmx-code:compBreakdown-NCD_CNCR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "NCD_CNCR" ;
+    skos:prefLabel "Non-communicable disease: Cancer"@en ;
+    rdfs:label "Non-communicable disease: Cancer"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-NCD_CNCR .
+
+
+sip-sdmx-code:compBreakdown-NCD_CRESPD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "NCD_CRESPD" ;
+    skos:prefLabel "Non-communicable disease: Chronic respiratory disease"@en ;
+    rdfs:label "Non-communicable disease: Chronic respiratory disease"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-NCD_CRESPD .
+
+
+sip-sdmx-code:compBreakdown-NCD_DIABTS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "NCD_DIABTS" ;
+    skos:prefLabel "Non-communicable disease: Diabetes"@en ;
+    rdfs:label "Non-communicable disease: Diabetes"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-NCD_DIABTS .
+
+
+sip-sdmx-code:compBreakdown-NCD_NCOM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "NCD_NCOM" ;
+    skos:prefLabel "Non-communicable disease: Cardiovascular disease, cancer, diabetes, or chronic respiratory disease"@en ;
+    rdfs:label "Non-communicable disease: Cardiovascular disease, cancer, diabetes, or chronic respiratory disease"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-NCD_NCOM .
+
+
+sip-sdmx-code:compBreakdown-NL_N_LOAD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "NL_N_LOAD" ;
+    skos:prefLabel "Nutrient Loading: Nitrogen Loading"@en ;
+    rdfs:label "Nutrient Loading: Nitrogen Loading"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-NL_N_LOAD .
+
+
+sip-sdmx-code:compBreakdown-NL_P_LOAD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "NL_P_LOAD" ;
+    skos:prefLabel "Nutrient Loading: Phosphorus Loading"@en ;
+    rdfs:label "Nutrient Loading: Phosphorus Loading"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-NL_P_LOAD .
+
+
+sip-sdmx-code:compBreakdown-OFDI_DIRECTCPART a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "OFDI_DIRECTCPART" ;
+    skos:prefLabel "Type of OFDI scheme: Direct capital participation"@en ;
+    rdfs:label "Type of OFDI scheme: Direct capital participation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-OFDI_DIRECTCPART .
+
+
+sip-sdmx-code:compBreakdown-OFDI_FISFINSUP a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "OFDI_FISFINSUP" ;
+    skos:prefLabel "Type of OFDI scheme: Fiscal/financial support"@en ;
+    rdfs:label "Type of OFDI scheme: Fiscal/financial support"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-OFDI_FISFINSUP .
+
+
+sip-sdmx-code:compBreakdown-OFDI_INVFACSERV a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "OFDI_INVFACSERV" ;
+    skos:prefLabel "Type of OFDI scheme: Investment facilitation services"@en ;
+    rdfs:label "Type of OFDI scheme: Investment facilitation services"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-OFDI_INVFACSERV .
+
+
+sip-sdmx-code:compBreakdown-OFDI_INVGUA a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "OFDI_INVGUA" ;
+    skos:prefLabel "Type of OFDI scheme: Investment guarantees"@en ;
+    rdfs:label "Type of OFDI scheme: Investment guarantees"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-OFDI_INVGUA .
+
+
+sip-sdmx-code:compBreakdown-PC_DEFENCE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_DEFENCE" ;
+    skos:prefLabel "Parliamentary committee: Defence"@en ;
+    rdfs:label "Parliamentary committee: Defence"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_DEFENCE .
+
+
+sip-sdmx-code:compBreakdown-PC_FAFF_DEF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_FAFF_DEF" ;
+    skos:prefLabel "Parliamentary committee: Foreign Affairs and Defence"@en ;
+    rdfs:label "Parliamentary committee: Foreign Affairs and Defence"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_FAFF_DEF .
+
+
+sip-sdmx-code:compBreakdown-PC_FAFF_DEF_FIN a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_FAFF_DEF_FIN" ;
+    skos:prefLabel "Parliamentary committee: Foreign Affairs, Defence and Finance"@en ;
+    rdfs:label "Parliamentary committee: Foreign Affairs, Defence and Finance"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_FAFF_DEF_FIN .
+
+
+sip-sdmx-code:compBreakdown-PC_FAFF_DEF_HR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_FAFF_DEF_HR" ;
+    skos:prefLabel "Parliamentary committee: Foreign Affairs, Defence and Human Rights"@en ;
+    rdfs:label "Parliamentary committee: Foreign Affairs, Defence and Human Rights"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_FAFF_DEF_HR .
+
+
+sip-sdmx-code:compBreakdown-PC_FAFF_HR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_FAFF_HR" ;
+    skos:prefLabel "Parliamentary committee: Foreign Affairs and Human Rights"@en ;
+    rdfs:label "Parliamentary committee: Foreign Affairs and Human Rights"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_FAFF_HR .
+
+
+sip-sdmx-code:compBreakdown-PC_FINANCE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_FINANCE" ;
+    skos:prefLabel "Parliamentary committee: Finance"@en ;
+    rdfs:label "Parliamentary committee: Finance"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_FINANCE .
+
+
+sip-sdmx-code:compBreakdown-PC_FOR_AFF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_FOR_AFF" ;
+    skos:prefLabel "Parliamentary committee: Foreign Affairs"@en ;
+    rdfs:label "Parliamentary committee: Foreign Affairs"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_FOR_AFF .
+
+
+sip-sdmx-code:compBreakdown-PC_GEN_EQU a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_GEN_EQU" ;
+    skos:prefLabel "Parliamentary committee: Gender Equality"@en ;
+    rdfs:label "Parliamentary committee: Gender Equality"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_GEN_EQU .
+
+
+sip-sdmx-code:compBreakdown-PC_HR_GEQU a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_HR_GEQU" ;
+    skos:prefLabel "Parliamentary committee: Human Rights and Gender Equality"@en ;
+    rdfs:label "Parliamentary committee: Human Rights and Gender Equality"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_HR_GEQU .
+
+
+sip-sdmx-code:compBreakdown-PC_HUM_RIGH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PC_HUM_RIGH" ;
+    skos:prefLabel "Parliamentary committee: Human Rights"@en ;
+    rdfs:label "Parliamentary committee: Human Rights"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PC_HUM_RIGH .
+
+
+sip-sdmx-code:compBreakdown-PD_1 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PD_1" ;
+    skos:prefLabel "Policy Domain 1. Migrant rights"@en ;
+    rdfs:label "Policy Domain 1. Migrant rights"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PD_1 .
+
+
+sip-sdmx-code:compBreakdown-PD_2 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PD_2" ;
+    skos:prefLabel "Policy Domain 2. Whole-of-government/ Evidence-based policies"@en ;
+    rdfs:label "Policy Domain 2. Whole-of-government/ Evidence-based policies"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PD_2 .
+
+
+sip-sdmx-code:compBreakdown-PD_3 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PD_3" ;
+    skos:prefLabel "Policy Domain 3. Cooperation and partnerships"@en ;
+    rdfs:label "Policy Domain 3. Cooperation and partnerships"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PD_3 .
+
+
+sip-sdmx-code:compBreakdown-PD_4 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PD_4" ;
+    skos:prefLabel "Policy Domain 4. Socioeconomic well-being"@en ;
+    rdfs:label "Policy Domain 4. Socioeconomic well-being"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PD_4 .
+
+
+sip-sdmx-code:compBreakdown-PD_5 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PD_5" ;
+    skos:prefLabel "Policy Domain 5. Mobility dimensions of crises"@en ;
+    rdfs:label "Policy Domain 5. Mobility dimensions of crises"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PD_5 .
+
+
+sip-sdmx-code:compBreakdown-PD_6 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "PD_6" ;
+    skos:prefLabel "Policy Domain 6. Safe, orderly and regular migration"@en ;
+    rdfs:label "Policy Domain 6. Safe, orderly and regular migration"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-PD_6 .
+
+
+sip-sdmx-code:compBreakdown-POL_ECONFIS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "POL_ECONFIS" ;
+    skos:prefLabel "Policy instruments: Economic and fiscal instruments (taxes and tax incentives, grants, preferential loans, etc.)"@en ;
+    rdfs:label "Policy instruments: Economic and fiscal instruments (taxes and tax incentives, grants, preferential loans, etc.)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-POL_ECONFIS .
+
+
+sip-sdmx-code:compBreakdown-POL_MACRO a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "POL_MACRO" ;
+    skos:prefLabel "Policy instruments: Macro policies (e.g. national strategies/action plans, new institutions/entities)"@en ;
+    rdfs:label "Policy instruments: Macro policies (e.g. national strategies/action plans, new institutions/entities)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-POL_MACRO .
+
+
+sip-sdmx-code:compBreakdown-POL_REGLEG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "POL_REGLEG" ;
+    skos:prefLabel "Policy instruments: Regulatory and legal instruments (e.g. laws, standards, enforcement measures)"@en ;
+    rdfs:label "Policy instruments: Regulatory and legal instruments (e.g. laws, standards, enforcement measures)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-POL_REGLEG .
+
+
+sip-sdmx-code:compBreakdown-POL_VOLSRG a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "POL_VOLSRG" ;
+    skos:prefLabel "Policy instruments: Voluntary and self-regulation schemes (e.g. sectoral partnerships, codes of conduct, CSR initiatives)"@en ;
+    rdfs:label "Policy instruments: Voluntary and self-regulation schemes (e.g. sectoral partnerships, codes of conduct, CSR initiatives)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-POL_VOLSRG .
+
+
+sip-sdmx-code:compBreakdown-POP_A a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "POP_A" ;
+    skos:prefLabel "Population Group A"@en ;
+    rdfs:label "Population Group A"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-POP_A .
+
+
+sip-sdmx-code:compBreakdown-POP_B a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "POP_B" ;
+    skos:prefLabel "Population Group B"@en ;
+    rdfs:label "Population Group B"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-POP_B .
+
+
+sip-sdmx-code:compBreakdown-POP_C a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "POP_C" ;
+    skos:prefLabel "Population Group C"@en ;
+    rdfs:label "Population Group C"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-POP_C .
+
+
+sip-sdmx-code:compBreakdown-RO_EIGHTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_EIGHTH" ;
+    skos:prefLabel "Report Ordinal: Eighth"@en ;
+    rdfs:label "Report Ordinal: Eighth"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_EIGHTH .
+
+
+sip-sdmx-code:compBreakdown-RO_FIFTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_FIFTH" ;
+    skos:prefLabel "Report Ordinal: Fifth"@en ;
+    rdfs:label "Report Ordinal: Fifth"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_FIFTH .
+
+
+sip-sdmx-code:compBreakdown-RO_FIRST a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_FIRST" ;
+    skos:prefLabel "Report Ordinal: First"@en ;
+    rdfs:label "Report Ordinal: First"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_FIRST .
+
+
+sip-sdmx-code:compBreakdown-RO_FOURTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_FOURTH" ;
+    skos:prefLabel "Report Ordinal: Fourth"@en ;
+    rdfs:label "Report Ordinal: Fourth"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_FOURTH .
+
+
+sip-sdmx-code:compBreakdown-RO_NINTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_NINTH" ;
+    skos:prefLabel "Report Ordinal: Ninth"@en ;
+    rdfs:label "Report Ordinal: Ninth"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_NINTH .
+
+
+sip-sdmx-code:compBreakdown-RO_SECOND a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_SECOND" ;
+    skos:prefLabel "Report Ordinal: Second"@en ;
+    rdfs:label "Report Ordinal: Second"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_SECOND .
+
+
+sip-sdmx-code:compBreakdown-RO_SEVENTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_SEVENTH" ;
+    skos:prefLabel "Report Ordinal: Seventh"@en ;
+    rdfs:label "Report Ordinal: Seventh"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_SEVENTH .
+
+
+sip-sdmx-code:compBreakdown-RO_SIXTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_SIXTH" ;
+    skos:prefLabel "Report Ordinal: Sixth"@en ;
+    rdfs:label "Report Ordinal: Sixth"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_SIXTH .
+
+
+sip-sdmx-code:compBreakdown-RO_TENTH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_TENTH" ;
+    skos:prefLabel "Report Ordinal: Tenth"@en ;
+    rdfs:label "Report Ordinal: Tenth"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_TENTH .
+
+
+sip-sdmx-code:compBreakdown-RO_THIRD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "RO_THIRD" ;
+    skos:prefLabel "Report Ordinal: Third"@en ;
+    rdfs:label "Report Ordinal: Third"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-RO_THIRD .
+
+
+sip-sdmx-code:compBreakdown-SA_ACCESS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_ACCESS" ;
+    skos:prefLabel "Service attribute: Easy to get to the place"@en ;
+    rdfs:label "Service attribute: Easy to get to the place"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_ACCESS .
+
+
+sip-sdmx-code:compBreakdown-SA_AFFORD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_AFFORD" ;
+    skos:prefLabel "Service attribute: Affordable"@en ;
+    rdfs:label "Service attribute: Affordable"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_AFFORD .
+
+
+sip-sdmx-code:compBreakdown-SA_ATTITUDE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_ATTITUDE" ;
+    skos:prefLabel "Service attribute: Attitude or courtesy of staff"@en ;
+    rdfs:label "Service attribute: Attitude or courtesy of staff"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_ATTITUDE .
+
+
+sip-sdmx-code:compBreakdown-SA_AVERAGE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_AVERAGE" ;
+    skos:prefLabel "Service attribute: Average of positive responses for the five other aspects"@en ;
+    rdfs:label "Service attribute: Average of positive responses for the five other aspects"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_AVERAGE .
+
+
+sip-sdmx-code:compBreakdown-SA_EFFECTIVE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_EFFECTIVE" ;
+    skos:prefLabel "Service attribute: Effective delivery of service"@en ;
+    rdfs:label "Service attribute: Effective delivery of service"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_EFFECTIVE .
+
+
+sip-sdmx-code:compBreakdown-SA_EQUALITY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_EQUALITY" ;
+    skos:prefLabel "Service attribute: Equal treatment"@en ;
+    rdfs:label "Service attribute: Equal treatment"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_EQUALITY .
+
+
+sip-sdmx-code:compBreakdown-SA_QUALITY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_QUALITY" ;
+    skos:prefLabel "Service attribute: Clean and in good condition facilities"@en ;
+    rdfs:label "Service attribute: Clean and in good condition facilities"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_QUALITY .
+
+
+sip-sdmx-code:compBreakdown-SA_TIMELINESS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SA_TIMELINESS" ;
+    skos:prefLabel "Service attribute: Timeliness"@en ;
+    rdfs:label "Service attribute: Timeliness"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SA_TIMELINESS .
+
+
+sip-sdmx-code:compBreakdown-SKILL_DLDONLD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_DLDONLD" ;
+    skos:prefLabel "Type of skill: Reading or downloading on-line newspapers, magazines, or electronic books"@en ;
+    rdfs:label "Type of skill: Reading or downloading on-line newspapers, magazines, or electronic books"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_DLDONLD .
+
+
+sip-sdmx-code:compBreakdown-SKILL_FONLCRS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_FONLCRS" ;
+    skos:prefLabel "Type of skill: Doing a formal online course"@en ;
+    rdfs:label "Type of skill: Doing a formal online course"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_FONLCRS .
+
+
+sip-sdmx-code:compBreakdown-SKILL_GSINF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_GSINF" ;
+    skos:prefLabel "Type of skill: Getting information about goods or services online"@en ;
+    rdfs:label "Type of skill: Getting information about goods or services online"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_GSINF .
+
+
+sip-sdmx-code:compBreakdown-SKILL_GSPUR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_GSPUR" ;
+    skos:prefLabel "Type of skill: Purchasing or ordering goods or services using the Internet"@en ;
+    rdfs:label "Type of skill: Purchasing or ordering goods or services using the Internet"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_GSPUR .
+
+
+sip-sdmx-code:compBreakdown-SKILL_HLTHINF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_HLTHINF" ;
+    skos:prefLabel "Type of skill: Seeking health information (on injury, disease, nutrition, etc.)"@en ;
+    rdfs:label "Type of skill: Seeking health information (on injury, disease, nutrition, etc.)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_HLTHINF .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTATCH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTATCH" ;
+    skos:prefLabel "Skill: ICT Skill: Sending e-mails with attached files"@en ;
+    rdfs:label "Skill: ICT Skill: Sending e-mails with attached files"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTATCH .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTCDV a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTCDV" ;
+    skos:prefLabel "Skill: ICT Skill: connecting and installing new devices"@en ;
+    rdfs:label "Skill: ICT Skill: connecting and installing new devices"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTCDV .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTCMFL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTCMFL" ;
+    skos:prefLabel "Skill: ICT Skill: Copying or moving a file or folder"@en ;
+    rdfs:label "Skill: ICT Skill: Copying or moving a file or folder"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTCMFL .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTCPT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTCPT" ;
+    skos:prefLabel "Skill: ICT Skill: Using copy and paste tools to duplicate or move information within a document"@en ;
+    rdfs:label "Skill: ICT Skill: Using copy and paste tools to duplicate or move information within a document"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTCPT .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTPRGM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTPRGM" ;
+    skos:prefLabel "Skill: ICT Skill: Writing a computer program using a specialized programming language"@en ;
+    rdfs:label "Skill: ICT Skill: Writing a computer program using a specialized programming language"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTPRGM .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTPRVCY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTPRVCY" ;
+    skos:prefLabel "Skill: ICT Skill: Changing privacy settings on your device, account or app to limit the sharing of personal data and information (e.g. name, contact information, photos)"@en ;
+    rdfs:label "Skill: ICT Skill: Changing privacy settings on your device, account or app to limit the sharing of personal data and information (e.g. name, contact information, photos)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTPRVCY .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTPST a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTPST" ;
+    skos:prefLabel "Skill: ICT Skill: Creating electronic presentations with presentation software"@en ;
+    rdfs:label "Skill: ICT Skill: Creating electronic presentations with presentation software"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTPST .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTSCRTY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTSCRTY" ;
+    skos:prefLabel "Skill: ICT Skill: Setting up effective security measures (e.g. strong passwords, log-in attempt notification) to protect devices and online accounts"@en ;
+    rdfs:label "Skill: ICT Skill: Setting up effective security measures (e.g. strong passwords, log-in attempt notification) to protect devices and online accounts"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTSCRTY .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTSFWR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTSFWR" ;
+    skos:prefLabel "Skill: ICT Skill: Finding, downloading, installing and configuring software"@en ;
+    rdfs:label "Skill: ICT Skill: Finding, downloading, installing and configuring software"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTSFWR .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTSSHT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTSSHT" ;
+    skos:prefLabel "Skill: ICT Skill: Using basic arithmetic formula in a spreadsheet"@en ;
+    rdfs:label "Skill: ICT Skill: Using basic arithmetic formula in a spreadsheet"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTSSHT .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTTRFF a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTTRFF" ;
+    skos:prefLabel "Skill: ICT Skill: Transferring files between a computer and other devices"@en ;
+    rdfs:label "Skill: ICT Skill: Transferring files between a computer and other devices"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTTRFF .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ICTVRFY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ICTVRFY" ;
+    skos:prefLabel "Skill: ICT Skill: Verifying the reliability of information found online"@en ;
+    rdfs:label "Skill: ICT Skill: Verifying the reliability of information found online"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ICTVRFY .
+
+
+sip-sdmx-code:compBreakdown-SKILL_INTBNK a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_INTBNK" ;
+    skos:prefLabel "Type of skill: Using Internet banking"@en ;
+    rdfs:label "Type of skill: Using Internet banking"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_INTBNK .
+
+
+sip-sdmx-code:compBreakdown-SKILL_LTRCY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_LTRCY" ;
+    skos:prefLabel "Skill: Functional literacy"@en ;
+    rdfs:label "Skill: Functional literacy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_LTRCY .
+
+
+sip-sdmx-code:compBreakdown-SKILL_MATH a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_MATH" ;
+    skos:prefLabel "Skill: Mathematics"@en ;
+    rdfs:label "Skill: Mathematics"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_MATH .
+
+
+sip-sdmx-code:compBreakdown-SKILL_NMRCY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_NMRCY" ;
+    skos:prefLabel "Skill: Functional numeracy"@en ;
+    rdfs:label "Skill: Functional numeracy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_NMRCY .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ONLCNS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ONLCNS" ;
+    skos:prefLabel "Type of skill: Taking part in on-line consultations or voting to define civic or political issues"@en ;
+    rdfs:label "Type of skill: Taking part in on-line consultations or voting to define civic or political issues"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ONLCNS .
+
+
+sip-sdmx-code:compBreakdown-SKILL_ONLSFT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_ONLSFT" ;
+    skos:prefLabel "Type of skill: Using software run over the Internet for editing text documents, spreadsheets or presentations"@en ;
+    rdfs:label "Type of skill: Using software run over the Internet for editing text documents, spreadsheets or presentations"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_ONLSFT .
+
+
+sip-sdmx-code:compBreakdown-SKILL_PRVCY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_PRVCY" ;
+    skos:prefLabel "Changing privacy settings on your device, account or app to limit the sharing of personal data and information (e.g. name, contact information, photos)"@en ;
+    rdfs:label "Changing privacy settings on your device, account or app to limit the sharing of personal data and information (e.g. name, contact information, photos)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_PRVCY .
+
+
+sip-sdmx-code:compBreakdown-SKILL_READ a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_READ" ;
+    skos:prefLabel "Skill: Reading"@en ;
+    rdfs:label "Skill: Reading"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_READ .
+
+
+sip-sdmx-code:compBreakdown-SKILL_SCRTY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_SCRTY" ;
+    skos:prefLabel "Setting up effective security measures (e.g. strong passwords, log-in attempt notification) to protect devices and online accounts"@en ;
+    rdfs:label "Setting up effective security measures (e.g. strong passwords, log-in attempt notification) to protect devices and online accounts"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_SCRTY .
+
+
+sip-sdmx-code:compBreakdown-SKILL_SNTWK a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_SNTWK" ;
+    skos:prefLabel "Type of skill: Participating in social networks"@en ;
+    rdfs:label "Type of skill: Participating in social networks"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_SNTWK .
+
+
+sip-sdmx-code:compBreakdown-SKILL_UPLD a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_UPLD" ;
+    skos:prefLabel "Type of skill: Uploading self/user-created content to a website to be shared"@en ;
+    rdfs:label "Type of skill: Uploading self/user-created content to a website to be shared"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_UPLD .
+
+
+sip-sdmx-code:compBreakdown-SKILL_VOIP a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_VOIP" ;
+    skos:prefLabel "Type of skill: Telephoning over the Internet/VoIP"@en ;
+    rdfs:label "Type of skill: Telephoning over the Internet/VoIP"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_VOIP .
+
+
+sip-sdmx-code:compBreakdown-SKILL_VRFY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SKILL_VRFY" ;
+    skos:prefLabel "Verifying the reliability of information found online"@en ;
+    rdfs:label "Verifying the reliability of information found online"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SKILL_VRFY .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C01 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C01" ;
+    skos:prefLabel "State Party Annual Report 2: Policy, Legal and normative Instruments to implement IHR"@en ;
+    rdfs:label "State Party Annual Report 2: Policy, Legal and normative Instruments to implement IHR"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C01 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C02 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C02" ;
+    skos:prefLabel "State Party Annual Report 2: IHR Coordination, National IHR Focal Point functions and advocacy"@en ;
+    rdfs:label "State Party Annual Report 2: IHR Coordination, National IHR Focal Point functions and advocacy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C02 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C03 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C03" ;
+    skos:prefLabel "State Party Annual Report 2: Financing"@en ;
+    rdfs:label "State Party Annual Report 2: Financing"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C03 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C04 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C04" ;
+    skos:prefLabel "State Party Annual Report 2: Laboratory"@en ;
+    rdfs:label "State Party Annual Report 2: Laboratory"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C04 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C05 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C05" ;
+    skos:prefLabel "State Party Annual Report 2: Surveillance"@en ;
+    rdfs:label "State Party Annual Report 2: Surveillance"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C05 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C06 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C06" ;
+    skos:prefLabel "State Party Annual Report 2: Human resources"@en ;
+    rdfs:label "State Party Annual Report 2: Human resources"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C06 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C07 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C07" ;
+    skos:prefLabel "State Party Annual Report 2: Health emergency management"@en ;
+    rdfs:label "State Party Annual Report 2: Health emergency management"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C07 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C08 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C08" ;
+    skos:prefLabel "State Party Annual Report 2: Health services provision"@en ;
+    rdfs:label "State Party Annual Report 2: Health services provision"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C08 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C09 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C09" ;
+    skos:prefLabel "State Party Annual Report 2: Infection prevention and control (IPC)"@en ;
+    rdfs:label "State Party Annual Report 2: Infection prevention and control (IPC)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C09 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C10 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C10" ;
+    skos:prefLabel "State Party Annual Report 2: Risk communication and community engagement (RCCE)"@en ;
+    rdfs:label "State Party Annual Report 2: Risk communication and community engagement (RCCE)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C10 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C11 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C11" ;
+    skos:prefLabel "State Party Annual Report 2: Points of entry (PoEs) and border health"@en ;
+    rdfs:label "State Party Annual Report 2: Points of entry (PoEs) and border health"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C11 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C12 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C12" ;
+    skos:prefLabel "State Party Annual Report 2: Zoonotic diseases"@en ;
+    rdfs:label "State Party Annual Report 2: Zoonotic diseases"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C12 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C13 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C13" ;
+    skos:prefLabel "State Party Annual Report 2: Food safety"@en ;
+    rdfs:label "State Party Annual Report 2: Food safety"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C13 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C14 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C14" ;
+    skos:prefLabel "State Party Annual Report 2: Chemical events"@en ;
+    rdfs:label "State Party Annual Report 2: Chemical events"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C14 .
+
+
+sip-sdmx-code:compBreakdown-SPAR2_C15 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR2_C15" ;
+    skos:prefLabel "State Party Annual Report 2: Radiation emergencies"@en ;
+    rdfs:label "State Party Annual Report 2: Radiation emergencies"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR2_C15 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_01 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_01" ;
+    skos:prefLabel "State Party Annual Report: Legislation and Financing"@en ;
+    rdfs:label "State Party Annual Report: Legislation and Financing"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_01 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_02 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_02" ;
+    skos:prefLabel "State Party Annual Report: IHR Coordination and National IHR Focal Point Functions"@en ;
+    rdfs:label "State Party Annual Report: IHR Coordination and National IHR Focal Point Functions"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_02 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_03 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_03" ;
+    skos:prefLabel "State Party Annual Report: Zoonotic events and the human–animal interface"@en ;
+    rdfs:label "State Party Annual Report: Zoonotic events and the human–animal interface"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_03 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_04 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_04" ;
+    skos:prefLabel "State Party Annual Report: Food safety"@en ;
+    rdfs:label "State Party Annual Report: Food safety"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_04 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_05 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_05" ;
+    skos:prefLabel "State Party Annual Report: Laboratory"@en ;
+    rdfs:label "State Party Annual Report: Laboratory"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_05 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_06 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_06" ;
+    skos:prefLabel "State Party Annual Report: Surveillance"@en ;
+    rdfs:label "State Party Annual Report: Surveillance"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_06 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_07 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_07" ;
+    skos:prefLabel "State Party Annual Report: Human resources"@en ;
+    rdfs:label "State Party Annual Report: Human resources"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_07 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_08 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_08" ;
+    skos:prefLabel "State Party Annual Report: National Health Emergency Framework"@en ;
+    rdfs:label "State Party Annual Report: National Health Emergency Framework"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_08 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_09 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_09" ;
+    skos:prefLabel "State Party Annual Report: Health Service Provision"@en ;
+    rdfs:label "State Party Annual Report: Health Service Provision"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_09 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_10 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_10" ;
+    skos:prefLabel "State Party Annual Report: Risk Communication"@en ;
+    rdfs:label "State Party Annual Report: Risk Communication"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_10 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_11 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_11" ;
+    skos:prefLabel "State Party Annual Report: Points of entry"@en ;
+    rdfs:label "State Party Annual Report: Points of entry"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_11 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_12 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_12" ;
+    skos:prefLabel "State Party Annual Report: Chemical events"@en ;
+    rdfs:label "State Party Annual Report: Chemical events"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_12 .
+
+
+sip-sdmx-code:compBreakdown-SPAR_13 a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPAR_13" ;
+    skos:prefLabel "State Party Annual Report: Radiation emergencies"@en ;
+    rdfs:label "State Party Annual Report: Radiation emergencies"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPAR_13 .
+
+
+sip-sdmx-code:compBreakdown-SPL_A a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPL_A" ;
+    skos:prefLabel "Severity of price levels: Abnormal: High food prices"@en ;
+    rdfs:label "Severity of price levels: Abnormal: High food prices"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPL_A .
+
+
+sip-sdmx-code:compBreakdown-SPL_M a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SPL_M" ;
+    skos:prefLabel "Severity of price levels: Moderate: Moderately high food prices"@en ;
+    rdfs:label "Severity of price levels: Moderate: Moderately high food prices"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SPL_M .
+
+
+sip-sdmx-code:compBreakdown-SUD_ALCOHOL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SUD_ALCOHOL" ;
+    skos:prefLabel "Substance use disorder: Alcohol"@en ;
+    rdfs:label "Substance use disorder: Alcohol"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SUD_ALCOHOL .
+
+
+sip-sdmx-code:compBreakdown-SUD_ATS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SUD_ATS" ;
+    skos:prefLabel "Substance use disorder: Amphetamine-type stimulants (ATS)"@en ;
+    rdfs:label "Substance use disorder: Amphetamine-type stimulants (ATS)"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SUD_ATS .
+
+
+sip-sdmx-code:compBreakdown-SUD_CANNABIS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SUD_CANNABIS" ;
+    skos:prefLabel "Substance use disorder: Cannabis"@en ;
+    rdfs:label "Substance use disorder: Cannabis"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SUD_CANNABIS .
+
+
+sip-sdmx-code:compBreakdown-SUD_COCAINE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SUD_COCAINE" ;
+    skos:prefLabel "Substance use disorder: Cocaine"@en ;
+    rdfs:label "Substance use disorder: Cocaine"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SUD_COCAINE .
+
+
+sip-sdmx-code:compBreakdown-SUD_DRUG_TOTAL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SUD_DRUG_TOTAL" ;
+    skos:prefLabel "Substance use disorder: Includes ATS, opioids, cocaine, cannabis and other drugs"@en ;
+    rdfs:label "Substance use disorder: Includes ATS, opioids, cocaine, cannabis and other drugs"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SUD_DRUG_TOTAL .
+
+
+sip-sdmx-code:compBreakdown-SUD_OPIOIDS a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "SUD_OPIOIDS" ;
+    skos:prefLabel "Substance use disorder: Opioids"@en ;
+    rdfs:label "Substance use disorder: Opioids"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-SUD_OPIOIDS .
+
+
+sip-sdmx-code:compBreakdown-TOS_ADAPTATION a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TOS_ADAPTATION" ;
+    skos:prefLabel "Type of support: Adaptation"@en ;
+    rdfs:label "Type of support: Adaptation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TOS_ADAPTATION .
+
+
+sip-sdmx-code:compBreakdown-TOS_CROSS_CUTTING a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TOS_CROSS_CUTTING" ;
+    skos:prefLabel "Type of support: Cross-cutting"@en ;
+    rdfs:label "Type of support: Cross-cutting"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TOS_CROSS_CUTTING .
+
+
+sip-sdmx-code:compBreakdown-TOS_MITIGATION a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TOS_MITIGATION" ;
+    skos:prefLabel "Type of support: Mitigation"@en ;
+    rdfs:label "Type of support: Mitigation"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TOS_MITIGATION .
+
+
+sip-sdmx-code:compBreakdown-TOS_OTHER a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TOS_OTHER" ;
+    skos:prefLabel "Type of support: Other"@en ;
+    rdfs:label "Type of support: Other"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TOS_OTHER .
+
+
+sip-sdmx-code:compBreakdown-TRT_BIOENERGY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TRT_BIOENERGY" ;
+    skos:prefLabel "Type of renewable technology: Bioenergy"@en ;
+    rdfs:label "Type of renewable technology: Bioenergy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TRT_BIOENERGY .
+
+
+sip-sdmx-code:compBreakdown-TRT_GEOTHERMAL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TRT_GEOTHERMAL" ;
+    skos:prefLabel "Type of renewable technology: Geothermal energy"@en ;
+    rdfs:label "Type of renewable technology: Geothermal energy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TRT_GEOTHERMAL .
+
+
+sip-sdmx-code:compBreakdown-TRT_HYDROPOWER a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TRT_HYDROPOWER" ;
+    skos:prefLabel "Type of renewable technology: Hydropower"@en ;
+    rdfs:label "Type of renewable technology: Hydropower"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TRT_HYDROPOWER .
+
+
+sip-sdmx-code:compBreakdown-TRT_MARINE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TRT_MARINE" ;
+    skos:prefLabel "Type of renewable technology: Marine energy"@en ;
+    rdfs:label "Type of renewable technology: Marine energy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TRT_MARINE .
+
+
+sip-sdmx-code:compBreakdown-TRT_MULTIPLE a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TRT_MULTIPLE" ;
+    skos:prefLabel "Type of renewable technology: Multiple renewables"@en ;
+    rdfs:label "Type of renewable technology: Multiple renewables"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TRT_MULTIPLE .
+
+
+sip-sdmx-code:compBreakdown-TRT_SOLAR a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TRT_SOLAR" ;
+    skos:prefLabel "Type of renewable technology: Solar energy"@en ;
+    rdfs:label "Type of renewable technology: Solar energy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TRT_SOLAR .
+
+
+sip-sdmx-code:compBreakdown-TRT_WIND a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "TRT_WIND" ;
+    skos:prefLabel "Type of renewable technology: Wind energy"@en ;
+    rdfs:label "Type of renewable technology: Wind energy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-TRT_WIND .
+
+
+sip-sdmx-code:compBreakdown-WT_COMPOST a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_COMPOST" ;
+    skos:prefLabel "Waste treatment: Composting"@en ;
+    rdfs:label "Waste treatment: Composting"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_COMPOST .
+
+
+sip-sdmx-code:compBreakdown-WT_INCINRT a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_INCINRT" ;
+    skos:prefLabel "Waste treatment: Incineration"@en ;
+    rdfs:label "Waste treatment: Incineration"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_INCINRT .
+
+
+sip-sdmx-code:compBreakdown-WT_INCINRT_EGY a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_INCINRT_EGY" ;
+    skos:prefLabel "Waste Treatment: Incineration to generate energy"@en ;
+    rdfs:label "Waste Treatment: Incineration to generate energy"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_INCINRT_EGY .
+
+
+sip-sdmx-code:compBreakdown-WT_LANDFIL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_LANDFIL" ;
+    skos:prefLabel "Waste treatment: Landfilling"@en ;
+    rdfs:label "Waste treatment: Landfilling"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_LANDFIL .
+
+
+sip-sdmx-code:compBreakdown-WT_LANDFILCTL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_LANDFILCTL" ;
+    skos:prefLabel "Waste treatment: Landfilling, controlled"@en ;
+    rdfs:label "Waste treatment: Landfilling, controlled"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_LANDFILCTL .
+
+
+sip-sdmx-code:compBreakdown-WT_LANDFILNCTL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_LANDFILNCTL" ;
+    skos:prefLabel "Waste treatment: Landfilling, uncontrolled"@en ;
+    rdfs:label "Waste treatment: Landfilling, uncontrolled"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_LANDFILNCTL .
+
+
+sip-sdmx-code:compBreakdown-WT_OTHERWM a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_OTHERWM" ;
+    skos:prefLabel "Waste treatment: Other type of waste management"@en ;
+    rdfs:label "Waste treatment: Other type of waste management"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_OTHERWM .
+
+
+sip-sdmx-code:compBreakdown-WT_RECYCL a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "WT_RECYCL" ;
+    skos:prefLabel "Waste treatment: Recycling"@en ;
+    rdfs:label "Waste treatment: Recycling"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-WT_RECYCL .
+
+
+sip-sdmx-code:compBreakdown-_T a skos:Concept, sip-sdmx-code:CompBreakdown;
+    skos:topConceptOf sip-sdmx-code:compBreakdown ;
+    skos:inScheme sip-sdmx-code:compBreakdown ;
+    skos:notation "_T" ;
+    skos:prefLabel "No breakdown"@en ;
+    rdfs:label "No breakdown"@en .
+
+sip-sdmx-code:compBreakdown skos:hasTopConcept sip-sdmx-code:compBreakdown-_T .
+

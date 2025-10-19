@@ -1,0 +1,104 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_NACONSOLIDAT Scheme Definition
+#####################################################
+
+sip-sdmx-code:naConsolidat a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Consolidation codes - codelist scheme"@en ;
+    rdfs:label "Consolidation codes - codelist scheme"@en ;
+    skos:notation "CL_NACONSOLIDAT" ;
+    skos:definition "A reference naConsolidat codelist based on ESTAT:CL_NA_CONSOLIDAT(1.3)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_CONSOLIDAT/1.3> ;
+    rdfs:seeAlso sip-sdmx-code:NaConsolidat .
+
+sip-sdmx-code:NaConsolidat a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Consolidation codes - codelist class"@en ;
+    rdfs:label "Consolidation codes - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat .
+
+
+########################################
+# CL_NACONSOLIDAT Codes
+########################################
+    
+sip-sdmx-code:naConsolidat-C a skos:Concept, sip-sdmx-code:NaConsolidat;
+    skos:topConceptOf sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat ;
+    skos:notation "C" ;
+    skos:prefLabel "Consolidated"@en ;
+    rdfs:label "Consolidated"@en .
+
+sip-sdmx-code:naConsolidat skos:hasTopConcept sip-sdmx-code:naConsolidat-C .
+
+
+sip-sdmx-code:naConsolidat-CI a skos:Concept, sip-sdmx-code:NaConsolidat;
+    skos:topConceptOf sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat ;
+    skos:notation "CI" ;
+    skos:prefLabel "Consolidating item"@en ;
+    rdfs:label "Consolidating item"@en .
+
+sip-sdmx-code:naConsolidat skos:hasTopConcept sip-sdmx-code:naConsolidat-CI .
+
+
+sip-sdmx-code:naConsolidat-N a skos:Concept, sip-sdmx-code:NaConsolidat;
+    skos:topConceptOf sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat ;
+    skos:notation "N" ;
+    skos:prefLabel "Non-consolidated"@en ;
+    rdfs:label "Non-consolidated"@en .
+
+sip-sdmx-code:naConsolidat skos:hasTopConcept sip-sdmx-code:naConsolidat-N .
+
+
+sip-sdmx-code:naConsolidat-NC a skos:Concept, sip-sdmx-code:NaConsolidat;
+    skos:topConceptOf sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat ;
+    skos:notation "NC" ;
+    skos:prefLabel "Non-consolidated between sub-sectors but consolidated within sub-sector"@en ;
+    rdfs:label "Non-consolidated between sub-sectors but consolidated within sub-sector"@en .
+
+sip-sdmx-code:naConsolidat skos:hasTopConcept sip-sdmx-code:naConsolidat-NC .
+
+
+sip-sdmx-code:naConsolidat-P a skos:Concept, sip-sdmx-code:NaConsolidat;
+    skos:topConceptOf sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat ;
+    skos:notation "P" ;
+    skos:prefLabel "Partially consolidated or aggregate containing both consolidated and non-consolidated items"@en ;
+    rdfs:label "Partially consolidated or aggregate containing both consolidated and non-consolidated items"@en .
+
+sip-sdmx-code:naConsolidat skos:hasTopConcept sip-sdmx-code:naConsolidat-P .
+
+
+sip-sdmx-code:naConsolidat-_X a skos:Concept, sip-sdmx-code:NaConsolidat;
+    skos:topConceptOf sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat ;
+    skos:notation "_X" ;
+    skos:prefLabel "Unspecified consolidation status"@en ;
+    rdfs:label "Unspecified consolidation status"@en .
+
+sip-sdmx-code:naConsolidat skos:hasTopConcept sip-sdmx-code:naConsolidat-_X .
+
+
+sip-sdmx-code:naConsolidat-_Z a skos:Concept, sip-sdmx-code:NaConsolidat;
+    skos:topConceptOf sip-sdmx-code:naConsolidat ;
+    skos:inScheme sip-sdmx-code:naConsolidat ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:naConsolidat skos:hasTopConcept sip-sdmx-code:naConsolidat-_Z .
+

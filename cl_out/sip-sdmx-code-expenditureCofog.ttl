@@ -1,0 +1,2641 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_EXPENDITURECOFOG Scheme Definition
+#####################################################
+
+sip-sdmx-code:expenditureCofog a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Classification of the Functions of Government - codelist scheme"@en ;
+    rdfs:label "Classification of the Functions of Government - codelist scheme"@en ;
+    skos:altLabel "COFOG - codelist scheme"@en ;
+    skos:notation "CL_EXPENDITURECOFOG" ;
+    skos:definition "A reference expenditureCofog codelist combining ESTAT:CL_COFOG(1.0), SDMX:CL_COFOG_1999(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COFOG/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_COFOG_1999/1.0> ;
+    skos:note "SDMX:CL_COFOG_1999(1.0): This code list provides a set of building blocks to be used for classifying final consumption expenditures of general government by function or purpose. It is based on the United Nations eponymous standard classification. This code list was formally adopted on 27 June 2014. More information about this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like \"Total\", \"Unknown\", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345."@en ;
+    rdfs:seeAlso sip-sdmx-concept:EXPENDITURE ;
+    skos:related sip-sdmx-concept:EXPENDITURE ;
+    rdfs:seeAlso sip-sdmx-code:ExpenditureCofog .
+
+sip-sdmx-code:ExpenditureCofog a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Classification of the Functions of Government - codelist class"@en ;
+    rdfs:label "Classification of the Functions of Government - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog .
+
+
+########################################
+# CL_EXPENDITURECOFOG Codes
+########################################
+    
+sip-sdmx-code:expenditureCofog-GF01 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF01" ;
+    skos:prefLabel "General public services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """General public services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF01 .
+
+
+sip-sdmx-code:expenditureCofog-GF0101 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0101" ;
+    skos:prefLabel "Executive and legislative organs, financial and fiscal affairs, external affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Executive and legislative organs, financial and fiscal affairs, external affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0101 .
+
+
+sip-sdmx-code:expenditureCofog-GF0102 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0102" ;
+    skos:prefLabel "Foreign economic aid"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign economic aid"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0102 .
+
+
+sip-sdmx-code:expenditureCofog-GF0103 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0103" ;
+    skos:prefLabel "General services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0103 .
+
+
+sip-sdmx-code:expenditureCofog-GF0104 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0104" ;
+    skos:prefLabel "Basic research"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Basic research"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0104 .
+
+
+sip-sdmx-code:expenditureCofog-GF0105 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0105" ;
+    skos:prefLabel "R&D General public services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D General public services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0105 .
+
+
+sip-sdmx-code:expenditureCofog-GF0106 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0106" ;
+    skos:prefLabel "General public services n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General public services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0106 .
+
+
+sip-sdmx-code:expenditureCofog-GF0107 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0107" ;
+    skos:prefLabel "Public debt transactions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public debt transactions"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0107 .
+
+
+sip-sdmx-code:expenditureCofog-GF0108 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0108" ;
+    skos:prefLabel "Transfers of a general character between different levels of government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Transfers of a general character between different levels of government"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0108 .
+
+
+sip-sdmx-code:expenditureCofog-GF011 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF011" ;
+    skos:prefLabel "Executive and legislative organs, financial and fiscal affairs, external affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Executive and legislative organs, financial and fiscal affairs, external affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF011 .
+
+
+sip-sdmx-code:expenditureCofog-GF0111 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0111" ;
+    skos:prefLabel "Executive and legislative organs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Executive and legislative organs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0111 .
+
+
+sip-sdmx-code:expenditureCofog-GF0112 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0112" ;
+    skos:prefLabel "Financial and fiscal affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Financial and fiscal affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0112 .
+
+
+sip-sdmx-code:expenditureCofog-GF0113 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0113" ;
+    skos:prefLabel "External affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """External affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0113 .
+
+
+sip-sdmx-code:expenditureCofog-GF012 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF012" ;
+    skos:prefLabel "Foreign economic aid"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Foreign economic aid"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF012 .
+
+
+sip-sdmx-code:expenditureCofog-GF0121 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0121" ;
+    skos:prefLabel "Economic aid to developing countries and countries in transition"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Economic aid to developing countries and countries in transition"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0121 .
+
+
+sip-sdmx-code:expenditureCofog-GF0122 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0122" ;
+    skos:prefLabel "Economic aid routed through international organizations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Economic aid routed through international organizations"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0122 .
+
+
+sip-sdmx-code:expenditureCofog-GF013 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF013" ;
+    skos:prefLabel "General services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF013 .
+
+
+sip-sdmx-code:expenditureCofog-GF0131 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0131" ;
+    skos:prefLabel "General personnel services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General personnel services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0131 .
+
+
+sip-sdmx-code:expenditureCofog-GF0132 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0132" ;
+    skos:prefLabel "Overall planning and statistical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Overall planning and statistical services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0132 .
+
+
+sip-sdmx-code:expenditureCofog-GF0133 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0133" ;
+    skos:prefLabel "Other general services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other general services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0133 .
+
+
+sip-sdmx-code:expenditureCofog-GF014 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF014" ;
+    skos:prefLabel "Basic research"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Basic research"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF014 .
+
+
+sip-sdmx-code:expenditureCofog-GF0140 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0140" ;
+    skos:prefLabel "Basic research"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Basic research"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0140 .
+
+
+sip-sdmx-code:expenditureCofog-GF015 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF015" ;
+    skos:prefLabel "R&D General public services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D General public services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF015 .
+
+
+sip-sdmx-code:expenditureCofog-GF0150 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0150" ;
+    skos:prefLabel "R&D General public services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D General public services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0150 .
+
+
+sip-sdmx-code:expenditureCofog-GF016 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF016" ;
+    skos:prefLabel "General public services n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General public services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF016 .
+
+
+sip-sdmx-code:expenditureCofog-GF0160 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0160" ;
+    skos:prefLabel "General public services n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General public services n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0160 .
+
+
+sip-sdmx-code:expenditureCofog-GF017 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF017" ;
+    skos:prefLabel "Public debt transactions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Public debt transactions"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF017 .
+
+
+sip-sdmx-code:expenditureCofog-GF0170 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0170" ;
+    skos:prefLabel "Public debt transactions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Public debt transactions"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0170 .
+
+
+sip-sdmx-code:expenditureCofog-GF018 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF018" ;
+    skos:prefLabel "Transfers of a general character between different levels of government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Transfers of a general character between different levels of government"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF018 .
+
+
+sip-sdmx-code:expenditureCofog-GF0180 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0180" ;
+    skos:prefLabel "Transfers of a general character between different levels of government"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Transfers of a general character between different levels of government"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0180 .
+
+
+sip-sdmx-code:expenditureCofog-GF02 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF02" ;
+    skos:prefLabel "Defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF02 .
+
+
+sip-sdmx-code:expenditureCofog-GF0201 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0201" ;
+    skos:prefLabel "Military defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Military defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0201 .
+
+
+sip-sdmx-code:expenditureCofog-GF0202 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0202" ;
+    skos:prefLabel "Civil defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Civil defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0202 .
+
+
+sip-sdmx-code:expenditureCofog-GF0203 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0203" ;
+    skos:prefLabel "Foreign military aid"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Foreign military aid"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0203 .
+
+
+sip-sdmx-code:expenditureCofog-GF0204 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0204" ;
+    skos:prefLabel "R&D Defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0204 .
+
+
+sip-sdmx-code:expenditureCofog-GF0205 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0205" ;
+    skos:prefLabel "Defence n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Defence n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0205 .
+
+
+sip-sdmx-code:expenditureCofog-GF021 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF021" ;
+    skos:prefLabel "Military defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Military defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF021 .
+
+
+sip-sdmx-code:expenditureCofog-GF0210 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0210" ;
+    skos:prefLabel "Military defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Military defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0210 .
+
+
+sip-sdmx-code:expenditureCofog-GF022 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF022" ;
+    skos:prefLabel "Civil defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Civil defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF022 .
+
+
+sip-sdmx-code:expenditureCofog-GF0220 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0220" ;
+    skos:prefLabel "Civil defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Civil defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0220 .
+
+
+sip-sdmx-code:expenditureCofog-GF023 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF023" ;
+    skos:prefLabel "Foreign military aid"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Foreign military aid"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF023 .
+
+
+sip-sdmx-code:expenditureCofog-GF0230 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0230" ;
+    skos:prefLabel "Foreign military aid"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Foreign military aid"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0230 .
+
+
+sip-sdmx-code:expenditureCofog-GF024 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF024" ;
+    skos:prefLabel "R&D Defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF024 .
+
+
+sip-sdmx-code:expenditureCofog-GF0240 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0240" ;
+    skos:prefLabel "R&D Defence"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Defence"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0240 .
+
+
+sip-sdmx-code:expenditureCofog-GF025 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF025" ;
+    skos:prefLabel "Defence n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Defence n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF025 .
+
+
+sip-sdmx-code:expenditureCofog-GF0250 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0250" ;
+    skos:prefLabel "Defence n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Defence n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0250 .
+
+
+sip-sdmx-code:expenditureCofog-GF03 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF03" ;
+    skos:prefLabel "Public order and safety"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Public order and safety"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF03 .
+
+
+sip-sdmx-code:expenditureCofog-GF0301 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0301" ;
+    skos:prefLabel "Police services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Police services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0301 .
+
+
+sip-sdmx-code:expenditureCofog-GF0302 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0302" ;
+    skos:prefLabel "Fire-protection services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Fire-protection services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0302 .
+
+
+sip-sdmx-code:expenditureCofog-GF0303 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0303" ;
+    skos:prefLabel "Law courts"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Law courts"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0303 .
+
+
+sip-sdmx-code:expenditureCofog-GF0304 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0304" ;
+    skos:prefLabel "Prisons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Prisons"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0304 .
+
+
+sip-sdmx-code:expenditureCofog-GF0305 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0305" ;
+    skos:prefLabel "R&D Public order and safety"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Public order and safety"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0305 .
+
+
+sip-sdmx-code:expenditureCofog-GF0306 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0306" ;
+    skos:prefLabel "Public order and safety n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public order and safety n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0306 .
+
+
+sip-sdmx-code:expenditureCofog-GF031 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF031" ;
+    skos:prefLabel "Police services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Police services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF031 .
+
+
+sip-sdmx-code:expenditureCofog-GF0310 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0310" ;
+    skos:prefLabel "Police services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Police services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0310 .
+
+
+sip-sdmx-code:expenditureCofog-GF032 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF032" ;
+    skos:prefLabel "Fire-protection services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Fire-protection services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF032 .
+
+
+sip-sdmx-code:expenditureCofog-GF0320 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0320" ;
+    skos:prefLabel "Fire-protection services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Fire-protection services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0320 .
+
+
+sip-sdmx-code:expenditureCofog-GF033 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF033" ;
+    skos:prefLabel "Law courts"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Law courts"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF033 .
+
+
+sip-sdmx-code:expenditureCofog-GF0330 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0330" ;
+    skos:prefLabel "Law courts"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Law courts"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0330 .
+
+
+sip-sdmx-code:expenditureCofog-GF034 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF034" ;
+    skos:prefLabel "Prisons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Prisons"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF034 .
+
+
+sip-sdmx-code:expenditureCofog-GF0340 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0340" ;
+    skos:prefLabel "Prisons"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Prisons"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0340 .
+
+
+sip-sdmx-code:expenditureCofog-GF035 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF035" ;
+    skos:prefLabel "R&D Public order and safety"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Public order and safety"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF035 .
+
+
+sip-sdmx-code:expenditureCofog-GF0350 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0350" ;
+    skos:prefLabel "R&D Public order and safety"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Public order and safety"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0350 .
+
+
+sip-sdmx-code:expenditureCofog-GF036 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF036" ;
+    skos:prefLabel "Public order and safety n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Public order and safety n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF036 .
+
+
+sip-sdmx-code:expenditureCofog-GF0360 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0360" ;
+    skos:prefLabel "Public order and safety n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Public order and safety n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0360 .
+
+
+sip-sdmx-code:expenditureCofog-GF04 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF04" ;
+    skos:prefLabel "Economic affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Economic affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF04 .
+
+
+sip-sdmx-code:expenditureCofog-GF0401 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0401" ;
+    skos:prefLabel "General economic, commercial and labour affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General economic, commercial and labour affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0401 .
+
+
+sip-sdmx-code:expenditureCofog-GF0402 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0402" ;
+    skos:prefLabel "Agriculture, forestry, fishing and hunting"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Agriculture, forestry, fishing and hunting"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0402 .
+
+
+sip-sdmx-code:expenditureCofog-GF0403 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0403" ;
+    skos:prefLabel "Fuel and energy"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Fuel and energy"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0403 .
+
+
+sip-sdmx-code:expenditureCofog-GF0404 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0404" ;
+    skos:prefLabel "Mining, manufacturing and construction"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Mining, manufacturing and construction"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0404 .
+
+
+sip-sdmx-code:expenditureCofog-GF0405 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0405" ;
+    skos:prefLabel "Transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0405 .
+
+
+sip-sdmx-code:expenditureCofog-GF0406 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0406" ;
+    skos:prefLabel "Communication"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Communication"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0406 .
+
+
+sip-sdmx-code:expenditureCofog-GF0407 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0407" ;
+    skos:prefLabel "Other industries"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other industries"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0407 .
+
+
+sip-sdmx-code:expenditureCofog-GF0408 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0408" ;
+    skos:prefLabel "R&D Economic affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Economic affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0408 .
+
+
+sip-sdmx-code:expenditureCofog-GF0409 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0409" ;
+    skos:prefLabel "Economic affairs n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Economic affairs n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0409 .
+
+
+sip-sdmx-code:expenditureCofog-GF041 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF041" ;
+    skos:prefLabel "General economic, commercial and labour affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General economic, commercial and labour affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF041 .
+
+
+sip-sdmx-code:expenditureCofog-GF0411 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0411" ;
+    skos:prefLabel "General economic and commercial affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General economic and commercial affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0411 .
+
+
+sip-sdmx-code:expenditureCofog-GF0412 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0412" ;
+    skos:prefLabel "General labour affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General labour affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0412 .
+
+
+sip-sdmx-code:expenditureCofog-GF042 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF042" ;
+    skos:prefLabel "Agriculture, forestry, fishing and hunting"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Agriculture, forestry, fishing and hunting"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF042 .
+
+
+sip-sdmx-code:expenditureCofog-GF0421 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0421" ;
+    skos:prefLabel "Agriculture"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Agriculture"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0421 .
+
+
+sip-sdmx-code:expenditureCofog-GF0422 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0422" ;
+    skos:prefLabel "Forestry"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Forestry"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0422 .
+
+
+sip-sdmx-code:expenditureCofog-GF0423 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0423" ;
+    skos:prefLabel "Fishing and hunting"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Fishing and hunting"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0423 .
+
+
+sip-sdmx-code:expenditureCofog-GF043 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF043" ;
+    skos:prefLabel "Fuel and energy"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Fuel and energy"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF043 .
+
+
+sip-sdmx-code:expenditureCofog-GF0431 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0431" ;
+    skos:prefLabel "Coal and other solid mineral fuels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Coal and other solid mineral fuels"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0431 .
+
+
+sip-sdmx-code:expenditureCofog-GF0432 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0432" ;
+    skos:prefLabel "Petroleum and natural gas"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Petroleum and natural gas"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0432 .
+
+
+sip-sdmx-code:expenditureCofog-GF0433 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0433" ;
+    skos:prefLabel "Nuclear fuel"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Nuclear fuel"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0433 .
+
+
+sip-sdmx-code:expenditureCofog-GF0434 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0434" ;
+    skos:prefLabel "Other fuels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other fuels"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0434 .
+
+
+sip-sdmx-code:expenditureCofog-GF0435 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0435" ;
+    skos:prefLabel "Electricity"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Electricity"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0435 .
+
+
+sip-sdmx-code:expenditureCofog-GF0436 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0436" ;
+    skos:prefLabel "Non-electric energy"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Non-electric energy"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0436 .
+
+
+sip-sdmx-code:expenditureCofog-GF044 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF044" ;
+    skos:prefLabel "Mining, manufacturing and construction"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Mining, manufacturing and construction"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF044 .
+
+
+sip-sdmx-code:expenditureCofog-GF0441 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0441" ;
+    skos:prefLabel "Mining of mineral resources other than mineral fuels"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Mining of mineral resources other than mineral fuels"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0441 .
+
+
+sip-sdmx-code:expenditureCofog-GF0442 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0442" ;
+    skos:prefLabel "Manufacturing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Manufacturing"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0442 .
+
+
+sip-sdmx-code:expenditureCofog-GF0443 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0443" ;
+    skos:prefLabel "Construction"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Construction"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0443 .
+
+
+sip-sdmx-code:expenditureCofog-GF045 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF045" ;
+    skos:prefLabel "Transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF045 .
+
+
+sip-sdmx-code:expenditureCofog-GF0451 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0451" ;
+    skos:prefLabel "Road transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Road transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0451 .
+
+
+sip-sdmx-code:expenditureCofog-GF0452 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0452" ;
+    skos:prefLabel "Water transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Water transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0452 .
+
+
+sip-sdmx-code:expenditureCofog-GF0453 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0453" ;
+    skos:prefLabel "Railway transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Railway transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0453 .
+
+
+sip-sdmx-code:expenditureCofog-GF0454 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0454" ;
+    skos:prefLabel "Air transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Air transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0454 .
+
+
+sip-sdmx-code:expenditureCofog-GF0455 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0455" ;
+    skos:prefLabel "Pipeline and other transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pipeline and other transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0455 .
+
+
+sip-sdmx-code:expenditureCofog-GF046 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF046" ;
+    skos:prefLabel "Communication"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Communication"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF046 .
+
+
+sip-sdmx-code:expenditureCofog-GF0460 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0460" ;
+    skos:prefLabel "Communication"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Communication"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0460 .
+
+
+sip-sdmx-code:expenditureCofog-GF047 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF047" ;
+    skos:prefLabel "Other industries"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other industries"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF047 .
+
+
+sip-sdmx-code:expenditureCofog-GF0471 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0471" ;
+    skos:prefLabel "Distributive trades, storage and warehousing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Distributive trades, storage and warehousing"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0471 .
+
+
+sip-sdmx-code:expenditureCofog-GF0472 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0472" ;
+    skos:prefLabel "Hotels and restaurants"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Hotels and restaurants"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0472 .
+
+
+sip-sdmx-code:expenditureCofog-GF0473 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0473" ;
+    skos:prefLabel "Tourism"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Tourism"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0473 .
+
+
+sip-sdmx-code:expenditureCofog-GF0474 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0474" ;
+    skos:prefLabel "Multi-purpose development projects"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Multi-purpose development projects"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0474 .
+
+
+sip-sdmx-code:expenditureCofog-GF048 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF048" ;
+    skos:prefLabel "R&D Economic affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Economic affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF048 .
+
+
+sip-sdmx-code:expenditureCofog-GF0481 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0481" ;
+    skos:prefLabel "R&D General economic, commercial and labour affairs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D General economic, commercial and labour affairs"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0481 .
+
+
+sip-sdmx-code:expenditureCofog-GF0482 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0482" ;
+    skos:prefLabel "R&D Agriculture, forestry, fishing and hunting"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Agriculture, forestry, fishing and hunting"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0482 .
+
+
+sip-sdmx-code:expenditureCofog-GF0483 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0483" ;
+    skos:prefLabel "R&D Fuel and energy"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Fuel and energy"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0483 .
+
+
+sip-sdmx-code:expenditureCofog-GF0484 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0484" ;
+    skos:prefLabel "R&D Mining, manufacturing and construction"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Mining, manufacturing and construction"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0484 .
+
+
+sip-sdmx-code:expenditureCofog-GF0485 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0485" ;
+    skos:prefLabel "R&D Transport"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Transport"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0485 .
+
+
+sip-sdmx-code:expenditureCofog-GF0486 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0486" ;
+    skos:prefLabel "R&D Communication"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Communication"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0486 .
+
+
+sip-sdmx-code:expenditureCofog-GF0487 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0487" ;
+    skos:prefLabel "R&D Other industries"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Other industries"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0487 .
+
+
+sip-sdmx-code:expenditureCofog-GF049 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF049" ;
+    skos:prefLabel "Economic affairs n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Economic affairs n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF049 .
+
+
+sip-sdmx-code:expenditureCofog-GF0490 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0490" ;
+    skos:prefLabel "Economic affairs n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Economic affairs n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0490 .
+
+
+sip-sdmx-code:expenditureCofog-GF05 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF05" ;
+    skos:prefLabel "Environment protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Environment protection"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Environmental protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF05 .
+
+
+sip-sdmx-code:expenditureCofog-GF0501 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0501" ;
+    skos:prefLabel "Waste management"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Waste management"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0501 .
+
+
+sip-sdmx-code:expenditureCofog-GF0502 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0502" ;
+    skos:prefLabel "Waste water management"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Waste water management"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0502 .
+
+
+sip-sdmx-code:expenditureCofog-GF0503 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0503" ;
+    skos:prefLabel "Pollution abatement"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Pollution abatement"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0503 .
+
+
+sip-sdmx-code:expenditureCofog-GF0504 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0504" ;
+    skos:prefLabel "Protection of biodiversity and landscape"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Protection of biodiversity and landscape"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0504 .
+
+
+sip-sdmx-code:expenditureCofog-GF0505 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0505" ;
+    skos:prefLabel "R&D Environmental protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Environmental protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0505 .
+
+
+sip-sdmx-code:expenditureCofog-GF0506 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0506" ;
+    skos:prefLabel "Environmental protection n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Environmental protection n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0506 .
+
+
+sip-sdmx-code:expenditureCofog-GF051 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF051" ;
+    skos:prefLabel "Waste management"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Waste management"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF051 .
+
+
+sip-sdmx-code:expenditureCofog-GF0510 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0510" ;
+    skos:prefLabel "Waste management"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Waste management"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0510 .
+
+
+sip-sdmx-code:expenditureCofog-GF052 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF052" ;
+    skos:prefLabel "Waste water management"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Waste water management"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF052 .
+
+
+sip-sdmx-code:expenditureCofog-GF0520 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0520" ;
+    skos:prefLabel "Waste water management"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Waste water management"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0520 .
+
+
+sip-sdmx-code:expenditureCofog-GF053 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF053" ;
+    skos:prefLabel "Pollution abatement"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pollution abatement"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF053 .
+
+
+sip-sdmx-code:expenditureCofog-GF0530 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0530" ;
+    skos:prefLabel "Pollution abatement"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pollution abatement"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0530 .
+
+
+sip-sdmx-code:expenditureCofog-GF054 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF054" ;
+    skos:prefLabel "Protection of biodiversity and landscape"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Protection of biodiversity and landscape"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF054 .
+
+
+sip-sdmx-code:expenditureCofog-GF0540 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0540" ;
+    skos:prefLabel "Protection of biodiversity and landscape"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Protection of biodiversity and landscape"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0540 .
+
+
+sip-sdmx-code:expenditureCofog-GF055 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF055" ;
+    skos:prefLabel "R&D Environmental protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Environmental protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF055 .
+
+
+sip-sdmx-code:expenditureCofog-GF0550 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0550" ;
+    skos:prefLabel "R&D Environmental protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Environmental protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0550 .
+
+
+sip-sdmx-code:expenditureCofog-GF056 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF056" ;
+    skos:prefLabel "Environmental protection n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Environmental protection n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF056 .
+
+
+sip-sdmx-code:expenditureCofog-GF0560 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0560" ;
+    skos:prefLabel "Environmental protection n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Environmental protection n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0560 .
+
+
+sip-sdmx-code:expenditureCofog-GF06 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF06" ;
+    skos:prefLabel "Housing and community amenities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Housing and community amenities"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF06 .
+
+
+sip-sdmx-code:expenditureCofog-GF0601 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0601" ;
+    skos:prefLabel "Housing development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Housing development"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0601 .
+
+
+sip-sdmx-code:expenditureCofog-GF0602 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0602" ;
+    skos:prefLabel "Community development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Community development"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0602 .
+
+
+sip-sdmx-code:expenditureCofog-GF0603 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0603" ;
+    skos:prefLabel "Water supply"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Water supply"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0603 .
+
+
+sip-sdmx-code:expenditureCofog-GF0604 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0604" ;
+    skos:prefLabel "Street lighting"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Street lighting"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0604 .
+
+
+sip-sdmx-code:expenditureCofog-GF0605 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0605" ;
+    skos:prefLabel "R&D Housing and community amenities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Housing and community amenities"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0605 .
+
+
+sip-sdmx-code:expenditureCofog-GF0606 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0606" ;
+    skos:prefLabel "Housing and community amenities n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Housing and community amenities n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0606 .
+
+
+sip-sdmx-code:expenditureCofog-GF061 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF061" ;
+    skos:prefLabel "Housing development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing development"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF061 .
+
+
+sip-sdmx-code:expenditureCofog-GF0610 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0610" ;
+    skos:prefLabel "Housing development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing development"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0610 .
+
+
+sip-sdmx-code:expenditureCofog-GF062 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF062" ;
+    skos:prefLabel "Community development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Community development"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF062 .
+
+
+sip-sdmx-code:expenditureCofog-GF0620 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0620" ;
+    skos:prefLabel "Community development"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Community development"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0620 .
+
+
+sip-sdmx-code:expenditureCofog-GF063 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF063" ;
+    skos:prefLabel "Water supply"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Water supply"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF063 .
+
+
+sip-sdmx-code:expenditureCofog-GF0630 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0630" ;
+    skos:prefLabel "Water supply"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Water supply"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0630 .
+
+
+sip-sdmx-code:expenditureCofog-GF064 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF064" ;
+    skos:prefLabel "Street lighting"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Street lighting"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF064 .
+
+
+sip-sdmx-code:expenditureCofog-GF0640 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0640" ;
+    skos:prefLabel "Street lighting"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Street lighting"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0640 .
+
+
+sip-sdmx-code:expenditureCofog-GF065 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF065" ;
+    skos:prefLabel "R&D Housing and community amenities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Housing and community amenities"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF065 .
+
+
+sip-sdmx-code:expenditureCofog-GF0650 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0650" ;
+    skos:prefLabel "R&D Housing and community amenities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Housing and community amenities"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0650 .
+
+
+sip-sdmx-code:expenditureCofog-GF066 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF066" ;
+    skos:prefLabel "Housing and community amenities n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing and community amenities n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF066 .
+
+
+sip-sdmx-code:expenditureCofog-GF0660 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0660" ;
+    skos:prefLabel "Housing and community amenities n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing and community amenities n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0660 .
+
+
+sip-sdmx-code:expenditureCofog-GF07 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF07" ;
+    skos:prefLabel "Health"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Health"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF07 .
+
+
+sip-sdmx-code:expenditureCofog-GF0701 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0701" ;
+    skos:prefLabel "Medical products, appliances and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Medical products, appliances and equipment"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0701 .
+
+
+sip-sdmx-code:expenditureCofog-GF0702 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0702" ;
+    skos:prefLabel "Outpatient services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Outpatient services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0702 .
+
+
+sip-sdmx-code:expenditureCofog-GF0703 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0703" ;
+    skos:prefLabel "Hospital services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Hospital services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0703 .
+
+
+sip-sdmx-code:expenditureCofog-GF0704 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0704" ;
+    skos:prefLabel "Public health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public health services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0704 .
+
+
+sip-sdmx-code:expenditureCofog-GF0705 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0705" ;
+    skos:prefLabel "R&D Health"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Health"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0705 .
+
+
+sip-sdmx-code:expenditureCofog-GF0706 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0706" ;
+    skos:prefLabel "Health n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Health n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0706 .
+
+
+sip-sdmx-code:expenditureCofog-GF071 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF071" ;
+    skos:prefLabel "Medical products, appliances and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Medical products, appliances and equipment"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF071 .
+
+
+sip-sdmx-code:expenditureCofog-GF0711 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0711" ;
+    skos:prefLabel "Pharmaceutical products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pharmaceutical products"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0711 .
+
+
+sip-sdmx-code:expenditureCofog-GF0712 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0712" ;
+    skos:prefLabel "Other medical products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Other medical products"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0712 .
+
+
+sip-sdmx-code:expenditureCofog-GF0713 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0713" ;
+    skos:prefLabel "Therapeutic appliances and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Therapeutic appliances and equipment"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0713 .
+
+
+sip-sdmx-code:expenditureCofog-GF072 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF072" ;
+    skos:prefLabel "Outpatient services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Outpatient services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF072 .
+
+
+sip-sdmx-code:expenditureCofog-GF0721 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0721" ;
+    skos:prefLabel "General medical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General medical services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0721 .
+
+
+sip-sdmx-code:expenditureCofog-GF0722 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0722" ;
+    skos:prefLabel "Specialised medical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Specialised medical services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0722 .
+
+
+sip-sdmx-code:expenditureCofog-GF0723 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0723" ;
+    skos:prefLabel "Dental services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Dental services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0723 .
+
+
+sip-sdmx-code:expenditureCofog-GF0724 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0724" ;
+    skos:prefLabel "Paramedical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Paramedical services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0724 .
+
+
+sip-sdmx-code:expenditureCofog-GF073 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF073" ;
+    skos:prefLabel "Hospital services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Hospital services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF073 .
+
+
+sip-sdmx-code:expenditureCofog-GF0731 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0731" ;
+    skos:prefLabel "General hospital services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """General hospital services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0731 .
+
+
+sip-sdmx-code:expenditureCofog-GF0732 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0732" ;
+    skos:prefLabel "Specialized hospital services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Specialized hospital services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0732 .
+
+
+sip-sdmx-code:expenditureCofog-GF0733 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0733" ;
+    skos:prefLabel "Medical and maternity centre services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Medical and maternity centre services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0733 .
+
+
+sip-sdmx-code:expenditureCofog-GF0734 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0734" ;
+    skos:prefLabel "Nursing and convalescent home services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Nursing and convalescent home services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0734 .
+
+
+sip-sdmx-code:expenditureCofog-GF074 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF074" ;
+    skos:prefLabel "Public health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Public health services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF074 .
+
+
+sip-sdmx-code:expenditureCofog-GF0740 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0740" ;
+    skos:prefLabel "Public health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Public health services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0740 .
+
+
+sip-sdmx-code:expenditureCofog-GF075 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF075" ;
+    skos:prefLabel "R&D Health"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Health"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF075 .
+
+
+sip-sdmx-code:expenditureCofog-GF0750 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0750" ;
+    skos:prefLabel "R&D Health"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Health"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0750 .
+
+
+sip-sdmx-code:expenditureCofog-GF076 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF076" ;
+    skos:prefLabel "Health n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Health n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF076 .
+
+
+sip-sdmx-code:expenditureCofog-GF0760 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0760" ;
+    skos:prefLabel "Health n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Health n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0760 .
+
+
+sip-sdmx-code:expenditureCofog-GF08 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF08" ;
+    skos:prefLabel "Recreation, culture and religion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Recreation, culture and religion"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF08 .
+
+
+sip-sdmx-code:expenditureCofog-GF0801 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0801" ;
+    skos:prefLabel "Recreational and sporting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Recreational and sporting services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0801 .
+
+
+sip-sdmx-code:expenditureCofog-GF0802 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0802" ;
+    skos:prefLabel "Cultural services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Cultural services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0802 .
+
+
+sip-sdmx-code:expenditureCofog-GF0803 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0803" ;
+    skos:prefLabel "Broadcasting and publishing services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Broadcasting and publishing services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0803 .
+
+
+sip-sdmx-code:expenditureCofog-GF0804 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0804" ;
+    skos:prefLabel "Religious and other community services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Religious and other community services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0804 .
+
+
+sip-sdmx-code:expenditureCofog-GF0805 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0805" ;
+    skos:prefLabel "R&D Recreation, culture and religion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Recreation, culture and religion"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0805 .
+
+
+sip-sdmx-code:expenditureCofog-GF0806 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0806" ;
+    skos:prefLabel "Recreation, culture and religion n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Recreation, culture and religion n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0806 .
+
+
+sip-sdmx-code:expenditureCofog-GF081 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF081" ;
+    skos:prefLabel "Recreational and sporting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Recreational and sporting services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF081 .
+
+
+sip-sdmx-code:expenditureCofog-GF0810 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0810" ;
+    skos:prefLabel "Recreational and sporting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Recreational and sporting services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0810 .
+
+
+sip-sdmx-code:expenditureCofog-GF082 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF082" ;
+    skos:prefLabel "Cultural services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Cultural services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF082 .
+
+
+sip-sdmx-code:expenditureCofog-GF0820 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0820" ;
+    skos:prefLabel "Cultural services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Cultural services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0820 .
+
+
+sip-sdmx-code:expenditureCofog-GF083 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF083" ;
+    skos:prefLabel "Broadcasting and publishing services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Broadcasting and publishing services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF083 .
+
+
+sip-sdmx-code:expenditureCofog-GF0830 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0830" ;
+    skos:prefLabel "Broadcasting and publishing services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Broadcasting and publishing services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0830 .
+
+
+sip-sdmx-code:expenditureCofog-GF084 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF084" ;
+    skos:prefLabel "Religious and other community services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Religious and other community services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF084 .
+
+
+sip-sdmx-code:expenditureCofog-GF0840 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0840" ;
+    skos:prefLabel "Religious and other community services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Religious and other community services"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0840 .
+
+
+sip-sdmx-code:expenditureCofog-GF085 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF085" ;
+    skos:prefLabel "R&D Recreation, culture and religion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Recreation, culture and religion"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF085 .
+
+
+sip-sdmx-code:expenditureCofog-GF0850 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0850" ;
+    skos:prefLabel "R&D Recreation, culture and religion"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Recreation, culture and religion"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0850 .
+
+
+sip-sdmx-code:expenditureCofog-GF086 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF086" ;
+    skos:prefLabel "Recreation, culture and religion n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Recreation, culture and religion n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF086 .
+
+
+sip-sdmx-code:expenditureCofog-GF0860 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0860" ;
+    skos:prefLabel "Recreation, culture and religion n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Recreation, culture and religion n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0860 .
+
+
+sip-sdmx-code:expenditureCofog-GF09 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF09" ;
+    skos:prefLabel "Education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF09 .
+
+
+sip-sdmx-code:expenditureCofog-GF0901 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0901" ;
+    skos:prefLabel "Pre-primary and primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Pre-primary and primary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0901 .
+
+
+sip-sdmx-code:expenditureCofog-GF0902 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0902" ;
+    skos:prefLabel "Secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Secondary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0902 .
+
+
+sip-sdmx-code:expenditureCofog-GF0903 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0903" ;
+    skos:prefLabel "Post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0903 .
+
+
+sip-sdmx-code:expenditureCofog-GF0904 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0904" ;
+    skos:prefLabel "Tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0904 .
+
+
+sip-sdmx-code:expenditureCofog-GF0905 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0905" ;
+    skos:prefLabel "Education not definable by level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Education not definable by level"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0905 .
+
+
+sip-sdmx-code:expenditureCofog-GF0906 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0906" ;
+    skos:prefLabel "Subsidiary services to education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Subsidiary services to education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0906 .
+
+
+sip-sdmx-code:expenditureCofog-GF0907 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0907" ;
+    skos:prefLabel "R&D Education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0907 .
+
+
+sip-sdmx-code:expenditureCofog-GF0908 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0908" ;
+    skos:prefLabel "Education n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Education n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0908 .
+
+
+sip-sdmx-code:expenditureCofog-GF091 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF091" ;
+    skos:prefLabel "Pre-primary and primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pre-primary and primary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF091 .
+
+
+sip-sdmx-code:expenditureCofog-GF0911 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0911" ;
+    skos:prefLabel "Pre-primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Pre-primary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0911 .
+
+
+sip-sdmx-code:expenditureCofog-GF0912 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0912" ;
+    skos:prefLabel "Primary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Primary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0912 .
+
+
+sip-sdmx-code:expenditureCofog-GF092 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF092" ;
+    skos:prefLabel "Secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Secondary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF092 .
+
+
+sip-sdmx-code:expenditureCofog-GF0921 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0921" ;
+    skos:prefLabel "Lower-secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Lower-secondary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0921 .
+
+
+sip-sdmx-code:expenditureCofog-GF0922 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0922" ;
+    skos:prefLabel "Upper-secondary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Upper-secondary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0922 .
+
+
+sip-sdmx-code:expenditureCofog-GF093 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF093" ;
+    skos:prefLabel "Post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF093 .
+
+
+sip-sdmx-code:expenditureCofog-GF0930 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0930" ;
+    skos:prefLabel "Post-secondary non-tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Post-secondary non-tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0930 .
+
+
+sip-sdmx-code:expenditureCofog-GF094 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF094" ;
+    skos:prefLabel "Tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF094 .
+
+
+sip-sdmx-code:expenditureCofog-GF0941 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0941" ;
+    skos:prefLabel "First stage of tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """First stage of tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0941 .
+
+
+sip-sdmx-code:expenditureCofog-GF0942 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0942" ;
+    skos:prefLabel "Second stage of tertiary education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Second stage of tertiary education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0942 .
+
+
+sip-sdmx-code:expenditureCofog-GF095 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF095" ;
+    skos:prefLabel "Education not definable by level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Education not definable by level"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF095 .
+
+
+sip-sdmx-code:expenditureCofog-GF0950 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0950" ;
+    skos:prefLabel "Education not definable by level"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Education not definable by level"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0950 .
+
+
+sip-sdmx-code:expenditureCofog-GF096 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF096" ;
+    skos:prefLabel "Subsidiary services to education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Subsidiary services to education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF096 .
+
+
+sip-sdmx-code:expenditureCofog-GF0960 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0960" ;
+    skos:prefLabel "Subsidiary services to education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Subsidiary services to education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0960 .
+
+
+sip-sdmx-code:expenditureCofog-GF097 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF097" ;
+    skos:prefLabel "R&D Education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF097 .
+
+
+sip-sdmx-code:expenditureCofog-GF0970 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0970" ;
+    skos:prefLabel "R&D Education"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Education"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0970 .
+
+
+sip-sdmx-code:expenditureCofog-GF098 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF098" ;
+    skos:prefLabel "Education n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Education n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF098 .
+
+
+sip-sdmx-code:expenditureCofog-GF0980 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF0980" ;
+    skos:prefLabel "Education n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Education n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF0980 .
+
+
+sip-sdmx-code:expenditureCofog-GF10 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF10" ;
+    skos:prefLabel "Social protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Social protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF10 .
+
+
+sip-sdmx-code:expenditureCofog-GF1001 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1001" ;
+    skos:prefLabel "Sickness and disability"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sickness and disability"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1001 .
+
+
+sip-sdmx-code:expenditureCofog-GF1002 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1002" ;
+    skos:prefLabel "Old age"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Old age"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1002 .
+
+
+sip-sdmx-code:expenditureCofog-GF1002_3 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1002_3" ;
+    skos:prefLabel "Old age and survivors"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Old age and survivors"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1002_3 .
+
+
+sip-sdmx-code:expenditureCofog-GF1003 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1003" ;
+    skos:prefLabel "Survivors"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Survivors"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1003 .
+
+
+sip-sdmx-code:expenditureCofog-GF1004 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1004" ;
+    skos:prefLabel "Family and children"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Family and children"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1004 .
+
+
+sip-sdmx-code:expenditureCofog-GF1005 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1005" ;
+    skos:prefLabel "Unemployment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Unemployment"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1005 .
+
+
+sip-sdmx-code:expenditureCofog-GF1006 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1006" ;
+    skos:prefLabel "Housing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Housing"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1006 .
+
+
+sip-sdmx-code:expenditureCofog-GF1007 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1007" ;
+    skos:prefLabel "Social exclusion n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Social exclusion n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1007 .
+
+
+sip-sdmx-code:expenditureCofog-GF1008 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1008" ;
+    skos:prefLabel "R&D Social protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """R&D Social protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1008 .
+
+
+sip-sdmx-code:expenditureCofog-GF1009 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1009" ;
+    skos:prefLabel "Social protection n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Social protection n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1009 .
+
+
+sip-sdmx-code:expenditureCofog-GF101 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF101" ;
+    skos:prefLabel "Sickness and disability"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Sickness and disability"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF101 .
+
+
+sip-sdmx-code:expenditureCofog-GF1011 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1011" ;
+    skos:prefLabel "Sickness"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Sickness"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1011 .
+
+
+sip-sdmx-code:expenditureCofog-GF1012 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1012" ;
+    skos:prefLabel "Disability"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Disability"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1012 .
+
+
+sip-sdmx-code:expenditureCofog-GF102 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF102" ;
+    skos:prefLabel "Old age"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Old age"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF102 .
+
+
+sip-sdmx-code:expenditureCofog-GF1020 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1020" ;
+    skos:prefLabel "Old age"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Old age"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1020 .
+
+
+sip-sdmx-code:expenditureCofog-GF103 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF103" ;
+    skos:prefLabel "Survivors"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Survivors"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF103 .
+
+
+sip-sdmx-code:expenditureCofog-GF1030 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1030" ;
+    skos:prefLabel "Survivors"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Survivors"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1030 .
+
+
+sip-sdmx-code:expenditureCofog-GF104 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF104" ;
+    skos:prefLabel "Family and children"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Family and children"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF104 .
+
+
+sip-sdmx-code:expenditureCofog-GF1040 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1040" ;
+    skos:prefLabel "Family and children"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Family and children"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1040 .
+
+
+sip-sdmx-code:expenditureCofog-GF105 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF105" ;
+    skos:prefLabel "Unemployment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Unemployment"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF105 .
+
+
+sip-sdmx-code:expenditureCofog-GF1050 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1050" ;
+    skos:prefLabel "Unemployment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Unemployment"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1050 .
+
+
+sip-sdmx-code:expenditureCofog-GF106 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF106" ;
+    skos:prefLabel "Housing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF106 .
+
+
+sip-sdmx-code:expenditureCofog-GF1060 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1060" ;
+    skos:prefLabel "Housing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Housing"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1060 .
+
+
+sip-sdmx-code:expenditureCofog-GF107 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF107" ;
+    skos:prefLabel "Social exclusion n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Social exclusion n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF107 .
+
+
+sip-sdmx-code:expenditureCofog-GF1070 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1070" ;
+    skos:prefLabel "Social exclusion n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Social exclusion n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1070 .
+
+
+sip-sdmx-code:expenditureCofog-GF108 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF108" ;
+    skos:prefLabel "R&D Social protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Social protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF108 .
+
+
+sip-sdmx-code:expenditureCofog-GF1080 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1080" ;
+    skos:prefLabel "R&D Social protection"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """R&D Social protection"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1080 .
+
+
+sip-sdmx-code:expenditureCofog-GF109 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF109" ;
+    skos:prefLabel "Social protection n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Social protection n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF109 .
+
+
+sip-sdmx-code:expenditureCofog-GF1090 a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "GF1090" ;
+    skos:prefLabel "Social protection n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Social protection n.e.c."""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-GF1090 .
+
+
+sip-sdmx-code:expenditureCofog-_T a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-_T .
+
+
+sip-sdmx-code:expenditureCofog-_Z a skos:Concept, sip-sdmx-code:ExpenditureCofog;
+    skos:topConceptOf sip-sdmx-code:expenditureCofog ;
+    skos:inScheme sip-sdmx-code:expenditureCofog ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:expenditureCofog skos:hasTopConcept sip-sdmx-code:expenditureCofog-_Z .
+

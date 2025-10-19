@@ -1,0 +1,174 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_BREAKDOWNGROUP Scheme Definition
+#####################################################
+
+sip-sdmx-code:breakdownGroup a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Breakdown group - codelist scheme"@en ;
+    rdfs:label "Breakdown group - codelist scheme"@en ;
+    skos:notation "CL_BREAKDOWNGROUP" ;
+    skos:definition "A reference breakdownGroup codelist based on UIS:CL_BREAKDOWN_GROUP(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_BREAKDOWN_GROUP/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:BreakdownGroup .
+
+sip-sdmx-code:BreakdownGroup a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Breakdown group - codelist class"@en ;
+    rdfs:label "Breakdown group - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup .
+
+
+########################################
+# CL_BREAKDOWNGROUP Codes
+########################################
+    
+sip-sdmx-code:breakdownGroup-CNT_AGE_GRD_SEX_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_AGE_GRD_SEX_EDL" ;
+    skos:prefLabel "Count by age, grade, sex and education level"@en ;
+    rdfs:label "Count by age, grade, sex and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_AGE_GRD_SEX_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_AGE_SEX a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_AGE_SEX" ;
+    skos:prefLabel "Count by  age and sex"@en ;
+    rdfs:label "Count by  age and sex"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_AGE_SEX .
+
+
+sip-sdmx-code:breakdownGroup-CNT_AGE_SEX_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_AGE_SEX_EDL" ;
+    skos:prefLabel "Count by age, sex and education level"@en ;
+    rdfs:label "Count by age, sex and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_AGE_SEX_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_FIELD_SEX_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_FIELD_SEX_EDL" ;
+    skos:prefLabel "Count by field of education, sex and education level"@en ;
+    rdfs:label "Count by field of education, sex and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_FIELD_SEX_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_GRD_SEX_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_GRD_SEX_EDL" ;
+    skos:prefLabel "Count by grade, sex and education level"@en ;
+    rdfs:label "Count by grade, sex and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_GRD_SEX_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_ORIGIN_SEX_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_ORIGIN_SEX_EDL" ;
+    skos:prefLabel "Count by country of origin, sex and education level"@en ;
+    rdfs:label "Count by country of origin, sex and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_ORIGIN_SEX_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_REF_SECT_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_REF_SECT_EDL" ;
+    skos:prefLabel "Count by type of institution  and education level"@en ;
+    rdfs:label "Count by type of institution  and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_REF_SECT_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_REF_SECT_INTENS_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_REF_SECT_INTENS_EDL" ;
+    skos:prefLabel "Count by type of institution, intensity of participation and education level"@en ;
+    rdfs:label "Count by type of institution, intensity of participation and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_REF_SECT_INTENS_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_REF_SECT_INTENS_SEX_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_REF_SECT_INTENS_SEX_EDL" ;
+    skos:prefLabel "Count  by type of institution, intensity of participation, sex  and education level"@en ;
+    rdfs:label "Count  by type of institution, intensity of participation, sex  and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_REF_SECT_INTENS_SEX_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_REF_SECT_INTENS_SEX_EDL_CMPL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_REF_SECT_INTENS_SEX_EDL_CMPL" ;
+    skos:prefLabel "Count  by type of institution, intensity of participation, sex  and education level (subcategory/ completion and access to higher level)"@en ;
+    rdfs:label "Count  by type of institution, intensity of participation, sex  and education level (subcategory/ completion and access to higher level)"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_REF_SECT_INTENS_SEX_EDL_CMPL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_REF_SECT_SEX_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_REF_SECT_SEX_EDL" ;
+    skos:prefLabel "Count  by type of institution, sex  and education level"@en ;
+    rdfs:label "Count  by type of institution, sex  and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_REF_SECT_SEX_EDL .
+
+
+sip-sdmx-code:breakdownGroup-CNT_SEX_INTENS_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "CNT_SEX_INTENS_EDL" ;
+    skos:prefLabel "Count by sex, intensity of participation and education level"@en ;
+    rdfs:label "Count by sex, intensity of participation and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-CNT_SEX_INTENS_EDL .
+
+
+sip-sdmx-code:breakdownGroup-SUM_CNTRP_SECT_EXPEND_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "SUM_CNTRP_SECT_EXPEND_EDL" ;
+    skos:prefLabel "Sum by type of institution, nature and education level"@en ;
+    rdfs:label "Sum by type of institution, nature and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-SUM_CNTRP_SECT_EXPEND_EDL .
+
+
+sip-sdmx-code:breakdownGroup-SUM_REF_SECT_CNTRP_SECT_EDL a skos:Concept, sip-sdmx-code:BreakdownGroup;
+    skos:topConceptOf sip-sdmx-code:breakdownGroup ;
+    skos:inScheme sip-sdmx-code:breakdownGroup ;
+    skos:notation "SUM_REF_SECT_CNTRP_SECT_EDL" ;
+    skos:prefLabel "Sum by source, destination and education level"@en ;
+    rdfs:label "Sum by source, destination and education level"@en .
+
+sip-sdmx-code:breakdownGroup skos:hasTopConcept sip-sdmx-code:breakdownGroup-SUM_REF_SECT_CNTRP_SECT_EDL .
+

@@ -1,0 +1,194 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_TRANSPORTMODE Scheme Definition
+#####################################################
+
+sip-sdmx-code:transportMode a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "CL_TRANSPORT_MODE - codelist scheme"@en ;
+    rdfs:label "CL_TRANSPORT_MODE - codelist scheme"@en ;
+    skos:notation "CL_TRANSPORTMODE" ;
+    skos:definition "A reference transportMode codelist based on UNSD:CL_TRANSPORT_MODE(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_TRANSPORT_MODE/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:TransportMode .
+
+sip-sdmx-code:TransportMode a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "CL_TRANSPORT_MODE - codelist class"@en ;
+    rdfs:label "CL_TRANSPORT_MODE - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode .
+
+
+########################################
+# CL_TRANSPORTMODE Codes
+########################################
+    
+sip-sdmx-code:transportMode-T_1 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_1" ;
+    skos:prefLabel "Air"@en ;
+    rdfs:label "Air"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_1 .
+
+
+sip-sdmx-code:transportMode-T_2 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_2" ;
+    skos:prefLabel "Water"@en ;
+    rdfs:label "Water"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_2 .
+
+
+sip-sdmx-code:transportMode-T_21 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_21" ;
+    skos:prefLabel "Sea"@en ;
+    rdfs:label "Sea"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_21 .
+
+
+sip-sdmx-code:transportMode-T_22 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_22" ;
+    skos:prefLabel "Inland waterway"@en ;
+    rdfs:label "Inland waterway"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_22 .
+
+
+sip-sdmx-code:transportMode-T_3 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_3" ;
+    skos:prefLabel "Land"@en ;
+    rdfs:label "Land"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_3 .
+
+
+sip-sdmx-code:transportMode-T_31 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_31" ;
+    skos:prefLabel "Railway"@en ;
+    rdfs:label "Railway"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_31 .
+
+
+sip-sdmx-code:transportMode-T_32 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_32" ;
+    skos:prefLabel "Road"@en ;
+    rdfs:label "Road"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_32 .
+
+
+sip-sdmx-code:transportMode-T_4 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_4" ;
+    skos:prefLabel "Not elsewhere classified"@en ;
+    rdfs:label "Not elsewhere classified"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_4 .
+
+
+sip-sdmx-code:transportMode-T_41 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_41" ;
+    skos:prefLabel "Pipelines and cables"@en ;
+    rdfs:label "Pipelines and cables"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_41 .
+
+
+sip-sdmx-code:transportMode-T_411 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_411" ;
+    skos:prefLabel "Pipelines"@en ;
+    rdfs:label "Pipelines"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_411 .
+
+
+sip-sdmx-code:transportMode-T_412 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_412" ;
+    skos:prefLabel "Cables"@en ;
+    rdfs:label "Cables"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_412 .
+
+
+sip-sdmx-code:transportMode-T_42 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_42" ;
+    skos:prefLabel "Postal consignments, mail or courier shipments"@en ;
+    rdfs:label "Postal consignments, mail or courier shipments"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_42 .
+
+
+sip-sdmx-code:transportMode-T_43 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_43" ;
+    skos:prefLabel "Self-propelled goods"@en ;
+    rdfs:label "Self-propelled goods"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_43 .
+
+
+sip-sdmx-code:transportMode-T_44 a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_44" ;
+    skos:prefLabel "Other"@en ;
+    rdfs:label "Other"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_44 .
+
+
+sip-sdmx-code:transportMode-T_TOTAL a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "T_TOTAL" ;
+    skos:prefLabel "All transport modes"@en ;
+    rdfs:label "All transport modes"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-T_TOTAL .
+
+
+sip-sdmx-code:transportMode-_X a skos:Concept, sip-sdmx-code:TransportMode;
+    skos:topConceptOf sip-sdmx-code:transportMode ;
+    skos:inScheme sip-sdmx-code:transportMode ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not specified"@en ;
+    rdfs:label "Not specified"@en .
+
+sip-sdmx-code:transportMode skos:hasTopConcept sip-sdmx-code:transportMode-_X .
+

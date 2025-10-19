@@ -1,0 +1,137 @@
+﻿agency_id;codelistID;Name;URL
+IMF;CL_ACCOUNT_ENTRY;Accounting entry code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_ACCOUNT_ENTRY/1.5.0
+IMF;CL_ACCOUNTS_ITEM;Item classification code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_ACCOUNTS_ITEM/1.8.0
+ESTAT;CL_ACTIVITY;Industrial activity code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_ACTIVITY/1.11.0
+IAEG-SDGs;CL_ACTIVITY;Economic activity code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_ACTIVITY/1.6
+UNSD;CL_ACTIVITY;CL_ACTIVITY;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_ACTIVITY/1.0
+OECD;CL_ACTIVITY_ALLOC;Activity allocation code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_ACTIVITY_ALLOC/1.0
+SDMX;CL_ACTIVITY_ANZSIC06;Activity - ANZSIC 2006;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_ACTIVITY_ANZSIC06/1.0
+SDMX;CL_ACTIVITY_ISIC4;Activity - ISIC, Revision 4;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_ACTIVITY_ISIC4/1.0
+SDMX;CL_ACTIVITY_NACE2;Activity - NACE, Revision 2;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_ACTIVITY_NACE2/1.0
+ESTAT;CL_ACTIVITY93;Activity classification (SNA93);https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_ACTIVITY93/1.6
+ESTAT;CL_ADJUSTMENT;Adjustment indicator;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_ADJUSTMENT/1.4
+IMF;CL_ADJUSTMENT;Adjustment indicator;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_ADJUSTMENT/1.4
+IAEG-SDGs;CL_AGE;SDG age group code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_AGE/1.19
+SDMX;CL_AGE;Age;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_AGE/1.0
+UIS;CL_AGE;Age;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_AGE/1.0
+ESTAT;CL_AIRPOL;Air pollutants and greenhouse gasses;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_AIRPOL/1.3.0
+ESTAT;CL_AP_DEFINITION;Administered prices indicator;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_AP_DEFINITION/1.0
+ESTAT;CL_AREA;Area code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_AREA/1.8
+IAEG-SDGs;CL_AREA;SDG reference area code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_AREA/1.17
+IMF;CL_AREA;Area code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_AREA/1.17.0
+SDMX;CL_AREA;Reference area code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_AREA/2.0.1
+UIS;CL_AREA;Reference area code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_AREA/1.0
+UNSD;CL_AREA;CL_AREA;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_AREA/1.0
+SDMX;CL_BREAK_REASON;Reason for the break in time series;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_BREAK_REASON/1.0
+UIS;CL_BREAKDOWN_GROUP;Breakdown group;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_BREAKDOWN_GROUP/1.0
+ESTAT;CL_BRIDGE_ITEM;Bridging items;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_BRIDGE_ITEM/1.3.0
+SDMX;CL_CIVIL_STATUS;Civil (or Marital) Status;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_CIVIL_STATUS/1.0
+ESTAT;CL_COFOG;COFOG;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COFOG/1.0
+SDMX;CL_COFOG_1999;Classification of the Functions of Government;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_COFOG_1999/1.0
+ESTAT;CL_COICOP;COICOP;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COICOP/2.0
+SDMX;CL_COICOP_1999;Code list for concept “Classification of Individual Consumption According to Purpose” (ID: COICOP). 1999 revision.;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_COICOP_1999/1.1
+SDMX;CL_COICOP_2018;Code list for concept “Classification of Individual Consumption According to Purpose” (ID: COICOP). 2018 revision.;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_COICOP_2018/1.0
+UNSD;CL_COMMODITY;CL_COMMODITY;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_COMMODITY/1.0
+IAEG-SDGs;CL_COMP_BREAKDOWN;SDG composite breakdown code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_COMP_BREAKDOWN/1.18
+IMF;CL_COMP_METHOD;Compilation methodology code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_COMP_METHOD/1.2
+SDMX;CL_CONF_STATUS;Confidentiality Status;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_CONF_STATUS/1.3
+ESTAT;CL_COPNI;COPNI;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COPNI/1.0
+SDMX;CL_COPNI_1999;Classification of the Purposes of Non-Profit Institutions Serving Households;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_COPNI_1999/1.0
+ESTAT;CL_COPP;COPP;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COPP/1.0
+SDMX;CL_COPP_1999;Classification of the Outlays of Producers According to Purpose;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_COPP_1999/1.0
+ESTAT;CL_COVERAGE_GEO;Geographical coverage;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COVERAGE_GEO/1.0
+ESTAT;CL_COVERAGE_POP;Population coverage;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COVERAGE_POP/1.1.0
+IMF;CL_CURRENCY;Currency of issuance or invoicing code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_CURRENCY/1.6
+ESTAT;CL_CUST_BREAKDOWN;Custom breakdown code list (NA);https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_CUST_BREAKDOWN/1.6.0
+IAEG-SDGs;CL_CUST_BREAKDOWN;SDG custom breakdown code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_CUST_BREAKDOWN/1.14
+UNSD;CL_CUSTOMS_PROC;CL_CUSTOMS_PROC;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_CUSTOMS_PROC/1.0
+SDMX;CL_DECIMALS;Decimals;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_DECIMALS/1.0
+SDMX;CL_DEG_URB;Code list for degree of urbanisation;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_DEG_URB/1.0
+ESTAT;CL_DEMAND_PROD;Demand or production;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_DEMAND_PROD/1.0
+IAEG-SDGs;CL_DISABILITY;Disability status code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_DISABILITY/1.0
+ESTAT;CL_EDP_WBB;EDP working balance basis;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_EDP_WBB/1.0
+UIS;CL_EDU_TABLEID;Table identifier;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EDU_TABLEID/1.0
+UIS;CL_EDUCATION_FIELD;Fields of education;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EDUCATION_FIELD/1.0
+IAEG-SDGs;CL_EDUCATION_LEV;SDG Education Level code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_EDUCATION_LEV/1.10
+UIS;CL_EDUCATION_LEVEL;Education level;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EDUCATION_LEVEL/1.0
+UIS;CL_EDUCATION_TYPE;Education type;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EDUCATION_TYPE/1.0
+ESTAT;CL_ENERGY_FLOWS;Energy flows;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_ENERGY_FLOWS/1.2
+UIS;CL_EXPENDITURE_TYPE;Expenditure type;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EXPENDITURE_TYPE/1.0
+OECD;CL_FDI_RELATION;FDI relationship code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_FDI_RELATION/1.0
+SDMX;CL_FREQ;"Code list for concept ""Frequency""";https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_FREQ/2.1
+IMF;CL_FSENTRY;Flow or stock entry code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_FSENTRY/1.1
+IMF;CL_FUNCTIONAL_CAT;Functional category code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_FUNCTIONAL_CAT/1.10.1
+IAEG-SDGs;CL_GEO_INFO_TYPE;Geoinformation type code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_GEO_INFO_TYPE/1.0
+ESTAT;CL_GFS_ECOFUNC;GFS economic function;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_GFS_ECOFUNC/1.0
+ESTAT;CL_GFS_TAXCAT;GFS tax category;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_GFS_TAXCAT/1.2
+IMF;CL_GFSM_STO;Stocks, Transactions, Other Flows;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_GFSM_STO/1.0
+UIS;CL_GRADE;Grade;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_GRADE/1.0
+ESTAT;CL_IDX_TYPE;Index type;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_IDX_TYPE/1.0
+ESTAT;CL_IND_TYPE;Indicator type;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_IND_TYPE/1.1
+ESTAT;CL_INSTR_ASSET;Instrument and Assets Classification;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_INSTR_ASSET/1.14.0
+ESTAT;CL_INSTR_ASSET93;Instrument and Assets Clasification (SNA93);https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_INSTR_ASSET93/1.5
+UIS;CL_INTENSITY;Intensity;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_INTENSITY/1.0
+ESTAT;CL_INTERACTORS;Units interacting with the environment;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_INTERACTORS/1.3
+ESTAT;CL_ITEM_PRICE;Item in the classification;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_ITEM_PRICE/2.0
+ESTAT;CL_LAND_COVER;Land cover;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_LAND_COVER/1.0
+ESTAT;CL_LAND_USE;Land use;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_LAND_USE/1.0.1
+OECD;CL_LEV_COUNTERPART;Level of counterpart code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_LEV_COUNTERPART/1.0
+ESTAT;CL_MATERIAL;Materials;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_MATERIAL/1.1
+ESTAT;CL_MATURITY;Original and Residual Maturity;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_MATURITY/1.8
+UNSD;CL_MEASURE;CL_MEASURE;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_MEASURE/1.0
+OECD;CL_MEASURE_PRINCIP;Measurement principle code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_MEASURE_PRINCIP/1.0
+UIS;CL_MOBILITY;Mobility;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_MOBILITY/1.0
+ESTAT;CL_NA_CONSOLIDAT;Consolidation codes;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_CONSOLIDAT/1.3
+ESTAT;CL_NA_PRICES;Price codes;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_PRICES/1.1
+ESTAT;CL_NA_STO;Stocks, Transactions, Other Flows;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_STO/1.16.0
+ESTAT;CL_NA_STO93;Stocks. Transactions. Other Flows (SNA93);https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_STO93/1.4
+ESTAT;CL_NA_TABLEID;NA Table IDs;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_TABLEID/1.10
+IAEG-SDGs;CL_NATURE;Nature code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_NATURE/1.0
+ESTAT;CL_OBS_STATUS;Observation status;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_OBS_STATUS/2.3
+SDMX;CL_OBS_STATUS;Observation Status;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_OBS_STATUS/2.2
+IAEG-SDGs;CL_OCCUPATION;SDG Occupation code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_OCCUPATION/1.8
+SDMX;CL_OCCUPATION;Occupation;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_OCCUPATION/1.0
+IMF;CL_ORGANISATION;Compiling organisation code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_ORGANISATION/1.14.0
+UIS;CL_ORIGIN_CRITERION;Origin criterion;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_ORIGIN_CRITERION/1.0
+UNSD;CL_PARTNER_TYPE;CL_PARTNER_TYPE;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_PARTNER_TYPE/1.0
+ESTAT;CL_PENS_FUNDTYPE;Pension Fund Type;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_PENS_FUNDTYPE/1.2
+ESTAT;CL_PRODUCT;Product classification;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_PRODUCT/1.3
+IAEG-SDGs;CL_PRODUCT;SDG Type of product code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_PRODUCT/1.19
+IAEG-SDGs;CL_QUANTILE;Income/wealth quantile code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_QUANTILE/1.1
+ESTAT;CL_REF_PERIOD_DTL;Reference period detail codes;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_REF_PERIOD_DTL/1.0
+ESTAT;CL_REGIONAL;Regional codes;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_REGIONAL/6.1.0
+IAEG-SDGs;CL_REPORTING_TYPE;Reporting type code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_REPORTING_TYPE/1.0
+ESTAT;CL_SEASON_ADJUST;Seasonal adjustment;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_SEASON_ADJUST/1.0
+SDMX;CL_SEASONAL_ADJUST;Seasonal Adjustment;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_SEASONAL_ADJUST/1.0
+ESTAT;CL_SECTOR;Sector codes;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_SECTOR/1.14
+UIS;CL_SECTOR;Reference/Counterpart institutional sector;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_SECTOR/1.0
+ESTAT;CL_SECTOR93;Institutional sector;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_SECTOR93/1.4
+ESTAT;CL_SEEA_STO;Stocks, Transactions, Other Flows;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_SEEA_STO/1.2
+IAEG-SDGs;CL_SERIES;SDG Series Code List;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_SERIES/1.18
+IAEG-SDGs;CL_SEX;Sex code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_SEX/1.1
+SDMX;CL_SEX;Sex;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_SEX/2.1
+OECD;CL_STAT_UNIT;Statistical unit code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_STAT_UNIT/1.0
+UIS;CL_STAT_UNIT;Statistical unit;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_STAT_UNIT/1.0
+IMF;CL_TIME_COLLECT;Time period collection code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_TIME_COLLECT/1.0
+SDMX;CL_TIME_FORMAT;Time Format;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIME_FORMAT/1.0
+SDMX;CL_TIME_PER_COLLECT;Time Period - Collection;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIME_PER_COLLECT/1.0
+SDMX;CL_TIMETRANS;Time Transformation;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIMETRANS/1.0
+SDMX;CL_TIMETRANS_PER;Time Transformation Period;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIMETRANS_PER/1.0
+SDMX;CL_TIMETRANS_TYPE;Time Transformation Type;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIMETRANS_TYPE/1.0
+UNSD;CL_TRADE_FLOW;CL_TRADE_FLOW;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_TRADE_FLOW/1.0
+UNSD;CL_TRADE_SYSTEM;CL_TRADE_SYSTEM;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_TRADE_SYSTEM/1.0
+ESTAT;CL_TRANSFORMATION;Transformation codes;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_TRANSFORMATION/1.4
+UNSD;CL_TRANSPORT_MODE;CL_TRANSPORT_MODE;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_TRANSPORT_MODE/1.0
+OECD;CL_TYPE_ENTITY;Type of entity code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_TYPE_ENTITY/1.1
+UIS;CL_TYPE_EXP_REPORTED;Type of expenditure reported;https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_TYPE_EXP_REPORTED/1.0
+ESTAT;CL_UNIT;Unit of measurement and derived data codes;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_UNIT/1.3
+IMF;CL_UNIT;Unit of measure code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_UNIT/1.18.0
+IAEG-SDGs;CL_UNIT_MEASURE;SDG Unit of Measure code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_UNIT_MEASURE/1.17
+UNSD;CL_UNIT_MEASURE;CL_UNIT_MEASURE;https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_UNIT_MEASURE/1.0
+SDMX;CL_UNIT_MULT;Unit Multiplier;https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_UNIT_MULT/1.1
+IAEG-SDGs;CL_URBANISATION;Degree of urbanisation code list;https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_URBANISATION/1.10
+ESTAT;CL_VALUATION;Valuation;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_VALUATION/1.6
+ESTAT;CL_VALUE_AP;Values for AP DSD;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_VALUE_AP/1.0
+ESTAT;CL_WATER_FLOWS;Water flows;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_WATER_FLOWS/1.0
+ESTAT;SCL_CL_WSTATUS;SCL - Activity and employment status;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/SCL_CL_WSTATUS/1.0
+ESTAT;SCL_WSTATUS;SCL_WSTATUS;https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/SCL_WSTATUS/1.0

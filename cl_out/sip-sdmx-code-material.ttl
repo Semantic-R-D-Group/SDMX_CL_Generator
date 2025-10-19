@@ -1,0 +1,1475 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_MATERIAL Scheme Definition
+#####################################################
+
+sip-sdmx-code:material a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Materials - codelist scheme"@en ;
+    rdfs:label "Materials - codelist scheme"@en ;
+    skos:notation "CL_MATERIAL" ;
+    skos:definition "A reference material codelist based on ESTAT:CL_MATERIAL(1.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_MATERIAL/1.1> ;
+    skos:note "ESTAT:CL_MATERIAL(1.1): Materials classification (products, natural inputs, semi-manufactured products, balancing items)"@en ;
+    rdfs:seeAlso sip-sdmx-code:Material .
+
+sip-sdmx-code:Material a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Materials - codelist class"@en ;
+    rdfs:label "Materials - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material .
+
+
+########################################
+# CL_MATERIAL Codes
+########################################
+    
+sip-sdmx-code:material-AGG3A a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "AGG3A" ;
+    skos:prefLabel "Non-metallic minerals - construction dominant"@en ;
+    rdfs:label "Non-metallic minerals - construction dominant"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-AGG3A .
+
+
+sip-sdmx-code:material-AGG3B a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "AGG3B" ;
+    skos:prefLabel "Non-metallic minerals - industrial or agricultural dominant"@en ;
+    rdfs:label "Non-metallic minerals - industrial or agricultural dominant"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-AGG3B .
+
+
+sip-sdmx-code:material-MEMO_MF13 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF13" ;
+    skos:prefLabel "Net increment of timber stock (memo item)"@en ;
+    rdfs:label "Net increment of timber stock (memo item)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF13 .
+
+
+sip-sdmx-code:material-MEMO_MF221 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF221" ;
+    skos:prefLabel "Copper - metal content"@en ;
+    rdfs:label "Copper - metal content"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF221 .
+
+
+sip-sdmx-code:material-MEMO_MF222 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF222" ;
+    skos:prefLabel "Nickel - metal content"@en ;
+    rdfs:label "Nickel - metal content"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF222 .
+
+
+sip-sdmx-code:material-MEMO_MF223 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF223" ;
+    skos:prefLabel "Lead - metal content"@en ;
+    rdfs:label "Lead - metal content"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF223 .
+
+
+sip-sdmx-code:material-MEMO_MF224 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF224" ;
+    skos:prefLabel "Zinc - metal content"@en ;
+    rdfs:label "Zinc - metal content"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF224 .
+
+
+sip-sdmx-code:material-MEMO_MF225 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF225" ;
+    skos:prefLabel "Tin - metal content"@en ;
+    rdfs:label "Tin - metal content"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF225 .
+
+
+sip-sdmx-code:material-MEMO_MF72 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF72" ;
+    skos:prefLabel "Waste disposal to controlled landfills (memo item)"@en ;
+    rdfs:label "Waste disposal to controlled landfills (memo item)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF72 .
+
+
+sip-sdmx-code:material-MEMO_MF721 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF721" ;
+    skos:prefLabel "Disposal of municipal waste to controlled landfills (memo item)"@en ;
+    rdfs:label "Disposal of municipal waste to controlled landfills (memo item)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF721 .
+
+
+sip-sdmx-code:material-MEMO_MF722 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MEMO_MF722" ;
+    skos:prefLabel "Disposal of industrial waste to controlled landfills (memo item)"@en ;
+    rdfs:label "Disposal of industrial waste to controlled landfills (memo item)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MEMO_MF722 .
+
+
+sip-sdmx-code:material-MF1 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF1" ;
+    skos:prefLabel "Biomass"@en ;
+    rdfs:label "Biomass"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF1 .
+
+
+sip-sdmx-code:material-MF11 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF11" ;
+    skos:prefLabel "Crops (excluding fodder crops)"@en ;
+    rdfs:label "Crops (excluding fodder crops)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF11 .
+
+
+sip-sdmx-code:material-MF111 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF111" ;
+    skos:prefLabel "Cereals"@en ;
+    rdfs:label "Cereals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF111 .
+
+
+sip-sdmx-code:material-MF112 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF112" ;
+    skos:prefLabel "Roots, tubers"@en ;
+    rdfs:label "Roots, tubers"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF112 .
+
+
+sip-sdmx-code:material-MF113 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF113" ;
+    skos:prefLabel "Sugar crops"@en ;
+    rdfs:label "Sugar crops"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF113 .
+
+
+sip-sdmx-code:material-MF114 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF114" ;
+    skos:prefLabel "Pulses"@en ;
+    rdfs:label "Pulses"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF114 .
+
+
+sip-sdmx-code:material-MF115 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF115" ;
+    skos:prefLabel "Nuts"@en ;
+    rdfs:label "Nuts"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF115 .
+
+
+sip-sdmx-code:material-MF116 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF116" ;
+    skos:prefLabel "Oil-bearing crops"@en ;
+    rdfs:label "Oil-bearing crops"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF116 .
+
+
+sip-sdmx-code:material-MF117 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF117" ;
+    skos:prefLabel "Vegetables"@en ;
+    rdfs:label "Vegetables"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF117 .
+
+
+sip-sdmx-code:material-MF118 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF118" ;
+    skos:prefLabel "Fruits"@en ;
+    rdfs:label "Fruits"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF118 .
+
+
+sip-sdmx-code:material-MF119 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF119" ;
+    skos:prefLabel "Fibres"@en ;
+    rdfs:label "Fibres"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF119 .
+
+
+sip-sdmx-code:material-MF11A a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF11A" ;
+    skos:prefLabel "Other crops (excluding fodder crops) n.e.c."@en ;
+    rdfs:label "Other crops (excluding fodder crops) n.e.c."@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF11A .
+
+
+sip-sdmx-code:material-MF12 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF12" ;
+    skos:prefLabel "Crop residues (used), fodder crops and grazed biomass"@en ;
+    rdfs:label "Crop residues (used), fodder crops and grazed biomass"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF12 .
+
+
+sip-sdmx-code:material-MF121 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF121" ;
+    skos:prefLabel "Crop residues (used)"@en ;
+    rdfs:label "Crop residues (used)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF121 .
+
+
+sip-sdmx-code:material-MF1211 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF1211" ;
+    skos:prefLabel "Straw"@en ;
+    rdfs:label "Straw"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF1211 .
+
+
+sip-sdmx-code:material-MF1212 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF1212" ;
+    skos:prefLabel "Other crop residues (sugar and fodder beet leaves, etc.)"@en ;
+    rdfs:label "Other crop residues (sugar and fodder beet leaves, etc.)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF1212 .
+
+
+sip-sdmx-code:material-MF122 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF122" ;
+    skos:prefLabel "Fodder crops and grazed biomass"@en ;
+    rdfs:label "Fodder crops and grazed biomass"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF122 .
+
+
+sip-sdmx-code:material-MF1221 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF1221" ;
+    skos:prefLabel "Fodder crops (including biomass harvest from grassland)"@en ;
+    rdfs:label "Fodder crops (including biomass harvest from grassland)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF1221 .
+
+
+sip-sdmx-code:material-MF1222 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF1222" ;
+    skos:prefLabel "Grazed biomass"@en ;
+    rdfs:label "Grazed biomass"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF1222 .
+
+
+sip-sdmx-code:material-MF13 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF13" ;
+    skos:prefLabel "Wood"@en ;
+    rdfs:label "Wood"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF13 .
+
+
+sip-sdmx-code:material-MF131 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF131" ;
+    skos:prefLabel "Timber (industrial roundwood)"@en ;
+    rdfs:label "Timber (industrial roundwood)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF131 .
+
+
+sip-sdmx-code:material-MF132 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF132" ;
+    skos:prefLabel "Wood fuel and other extraction"@en ;
+    rdfs:label "Wood fuel and other extraction"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF132 .
+
+
+sip-sdmx-code:material-MF14 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF14" ;
+    skos:prefLabel "Wild fish catch, aquatic plants and animals, hunting and gathering"@en ;
+    rdfs:label "Wild fish catch, aquatic plants and animals, hunting and gathering"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF14 .
+
+
+sip-sdmx-code:material-MF141 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF141" ;
+    skos:prefLabel "Wild fish catch"@en ;
+    rdfs:label "Wild fish catch"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF141 .
+
+
+sip-sdmx-code:material-MF142 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF142" ;
+    skos:prefLabel "All other aquatic animals and plants"@en ;
+    rdfs:label "All other aquatic animals and plants"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF142 .
+
+
+sip-sdmx-code:material-MF143 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF143" ;
+    skos:prefLabel "Hunting and gathering"@en ;
+    rdfs:label "Hunting and gathering"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF143 .
+
+
+sip-sdmx-code:material-MF15 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF15" ;
+    skos:prefLabel "Live animals and animal products (excluding wild fish, aquatic plants and animals, hunted and gathered animals)"@en ;
+    rdfs:label "Live animals and animal products (excluding wild fish, aquatic plants and animals, hunted and gathered animals)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF15 .
+
+
+sip-sdmx-code:material-MF151 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF151" ;
+    skos:prefLabel "Live animals (excluding wild fish, aquatic plants and animals, hunted and gathered animals)"@en ;
+    rdfs:label "Live animals (excluding wild fish, aquatic plants and animals, hunted and gathered animals)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF151 .
+
+
+sip-sdmx-code:material-MF152 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF152" ;
+    skos:prefLabel "Meat and meat preparations"@en ;
+    rdfs:label "Meat and meat preparations"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF152 .
+
+
+sip-sdmx-code:material-MF153 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF153" ;
+    skos:prefLabel "Dairy products, birds? eggs, and honey"@en ;
+    rdfs:label "Dairy products, birds? eggs, and honey"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF153 .
+
+
+sip-sdmx-code:material-MF154 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF154" ;
+    skos:prefLabel "Other products from animals (animal fibres, skins, furs, leather, etc.)"@en ;
+    rdfs:label "Other products from animals (animal fibres, skins, furs, leather, etc.)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF154 .
+
+
+sip-sdmx-code:material-MF16 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF16" ;
+    skos:prefLabel "Products mainly from biomass"@en ;
+    rdfs:label "Products mainly from biomass"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF16 .
+
+
+sip-sdmx-code:material-MF2 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2" ;
+    skos:prefLabel "Metal ores (gross ores)"@en ;
+    rdfs:label "Metal ores (gross ores)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2 .
+
+
+sip-sdmx-code:material-MF21 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF21" ;
+    skos:prefLabel "Iron"@en ;
+    rdfs:label "Iron"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF21 .
+
+
+sip-sdmx-code:material-MF22 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF22" ;
+    skos:prefLabel "Non-ferrous metal"@en ;
+    rdfs:label "Non-ferrous metal"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF22 .
+
+
+sip-sdmx-code:material-MF221 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF221" ;
+    skos:prefLabel "Copper"@en ;
+    rdfs:label "Copper"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF221 .
+
+
+sip-sdmx-code:material-MF222 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF222" ;
+    skos:prefLabel "Nickel"@en ;
+    rdfs:label "Nickel"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF222 .
+
+
+sip-sdmx-code:material-MF223 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF223" ;
+    skos:prefLabel "Lead"@en ;
+    rdfs:label "Lead"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF223 .
+
+
+sip-sdmx-code:material-MF224 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF224" ;
+    skos:prefLabel "Zinc"@en ;
+    rdfs:label "Zinc"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF224 .
+
+
+sip-sdmx-code:material-MF225 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF225" ;
+    skos:prefLabel "Tin"@en ;
+    rdfs:label "Tin"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF225 .
+
+
+sip-sdmx-code:material-MF226 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF226" ;
+    skos:prefLabel "Gold, silver, platinum and other precious metals"@en ;
+    rdfs:label "Gold, silver, platinum and other precious metals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF226 .
+
+
+sip-sdmx-code:material-MF2261 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2261" ;
+    skos:prefLabel "Gold"@en ;
+    rdfs:label "Gold"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2261 .
+
+
+sip-sdmx-code:material-MF2262 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2262" ;
+    skos:prefLabel "Silver"@en ;
+    rdfs:label "Silver"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2262 .
+
+
+sip-sdmx-code:material-MF2263 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2263" ;
+    skos:prefLabel "Platinum and other precious metal ores"@en ;
+    rdfs:label "Platinum and other precious metal ores"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2263 .
+
+
+sip-sdmx-code:material-MF227 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF227" ;
+    skos:prefLabel "Bauxite and other aluminium"@en ;
+    rdfs:label "Bauxite and other aluminium"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF227 .
+
+
+sip-sdmx-code:material-MF228 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF228" ;
+    skos:prefLabel "Uranium and thorium"@en ;
+    rdfs:label "Uranium and thorium"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF228 .
+
+
+sip-sdmx-code:material-MF229 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF229" ;
+    skos:prefLabel "Other non-ferrous metals"@en ;
+    rdfs:label "Other non-ferrous metals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF229 .
+
+
+sip-sdmx-code:material-MF2291 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2291" ;
+    skos:prefLabel "Tungsten"@en ;
+    rdfs:label "Tungsten"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2291 .
+
+
+sip-sdmx-code:material-MF2292 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2292" ;
+    skos:prefLabel "Tantalum"@en ;
+    rdfs:label "Tantalum"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2292 .
+
+
+sip-sdmx-code:material-MF2293 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2293" ;
+    skos:prefLabel "Magnesium ores"@en ;
+    rdfs:label "Magnesium ores"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2293 .
+
+
+sip-sdmx-code:material-MF2294 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2294" ;
+    skos:prefLabel "Titanium"@en ;
+    rdfs:label "Titanium"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2294 .
+
+
+sip-sdmx-code:material-MF2295 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2295" ;
+    skos:prefLabel "Manganese"@en ;
+    rdfs:label "Manganese"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2295 .
+
+
+sip-sdmx-code:material-MF2296 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2296" ;
+    skos:prefLabel "Chromium"@en ;
+    rdfs:label "Chromium"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2296 .
+
+
+sip-sdmx-code:material-MF2297 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF2297" ;
+    skos:prefLabel "Other non-ferrous metals n.e.c."@en ;
+    rdfs:label "Other non-ferrous metals n.e.c."@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF2297 .
+
+
+sip-sdmx-code:material-MF23 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF23" ;
+    skos:prefLabel "Products mainly from metals"@en ;
+    rdfs:label "Products mainly from metals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF23 .
+
+
+sip-sdmx-code:material-MF3 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF3" ;
+    skos:prefLabel "Non-metallic minerals"@en ;
+    rdfs:label "Non-metallic minerals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF3 .
+
+
+sip-sdmx-code:material-MF31 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF31" ;
+    skos:prefLabel "Marble, granite, sandstone, porphyry, basalt, other ornamental or building stone (excluding slate)"@en ;
+    rdfs:label "Marble, granite, sandstone, porphyry, basalt, other ornamental or building stone (excluding slate)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF31 .
+
+
+sip-sdmx-code:material-MF32 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF32" ;
+    skos:prefLabel "Chalk and dolomite"@en ;
+    rdfs:label "Chalk and dolomite"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF32 .
+
+
+sip-sdmx-code:material-MF33 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF33" ;
+    skos:prefLabel "Slate"@en ;
+    rdfs:label "Slate"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF33 .
+
+
+sip-sdmx-code:material-MF34 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF34" ;
+    skos:prefLabel "Chemical and fertiliser minerals"@en ;
+    rdfs:label "Chemical and fertiliser minerals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF34 .
+
+
+sip-sdmx-code:material-MF35 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF35" ;
+    skos:prefLabel "Salt"@en ;
+    rdfs:label "Salt"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF35 .
+
+
+sip-sdmx-code:material-MF36 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF36" ;
+    skos:prefLabel "Limestone and gypsum"@en ;
+    rdfs:label "Limestone and gypsum"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF36 .
+
+
+sip-sdmx-code:material-MF37 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF37" ;
+    skos:prefLabel "Clays and kaolin"@en ;
+    rdfs:label "Clays and kaolin"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF37 .
+
+
+sip-sdmx-code:material-MF38 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF38" ;
+    skos:prefLabel "Sand and gravel"@en ;
+    rdfs:label "Sand and gravel"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF38 .
+
+
+sip-sdmx-code:material-MF39 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF39" ;
+    skos:prefLabel "Other non-metallic minerals n.e.c."@en ;
+    rdfs:label "Other non-metallic minerals n.e.c."@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF39 .
+
+
+sip-sdmx-code:material-MF3A a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF3A" ;
+    skos:prefLabel "Excavated earthen materials (including soil), only if used (optional reporting)"@en ;
+    rdfs:label "Excavated earthen materials (including soil), only if used (optional reporting)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF3A .
+
+
+sip-sdmx-code:material-MF3B a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF3B" ;
+    skos:prefLabel "Products mainly from non metallic minerals"@en ;
+    rdfs:label "Products mainly from non metallic minerals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF3B .
+
+
+sip-sdmx-code:material-MF4 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF4" ;
+    skos:prefLabel "Fossil energy materials/carriers"@en ;
+    rdfs:label "Fossil energy materials/carriers"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF4 .
+
+
+sip-sdmx-code:material-MF41 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF41" ;
+    skos:prefLabel "Coal and other solid energy materials/carriers"@en ;
+    rdfs:label "Coal and other solid energy materials/carriers"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF41 .
+
+
+sip-sdmx-code:material-MF411 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF411" ;
+    skos:prefLabel "Lignite"@en ;
+    rdfs:label "Lignite"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF411 .
+
+
+sip-sdmx-code:material-MF412 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF412" ;
+    skos:prefLabel "Hard coal"@en ;
+    rdfs:label "Hard coal"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF412 .
+
+
+sip-sdmx-code:material-MF413 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF413" ;
+    skos:prefLabel "Oil shale/oil sands"@en ;
+    rdfs:label "Oil shale/oil sands"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF413 .
+
+
+sip-sdmx-code:material-MF414 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF414" ;
+    skos:prefLabel "Peat"@en ;
+    rdfs:label "Peat"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF414 .
+
+
+sip-sdmx-code:material-MF42 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF42" ;
+    skos:prefLabel "Liquid and gaseous energy materials/carriers"@en ;
+    rdfs:label "Liquid and gaseous energy materials/carriers"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF42 .
+
+
+sip-sdmx-code:material-MF421 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF421" ;
+    skos:prefLabel "Crude oil, condensate and natural gas liquids (NGL)"@en ;
+    rdfs:label "Crude oil, condensate and natural gas liquids (NGL)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF421 .
+
+
+sip-sdmx-code:material-MF422 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF422" ;
+    skos:prefLabel "Natural gas"@en ;
+    rdfs:label "Natural gas"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF422 .
+
+
+sip-sdmx-code:material-MF43 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF43" ;
+    skos:prefLabel "Products mainly from fossil energy products"@en ;
+    rdfs:label "Products mainly from fossil energy products"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF43 .
+
+
+sip-sdmx-code:material-MF5 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF5" ;
+    skos:prefLabel "Other products"@en ;
+    rdfs:label "Other products"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF5 .
+
+
+sip-sdmx-code:material-MF6 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF6" ;
+    skos:prefLabel "Waste for final treatment and disposal"@en ;
+    rdfs:label "Waste for final treatment and disposal"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF6 .
+
+
+sip-sdmx-code:material-MF71 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF71" ;
+    skos:prefLabel "Emissions to air"@en ;
+    rdfs:label "Emissions to air"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF71 .
+
+
+sip-sdmx-code:material-MF711 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF711" ;
+    skos:prefLabel "Carbon dioxide (CO2)"@en ;
+    rdfs:label "Carbon dioxide (CO2)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF711 .
+
+
+sip-sdmx-code:material-MF7111 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF7111" ;
+    skos:prefLabel "Carbon dioxide (CO2) from biomass combustion"@en ;
+    rdfs:label "Carbon dioxide (CO2) from biomass combustion"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF7111 .
+
+
+sip-sdmx-code:material-MF7112 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF7112" ;
+    skos:prefLabel "Carbon dioxide (CO2) excluding biomass combustion"@en ;
+    rdfs:label "Carbon dioxide (CO2) excluding biomass combustion"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF7112 .
+
+
+sip-sdmx-code:material-MF712 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF712" ;
+    skos:prefLabel "Methane (CH4)"@en ;
+    rdfs:label "Methane (CH4)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF712 .
+
+
+sip-sdmx-code:material-MF713 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF713" ;
+    skos:prefLabel "Nitrous oxide (N2O)"@en ;
+    rdfs:label "Nitrous oxide (N2O)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF713 .
+
+
+sip-sdmx-code:material-MF714 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF714" ;
+    skos:prefLabel "Nitrogen oxide (NOx)"@en ;
+    rdfs:label "Nitrogen oxide (NOx)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF714 .
+
+
+sip-sdmx-code:material-MF715 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF715" ;
+    skos:prefLabel "Hydrofluorocarbons (HFCs)"@en ;
+    rdfs:label "Hydrofluorocarbons (HFCs)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF715 .
+
+
+sip-sdmx-code:material-MF716 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF716" ;
+    skos:prefLabel "Perflourocarbons (PFCs)"@en ;
+    rdfs:label "Perflourocarbons (PFCs)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF716 .
+
+
+sip-sdmx-code:material-MF717 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF717" ;
+    skos:prefLabel "Sulfur hexaflouride"@en ;
+    rdfs:label "Sulfur hexaflouride"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF717 .
+
+
+sip-sdmx-code:material-MF718 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF718" ;
+    skos:prefLabel "Carbon monoxide (CO)"@en ;
+    rdfs:label "Carbon monoxide (CO)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF718 .
+
+
+sip-sdmx-code:material-MF719 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF719" ;
+    skos:prefLabel "Non-methane volatile organic compounds (NMVOC)"@en ;
+    rdfs:label "Non-methane volatile organic compounds (NMVOC)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF719 .
+
+
+sip-sdmx-code:material-MF71A a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF71A" ;
+    skos:prefLabel "Sulfur dioxide (SO2)"@en ;
+    rdfs:label "Sulfur dioxide (SO2)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF71A .
+
+
+sip-sdmx-code:material-MF71B a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF71B" ;
+    skos:prefLabel "Ammonia (NH3)"@en ;
+    rdfs:label "Ammonia (NH3)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF71B .
+
+
+sip-sdmx-code:material-MF71C a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF71C" ;
+    skos:prefLabel "Heavy metals"@en ;
+    rdfs:label "Heavy metals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF71C .
+
+
+sip-sdmx-code:material-MF71D a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF71D" ;
+    skos:prefLabel "Persistent organic pollutants (POPs)"@en ;
+    rdfs:label "Persistent organic pollutants (POPs)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF71D .
+
+
+sip-sdmx-code:material-MF71E a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF71E" ;
+    skos:prefLabel "Particles"@en ;
+    rdfs:label "Particles"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF71E .
+
+
+sip-sdmx-code:material-MF71F a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF71F" ;
+    skos:prefLabel "Other emissions to air"@en ;
+    rdfs:label "Other emissions to air"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF71F .
+
+
+sip-sdmx-code:material-MF72 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF72" ;
+    skos:prefLabel "Waste disposal to the environment"@en ;
+    rdfs:label "Waste disposal to the environment"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF72 .
+
+
+sip-sdmx-code:material-MF721 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF721" ;
+    skos:prefLabel "Disposal of municipal waste to the environment"@en ;
+    rdfs:label "Disposal of municipal waste to the environment"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF721 .
+
+
+sip-sdmx-code:material-MF722 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF722" ;
+    skos:prefLabel "Disposal of industrial waste to the environment"@en ;
+    rdfs:label "Disposal of industrial waste to the environment"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF722 .
+
+
+sip-sdmx-code:material-MF73 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF73" ;
+    skos:prefLabel "Emissions to water"@en ;
+    rdfs:label "Emissions to water"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF73 .
+
+
+sip-sdmx-code:material-MF731 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF731" ;
+    skos:prefLabel "Nitrogen (N)"@en ;
+    rdfs:label "Nitrogen (N)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF731 .
+
+
+sip-sdmx-code:material-MF732 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF732" ;
+    skos:prefLabel "Phosphorus (P)"@en ;
+    rdfs:label "Phosphorus (P)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF732 .
+
+
+sip-sdmx-code:material-MF733 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF733" ;
+    skos:prefLabel "Heavy metals"@en ;
+    rdfs:label "Heavy metals"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF733 .
+
+
+sip-sdmx-code:material-MF734 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF734" ;
+    skos:prefLabel "Other substances and (organic) materials"@en ;
+    rdfs:label "Other substances and (organic) materials"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF734 .
+
+
+sip-sdmx-code:material-MF735 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF735" ;
+    skos:prefLabel "Dumping of materials at sea"@en ;
+    rdfs:label "Dumping of materials at sea"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF735 .
+
+
+sip-sdmx-code:material-MF74 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF74" ;
+    skos:prefLabel "Dissipative use of products"@en ;
+    rdfs:label "Dissipative use of products"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF74 .
+
+
+sip-sdmx-code:material-MF741 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF741" ;
+    skos:prefLabel "Organic fertiliser (manure)"@en ;
+    rdfs:label "Organic fertiliser (manure)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF741 .
+
+
+sip-sdmx-code:material-MF742 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF742" ;
+    skos:prefLabel "Mineral fertiliser"@en ;
+    rdfs:label "Mineral fertiliser"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF742 .
+
+
+sip-sdmx-code:material-MF743 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF743" ;
+    skos:prefLabel "Sewage sludge"@en ;
+    rdfs:label "Sewage sludge"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF743 .
+
+
+sip-sdmx-code:material-MF744 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF744" ;
+    skos:prefLabel "Compost"@en ;
+    rdfs:label "Compost"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF744 .
+
+
+sip-sdmx-code:material-MF745 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF745" ;
+    skos:prefLabel "Pesticides"@en ;
+    rdfs:label "Pesticides"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF745 .
+
+
+sip-sdmx-code:material-MF746 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF746" ;
+    skos:prefLabel "Seeds"@en ;
+    rdfs:label "Seeds"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF746 .
+
+
+sip-sdmx-code:material-MF747 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF747" ;
+    skos:prefLabel "Salt and other thawing materials spread on roads (including grit)"@en ;
+    rdfs:label "Salt and other thawing materials spread on roads (including grit)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF747 .
+
+
+sip-sdmx-code:material-MF748 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF748" ;
+    skos:prefLabel "Solvents, laughing gas and other"@en ;
+    rdfs:label "Solvents, laughing gas and other"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF748 .
+
+
+sip-sdmx-code:material-MF75 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF75" ;
+    skos:prefLabel "Dissipative losses"@en ;
+    rdfs:label "Dissipative losses"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF75 .
+
+
+sip-sdmx-code:material-MF81 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF81" ;
+    skos:prefLabel "Balancing items: input side"@en ;
+    rdfs:label "Balancing items: input side"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF81 .
+
+
+sip-sdmx-code:material-MF811 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF811" ;
+    skos:prefLabel "Oxygen for combustion processes"@en ;
+    rdfs:label "Oxygen for combustion processes"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF811 .
+
+
+sip-sdmx-code:material-MF812 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF812" ;
+    skos:prefLabel "Oxygen for respiration of humans and livestock; bacterial respiration from solid waste and wastewater"@en ;
+    rdfs:label "Oxygen for respiration of humans and livestock; bacterial respiration from solid waste and wastewater"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF812 .
+
+
+sip-sdmx-code:material-MF813 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF813" ;
+    skos:prefLabel "Nitrogen for Haber-Bosch process"@en ;
+    rdfs:label "Nitrogen for Haber-Bosch process"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF813 .
+
+
+sip-sdmx-code:material-MF814 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF814" ;
+    skos:prefLabel "Water requirements for the domestic production of exported beverages"@en ;
+    rdfs:label "Water requirements for the domestic production of exported beverages"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF814 .
+
+
+sip-sdmx-code:material-MF82 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF82" ;
+    skos:prefLabel "Balancing items: output side"@en ;
+    rdfs:label "Balancing items: output side"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF82 .
+
+
+sip-sdmx-code:material-MF821 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF821" ;
+    skos:prefLabel "Water vapour from combustion"@en ;
+    rdfs:label "Water vapour from combustion"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF821 .
+
+
+sip-sdmx-code:material-MF8211 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF8211" ;
+    skos:prefLabel "Water vapour from moisture content of fuels"@en ;
+    rdfs:label "Water vapour from moisture content of fuels"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF8211 .
+
+
+sip-sdmx-code:material-MF8212 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF8212" ;
+    skos:prefLabel "Water vapour from the oxidised hydrogen components of fuels"@en ;
+    rdfs:label "Water vapour from the oxidised hydrogen components of fuels"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF8212 .
+
+
+sip-sdmx-code:material-MF822 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF822" ;
+    skos:prefLabel "Gases from respiration of humans and livestock (CO2 and H2O), and from bacterial respiration from solid waste and wastewater (H2O)"@en ;
+    rdfs:label "Gases from respiration of humans and livestock (CO2 and H2O), and from bacterial respiration from solid waste and wastewater (H2O)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF822 .
+
+
+sip-sdmx-code:material-MF8221 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF8221" ;
+    skos:prefLabel "Carbon dioxide (CO2)"@en ;
+    rdfs:label "Carbon dioxide (CO2)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF8221 .
+
+
+sip-sdmx-code:material-MF8222 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF8222" ;
+    skos:prefLabel "Water vapour (H2O)"@en ;
+    rdfs:label "Water vapour (H2O)"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF8222 .
+
+
+sip-sdmx-code:material-MF823 a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "MF823" ;
+    skos:prefLabel "Excorporated water from biomass products"@en ;
+    rdfs:label "Excorporated water from biomass products"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-MF823 .
+
+
+sip-sdmx-code:material-SM_FIN a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "SM_FIN" ;
+    skos:prefLabel "Stage of Manufacturing - finished products"@en ;
+    rdfs:label "Stage of Manufacturing - finished products"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-SM_FIN .
+
+
+sip-sdmx-code:material-SM_RAW a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "SM_RAW" ;
+    skos:prefLabel "Stage of Manufacturing - raw products"@en ;
+    rdfs:label "Stage of Manufacturing - raw products"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-SM_RAW .
+
+
+sip-sdmx-code:material-SM_SFIN a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "SM_SFIN" ;
+    skos:prefLabel "Stage of Manufacturing - semi-finished products"@en ;
+    rdfs:label "Stage of Manufacturing - semi-finished products"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-SM_SFIN .
+
+
+sip-sdmx-code:material-_T a skos:Concept, sip-sdmx-code:Material;
+    skos:topConceptOf sip-sdmx-code:material ;
+    skos:inScheme sip-sdmx-code:material ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:material skos:hasTopConcept sip-sdmx-code:material-_T .
+

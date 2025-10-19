@@ -1,0 +1,234 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_TRADEFLOW Scheme Definition
+#####################################################
+
+sip-sdmx-code:tradeFlow a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "CL_TRADE_FLOW - codelist scheme"@en ;
+    rdfs:label "CL_TRADE_FLOW - codelist scheme"@en ;
+    skos:notation "CL_TRADEFLOW" ;
+    skos:definition "A reference tradeFlow codelist based on UNSD:CL_TRADE_FLOW(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UNSD/CL_TRADE_FLOW/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:TradeFlow .
+
+sip-sdmx-code:TradeFlow a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "CL_TRADE_FLOW - codelist class"@en ;
+    rdfs:label "CL_TRADE_FLOW - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow .
+
+
+########################################
+# CL_TRADEFLOW Codes
+########################################
+    
+sip-sdmx-code:tradeFlow-M a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M" ;
+    skos:prefLabel "Total Imports"@en ;
+    rdfs:label "Total Imports"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M .
+
+
+sip-sdmx-code:tradeFlow-M1 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M1" ;
+    skos:prefLabel "Import of foreign goods"@en ;
+    rdfs:label "Import of foreign goods"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M1 .
+
+
+sip-sdmx-code:tradeFlow-M2 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M2" ;
+    skos:prefLabel "Re-imports"@en ;
+    rdfs:label "Re-imports"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M2 .
+
+
+sip-sdmx-code:tradeFlow-M3 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M3" ;
+    skos:prefLabel "Import of goods for inward processing"@en ;
+    rdfs:label "Import of goods for inward processing"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M3 .
+
+
+sip-sdmx-code:tradeFlow-M3_W a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M3_W" ;
+    skos:prefLabel "Imports of goods for inward processing with change of ownership"@en ;
+    rdfs:label "Imports of goods for inward processing with change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M3_W .
+
+
+sip-sdmx-code:tradeFlow-M3_WO a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M3_WO" ;
+    skos:prefLabel "Imports of goods for inward processing w/o change of ownership"@en ;
+    rdfs:label "Imports of goods for inward processing w/o change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M3_WO .
+
+
+sip-sdmx-code:tradeFlow-M4 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M4" ;
+    skos:prefLabel "Import of goods after outward processing"@en ;
+    rdfs:label "Import of goods after outward processing"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M4 .
+
+
+sip-sdmx-code:tradeFlow-M4_W a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M4_W" ;
+    skos:prefLabel "Import of goods after outward processing with change of ownership"@en ;
+    rdfs:label "Import of goods after outward processing with change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M4_W .
+
+
+sip-sdmx-code:tradeFlow-M4_WO a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M4_WO" ;
+    skos:prefLabel "Import of goods after outward processing w/o change of ownership"@en ;
+    rdfs:label "Import of goods after outward processing w/o change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M4_WO .
+
+
+sip-sdmx-code:tradeFlow-M5 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "M5" ;
+    skos:prefLabel "Import on intra-firm trade"@en ;
+    rdfs:label "Import on intra-firm trade"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-M5 .
+
+
+sip-sdmx-code:tradeFlow-X a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X" ;
+    skos:prefLabel "Total Exports"@en ;
+    rdfs:label "Total Exports"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X .
+
+
+sip-sdmx-code:tradeFlow-X1 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X1" ;
+    skos:prefLabel "Export of domestic goods"@en ;
+    rdfs:label "Export of domestic goods"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X1 .
+
+
+sip-sdmx-code:tradeFlow-X2 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X2" ;
+    skos:prefLabel "Re-exports"@en ;
+    rdfs:label "Re-exports"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X2 .
+
+
+sip-sdmx-code:tradeFlow-X3 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X3" ;
+    skos:prefLabel "Export of goods after inward processing"@en ;
+    rdfs:label "Export of goods after inward processing"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X3 .
+
+
+sip-sdmx-code:tradeFlow-X3_W a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X3_W" ;
+    skos:prefLabel "Export of goods after inward processing with change of ownership"@en ;
+    rdfs:label "Export of goods after inward processing with change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X3_W .
+
+
+sip-sdmx-code:tradeFlow-X3_WO a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X3_WO" ;
+    skos:prefLabel "Export of goods after inward processing w/o change of ownership"@en ;
+    rdfs:label "Export of goods after inward processing w/o change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X3_WO .
+
+
+sip-sdmx-code:tradeFlow-X4 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X4" ;
+    skos:prefLabel "Export of goods for outward processing"@en ;
+    rdfs:label "Export of goods for outward processing"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X4 .
+
+
+sip-sdmx-code:tradeFlow-X4_W a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X4_W" ;
+    skos:prefLabel "Export of goods for outward processing with  change of ownership"@en ;
+    rdfs:label "Export of goods for outward processing with  change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X4_W .
+
+
+sip-sdmx-code:tradeFlow-X4_WO a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X4_WO" ;
+    skos:prefLabel "Export of goods for outward processing w/o change of ownership"@en ;
+    rdfs:label "Export of goods for outward processing w/o change of ownership"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X4_WO .
+
+
+sip-sdmx-code:tradeFlow-X5 a skos:Concept, sip-sdmx-code:TradeFlow;
+    skos:topConceptOf sip-sdmx-code:tradeFlow ;
+    skos:inScheme sip-sdmx-code:tradeFlow ;
+    skos:notation "X5" ;
+    skos:prefLabel "Export on intra-firm trade"@en ;
+    rdfs:label "Export on intra-firm trade"@en .
+
+sip-sdmx-code:tradeFlow skos:hasTopConcept sip-sdmx-code:tradeFlow-X5 .
+

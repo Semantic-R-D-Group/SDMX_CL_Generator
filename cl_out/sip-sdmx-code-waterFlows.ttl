@@ -1,0 +1,355 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_WATERFLOWS Scheme Definition
+#####################################################
+
+sip-sdmx-code:waterFlows a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Water flows - codelist scheme"@en ;
+    rdfs:label "Water flows - codelist scheme"@en ;
+    skos:notation "CL_WATERFLOWS" ;
+    skos:definition "A reference waterFlows codelist based on ESTAT:CL_WATER_FLOWS(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_WATER_FLOWS/1.0> ;
+    skos:note "ESTAT:CL_WATER_FLOWS(1.0): Sources of abstracted water, waste water, return flows of water… (+breakdowns)"@en ;
+    rdfs:seeAlso sip-sdmx-code:WaterFlows .
+
+sip-sdmx-code:WaterFlows a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Water flows - codelist class"@en ;
+    rdfs:label "Water flows - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows .
+
+
+########################################
+# CL_WATERFLOWS Codes
+########################################
+    
+sip-sdmx-code:waterFlows-A00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "A00" ;
+    skos:prefLabel "Abstracted water"@en ;
+    rdfs:label "Abstracted water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-A00 .
+
+
+sip-sdmx-code:waterFlows-A06 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "A06" ;
+    skos:prefLabel "For distribution"@en ;
+    rdfs:label "For distribution"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-A06 .
+
+
+sip-sdmx-code:waterFlows-A07 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "A07" ;
+    skos:prefLabel "For own-use"@en ;
+    rdfs:label "For own-use"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-A07 .
+
+
+sip-sdmx-code:waterFlows-E00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "E00" ;
+    skos:prefLabel "Evaporation of abstracted water, transpiration and water incorporated into products"@en ;
+    rdfs:label "Evaporation of abstracted water, transpiration and water incorporated into products"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-E00 .
+
+
+sip-sdmx-code:waterFlows-E17 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "E17" ;
+    skos:prefLabel "Evaporation of abstracted water"@en ;
+    rdfs:label "Evaporation of abstracted water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-E17 .
+
+
+sip-sdmx-code:waterFlows-E18 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "E18" ;
+    skos:prefLabel "Transpiration"@en ;
+    rdfs:label "Transpiration"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-E18 .
+
+
+sip-sdmx-code:waterFlows-E19 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "E19" ;
+    skos:prefLabel "Water incorporated into products"@en ;
+    rdfs:label "Water incorporated into products"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-E19 .
+
+
+sip-sdmx-code:waterFlows-R00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "R00" ;
+    skos:prefLabel "Return flows of water"@en ;
+    rdfs:label "Return flows of water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-R00 .
+
+
+sip-sdmx-code:waterFlows-R16 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "R16" ;
+    skos:prefLabel "Total Return flows of which: Losses in distribution"@en ;
+    rdfs:label "Total Return flows of which: Losses in distribution"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-R16 .
+
+
+sip-sdmx-code:waterFlows-RI00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "RI00" ;
+    skos:prefLabel "To inland water resources"@en ;
+    rdfs:label "To inland water resources"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-RI00 .
+
+
+sip-sdmx-code:waterFlows-RI12 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "RI12" ;
+    skos:prefLabel "Surface water"@en ;
+    rdfs:label "Surface water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-RI12 .
+
+
+sip-sdmx-code:waterFlows-RI13 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "RI13" ;
+    skos:prefLabel "Groundwater"@en ;
+    rdfs:label "Groundwater"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-RI13 .
+
+
+sip-sdmx-code:waterFlows-RI14 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "RI14" ;
+    skos:prefLabel "Soil water"@en ;
+    rdfs:label "Soil water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-RI14 .
+
+
+sip-sdmx-code:waterFlows-RO00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "RO00" ;
+    skos:prefLabel "To other sources"@en ;
+    rdfs:label "To other sources"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-RO00 .
+
+
+sip-sdmx-code:waterFlows-RR00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "RR00" ;
+    skos:prefLabel "Total return flows"@en ;
+    rdfs:label "Total return flows"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-RR00 .
+
+
+sip-sdmx-code:waterFlows-RR16 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "RR16" ;
+    skos:prefLabel "Losses in distribution"@en ;
+    rdfs:label "Losses in distribution"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-RR16 .
+
+
+sip-sdmx-code:waterFlows-S00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "S00" ;
+    skos:prefLabel "Sources of abstracted water"@en ;
+    rdfs:label "Sources of abstracted water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-S00 .
+
+
+sip-sdmx-code:waterFlows-SI00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "SI00" ;
+    skos:prefLabel "Inland water resources"@en ;
+    rdfs:label "Inland water resources"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-SI00 .
+
+
+sip-sdmx-code:waterFlows-SI01 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "SI01" ;
+    skos:prefLabel "Surface water"@en ;
+    rdfs:label "Surface water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-SI01 .
+
+
+sip-sdmx-code:waterFlows-SI02 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "SI02" ;
+    skos:prefLabel "Groundwater"@en ;
+    rdfs:label "Groundwater"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-SI02 .
+
+
+sip-sdmx-code:waterFlows-SI03 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "SI03" ;
+    skos:prefLabel "Soil water"@en ;
+    rdfs:label "Soil water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-SI03 .
+
+
+sip-sdmx-code:waterFlows-SO00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "SO00" ;
+    skos:prefLabel "Other water sources"@en ;
+    rdfs:label "Other water sources"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-SO00 .
+
+
+sip-sdmx-code:waterFlows-SO04 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "SO04" ;
+    skos:prefLabel "Precipitation"@en ;
+    rdfs:label "Precipitation"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-SO04 .
+
+
+sip-sdmx-code:waterFlows-SO05 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "SO05" ;
+    skos:prefLabel "Sea water"@en ;
+    rdfs:label "Sea water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-SO05 .
+
+
+sip-sdmx-code:waterFlows-W00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "W00" ;
+    skos:prefLabel "Wastewater and reused water"@en ;
+    rdfs:label "Wastewater and reused water"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-W00 .
+
+
+sip-sdmx-code:waterFlows-WR00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "WR00" ;
+    skos:prefLabel "Reused water produced"@en ;
+    rdfs:label "Reused water produced"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-WR00 .
+
+
+sip-sdmx-code:waterFlows-WR10 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "WR10" ;
+    skos:prefLabel "For distribution"@en ;
+    rdfs:label "For distribution"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-WR10 .
+
+
+sip-sdmx-code:waterFlows-WR11 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "WR11" ;
+    skos:prefLabel "For own use"@en ;
+    rdfs:label "For own use"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-WR11 .
+
+
+sip-sdmx-code:waterFlows-WW00 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "WW00" ;
+    skos:prefLabel "Wastewater"@en ;
+    rdfs:label "Wastewater"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-WW00 .
+
+
+sip-sdmx-code:waterFlows-WW08 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "WW08" ;
+    skos:prefLabel "Wastewater to treatment"@en ;
+    rdfs:label "Wastewater to treatment"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-WW08 .
+
+
+sip-sdmx-code:waterFlows-WW09 a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "WW09" ;
+    skos:prefLabel "Own treatment"@en ;
+    rdfs:label "Own treatment"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-WW09 .
+
+
+sip-sdmx-code:waterFlows-_T a skos:Concept, sip-sdmx-code:WaterFlows;
+    skos:topConceptOf sip-sdmx-code:waterFlows ;
+    skos:inScheme sip-sdmx-code:waterFlows ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:waterFlows skos:hasTopConcept sip-sdmx-code:waterFlows-_T .
+

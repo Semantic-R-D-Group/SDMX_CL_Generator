@@ -1,0 +1,125 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_SEX Scheme Definition
+#####################################################
+
+sip-sdmx-code:sex a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Sex code list - codelist scheme"@en ;
+    rdfs:label "Sex code list - codelist scheme"@en ;
+    skos:altLabel "Sex - codelist scheme"@en ;
+    skos:notation "CL_SEX" ;
+    skos:definition "A reference sex codelist combining IAEG-SDGs:CL_SEX(1.1), SDMX:CL_SEX(2.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_SEX/1.1> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_SEX/2.1> ;
+    skos:note "SDMX:CL_SEX(2.1): This code list provides coded information about the state of being male or female. This concept is applied if data needs to be categorised by sex. It applies not only to human beings but also to animals and other living organisms."@en ;
+    rdfs:seeAlso sip-sdmx-concept:SEX ;
+    skos:related sip-sdmx-concept:SEX ;
+    rdfs:seeAlso sip-sdmx-code:Sex .
+
+sip-sdmx-code:sex skos:exactMatch sdmx-code:sex .
+
+sip-sdmx-code:Sex a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Sex code list - codelist class"@en ;
+    rdfs:label "Sex code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex .
+
+
+########################################
+# CL_SEX Codes
+########################################
+    
+sip-sdmx-code:sex-F a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "F" ;
+    skos:prefLabel "Female"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """Female"""@en ] .
+
+sip-sdmx-code:sex-F skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-F> .
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-F .
+
+
+sip-sdmx-code:sex-M a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "M" ;
+    skos:prefLabel "Male"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """Male"""@en ] .
+
+sip-sdmx-code:sex-M skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-M> .
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-M .
+
+
+sip-sdmx-code:sex-_N a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "_N" ;
+    skos:prefLabel "Non response"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """Non response"""@en ] .
+
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-_N .
+
+
+sip-sdmx-code:sex-_O a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "_O" ;
+    skos:prefLabel "Other"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """Other"""@en ] .
+
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-_O .
+
+
+sip-sdmx-code:sex-_T a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "_T" ;
+    skos:prefLabel "Both sexes or no breakdown by sex"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Both sexes or no breakdown by sex"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-_T .
+
+
+sip-sdmx-code:sex-_U a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "_U" ;
+    skos:prefLabel "Unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs, sip-sdmx-agency:SDMX ; rdfs:label """Unknown"""@en ] .
+
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-_U .
+
+
+sip-sdmx-code:sex-_X a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not available"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Not available"""@en ] .
+
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-_X .
+
+
+sip-sdmx-code:sex-_Z a skos:Concept, sip-sdmx-code:Sex;
+    skos:topConceptOf sip-sdmx-code:sex ;
+    skos:inScheme sip-sdmx-code:sex ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:SDMX ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:sex skos:hasTopConcept sip-sdmx-code:sex-_Z .
+

@@ -1,0 +1,234 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_BREAKREASON Scheme Definition
+#####################################################
+
+sip-sdmx-code:breakReason a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Reason for the break in time series - codelist scheme"@en ;
+    rdfs:label "Reason for the break in time series - codelist scheme"@en ;
+    skos:notation "CL_BREAKREASON" ;
+    skos:definition "A reference breakReason codelist based on SDMX:CL_BREAK_REASON(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_BREAK_REASON/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:BreakReason .
+
+sip-sdmx-code:BreakReason a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Reason for the break in time series - codelist class"@en ;
+    rdfs:label "Reason for the break in time series - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason .
+
+
+########################################
+# CL_BREAKREASON Codes
+########################################
+    
+sip-sdmx-code:breakReason-ADMIN a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "ADMIN" ;
+    skos:prefLabel "Administrative procedures"@en ;
+    rdfs:label "Administrative procedures"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-ADMIN .
+
+
+sip-sdmx-code:breakReason-CLASS a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "CLASS" ;
+    skos:prefLabel "Classifications"@en ;
+    rdfs:label "Classifications"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-CLASS .
+
+
+sip-sdmx-code:breakReason-CONF a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "CONF" ;
+    skos:prefLabel "Confidentiality"@en ;
+    rdfs:label "Confidentiality"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-CONF .
+
+
+sip-sdmx-code:breakReason-CUR a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "CUR" ;
+    skos:prefLabel "Currency"@en ;
+    rdfs:label "Currency"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-CUR .
+
+
+sip-sdmx-code:breakReason-DEF a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "DEF" ;
+    skos:prefLabel "Definition"@en ;
+    rdfs:label "Definition"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-DEF .
+
+
+sip-sdmx-code:breakReason-LEGAL a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "LEGAL" ;
+    skos:prefLabel "Legal basis"@en ;
+    rdfs:label "Legal basis"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-LEGAL .
+
+
+sip-sdmx-code:breakReason-METH a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "METH" ;
+    skos:prefLabel "Methodologies"@en ;
+    rdfs:label "Methodologies"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-METH .
+
+
+sip-sdmx-code:breakReason-NONSTAT a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "NONSTAT" ;
+    skos:prefLabel "Non-statistical factors"@en ;
+    rdfs:label "Non-statistical factors"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-NONSTAT .
+
+
+sip-sdmx-code:breakReason-POL a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "POL" ;
+    skos:prefLabel "Policy"@en ;
+    rdfs:label "Policy"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-POL .
+
+
+sip-sdmx-code:breakReason-REF_PER a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "REF_PER" ;
+    skos:prefLabel "Reference period"@en ;
+    rdfs:label "Reference period"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-REF_PER .
+
+
+sip-sdmx-code:breakReason-SAMPLE a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "SAMPLE" ;
+    skos:prefLabel "Sample redesigned"@en ;
+    rdfs:label "Sample redesigned"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-SAMPLE .
+
+
+sip-sdmx-code:breakReason-SCOPE a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "SCOPE" ;
+    skos:prefLabel "Revision of scope or coverage"@en ;
+    rdfs:label "Revision of scope or coverage"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-SCOPE .
+
+
+sip-sdmx-code:breakReason-SOURCE a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "SOURCE" ;
+    skos:prefLabel "Data source"@en ;
+    rdfs:label "Data source"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-SOURCE .
+
+
+sip-sdmx-code:breakReason-STD a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "STD" ;
+    skos:prefLabel "Standard(s)"@en ;
+    rdfs:label "Standard(s)"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-STD .
+
+
+sip-sdmx-code:breakReason-TRANSF a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "TRANSF" ;
+    skos:prefLabel "Data transformation"@en ;
+    rdfs:label "Data transformation"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-TRANSF .
+
+
+sip-sdmx-code:breakReason-UNIT a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "UNIT" ;
+    skos:prefLabel "Statistical unit(s)"@en ;
+    rdfs:label "Statistical unit(s)"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-UNIT .
+
+
+sip-sdmx-code:breakReason-VAL a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "VAL" ;
+    skos:prefLabel "Valuation methods"@en ;
+    rdfs:label "Valuation methods"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-VAL .
+
+
+sip-sdmx-code:breakReason-WEIGHT a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "WEIGHT" ;
+    skos:prefLabel "Base weight"@en ;
+    rdfs:label "Base weight"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-WEIGHT .
+
+
+sip-sdmx-code:breakReason-_O a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "_O" ;
+    skos:prefLabel "Other"@en ;
+    rdfs:label "Other"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-_O .
+
+
+sip-sdmx-code:breakReason-_U a skos:Concept, sip-sdmx-code:BreakReason;
+    skos:topConceptOf sip-sdmx-code:breakReason ;
+    skos:inScheme sip-sdmx-code:breakReason ;
+    skos:notation "_U" ;
+    skos:prefLabel "No data/unknown"@en ;
+    rdfs:label "No data/unknown"@en .
+
+sip-sdmx-code:breakReason skos:hasTopConcept sip-sdmx-code:breakReason-_U .
+

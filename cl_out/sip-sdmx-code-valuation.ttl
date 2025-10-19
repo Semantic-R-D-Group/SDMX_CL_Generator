@@ -1,0 +1,226 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_VALUATION Scheme Definition
+#####################################################
+
+sip-sdmx-code:valuation a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Valuation - codelist scheme"@en ;
+    rdfs:label "Valuation - codelist scheme"@en ;
+    skos:notation "CL_VALUATION" ;
+    skos:definition "A reference valuation codelist based on ESTAT:CL_VALUATION(1.6)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_VALUATION/1.6> ;
+    rdfs:seeAlso sip-sdmx-concept:VALUATION ;
+    skos:related sip-sdmx-concept:VALUATION ;
+    rdfs:seeAlso sip-sdmx-code:Valuation .
+
+sip-sdmx-code:Valuation a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Valuation - codelist class"@en ;
+    rdfs:label "Valuation - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation .
+
+
+########################################
+# CL_VALUATION Codes
+########################################
+    
+sip-sdmx-code:valuation-A a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "A" ;
+    skos:prefLabel "Accrual"@en ;
+    rdfs:label "Accrual"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-A .
+
+
+sip-sdmx-code:valuation-B a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "B" ;
+    skos:prefLabel "Basic prices"@en ;
+    rdfs:label "Basic prices"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-B .
+
+
+sip-sdmx-code:valuation-C a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "C" ;
+    skos:prefLabel "Cash"@en ;
+    rdfs:label "Cash"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-C .
+
+
+sip-sdmx-code:valuation-E a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "E" ;
+    skos:prefLabel "Accumulation of FDI equity capital flow"@en ;
+    rdfs:label "Accumulation of FDI equity capital flow"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-E .
+
+
+sip-sdmx-code:valuation-F a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "F" ;
+    skos:prefLabel "Face value"@en ;
+    rdfs:label "Face value"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-F .
+
+
+sip-sdmx-code:valuation-H a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "H" ;
+    skos:prefLabel "Historic acquisition cost"@en ;
+    rdfs:label "Historic acquisition cost"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-H .
+
+
+sip-sdmx-code:valuation-I a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "I" ;
+    skos:prefLabel "Stock market price index applied to accumulated FDI equity capital flow"@en ;
+    rdfs:label "Stock market price index applied to accumulated FDI equity capital flow"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-I .
+
+
+sip-sdmx-code:valuation-M a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "M" ;
+    skos:prefLabel "Market value"@en ;
+    rdfs:label "Market value"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-M .
+
+
+sip-sdmx-code:valuation-N a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "N" ;
+    skos:prefLabel "Nominal value"@en ;
+    rdfs:label "Nominal value"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-N .
+
+
+sip-sdmx-code:valuation-O a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "O" ;
+    skos:prefLabel "Purchasers prices"@en ;
+    rdfs:label "Purchasers prices"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-O .
+
+
+sip-sdmx-code:valuation-P a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "P" ;
+    skos:prefLabel "Producer prices"@en ;
+    rdfs:label "Producer prices"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-P .
+
+
+sip-sdmx-code:valuation-R a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "R" ;
+    skos:prefLabel "Redemption value"@en ;
+    rdfs:label "Redemption value"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-R .
+
+
+sip-sdmx-code:valuation-S a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "S" ;
+    skos:prefLabel "Standard valuation based on SNA/ESA"@en ;
+    rdfs:label "Standard valuation based on SNA/ESA"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-S .
+
+
+sip-sdmx-code:valuation-T a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "T" ;
+    skos:prefLabel "Net marked to market value"@en ;
+    rdfs:label "Net marked to market value"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-T .
+
+
+sip-sdmx-code:valuation-U a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "U" ;
+    skos:prefLabel "Fair value"@en ;
+    rdfs:label "Fair value"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-U .
+
+
+sip-sdmx-code:valuation-V a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "V" ;
+    skos:prefLabel "Book value"@en ;
+    rdfs:label "Book value"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-V .
+
+
+sip-sdmx-code:valuation-W a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "W" ;
+    skos:prefLabel "Notional valuation"@en ;
+    rdfs:label "Notional valuation"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-W .
+
+
+sip-sdmx-code:valuation-_X a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not allocated/unspecified (including all kinds of valuation methods)"@en ;
+    rdfs:label "Not allocated/unspecified (including all kinds of valuation methods)"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-_X .
+
+
+sip-sdmx-code:valuation-_Z a skos:Concept, sip-sdmx-code:Valuation;
+    skos:topConceptOf sip-sdmx-code:valuation ;
+    skos:inScheme sip-sdmx-code:valuation ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:valuation skos:hasTopConcept sip-sdmx-code:valuation-_Z .
+

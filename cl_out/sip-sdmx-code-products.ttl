@@ -1,0 +1,2669 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_PRODUCTS Scheme Definition
+#####################################################
+
+sip-sdmx-code:products a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Product classification - codelist scheme"@en ;
+    rdfs:label "Product classification - codelist scheme"@en ;
+    skos:altLabel "SDG Type of product code list - codelist scheme"@en ;
+    skos:notation "CL_PRODUCTS" ;
+    skos:definition "A reference products codelist combining ESTAT:CL_PRODUCT(1.3), IAEG-SDGs:CL_PRODUCT(1.19)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_PRODUCT/1.3> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_PRODUCT/1.19> ;
+    skos:note "ESTAT:CL_PRODUCT(1.3): CPC"@en ;
+    rdfs:seeAlso sip-sdmx-code:Products .
+
+sip-sdmx-code:Products a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Product classification - codelist class"@en ;
+    rdfs:label "Product classification - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products .
+
+
+########################################
+# CL_PRODUCTS Codes
+########################################
+    
+sip-sdmx-code:products-AGG_AGR a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "AGG_AGR" ;
+    skos:prefLabel "Agriculture products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Agriculture products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-AGG_AGR .
+
+
+sip-sdmx-code:products-AGG_ARMS a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "AGG_ARMS" ;
+    skos:prefLabel "Arms"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Arms"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-AGG_ARMS .
+
+
+sip-sdmx-code:products-AGG_CLTH a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "AGG_CLTH" ;
+    skos:prefLabel "Clothing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Clothing"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-AGG_CLTH .
+
+
+sip-sdmx-code:products-AGG_IND a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "AGG_IND" ;
+    skos:prefLabel "Industrial products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Industrial products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-AGG_IND .
+
+
+sip-sdmx-code:products-AGG_OIL a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "AGG_OIL" ;
+    skos:prefLabel "Oil"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Oil"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-AGG_OIL .
+
+
+sip-sdmx-code:products-AGG_TXT a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "AGG_TXT" ;
+    skos:prefLabel "Textiles"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Textiles"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-AGG_TXT .
+
+
+sip-sdmx-code:products-CITES_ANIMALS a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CITES_ANIMALS" ;
+    skos:prefLabel "Animals and derived products according to CITES"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Animals and derived products according to CITES"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CITES_ANIMALS .
+
+
+sip-sdmx-code:products-CITES_PLANTS a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CITES_PLANTS" ;
+    skos:prefLabel "Plants and derived products according to CITES"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Plants and derived products according to CITES"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CITES_PLANTS .
+
+
+sip-sdmx-code:products-CITES_T a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CITES_T" ;
+    skos:prefLabel "Plants and animals and derived products according to CITES"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Plants and animals and derived products according to CITES"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CITES_T .
+
+
+sip-sdmx-code:products-CPA_A a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_A" ;
+    skos:prefLabel "Products of agriculture, forestry and fishing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Products of agriculture, forestry and fishing"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_A .
+
+
+sip-sdmx-code:products-CPA_A01 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_A01" ;
+    skos:prefLabel "Products of agriculture, hunting and related services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Products of agriculture, hunting and related services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_A01 .
+
+
+sip-sdmx-code:products-CPA_A02 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_A02" ;
+    skos:prefLabel "Products of forestry, logging and related services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Products of forestry, logging and related services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_A02 .
+
+
+sip-sdmx-code:products-CPA_A03 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_A03" ;
+    skos:prefLabel "Fish and other fishing products; aquaculture products; support services to fishing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Fish and other fishing products; aquaculture products; support services to fishing"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_A03 .
+
+
+sip-sdmx-code:products-CPA_B a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_B" ;
+    skos:prefLabel "Mining and quarrying"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Mining and quarrying"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_B .
+
+
+sip-sdmx-code:products-CPA_B05 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_B05" ;
+    skos:prefLabel "Coal and lignite"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Coal and lignite"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_B05 .
+
+
+sip-sdmx-code:products-CPA_B06 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_B06" ;
+    skos:prefLabel "Crude petroleum and natural gas"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Crude petroleum and natural gas"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_B06 .
+
+
+sip-sdmx-code:products-CPA_B07 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_B07" ;
+    skos:prefLabel "Metal ores"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Metal ores"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_B07 .
+
+
+sip-sdmx-code:products-CPA_B08 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_B08" ;
+    skos:prefLabel "Other mining and quarrying products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other mining and quarrying products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_B08 .
+
+
+sip-sdmx-code:products-CPA_B09 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_B09" ;
+    skos:prefLabel "Mining support services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Mining support services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_B09 .
+
+
+sip-sdmx-code:products-CPA_BTE a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_BTE" ;
+    skos:prefLabel "Industrial products (except construction works)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Industrial products (except construction works)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_BTE .
+
+
+sip-sdmx-code:products-CPA_BTF a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_BTF" ;
+    skos:prefLabel "Industrial products and construction works"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Industrial products and construction works"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_BTF .
+
+
+sip-sdmx-code:products-CPA_C a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C" ;
+    skos:prefLabel "Manufactured products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Manufactured products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C .
+
+
+sip-sdmx-code:products-CPA_C10 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C10" ;
+    skos:prefLabel "Food products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Food products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C10 .
+
+
+sip-sdmx-code:products-CPA_C10T12 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C10T12" ;
+    skos:prefLabel "Food, beverages and tobacco products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Food, beverages and tobacco products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C10T12 .
+
+
+sip-sdmx-code:products-CPA_C11 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C11" ;
+    skos:prefLabel "Beverages"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Beverages"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C11 .
+
+
+sip-sdmx-code:products-CPA_C12 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C12" ;
+    skos:prefLabel "Tobacco products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Tobacco products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C12 .
+
+
+sip-sdmx-code:products-CPA_C13 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C13" ;
+    skos:prefLabel "Textiles"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Textiles"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C13 .
+
+
+sip-sdmx-code:products-CPA_C13T15 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C13T15" ;
+    skos:prefLabel "Textiles, wearing apparel, leather and related products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Textiles, wearing apparel, leather and related products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C13T15 .
+
+
+sip-sdmx-code:products-CPA_C14 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C14" ;
+    skos:prefLabel "Wearing apparel"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wearing apparel"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C14 .
+
+
+sip-sdmx-code:products-CPA_C15 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C15" ;
+    skos:prefLabel "Leather and related products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Leather and related products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C15 .
+
+
+sip-sdmx-code:products-CPA_C16 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C16" ;
+    skos:prefLabel "Wood and of products of wood and cork, except furniture; articles of straw and plaiting materials"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wood and of products of wood and cork, except furniture; articles of straw and plaiting materials"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C16 .
+
+
+sip-sdmx-code:products-CPA_C16T18 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C16T18" ;
+    skos:prefLabel "Wood and of products of wood and cork, except furniture; articles of straw and plaiting materials; paper and paper products; printing and recording services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wood and of products of wood and cork, except furniture; articles of straw and plaiting materials; paper and paper products; printing and recording services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C16T18 .
+
+
+sip-sdmx-code:products-CPA_C17 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C17" ;
+    skos:prefLabel "Paper and paper products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Paper and paper products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C17 .
+
+
+sip-sdmx-code:products-CPA_C18 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C18" ;
+    skos:prefLabel "Printing and recording services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Printing and recording services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C18 .
+
+
+sip-sdmx-code:products-CPA_C19 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C19" ;
+    skos:prefLabel "Coke and refined petroleum products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Coke and refined petroleum products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C19 .
+
+
+sip-sdmx-code:products-CPA_C20 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C20" ;
+    skos:prefLabel "Chemicals and chemical products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Chemicals and chemical products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C20 .
+
+
+sip-sdmx-code:products-CPA_C21 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C21" ;
+    skos:prefLabel "Basic pharmaceutical products and pharmaceutical preparations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Basic pharmaceutical products and pharmaceutical preparations"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C21 .
+
+
+sip-sdmx-code:products-CPA_C22 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C22" ;
+    skos:prefLabel "Rubber and plastic products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Rubber and plastic products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C22 .
+
+
+sip-sdmx-code:products-CPA_C22_23 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C22_23" ;
+    skos:prefLabel "Rubber, plastic and other non-metallic mineral products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Rubber, plastic and other non-metallic mineral products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C22_23 .
+
+
+sip-sdmx-code:products-CPA_C23 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C23" ;
+    skos:prefLabel "Other non-metallic mineral products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other non-metallic mineral products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C23 .
+
+
+sip-sdmx-code:products-CPA_C24 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C24" ;
+    skos:prefLabel "Basic metals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Basic metals"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C24 .
+
+
+sip-sdmx-code:products-CPA_C24_25 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C24_25" ;
+    skos:prefLabel "Basic metals and fabricated metal products, except machinery and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Basic metals and fabricated metal products, except machinery and equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C24_25 .
+
+
+sip-sdmx-code:products-CPA_C25 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C25" ;
+    skos:prefLabel "Fabricated metal products, except machinery and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Fabricated metal products, except machinery and equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C25 .
+
+
+sip-sdmx-code:products-CPA_C26 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C26" ;
+    skos:prefLabel "Computer, electronic and optical products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Computer, electronic and optical products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C26 .
+
+
+sip-sdmx-code:products-CPA_C27 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C27" ;
+    skos:prefLabel "Electrical equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electrical equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C27 .
+
+
+sip-sdmx-code:products-CPA_C28 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C28" ;
+    skos:prefLabel "Machinery and equipment n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Machinery and equipment n.e.c."""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C28 .
+
+
+sip-sdmx-code:products-CPA_C29 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C29" ;
+    skos:prefLabel "Motor vehicles, trailers and semi-trailers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Motor vehicles, trailers and semi-trailers"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C29 .
+
+
+sip-sdmx-code:products-CPA_C29_30 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C29_30" ;
+    skos:prefLabel "Motor vehicles, trailers and semi-trailers and other transport equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Motor vehicles, trailers and semi-trailers and other transport equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C29_30 .
+
+
+sip-sdmx-code:products-CPA_C30 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C30" ;
+    skos:prefLabel "Other transport equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other transport equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C30 .
+
+
+sip-sdmx-code:products-CPA_C31 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C31" ;
+    skos:prefLabel "Furniture"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Furniture"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C31 .
+
+
+sip-sdmx-code:products-CPA_C31T33 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C31T33" ;
+    skos:prefLabel "Furniture, other manufactured goods, repair and installation services of machinery and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Furniture, other manufactured goods, repair and installation services of machinery and equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C31T33 .
+
+
+sip-sdmx-code:products-CPA_C31_32 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C31_32" ;
+    skos:prefLabel "Furniture and other manufactured goods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Furniture and other manufactured goods"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C31_32 .
+
+
+sip-sdmx-code:products-CPA_C32 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C32" ;
+    skos:prefLabel "Other manufactured goods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other manufactured goods"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C32 .
+
+
+sip-sdmx-code:products-CPA_C33 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_C33" ;
+    skos:prefLabel "Repair and installation services of machinery and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Repair and installation services of machinery and equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_C33 .
+
+
+sip-sdmx-code:products-CPA_D a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_D" ;
+    skos:prefLabel "Electricity, gas, steam and air conditioning"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electricity, gas, steam and air conditioning"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_D .
+
+
+sip-sdmx-code:products-CPA_D35 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_D35" ;
+    skos:prefLabel "Electricity, gas, steam and air conditioning"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electricity, gas, steam and air conditioning"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_D35 .
+
+
+sip-sdmx-code:products-CPA_E a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_E" ;
+    skos:prefLabel "Water supply; sewerage, waste management and remediation services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Water supply; sewerage, waste management and remediation services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_E .
+
+
+sip-sdmx-code:products-CPA_E36 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_E36" ;
+    skos:prefLabel "Natural water; water treatment and supply services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Natural water; water treatment and supply services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_E36 .
+
+
+sip-sdmx-code:products-CPA_E37 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_E37" ;
+    skos:prefLabel "Sewerage services; sewage sludge"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sewerage services; sewage sludge"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_E37 .
+
+
+sip-sdmx-code:products-CPA_E37T39 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_E37T39" ;
+    skos:prefLabel "Sewerage services; sewage sludge; waste collection, treatment and disposal services; materials recovery services; remediation services and other waste management services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sewerage services; sewage sludge; waste collection, treatment and disposal services; materials recovery services; remediation services and other waste management services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_E37T39 .
+
+
+sip-sdmx-code:products-CPA_E38 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_E38" ;
+    skos:prefLabel "Waste collection, treatment and disposal services; materials recovery services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Waste collection, treatment and disposal services; materials recovery services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_E38 .
+
+
+sip-sdmx-code:products-CPA_E39 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_E39" ;
+    skos:prefLabel "Remediation services and other waste management services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Remediation services and other waste management services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_E39 .
+
+
+sip-sdmx-code:products-CPA_F a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_F" ;
+    skos:prefLabel "Constructions and construction works"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Constructions and construction works"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_F .
+
+
+sip-sdmx-code:products-CPA_F41 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_F41" ;
+    skos:prefLabel "Buildings and building construction works"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Buildings and building construction works"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_F41 .
+
+
+sip-sdmx-code:products-CPA_F42 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_F42" ;
+    skos:prefLabel "Constructions and construction works for civil engineering"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Constructions and construction works for civil engineering"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_F42 .
+
+
+sip-sdmx-code:products-CPA_F43 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_F43" ;
+    skos:prefLabel "Specialised construction works"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Specialised construction works"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_F43 .
+
+
+sip-sdmx-code:products-CPA_G a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_G" ;
+    skos:prefLabel "Wholesale and retail trade services; repair services of motor vehicles and motorcycles"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wholesale and retail trade services; repair services of motor vehicles and motorcycles"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_G .
+
+
+sip-sdmx-code:products-CPA_G45 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_G45" ;
+    skos:prefLabel "Wholesale and retail trade and repair services of motor vehicles and motorcycles"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wholesale and retail trade and repair services of motor vehicles and motorcycles"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_G45 .
+
+
+sip-sdmx-code:products-CPA_G46 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_G46" ;
+    skos:prefLabel "Wholesale trade services, except of motor vehicles and motorcycles"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wholesale trade services, except of motor vehicles and motorcycles"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_G46 .
+
+
+sip-sdmx-code:products-CPA_G47 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_G47" ;
+    skos:prefLabel "Retail trade services, except of motor vehicles and motorcycles"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Retail trade services, except of motor vehicles and motorcycles"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_G47 .
+
+
+sip-sdmx-code:products-CPA_GTI a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_GTI" ;
+    skos:prefLabel "Wholesale and retail trade; transportation and storage; accommodation and food services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wholesale and retail trade; transportation and storage; accommodation and food services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_GTI .
+
+
+sip-sdmx-code:products-CPA_GTU a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_GTU" ;
+    skos:prefLabel "Services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_GTU .
+
+
+sip-sdmx-code:products-CPA_H a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_H" ;
+    skos:prefLabel "Transportation and storage services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Transportation and storage services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_H .
+
+
+sip-sdmx-code:products-CPA_H49 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_H49" ;
+    skos:prefLabel "Land transport services and transport services via pipelines"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Land transport services and transport services via pipelines"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_H49 .
+
+
+sip-sdmx-code:products-CPA_H50 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_H50" ;
+    skos:prefLabel "Water transport services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Water transport services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_H50 .
+
+
+sip-sdmx-code:products-CPA_H51 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_H51" ;
+    skos:prefLabel "Air transport services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Air transport services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_H51 .
+
+
+sip-sdmx-code:products-CPA_H52 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_H52" ;
+    skos:prefLabel "Warehousing and support services for transportation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Warehousing and support services for transportation"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_H52 .
+
+
+sip-sdmx-code:products-CPA_H53 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_H53" ;
+    skos:prefLabel "Postal and courier services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Postal and courier services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_H53 .
+
+
+sip-sdmx-code:products-CPA_I a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_I" ;
+    skos:prefLabel "Accommodation and food services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Accommodation and food services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_I .
+
+
+sip-sdmx-code:products-CPA_I55 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_I55" ;
+    skos:prefLabel "Accommodation services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Accommodation services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_I55 .
+
+
+sip-sdmx-code:products-CPA_I56 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_I56" ;
+    skos:prefLabel "Food and beverage serving services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Food and beverage serving services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_I56 .
+
+
+sip-sdmx-code:products-CPA_J a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J" ;
+    skos:prefLabel "Information and communication services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Information and communication services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J .
+
+
+sip-sdmx-code:products-CPA_J58 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J58" ;
+    skos:prefLabel "Publishing services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Publishing services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J58 .
+
+
+sip-sdmx-code:products-CPA_J58T60 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J58T60" ;
+    skos:prefLabel "Publishing services; motion picture, video and television programme production services, sound recording and music publishing; programming and broadcasting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Publishing services; motion picture, video and television programme production services, sound recording and music publishing; programming and broadcasting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J58T60 .
+
+
+sip-sdmx-code:products-CPA_J59 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J59" ;
+    skos:prefLabel "Motion picture, video and television programme production services, sound recording and music publishing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Motion picture, video and television programme production services, sound recording and music publishing"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J59 .
+
+
+sip-sdmx-code:products-CPA_J59_60 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J59_60" ;
+    skos:prefLabel "Motion picture, video and television programme production services, sound recording and music publishing; programming and broadcasting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Motion picture, video and television programme production services, sound recording and music publishing; programming and broadcasting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J59_60 .
+
+
+sip-sdmx-code:products-CPA_J60 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J60" ;
+    skos:prefLabel "Programming and broadcasting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Programming and broadcasting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J60 .
+
+
+sip-sdmx-code:products-CPA_J61 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J61" ;
+    skos:prefLabel "Telecommunications services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Telecommunications services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J61 .
+
+
+sip-sdmx-code:products-CPA_J62 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J62" ;
+    skos:prefLabel "Computer programming, consultancy and related services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Computer programming, consultancy and related services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J62 .
+
+
+sip-sdmx-code:products-CPA_J62_63 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J62_63" ;
+    skos:prefLabel "Computer programming, consultancy and related services; Information services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Computer programming, consultancy and related services; Information services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J62_63 .
+
+
+sip-sdmx-code:products-CPA_J63 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_J63" ;
+    skos:prefLabel "Information services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Information services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_J63 .
+
+
+sip-sdmx-code:products-CPA_K a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_K" ;
+    skos:prefLabel "Financial and insurance services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial and insurance services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_K .
+
+
+sip-sdmx-code:products-CPA_K64 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_K64" ;
+    skos:prefLabel "Financial services, except insurance and pension funding"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial services, except insurance and pension funding"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_K64 .
+
+
+sip-sdmx-code:products-CPA_K65 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_K65" ;
+    skos:prefLabel "Insurance, reinsurance and pension funding services, except compulsory social security"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Insurance, reinsurance and pension funding services, except compulsory social security"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_K65 .
+
+
+sip-sdmx-code:products-CPA_K66 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_K66" ;
+    skos:prefLabel "Services auxiliary to financial services and insurance services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services auxiliary to financial services and insurance services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_K66 .
+
+
+sip-sdmx-code:products-CPA_L a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_L" ;
+    skos:prefLabel "Real estate services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Real estate services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_L .
+
+
+sip-sdmx-code:products-CPA_L68A a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_L68A" ;
+    skos:prefLabel "Imputed rents of owner-occupied dwellings"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Imputed rents of owner-occupied dwellings"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_L68A .
+
+
+sip-sdmx-code:products-CPA_L68B a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_L68B" ;
+    skos:prefLabel "Real estate services excluding imputed rents"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Real estate services excluding imputed rents"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_L68B .
+
+
+sip-sdmx-code:products-CPA_M a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M" ;
+    skos:prefLabel "Professional, scientific and technical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Professional, scientific and technical services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M .
+
+
+sip-sdmx-code:products-CPA_M69 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M69" ;
+    skos:prefLabel "Legal and accounting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Legal and accounting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M69 .
+
+
+sip-sdmx-code:products-CPA_M69T71 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M69T71" ;
+    skos:prefLabel "Legal and accounting services; services of head offices; management consultancy services; architectural and engineering services; technical testing and analysis services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Legal and accounting services; services of head offices; management consultancy services; architectural and engineering services; technical testing and analysis services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M69T71 .
+
+
+sip-sdmx-code:products-CPA_M69_70 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M69_70" ;
+    skos:prefLabel "Legal and accounting services; services of head offices; management consultancy services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Legal and accounting services; services of head offices; management consultancy services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M69_70 .
+
+
+sip-sdmx-code:products-CPA_M70 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M70" ;
+    skos:prefLabel "Services of head offices; management consulting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services of head offices; management consulting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M70 .
+
+
+sip-sdmx-code:products-CPA_M71 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M71" ;
+    skos:prefLabel "Architectural and engineering services; technical testing and analysis services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Architectural and engineering services; technical testing and analysis services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M71 .
+
+
+sip-sdmx-code:products-CPA_M72 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M72" ;
+    skos:prefLabel "Scientific research and development services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Scientific research and development services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M72 .
+
+
+sip-sdmx-code:products-CPA_M73 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M73" ;
+    skos:prefLabel "Advertising and market research services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Advertising and market research services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M73 .
+
+
+sip-sdmx-code:products-CPA_M73T75 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M73T75" ;
+    skos:prefLabel "Advertising and market research services; other professional, scientific and technical services and veterinary services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Advertising and market research services; other professional, scientific and technical services and veterinary services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M73T75 .
+
+
+sip-sdmx-code:products-CPA_M74 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M74" ;
+    skos:prefLabel "Other professional, scientific and technical services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other professional, scientific and technical services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M74 .
+
+
+sip-sdmx-code:products-CPA_M74_75 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M74_75" ;
+    skos:prefLabel "Other professional, scientific and technical services and veterinary services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other professional, scientific and technical services and veterinary services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M74_75 .
+
+
+sip-sdmx-code:products-CPA_M75 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M75" ;
+    skos:prefLabel "Veterinary services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Veterinary services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M75 .
+
+
+sip-sdmx-code:products-CPA_M_N a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_M_N" ;
+    skos:prefLabel "Professional, scientific and technical services; administrative and support services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Professional, scientific and technical services; administrative and support services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_M_N .
+
+
+sip-sdmx-code:products-CPA_N a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N" ;
+    skos:prefLabel "Administrative and support services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Administrative and support services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N .
+
+
+sip-sdmx-code:products-CPA_N77 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N77" ;
+    skos:prefLabel "Rental and leasing services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Rental and leasing services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N77 .
+
+
+sip-sdmx-code:products-CPA_N78 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N78" ;
+    skos:prefLabel "Employment services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Employment services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N78 .
+
+
+sip-sdmx-code:products-CPA_N79 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N79" ;
+    skos:prefLabel "Travel agency, tour operator and other reservation services and related services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Travel agency, tour operator and other reservation services and related services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N79 .
+
+
+sip-sdmx-code:products-CPA_N80 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N80" ;
+    skos:prefLabel "Security and investigation services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Security and investigation services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N80 .
+
+
+sip-sdmx-code:products-CPA_N80T82 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N80T82" ;
+    skos:prefLabel "Security and investigation services; services to buildings and landscape; office administrative, office support and other business support services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Security and investigation services; services to buildings and landscape; office administrative, office support and other business support services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N80T82 .
+
+
+sip-sdmx-code:products-CPA_N81 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N81" ;
+    skos:prefLabel "Services to buildings and landscape"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services to buildings and landscape"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N81 .
+
+
+sip-sdmx-code:products-CPA_N82 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_N82" ;
+    skos:prefLabel "Office administrative, office support and other business support services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Office administrative, office support and other business support services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_N82 .
+
+
+sip-sdmx-code:products-CPA_O a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_O" ;
+    skos:prefLabel "Public administration and defence services; compulsory social security services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public administration and defence services; compulsory social security services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_O .
+
+
+sip-sdmx-code:products-CPA_O84 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_O84" ;
+    skos:prefLabel "Public administration and defence services; compulsory social security services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public administration and defence services; compulsory social security services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_O84 .
+
+
+sip-sdmx-code:products-CPA_OTQ a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_OTQ" ;
+    skos:prefLabel "Public administration, defence, education, human health and social work services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public administration, defence, education, human health and social work services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_OTQ .
+
+
+sip-sdmx-code:products-CPA_P a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_P" ;
+    skos:prefLabel "Education services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Education services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_P .
+
+
+sip-sdmx-code:products-CPA_P85 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_P85" ;
+    skos:prefLabel "Education services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Education services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_P85 .
+
+
+sip-sdmx-code:products-CPA_Q a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_Q" ;
+    skos:prefLabel "Human health and social work services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Human health and social work services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_Q .
+
+
+sip-sdmx-code:products-CPA_Q86 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_Q86" ;
+    skos:prefLabel "Human health services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Human health services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_Q86 .
+
+
+sip-sdmx-code:products-CPA_Q87 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_Q87" ;
+    skos:prefLabel "Residential care services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Residential care services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_Q87 .
+
+
+sip-sdmx-code:products-CPA_Q87_88 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_Q87_88" ;
+    skos:prefLabel "Residential care services; social work services without accommodation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Residential care services; social work services without accommodation"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_Q87_88 .
+
+
+sip-sdmx-code:products-CPA_Q88 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_Q88" ;
+    skos:prefLabel "Social work services without accommodation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Social work services without accommodation"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_Q88 .
+
+
+sip-sdmx-code:products-CPA_R a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_R" ;
+    skos:prefLabel "Arts, entertainment and recreation services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Arts, entertainment and recreation services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_R .
+
+
+sip-sdmx-code:products-CPA_R90 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_R90" ;
+    skos:prefLabel "Creative, arts and entertainment services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Creative, arts and entertainment services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_R90 .
+
+
+sip-sdmx-code:products-CPA_R90T92 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_R90T92" ;
+    skos:prefLabel "Creative, arts, entertainment, library, archive, museum, other cultural services; gambling and betting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Creative, arts, entertainment, library, archive, museum, other cultural services; gambling and betting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_R90T92 .
+
+
+sip-sdmx-code:products-CPA_R91 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_R91" ;
+    skos:prefLabel "Library, archive, museum and other cultural services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Library, archive, museum and other cultural services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_R91 .
+
+
+sip-sdmx-code:products-CPA_R92 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_R92" ;
+    skos:prefLabel "Gambling and betting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Gambling and betting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_R92 .
+
+
+sip-sdmx-code:products-CPA_R93 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_R93" ;
+    skos:prefLabel "Sporting services and amusement and recreation services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sporting services and amusement and recreation services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_R93 .
+
+
+sip-sdmx-code:products-CPA_RTU a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_RTU" ;
+    skos:prefLabel "Arts, entertainment and recreation; other services; services of household and extra-territorial organizations and bodies"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Arts, entertainment and recreation; other services; services of household and extra-territorial organizations and bodies"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_RTU .
+
+
+sip-sdmx-code:products-CPA_S a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_S" ;
+    skos:prefLabel "Other services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_S .
+
+
+sip-sdmx-code:products-CPA_S94 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_S94" ;
+    skos:prefLabel "Services furnished by membership organisations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services furnished by membership organisations"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_S94 .
+
+
+sip-sdmx-code:products-CPA_S95 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_S95" ;
+    skos:prefLabel "Repair services of computers and personal and household goods"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Repair services of computers and personal and household goods"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_S95 .
+
+
+sip-sdmx-code:products-CPA_S96 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_S96" ;
+    skos:prefLabel "Other personal services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other personal services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_S96 .
+
+
+sip-sdmx-code:products-CPA_T a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_T" ;
+    skos:prefLabel "Services of households as employers; undifferentiated goods and services produced by households for own use"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services of households as employers; undifferentiated goods and services produced by households for own use"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_T .
+
+
+sip-sdmx-code:products-CPA_T97 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_T97" ;
+    skos:prefLabel "Services of households as employers of domestic personnel"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services of households as employers of domestic personnel"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_T97 .
+
+
+sip-sdmx-code:products-CPA_T98 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_T98" ;
+    skos:prefLabel "Undifferentiated goods and services produced by private households for own use"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Undifferentiated goods and services produced by private households for own use"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_T98 .
+
+
+sip-sdmx-code:products-CPA_U a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_U" ;
+    skos:prefLabel "Services provided by extraterritorial organisations and bodies"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services provided by extraterritorial organisations and bodies"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_U .
+
+
+sip-sdmx-code:products-CPA_U99 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPA_U99" ;
+    skos:prefLabel "Services provided by extraterritorial organisations and bodies"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services provided by extraterritorial organisations and bodies"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPA_U99 .
+
+
+sip-sdmx-code:products-CPC2_1_111 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC2_1_111" ;
+    skos:prefLabel "Wheat"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Wheat"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC2_1_111 .
+
+
+sip-sdmx-code:products-CPC2_1_112 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC2_1_112" ;
+    skos:prefLabel "Maize"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Maize"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC2_1_112 .
+
+
+sip-sdmx-code:products-CPC2_1_113 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC2_1_113" ;
+    skos:prefLabel "Rice"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Rice"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC2_1_113 .
+
+
+sip-sdmx-code:products-CPC2_1_114 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC2_1_114" ;
+    skos:prefLabel "Sorghum"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Sorghum"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC2_1_114 .
+
+
+sip-sdmx-code:products-CPC2_1_118 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC2_1_118" ;
+    skos:prefLabel "Millet"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Millet"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC2_1_118 .
+
+
+sip-sdmx-code:products-CPC_0 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_0" ;
+    skos:prefLabel "Agriculture, forestry and fishery products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Agriculture, forestry and fishery products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_0 .
+
+
+sip-sdmx-code:products-CPC_01 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_01" ;
+    skos:prefLabel "Products of agriculture, horticulture and market gardening"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Products of agriculture, horticulture and market gardening"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_01 .
+
+
+sip-sdmx-code:products-CPC_02 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_02" ;
+    skos:prefLabel "Live animals and animal products (excluding meat)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Live animals and animal products (excluding meat)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_02 .
+
+
+sip-sdmx-code:products-CPC_03 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_03" ;
+    skos:prefLabel "Forestry and logging products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Forestry and logging products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_03 .
+
+
+sip-sdmx-code:products-CPC_04 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_04" ;
+    skos:prefLabel "Fish and other fishing products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Fish and other fishing products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_04 .
+
+
+sip-sdmx-code:products-CPC_1 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_1" ;
+    skos:prefLabel "Ores and minerals; electricity, gas and water"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Ores and minerals; electricity, gas and water"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_1 .
+
+
+sip-sdmx-code:products-CPC_11 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_11" ;
+    skos:prefLabel "Coal and lignite; peat"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Coal and lignite; peat"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_11 .
+
+
+sip-sdmx-code:products-CPC_12 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_12" ;
+    skos:prefLabel "Crude petroleum and natural gas"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Crude petroleum and natural gas"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_12 .
+
+
+sip-sdmx-code:products-CPC_13 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_13" ;
+    skos:prefLabel "Uranium and thorium ores and concentrates"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Uranium and thorium ores and concentrates"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_13 .
+
+
+sip-sdmx-code:products-CPC_14 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_14" ;
+    skos:prefLabel "Metal ores"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Metal ores"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_14 .
+
+
+sip-sdmx-code:products-CPC_15 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_15" ;
+    skos:prefLabel "Stone, sand and clay"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Stone, sand and clay"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_15 .
+
+
+sip-sdmx-code:products-CPC_16 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_16" ;
+    skos:prefLabel "Other minerals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other minerals"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_16 .
+
+
+sip-sdmx-code:products-CPC_17 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_17" ;
+    skos:prefLabel "Electricity, town gas, steam and hot water"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electricity, town gas, steam and hot water"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_17 .
+
+
+sip-sdmx-code:products-CPC_18 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_18" ;
+    skos:prefLabel "Natural water"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Natural water"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_18 .
+
+
+sip-sdmx-code:products-CPC_2 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_2" ;
+    skos:prefLabel "Food products, beverages and tobacco; textiles, apparel and leather products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Food products, beverages and tobacco; textiles, apparel and leather products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_2 .
+
+
+sip-sdmx-code:products-CPC_21 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_21" ;
+    skos:prefLabel "Meat, fish, fruit, vegetables, oils and fats"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Meat, fish, fruit, vegetables, oils and fats"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_21 .
+
+
+sip-sdmx-code:products-CPC_22 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_22" ;
+    skos:prefLabel "Dairy products and egg products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Dairy products and egg products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_22 .
+
+
+sip-sdmx-code:products-CPC_23 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_23" ;
+    skos:prefLabel "Grain mill products, starches and starch products; other food products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Grain mill products, starches and starch products; other food products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_23 .
+
+
+sip-sdmx-code:products-CPC_24 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_24" ;
+    skos:prefLabel "Beverages"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Beverages"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_24 .
+
+
+sip-sdmx-code:products-CPC_25 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_25" ;
+    skos:prefLabel "Tobacco products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Tobacco products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_25 .
+
+
+sip-sdmx-code:products-CPC_26 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_26" ;
+    skos:prefLabel "Yarn and thread; woven and tufted textile fabrics"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Yarn and thread; woven and tufted textile fabrics"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_26 .
+
+
+sip-sdmx-code:products-CPC_27 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_27" ;
+    skos:prefLabel "Textile articles other than apparel"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Textile articles other than apparel"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_27 .
+
+
+sip-sdmx-code:products-CPC_28 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_28" ;
+    skos:prefLabel "Knitted or crocheted fabrics; wearing apparel"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Knitted or crocheted fabrics; wearing apparel"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_28 .
+
+
+sip-sdmx-code:products-CPC_29 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_29" ;
+    skos:prefLabel "Leather and leather products; footwear"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Leather and leather products; footwear"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_29 .
+
+
+sip-sdmx-code:products-CPC_3 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_3" ;
+    skos:prefLabel "Other transportable goods, except metal products, machinery and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other transportable goods, except metal products, machinery and equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_3 .
+
+
+sip-sdmx-code:products-CPC_31 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_31" ;
+    skos:prefLabel "Products of wood, cork, straw and plaiting materials"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Products of wood, cork, straw and plaiting materials"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_31 .
+
+
+sip-sdmx-code:products-CPC_32 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_32" ;
+    skos:prefLabel "Pulp, paper and paper products; printed matter and related articles"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Pulp, paper and paper products; printed matter and related articles"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_32 .
+
+
+sip-sdmx-code:products-CPC_33 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_33" ;
+    skos:prefLabel "Coke oven products; refined petroleum products; nuclear fuel"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Coke oven products; refined petroleum products; nuclear fuel"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_33 .
+
+
+sip-sdmx-code:products-CPC_34 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_34" ;
+    skos:prefLabel "Basic chemicals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Basic chemicals"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_34 .
+
+
+sip-sdmx-code:products-CPC_35 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_35" ;
+    skos:prefLabel "Other chemical products; man-made fibres"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other chemical products; man-made fibres"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_35 .
+
+
+sip-sdmx-code:products-CPC_36 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_36" ;
+    skos:prefLabel "Rubber and plastics products"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Rubber and plastics products"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_36 .
+
+
+sip-sdmx-code:products-CPC_37 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_37" ;
+    skos:prefLabel "Glass and glass products and other non-metallic products n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Glass and glass products and other non-metallic products n.e.c."""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_37 .
+
+
+sip-sdmx-code:products-CPC_38 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_38" ;
+    skos:prefLabel "Furniture; other transportable goods n.e.c."@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Furniture; other transportable goods n.e.c."""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_38 .
+
+
+sip-sdmx-code:products-CPC_39 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_39" ;
+    skos:prefLabel "Wastes or scraps"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wastes or scraps"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_39 .
+
+
+sip-sdmx-code:products-CPC_4 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_4" ;
+    skos:prefLabel "Metal products, machinery and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Metal products, machinery and equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_4 .
+
+
+sip-sdmx-code:products-CPC_41 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_41" ;
+    skos:prefLabel "Basic metals"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Basic metals"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_41 .
+
+
+sip-sdmx-code:products-CPC_42 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_42" ;
+    skos:prefLabel "Fabricated metal products, except machinery and equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Fabricated metal products, except machinery and equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_42 .
+
+
+sip-sdmx-code:products-CPC_43 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_43" ;
+    skos:prefLabel "General-purpose machinery"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """General-purpose machinery"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_43 .
+
+
+sip-sdmx-code:products-CPC_44 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_44" ;
+    skos:prefLabel "Special-purpose machinery"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Special-purpose machinery"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_44 .
+
+
+sip-sdmx-code:products-CPC_45 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_45" ;
+    skos:prefLabel "Office, accounting and computing machinery"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Office, accounting and computing machinery"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_45 .
+
+
+sip-sdmx-code:products-CPC_46 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_46" ;
+    skos:prefLabel "Electrical machinery and apparatus"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electrical machinery and apparatus"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_46 .
+
+
+sip-sdmx-code:products-CPC_47 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_47" ;
+    skos:prefLabel "Radio, television and communication equipment and apparatus"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Radio, television and communication equipment and apparatus"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_47 .
+
+
+sip-sdmx-code:products-CPC_48 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_48" ;
+    skos:prefLabel "Medical appliances, precision and optical instruments, watches and clocks"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Medical appliances, precision and optical instruments, watches and clocks"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_48 .
+
+
+sip-sdmx-code:products-CPC_49 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_49" ;
+    skos:prefLabel "Transport equipment"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Transport equipment"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_49 .
+
+
+sip-sdmx-code:products-CPC_5 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_5" ;
+    skos:prefLabel "Constructions and construction services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Constructions and construction services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_5 .
+
+
+sip-sdmx-code:products-CPC_53 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_53" ;
+    skos:prefLabel "Constructions"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Constructions"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_53 .
+
+
+sip-sdmx-code:products-CPC_54 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_54" ;
+    skos:prefLabel "Construction services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Construction services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_54 .
+
+
+sip-sdmx-code:products-CPC_6 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_6" ;
+    skos:prefLabel "Distributive trade services; accommodation, food and beverage serving services; transport services; and electricity, gas and water distribution services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Distributive trade services; accommodation, food and beverage serving services; transport services; and electricity, gas and water distribution services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_6 .
+
+
+sip-sdmx-code:products-CPC_61 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_61" ;
+    skos:prefLabel "Wholesale trade services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Wholesale trade services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_61 .
+
+
+sip-sdmx-code:products-CPC_62 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_62" ;
+    skos:prefLabel "Retail trade services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Retail trade services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_62 .
+
+
+sip-sdmx-code:products-CPC_63 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_63" ;
+    skos:prefLabel "Accommodation, food and beverage services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Accommodation, food and beverage services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_63 .
+
+
+sip-sdmx-code:products-CPC_64 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_64" ;
+    skos:prefLabel "Passenger transport services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Passenger transport services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_64 .
+
+
+sip-sdmx-code:products-CPC_65 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_65" ;
+    skos:prefLabel "Freight transport services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Freight transport services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_65 .
+
+
+sip-sdmx-code:products-CPC_66 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_66" ;
+    skos:prefLabel "Rental services of transport vehicles with operators"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Rental services of transport vehicles with operators"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_66 .
+
+
+sip-sdmx-code:products-CPC_67 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_67" ;
+    skos:prefLabel "Supporting transport services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Supporting transport services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_67 .
+
+
+sip-sdmx-code:products-CPC_68 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_68" ;
+    skos:prefLabel "Postal and courier services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Postal and courier services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_68 .
+
+
+sip-sdmx-code:products-CPC_69 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_69" ;
+    skos:prefLabel "Electricity, gas and water distribution (on own account)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Electricity, gas and water distribution (on own account)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_69 .
+
+
+sip-sdmx-code:products-CPC_7 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_7" ;
+    skos:prefLabel "Financial and related services; real estate services; and rental and leasing services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial and related services; real estate services; and rental and leasing services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_7 .
+
+
+sip-sdmx-code:products-CPC_71 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_71" ;
+    skos:prefLabel "Financial and related services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Financial and related services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_71 .
+
+
+sip-sdmx-code:products-CPC_72 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_72" ;
+    skos:prefLabel "Real estate services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Real estate services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_72 .
+
+
+sip-sdmx-code:products-CPC_73 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_73" ;
+    skos:prefLabel "Leasing or rental services without operator"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Leasing or rental services without operator"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_73 .
+
+
+sip-sdmx-code:products-CPC_8 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_8" ;
+    skos:prefLabel "Business and production services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Business and production services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_8 .
+
+
+sip-sdmx-code:products-CPC_81 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_81" ;
+    skos:prefLabel "Research and development services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Research and development services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_81 .
+
+
+sip-sdmx-code:products-CPC_82 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_82" ;
+    skos:prefLabel "Legal and accounting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Legal and accounting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_82 .
+
+
+sip-sdmx-code:products-CPC_83 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_83" ;
+    skos:prefLabel "Other professional, technical and business services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other professional, technical and business services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_83 .
+
+
+sip-sdmx-code:products-CPC_84 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_84" ;
+    skos:prefLabel "Telecommunications, broadcasting and information supply services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Telecommunications, broadcasting and information supply services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_84 .
+
+
+sip-sdmx-code:products-CPC_85 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_85" ;
+    skos:prefLabel "Support services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Support services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_85 .
+
+
+sip-sdmx-code:products-CPC_86 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_86" ;
+    skos:prefLabel "Support services to agriculture, hunting, forestry, fishing, mining and utilities"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Support services to agriculture, hunting, forestry, fishing, mining and utilities"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_86 .
+
+
+sip-sdmx-code:products-CPC_87 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_87" ;
+    skos:prefLabel "Maintenance, repair and installation (except construction) services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Maintenance, repair and installation (except construction) services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_87 .
+
+
+sip-sdmx-code:products-CPC_88 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_88" ;
+    skos:prefLabel "Manufacturing services on physical inputs owned by others"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Manufacturing services on physical inputs owned by others"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_88 .
+
+
+sip-sdmx-code:products-CPC_89 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_89" ;
+    skos:prefLabel "Other manufacturing services; publishing, printing and reproduction services; materials recovery services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other manufacturing services; publishing, printing and reproduction services; materials recovery services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_89 .
+
+
+sip-sdmx-code:products-CPC_9 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_9" ;
+    skos:prefLabel "Community, social and personal services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Community, social and personal services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_9 .
+
+
+sip-sdmx-code:products-CPC_91 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_91" ;
+    skos:prefLabel "Public administration and other services provided to the community as a whole; compulsory social security services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Public administration and other services provided to the community as a whole; compulsory social security services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_91 .
+
+
+sip-sdmx-code:products-CPC_92 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_92" ;
+    skos:prefLabel "Education services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Education services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_92 .
+
+
+sip-sdmx-code:products-CPC_93 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_93" ;
+    skos:prefLabel "Human health and social care services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Human health and social care services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_93 .
+
+
+sip-sdmx-code:products-CPC_94 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_94" ;
+    skos:prefLabel "Sewage and waste collection, treatment and disposal and other environmental protection services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sewage and waste collection, treatment and disposal and other environmental protection services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_94 .
+
+
+sip-sdmx-code:products-CPC_95 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_95" ;
+    skos:prefLabel "Services of membership organizations"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services of membership organizations"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_95 .
+
+
+sip-sdmx-code:products-CPC_96 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_96" ;
+    skos:prefLabel "Recreational, cultural and sporting services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Recreational, cultural and sporting services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_96 .
+
+
+sip-sdmx-code:products-CPC_97 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_97" ;
+    skos:prefLabel "Other services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_97 .
+
+
+sip-sdmx-code:products-CPC_98 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_98" ;
+    skos:prefLabel "Domestic services"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Domestic services"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_98 .
+
+
+sip-sdmx-code:products-CPC_99 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "CPC_99" ;
+    skos:prefLabel "Services provided by extraterritorial organizations and bodies"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Services provided by extraterritorial organizations and bodies"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-CPC_99 .
+
+
+sip-sdmx-code:products-FAO_1017 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_1017" ;
+    skos:prefLabel "Meat, goat"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Meat, goat"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_1017 .
+
+
+sip-sdmx-code:products-FAO_1020 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_1020" ;
+    skos:prefLabel "Milk, whole fresh goat"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Milk, whole fresh goat"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_1020 .
+
+
+sip-sdmx-code:products-FAO_1035 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_1035" ;
+    skos:prefLabel "Meat, pig"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Meat, pig"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_1035 .
+
+
+sip-sdmx-code:products-FAO_1058 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_1058" ;
+    skos:prefLabel "Meat, chicken"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Meat, chicken"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_1058 .
+
+
+sip-sdmx-code:products-FAO_1062 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_1062" ;
+    skos:prefLabel "Eggs, hen, in shell"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Eggs, hen, in shell"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_1062 .
+
+
+sip-sdmx-code:products-FAO_1718 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_1718" ;
+    skos:prefLabel "Cereals excluding rice"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Cereals excluding rice"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_1718 .
+
+
+sip-sdmx-code:products-FAO_27 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_27" ;
+    skos:prefLabel "Rice, paddy"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Rice, paddy"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_27 .
+
+
+sip-sdmx-code:products-FAO_867 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_867" ;
+    skos:prefLabel "Meat, cattle"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Meat, cattle"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_867 .
+
+
+sip-sdmx-code:products-FAO_882 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_882" ;
+    skos:prefLabel "Milk, whole fresh cow"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Milk, whole fresh cow"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_882 .
+
+
+sip-sdmx-code:products-FAO_977 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_977" ;
+    skos:prefLabel "Meat, sheep"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Meat, sheep"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_977 .
+
+
+sip-sdmx-code:products-FAO_982 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "FAO_982" ;
+    skos:prefLabel "Milk, whole fresh sheep"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Milk, whole fresh sheep"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-FAO_982 .
+
+
+sip-sdmx-code:products-MF1 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF1" ;
+    skos:prefLabel "Biomass (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Biomass (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF1 .
+
+
+sip-sdmx-code:products-MF11 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF11" ;
+    skos:prefLabel "Crops (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Crops (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF11 .
+
+
+sip-sdmx-code:products-MF121 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF121" ;
+    skos:prefLabel "Crop residues (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Crop residues (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF121 .
+
+
+sip-sdmx-code:products-MF122 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF122" ;
+    skos:prefLabel "Grazed biomass and fodder crops (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Grazed biomass and fodder crops (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF122 .
+
+
+sip-sdmx-code:products-MF13 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF13" ;
+    skos:prefLabel "Wood (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Wood (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF13 .
+
+
+sip-sdmx-code:products-MF14 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF14" ;
+    skos:prefLabel "Wild catch and harvest (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Wild catch and harvest (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF14 .
+
+
+sip-sdmx-code:products-MF2 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF2" ;
+    skos:prefLabel "Metal ores (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Metal ores (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF2 .
+
+
+sip-sdmx-code:products-MF21 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF21" ;
+    skos:prefLabel "Ferrous ores (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Ferrous ores (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF21 .
+
+
+sip-sdmx-code:products-MF22 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF22" ;
+    skos:prefLabel "Non-ferrous ores (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Non-ferrous ores (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF22 .
+
+
+sip-sdmx-code:products-MF3 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF3" ;
+    skos:prefLabel "Non-metallic minerals (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Non-metallic minerals (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF3 .
+
+
+sip-sdmx-code:products-MF4 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF4" ;
+    skos:prefLabel "Fossil fuels (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Fossil fuels (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF4 .
+
+
+sip-sdmx-code:products-MF41 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF41" ;
+    skos:prefLabel "Coal (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Coal (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF41 .
+
+
+sip-sdmx-code:products-MF413 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF413" ;
+    skos:prefLabel "Oil shale and tar sands (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Oil shale and tar sands (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF413 .
+
+
+sip-sdmx-code:products-MF421 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF421" ;
+    skos:prefLabel "Petroleum (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Petroleum (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF421 .
+
+
+sip-sdmx-code:products-MF422 a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF422" ;
+    skos:prefLabel "Natural gas (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Natural gas (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF422 .
+
+
+sip-sdmx-code:products-MF_AGG3A a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF_AGG3A" ;
+    skos:prefLabel "Non-metallic minerals - construction dominant (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Non-metallic minerals - construction dominant (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF_AGG3A .
+
+
+sip-sdmx-code:products-MF_AGG3B a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "MF_AGG3B" ;
+    skos:prefLabel "Non-metallic minerals - industrial or agricultural dominant (material flows)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """Non-metallic minerals - industrial or agricultural dominant (material flows)"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-MF_AGG3B .
+
+
+sip-sdmx-code:products-_T a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total"""@en ],
+                      [sip-sdmx-agency:agenciesID sip-sdmx-agency:IAEG-SDGs ; rdfs:label """No breakdown"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-_T .
+
+
+sip-sdmx-code:products-_U a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "_U" ;
+    skos:prefLabel "Unknown"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Unknown"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-_U .
+
+
+sip-sdmx-code:products-_X a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "_X" ;
+    skos:prefLabel "Unspecified"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Unspecified"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-_X .
+
+
+sip-sdmx-code:products-_Z a skos:Concept, sip-sdmx-code:Products;
+    skos:topConceptOf sip-sdmx-code:products ;
+    skos:inScheme sip-sdmx-code:products ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Not applicable"""@en ] .
+
+sip-sdmx-code:products skos:hasTopConcept sip-sdmx-code:products-_Z .
+

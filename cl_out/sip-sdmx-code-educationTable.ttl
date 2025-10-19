@@ -1,0 +1,694 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_EDUCATIONTABLE Scheme Definition
+#####################################################
+
+sip-sdmx-code:educationTable a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Table identifier - codelist scheme"@en ;
+    rdfs:label "Table identifier - codelist scheme"@en ;
+    skos:notation "CL_EDUCATIONTABLE" ;
+    skos:definition "A reference educationTable codelist based on UIS:CL_EDU_TABLEID(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_EDU_TABLEID/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:EducationTable .
+
+sip-sdmx-code:EducationTable a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Table identifier - codelist class"@en ;
+    rdfs:label "Table identifier - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable .
+
+
+########################################
+# CL_EDUCATIONTABLE Codes
+########################################
+    
+sip-sdmx-code:educationTable-A1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A1" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A1"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A1"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A1 .
+
+
+sip-sdmx-code:educationTable-A10 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A10" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A10"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A10"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A10 .
+
+
+sip-sdmx-code:educationTable-A11 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A11" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A11"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A11"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A11 .
+
+
+sip-sdmx-code:educationTable-A12 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A12" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A12"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A12"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A12 .
+
+
+sip-sdmx-code:educationTable-A13 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A13" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A13"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A13"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A13 .
+
+
+sip-sdmx-code:educationTable-A14 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A14" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A14"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A14"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A14 .
+
+
+sip-sdmx-code:educationTable-A15 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A15" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A15"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A15"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A15 .
+
+
+sip-sdmx-code:educationTable-A2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A2" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A2"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A2"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A2 .
+
+
+sip-sdmx-code:educationTable-A3 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A3" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A3"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A3"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A3 .
+
+
+sip-sdmx-code:educationTable-A4 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A4" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A4"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A4"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A4 .
+
+
+sip-sdmx-code:educationTable-A5 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A5" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A5"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A5"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A5 .
+
+
+sip-sdmx-code:educationTable-A6 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A6" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A6"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A6"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A6 .
+
+
+sip-sdmx-code:educationTable-A7 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A7" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A7"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A7"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A7 .
+
+
+sip-sdmx-code:educationTable-A8 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A8" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A8"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A8"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A8 .
+
+
+sip-sdmx-code:educationTable-A9 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "A9" ;
+    skos:prefLabel "UIS Questionnaire A (ISC 0-4)_Table: A9"@en ;
+    rdfs:label "UIS Questionnaire A (ISC 0-4)_Table: A9"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-A9 .
+
+
+sip-sdmx-code:educationTable-B1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "B1" ;
+    skos:prefLabel "UIS Questionnaire B (Expenditure)_Table: B1"@en ;
+    rdfs:label "UIS Questionnaire B (Expenditure)_Table: B1"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-B1 .
+
+
+sip-sdmx-code:educationTable-B2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "B2" ;
+    skos:prefLabel "UIS Questionnaire B (Expenditure)_Table: B2"@en ;
+    rdfs:label "UIS Questionnaire B (Expenditure)_Table: B2"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-B2 .
+
+
+sip-sdmx-code:educationTable-B3 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "B3" ;
+    skos:prefLabel "UIS Questionnaire B (Expenditure)_Table: B3"@en ;
+    rdfs:label "UIS Questionnaire B (Expenditure)_Table: B3"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-B3 .
+
+
+sip-sdmx-code:educationTable-B4 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "B4" ;
+    skos:prefLabel "UIS Questionnaire B (Expenditure)_Table: B4"@en ;
+    rdfs:label "UIS Questionnaire B (Expenditure)_Table: B4"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-B4 .
+
+
+sip-sdmx-code:educationTable-C1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C1" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C1"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C1"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C1 .
+
+
+sip-sdmx-code:educationTable-C2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C2" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C2"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C2"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C2 .
+
+
+sip-sdmx-code:educationTable-C3 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C3" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C3"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C3"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C3 .
+
+
+sip-sdmx-code:educationTable-C4 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C4" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C4"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C4"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C4 .
+
+
+sip-sdmx-code:educationTable-C5 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C5" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C5"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C5"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C5 .
+
+
+sip-sdmx-code:educationTable-C6 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C6" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C6"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C6"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C6 .
+
+
+sip-sdmx-code:educationTable-C7 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C7" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C7"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C7"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C7 .
+
+
+sip-sdmx-code:educationTable-C8 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C8" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C8"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C8"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C8 .
+
+
+sip-sdmx-code:educationTable-C9 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "C9" ;
+    skos:prefLabel "UIS Questionnaire C (ISC 5-8)_Table: C9"@en ;
+    rdfs:label "UIS Questionnaire C (ISC 5-8)_Table: C9"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-C9 .
+
+
+sip-sdmx-code:educationTable-CLASS1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "CLASS1" ;
+    skos:prefLabel "UOE Questionnaire_Table: CLASS1 - Count by type of institution  and education level ,"@en ;
+    rdfs:label "UOE Questionnaire_Table: CLASS1 - Count by type of institution  and education level ,"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-CLASS1 .
+
+
+sip-sdmx-code:educationTable-CREDMOB1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "CREDMOB1" ;
+    skos:prefLabel "EUROSTAT Questionnaire CREDMOB1-SCHEME  Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire CREDMOB1-SCHEME  Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-CREDMOB1 .
+
+
+sip-sdmx-code:educationTable-CREDMOB2A a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "CREDMOB2A" ;
+    skos:prefLabel "EUROSTAT Questionnaire CREDMOB2A-DEST Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire CREDMOB2A-DEST Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-CREDMOB2A .
+
+
+sip-sdmx-code:educationTable-CREDMOB2B a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "CREDMOB2B" ;
+    skos:prefLabel "EUROSTAT Questionnaire CREDMOB2B-DEST Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire CREDMOB2B-DEST Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-CREDMOB2B .
+
+
+sip-sdmx-code:educationTable-DEM1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "DEM1" ;
+    skos:prefLabel "UOE Questionnaire_Table: DEM1 - Count by  age and sex,"@en ;
+    rdfs:label "UOE Questionnaire_Table: DEM1 - Count by  age and sex,"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-DEM1 .
+
+
+sip-sdmx-code:educationTable-ENRL1A a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL1A" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL1A - Count  by type of institution, intensity of participation, sex  and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL1A - Count  by type of institution, intensity of participation, sex  and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL1A .
+
+
+sip-sdmx-code:educationTable-ENRL1B a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL1B" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL1B - Count  by type of institution, intensity of participation, sex  and education level (subcategory/ completion and access to higher level)"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL1B - Count  by type of institution, intensity of participation, sex  and education level (subcategory/ completion and access to higher level)"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL1B .
+
+
+sip-sdmx-code:educationTable-ENRL2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL2" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL2 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL2 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL2 .
+
+
+sip-sdmx-code:educationTable-ENRL3 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL3" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL3 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL3 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL3 .
+
+
+sip-sdmx-code:educationTable-ENRL4 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL4" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL4 - Count by field of education, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL4 - Count by field of education, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL4 .
+
+
+sip-sdmx-code:educationTable-ENRL5 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL5" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL5 - Count by field of education, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL5 - Count by field of education, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL5 .
+
+
+sip-sdmx-code:educationTable-ENRL6 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL6" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL6 - Count by country of origin, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL6 - Count by country of origin, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL6 .
+
+
+sip-sdmx-code:educationTable-ENRL7 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL7" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL7 - Count by grade, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL7 - Count by grade, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL7 .
+
+
+sip-sdmx-code:educationTable-ENRL8 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL8" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL8 - Count by age, grade, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL8 - Count by age, grade, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL8 .
+
+
+sip-sdmx-code:educationTable-ENRL9 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENRL9" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENRL9 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENRL9 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENRL9 .
+
+
+sip-sdmx-code:educationTable-ENTR1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENTR1" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENTR1 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENTR1 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENTR1 .
+
+
+sip-sdmx-code:educationTable-ENTR2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENTR2" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENTR2 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENTR2 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENTR2 .
+
+
+sip-sdmx-code:educationTable-ENTR3 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENTR3" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENTR3 - Count by field of education, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENTR3 - Count by field of education, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENTR3 .
+
+
+sip-sdmx-code:educationTable-ENTR4 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "ENTR4" ;
+    skos:prefLabel "UOE Questionnaire_Table: ENTR4 - Count by age, grade, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: ENTR4 - Count by age, grade, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-ENTR4 .
+
+
+sip-sdmx-code:educationTable-FIN1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "FIN1" ;
+    skos:prefLabel "UOE Questionnaire_Table: FIN1 - Sum by source, destination and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: FIN1 - Sum by source, destination and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-FIN1 .
+
+
+sip-sdmx-code:educationTable-FIN2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "FIN2" ;
+    skos:prefLabel "UOE Questionnaire_Table: FIN2 - Sum by type of institution, nature and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: FIN2 - Sum by type of institution, nature and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-FIN2 .
+
+
+sip-sdmx-code:educationTable-FINSTU a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "FINSTU" ;
+    skos:prefLabel "UOE Questionnaire_Table: FINSTU - Count by type of institution, intensity of participation and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: FINSTU - Count by type of institution, intensity of participation and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-FINSTU .
+
+
+sip-sdmx-code:educationTable-GRAD1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "GRAD1" ;
+    skos:prefLabel "UOE Questionnaire_Table: GRAD1 - Count  by type of institution, sex  and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: GRAD1 - Count  by type of institution, sex  and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-GRAD1 .
+
+
+sip-sdmx-code:educationTable-GRAD2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "GRAD2" ;
+    skos:prefLabel "UOE Questionnaire_Table: GRAD2 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: GRAD2 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-GRAD2 .
+
+
+sip-sdmx-code:educationTable-GRAD3 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "GRAD3" ;
+    skos:prefLabel "UOE Questionnaire_Table: GRAD3 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: GRAD3 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-GRAD3 .
+
+
+sip-sdmx-code:educationTable-GRAD4 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "GRAD4" ;
+    skos:prefLabel "UOE Questionnaire_Table: GRAD4 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: GRAD4 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-GRAD4 .
+
+
+sip-sdmx-code:educationTable-GRAD5 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "GRAD5" ;
+    skos:prefLabel "UOE Questionnaire_Table: GRAD5 - Count by field of education, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: GRAD5 - Count by field of education, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-GRAD5 .
+
+
+sip-sdmx-code:educationTable-GRAD6 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "GRAD6" ;
+    skos:prefLabel "UOE Questionnaire_Table: GRAD6 - Count by field of education, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: GRAD6 - Count by field of education, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-GRAD6 .
+
+
+sip-sdmx-code:educationTable-GRAD7 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "GRAD7" ;
+    skos:prefLabel "UOE Questionnaire_Table: GRAD7 - Count by country of origin, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: GRAD7 - Count by country of origin, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-GRAD7 .
+
+
+sip-sdmx-code:educationTable-LANG a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "LANG" ;
+    skos:prefLabel "EUROSTAT Questionnaire LANG Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire LANG Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-LANG .
+
+
+sip-sdmx-code:educationTable-LANG1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "LANG1" ;
+    skos:prefLabel "EUROSTAT Questionnaire LANG1-LANGUAGE Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire LANG1-LANGUAGE Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-LANG1 .
+
+
+sip-sdmx-code:educationTable-LANG2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "LANG2" ;
+    skos:prefLabel "EUROSTAT Questionnaire LANG2-NBRLANG-AGE Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire LANG2-NBRLANG-AGE Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-LANG2 .
+
+
+sip-sdmx-code:educationTable-PERS1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "PERS1" ;
+    skos:prefLabel "UOE Questionnaire_Table: PERS1 - Count by type of institution, intensity of participation and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: PERS1 - Count by type of institution, intensity of participation and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-PERS1 .
+
+
+sip-sdmx-code:educationTable-PERS2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "PERS2" ;
+    skos:prefLabel "UOE Questionnaire_Table: PERS2 - Count  by type of institution, intensity of participation, sex  and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: PERS2 - Count  by type of institution, intensity of participation, sex  and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-PERS2 .
+
+
+sip-sdmx-code:educationTable-PERS3 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "PERS3" ;
+    skos:prefLabel "UOE Questionnaire_Table: PERS3 - Count by age, sex and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: PERS3 - Count by age, sex and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-PERS3 .
+
+
+sip-sdmx-code:educationTable-PERS4 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "PERS4" ;
+    skos:prefLabel "UOE Questionnaire_Table: PERS4 - Count by sex, intensity of participation and education level"@en ;
+    rdfs:label "UOE Questionnaire_Table: PERS4 - Count by sex, intensity of participation and education level"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-PERS4 .
+
+
+sip-sdmx-code:educationTable-REGIO1 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "REGIO1" ;
+    skos:prefLabel "EUROSTAT Questionnaire REGIO1-LEVEL Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire REGIO1-LEVEL Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-REGIO1 .
+
+
+sip-sdmx-code:educationTable-REGIO2 a skos:Concept, sip-sdmx-code:EducationTable;
+    skos:topConceptOf sip-sdmx-code:educationTable ;
+    skos:inScheme sip-sdmx-code:educationTable ;
+    skos:notation "REGIO2" ;
+    skos:prefLabel "EUROSTAT Questionnaire REGIO2-AGE Questionnaire"@en ;
+    rdfs:label "EUROSTAT Questionnaire REGIO2-AGE Questionnaire"@en .
+
+sip-sdmx-code:educationTable skos:hasTopConcept sip-sdmx-code:educationTable-REGIO2 .
+

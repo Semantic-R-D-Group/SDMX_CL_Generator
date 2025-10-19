@@ -1,0 +1,24 @@
+TTL File,ConceptScheme Label
+cl_out/sip-sdmx-code-activity.ttl,Activity - ANZSIC 2006
+cl_out/sip-sdmx-code-seasonalAdjust.ttl,Seasonal Adjustment
+cl_out/sip-sdmx-code-institutSec.ttl,Institutional sector
+cl_out/sip-sdmx-code-itemStocks.ttl,"Stocks, Transactions, Other Flows"
+cl_out/sip-sdmx-code-sex.ttl,Sex code list
+cl_out/sip-sdmx-code-timePerCollect.ttl,Time period collection code list
+cl_out/sip-sdmx-code-transformation.ttl,Time Transformation
+cl_out/sip-sdmx-code-unitMeasure.ttl,SDG Unit of Measure code list
+cl_out/sip-sdmx-code-age.ttl,Age
+cl_out/sip-sdmx-code-urbanisation.ttl,Code list for degree of urbanisation
+cl_out/sip-sdmx-code-workStatus.ttl,SCL - Activity and employment status
+cl_out/sip-sdmx-code-area.ttl,SDG reference area code list
+cl_out/sip-sdmx-code-expenditureCofog.ttl,Classification of the Functions of Government
+cl_out/sip-sdmx-code-expenditureCoipop.ttl,COICOP
+cl_out/sip-sdmx-code-expenditureCopni.ttl,COPNI
+cl_out/sip-sdmx-code-expenditureCopp.ttl,Classification of the Outlays of Producers According to Purpose
+cl_out/sip-sdmx-code-custom.ttl,Custom breakdown code list (NA)
+cl_out/sip-sdmx-code-educationLev.ttl,SDG Education Level code list
+cl_out/sip-sdmx-code-assets.ttl,Instrument and Assets Classification
+cl_out/sip-sdmx-code-lands.ttl,Land use
+cl_out/sip-sdmx-code-stocksTrans.ttl,"Stocks, Transactions, Other Flows"
+cl_out/sip-sdmx-code-obsStatus.ttl,Observation status
+cl_out/sip-sdmx-code-products.ttl,Product classification

@@ -1,0 +1,214 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_PENSFUNDTYPE Scheme Definition
+#####################################################
+
+sip-sdmx-code:pensFundType a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Pension Fund Type - codelist scheme"@en ;
+    rdfs:label "Pension Fund Type - codelist scheme"@en ;
+    skos:notation "CL_PENSFUNDTYPE" ;
+    skos:definition "A reference pensFundType codelist based on ESTAT:CL_PENS_FUNDTYPE(1.2)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_PENS_FUNDTYPE/1.2> ;
+    rdfs:seeAlso sip-sdmx-code:PensFundType .
+
+sip-sdmx-code:PensFundType a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Pension Fund Type - codelist class"@en ;
+    rdfs:label "Pension Fund Type - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType .
+
+
+########################################
+# CL_PENSFUNDTYPE Codes
+########################################
+    
+sip-sdmx-code:pensFundType-S12P a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S12P" ;
+    skos:prefLabel "All pension schemes, pension fund S12 - manager is not general government"@en ;
+    rdfs:label "All pension schemes, pension fund S12 - manager is not general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S12P .
+
+
+sip-sdmx-code:pensFundType-S12PB a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S12PB" ;
+    skos:prefLabel "Defined benefit schemes, pension fund S12 - manager is not general government"@en ;
+    rdfs:label "Defined benefit schemes, pension fund S12 - manager is not general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S12PB .
+
+
+sip-sdmx-code:pensFundType-S12PBI a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S12PBI" ;
+    skos:prefLabel "Defined benefit schemes, entitlements included in the core accounts, pension fund S12 - manager is general government"@en ;
+    rdfs:label "Defined benefit schemes, entitlements included in the core accounts, pension fund S12 - manager is general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S12PBI .
+
+
+sip-sdmx-code:pensFundType-S12PC a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S12PC" ;
+    skos:prefLabel "Defined contributions schemes, pension fund S12 - manager is not general government"@en ;
+    rdfs:label "Defined contributions schemes, pension fund S12 - manager is not general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S12PC .
+
+
+sip-sdmx-code:pensFundType-S13P a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S13P" ;
+    skos:prefLabel "All pension schemes, pension fund S13 - manager is general government"@en ;
+    rdfs:label "All pension schemes, pension fund S13 - manager is general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S13P .
+
+
+sip-sdmx-code:pensFundType-S13PB a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S13PB" ;
+    skos:prefLabel "Defined benefit schemes, pension fund S13 - manager is general government"@en ;
+    rdfs:label "Defined benefit schemes, pension fund S13 - manager is general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S13PB .
+
+
+sip-sdmx-code:pensFundType-S13PBI a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S13PBI" ;
+    skos:prefLabel "Defined benefit schemes, entitlements included in the core accounts, pension fund S13 - manager is general government"@en ;
+    rdfs:label "Defined benefit schemes, entitlements included in the core accounts, pension fund S13 - manager is general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S13PBI .
+
+
+sip-sdmx-code:pensFundType-S13PBJ a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S13PBJ" ;
+    skos:prefLabel "Defined benefit schemes, entitlements included in the core accounts and classified in general government S13, pension manager S13 [deprecated]"@en ;
+    rdfs:label "Defined benefit schemes, entitlements included in the core accounts and classified in general government S13, pension manager S13 [deprecated]"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S13PBJ .
+
+
+sip-sdmx-code:pensFundType-S13PBX a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S13PBX" ;
+    skos:prefLabel "Defined benefit schemes, entitlements excluded from the core accounts, pension fund S13 - manager is general government"@en ;
+    rdfs:label "Defined benefit schemes, entitlements excluded from the core accounts, pension fund S13 - manager is general government"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S13PBX .
+
+
+sip-sdmx-code:pensFundType-S13PC a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S13PC" ;
+    skos:prefLabel "Defined contributions schemes, pension fund S13"@en ;
+    rdfs:label "Defined contributions schemes, pension fund S13"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S13PC .
+
+
+sip-sdmx-code:pensFundType-S13PS a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S13PS" ;
+    skos:prefLabel "Social security pension schemes, excluded from the core accounts, pension fund S13"@en ;
+    rdfs:label "Social security pension schemes, excluded from the core accounts, pension fund S13"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S13PS .
+
+
+sip-sdmx-code:pensFundType-S1P a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S1P" ;
+    skos:prefLabel "All pension schemes [deprecated]: Total (_T) to be used instead"@en ;
+    rdfs:label "All pension schemes [deprecated]: Total (_T) to be used instead"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S1P .
+
+
+sip-sdmx-code:pensFundType-S1PB a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S1PB" ;
+    skos:prefLabel "All defined benefit schemes"@en ;
+    rdfs:label "All defined benefit schemes"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S1PB .
+
+
+sip-sdmx-code:pensFundType-S1PC a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S1PC" ;
+    skos:prefLabel "All defined contribution schemes"@en ;
+    rdfs:label "All defined contribution schemes"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S1PC .
+
+
+sip-sdmx-code:pensFundType-S1R a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S1R" ;
+    skos:prefLabel "Social insurance pension entitlements of resident households in the rest of the world"@en ;
+    rdfs:label "Social insurance pension entitlements of resident households in the rest of the world"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S1R .
+
+
+sip-sdmx-code:pensFundType-S1T a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "S1T" ;
+    skos:prefLabel "Total (domestic + abroad) social insurance pension entitlements of resident households"@en ;
+    rdfs:label "Total (domestic + abroad) social insurance pension entitlements of resident households"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-S1T .
+
+
+sip-sdmx-code:pensFundType-_T a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-_T .
+
+
+sip-sdmx-code:pensFundType-_Z a skos:Concept, sip-sdmx-code:PensFundType;
+    skos:topConceptOf sip-sdmx-code:pensFundType ;
+    skos:inScheme sip-sdmx-code:pensFundType ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:pensFundType skos:hasTopConcept sip-sdmx-code:pensFundType-_Z .
+

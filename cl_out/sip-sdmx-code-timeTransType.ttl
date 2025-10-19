@@ -1,0 +1,165 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_TIMETRANSTYPE Scheme Definition
+#####################################################
+
+sip-sdmx-code:timeTransType a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Time Transformation Type - codelist scheme"@en ;
+    rdfs:label "Time Transformation Type - codelist scheme"@en ;
+    skos:notation "CL_TIMETRANSTYPE" ;
+    skos:definition "A reference timeTransType codelist based on SDMX:CL_TIMETRANS_TYPE(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_TIMETRANS_TYPE/1.0> ;
+    skos:note "SDMX:CL_TIMETRANS_TYPE(1.0): Code list for time-related transformation types of time series."@en ;
+    rdfs:seeAlso sip-sdmx-code:TimeTransType .
+
+sip-sdmx-code:TimeTransType a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Time Transformation Type - codelist class"@en ;
+    rdfs:label "Time Transformation Type - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType .
+
+
+########################################
+# CL_TIMETRANSTYPE Codes
+########################################
+    
+sip-sdmx-code:timeTransType-A a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "A" ;
+    skos:prefLabel "Average"@en ;
+    rdfs:label "Average"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-A .
+
+
+sip-sdmx-code:timeTransType-C a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "C" ;
+    skos:prefLabel "Cumulated sum"@en ;
+    rdfs:label "Cumulated sum"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-C .
+
+
+sip-sdmx-code:timeTransType-D a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "D" ;
+    skos:prefLabel "Difference"@en ;
+    rdfs:label "Difference"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-D .
+
+
+sip-sdmx-code:timeTransType-DD a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "DD" ;
+    skos:prefLabel "Difference, second order"@en ;
+    rdfs:label "Difference, second order"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-DD .
+
+
+sip-sdmx-code:timeTransType-F a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "F" ;
+    skos:prefLabel "Growth rate, flow over stock"@en ;
+    rdfs:label "Growth rate, flow over stock"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-F .
+
+
+sip-sdmx-code:timeTransType-FC a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "FC" ;
+    skos:prefLabel "Contribution to growth, flow over stock"@en ;
+    rdfs:label "Contribution to growth, flow over stock"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-FC .
+
+
+sip-sdmx-code:timeTransType-G a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "G" ;
+    skos:prefLabel "Growth rate"@en ;
+    rdfs:label "Growth rate"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-G .
+
+
+sip-sdmx-code:timeTransType-GC a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "GC" ;
+    skos:prefLabel "Contribution to growth"@en ;
+    rdfs:label "Contribution to growth"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-GC .
+
+
+sip-sdmx-code:timeTransType-I a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "I" ;
+    skos:prefLabel "Index"@en ;
+    rdfs:label "Index"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-I .
+
+
+sip-sdmx-code:timeTransType-LA a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "LA" ;
+    skos:prefLabel "Annualised levels"@en ;
+    rdfs:label "Annualised levels"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-LA .
+
+
+sip-sdmx-code:timeTransType-N a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "N" ;
+    skos:prefLabel "Non transformed"@en ;
+    rdfs:label "Non transformed"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-N .
+
+
+sip-sdmx-code:timeTransType-S a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "S" ;
+    skos:prefLabel "Shifted"@en ;
+    rdfs:label "Shifted"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-S .
+
+
+sip-sdmx-code:timeTransType-_O a skos:Concept, sip-sdmx-code:TimeTransType;
+    skos:topConceptOf sip-sdmx-code:timeTransType ;
+    skos:inScheme sip-sdmx-code:timeTransType ;
+    skos:notation "_O" ;
+    skos:prefLabel "Other transformation"@en ;
+    rdfs:label "Other transformation"@en .
+
+sip-sdmx-code:timeTransType skos:hasTopConcept sip-sdmx-code:timeTransType-_O .
+

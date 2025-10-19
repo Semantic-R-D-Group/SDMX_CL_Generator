@@ -1,0 +1,259 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_OBSSTATUS Scheme Definition
+#####################################################
+
+sip-sdmx-code:obsStatus a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Observation status - codelist scheme"@en ;
+    rdfs:label "Observation status - codelist scheme"@en ;
+    skos:altLabel "Observation Status - codelist scheme"@en ;
+    skos:notation "CL_OBSSTATUS" ;
+    skos:definition "A reference obsStatus codelist combining ESTAT:CL_OBS_STATUS(2.3), SDMX:CL_OBS_STATUS(2.2)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_OBS_STATUS/2.3> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_OBS_STATUS/2.2> ;
+    rdfs:seeAlso sip-sdmx-concept:OBS_STATUS ;
+    skos:related sip-sdmx-concept:OBS_STATUS ;
+    rdfs:seeAlso sip-sdmx-code:ObsStatus .
+
+sip-sdmx-code:obsStatus skos:exactMatch sdmx-code:obsStatus .
+
+sip-sdmx-code:ObsStatus a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Observation status - codelist class"@en ;
+    rdfs:label "Observation status - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus .
+
+
+########################################
+# CL_OBSSTATUS Codes
+########################################
+    
+sip-sdmx-code:obsStatus-A a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "A" ;
+    skos:prefLabel "Normal value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Normal value"""@en ] .
+
+sip-sdmx-code:obsStatus-A skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-A> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-A .
+
+
+sip-sdmx-code:obsStatus-B a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "B" ;
+    skos:prefLabel "Time series break"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Time series break"""@en ] .
+
+sip-sdmx-code:obsStatus-B skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-B> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-B .
+
+
+sip-sdmx-code:obsStatus-D a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "D" ;
+    skos:prefLabel "Definition differs"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Definition differs"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-D .
+
+
+sip-sdmx-code:obsStatus-E a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "E" ;
+    skos:prefLabel "Estimated value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Estimated value"""@en ] .
+
+sip-sdmx-code:obsStatus-E skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-E> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-E .
+
+
+sip-sdmx-code:obsStatus-F a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "F" ;
+    skos:prefLabel "Forecast value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Forecast value"""@en ] .
+
+sip-sdmx-code:obsStatus-F skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-F> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-F .
+
+
+sip-sdmx-code:obsStatus-G a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "G" ;
+    skos:prefLabel "Experimental value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Experimental value"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-G .
+
+
+sip-sdmx-code:obsStatus-H a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "H" ;
+    skos:prefLabel "Missing value; holiday or weekend"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Missing value; holiday or weekend"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-H .
+
+
+sip-sdmx-code:obsStatus-I a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "I" ;
+    skos:prefLabel "Value imputed by a receiving agency"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Value imputed by a receiving agency"""@en ] .
+
+sip-sdmx-code:obsStatus-I skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-I> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-I .
+
+
+sip-sdmx-code:obsStatus-J a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "J" ;
+    skos:prefLabel "Derogation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Derogation"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-J .
+
+
+sip-sdmx-code:obsStatus-K a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "K" ;
+    skos:prefLabel "Data included in another category"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Data included in another category"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-K .
+
+
+sip-sdmx-code:obsStatus-L a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "L" ;
+    skos:prefLabel "Missing value; data exist but were not collected"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Missing value; data exist but were not collected"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-L .
+
+
+sip-sdmx-code:obsStatus-M a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "M" ;
+    skos:prefLabel "Missing value; data cannot exist"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Missing value; data cannot exist"""@en ] .
+
+sip-sdmx-code:obsStatus-M skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-M> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-M .
+
+
+sip-sdmx-code:obsStatus-N a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "N" ;
+    skos:prefLabel "Not significant"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Not significant"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-N .
+
+
+sip-sdmx-code:obsStatus-O a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "O" ;
+    skos:prefLabel "Missing value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Missing value"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-O .
+
+
+sip-sdmx-code:obsStatus-P a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "P" ;
+    skos:prefLabel "Provisional value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Provisional value"""@en ] .
+
+sip-sdmx-code:obsStatus-P skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-P> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-P .
+
+
+sip-sdmx-code:obsStatus-Q a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "Q" ;
+    skos:prefLabel "Missing value; suppressed"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Missing value; suppressed"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-Q .
+
+
+sip-sdmx-code:obsStatus-R a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "R" ;
+    skos:prefLabel "Revised value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Revised value"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-R .
+
+
+sip-sdmx-code:obsStatus-S a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "S" ;
+    skos:prefLabel "Strike and other special events"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Strike and other special events"""@en ] .
+
+sip-sdmx-code:obsStatus-S skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-S> .
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-S .
+
+
+sip-sdmx-code:obsStatus-U a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "U" ;
+    skos:prefLabel "Low reliability"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Low reliability"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-U .
+
+
+sip-sdmx-code:obsStatus-V a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "V" ;
+    skos:prefLabel "Unvalidated value"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Unvalidated value"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-V .
+
+
+sip-sdmx-code:obsStatus-W a skos:Concept, sip-sdmx-code:ObsStatus;
+    skos:topConceptOf sip-sdmx-code:obsStatus ;
+    skos:inScheme sip-sdmx-code:obsStatus ;
+    skos:notation "W" ;
+    skos:prefLabel "Includes data from another category"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:SDMX ; rdfs:label """Includes data from another category"""@en ] .
+
+sip-sdmx-code:obsStatus skos:hasTopConcept sip-sdmx-code:obsStatus-W .
+

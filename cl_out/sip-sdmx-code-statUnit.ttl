@@ -1,0 +1,346 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_STATUNIT Scheme Definition
+#####################################################
+
+sip-sdmx-code:statUnit a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Statistical unit - codelist scheme"@en ;
+    rdfs:label "Statistical unit - codelist scheme"@en ;
+    skos:altLabel "Statistical unit code list - codelist scheme"@en ;
+    skos:notation "CL_STATUNIT" ;
+    skos:definition "A reference statUnit codelist combining OECD:CL_STAT_UNIT(1.0), UIS:CL_STAT_UNIT(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/OECD/CL_STAT_UNIT/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/UIS/CL_STAT_UNIT/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:StatUnit .
+
+sip-sdmx-code:StatUnit a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Statistical unit - codelist class"@en ;
+    rdfs:label "Statistical unit - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit .
+
+
+########################################
+# CL_STATUNIT Codes
+########################################
+    
+sip-sdmx-code:statUnit-AIDE a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "AIDE" ;
+    skos:prefLabel "Teacher aides (ISCED 0-3)"@en ;
+    rdfs:label "Teacher aides (ISCED 0-3)"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-AIDE .
+
+
+sip-sdmx-code:statUnit-CLS a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "CLS" ;
+    skos:prefLabel "Student classes"@en ;
+    rdfs:label "Student classes"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-CLS .
+
+
+sip-sdmx-code:statUnit-CLS_MULTI a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "CLS_MULTI" ;
+    skos:prefLabel "Multigrade classes"@en ;
+    rdfs:label "Multigrade classes"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-CLS_MULTI .
+
+
+sip-sdmx-code:statUnit-CLS_SING a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "CLS_SING" ;
+    skos:prefLabel "Single grade classes"@en ;
+    rdfs:label "Single grade classes"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-CLS_SING .
+
+
+sip-sdmx-code:statUnit-COMP a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "COMP" ;
+    skos:prefLabel "Computers"@en ;
+    rdfs:label "Computers"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-COMP .
+
+
+sip-sdmx-code:statUnit-E a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "E" ;
+    skos:prefLabel "Enterprise"@en ;
+    rdfs:label "Enterprise"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-E .
+
+
+sip-sdmx-code:statUnit-EXP a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "EXP" ;
+    skos:prefLabel "Expenditure"@en ;
+    rdfs:label "Expenditure"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-EXP .
+
+
+sip-sdmx-code:statUnit-FGRAD_LEV a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "FGRAD_LEV" ;
+    skos:prefLabel "First-time graduates from the ISCED level"@en ;
+    rdfs:label "First-time graduates from the ISCED level"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-FGRAD_LEV .
+
+
+sip-sdmx-code:statUnit-FGRAD_TER a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "FGRAD_TER" ;
+    skos:prefLabel "First-time graduates at the tertiary level"@en ;
+    rdfs:label "First-time graduates at the tertiary level"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-FGRAD_TER .
+
+
+sip-sdmx-code:statUnit-GRAD a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "GRAD" ;
+    skos:prefLabel "Graduates"@en ;
+    rdfs:label "Graduates"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-GRAD .
+
+
+sip-sdmx-code:statUnit-L a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "L" ;
+    skos:prefLabel "Local enterprise group"@en ;
+    rdfs:label "Local enterprise group"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-L .
+
+
+sip-sdmx-code:statUnit-M a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "M" ;
+    skos:prefLabel "Multinational Enterprise Group"@en ;
+    rdfs:label "Multinational Enterprise Group"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-M .
+
+
+sip-sdmx-code:statUnit-MGMT a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "MGMT" ;
+    skos:prefLabel "School level management personnel"@en ;
+    rdfs:label "School level management personnel"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-MGMT .
+
+
+sip-sdmx-code:statUnit-NENT_CAT a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "NENT_CAT" ;
+    skos:prefLabel "New entrants into a general/academic or vocational/professional programme at each level of education"@en ;
+    rdfs:label "New entrants into a general/academic or vocational/professional programme at each level of education"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-NENT_CAT .
+
+
+sip-sdmx-code:statUnit-NENT_ECE a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "NENT_ECE" ;
+    skos:prefLabel "New entrants who have attended any early childhood  education programme (ISCED 0)"@en ;
+    rdfs:label "New entrants who have attended any early childhood  education programme (ISCED 0)"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-NENT_ECE .
+
+
+sip-sdmx-code:statUnit-NENT_LEV a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "NENT_LEV" ;
+    skos:prefLabel "New entrants to the ISCED level. New entrants to a given level of education."@en ;
+    rdfs:label "New entrants to the ISCED level. New entrants to a given level of education."@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-NENT_LEV .
+
+
+sip-sdmx-code:statUnit-NENT_TER a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "NENT_TER" ;
+    skos:prefLabel "New entrants to tertiary education (unduplicated count)"@en ;
+    rdfs:label "New entrants to tertiary education (unduplicated count)"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-NENT_TER .
+
+
+sip-sdmx-code:statUnit-NRTEACH a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "NRTEACH" ;
+    skos:prefLabel "Newly recruited teachers"@en ;
+    rdfs:label "Newly recruited teachers"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-NRTEACH .
+
+
+sip-sdmx-code:statUnit-PS a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "PS" ;
+    skos:prefLabel "Persons"@en ;
+    rdfs:label "Persons"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-PS .
+
+
+sip-sdmx-code:statUnit-QTEACH a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "QTEACH" ;
+    skos:prefLabel "Qualified teachers"@en ;
+    rdfs:label "Qualified teachers"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-QTEACH .
+
+
+sip-sdmx-code:statUnit-RPTR a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "RPTR" ;
+    skos:prefLabel "Repeaters"@en ;
+    rdfs:label "Repeaters"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-RPTR .
+
+
+sip-sdmx-code:statUnit-SCH a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "SCH" ;
+    skos:prefLabel "Schools or educational institutions"@en ;
+    rdfs:label "Schools or educational institutions"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-SCH .
+
+
+sip-sdmx-code:statUnit-STAT_COMPT a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "STAT_COMPT" ;
+    skos:prefLabel "Statutory teacher compensation (units of national currency)"@en ;
+    rdfs:label "Statutory teacher compensation (units of national currency)"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-STAT_COMPT .
+
+
+sip-sdmx-code:statUnit-STU a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "STU" ;
+    skos:prefLabel "Students"@en ;
+    rdfs:label "Students"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-STU .
+
+
+sip-sdmx-code:statUnit-STU_FIN a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "STU_FIN" ;
+    skos:prefLabel "Students adjusted to coverage of finance/expenditure"@en ;
+    rdfs:label "Students adjusted to coverage of finance/expenditure"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-STU_FIN .
+
+
+sip-sdmx-code:statUnit-STU_PERS a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "STU_PERS" ;
+    skos:prefLabel "Students adjusted to personnel"@en ;
+    rdfs:label "Students adjusted to personnel"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-STU_PERS .
+
+
+sip-sdmx-code:statUnit-T a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "T" ;
+    skos:prefLabel "Establishment"@en ;
+    rdfs:label "Establishment"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-T .
+
+
+sip-sdmx-code:statUnit-TEACH a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "TEACH" ;
+    skos:prefLabel "Classroom teachers (ISCED 0-4) and academic staff (ISCED 5-8)"@en ;
+    rdfs:label "Classroom teachers (ISCED 0-4) and academic staff (ISCED 5-8)"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-TEACH .
+
+
+sip-sdmx-code:statUnit-TRTEACH a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "TRTEACH" ;
+    skos:prefLabel "Trained teachers"@en ;
+    rdfs:label "Trained teachers"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-TRTEACH .
+
+
+sip-sdmx-code:statUnit-_X a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "_X" ;
+    skos:prefLabel "Unspecified statistical units"@en ;
+    rdfs:label "Unspecified statistical units"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-_X .
+
+
+sip-sdmx-code:statUnit-_Z a skos:Concept, sip-sdmx-code:StatUnit;
+    skos:topConceptOf sip-sdmx-code:statUnit ;
+    skos:inScheme sip-sdmx-code:statUnit ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:statUnit skos:hasTopConcept sip-sdmx-code:statUnit-_Z .
+

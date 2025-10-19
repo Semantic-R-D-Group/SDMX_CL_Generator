@@ -1,0 +1,344 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_ACCOUNTENTRY Scheme Definition
+#####################################################
+
+sip-sdmx-code:accountEntry a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Accounting entry code list - codelist scheme"@en ;
+    rdfs:label "Accounting entry code list - codelist scheme"@en ;
+    skos:notation "CL_ACCOUNTENTRY" ;
+    skos:definition "A reference accountEntry codelist based on IMF:CL_ACCOUNT_ENTRY(1.5.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_ACCOUNT_ENTRY/1.5.0> ;
+    rdfs:seeAlso sip-sdmx-code:AccountEntry .
+
+sip-sdmx-code:AccountEntry a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Accounting entry code list - codelist class"@en ;
+    rdfs:label "Accounting entry code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry .
+
+
+########################################
+# CL_ACCOUNTENTRY Codes
+########################################
+    
+sip-sdmx-code:accountEntry-A a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "A" ;
+    skos:prefLabel "Assets (Net Acquisition of)"@en ;
+    rdfs:label "Assets (Net Acquisition of)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-A .
+
+
+sip-sdmx-code:accountEntry-AD a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "AD" ;
+    skos:prefLabel "Gross sales of assets (decrease)"@en ;
+    rdfs:label "Gross sales of assets (decrease)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-AD .
+
+
+sip-sdmx-code:accountEntry-AI a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "AI" ;
+    skos:prefLabel "Gross acquisition of assets (increase)"@en ;
+    rdfs:label "Gross acquisition of assets (increase)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-AI .
+
+
+sip-sdmx-code:accountEntry-AS a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "AS" ;
+    skos:prefLabel "Assets - short position"@en ;
+    rdfs:label "Assets - short position"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-AS .
+
+
+sip-sdmx-code:accountEntry-B a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "B" ;
+    skos:prefLabel "Balance"@en ;
+    rdfs:label "Balance"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-B .
+
+
+sip-sdmx-code:accountEntry-C a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "C" ;
+    skos:prefLabel "Credit (Resources)"@en ;
+    rdfs:label "Credit (Resources)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-C .
+
+
+sip-sdmx-code:accountEntry-CL a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "CL" ;
+    skos:prefLabel "Contingent liabilities (EDP and GFS)"@en ;
+    rdfs:label "Contingent liabilities (EDP and GFS)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-CL .
+
+
+sip-sdmx-code:accountEntry-C_EN a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "C_EN" ;
+    skos:prefLabel "Credit (Environment + Economy)"@en ;
+    rdfs:label "Credit (Environment + Economy)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-C_EN .
+
+
+sip-sdmx-code:accountEntry-D a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "D" ;
+    skos:prefLabel "Debit (Uses)"@en ;
+    rdfs:label "Debit (Uses)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-D .
+
+
+sip-sdmx-code:accountEntry-DE a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "DE" ;
+    skos:prefLabel "End use"@en ;
+    rdfs:label "End use"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-DE .
+
+
+sip-sdmx-code:accountEntry-DER a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "DER" ;
+    skos:prefLabel "End use, of which emissions relevant"@en ;
+    rdfs:label "End use, of which emissions relevant"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-DER .
+
+
+sip-sdmx-code:accountEntry-DE_EN a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "DE_EN" ;
+    skos:prefLabel "End use (Environment + Economy)"@en ;
+    rdfs:label "End use (Environment + Economy)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-DE_EN .
+
+
+sip-sdmx-code:accountEntry-DT a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "DT" ;
+    skos:prefLabel "Transformation use"@en ;
+    rdfs:label "Transformation use"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-DT .
+
+
+sip-sdmx-code:accountEntry-DT_EN a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "DT_EN" ;
+    skos:prefLabel "Transformation use (Environment + Economy)"@en ;
+    rdfs:label "Transformation use (Environment + Economy)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-DT_EN .
+
+
+sip-sdmx-code:accountEntry-D_EN a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "D_EN" ;
+    skos:prefLabel "Debit (Environment + Economy)"@en ;
+    rdfs:label "Debit (Environment + Economy)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-D_EN .
+
+
+sip-sdmx-code:accountEntry-EC a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "EC" ;
+    skos:prefLabel "Economy to environment"@en ;
+    rdfs:label "Economy to environment"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-EC .
+
+
+sip-sdmx-code:accountEntry-EN a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "EN" ;
+    skos:prefLabel "Environment to economy"@en ;
+    rdfs:label "Environment to economy"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-EN .
+
+
+sip-sdmx-code:accountEntry-FI a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "FI" ;
+    skos:prefLabel "Inflows (reserves template)"@en ;
+    rdfs:label "Inflows (reserves template)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-FI .
+
+
+sip-sdmx-code:accountEntry-FN a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "FN" ;
+    skos:prefLabel "Net flows (reserves template)"@en ;
+    rdfs:label "Net flows (reserves template)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-FN .
+
+
+sip-sdmx-code:accountEntry-FO a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "FO" ;
+    skos:prefLabel "Outflows (reserves template)"@en ;
+    rdfs:label "Outflows (reserves template)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-FO .
+
+
+sip-sdmx-code:accountEntry-II a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "II" ;
+    skos:prefLabel "Net income on inward FDI"@en ;
+    rdfs:label "Net income on inward FDI"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-II .
+
+
+sip-sdmx-code:accountEntry-IO a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "IO" ;
+    skos:prefLabel "Net income on outward FDI"@en ;
+    rdfs:label "Net income on outward FDI"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-IO .
+
+
+sip-sdmx-code:accountEntry-L a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "L" ;
+    skos:prefLabel "Liabilities (Net Incurrence of)"@en ;
+    rdfs:label "Liabilities (Net Incurrence of)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-L .
+
+
+sip-sdmx-code:accountEntry-LD a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "LD" ;
+    skos:prefLabel "Gross decrease in liabilities"@en ;
+    rdfs:label "Gross decrease in liabilities"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-LD .
+
+
+sip-sdmx-code:accountEntry-LI a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "LI" ;
+    skos:prefLabel "Gross incurrence of liabilities"@en ;
+    rdfs:label "Gross incurrence of liabilities"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-LI .
+
+
+sip-sdmx-code:accountEntry-N a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "N" ;
+    skos:prefLabel "Net (Assets minus Liabilities)"@en ;
+    rdfs:label "Net (Assets minus Liabilities)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-N .
+
+
+sip-sdmx-code:accountEntry-NE a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "NE" ;
+    skos:prefLabel "Net Liabilities (Liabilities minus Assets)"@en ;
+    rdfs:label "Net Liabilities (Liabilities minus Assets)"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-NE .
+
+
+sip-sdmx-code:accountEntry-NI a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "NI" ;
+    skos:prefLabel "Net FDI Inward"@en ;
+    rdfs:label "Net FDI Inward"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-NI .
+
+
+sip-sdmx-code:accountEntry-NO a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "NO" ;
+    skos:prefLabel "Net FDI Outward"@en ;
+    rdfs:label "Net FDI Outward"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-NO .
+
+
+sip-sdmx-code:accountEntry-_X a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "_X" ;
+    skos:prefLabel "Unspecified"@en ;
+    rdfs:label "Unspecified"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-_X .
+
+
+sip-sdmx-code:accountEntry-_Z a skos:Concept, sip-sdmx-code:AccountEntry;
+    skos:topConceptOf sip-sdmx-code:accountEntry ;
+    skos:inScheme sip-sdmx-code:accountEntry ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:accountEntry skos:hasTopConcept sip-sdmx-code:accountEntry-_Z .
+

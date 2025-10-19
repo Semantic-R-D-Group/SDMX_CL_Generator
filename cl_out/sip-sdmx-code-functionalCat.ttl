@@ -1,0 +1,304 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_FUNCTIONALCAT Scheme Definition
+#####################################################
+
+sip-sdmx-code:functionalCat a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Functional category code list - codelist scheme"@en ;
+    rdfs:label "Functional category code list - codelist scheme"@en ;
+    skos:notation "CL_FUNCTIONALCAT" ;
+    skos:definition "A reference functionalCat codelist based on IMF:CL_FUNCTIONAL_CAT(1.10.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IMF/CL_FUNCTIONAL_CAT/1.10.1> ;
+    rdfs:seeAlso sip-sdmx-code:FunctionalCat .
+
+sip-sdmx-code:FunctionalCat a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Functional category code list - codelist class"@en ;
+    rdfs:label "Functional category code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat .
+
+
+########################################
+# CL_FUNCTIONALCAT Codes
+########################################
+    
+sip-sdmx-code:functionalCat-D a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "D" ;
+    skos:prefLabel "Direct Investment"@en ;
+    rdfs:label "Direct Investment"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-D .
+
+
+sip-sdmx-code:functionalCat-D1 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "D1" ;
+    skos:prefLabel "Direct investor in direct investment enterprises"@en ;
+    rdfs:label "Direct investor in direct investment enterprises"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-D1 .
+
+
+sip-sdmx-code:functionalCat-D1D2 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "D1D2" ;
+    skos:prefLabel "Direct investment excluding direct investment between fellow enterprises"@en ;
+    rdfs:label "Direct investment excluding direct investment between fellow enterprises"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-D1D2 .
+
+
+sip-sdmx-code:functionalCat-D2 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "D2" ;
+    skos:prefLabel "Direct investment enterprises in direct investor"@en ;
+    rdfs:label "Direct investment enterprises in direct investor"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-D2 .
+
+
+sip-sdmx-code:functionalCat-D3 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "D3" ;
+    skos:prefLabel "Direct Investment between fellow enterprises"@en ;
+    rdfs:label "Direct Investment between fellow enterprises"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-D3 .
+
+
+sip-sdmx-code:functionalCat-D_P a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "D_P" ;
+    skos:prefLabel "Direct Investment + Portfolio Investment"@en ;
+    rdfs:label "Direct Investment + Portfolio Investment"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-D_P .
+
+
+sip-sdmx-code:functionalCat-F a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "F" ;
+    skos:prefLabel "Financial Derivatives and Employee Stock Options"@en ;
+    rdfs:label "Financial Derivatives and Employee Stock Options"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-F .
+
+
+sip-sdmx-code:functionalCat-O a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "O" ;
+    skos:prefLabel "Other Investment"@en ;
+    rdfs:label "Other Investment"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-O .
+
+
+sip-sdmx-code:functionalCat-P a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "P" ;
+    skos:prefLabel "Portfolio Investment"@en ;
+    rdfs:label "Portfolio Investment"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-P .
+
+
+sip-sdmx-code:functionalCat-R a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "R" ;
+    skos:prefLabel "Reserve Assets"@en ;
+    rdfs:label "Reserve Assets"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-R .
+
+
+sip-sdmx-code:functionalCat-RT a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "RT" ;
+    skos:prefLabel "Reserve template"@en ;
+    rdfs:label "Reserve template"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-RT .
+
+
+sip-sdmx-code:functionalCat-TXD a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "TXD" ;
+    skos:prefLabel "All functional categories (total) excluding Direct Investment"@en ;
+    rdfs:label "All functional categories (total) excluding Direct Investment"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-TXD .
+
+
+sip-sdmx-code:functionalCat-TXD_P a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "TXD_P" ;
+    skos:prefLabel "All functional categories (total) - sum of (Direct Investment, Portfolio Investment)"@en ;
+    rdfs:label "All functional categories (total) - sum of (Direct Investment, Portfolio Investment)"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-TXD_P .
+
+
+sip-sdmx-code:functionalCat-TXD_R a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "TXD_R" ;
+    skos:prefLabel "All functional categories (total) excluding direct investment and reserve assets"@en ;
+    rdfs:label "All functional categories (total) excluding direct investment and reserve assets"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-TXD_R .
+
+
+sip-sdmx-code:functionalCat-TXF a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "TXF" ;
+    skos:prefLabel "All functional categories (total) excluding financial derivatives and employee stock options"@en ;
+    rdfs:label "All functional categories (total) excluding financial derivatives and employee stock options"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-TXF .
+
+
+sip-sdmx-code:functionalCat-TXF_R a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "TXF_R" ;
+    skos:prefLabel "All functional categories (total) excluding financial derivatives, employee stock options and reserve assets"@en ;
+    rdfs:label "All functional categories (total) excluding financial derivatives, employee stock options and reserve assets"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-TXF_R .
+
+
+sip-sdmx-code:functionalCat-TXR a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "TXR" ;
+    skos:prefLabel "All functional categories (total) excluding reserve assets"@en ;
+    rdfs:label "All functional categories (total) excluding reserve assets"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-TXR .
+
+
+sip-sdmx-code:functionalCat-U1 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "U1" ;
+    skos:prefLabel "Direct Investment between fellow enterprises; if ultimate controlling parent is resident"@en ;
+    rdfs:label "Direct Investment between fellow enterprises; if ultimate controlling parent is resident"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-U1 .
+
+
+sip-sdmx-code:functionalCat-U2 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "U2" ;
+    skos:prefLabel "Direct Investment between fellow enterprises; if ultimate controlling parent is nonresident"@en ;
+    rdfs:label "Direct Investment between fellow enterprises; if ultimate controlling parent is nonresident"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-U2 .
+
+
+sip-sdmx-code:functionalCat-U21 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "U21" ;
+    skos:prefLabel "Direct Investment between fellow enterprises; if ultimate controlling parent is resident in another euro area country"@en ;
+    rdfs:label "Direct Investment between fellow enterprises; if ultimate controlling parent is resident in another euro area country"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-U21 .
+
+
+sip-sdmx-code:functionalCat-U22 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "U22" ;
+    skos:prefLabel "Direct Investment between fellow enterprises; if ultimate controlling parent is resident in another EU country outside the euro area"@en ;
+    rdfs:label "Direct Investment between fellow enterprises; if ultimate controlling parent is resident in another EU country outside the euro area"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-U22 .
+
+
+sip-sdmx-code:functionalCat-U22_23 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "U22_23" ;
+    skos:prefLabel "Direct Investment between fellow enterprises; if ultimate controlling parent is resident outside the euro area"@en ;
+    rdfs:label "Direct Investment between fellow enterprises; if ultimate controlling parent is resident outside the euro area"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-U22_23 .
+
+
+sip-sdmx-code:functionalCat-U23 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "U23" ;
+    skos:prefLabel "Direct Investment between fellow enterprises; if ultimate controlling parent is resident outside the EU"@en ;
+    rdfs:label "Direct Investment between fellow enterprises; if ultimate controlling parent is resident outside the EU"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-U23 .
+
+
+sip-sdmx-code:functionalCat-U3 a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "U3" ;
+    skos:prefLabel "Direct Investment between fellow enterprises; if ultimate controlling parent is unknown"@en ;
+    rdfs:label "Direct Investment between fellow enterprises; if ultimate controlling parent is unknown"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-U3 .
+
+
+sip-sdmx-code:functionalCat-_T a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "_T" ;
+    skos:prefLabel "All functional categories"@en ;
+    rdfs:label "All functional categories"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-_T .
+
+
+sip-sdmx-code:functionalCat-_X a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "_X" ;
+    skos:prefLabel "Not allocated/unspecified"@en ;
+    rdfs:label "Not allocated/unspecified"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-_X .
+
+
+sip-sdmx-code:functionalCat-_Z a skos:Concept, sip-sdmx-code:FunctionalCat;
+    skos:topConceptOf sip-sdmx-code:functionalCat ;
+    skos:inScheme sip-sdmx-code:functionalCat ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not Applicable"@en ;
+    rdfs:label "Not Applicable"@en .
+
+sip-sdmx-code:functionalCat skos:hasTopConcept sip-sdmx-code:functionalCat-_Z .
+

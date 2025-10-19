@@ -1,0 +1,165 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_COVERAGEGEO Scheme Definition
+#####################################################
+
+sip-sdmx-code:coverageGeo a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Geographical coverage - codelist scheme"@en ;
+    rdfs:label "Geographical coverage - codelist scheme"@en ;
+    skos:notation "CL_COVERAGEGEO" ;
+    skos:definition "A reference coverageGeo codelist based on ESTAT:CL_COVERAGE_GEO(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_COVERAGE_GEO/1.0> ;
+    skos:note "ESTAT:CL_COVERAGE_GEO(1.0): Defines which type of region is used to compile the index"@en ;
+    rdfs:seeAlso sip-sdmx-code:CoverageGeo .
+
+sip-sdmx-code:CoverageGeo a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Geographical coverage - codelist class"@en ;
+    rdfs:label "Geographical coverage - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo .
+
+
+########################################
+# CL_COVERAGEGEO Codes
+########################################
+    
+sip-sdmx-code:coverageGeo-BCITY_MET a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "BCITY_MET" ;
+    skos:prefLabel "Main cities or metropolitan areas"@en ;
+    rdfs:label "Main cities or metropolitan areas"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-BCITY_MET .
+
+
+sip-sdmx-code:coverageGeo-CAP a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CAP" ;
+    skos:prefLabel "Capital city"@en ;
+    rdfs:label "Capital city"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CAP .
+
+
+sip-sdmx-code:coverageGeo-CAP_MET a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CAP_MET" ;
+    skos:prefLabel "Main city or metropolitan area"@en ;
+    rdfs:label "Main city or metropolitan area"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CAP_MET .
+
+
+sip-sdmx-code:coverageGeo-CAP_SURB a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CAP_SURB" ;
+    skos:prefLabel "Capital city including suburbs"@en ;
+    rdfs:label "Capital city including suburbs"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CAP_SURB .
+
+
+sip-sdmx-code:coverageGeo-CTYB a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CTYB" ;
+    skos:prefLabel "Big cities"@en ;
+    rdfs:label "Big cities"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CTYB .
+
+
+sip-sdmx-code:coverageGeo-CTYBM a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CTYBM" ;
+    skos:prefLabel "Big and medium cities"@en ;
+    rdfs:label "Big and medium cities"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CTYBM .
+
+
+sip-sdmx-code:coverageGeo-CTYM a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CTYM" ;
+    skos:prefLabel "Medium cities"@en ;
+    rdfs:label "Medium cities"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CTYM .
+
+
+sip-sdmx-code:coverageGeo-CTYMS a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CTYMS" ;
+    skos:prefLabel "Medium and small cities"@en ;
+    rdfs:label "Medium and small cities"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CTYMS .
+
+
+sip-sdmx-code:coverageGeo-CTYS a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "CTYS" ;
+    skos:prefLabel "Small cities"@en ;
+    rdfs:label "Small cities"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-CTYS .
+
+
+sip-sdmx-code:coverageGeo-RUR a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "RUR" ;
+    skos:prefLabel "Rural areas"@en ;
+    rdfs:label "Rural areas"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-RUR .
+
+
+sip-sdmx-code:coverageGeo-URB a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "URB" ;
+    skos:prefLabel "Urban areas only"@en ;
+    rdfs:label "Urban areas only"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-URB .
+
+
+sip-sdmx-code:coverageGeo-_T a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total (national) or not applicable"@en ;
+    rdfs:label "Total (national) or not applicable"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-_T .
+
+
+sip-sdmx-code:coverageGeo-_TXCAP a skos:Concept, sip-sdmx-code:CoverageGeo;
+    skos:topConceptOf sip-sdmx-code:coverageGeo ;
+    skos:inScheme sip-sdmx-code:coverageGeo ;
+    skos:notation "_TXCAP" ;
+    skos:prefLabel "All country, excluding capital city"@en ;
+    rdfs:label "All country, excluding capital city"@en .
+
+sip-sdmx-code:coverageGeo skos:hasTopConcept sip-sdmx-code:coverageGeo-_TXCAP .
+

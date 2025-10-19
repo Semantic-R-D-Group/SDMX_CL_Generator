@@ -1,0 +1,392 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_FREQ Scheme Definition
+#####################################################
+
+sip-sdmx-code:freq a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Code list for concept \"Frequency\" - codelist scheme"@en ;
+    rdfs:label "Code list for concept \"Frequency\" - codelist scheme"@en ;
+    skos:notation "CL_FREQ" ;
+    skos:definition "A reference freq codelist based on SDMX:CL_FREQ(2.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_FREQ/2.1> ;
+    skos:note """SDMX:CL_FREQ(2.1): This code list provides a set of values indicating the
+          "frequency" of the data (e.g. weekly, monthly, quarterly). The concept "frequency" may
+          refer to various stages in the production process, e.g. data collection or data
+          dissemination. For example, a time series could be disseminated at annual frequency but
+          the underlying data are compiled monthly. The code list is applicable for all different
+          uses of "frequency"."""@en ;
+    rdfs:seeAlso sip-sdmx-concept:FREQ_COLL, sip-sdmx-concept:FREQ_DISS, sip-sdmx-concept:FREQ ;
+    skos:related sip-sdmx-concept:FREQ_COLL, sip-sdmx-concept:FREQ_DISS, sip-sdmx-concept:FREQ ;
+    rdfs:seeAlso sip-sdmx-code:Freq .
+
+sip-sdmx-code:freq skos:exactMatch sdmx-code:freq .
+
+sip-sdmx-code:Freq a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Code list for concept \"Frequency\" - codelist class"@en ;
+    rdfs:label "Code list for concept \"Frequency\" - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq .
+
+
+########################################
+# CL_FREQ Codes
+########################################
+    
+sip-sdmx-code:freq-A a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A" ;
+    skos:prefLabel "Annual"@en ;
+    rdfs:label "Annual"@en .
+
+sip-sdmx-code:freq-A skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-A> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A .
+
+
+sip-sdmx-code:freq-A10 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A10" ;
+    skos:prefLabel "Decennial"@en ;
+    rdfs:label "Decennial"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A10 .
+
+
+sip-sdmx-code:freq-A2 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A2" ;
+    skos:prefLabel "Biennial"@en ;
+    rdfs:label "Biennial"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A2 .
+
+
+sip-sdmx-code:freq-A20 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A20" ;
+    skos:prefLabel "Bidecennial"@en ;
+    rdfs:label "Bidecennial"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A20 .
+
+
+sip-sdmx-code:freq-A3 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A3" ;
+    skos:prefLabel "Triennial"@en ;
+    rdfs:label "Triennial"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A3 .
+
+
+sip-sdmx-code:freq-A30 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A30" ;
+    skos:prefLabel "Tridecennial"@en ;
+    rdfs:label "Tridecennial"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A30 .
+
+
+sip-sdmx-code:freq-A4 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A4" ;
+    skos:prefLabel "Quadrennial"@en ;
+    rdfs:label "Quadrennial"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A4 .
+
+
+sip-sdmx-code:freq-A5 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A5" ;
+    skos:prefLabel "Quinquennial"@en ;
+    rdfs:label "Quinquennial"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A5 .
+
+
+sip-sdmx-code:freq-A_3 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "A_3" ;
+    skos:prefLabel "Three times a year"@en ;
+    rdfs:label "Three times a year"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-A_3 .
+
+
+sip-sdmx-code:freq-B a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "B" ;
+    skos:prefLabel "Daily – business week"@en ;
+    rdfs:label "Daily – business week"@en .
+
+sip-sdmx-code:freq-B skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-B> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-B .
+
+
+sip-sdmx-code:freq-D a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "D" ;
+    skos:prefLabel "Daily"@en ;
+    rdfs:label "Daily"@en .
+
+sip-sdmx-code:freq-D skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-D> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-D .
+
+
+sip-sdmx-code:freq-D_2 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "D_2" ;
+    skos:prefLabel "Twice a day"@en ;
+    rdfs:label "Twice a day"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-D_2 .
+
+
+sip-sdmx-code:freq-H a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "H" ;
+    skos:prefLabel "Hourly"@en ;
+    rdfs:label "Hourly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-H .
+
+
+sip-sdmx-code:freq-H2 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "H2" ;
+    skos:prefLabel "Bihourly"@en ;
+    rdfs:label "Bihourly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-H2 .
+
+
+sip-sdmx-code:freq-H3 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "H3" ;
+    skos:prefLabel "Trihourly"@en ;
+    rdfs:label "Trihourly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-H3 .
+
+
+sip-sdmx-code:freq-I a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "I" ;
+    skos:prefLabel "Irregular"@en ;
+    rdfs:label "Irregular"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-I .
+
+
+sip-sdmx-code:freq-M a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "M" ;
+    skos:prefLabel "Monthly"@en ;
+    rdfs:label "Monthly"@en .
+
+sip-sdmx-code:freq-M skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-M> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-M .
+
+
+sip-sdmx-code:freq-M2 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "M2" ;
+    skos:prefLabel "Bimonthly"@en ;
+    rdfs:label "Bimonthly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-M2 .
+
+
+sip-sdmx-code:freq-M_2 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "M_2" ;
+    skos:prefLabel "Semimonthly"@en ;
+    rdfs:label "Semimonthly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-M_2 .
+
+
+sip-sdmx-code:freq-M_3 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "M_3" ;
+    skos:prefLabel "Three times a month"@en ;
+    rdfs:label "Three times a month"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-M_3 .
+
+
+sip-sdmx-code:freq-N a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "N" ;
+    skos:prefLabel "Minutely"@en ;
+    rdfs:label "Minutely"@en .
+
+sip-sdmx-code:freq-N skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-N> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-N .
+
+
+sip-sdmx-code:freq-OA a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "OA" ;
+    skos:prefLabel "Occasional annual"@en ;
+    rdfs:label "Occasional annual"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-OA .
+
+
+sip-sdmx-code:freq-OM a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "OM" ;
+    skos:prefLabel "Occasional monthly"@en ;
+    rdfs:label "Occasional monthly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-OM .
+
+
+sip-sdmx-code:freq-Q a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "Q" ;
+    skos:prefLabel "Quarterly"@en ;
+    rdfs:label "Quarterly"@en .
+
+sip-sdmx-code:freq-Q skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-Q> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-Q .
+
+
+sip-sdmx-code:freq-S a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "S" ;
+    skos:prefLabel "Half-yearly, semester"@en ;
+    rdfs:label "Half-yearly, semester"@en .
+
+sip-sdmx-code:freq-S skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-S> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-S .
+
+
+sip-sdmx-code:freq-W a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "W" ;
+    skos:prefLabel "Weekly"@en ;
+    rdfs:label "Weekly"@en .
+
+sip-sdmx-code:freq-W skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-W> .
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-W .
+
+
+sip-sdmx-code:freq-W2 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "W2" ;
+    skos:prefLabel "Biweekly"@en ;
+    rdfs:label "Biweekly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-W2 .
+
+
+sip-sdmx-code:freq-W3 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "W3" ;
+    skos:prefLabel "Triweekly"@en ;
+    rdfs:label "Triweekly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-W3 .
+
+
+sip-sdmx-code:freq-W4 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "W4" ;
+    skos:prefLabel "Four-weekly"@en ;
+    rdfs:label "Four-weekly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-W4 .
+
+
+sip-sdmx-code:freq-W_2 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "W_2" ;
+    skos:prefLabel "Semiweekly"@en ;
+    rdfs:label "Semiweekly"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-W_2 .
+
+
+sip-sdmx-code:freq-W_3 a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "W_3" ;
+    skos:prefLabel "Three times a week"@en ;
+    rdfs:label "Three times a week"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-W_3 .
+
+
+sip-sdmx-code:freq-_O a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "_O" ;
+    skos:prefLabel "Other"@en ;
+    rdfs:label "Other"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-_O .
+
+
+sip-sdmx-code:freq-_U a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "_U" ;
+    skos:prefLabel "Unspecified"@en ;
+    rdfs:label "Unspecified"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-_U .
+
+
+sip-sdmx-code:freq-_Z a skos:Concept, sip-sdmx-code:Freq;
+    skos:topConceptOf sip-sdmx-code:freq ;
+    skos:inScheme sip-sdmx-code:freq ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:freq skos:hasTopConcept sip-sdmx-code:freq-_Z .
+

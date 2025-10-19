@@ -1,0 +1,134 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_INCOMEQUANTILE Scheme Definition
+#####################################################
+
+sip-sdmx-code:incomeQuantile a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Income/wealth quantile code list - codelist scheme"@en ;
+    rdfs:label "Income/wealth quantile code list - codelist scheme"@en ;
+    skos:notation "CL_INCOMEQUANTILE" ;
+    skos:definition "A reference incomeQuantile codelist based on IAEG-SDGs:CL_QUANTILE(1.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/IAEG-SDGs/CL_QUANTILE/1.1> ;
+    rdfs:seeAlso sip-sdmx-code:IncomeQuantile .
+
+sip-sdmx-code:IncomeQuantile a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Income/wealth quantile code list - codelist class"@en ;
+    rdfs:label "Income/wealth quantile code list - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile .
+
+
+########################################
+# CL_INCOMEQUANTILE Codes
+########################################
+    
+sip-sdmx-code:incomeQuantile-B40 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "B40" ;
+    skos:prefLabel "Bottom 40%"@en ;
+    rdfs:label "Bottom 40%"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-B40 .
+
+
+sip-sdmx-code:incomeQuantile-B50 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "B50" ;
+    skos:prefLabel "Bottom 50%"@en ;
+    rdfs:label "Bottom 50%"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-B50 .
+
+
+sip-sdmx-code:incomeQuantile-Q1 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "Q1" ;
+    skos:prefLabel "Quintile 1 (poorest)"@en ;
+    rdfs:label "Quintile 1 (poorest)"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-Q1 .
+
+
+sip-sdmx-code:incomeQuantile-Q2 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "Q2" ;
+    skos:prefLabel "Quintile 2"@en ;
+    rdfs:label "Quintile 2"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-Q2 .
+
+
+sip-sdmx-code:incomeQuantile-Q3 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "Q3" ;
+    skos:prefLabel "Quintile 3"@en ;
+    rdfs:label "Quintile 3"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-Q3 .
+
+
+sip-sdmx-code:incomeQuantile-Q4 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "Q4" ;
+    skos:prefLabel "Quintile 4"@en ;
+    rdfs:label "Quintile 4"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-Q4 .
+
+
+sip-sdmx-code:incomeQuantile-Q5 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "Q5" ;
+    skos:prefLabel "Quintile 5 (richest)"@en ;
+    rdfs:label "Quintile 5 (richest)"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-Q5 .
+
+
+sip-sdmx-code:incomeQuantile-R50 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "R50" ;
+    skos:prefLabel "Richest 50%"@en ;
+    rdfs:label "Richest 50%"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-R50 .
+
+
+sip-sdmx-code:incomeQuantile-R60 a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "R60" ;
+    skos:prefLabel "Richest 60%"@en ;
+    rdfs:label "Richest 60%"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-R60 .
+
+
+sip-sdmx-code:incomeQuantile-_T a skos:Concept, sip-sdmx-code:IncomeQuantile;
+    skos:topConceptOf sip-sdmx-code:incomeQuantile ;
+    skos:inScheme sip-sdmx-code:incomeQuantile ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total (national average) or no breakdown"@en ;
+    rdfs:label "Total (national average) or no breakdown"@en .
+
+sip-sdmx-code:incomeQuantile skos:hasTopConcept sip-sdmx-code:incomeQuantile-_T .
+

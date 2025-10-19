@@ -1,0 +1,174 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_NAPRICES Scheme Definition
+#####################################################
+
+sip-sdmx-code:naPrices a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Price codes - codelist scheme"@en ;
+    rdfs:label "Price codes - codelist scheme"@en ;
+    skos:notation "CL_NAPRICES" ;
+    skos:definition "A reference naPrices codelist based on ESTAT:CL_NA_PRICES(1.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_NA_PRICES/1.1> ;
+    rdfs:seeAlso sip-sdmx-code:NaPrices .
+
+sip-sdmx-code:NaPrices a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Price codes - codelist class"@en ;
+    rdfs:label "Price codes - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices .
+
+
+########################################
+# CL_NAPRICES Codes
+########################################
+    
+sip-sdmx-code:naPrices-D a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "D" ;
+    skos:prefLabel "Deflator (index)"@en ;
+    rdfs:label "Deflator (index)"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-D .
+
+
+sip-sdmx-code:naPrices-DR a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "DR" ;
+    skos:prefLabel "Deflator (rebased)"@en ;
+    rdfs:label "Deflator (rebased)"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-DR .
+
+
+sip-sdmx-code:naPrices-L a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "L" ;
+    skos:prefLabel "Chain linked volume"@en ;
+    rdfs:label "Chain linked volume"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-L .
+
+
+sip-sdmx-code:naPrices-LR a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "LR" ;
+    skos:prefLabel "Chain linked volume (rebased)"@en ;
+    rdfs:label "Chain linked volume (rebased)"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-LR .
+
+
+sip-sdmx-code:naPrices-O a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "O" ;
+    skos:prefLabel "Previous year's replacement costs"@en ;
+    rdfs:label "Previous year's replacement costs"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-O .
+
+
+sip-sdmx-code:naPrices-Q a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "Q" ;
+    skos:prefLabel "Constant prices"@en ;
+    rdfs:label "Constant prices"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-Q .
+
+
+sip-sdmx-code:naPrices-QR a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "QR" ;
+    skos:prefLabel "Constant prices (rebased)"@en ;
+    rdfs:label "Constant prices (rebased)"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-QR .
+
+
+sip-sdmx-code:naPrices-R a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "R" ;
+    skos:prefLabel "Real terms"@en ;
+    rdfs:label "Real terms"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-R .
+
+
+sip-sdmx-code:naPrices-RR a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "RR" ;
+    skos:prefLabel "Real terms (rebased)"@en ;
+    rdfs:label "Real terms (rebased)"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-RR .
+
+
+sip-sdmx-code:naPrices-U a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "U" ;
+    skos:prefLabel "Current replacement cost"@en ;
+    rdfs:label "Current replacement cost"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-U .
+
+
+sip-sdmx-code:naPrices-V a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "V" ;
+    skos:prefLabel "Current prices"@en ;
+    rdfs:label "Current prices"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-V .
+
+
+sip-sdmx-code:naPrices-VQ a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "VQ" ;
+    skos:prefLabel "Current prices (constant converter)"@en ;
+    rdfs:label "Current prices (constant converter)"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-VQ .
+
+
+sip-sdmx-code:naPrices-Y a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "Y" ;
+    skos:prefLabel "Previous year prices"@en ;
+    rdfs:label "Previous year prices"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-Y .
+
+
+sip-sdmx-code:naPrices-_Z a skos:Concept, sip-sdmx-code:NaPrices;
+    skos:topConceptOf sip-sdmx-code:naPrices ;
+    skos:inScheme sip-sdmx-code:naPrices ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:naPrices skos:hasTopConcept sip-sdmx-code:naPrices-_Z .
+

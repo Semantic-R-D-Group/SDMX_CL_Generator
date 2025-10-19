@@ -1,0 +1,154 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_ECONOMICFUNC Scheme Definition
+#####################################################
+
+sip-sdmx-code:economicFunc a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "GFS economic function - codelist scheme"@en ;
+    rdfs:label "GFS economic function - codelist scheme"@en ;
+    skos:notation "CL_ECONOMICFUNC" ;
+    skos:definition "A reference economicFunc codelist based on ESTAT:CL_GFS_ECOFUNC(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_GFS_ECOFUNC/1.0> ;
+    rdfs:seeAlso sip-sdmx-code:EconomicFunc .
+
+sip-sdmx-code:EconomicFunc a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "GFS economic function - codelist class"@en ;
+    rdfs:label "GFS economic function - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc .
+
+
+########################################
+# CL_ECONOMICFUNC Codes
+########################################
+    
+sip-sdmx-code:economicFunc-C a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "C" ;
+    skos:prefLabel "Consumption tax"@en ;
+    rdfs:label "Consumption tax"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-C .
+
+
+sip-sdmx-code:economicFunc-KIC a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "KIC" ;
+    skos:prefLabel "Capital tax on the income of corporations"@en ;
+    rdfs:label "Capital tax on the income of corporations"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-KIC .
+
+
+sip-sdmx-code:economicFunc-KIH a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "KIH" ;
+    skos:prefLabel "Capital tax on the income of households"@en ;
+    rdfs:label "Capital tax on the income of households"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-KIH .
+
+
+sip-sdmx-code:economicFunc-KISE a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "KISE" ;
+    skos:prefLabel "Capital tax on the income of self-employed"@en ;
+    rdfs:label "Capital tax on the income of self-employed"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-KISE .
+
+
+sip-sdmx-code:economicFunc-KS a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "KS" ;
+    skos:prefLabel "Capital tax on Stocks of Wealth"@en ;
+    rdfs:label "Capital tax on Stocks of Wealth"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-KS .
+
+
+sip-sdmx-code:economicFunc-LEES a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "LEES" ;
+    skos:prefLabel "Labour taxes on Employees"@en ;
+    rdfs:label "Labour taxes on Employees"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-LEES .
+
+
+sip-sdmx-code:economicFunc-LEYRS a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "LEYRS" ;
+    skos:prefLabel "Labour taxes on Employers"@en ;
+    rdfs:label "Labour taxes on Employers"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-LEYRS .
+
+
+sip-sdmx-code:economicFunc-LNON a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "LNON" ;
+    skos:prefLabel "Labour tax on the non-employed (pensioners/ unemployed)"@en ;
+    rdfs:label "Labour tax on the non-employed (pensioners/ unemployed)"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-LNON .
+
+
+sip-sdmx-code:economicFunc-SPLIT1 a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "SPLIT1" ;
+    skos:prefLabel "PIT Split between Lees, Lnon, KIH, KISe"@en ;
+    rdfs:label "PIT Split between Lees, Lnon, KIH, KISe"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-SPLIT1 .
+
+
+sip-sdmx-code:economicFunc-SPLIT2 a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "SPLIT2" ;
+    skos:prefLabel "Split between Lnon and KISe"@en ;
+    rdfs:label "Split between Lnon and KISe"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-SPLIT2 .
+
+
+sip-sdmx-code:economicFunc-_T a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    rdfs:label "Total"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-_T .
+
+
+sip-sdmx-code:economicFunc-_Z a skos:Concept, sip-sdmx-code:EconomicFunc;
+    skos:topConceptOf sip-sdmx-code:economicFunc ;
+    skos:inScheme sip-sdmx-code:economicFunc ;
+    skos:notation "_Z" ;
+    skos:prefLabel "Not applicable"@en ;
+    rdfs:label "Not applicable"@en .
+
+sip-sdmx-code:economicFunc skos:hasTopConcept sip-sdmx-code:economicFunc-_Z .
+

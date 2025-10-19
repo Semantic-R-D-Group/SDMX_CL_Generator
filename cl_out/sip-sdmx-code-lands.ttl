@@ -1,0 +1,517 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+@prefix sip-sdmx-agency: <https://purl.semanticip.org/linked-data/sdmx/agency/> .
+
+
+#####################################################
+# CL_LANDS Scheme Definition
+#####################################################
+
+sip-sdmx-code:lands a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Land use - codelist scheme"@en ;
+    rdfs:label "Land use - codelist scheme"@en ;
+    skos:altLabel "Land cover - codelist scheme"@en ;
+    skos:notation "CL_LANDS" ;
+    skos:definition "A reference lands codelist combining ESTAT:CL_LAND_COVER(1.0), ESTAT:CL_LAND_USE(1.0.1)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_LAND_COVER/1.0> ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/ESTAT/CL_LAND_USE/1.0.1> ;
+    rdfs:seeAlso sip-sdmx-code:Lands .
+
+sip-sdmx-code:Lands a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Land use - codelist class"@en ;
+    rdfs:label "Land use - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands .
+
+
+########################################
+# CL_LANDS Codes
+########################################
+    
+sip-sdmx-code:lands-LC6970 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6970" ;
+    skos:prefLabel "Artificial surfaces (including urban and associated areas)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Artificial surfaces (including urban and associated areas)"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6970 .
+
+
+sip-sdmx-code:lands-LC6971 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6971" ;
+    skos:prefLabel "Herbaceous crops"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Herbaceous crops"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6971 .
+
+
+sip-sdmx-code:lands-LC6972 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6972" ;
+    skos:prefLabel "Woody crops"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Woody crops"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6972 .
+
+
+sip-sdmx-code:lands-LC6973 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6973" ;
+    skos:prefLabel "Multiple or layered crops"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Multiple or layered crops"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6973 .
+
+
+sip-sdmx-code:lands-LC6974 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6974" ;
+    skos:prefLabel "Tree-covered areas"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Tree-covered areas"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6974 .
+
+
+sip-sdmx-code:lands-LC6975 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6975" ;
+    skos:prefLabel "Mangroves"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Mangroves"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6975 .
+
+
+sip-sdmx-code:lands-LC6976 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6976" ;
+    skos:prefLabel "Shrub-covered areas"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Shrub-covered areas"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6976 .
+
+
+sip-sdmx-code:lands-LC6977 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6977" ;
+    skos:prefLabel "Shrubs and/or herbaceous vegetation, aquatic or regularly flooded"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Shrubs and/or herbaceous vegetation, aquatic or regularly flooded"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6977 .
+
+
+sip-sdmx-code:lands-LC6978 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6978" ;
+    skos:prefLabel "Sparsely natural vegetated areas"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Sparsely natural vegetated areas"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6978 .
+
+
+sip-sdmx-code:lands-LC6979 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6979" ;
+    skos:prefLabel "Terrestrial barren land"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Terrestrial barren land"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6979 .
+
+
+sip-sdmx-code:lands-LC6980 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6980" ;
+    skos:prefLabel "Permanent snow and glaciers"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent snow and glaciers"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6980 .
+
+
+sip-sdmx-code:lands-LC6981 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6981" ;
+    skos:prefLabel "Inland water bodies"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Inland water bodies"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6981 .
+
+
+sip-sdmx-code:lands-LC6982 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6982" ;
+    skos:prefLabel "Coastal water bodies and intertidal areas"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Coastal water bodies and intertidal areas"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6982 .
+
+
+sip-sdmx-code:lands-LC6983 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LC6983" ;
+    skos:prefLabel "Grassland"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Grassland"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LC6983 .
+
+
+sip-sdmx-code:lands-LU6600 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6600" ;
+    skos:prefLabel "Country area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Country area"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6600 .
+
+
+sip-sdmx-code:lands-LU6601 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6601" ;
+    skos:prefLabel "Land area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Land area"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6601 .
+
+
+sip-sdmx-code:lands-LU6610 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6610" ;
+    skos:prefLabel "Agricultural area"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Agricultural area"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6610 .
+
+
+sip-sdmx-code:lands-LU6611 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6611" ;
+    skos:prefLabel "Agricultural area actually irrigated"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Agricultural area actually irrigated"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6611 .
+
+
+sip-sdmx-code:lands-LU6620 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6620" ;
+    skos:prefLabel "Arable land and Permanent crops"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Arable land and Permanent crops"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6620 .
+
+
+sip-sdmx-code:lands-LU6621 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6621" ;
+    skos:prefLabel "Arable land"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Arable land"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6621 .
+
+
+sip-sdmx-code:lands-LU6630 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6630" ;
+    skos:prefLabel "Temporary crops"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Temporary crops"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6630 .
+
+
+sip-sdmx-code:lands-LU6633 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6633" ;
+    skos:prefLabel "Temporary meadows and pastures"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Temporary meadows and pastures"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6633 .
+
+
+sip-sdmx-code:lands-LU6640 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6640" ;
+    skos:prefLabel "Fallow land (temporary)"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Fallow land (temporary)"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6640 .
+
+
+sip-sdmx-code:lands-LU6650 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6650" ;
+    skos:prefLabel "Permanent crops"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent crops"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6650 .
+
+
+sip-sdmx-code:lands-LU6655 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6655" ;
+    skos:prefLabel "Permanent meadows and pastures"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent meadows and pastures"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6655 .
+
+
+sip-sdmx-code:lands-LU6656 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6656" ;
+    skos:prefLabel "Perm. meadows & pastures - Cultivated"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Perm. meadows & pastures - Cultivated"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6656 .
+
+
+sip-sdmx-code:lands-LU6659 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6659" ;
+    skos:prefLabel "Perm. meadows & pastures - Nat. growing"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Perm. meadows & pastures - Nat. growing"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6659 .
+
+
+sip-sdmx-code:lands-LU6661 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6661" ;
+    skos:prefLabel "Forest"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Forest"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6661 .
+
+
+sip-sdmx-code:lands-LU6670 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6670" ;
+    skos:prefLabel "Other land"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other land"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6670 .
+
+
+sip-sdmx-code:lands-LU6671 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6671" ;
+    skos:prefLabel "Agricultural area organic, total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Agricultural area organic, total"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6671 .
+
+
+sip-sdmx-code:lands-LU6672 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6672" ;
+    skos:prefLabel "Agricultural area certified organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Agricultural area certified organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6672 .
+
+
+sip-sdmx-code:lands-LU6673 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6673" ;
+    skos:prefLabel "Agricultural area in conversion to organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Agricultural area in conversion to organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6673 .
+
+
+sip-sdmx-code:lands-LU6674 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6674" ;
+    skos:prefLabel "Arable land organic, total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Arable land organic, total"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6674 .
+
+
+sip-sdmx-code:lands-LU6675 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6675" ;
+    skos:prefLabel "Arable land area certified organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Arable land area certified organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6675 .
+
+
+sip-sdmx-code:lands-LU6676 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6676" ;
+    skos:prefLabel "Arable land area in conversion to organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Arable land area in conversion to organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6676 .
+
+
+sip-sdmx-code:lands-LU6677 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6677" ;
+    skos:prefLabel "Permanent crops organic, total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent crops organic, total"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6677 .
+
+
+sip-sdmx-code:lands-LU6678 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6678" ;
+    skos:prefLabel "Permanent crops area certified organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent crops area certified organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6678 .
+
+
+sip-sdmx-code:lands-LU6679 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6679" ;
+    skos:prefLabel "Permanent crops area in conversion to organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent crops area in conversion to organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6679 .
+
+
+sip-sdmx-code:lands-LU6680 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6680" ;
+    skos:prefLabel "Inland water"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Inland water"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6680 .
+
+
+sip-sdmx-code:lands-LU6681 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6681" ;
+    skos:prefLabel "Permanent meadows and pastures organic, total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent meadows and pastures organic, total"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6681 .
+
+
+sip-sdmx-code:lands-LU6682 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6682" ;
+    skos:prefLabel "Permanent meadows and pastures area certified organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent meadows and pastures area certified organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6682 .
+
+
+sip-sdmx-code:lands-LU6683 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6683" ;
+    skos:prefLabel "Permanent meadows and pastures area in conversion to organic"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Permanent meadows and pastures area in conversion to organic"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6683 .
+
+
+sip-sdmx-code:lands-LU6690 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6690" ;
+    skos:prefLabel "Total area equipped for irrigation"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Total area equipped for irrigation"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6690 .
+
+
+sip-sdmx-code:lands-LU6714 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6714" ;
+    skos:prefLabel "Primary forest"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Primary forest"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6714 .
+
+
+sip-sdmx-code:lands-LU6716 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6716" ;
+    skos:prefLabel "Planted forest"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Planted forest"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6716 .
+
+
+sip-sdmx-code:lands-LU6717 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6717" ;
+    skos:prefLabel "Other naturally regenerated forest"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Other naturally regenerated forest"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6717 .
+
+
+sip-sdmx-code:lands-LU6774 a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "LU6774" ;
+    skos:prefLabel "Area of arable land and permanent crops under protective cover"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT ; rdfs:label """Area of arable land and permanent crops under protective cover"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-LU6774 .
+
+
+sip-sdmx-code:lands-_T a skos:Concept, sip-sdmx-code:Lands;
+    skos:topConceptOf sip-sdmx-code:lands ;
+    skos:inScheme sip-sdmx-code:lands ;
+    skos:notation "_T" ;
+    skos:prefLabel "Total"@en ;
+    sip-sdmx:hasAgencyLabel [sip-sdmx-agency:agenciesID sip-sdmx-agency:ESTAT, sip-sdmx-agency:ESTAT ; rdfs:label """Total"""@en ] .
+
+sip-sdmx-code:lands skos:hasTopConcept sip-sdmx-code:lands-_T .
+

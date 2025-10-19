@@ -1,0 +1,209 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx: <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-code: <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sip-sdmx-concept: <https://purl.semanticip.org/linked-data/sdmx/concept/> .
+@prefix sip-sdmx-code: <https://purl.semanticip.org/linked-data/sdmx/code/> .
+@prefix sip-sdmx: <https://purl.semanticip.org/linked-data/sdmx> .
+
+
+#####################################################
+# CL_DECIMALS Scheme Definition
+#####################################################
+
+sip-sdmx-code:decimals a skos:ConceptScheme ;
+    rdfs:subClassOf sdmx-code:ConceptScheme ;
+    skos:prefLabel "Decimals - codelist scheme"@en ;
+    rdfs:label "Decimals - codelist scheme"@en ;
+    skos:notation "CL_DECIMALS" ;
+    skos:definition "A reference decimals codelist based on SDMX:CL_DECIMALS(1.0)"@en ;
+    rdfs:seeAlso <https://registry.sdmx.org/sdmx/v2/structure/codelist/SDMX/CL_DECIMALS/1.0> ;
+    skos:note "SDMX:CL_DECIMALS(1.0): This code list provides a list of values showing the number of decimal digits used in the data. This code list was released in 2009. More information about this code list and SDMX code lists in general (e.g. list of generic codes for expressing general concepts like \"Total\", \"Unknown\", etc.; syntaxes for the creation of further codes; general guidelines for the creation of SDMX code lists) can be found at this address: https://sdmx.org/?page_id=4345."@en ;
+    rdfs:seeAlso sip-sdmx-concept:DECIMALS ;
+    skos:related sip-sdmx-concept:DECIMALS ;
+    rdfs:seeAlso sip-sdmx-code:Decimals .
+
+sip-sdmx-code:decimals skos:exactMatch sdmx-code:decimals .
+
+sip-sdmx-code:Decimals a rdfs:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:prefLabel "Decimals - codelist class"@en ;
+    rdfs:label "Decimals - codelist class"@en ;
+    rdfs:isDefinedBy sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals .
+
+
+########################################
+# CL_DECIMALS Codes
+########################################
+    
+sip-sdmx-code:decimals-0 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "0" ;
+    skos:prefLabel "Zero"@en ;
+    rdfs:label "Zero"@en .
+
+sip-sdmx-code:decimals-0 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-0> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-0 .
+
+
+sip-sdmx-code:decimals-1 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "1" ;
+    skos:prefLabel "One"@en ;
+    rdfs:label "One"@en .
+
+sip-sdmx-code:decimals-1 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-1> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-1 .
+
+
+sip-sdmx-code:decimals-10 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "10" ;
+    skos:prefLabel "Ten"@en ;
+    rdfs:label "Ten"@en .
+
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-10 .
+
+
+sip-sdmx-code:decimals-11 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "11" ;
+    skos:prefLabel "Eleven"@en ;
+    rdfs:label "Eleven"@en .
+
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-11 .
+
+
+sip-sdmx-code:decimals-12 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "12" ;
+    skos:prefLabel "Twelve"@en ;
+    rdfs:label "Twelve"@en .
+
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-12 .
+
+
+sip-sdmx-code:decimals-13 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "13" ;
+    skos:prefLabel "Thirteen"@en ;
+    rdfs:label "Thirteen"@en .
+
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-13 .
+
+
+sip-sdmx-code:decimals-14 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "14" ;
+    skos:prefLabel "Fourteen"@en ;
+    rdfs:label "Fourteen"@en .
+
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-14 .
+
+
+sip-sdmx-code:decimals-15 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "15" ;
+    skos:prefLabel "Fifteen"@en ;
+    rdfs:label "Fifteen"@en .
+
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-15 .
+
+
+sip-sdmx-code:decimals-2 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "2" ;
+    skos:prefLabel "Two"@en ;
+    rdfs:label "Two"@en .
+
+sip-sdmx-code:decimals-2 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-2> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-2 .
+
+
+sip-sdmx-code:decimals-3 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "3" ;
+    skos:prefLabel "Three"@en ;
+    rdfs:label "Three"@en .
+
+sip-sdmx-code:decimals-3 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-3> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-3 .
+
+
+sip-sdmx-code:decimals-4 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "4" ;
+    skos:prefLabel "Four"@en ;
+    rdfs:label "Four"@en .
+
+sip-sdmx-code:decimals-4 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-4> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-4 .
+
+
+sip-sdmx-code:decimals-5 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "5" ;
+    skos:prefLabel "Five"@en ;
+    rdfs:label "Five"@en .
+
+sip-sdmx-code:decimals-5 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-5> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-5 .
+
+
+sip-sdmx-code:decimals-6 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "6" ;
+    skos:prefLabel "Six"@en ;
+    rdfs:label "Six"@en .
+
+sip-sdmx-code:decimals-6 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-6> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-6 .
+
+
+sip-sdmx-code:decimals-7 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "7" ;
+    skos:prefLabel "Seven"@en ;
+    rdfs:label "Seven"@en .
+
+sip-sdmx-code:decimals-7 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-7> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-7 .
+
+
+sip-sdmx-code:decimals-8 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "8" ;
+    skos:prefLabel "Eight"@en ;
+    rdfs:label "Eight"@en .
+
+sip-sdmx-code:decimals-8 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-8> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-8 .
+
+
+sip-sdmx-code:decimals-9 a skos:Concept, sip-sdmx-code:Decimals;
+    skos:topConceptOf sip-sdmx-code:decimals ;
+    skos:inScheme sip-sdmx-code:decimals ;
+    skos:notation "9" ;
+    skos:prefLabel "Nine"@en ;
+    rdfs:label "Nine"@en .
+
+sip-sdmx-code:decimals-9 skos:exactMatch <http://purl.org/linked-data/sdmx/2009/code#-9> .
+sip-sdmx-code:decimals skos:hasTopConcept sip-sdmx-code:decimals-9 .
+
